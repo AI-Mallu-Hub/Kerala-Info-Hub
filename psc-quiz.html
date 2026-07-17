@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSC Daily Quiz - Kerala Info Hub</title>
+<style>
+  :root {
+    --bg-color: #f4f7f6;
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --primary-color: #2e7d32;
+    --primary-light: #e8f5e9;
+    --accent-color: #1565c0;
+    --border-color: #ddd;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+
+  .quiz-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .quiz-header h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+
+  .back-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--primary-light);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+  }
+
+  .back-btn:hover {
+    background-color: #c8e6c9;
+  }
+
+  .quiz-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+  }
+
+  .question-number {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  .question-text {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .option-label {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .option-label:hover {
+    background-color: #f9f9f9;
+    border-color: #bbb;
+  }
+
+  .option-label input {
+    margin-right: 12px;
+    transform: scale(1.2);
+  }
+
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 20px;
+  }
+
+  .submit-btn:hover {
+    background-color: #1b5e20;
+  }
+
+  .result-box {
+    display: none;
+    background-color: #e3f2fd;
+    border-left: 5px solid var(--accent-color);
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .result-box h2 {
+    color: var(--accent-color);
+    margin-top: 0;
+  }
+
+  .correct {
+    background-color: #e8f5e9 !important;
+    border-color: #81c784 !important;
+    color: #2e7d32;
+    font-weight: bold;
+  }
+
+  .wrong {
+    background-color: #ffebee !important;
+    border-color: #e57373 !important;
+    color: #c62828;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid var(--border-color);
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="logo">🌴 Kerala Info Hub</a>
+</nav>
+
+<div class="container">
+  <a href="index.html" class="back-btn">← തിരികെ ഹോംപേജിലേക്ക്</a>
+  
+  <div class="quiz-header">
+    <h1>📝 PSC Daily Quiz</h1>
+    <p>ഇന്നത്തെ പ്രധാനപ്പെട്ട പൊതുവിജ്ഞാന ചോദ്യങ്ങൾ പരിശീലിക്കാം. ഉത്തരങ്ങൾ തിരഞ്ഞെടുത്ത ശേഷം 'Submit Quiz' ബട്ടൺ ക്ലിക്ക് ചെയ്യുക.</p>
+  </div>
+
+  <form id="quizForm">
+    <!-- Question 1 -->
+    <div class="quiz-card" data-correct="B">
+      <div class="question-number">Question 1</div>
+      <p class="question-text">കേരളത്തിലെ ഏറ്റവും നീളം കൂടിയ നദി ഏതാണ്?</p>
+      <div class="options-container">
+        <label class="option-label"><input type="radio" name="q1" value="A"> ഭാരതപ്പുഴ</label>
+        <label class="option-label"><input type="radio" name="q1" value="B"> പെരിയാർ</label>
+        <label class="option-label"><input type="radio" name="q1" value="C"> പമ്പ</label>
+        <label class="option-label"><input type="radio" name="q1" value="D"> ചാലിയാർ</label>
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="quiz-card" data-correct="A">
+      <div class="question-number">Question 2</div>
+      <p class="question-text">കേരളാ സിംഹം എന്നറിയപ്പെടുത്തിയിരുന്നത് ആരാണ്?</p>
+      <div class="options-container">
+        <label class="option-label"><input type="radio" name="q2" value="A"> പഴശ്ശിരാജ</label>
+        <label class="option-label"><input type="radio" name="q2" value="B"> വേലുത്തമ്പി ദളവ</label>
+        <label class="option-label"><input type="radio" name="q2" value="C"> മാർത്താണ്ഡവർമ്മ</label>
+        <label class="option-label"><input type="radio" name="q2" value="D"> ശക്തൻ തമ്പുരാൻ</label>
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="quiz-card" data-correct="C">
+      <div class="question-number">Question 3</div>
+      <p class="question-text">കേരളത്തിൽ അവസാനം രൂപീകൃതമായ ജില്ല ഏതാണ്?</p>
+      <div class="options-container">
+        <label class="option-label"><input type="radio" name="q3" value="A"> വയനാട്</label>
+        <label class="option-label"><input type="radio" name="q3" value="B"> പത്തനംതിട്ട</label>
+        <label class="option-label"><input type="radio" name="q3" value="C"> കാസർകോട്</label>
+        <label class="option-label"><input type="radio" name="q3" value="D"> കണ്ണൂർ</label>
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="quiz-card" data-correct="D">
+      <div class="question-number">Question 4</div>
+      <p class="question-text">സൈലന്റ് വാലി ദേശീയോദ്യാനം ഏത് ജില്ലയിലാണ് സ്ഥിതി ചെയ്യുന്നത്?</p>
+      <div class="options-container">
+        <label class="option-label"><input type="radio" name="q4" value="A"> ഇടുക്കി</label>
+        <label class="option-label"><input type="radio" name="q4" value="B"> വയനാട്</label>
+        <label class="option-label"><input type="radio" name="q4" value="C"> തിരുവനന്തപുരം</label>
+        <label class="option-label"><input type="radio" name="q4" value="D"> പാലക്കാട്</label>
+      </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="quiz-card" data-correct="A">
+      <div class="question-number">Question 5</div>
+      <p class="question-text">കേരളത്തിൽ ഏറ്റവും കൂടുതൽ കടൽത്തീരമുള്ള ജില്ല ഏതാണ്?</p>
+      <div class="options-container">
+        <label class="option-label"><input type="radio" name="q5" value="A"> കണ്ണൂർ</label>
+        <label class="option-label"><input type="radio" name="q5" value="B"> ആലപ്പുഴ</label>
+        <label class="option-label"><input type="radio" name="q5" value="C"> കോഴിക്കോട്</label>
+        <label class="option-label"><input type="radio" name="q5" value="D"> തിരുവനന്തപുരം</label>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit Quiz</button>
+  </form>
+
+  <div id="resultBox" class="result-box">
+    <h2>Quiz Completed!</h2>
+    <p id="scoreText" style="font-size: 1.3rem; font-weight: bold;"></p>
+  </div>
+</div>
+
+<footer>© 2026 Kerala Info Hub</footer>
+
+<script>
+  document.getElementById('quizForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    let score = 0;
+    const cards = document.querySelectorAll('.quiz-card');
+    
+    cards.forEach((card, index) => {
+      const qNum = index + 1;
+      const selected = card.querySelector(`input[name="q${qNum}"]:checked`);
+      const correctAns = card.getAttribute('data-correct');
+      const options = card.querySelectorAll('.option-label');
+      
+      // Reset styles
+      options.forEach(opt => opt.classList.remove('correct', 'wrong'));
+      
+      // Check answer
+      if (selected) {
+        if (selected.value === correctAns) {
+          score++;
+          selected.parentElement.classList.add('correct');
+        } else {
+          selected.parentElement.classList.add('wrong');
+          // Highlight correct one
+          options.forEach(opt => {
+            if(opt.querySelector('input').value === correctAns) {
+              opt.classList.add('correct');
+            }
+          });
+        }
+      } else {
+        // If not answered, just show the correct answer
+        options.forEach(opt => {
+          if(opt.querySelector('input').value === correctAns) {
+            opt.classList.add('correct');
+          }
+        });
+      }
+    });
+    
+    // Display result
+    const resultBox = document.getElementById('resultBox');
+    const scoreText = document.getElementById('scoreText');
+    scoreText.textContent = `നിങ്ങളുടെ സ്കോർ: ${score} / ${cards.length}`;
+    resultBox.style.display = 'block';
+    resultBox.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
