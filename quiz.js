@@ -12,8 +12,27 @@ let userAnswers = {};
 // ----------------------------
 
 async function loadQuestions() {
-    const response = await fetch("data/psc_quiz.json");
-    return await response.json();
+
+    try {
+
+        const response = await fetch("data/psc_quiz.json");
+
+        if (!response.ok) {
+            throw new Error("JSON file not found: " + response.status);
+        }
+
+        return await response.json();
+
+    } catch (err) {
+
+        console.error(err);
+
+        alert("Quiz loading failed.\n\n" + err.message);
+
+        return [];
+
+    }
+
 }
 
 // ----------------------------
