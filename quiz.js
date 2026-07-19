@@ -263,6 +263,20 @@ function renderPage() {
     // Check Button State
     // ----------------------------
 
+    const hasAnswer = Object.keys(userAnswers)
+    .some(index => {
+        const num = Number(index);
+        return num >= start && num < end;
+    });
+
+if (!hasAnswer) {
+
+    alert("Please answer at least one question before checking.");
+
+    return;
+
+}
+    
     if (reviewedPages[currentPage]) {
 if (reviewedPages[currentPage]) {
 
