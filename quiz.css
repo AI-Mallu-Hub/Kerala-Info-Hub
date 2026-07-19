@@ -152,6 +152,8 @@ button:hover{
 
     background:white;
 
+    color:#212529;
+
     padding:25px;
 
     margin-bottom:20px;
@@ -189,6 +191,8 @@ button:hover{
     cursor:pointer;
 
     transition:.2s;
+   
+    color:#212529;
 
 }
 
