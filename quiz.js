@@ -379,7 +379,17 @@ document.getElementById("checkBtn").addEventListener("click", () => {
 
     document.getElementById("checkBtn").disabled = true;
 
+    const totalPages = Math.ceil(quizQuestions.length / questionsPerPage);
+
+if (currentPage === totalPages - 1) {
+
+    document.getElementById("submitBtn").disabled = false;
+
+} else {
+
     document.getElementById("nextBtn").disabled = false;
+
+}
 
 });
 
@@ -441,3 +451,87 @@ function restoreReviewedPage() {
         `✅ Page Score : ${pageScore} / ${end - start}`;
 
                                  }
+// ============================
+// Submit Quiz
+// ============================
+
+document.getElementById("submitBtn").addEventListener("click", () => {
+
+    let score = 0;
+
+    quizQuestions.forEach((q, index) => {
+
+        if (userAnswers[index] === q.correct_answer) {
+
+            score++;
+
+        }
+
+    });
+
+    const wrong = quizQuestions.length - score;
+
+    const percentage = ((score / quizQuestions.length) * 100).toFixed(1);
+
+    let grade = "";
+
+    if (percentage >= 90) {
+
+        grade = "🏆 Excellent";
+
+    } else if (percentage >= 75) {
+
+        grade = "🥇 Very Good";
+
+    } else if (percentage >= 60) {
+
+        grade = "👍 Good";
+
+    } else if (percentage >= 40) {
+
+        grade = "🙂 Keep Practicing";
+
+    } else {
+
+        grade = "📚 Needs More Practice";
+
+    }
+
+    document.getElementById("quizArea").style.display = "none";
+
+    document.getElementById("resultBox").style.display = "block";
+
+    document.getElementById("scoreText").textContent =
+        `Score : ${score} / ${quizQuestions.length}`;
+
+    document.getElementById("correctText").textContent =
+        `✅ Correct : ${score} | ❌ Wrong : ${wrong}`;
+
+    document.getElementById("wrongText").textContent =
+        `📊 Percentage : ${percentage}% | ${grade}`;
+
+});
+
+// ============================
+// Retake Quiz
+// ============================
+
+document.getElementById("retakeBtn").addEventListener("click", () => {
+
+    if (confirm("Start a new quiz?")) {
+
+        startPracticeQuiz();
+
+    }
+
+});
+
+// ============================
+// Review Button
+// ============================
+
+document.getElementById("reviewBtn").addEventListener("click", () => {
+
+    alert("Review All Answers will be available in the next update.");
+
+});
