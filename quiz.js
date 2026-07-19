@@ -224,6 +224,25 @@ ${q.options.D}
         document.getElementById("submitBtn").style.display = "none";
 
     }
+    // ----------------------------
+// Check Button / Next Button
+// ----------------------------
+
+const checkBtn = document.getElementById("checkBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+checkBtn.disabled = false;
+
+if (reviewedPages[currentPage]) {
+
+    checkBtn.disabled = true;
+    nextBtn.disabled = false;
+
+} else {
+
+    nextBtn.disabled = true;
+
+}
 
 }
 
