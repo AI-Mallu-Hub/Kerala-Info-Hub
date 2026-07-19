@@ -257,6 +257,7 @@ function renderPage() {
 
     submitBtn.style.display =
         lastPage ? "inline-block" : "none";
+    submitBtn.disabled = !reviewedPages[currentPage];
 
     // ----------------------------
     // Check Button State
