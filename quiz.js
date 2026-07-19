@@ -332,18 +332,17 @@ document.getElementById("submitBtn").addEventListener("click", () => {
 // ----------------------------
 
 const checkBtn = document.getElementById("checkBtn");
-
 const nextBtn = document.getElementById("nextBtn");
+
+// എല്ലാ പുതിയ page-കളിലും ആദ്യം reset ചെയ്യുക
+checkBtn.disabled = false;
 
 if (reviewedPages[currentPage]) {
 
     checkBtn.disabled = true;
-
     nextBtn.disabled = false;
 
 } else {
-
-    checkBtn.disabled = false;
 
     nextBtn.disabled = true;
 
