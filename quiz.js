@@ -335,7 +335,19 @@ document.getElementById("checkBtn").addEventListener("click", () => {
 
     const start = currentPage * questionsPerPage;
     const end = Math.min(start + questionsPerPage, quizQuestions.length);
+    const hasAnswer = Object.keys(userAnswers)
+    .some(index => {
+        const num = Number(index);
+        return num >= start && num < end;
+    });
 
+if (!hasAnswer) {
+
+    alert("Please answer at least one question before checking.");
+
+    return;
+
+}
     let pageScore = 0;
 
     for (let i = start; i < end; i++) {
