@@ -289,9 +289,8 @@ if (reviewedPages[currentPage]) {
 
     }
 
-            }
+  }
     restoreReviewedPage();
-
 }
 // ============================
 // Previous Button
