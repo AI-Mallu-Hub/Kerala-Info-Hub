@@ -264,18 +264,33 @@ function renderPage() {
     // ----------------------------
 
     if (reviewedPages[currentPage]) {
+if (reviewedPages[currentPage]) {
 
-        checkBtn.disabled = true;
+    checkBtn.disabled = true;
 
-        nextBtn.disabled = false;
+    if (lastPage) {
+
+        submitBtn.disabled = false;
 
     } else {
 
-        checkBtn.disabled = false;
-
-        nextBtn.disabled = true;
+        nextBtn.disabled = false;
 
     }
+
+} else {
+
+    checkBtn.disabled = false;
+
+    nextBtn.disabled = true;
+
+    if (lastPage) {
+
+        submitBtn.disabled = true;
+
+    }
+
+            }
     restoreReviewedPage();
 
 }
