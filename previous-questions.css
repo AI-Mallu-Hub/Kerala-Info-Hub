@@ -1,0 +1,228 @@
+/* =====================================
+   Kerala Info Hub
+   Previous Question Papers
+===================================== */
+
+/* ---------- Base ---------- */
+
+:root{
+    --primary:#0d6efd;
+    --primary-dark:#0b5ed7;
+    --background:#f5f8fc;
+    --white:#ffffff;
+    --text:#212529;
+    --text-light:#6c757d;
+    --border:#e5e7eb;
+    --shadow:0 10px 25px rgba(0,0,0,.08);
+    --radius:16px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI",Arial,sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.6;
+}
+
+/* ---------- Header ---------- */
+
+.header{
+    background:linear-gradient(135deg,#0d6efd,#4dabf7);
+    color:#fff;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.logo{
+    display:inline-block;
+    margin-bottom:18px;
+    color:#fff;
+    text-decoration:none;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.header h1{
+    font-size:40px;
+    margin-bottom:12px;
+}
+
+.header p{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    opacity:.95;
+}
+
+/* ---------- Search ---------- */
+
+.search-section{
+    max-width:900px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+#searchBox{
+    width:100%;
+    padding:16px 20px;
+    border:2px solid var(--border);
+    border-radius:50px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+    background:#fff;
+}
+
+#searchBox:focus{
+    border-color:var(--primary);
+    box-shadow:0 0 0 4px rgba(13,110,253,.15);
+}
+
+/* ---------- Categories ---------- */
+
+.category-section{
+    width:90%;
+    max-width:1200px;
+    margin:20px auto 40px;
+}
+
+.category-section h2{
+    margin-bottom:18px;
+}
+
+.category-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.category-btn{
+    padding:12px 20px;
+    border:none;
+    border-radius:30px;
+    background:#fff;
+    cursor:pointer;
+    font-size:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    transition:.25s;
+}
+
+.category-btn:hover{
+    background:var(--primary);
+    color:#fff;
+}
+
+.category-btn.active{
+    background:var(--primary);
+    color:#fff;
+}
+
+/* ---------- Papers ---------- */
+
+.papers{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding-bottom:60px;
+}
+
+.papers h2{
+    margin-bottom:25px;
+}
+
+.paper-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.paper-card{
+    background:#fff;
+    padding:25px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+
+.paper-card:hover{
+    transform:translateY(-6px);
+}
+
+.paper-card h3{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.paper-card p{
+    margin-bottom:10px;
+    color:var(--text-light);
+}
+
+/* ---------- Buttons ---------- */
+
+.paper-buttons{
+    margin-top:20px;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.paper-buttons a{
+    flex:1;
+    text-align:center;
+    text-decoration:none;
+    background:var(--primary);
+    color:#fff;
+    padding:12px;
+    border-radius:8px;
+    transition:.25s;
+}
+
+.paper-buttons a:hover{
+    background:var(--primary-dark);
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+    background:#0d6efd;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:768px){
+
+    .header{
+        padding:45px 20px;
+    }
+
+    .header h1{
+        font-size:30px;
+    }
+
+    .header p{
+        font-size:16px;
+    }
+
+    .logo{
+        font-size:24px;
+    }
+
+    .paper-buttons{
+        flex-direction:column;
+    }
+
+    .category-grid{
+        justify-content:center;
+    }
+
+  }
