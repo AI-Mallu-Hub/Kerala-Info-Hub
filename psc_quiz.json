@@ -1,0 +1,2202 @@
+[
+  {
+    "question_number": 1,
+    "question": "Increase in RBC count is called",
+    "options": {
+      "A": "Polycythemia",
+      "B": "Anemia",
+      "C": "Thrombocytopenia",
+      "D": "Thrombocytosis"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 2,
+    "question": "Parts of small intestine includes all the following except",
+    "options": {
+      "A": "Duodenum",
+      "B": "Jejunum",
+      "C": "Colon",
+      "D": "Ileum"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 3,
+    "question": "Light receptor cell of the eye",
+    "options": {
+      "A": "Pyramidal cell",
+      "B": "Cones",
+      "C": "Stellate cell",
+      "D": "Mast cell"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 4,
+    "question": "Fertilization takes place in which part of the fallopian tube ?",
+    "options": {
+      "A": "Infundibulum",
+      "B": "Isthmus",
+      "C": "Intramural part",
+      "D": "Ampulla"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 5,
+    "question": "Which of the following is a part of Hip bone?",
+    "options": {
+      "A": "Corocoid process",
+      "B": "Pubis",
+      "C": "Coronoid process",
+      "D": "Trochlear notch"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 6,
+    "question": "Hormone produced by posterior lobe of pituitary gland",
+    "options": {
+      "A": "Prolactin",
+      "B": "Thyroxine",
+      "C": "Oxytocin",
+      "D": "Oestrogen"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 7,
+    "question": "Who developed the first vaccine of the world, the Smallpox vaccine?",
+    "options": {
+      "A": "Edward Jenner",
+      "B": "Joseph Lister",
+      "C": "Robert Koch",
+      "D": "Paul Ehrlich"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 8,
+    "question": "Which of the following statements is/are correct about Spirochetes ?\ni. Spirochetes are elongated, motile, flexible bacteria twisted spirally along the long axis.\nii. Weil's disease is caused by Treponema pallidum.\niii. Relapsing fever is caused by Borrelia recurrentis.\niv. Blood agar can be used for culturing Treponema pallidum.",
+    "options": {
+      "A": "Only i and ii",
+      "B": "Only i and iii",
+      "C": "Only ii, iii and iv",
+      "D": "All the above (i, ii, iii and iv)"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 9,
+    "question": "latrogenic infection is",
+    "options": {
+      "A": "A new parasite sets up an infection in an individual already infected by another",
+      "B": "Infection resulting from investigative, therapeutic or other procedures",
+      "C": "Infection resurges in the host due to non responsive to a drug",
+      "D": "Infection in which the typical clinical manifestations of the disease are not present"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 10,
+    "question": "Which of the following statements is/are correct about culture medium ?\ni. Amies transport medium is used for transportation of throat swab in patients suspecting diphtheria.\nii. Selenite F broth is an enrichment media used for inoculating faecal samples.\niii. Alkaline peptone water is a selective medium used for sputum samples.\niv. Robertson's cooked meat medium (RCM) is a commonly used anaerobic medium.",
+    "options": {
+      "A": "Only ii and iii",
+      "B": "Only i and iii",
+      "C": "Only i, ii and iv",
+      "D": "All the above (i, ii, iii and iv)"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 11,
+    "question": "The ability of an individual to adapt successfully to his environment is called",
+    "options": {
+      "A": "Compliance",
+      "B": "Conditioning",
+      "C": "Learning capability",
+      "D": "Intelligence"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 12,
+    "question": "A nursing officer always complains that her colleagues are jealous of her abilities and trying to undermine her performance. On evaluation by the nursing supervisor, it was observed that there is no evidence for her argument, and she expresses feelings of self-doubt regarding her own clinical competence. Which mental mechanism is she/he most likely exhibiting ?",
+    "options": {
+      "A": "Compensation",
+      "B": "Denial",
+      "C": "Projection",
+      "D": "Withdrawal"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 13,
+    "question": "Among the following which is not a theory of personality?",
+    "options": {
+      "A": "Type theory",
+      "B": "Trait theory",
+      "C": "Erikson's psychoanalytical theory",
+      "D": "Classical conditioning theory"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 14,
+    "question": "The outward expression of a person's inner thoughts and feelings is called",
+    "options": {
+      "A": "Attitude",
+      "B": "Personality",
+      "C": "Behaviour",
+      "D": "All the above"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 15,
+    "question": "Which among the following is not an external factor of attention ?",
+    "options": {
+      "A": "Emotion",
+      "B": "Intensity",
+      "C": "Novelty",
+      "D": "Size"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 16,
+    "question": "A patient on dietary restriction sees his favourite dish, suddenly eats a large portion without thinking of consequences. Which personality component operates in this situation?",
+    "options": {
+      "A": "Superego",
+      "B": "Ego",
+      "C": "Id",
+      "D": "None of the above"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 17,
+    "question": "Which aspect of the family cycle emphasizes the departure of grown children from the parental home and the adjustment of the family unit to an 'empty nest' scenario ?",
+    "options": {
+      "A": "Formation stage",
+      "B": "Expansion stage",
+      "C": "Launching stage",
+      "D": "Retirement stage"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 18,
+    "question": "Which sociologist is associated with the concept of the sociological imagination?",
+    "options": {
+      "A": "W. G. Sumner",
+      "B": "C. Wright Mills",
+      "C": "William Ogburn",
+      "D": "William Foote Whyte"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 19,
+    "question": "How does socialization operate within a total institution?",
+    "options": {
+      "A": "It encourages individual autonomy and freedom of expression",
+      "B": "It reinforces existing social norms and values",
+      "C": "It allows for diverse perspectives and experiences",
+      "D": "It imposes strict control over all aspects of an individual's life, shaping their behavior and identity"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 20,
+    "question": "Which type of marriage involves the exchange of marital partners between two or more social groups, often to establish or strengthen social alliances ?",
+    "options": {
+      "A": "Polygamy",
+      "B": "Endogamy",
+      "C": "Exogamy",
+      "D": "Monogamy"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 21,
+    "question": "Which of the following value focusses on helping others and provision of the utmost health and welfare for the clients, their families and the society with selflessness and self-devotion?",
+    "options": {
+      "A": "Integrity",
+      "B": "Autonomy",
+      "C": "Altruism",
+      "D": "Responsibility"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 22,
+    "question": "Which of the following tips to be followed while communicating with the elderly?",
+    "options": {
+      "A": "Sit face to face with the elderly",
+      "B": "Use long sentences",
+      "C": "Interrupt the elderly while talking",
+      "D": "Speak in low soft voice"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 23,
+    "question": "Which colour plastic bag is used for the segregation of incineration waste ?",
+    "options": {
+      "A": "Red",
+      "B": "Yellow",
+      "C": "Black",
+      "D": "Blue"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 24,
+    "question": "Infection caused by a normally harmless bacteria that become pathogenic upon favorable changes in their environment is called",
+    "options": {
+      "A": "Nosocomial infection",
+      "B": "Latent infection",
+      "C": "Iatrogenic infection",
+      "D": "Opportunistic infection"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 25,
+    "question": "ISO standard colour for the first aid kit is",
+    "options": {
+      "A": "Blue with a white cross",
+      "B": "White with a blue cross",
+      "C": "Green with white cross",
+      "D": "White with a red cross"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 26,
+    "question": "Two most important nutrients essential for the growth of hair are",
+    "options": {
+      "A": "Carbohydrate and calcium",
+      "B": "Fat and protein",
+      "C": "Fat and carbohydrate",
+      "D": "Iron and protein"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 27,
+    "question": "Which one of the following is an osmotic laxative ?",
+    "options": {
+      "A": "Glycerin",
+      "B": "Magnesium hydrochloride",
+      "C": "Magnesium hydroxide",
+      "D": "Flax seeds"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 28,
+    "question": "The best site for giving an intramuscular injection to infants less than one year is",
+    "options": {
+      "A": "Ventro gluteal",
+      "B": "Vastus lateralis",
+      "C": "Dorso gluteal",
+      "D": "Deltoid"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 29,
+    "question": "Chest physiotherapy is contra indicated in",
+    "options": {
+      "A": "Atelectasis",
+      "B": "Bronchiectasis",
+      "C": "Lung abscess",
+      "D": "Increased Intra Cranial Pressure"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 30,
+    "question": "A method of sterilization by steam under pressure by using a machine is called",
+    "options": {
+      "A": "Fumigation",
+      "B": "Micro wave oven",
+      "C": "Autoclaving",
+      "D": "Disinfection"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 31,
+    "question": "'Actions taken prior to the onset of disease, which removes the possibility that a disease will ever occur' comes under which level of prevention ?",
+    "options": {
+      "A": "Primordial prevention",
+      "B": "Primary prevention",
+      "C": "Secondary prevention",
+      "D": "Tertiary prevention"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 32,
+    "question": "A health programme launched by Ministry of Health and Family Welfare in order to fully immunize 90% of children who are either partially immunized or not immunized",
+    "options": {
+      "A": "Janani Sisu Suraksha Karyakram",
+      "B": "Mission Indradhanush",
+      "C": "Rashtriya Bal Swasthya Karyakram",
+      "D": "Surakshit Matritva Abhiyan"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 33,
+    "question": "Limitation of freedom of movement of healthy persons exposed to communicable disease for a period of time not longer than the longest incubation period of the disease is termed as",
+    "options": {
+      "A": "Quarantine",
+      "B": "Isolation",
+      "C": "Surveillance",
+      "D": "Contact tracing"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 34,
+    "question": "In order to achieve elimination of lymphatic filariasis, which of the following drug is administered Nationwide as Annual Mass Drug Administration (MDA) by Govt. of India?",
+    "options": {
+      "A": "Rifampicin",
+      "B": "Chloroquine",
+      "C": "Diethyl Carbamazine Citrate",
+      "D": "Streptomycin"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 35,
+    "question": "Which of the following vitamin deficiency can lead to keratomalacia ?",
+    "options": {
+      "A": "Vitamin D",
+      "B": "Vitamin A",
+      "C": "Vitamin B12",
+      "D": "Vitamin E"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 36,
+    "question": "Failure to achieve expected height as compared to healthy children of same age which is an indicator of malnutrition over a long period is termed as",
+    "options": {
+      "A": "Wasting",
+      "B": "Overnutrition",
+      "C": "Underweight",
+      "D": "Stunting"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 37,
+    "question": "Pentavalent vaccine contains which of the following antigens?",
+    "options": {
+      "A": "Diphtheria, Pertusis, Tetanus, Hepatitis B, Haemophilus Influenza B",
+      "B": "Diphtheria, Pertusis, Tetanus, Hepatitis B, Polio",
+      "C": "Diphtheria, Pertusis, Tetanus, Mumps, Haemophilus Influenza B",
+      "D": "Diphtheria, Pertusis, Tetanus, Hepatitis B, Measles"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 38,
+    "question": "'An infected person or animal that harbours a specific infectious agent in the absence of a clinical disease and serves as a potential source of infection for others' is termed as",
+    "options": {
+      "A": "Case",
+      "B": "Carrier",
+      "C": "Contact",
+      "D": "Vector"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 39,
+    "question": "'Period from disease initiation to disease detection in a non infectious disease' is called as",
+    "options": {
+      "A": "Isolation period",
+      "B": "Carrier stage",
+      "C": "Latent period",
+      "D": "Convalescent period"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 40,
+    "question": "Which of the following vitamin deficiency can lead to the development of Megaloblastic anaemia?",
+    "options": {
+      "A": "Vitamin B12",
+      "B": "Vitamin B6",
+      "C": "Vitamin A",
+      "D": "Vitamin C"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 41,
+    "question": "Which of the following assessment data indicates possibility of mediastinal shift after thoracic surgery?",
+    "options": {
+      "A": "Paradoxical respiration",
+      "B": "Dull chest pain",
+      "C": "Purulent sputum",
+      "D": "Tracheal deviation"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 42,
+    "question": "Best intervention for terminating ventricular fibrillation is",
+    "options": {
+      "A": "Defibrillation",
+      "B": "Cardiopulmonary resuscitation",
+      "C": "Injection Lidocaine",
+      "D": "Pacemaker"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 43,
+    "question": "Edema of head and neck is seen in which of the following oncological emergency ?",
+    "options": {
+      "A": "Tumor lysis syndrome",
+      "B": "Superior venacava syndrome",
+      "C": "Spinal cord compression",
+      "D": "Disseminated intravascular coagulation"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 44,
+    "question": "Nursing assessment that will help in identifying hypocalcemia is",
+    "options": {
+      "A": "Assessing skin turgour",
+      "B": "Monitoring intake and output",
+      "C": "Tapping the face infront of ear",
+      "D": "Monitoring serum osmolality"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 45,
+    "question": "Hearing loss that is caused by aging process is",
+    "options": {
+      "A": "Presbyopia",
+      "B": "Otosclerosis",
+      "C": "Functional hearing Loss",
+      "D": "Presbycusis"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 46,
+    "question": "What is the first priority nursing action in burns involving face, neck and upper chest ?",
+    "options": {
+      "A": "Fluid replacement",
+      "B": "Airway establishment",
+      "C": "Cover wound with dressing",
+      "D": "Pain relief"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 47,
+    "question": "Which patients need first priority in a disaster ?",
+    "options": {
+      "A": "Patient with airway obstruction",
+      "B": "Patient without pulse and respiration",
+      "C": "Patient with fractured leg",
+      "D": "Patient with lacerated wound"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 48,
+    "question": "Which of the following is not a component of primary survey?",
+    "options": {
+      "A": "Head to toe assessment",
+      "B": "Assessment of airway",
+      "C": "Determine neurological disability",
+      "D": "Assessment of circulation"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 49,
+    "question": "Most appropriate position for patient after total hip replacement is",
+    "options": {
+      "A": "Hyperflexion of hip",
+      "B": "Hip adduction",
+      "C": "Legs in abduction",
+      "D": "Internal rotation of leg"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 50,
+    "question": "Which medication is contraindicated in acute angle closure glaucoma ?",
+    "options": {
+      "A": "Pilocarpine",
+      "B": "Carbachol",
+      "C": "Acetazolamide",
+      "D": "Atropine"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 51,
+    "question": "Role of community mental health nurse can be described as",
+    "options": {
+      "A": "General role",
+      "B": "Clinical role",
+      "C": "Extended role",
+      "D": "Expanded role"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 52,
+    "question": "National mental health programme launched in the year",
+    "options": {
+      "A": "1982",
+      "B": "1983",
+      "C": "1987",
+      "D": "2014"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 53,
+    "question": "Ego defence mechanism 'undoing' is typically seen in",
+    "options": {
+      "A": "Depression",
+      "B": "Schizophrenia",
+      "C": "OCD",
+      "D": "Hysteria"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 54,
+    "question": "Which of the following is not a therapeutic impasse?",
+    "options": {
+      "A": "Empathy",
+      "B": "Transference",
+      "C": "Counter-transference",
+      "D": "Boundary violations"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 55,
+    "question": "Increased suicidal tendency is associated with alteration in the brain level of",
+    "options": {
+      "A": "Dopamine",
+      "B": "Serotonin",
+      "C": "GABA",
+      "D": "Adrenaline"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 56,
+    "question": "Early diagnosis and prompt treatment is included in",
+    "options": {
+      "A": "Primordial prevention",
+      "B": "Primary prevention",
+      "C": "Secondary prevention",
+      "D": "Tertiary prevention"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 57,
+    "question": "The cognitive triad of depression described by",
+    "options": {
+      "A": "Joseph Wolpe",
+      "B": "Aron Beck",
+      "C": "Franklin",
+      "D": "Winnicott"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 58,
+    "question": "Drug of choice for dopamine induced seizure is",
+    "options": {
+      "A": "Phenytoin",
+      "B": "Carbamazepine",
+      "C": "Clonazepam",
+      "D": "Sodium valporate"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 59,
+    "question": "Aversion therapy is based on principle of",
+    "options": {
+      "A": "Observational learning",
+      "B": "Classical conditioning",
+      "C": "Operant conditioning",
+      "D": "Here and now technique"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 60,
+    "question": "Number of chapters in National Mental Health Care Act, 2017",
+    "options": {
+      "A": "10",
+      "B": "16",
+      "C": "8",
+      "D": "15"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 61,
+    "question": "Play during infancy is",
+    "options": {
+      "A": "Parallel play",
+      "B": "Associative play",
+      "C": "Solitary play",
+      "D": "Co-op play"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 62,
+    "question": "_____ is a warning sign of impending seizure in a child.",
+    "options": {
+      "A": "Ictal stage",
+      "B": "Aura",
+      "C": "Clonic phase",
+      "D": "Tongue bite"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 63,
+    "question": "Acute rheumatic endocarditis follows infection by",
+    "options": {
+      "A": "Alpha-haemolytic streptococci",
+      "B": "Group A beta-haemolytic streptococci",
+      "C": "Staphylococcus aureus",
+      "D": "Streptococcus pneumoniae"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 64,
+    "question": "Cola coloured urine is seen in",
+    "options": {
+      "A": "Nephrotic syndrome",
+      "B": "Nephroblastoma",
+      "C": "Acute glomerulonephritis",
+      "D": "Chronic renal failure"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 65,
+    "question": "A child with Diabetes Mellitus presents with sweating, tremor, confusion, lethargy and tingling sensation around the mouth. What do these symptoms indicate?",
+    "options": {
+      "A": "Diabetic ketoacidosis",
+      "B": "Hypoglycemia",
+      "C": "Hyperglycemia",
+      "D": "Seizures"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 66,
+    "question": "OPV should be stored at a temperature of",
+    "options": {
+      "A": "2-8°C",
+      "B": "-20°C",
+      "C": "10°C",
+      "D": "<2°C"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 67,
+    "question": "The first and most common symptom of intussusception",
+    "options": {
+      "A": "Pain",
+      "B": "Diarrhoea",
+      "C": "Vomiting",
+      "D": "Abdominal distension"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 68,
+    "question": "A congenital heart disease that can be cured medically",
+    "options": {
+      "A": "PDA",
+      "B": "ASD",
+      "C": "VSD",
+      "D": "TOF"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 69,
+    "question": "Urinalysis report shows a specific gravity of 1.03; which of the following condition can be suspected in a child?",
+    "options": {
+      "A": "Dehydration",
+      "B": "Shock",
+      "C": "UTI",
+      "D": "Nephrotic syndrome"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 70,
+    "question": "Head circumference and chest circumference will be equal at _____ months.",
+    "options": {
+      "A": "6",
+      "B": "12",
+      "C": "18",
+      "D": "10"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 71,
+    "question": "Which among the following is welcomed as a sign to rule out cephalo-pelvic disproportion?",
+    "options": {
+      "A": "Cervix ripening",
+      "B": "Lightening",
+      "C": "Quickening",
+      "D": "Crowning"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 72,
+    "question": "A composite graphical recording of salient features of labor",
+    "options": {
+      "A": "Partograph",
+      "B": "Cardiotocograph",
+      "C": "Labor graph",
+      "D": "Contraction graph"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 73,
+    "question": "A frank breech means",
+    "options": {
+      "A": "Complete breech",
+      "B": "Footling breech",
+      "C": "Breech with extended legs",
+      "D": "Kneeling breech"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 74,
+    "question": "Methergine is contraindicated in",
+    "options": {
+      "A": "Heart disease",
+      "B": "Uterine atony",
+      "C": "Postpartum hemorrhage",
+      "D": "Third stage of labor"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 75,
+    "question": "A menstrual disorder characterized by cycles that occur too frequently, specifically lasting fewer than 21 days",
+    "options": {
+      "A": "Menorrhagia",
+      "B": "Metrorrhagia",
+      "C": "Amenorrhea",
+      "D": "Epimenorrhea"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 76,
+    "question": "A silicone device inserted into the vagina to provide structural support for pelvic organs in uterine prolapse and stress urinary incontinence",
+    "options": {
+      "A": "Copper T",
+      "B": "Pessary",
+      "C": "Mirena",
+      "D": "Mala D"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 77,
+    "options": {
+      "A": "Component of AMTSL",
+      "B": "Lowers the risk of manual removal of the placenta",
+      "C": "Pulling the umbilical cord while applying counter-traction to the uterus",
+      "D": "Pushes the fundus downward and backward while pulling the umbilical cord"
+    },
+    "question": "Which among the following statements regarding controlled cord traction is not correct?",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 78,
+    "question": "A scoring system used in the induction of labor",
+    "options": {
+      "A": "Apgar score",
+      "B": "Ballard score",
+      "C": "Bishop score",
+      "D": "Obstetric score"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 79,
+    "question": "The hormone that is primarily responsible for gestational diabetes mellitus",
+    "options": {
+      "A": "Human placental lactogen",
+      "B": "Human chorionic gonadotropin",
+      "C": "Oxytocin",
+      "D": "Prolactin"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 80,
+    "question": "The technique used to resolve the impacted shoulder in shoulder dystocia",
+    "options": {
+      "A": "Lovset maneuver",
+      "B": "Zavanelli maneuver",
+      "C": "McRoberts maneuver",
+      "D": "Leopold maneuvers"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 81,
+    "question": "The process whereby knowledge is created through the transformation of experience includes",
+    "options": {
+      "A": "Collaborative learning",
+      "B": "Reflective learning",
+      "C": "Inquiry based learning",
+      "D": "Experiential learning"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 82,
+    "question": "Which of the following are the determinants of learning ?",
+    "options": {
+      "A": "Needs of the learner",
+      "B": "State of readiness",
+      "C": "Preferred learning styles",
+      "D": "All of the above"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 83,
+    "question": "Philosophy formed to make the learner perfect with creative values and adjusting to changing demands of society is",
+    "options": {
+      "A": "Idealism",
+      "B": "Eclecticism",
+      "C": "Essentialism",
+      "D": "Existentialism"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 84,
+    "question": "Which of the following are the characteristics of formative assessment ?\nis. Focused\nii. Frequent\niii. Limited feedback",
+    "options": {
+      "A": "Only i and ii",
+      "B": "Only ii and iii",
+      "C": "Only i and iii",
+      "D": "All of the above (i, ii and iii)"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 85,
+    "question": "Which of the following are the types of student centered teaching styles ?\ni. Facilitator\nii. Demonstrator\niii. Delegator",
+    "options": {
+      "A": "Only i and ii",
+      "B": "Only ii and iii",
+      "C": "Only i and iii",
+      "D": "All of the above (i, ii, and iii)"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 86,
+    "question": "What are the statistical factors to determine sample size ?\ni. Degree of variability\nii. Effect size\niii. Significance criteria",
+    "options": {
+      "A": "Only i and ii",
+      "B": "Only ii and iii",
+      "C": "Only i and iii",
+      "D": "All of the above (i, ii and iii)"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 87,
+    "question": "Which of the following nonexperimental design is based on purpose of the study?",
+    "options": {
+      "A": "Cross-sectional",
+      "B": "Correlational",
+      "C": "Prospective",
+      "D": "Longitudinal"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 88,
+    "question": "What are the threats to internal validity?\ni. Selection bias\nii. Novelty\niii. Attrition",
+    "options": {
+      "A": "Only i and ii",
+      "B": "Only ii and iii",
+      "C": "Only i and iii",
+      "D": "All of the above (i, ii and iii)"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 89,
+    "question": "Qualitative data is presented in the form of\ni. Bar diagram\nii. Pictogram\niii. Scattered diagram",
+    "options": {
+      "A": "Only i and ii",
+      "B": "Only ii and iii",
+      "C": "Only i and iii",
+      "D": "All of the above (i, ii and iii)"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 90,
+    "question": "Which level of measurement includes classification of data based on categories ?",
+    "options": {
+      "A": "Nominal Scale",
+      "B": "Ordinal Scale",
+      "C": "Interval Scale",
+      "D": "Ratio Scale"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 91,
+    "question": "Which principle of management is concerned with sincerity, respect and observance of rules and regulations of an organization?",
+    "options": {
+      "A": "Order",
+      "B": "Equity",
+      "C": "Initiative",
+      "D": "Discipline"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 92,
+    "question": "In which leadership style the nurse manager gives the subordinates high degree of independence in the nursing unit ?",
+    "options": {
+      "A": "Autocratic",
+      "B": "Democratic",
+      "C": "Laissez-faire",
+      "D": "Transactional"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 93,
+    "question": "Among the following ethical principles, which one is concerned with taking action to benefit and to promote the welfare of other people ?",
+    "options": {
+      "A": "Justice",
+      "B": "Beneficence",
+      "C": "Non-maleficence",
+      "D": "Autonomy"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 94,
+    "question": "Who is the Chairperson of NITI Aayog ?",
+    "options": {
+      "A": "Prime Minister",
+      "B": "President",
+      "C": "Vice President",
+      "D": "Chief Justice"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 95,
+    "question": "In inventory control, VED analysis is done based on",
+    "options": {
+      "A": "Consumption pattern of items",
+      "B": "Criticality of items",
+      "C": "Value of items in storage",
+      "D": "Value of consumption"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 96,
+    "question": "_____ is the system of patient care delivery in which one nurse is responsible for the total care of assigned patients round the clock from admission to discharge.",
+    "options": {
+      "A": "Functional Method",
+      "B": "Case Method",
+      "C": "Team Nursing",
+      "D": "Primary Nursing"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 97,
+    "question": "Which among the following is an example for a comprehensive method of performance appraisal where the input comes from multiple sources about the employees' performance?",
+    "options": {
+      "A": "Forced choice method",
+      "B": "360 degree feedback appraisal",
+      "C": "Checklist",
+      "D": "Behaviorally anchored rating scale"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 98,
+    "question": "A false spoken statement damaging a person's reputation is known as",
+    "options": {
+      "A": "Assault",
+      "B": "Battery",
+      "C": "Libel",
+      "D": "Slander"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 99,
+    "question": "Manpower planning is closely associated with which function of management ?",
+    "options": {
+      "A": "Planning",
+      "B": "Organizing",
+      "C": "Staffing",
+      "D": "Directing"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 100,
+    "question": "_____ is the process of assigning responsibility and transferring required authority to the subordinates ensuring accountability.",
+    "options": {
+      "A": "Supervision",
+      "B": "Delegation",
+      "C": "Span of control",
+      "D": "Decentralization"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 101,
+    "question": "The difference between the end diastolic and end systolic volumes forms the:",
+    "options": {
+      "A": "cardiac output",
+      "B": "stroke volume",
+      "C": "diastasis",
+      "D": "atrial systole"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 102,
+    "question": "These are venous spaces situated in the middle cranial fossa, either side of sphenoid bone:",
+    "options": {
+      "A": "sigmoid sinus",
+      "B": "straight sinus",
+      "C": "cavernous sinus",
+      "D": "petrosal sinus"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 103,
+    "question": "It is characterised by irregular episodes of respiratory activity and apnoea :",
+    "options": {
+      "A": "Cheyne stokes breathing",
+      "B": "Biots breathing",
+      "C": "Periodic breathing",
+      "D": "Dyspnoea"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 104,
+    "question": "Selective reabsorption of sodium bicarbonate and secretion of hydrogen ion takes place :",
+    "options": {
+      "A": "Distal convoluted tubule",
+      "B": "Loop of Henle",
+      "C": "Proximal convoluted tubule",
+      "D": "Glomerular capsule"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 105,
+    "question": "The cell bodies which control skeletal muscle activity:",
+    "options": {
+      "A": "Betz's cells",
+      "B": "Wernicke's area",
+      "C": "Broca's area",
+      "D": "None of the above"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 106,
+    "question": "This leads to cardiac arrhythmias, alkalosis, syncope and muscle weakness:",
+    "options": {
+      "A": "Hyperkalaemia",
+      "B": "Hypokalaemia",
+      "C": "Hyponatraemia",
+      "D": "Hypernatremia"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 107,
+    "question": "In this condition in children the effects are diminished growth, lack of sexual development, obesity, learning disabilities:",
+    "options": {
+      "A": "Lorain-Levi syndrome",
+      "B": "Sheehan's syndrome",
+      "C": "Simmond's disease",
+      "D": "Frohlich's syndrome"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 108,
+    "question": "Susceptibility to diphtheria is detected by this test:",
+    "options": {
+      "A": "Smear and culture",
+      "B": "Serological diagnosis",
+      "C": "Lieshman's stain",
+      "D": "Schick test"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 109,
+    "question": "If the infection is the result of treatment or investigative procedure. It is known as:",
+    "options": {
+      "A": "Nosocomial infection",
+      "B": "Iatrogenic infection",
+      "C": "Cross infection",
+      "D": "Reinfection"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 110,
+    "question": "It is used for fumigating wards, sick rooms and laboratories:",
+    "options": {
+      "A": "Halogens",
+      "B": "Methanol",
+      "C": "Formaldehyde",
+      "D": "Ethylene oxide"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 111,
+    "question": "This theory explains the needs which motivate human behaviour such as need for achievement, need for affiliation:",
+    "options": {
+      "A": "Maslow",
+      "B": "Freud's theory",
+      "C": "McCelland's theory",
+      "D": "None above"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 112,
+    "question": "Sociology concept based on the principles of:",
+    "options": {
+      "A": "Social phenomenon",
+      "B": "Is factual",
+      "C": "Frames laws and attempt to predict",
+      "D": "Above all"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 113,
+    "question": "It is a process by which sensory systems convert stimulus energy into neural messages:",
+    "options": {
+      "A": "Sense perception",
+      "B": "Attention",
+      "C": "Paraesthesia",
+      "D": "Sensory transduction"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 114,
+    "question": "Which combines some of the characteristics of both reasoning and imagination?",
+    "options": {
+      "A": "creative thinking",
+      "B": "free thinking",
+      "C": "dreaming",
+      "D": "day dreaming"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 115,
+    "question": "It is the source of sexual energy that builds up and needs to be expressed in some way:",
+    "options": {
+      "A": "Ego",
+      "B": "Superego",
+      "C": "Id",
+      "D": "Above all"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 116,
+    "question": "He said that people differ along three personality dimensions, extraversion introversion, neuroticism and psychoticism:",
+    "options": {
+      "A": "Allport",
+      "B": "Cattell",
+      "C": "Eysenck",
+      "D": "Costa and McCrae"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 117,
+    "question": "It strengthens a response by removing an aversive stimulus :",
+    "options": {
+      "A": "Positive reinforcement",
+      "B": "Negative reinforcement",
+      "C": "Continuous reinforcement",
+      "D": "Partial reinforcement"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 118,
+    "question": "The chief agencies of socialization are:",
+    "options": {
+      "A": "Family",
+      "B": "School",
+      "C": "Friends",
+      "D": "Above all"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 119,
+    "question": "It is a social group determined by geographical boundaries, common values and interests:",
+    "options": {
+      "A": "Society",
+      "B": "Community",
+      "C": "Culture",
+      "D": "Above all"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 120,
+    "question": "A defence mechanism through which a person unconsciously forgets unpleasant experiences:",
+    "options": {
+      "A": "Reinforcement",
+      "B": "Regression",
+      "C": "Repression",
+      "D": "Retention"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 121,
+    "question": "The set of principles that reflect the primary goals, values and obligation of the profession:",
+    "options": {
+      "A": "Nursing standards",
+      "B": "Bill of rights",
+      "C": "Code of ethics",
+      "D": "Standing order"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 122,
+    "question": "A patient gets Tab. Morphine for chronic pain and develops constipation. This is an example for which among the following?",
+    "options": {
+      "A": "Idiosyncratic effect",
+      "B": "Toxic effect",
+      "C": "Allergic effect",
+      "D": "Adverse effect"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 123,
+    "question": "Among the barriers to communication, rejecting means:",
+    "options": {
+      "A": "Directing communication into areas of self interest",
+      "B": "Refusing to discuss certain points",
+      "C": "Asking information out of curiosity",
+      "D": "Making the client to admit something"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 124,
+    "question": "The flow rate of oxygen by simple face mask should not be less than :",
+    "options": {
+      "A": "5 liters per minute",
+      "B": "4 liters per minute",
+      "C": "3 liters per minute",
+      "D": "2 liters per minute"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 125,
+    "question": "Rapidly collapsing pulse is known as:",
+    "options": {
+      "A": "Bigeminal pulse",
+      "B": "Water hammer pulse",
+      "C": "Bounding pulse",
+      "D": "Paradoxical pulse"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 126,
+    "question": "Which of the following is the initial care to be done when chemical burn is suspected?",
+    "options": {
+      "A": "Try to neutralize the chemical",
+      "B": "Cover the burn area",
+      "C": "Flood with water",
+      "D": "Give plenty of fluids"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 127,
+    "question": "Which of the following is an isotonic solution?",
+    "options": {
+      "A": "10% Dextrose",
+      "B": "3% Saline",
+      "C": "Ringer's lactate",
+      "D": "Dextrose normal saline"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 128,
+    "question": "Suitable position for gynaecological examination:",
+    "options": {
+      "A": "Sim's position",
+      "B": "Lithotomy position",
+      "C": "Supine position",
+      "D": "Prone position"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 129,
+    "question": "Which among the following is a correct action with regard to documentation?",
+    "options": {
+      "A": "Chart in advance of the event",
+      "B": "Use vague terms",
+      "C": "Chart for someone else",
+      "D": "Use objective, specific, factual description"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 130,
+    "question": "Normal residual urine volume is :",
+    "options": {
+      "A": "50-100 ml",
+      "B": "10-50 ml",
+      "C": "200-250 ml",
+      "D": "250-300 ml"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 131,
+    "question": "Which of the following is primordial prevention?",
+    "options": {
+      "A": "Action taken to remove the possibility that a disease will ever occur",
+      "B": "Action that halts the progress of a disease",
+      "C": "Action taken prior to the onset of disease",
+      "D": "Prevention of emergence of development of risk factors"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 132,
+    "question": "Most heat sensitive vaccine is:",
+    "options": {
+      "A": "Polio",
+      "B": "BCG",
+      "C": "DPT",
+      "D": "Measles"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 133,
+    "question": "Disinfection is one which:",
+    "options": {
+      "A": "Kills bacteria and viruses",
+      "B": "Kills viruses",
+      "C": "Kills bacteria only",
+      "D": "Kills spores only"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 134,
+    "question": "White polished rice causes deficiency of:",
+    "options": {
+      "A": "Vitamin E",
+      "B": "Thiamine",
+      "C": "Riboflavin",
+      "D": "Vitamin K"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 135,
+    "question": "\"Health survey and planning committee\" is known as:",
+    "options": {
+      "A": "Kartar Singh Committee",
+      "B": "Shrivastav Committee",
+      "C": "Bhore Committee",
+      "D": "Mudaliar Committee"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 136,
+    "question": "Mid-day meal contains proteins and calories in what proportions?",
+    "options": {
+      "A": "1/2 Proteins & 1/3 Calories",
+      "B": "1/3 Proteins & 1/2 Calories",
+      "C": "1/3 Proteins & 1/3 Calories",
+      "D": "1/2 Proteins & 1/2 Calories"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 137,
+    "question": "Objective of the WHO is:",
+    "options": {
+      "A": "the attainment by all peoples of the highest level of health.",
+      "B": "to help poorer nations develop their human and natural resources.",
+      "C": "to promote the well-being of mankind throughout the world",
+      "D": "to help nations raise living standards and to improve nutrition of the people of all countries."
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 138,
+    "question": "All are examples of Food Fortification except:",
+    "options": {
+      "A": "Fluoridation of water",
+      "B": "Iodization of salt",
+      "C": "Saffron in milk",
+      "D": "Vitamin A in Vanaspati"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 139,
+    "question": "The peripheral outpost of the health care delivery system in rural areas:",
+    "options": {
+      "A": "Primary health centre",
+      "B": "Sub centre",
+      "C": "Community health centre",
+      "D": "Family health centre"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 140,
+    "question": "Night blindness is due to :",
+    "options": {
+      "A": "Vitamin D deficiency",
+      "B": "Vitamin A deficiency",
+      "C": "Protein deficiency",
+      "D": "Pyridoxine deficiency"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 141,
+    "question": "Battle's sign refers to:",
+    "options": {
+      "A": "Ecchymosis of flank area",
+      "B": "Ecchymosis around the eyes",
+      "C": "Ecchymosis of cost of vertebral angle",
+      "D": "Ecchymosis of the mastoid area"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 142,
+    "question": "The stage of sleep with EEG pattern similar to normal awake pattern is:",
+    "options": {
+      "A": "Stage 1",
+      "B": "Non REM Sleep",
+      "C": "REM Sleep",
+      "D": "Stage IV"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 143,
+    "question": "Stag- Horn Calculi are madeup of:",
+    "options": {
+      "A": "Calcium Oxalate",
+      "B": "Cholesterol",
+      "C": "Purine",
+      "D": "Magnesium Ammonium Phosphate"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 144,
+    "question": "Electrolyte imbalance is seen hyperparathyroidism is called :",
+    "options": {
+      "A": "Hypercalcemia",
+      "B": "Hypocalcemia",
+      "C": "Hyperkalemia",
+      "D": "Hypernatremia"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 145,
+    "question": "Pancytopenia is present in:",
+    "options": {
+      "A": "Aplastic anemia",
+      "B": "Sickle cell anemia",
+      "C": "Hemolytic anemia",
+      "D": "Pernicious anemia"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 146,
+    "question": "Water-hammer pulse is a feature of :",
+    "options": {
+      "A": "Aortic Aneurysm",
+      "B": "Mitral regurgitation",
+      "C": "Aortic regurgitation",
+      "D": "Aortic stenosis"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 147,
+    "question": "Heimlich maneuver is used:",
+    "options": {
+      "A": "To improve lung capacity",
+      "B": "To improve circulation",
+      "C": "To expel foreign bodies from the respiratory tract",
+      "D": "To stimulate cardiovascular system"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 148,
+    "question": "Principles used in closed chest drainage:",
+    "options": {
+      "A": "Gravity, Positive pressure, Suction",
+      "B": "Ambulation",
+      "C": "Gravity, Negative pressure, Suction",
+      "D": "Posture"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 149,
+    "question": "Intraocular pressure is measured with an instrument called:",
+    "options": {
+      "A": "Manometer",
+      "B": "Tonometer",
+      "C": "Perimeter",
+      "D": "Occulometer"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 150,
+    "question": "Philadelphia chromosome is associated with:",
+    "options": {
+      "A": "Breast cancer",
+      "B": "Glioma",
+      "C": "Leukemia",
+      "D": "Thyroid cancer"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 151,
+    "question": "The most persistent adverse effect of ECT is:",
+    "options": {
+      "A": "Fractures",
+      "B": "Retrograde amnesia",
+      "C": "Seizures",
+      "D": "Hypertension"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 152,
+    "question": "La-belle - indifference may be seen in :",
+    "options": {
+      "A": "Schizophrenia",
+      "B": "Phobic anxiety disorder",
+      "C": "Bipolar affective disorder",
+      "D": "Dissociative disorder"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 153,
+    "question": "Other name of mini mental status examination is:",
+    "options": {
+      "A": "Freud MSE",
+      "B": "Folstein MSE",
+      "C": "Briads' MSE",
+      "D": "Both (A) and (C)"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 154,
+    "question": "Which of the following is a therapeutic communication technique?",
+    "options": {
+      "A": "Arguing",
+      "B": "Sympathy",
+      "C": "Paraphrasing",
+      "D": "Advising"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 155,
+    "question": "The Narcotic Drugs and Psychotrophic Substance Act (NDPSA) was passed in the year:",
+    "options": {
+      "A": "1982",
+      "B": "1985",
+      "C": "1995",
+      "D": "2000"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 156,
+    "question": "Disorientation and visual hallucinations are the hallmark sign of:",
+    "options": {
+      "A": "Depersonalization syndrome",
+      "B": "Mania",
+      "C": "Delirium",
+      "D": "Schizophrenia"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 157,
+    "question": "What are the most common types of side effects from SSRIs?",
+    "options": {
+      "A": "Dizziness, drowsiness, dry mouth",
+      "B": "Diarrhoea, weight gain",
+      "C": "Convulsions, respiratory difficulties",
+      "D": "Jaundice, agranulocytosis"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 158,
+    "question": "Which of the following is not include in Kanner's autistic triad?",
+    "options": {
+      "A": "Autistic aloofness",
+      "B": "Speech or language disorder",
+      "C": "Obsessive desire for sameness",
+      "D": "Impulsivity"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 159,
+    "question": "Which of the following are considered the positive signs of Schizophrenia?",
+    "options": {
+      "A": "Delusions, anhedonia, ambivalence",
+      "B": "Hallucinations, illusions, ambivalence",
+      "C": "Delusions, hallucinations, disordered thinking",
+      "D": "Disordered thinking, anhedonia, illusions"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 160,
+    "question": "Role of community mental health nurse described as:",
+    "options": {
+      "A": "Extended role",
+      "B": "Expanded role",
+      "C": "General role",
+      "D": "Clinical role"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 161,
+    "question": "In which of the following conditions is cyanosis NOT seen in a newborn?",
+    "options": {
+      "A": "Methemoglobinaemia",
+      "B": "Atrial Septal Defect",
+      "C": "Tetralogy of Fallot",
+      "D": "Truncus Arteriosus"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 162,
+    "question": "Protein requirement of a critically ill child with Burns > 20% Total Body Surface Area burnt is:",
+    "options": {
+      "A": "1 g/kg/24 hours",
+      "B": "1 – 1.5 g/kg/24 hours",
+      "C": "1.5 – 2 g/kg/24 hours",
+      "D": "2 – 3 g/kg/24 hours"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 163,
+    "question": "Which of the following sign is NOT included in the Apgar evaluation of a newborn?",
+    "options": {
+      "A": "Color",
+      "B": "Respiratory effort",
+      "C": "SPO2",
+      "D": "Muscle tone"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 164,
+    "question": "Daily maintenance fluid requirement of a child with weight 22 kg is:",
+    "options": {
+      "A": "1540 ml",
+      "B": "2200 ml",
+      "C": "1100 ml",
+      "D": "1560 ml"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 165,
+    "question": "A condition characterised by the absence of intramural ganglion cells of the bowel is:",
+    "options": {
+      "A": "Malrotation of gut",
+      "B": "Intussusception",
+      "C": "Hirschsprung's disease",
+      "D": "Meckel's diverticulum"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 166,
+    "question": "Which type of antigen does Pneumococcal vaccine contain?",
+    "options": {
+      "A": "Live attenuated bacteria",
+      "B": "Killed bacteria",
+      "C": "Toxoid",
+      "D": "Capsular polysaccharide"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 167,
+    "question": "The conservation of length is recognised at the age of:",
+    "options": {
+      "A": "9-12 years",
+      "B": "6-7 years",
+      "C": "1-3 years",
+      "D": "13-15 years"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 168,
+    "question": "The chromosomal genetic disorder with 47, XXY is:",
+    "options": {
+      "A": "Klinefelter syndrome",
+      "B": "Down syndrome",
+      "C": "Turner syndrome",
+      "D": "Beckwith - Wiedemann syndrome"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 169,
+    "question": "Which of the following is an organic cause of Failure To Thrive in children?",
+    "options": {
+      "A": "Poverty",
+      "B": "Illiteracy",
+      "C": "Intestinal parasitosis",
+      "D": "Faulty food habits"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 170,
+    "question": "Which of the following statements is false regarding Naso Gastric Tube (NGT) feeding in children?",
+    "options": {
+      "A": "Position the child in head elevated 30-45 degrees after the NGT feeding.",
+      "B": "The rate of flow of feeding should be above 30 ml/minute in children.",
+      "C": "The food/ formula should be at room temperature.",
+      "D": "Cap or clamp the indwelling NGT."
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 171,
+    "question": "Sheehan's Syndrome is a complication of :",
+    "options": {
+      "A": "Hyperthyroidism",
+      "B": "Uterine Inversion",
+      "C": "Post partum Haemorrhage",
+      "D": "Cervical Insufficiency"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 172,
+    "question": "The most obstetrically significant Anteroposterior diameter of the pelvic Inlet during labour:",
+    "options": {
+      "A": "Obstetrical conjugate",
+      "B": "Diagonal conjugate",
+      "C": "Anatomical conjugate",
+      "D": "Sacrocotyloid diameter"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 173,
+    "question": "The suture which separates the parietal and frontal bones in foetal skull is:",
+    "options": {
+      "A": "Sagittal suture",
+      "B": "Metopic suture",
+      "C": "Coronal suture",
+      "D": "Lambdoid suture"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 174,
+    "question": "The type of vaginal discharge expected on 2rd post natal day is :",
+    "options": {
+      "A": "Linea Nigra",
+      "B": "Lochia Rubra ",
+      "C": "Lochia Serosa",
+      "D": "Linea Alba"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 175,
+    "question": "Which of the following Manoeuvre is used for the delivery of shoulders in breech presentation?",
+    "options": {
+      "A": "Mc Robert Manoeuvre",
+      "B": "Lovset Manoeuvre",
+      "C": "Burns Marshall Manoeuvre",
+      "D": "Mauriceau Smellie Viet Manoeuvre"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 176,
+    "question": "The most common site of ectopic pregnancy is:",
+    "options": {
+      "A": "Ampulla",
+      "B": "Isthmus",
+      "C": "Infundibulum",
+      "D": "Cornua"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 177,
+    "question": "Which one of the following is NOT TRUE regarding hormonal basis for the onset of labour?",
+    "options": {
+      "A": "Arachidonic acid is the precussor of prostaglandins",
+      "B": "Oxytocin inhibit calcium binding and increase intracellular calcium level",
+      "C": "Prostaglandins induce formation of gap junctions",
+      "D": "Oestrogen fall and Progesterone rise at term"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 178,
+    "question": "Fibroids which arises from uterine surface and projects into the peritoneal cavity is :",
+    "options": {
+      "A": "Intramural Fibroids",
+      "B": "Subserous Fibroids",
+      "C": "Submucous Fibroids",
+      "D": "Cervical Fibroids"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 179,
+    "question": "Which one of the following statement is FALSE regarding Retraction ring?",
+    "options": {
+      "A": "Also known as Bandl's ring",
+      "B": "Forms at the junction of upper and lower uterine segment",
+      "C": "Feature of obstructed labour",
+      "D": "Results in hour glass contraction"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 180,
+    "question": "Which of the following structure produces Gonadotrophins?",
+    "options": {
+      "A": "Anterior Pituitary gland",
+      "B": "Hypothalamus",
+      "C": "Posterior Pituitary gland",
+      "D": "Adrenal gland"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 181,
+    "question": "The ethical principle which guides the nurse responsibility to keep promises is:",
+    "options": {
+      "A": "Justice",
+      "B": "Fidelity",
+      "C": "Beneficence",
+      "D": "Veracity"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 182,
+    "question": "What is the basis of VED analysis in Inventory Control?",
+    "options": {
+      "A": "Degree of Criticality",
+      "B": "Annual consumption value",
+      "C": "Unit value of an item",
+      "D": "Consumption pattern"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 183,
+    "question": "The type of patient assignment which utilizes the expertise of individual Nurses through systematic participation is:",
+    "options": {
+      "A": "Team Nursing",
+      "B": "Modular Nursing",
+      "C": "Primary Nursing",
+      "D": "Functional Nursing"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 184,
+    "question": "Communication of a statement in a printed or fixed medium which can harm another person's reputation:",
+    "options": {
+      "A": "Slander",
+      "B": "Fraud",
+      "C": "Rumour",
+      "D": "Libel"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 185,
+    "question": "Which among the following is an example of on the job staff development method?",
+    "options": {
+      "A": "Temporary Promotion",
+      "B": "Case Study",
+      "C": "Incentives",
+      "D": "Role play"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 186,
+    "question": "The management principle which tells that there should be a clear line of authority for connecting the various levels of a single organization:",
+    "options": {
+      "A": "Order",
+      "B": "Unity of Direction",
+      "C": "Scalar chain of command",
+      "D": "Esprit de Corps"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 187,
+    "question": "The style of leadership in which the leader aims to elicit desired performance from the employee by offering rewards for performance and punishment for non performance:",
+    "options": {
+      "A": "Transformational leader",
+      "B": "Participatory leadership",
+      "C": "Autocratic leadership",
+      "D": "Transactional leadership"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 188,
+    "question": "The management function which focuses on measuring results, comparing result with expected standards and taking corrective action for achievement of organizational goal:",
+    "options": {
+      "A": "Atuning",
+      "B": "Controlling",
+      "C": "Organizing",
+      "D": "Co ordinating"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 189,
+    "question": "The error in performance appraisal where an employer rates an employee to the low level of evaluation scale based on a recent or single negative attribute:",
+    "options": {
+      "A": "Recency Effect",
+      "B": "Halo Effect",
+      "C": "Horn Effect",
+      "D": "Stereotyping effect"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 190,
+    "question": "The management skill which is essential with high priority for top level managers:",
+    "options": {
+      "A": "Conceptual skill",
+      "B": "Human relation skill",
+      "C": "Technical skill",
+      "D": "Observation skill"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 191,
+    "question": "The quality of a research tool to measure exactly what it is intended to measure:",
+    "options": {
+      "A": "Sensitivity",
+      "B": "Validity",
+      "C": "Reliability",
+      "D": "Objectivity"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 192,
+    "question": "The simplest and lowest level of measurement:",
+    "options": {
+      "A": "Nominal Scale",
+      "B": "Ordinal Scale",
+      "C": "Ratio Scale",
+      "D": "Interval Scale"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 193,
+    "question": "The statistical method used to identify the strength of association between two quantitative and continuous variables:",
+    "options": {
+      "A": "Variance",
+      "B": "Correlation",
+      "C": "Quartile range",
+      "D": "Standard deviation"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 194,
+    "question": "The only measure of Central Tendency which uses Nominal Variables:",
+    "options": {
+      "A": "Mean",
+      "B": "Median",
+      "C": "Mode",
+      "D": "Range"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 195,
+    "question": "The research design in which the investigator initially collects data about the presumed cause and then its effect on the outcome is measured:",
+    "options": {
+      "A": "Prospective design",
+      "B": "Retrospective design",
+      "C": "Time series design",
+      "D": "Cross over design"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 196,
+    "question": "The method of sampling used by a researcher to find out the subjects who are rare and hard to locate:",
+    "options": {
+      "A": "Cluster sampling",
+      "B": "Quota sampling",
+      "C": "Homogenous sampling",
+      "D": "Snowball Sampling"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 197,
+    "question": "The type of learning in which a child develop general diffuse reaction to a stimulus:",
+    "options": {
+      "A": "Discriminative learning",
+      "B": "Signal learning",
+      "C": "Stimulus - response learning",
+      "D": "Concept learning"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 198,
+    "question": "The educational Philosopher who admired school as a garden, teacher as a gardener and students as tender plants:",
+    "options": {
+      "A": "Aristotle",
+      "B": "Plato",
+      "C": "Froebel",
+      "D": "Pestalozzi"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 199,
+    "question": "The method of discussion in which different viewpoints or opinions in relation to a single topic is presented by various experts under the guidance of a chair person:",
+    "options": {
+      "A": "Symposium",
+      "B": "Buzz discussion",
+      "C": "Panel discussion",
+      "D": "Seminar"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 200,
+    "question": "The instrument of choice for evaluating the proficiency of a student to reproduce a particular Nursing Skill :",
+    "options": {
+      "A": "Portfolio",
+      "B": "Anecdote",
+      "C": "Rating Scale",
+      "D": "Checklist"
+    },
+    "correct_answer": "D"
+  }
+]
