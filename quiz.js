@@ -145,3 +145,135 @@ function startQuiz() {
     renderPage();
 
                             }
+// ============================
+// Render Page
+// ============================
+
+function renderPage() {
+
+    const container = document.getElementById("quizContainer");
+
+    const pageInfo = document.getElementById("pageInfo");
+
+    const questionInfo = document.getElementById("questionInfo");
+
+    const pageScore = document.getElementById("pageScore");
+
+    const prevBtn = document.getElementById("prevBtn");
+
+    const nextBtn = document.getElementById("nextBtn");
+
+    const checkBtn = document.getElementById("checkBtn");
+
+    const submitBtn = document.getElementById("submitBtn");
+
+    container.innerHTML = "";
+
+    pageScore.style.display = "none";
+    pageScore.textContent = "";
+
+    const start = currentPage * questionsPerPage;
+
+    const end = Math.min(start + questionsPerPage, quizQuestions.length);
+
+    pageInfo.textContent =
+        `Page ${currentPage + 1} / ${Math.ceil(quizQuestions.length / questionsPerPage)}`;
+
+    questionInfo.textContent =
+        `Questions ${start + 1} - ${end} of ${quizQuestions.length}`;
+
+    // ----------------------------
+    // Render Questions
+    // ----------------------------
+
+    for (let i = start; i < end; i++) {
+
+        const q = quizQuestions[i];
+
+        const card = document.createElement("div");
+
+        card.className = "quiz-card";
+
+        card.innerHTML = `
+            <h3>Q${i + 1}. ${q.question}</h3>
+
+            <label>
+                <input type="radio" name="q${i}" value="A"
+                ${userAnswers[i] === "A" ? "checked" : ""}>
+                ${q.options.A}
+            </label><br><br>
+
+            <label>
+                <input type="radio" name="q${i}" value="B"
+                ${userAnswers[i] === "B" ? "checked" : ""}>
+                ${q.options.B}
+            </label><br><br>
+
+            <label>
+                <input type="radio" name="q${i}" value="C"
+                ${userAnswers[i] === "C" ? "checked" : ""}>
+                ${q.options.C}
+            </label><br><br>
+
+            <label>
+                <input type="radio" name="q${i}" value="D"
+                ${userAnswers[i] === "D" ? "checked" : ""}>
+                ${q.options.D}
+            </label>
+        `;
+
+        container.appendChild(card);
+
+    }
+
+    // ----------------------------
+    // Save Selected Answers
+    // ----------------------------
+
+    document.querySelectorAll("input[type=radio]").forEach(radio => {
+
+        radio.addEventListener("change", function () {
+
+            const index = Number(this.name.substring(1));
+
+            userAnswers[index] = this.value;
+
+        });
+
+    });
+
+    // ----------------------------
+    // Navigation Buttons
+    // ----------------------------
+
+    prevBtn.style.display =
+        currentPage === 0 ? "none" : "inline-block";
+
+    const lastPage =
+        currentPage === Math.ceil(quizQuestions.length / questionsPerPage) - 1;
+
+    nextBtn.style.display =
+        lastPage ? "none" : "inline-block";
+
+    submitBtn.style.display =
+        lastPage ? "inline-block" : "none";
+
+    // ----------------------------
+    // Check Button State
+    // ----------------------------
+
+    if (reviewedPages[currentPage]) {
+
+        checkBtn.disabled = true;
+
+        nextBtn.disabled = false;
+
+    } else {
+
+        checkBtn.disabled = false;
+
+        nextBtn.disabled = true;
+
+    }
+
+}
