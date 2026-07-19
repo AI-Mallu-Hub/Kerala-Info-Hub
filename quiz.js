@@ -275,5 +275,169 @@ function renderPage() {
         nextBtn.disabled = true;
 
     }
+    restoreReviewedPage();
 
 }
+// ============================
+// Previous Button
+// ============================
+
+document.getElementById("prevBtn").addEventListener("click", () => {
+
+    if (currentPage > 0) {
+
+        currentPage--;
+
+        renderPage();
+
+    }
+
+});
+
+// ============================
+// Next Button
+// ============================
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+
+    const totalPages = Math.ceil(quizQuestions.length / questionsPerPage);
+
+    if (currentPage < totalPages - 1) {
+
+        currentPage++;
+
+        renderPage();
+
+    }
+
+});
+
+// ============================
+// Check Answers
+// ============================
+
+document.getElementById("checkBtn").addEventListener("click", () => {
+
+    const start = currentPage * questionsPerPage;
+    const end = Math.min(start + questionsPerPage, quizQuestions.length);
+
+    let pageScore = 0;
+
+    for (let i = start; i < end; i++) {
+
+        const q = quizQuestions[i];
+
+        const radios = document.querySelectorAll(`input[name="q${i}"]`);
+
+        radios.forEach(radio => {
+
+            const label = radio.parentElement;
+
+            // പഴയ classes remove ചെയ്യുക
+            label.classList.remove("correct");
+            label.classList.remove("wrong");
+
+            // answers lock ചെയ്യുക
+            radio.disabled = true;
+
+            // Correct Answer
+            if (radio.value === q.correct_answer) {
+
+                label.classList.add("correct");
+
+            }
+
+            // Wrong Selected Answer
+            if (
+                userAnswers[i] === radio.value &&
+                radio.value !== q.correct_answer
+            ) {
+
+                label.classList.add("wrong");
+
+            }
+
+        });
+
+        if (userAnswers[i] === q.correct_answer) {
+
+            pageScore++;
+
+        }
+
+    }
+
+    reviewedPages[currentPage] = true;
+    lockedPages[currentPage] = true;
+
+    const pageScoreBox = document.getElementById("pageScore");
+
+    pageScoreBox.style.display = "block";
+
+    pageScoreBox.textContent =
+        `✅ Page Score : ${pageScore} / ${end - start}`;
+
+    document.getElementById("checkBtn").disabled = true;
+
+    document.getElementById("nextBtn").disabled = false;
+
+});
+
+// ============================
+// Restore Reviewed Pages
+// ============================
+
+function restoreReviewedPage() {
+
+    if (!reviewedPages[currentPage]) return;
+
+    const start = currentPage * questionsPerPage;
+    const end = Math.min(start + questionsPerPage, quizQuestions.length);
+
+    let pageScore = 0;
+
+    for (let i = start; i < end; i++) {
+
+        const q = quizQuestions[i];
+
+        const radios = document.querySelectorAll(`input[name="q${i}"]`);
+
+        radios.forEach(radio => {
+
+            const label = radio.parentElement;
+
+            radio.disabled = true;
+
+            if (radio.value === q.correct_answer) {
+
+                label.classList.add("correct");
+
+            }
+
+            if (
+                userAnswers[i] === radio.value &&
+                radio.value !== q.correct_answer
+            ) {
+
+                label.classList.add("wrong");
+
+            }
+
+        });
+
+        if (userAnswers[i] === q.correct_answer) {
+
+            pageScore++;
+
+        }
+
+    }
+
+    const pageScoreBox = document.getElementById("pageScore");
+
+    pageScoreBox.style.display = "block";
+
+    pageScoreBox.textContent =
+        `✅ Page Score : ${pageScore} / ${end - start}`;
+
+                                 }
