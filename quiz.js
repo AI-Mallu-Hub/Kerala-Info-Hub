@@ -1,11 +1,31 @@
+// ----------------------------
+// Global Variables
+// ----------------------------
+
+let quizQuestions = [];
+let currentPage = 0;
+const questionsPerPage = 5;
+let userAnswers = {};
+
+// ----------------------------
+// Load JSON
+// ----------------------------
+
 async function loadQuestions() {
     const response = await fetch("data/psc_quiz.json");
     return await response.json();
 }
+
+// ----------------------------
+// Random Shuffle
+// ----------------------------
+
 function shuffle(array) {
+
     const arr = [...array];
 
     for (let i = arr.length - 1; i > 0; i--) {
+
         const j = Math.floor(Math.random() * (i + 1));
 
         [arr[i], arr[j]] = [arr[j], arr[i]];
@@ -13,13 +33,11 @@ function shuffle(array) {
 
     return arr;
 }
-async function getPracticeQuiz(total = 50) {
 
-    const questions = await loadQuestions();
+// ----------------------------
+// Daily Shuffle
+// ----------------------------
 
-    return shuffle(questions).slice(0, total);
-
-}
 function seededRandom(seed) {
 
     let x = Math.sin(seed) * 10000;
@@ -27,6 +45,7 @@ function seededRandom(seed) {
     return x - Math.floor(x);
 
 }
+
 function seededShuffle(array, seed) {
 
     const arr = [...array];
@@ -43,10 +62,15 @@ function seededShuffle(array, seed) {
 
     return arr;
 
-      }
-async function getDailyQuiz(total = 50) {
+}
 
-    const questions = await loadQuestions();
+// ----------------------------
+// Start Daily Quiz
+// ----------------------------
+
+async function startDailyQuiz() {
+
+    const all = await loadQuestions();
 
     const today = new Date();
 
@@ -55,57 +79,184 @@ async function getDailyQuiz(total = 50) {
         (today.getMonth() + 1) * 100 +
         today.getDate();
 
-    return seededShuffle(questions, seed).slice(0, total);
+    quizQuestions = seededShuffle(all, seed).slice(0, 50);
 
-    }
-async function startDailyQuiz(){
-
-    const quiz = await getDailyQuiz(50);
-
-    console.log(quiz);
-
-      }
-async function startPracticeQuiz(){
-
-    const quiz = await getPracticeQuiz(50);
-
-    console.log(quiz);
+    startQuiz();
 
 }
-let seconds = 50 * 60;
 
-setInterval(() => {
+// ----------------------------
+// Start Practice Quiz
+// ----------------------------
 
-    seconds--;
+async function startPracticeQuiz() {
 
-    const min = Math.floor(seconds / 60);
+    const all = await loadQuestions();
 
-    const sec = seconds % 60;
+    quizQuestions = shuffle(all).slice(0, 50);
 
-    document.getElementById("timer").innerHTML =
-        `${min}:${sec.toString().padStart(2,'0')}`;
+    startQuiz();
 
-    if(seconds<=0){
+}
 
-        submitQuiz();
+// ----------------------------
+// Start Quiz
+// ----------------------------
+
+function startQuiz() {
+
+    currentPage = 0;
+
+    userAnswers = {};
+
+    document.getElementById("quizArea").style.display = "block";
+
+    document.getElementById("resultBox").style.display = "none";
+
+    renderPage();
+
+}
+
+// ----------------------------
+// Render Questions
+// ----------------------------
+
+function renderPage() {
+
+    const container = document.getElementById("quizContainer");
+
+    container.innerHTML = "";
+
+    const start = currentPage * questionsPerPage;
+
+    const end = Math.min(start + questionsPerPage, quizQuestions.length);
+
+    document.getElementById("pageInfo").textContent =
+        `Page ${currentPage + 1} / ${Math.ceil(quizQuestions.length / questionsPerPage)}`;
+
+    document.getElementById("questionInfo").textContent =
+        `Questions ${start + 1} - ${end} of ${quizQuestions.length}`;
+
+    for (let i = start; i < end; i++) {
+
+        const q = quizQuestions[i];
+
+        container.innerHTML += `
+
+<div class="quiz-card">
+
+<h3>Q${i + 1}. ${q.question}</h3>
+
+<label>
+<input type="radio" name="q${i}" value="A"
+${userAnswers[i] === "A" ? "checked" : ""}>
+${q.options.A}
+</label><br><br>
+
+<label>
+<input type="radio" name="q${i}" value="B"
+${userAnswers[i] === "B" ? "checked" : ""}>
+${q.options.B}
+</label><br><br>
+
+<label>
+<input type="radio" name="q${i}" value="C"
+${userAnswers[i] === "C" ? "checked" : ""}>
+${q.options.C}
+</label><br><br>
+
+<label>
+<input type="radio" name="q${i}" value="D"
+${userAnswers[i] === "D" ? "checked" : ""}>
+${q.options.D}
+</label>
+
+</div>
+
+`;
 
     }
 
-},1000);
-let score = 0;
+    document.querySelectorAll("input[type=radio]").forEach(radio => {
 
-quiz.forEach((q,index)=>{
+        radio.addEventListener("change", function () {
 
-    const selected = document.querySelector(
-        `input[name="q${index}"]:checked`
-    );
+            const index = this.name.substring(1);
 
-    if(selected && selected.value===q.correct_answer){
+            userAnswers[index] = this.value;
 
-        score++;
+        });
+
+    });
+
+    document.getElementById("prevBtn").style.display =
+        currentPage === 0 ? "none" : "inline-block";
+
+    if (currentPage === Math.ceil(quizQuestions.length / questionsPerPage) - 1) {
+
+        document.getElementById("nextBtn").style.display = "none";
+
+        document.getElementById("submitBtn").style.display = "inline-block";
+
+    } else {
+
+        document.getElementById("nextBtn").style.display = "inline-block";
+
+        document.getElementById("submitBtn").style.display = "none";
 
     }
+
+}
+
+// ----------------------------
+// Navigation
+// ----------------------------
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+
+    currentPage++;
+
+    renderPage();
 
 });
 
-alert(`Score : ${score}/50`);
+document.getElementById("prevBtn").addEventListener("click", () => {
+
+    currentPage--;
+
+    renderPage();
+
+});
+
+// ----------------------------
+// Submit
+// ----------------------------
+
+document.getElementById("submitBtn").addEventListener("click", () => {
+
+    let score = 0;
+
+    quizQuestions.forEach((q, index) => {
+
+        if (userAnswers[index] === q.correct_answer) {
+
+            score++;
+
+        }
+
+    });
+
+    document.getElementById("quizArea").style.display = "none";
+
+    document.getElementById("resultBox").style.display = "block";
+
+    document.getElementById("scoreText").textContent =
+        `Score : ${score} / ${quizQuestions.length}`;
+
+    document.getElementById("correctText").textContent =
+        `✅ Correct : ${score}`;
+
+    document.getElementById("wrongText").textContent =
+        `❌ Wrong : ${quizQuestions.length - score}`;
+
+});
