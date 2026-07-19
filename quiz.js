@@ -256,6 +256,70 @@ document.getElementById("prevBtn").addEventListener("click", () => {
     renderPage();
 
 });
+// ----------------------------
+// Check Current Page Answers
+// ----------------------------
+
+document.getElementById("checkBtn").addEventListener("click", () => {
+
+    const start = currentPage * questionsPerPage;
+
+    const end = Math.min(start + questionsPerPage, quizQuestions.length);
+
+    let pageScore = 0;
+
+    for (let i = start; i < end; i++) {
+
+        const q = quizQuestions[i];
+
+        const labels =
+            document.querySelectorAll(`input[name="q${i}"]`);
+
+        labels.forEach(input => {
+
+            const label = input.parentElement;
+
+            input.disabled = true;
+
+            if (input.value === q.correct_answer) {
+
+                label.classList.add("correct");
+
+            }
+
+            if (
+                userAnswers[i] === input.value &&
+                input.value !== q.correct_answer
+            ) {
+
+                label.classList.add("wrong");
+
+            }
+
+        });
+
+        if (userAnswers[i] === q.correct_answer) {
+
+            pageScore++;
+
+        }
+
+    }
+
+    reviewedPages[currentPage] = true;
+
+    lockedPages[currentPage] = true;
+
+    document.getElementById("pageScore").style.display = "block";
+
+    document.getElementById("pageScore").textContent =
+        `✅ Page Score : ${pageScore} / ${end - start}`;
+
+    document.getElementById("checkBtn").disabled = true;
+
+    document.getElementById("nextBtn").disabled = false;
+
+});
 
 // ----------------------------
 // Submit
