@@ -6,6 +6,11 @@ let quizQuestions = [];
 let currentPage = 0;
 const questionsPerPage = 5;
 let userAnswers = {};
+// Reviewed Pages
+let reviewedPages = {};
+
+// Locked Pages
+let lockedPages = {};
 
 // ----------------------------
 // Load JSON
@@ -128,6 +133,10 @@ function startQuiz() {
 
     userAnswers = {};
 
+    reviewedPages = {};
+
+    lockedPages = {};
+
     document.getElementById("quizArea").style.display = "block";
 
     document.getElementById("resultBox").style.display = "none";
@@ -145,6 +154,7 @@ function renderPage() {
     const container = document.getElementById("quizContainer");
 
     container.innerHTML = "";
+    document.getElementById("pageScore").style.display = "none";
 
     const start = currentPage * questionsPerPage;
 
@@ -252,6 +262,28 @@ document.getElementById("prevBtn").addEventListener("click", () => {
 // ----------------------------
 
 document.getElementById("submitBtn").addEventListener("click", () => {
+
+    // ----------------------------
+// Check Button / Next Button
+// ----------------------------
+
+const checkBtn = document.getElementById("checkBtn");
+
+const nextBtn = document.getElementById("nextBtn");
+
+if (reviewedPages[currentPage]) {
+
+    checkBtn.disabled = true;
+
+    nextBtn.disabled = false;
+
+} else {
+
+    checkBtn.disabled = false;
+
+    nextBtn.disabled = true;
+
+}
 
     let score = 0;
 
