@@ -307,3 +307,172 @@ button{
 }
 
   }
+/* =====================================
+   Practice Mode - Check Answers
+===================================== */
+
+/* Check Answers Button */
+
+#checkBtn{
+
+    background:#198754;
+
+    color:#fff;
+
+}
+
+#checkBtn:hover{
+
+    background:#157347;
+
+}
+
+/* Disabled Buttons */
+
+button:disabled{
+
+    background:#adb5bd;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+    opacity:.8;
+
+}
+
+/* =====================================
+   Correct / Wrong Answers
+===================================== */
+
+/* Correct Option */
+
+.correct{
+
+    background:#d1e7dd !important;
+
+    border:2px solid #198754 !important;
+
+    color:#0f5132 !important;
+
+    font-weight:600;
+
+}
+
+/* Wrong Option */
+
+.wrong{
+
+    background:#f8d7da !important;
+
+    border:2px solid #dc3545 !important;
+
+    color:#842029 !important;
+
+    font-weight:600;
+
+}
+
+/* Locked Answers */
+
+.locked{
+
+    pointer-events:none;
+
+    opacity:.95;
+
+}
+
+/* =====================================
+   Page Score
+===================================== */
+
+.page-score{
+
+    display:none;
+
+    margin:20px 0;
+
+    padding:16px;
+
+    border-radius:10px;
+
+    background:#e7f1ff;
+
+    border-left:5px solid #0d6efd;
+
+    color:#0d6efd;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    text-align:center;
+
+}
+
+/* =====================================
+   Result Buttons
+===================================== */
+
+.result-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-top:25px;
+
+}
+
+.result-actions button{
+
+    min-width:180px;
+
+}
+
+/* =====================================
+   Option Animation
+===================================== */
+
+.quiz-card label{
+
+    transition:
+
+        background .25s,
+
+        border-color .25s,
+
+        transform .15s;
+
+}
+
+.quiz-card label:hover{
+
+    transform:translateX(4px);
+
+}
+
+/* =====================================
+   Mobile
+===================================== */
+
+@media(max-width:768px){
+
+    .result-actions{
+
+        flex-direction:column;
+
+    }
+
+    .result-actions button{
+
+        width:100%;
+
+    }
+
+   }
