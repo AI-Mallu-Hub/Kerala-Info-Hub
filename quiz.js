@@ -552,12 +552,27 @@ document.getElementById("retakeBtn").addEventListener("click", () => {
 
 });
 
+
 // ============================
-// Review Button
+// Review All Answers
 // ============================
 
-document.getElementById("reviewBtn").addEventListener("click", () => {
+    document.getElementById("reviewBtn").addEventListener("click", () => {
 
-    alert("Review All Answers will be available in the next update.");
+    document.getElementById("resultBox").style.display = "none";
+
+    document.getElementById("reviewSection").style.display = "block";
+
+});
+
+// ============================
+// Close Review
+// ============================
+
+document.getElementById("closeReviewBtn").addEventListener("click", () => {
+
+    document.getElementById("reviewSection").style.display = "none";
+
+    document.getElementById("resultBox").style.display = "block";
 
 });
