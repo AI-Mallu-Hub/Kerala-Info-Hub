@@ -1200,7 +1200,7 @@
     "explanation": "Delegation is the process of assigning responsibility and transferring the necessary authority to subordinates while the manager retains overall accountability."
   },
   {
-    "id": 101,
+    "question_number": 101,
     "question": "The difference between the end diastolic and end systolic volumes forms the:",
     "options": {
       "A": "cardiac output",
@@ -1212,7 +1212,7 @@
     "explanation": "Stroke volume is the amount of blood pumped by one ventricle in a single heartbeat. It is calculated as End Diastolic Volume (EDV) minus End Systolic Volume (ESV)."
   },
   {
-    "id": 102,
+    "question_number": 102,
     "question": "These are venous spaces situated in the middle cranial fossa, either side of sphenoid bone:",
     "options": {
       "A": "sigmoid sinus",
@@ -1224,7 +1224,7 @@
     "explanation": "The cavernous sinuses are paired venous sinuses located on either side of the sphenoid bone in the middle cranial fossa. They contain the internal carotid artery and several cranial nerves."
   },
   {
-    "id": 103,
+    "question_number": 103,
     "question": "It is characterised by irregular episodes of respiratory activity and apnoea :",
     "options": {
       "A": "Cheyne stokes breathing",
@@ -1236,7 +1236,7 @@
     "explanation": "Biot's breathing is characterized by irregular breathing with unpredictable periods of apnea. It is commonly associated with brainstem lesions and raised intracranial pressure."
   },
   {
-    "id": 104,
+    "question_number": 104,
     "question": "Selective reabsorption of sodium bicarbonate and secretion of hydrogen ion takes place :",
     "options": {
       "A": "Distal convoluted tubule",
@@ -1248,7 +1248,7 @@
     "explanation": "The distal convoluted tubule helps maintain acid-base balance by reabsorbing bicarbonate and secreting hydrogen ions under hormonal regulation."
   },
   {
-    "id": 105,
+    "question_number": 105,
     "question": "The cell bodies which control skeletal muscle activity:",
     "options": {
       "A": "Betz's cells",
@@ -1260,7 +1260,7 @@
     "explanation": "Betz cells are giant pyramidal neurons located in the primary motor cortex. They initiate voluntary movements by controlling skeletal muscles."
   },
   {
-    "id": 106,
+    "question_number": 106,
     "question": "This leads to cardiac arrhythmias, alkalosis, syncope and muscle weakness:",
     "options": {
       "A": "Hyperkalaemia",
@@ -1272,7 +1272,7 @@
     "explanation": "Hypokalaemia can cause cardiac arrhythmias, muscle weakness, metabolic alkalosis, and syncope due to impaired muscle and cardiac function."
   },
   {
-    "id": 107,
+    "question_number": 107,
     "question": "In this condition in children the effects are diminished growth, lack of sexual development, obesity, learning disabilities:",
     "options": {
       "A": "Lorain-Levi syndrome",
@@ -1284,7 +1284,7 @@
     "explanation": "Frohlich's syndrome (adiposogenital dystrophy) results from hypothalamic dysfunction and is characterized by obesity, delayed sexual development, poor growth, and learning difficulties."
   },
   {
-    "id": 108,
+    "question_number": 108,
     "question": "Susceptibility to diphtheria is detected by this test:",
     "options": {
       "A": "Smear and culture",
@@ -1293,10 +1293,10 @@
       "D": "Schick test"
     },
     "correct_answer": "D",
-    "explanation ": "The Schick test determines susceptibility to diphtheria by assessing whether a person has protective antibodies against the diphtheria toxin."
+    "explanation": "The Schick test determines susceptibility to diphtheria by assessing whether a person has protective antibodies against the diphtheria toxin."
   },
   {
-    "id": 109,
+    "question_number": 109,
     "question": "If the infection is the result of treatment or investigative procedure. It is known as:",
     "options": {
       "A": "Nosocomial infection",
@@ -1305,10 +1305,10 @@
       "D": "Reinfection"
     },
     "correct_answer": "B",
-    "explanation ": "An iatrogenic infection is an infection acquired as a direct result of medical treatment, diagnostic procedures, or surgical interventions."
+    "explanation": "An iatrogenic infection is an infection acquired as a direct result of medical treatment, diagnostic procedures, or surgical interventions."
   },
   {
-    "id": 110,
+    "question_number": 110,
     "question": "It is used for fumigating wards, sick rooms and laboratories:",
     "options": {
       "A": "Halogens",
@@ -1317,10 +1317,10 @@
       "D": "Ethylene oxide"
     },
     "correct_answer": "C",
-    "explanation ": "Formaldehyde gas is traditionally used for fumigation of operation theatres, wards, laboratories, and isolation rooms to destroy microorganisms."
+    "explanation": "Formaldehyde gas is traditionally used for fumigation of operation theatres, wards, laboratories, and isolation rooms to destroy microorganisms."
   },
   {
-    "id": 111,
+    "question_number": 111,
     "question": "This theory explains the needs which motivate human behaviour such as need for achievement, need for affiliation:",
     "options": {
       "A": "Maslow",
@@ -1329,10 +1329,10 @@
       "D": "None above"
     },
     "correct_answer": "C",
-    "explanation ": "McClelland's Theory of Needs states that human behaviour is motivated by three learned needs: achievement, affiliation, and power."
+    "explanation": "McClelland's Theory of Needs states that human behaviour is motivated by three learned needs: achievement, affiliation, and power."
   },
   {
-    "id": 112,
+    "question_number": 112,
     "question": "Sociology concept based on the principles of:",
     "options": {
       "A": "Social phenomenon",
@@ -1341,10 +1341,10 @@
       "D": "Above all"
     },
     "correct_answer": "D",
-    "explanation ": "Sociology studies social phenomena using scientific methods, deals with factual observations, and attempts to formulate general principles about social behaviour."
+    "explanation": "Sociology studies social phenomena using scientific methods, deals with factual observations, and attempts to formulate general principles about social behaviour."
   },
   {
-    "id": 113,
+    "question_number": 113,
     "question": "It is a process by which sensory systems convert stimulus energy into neural messages:",
     "options": {
       "A": "Sense perception",
@@ -1353,10 +1353,10 @@
       "D": "Sensory transduction"
     },
     "correct_answer": "D",
-    "explanation ": "Sensory transduction is the process by which sensory receptors convert physical stimuli into electrical nerve impulses that can be interpreted by the brain."
+    "explanation": "Sensory transduction is the process by which sensory receptors convert physical stimuli into electrical nerve impulses that can be interpreted by the brain."
   },
   {
-    "id": 114,
+    "question_number": 114,
     "question": "Which combines some of the characteristics of both reasoning and imagination?",
     "options": {
       "A": "creative thinking",
@@ -1365,10 +1365,10 @@
       "D": "day dreaming"
     },
     "correct_answer": "A",
-    "explanation ": "Creative thinking combines logical reasoning with imagination to generate new ideas, solve problems, and develop innovative solutions."
+    "explanation": "Creative thinking combines logical reasoning with imagination to generate new ideas, solve problems, and develop innovative solutions."
   },
   {
-    "id": 115,
+    "question_number": 115,
     "question": "It is the source of sexual energy that builds up and needs to be expressed in some way:",
     "options": {
       "A": "Ego",
@@ -1377,10 +1377,10 @@
       "D": "Above all"
     },
     "correct_answer": "C",
-    "explanation ": "According to Freud, the Id is the primitive part of personality that contains instinctive drives, including sexual energy (libido), and operates on the pleasure principle."
+    "explanation": "According to Freud, the Id is the primitive part of personality that contains instinctive drives, including sexual energy (libido), and operates on the pleasure principle."
   },
   {
-    "id": 116,
+    "question_number": 116,
     "question": "He said that people differ along three personality dimensions, extraversion introversion, neuroticism and psychoticism:",
     "options": {
       "A": "Allport",
@@ -1389,10 +1389,10 @@
       "D": "Costa and McCrae"
     },
     "correct_answer": "C",
-    "explanation ": "Hans Eysenck proposed that personality can be described using three major dimensions: Extraversion–Introversion, Neuroticism, and Psychoticism."
+    "explanation": "Hans Eysenck proposed that personality can be described using three major dimensions: Extraversion–Introversion, Neuroticism, and Psychoticism."
   },
   {
-    "id": 117,
+    "question_number": 117,
     "question": "It strengthens a response by removing an aversive stimulus :",
     "options": {
       "A": "Positive reinforcement",
@@ -1401,10 +1401,10 @@
       "D": "Partial reinforcement"
     },
     "correct_answer": "B",
-    "explanation ": "Negative reinforcement strengthens behaviour by removing an unpleasant or aversive stimulus after the desired behaviour occurs."
+    "explanation": "Negative reinforcement strengthens behaviour by removing an unpleasant or aversive stimulus after the desired behaviour occurs."
   },
   {
-    "id": 118,
+    "question_number": 118,
     "question": "The chief agencies of socialization are:",
     "options": {
       "A": "Family",
@@ -1413,10 +1413,10 @@
       "D": "Above all"
     },
     "correct_answer": "D",
-    "explanation ": "Family, school, peer groups, and the community are all important agencies of socialization that shape an individual's behaviour and values."
+    "explanation": "Family, school, peer groups, and the community are all important agencies of socialization that shape an individual's behaviour and values."
   },
   {
-    "id": 119,
+    "question_number": 119,
     "question": "It is a social group determined by geographical boundaries, common values and interests:",
     "options": {
       "A": "Society",
@@ -1425,10 +1425,10 @@
       "D": "Above all"
     },
     "correct_answer": "B",
-    "explanation ": "A community is a group of people living within a defined geographical area who share common interests, values, and social interactions."
+    "explanation": "A community is a group of people living within a defined geographical area who share common interests, values, and social interactions."
   },
   {
-    "id": 120,
+    "question_number": 120,
     "question": "A defence mechanism through which a person unconsciously forgets unpleasant experiences:",
     "options": {
       "A": "Reinforcement",
@@ -1437,10 +1437,10 @@
       "D": "Retention"
     },
     "correct_answer": "C",
-    "explanation ": "Repression is an unconscious defence mechanism in which unpleasant thoughts, feelings, or memories are pushed out of conscious awareness."
+    "explanation": "Repression is an unconscious defence mechanism in which unpleasant thoughts, feelings, or memories are pushed out of conscious awareness."
   },
   {
-    "id": 121,
+    "question_number": 121,
     "question": "The set of principles that reflect the primary goals, values and obligation of the profession:",
     "options": {
       "A": "Nursing standards",
@@ -1449,10 +1449,10 @@
       "D": "Standing order"
     },
     "correct_answer": "C",
-    "explanation ": "The Code of Ethics outlines the professional values, responsibilities, and ethical standards that guide nursing practice."
+    "explanation": "The Code of Ethics outlines the professional values, responsibilities, and ethical standards that guide nursing practice."
   },
   {
-    "id": 122,
+    "question_number": 122,
     "question": "A patient gets Tab. Morphine for chronic pain and develops constipation. This is an example for which among the following?",
     "options": {
       "A": "Idiosyncratic effect",
@@ -1461,10 +1461,10 @@
       "D": "Adverse effect"
     },
     "correct_answer": "D",
-    "explanation ": "Constipation caused by morphine is a predictable adverse drug effect resulting from decreased gastrointestinal motility produced by opioids."
+    "explanation": "Constipation caused by morphine is a predictable adverse drug effect resulting from decreased gastrointestinal motility produced by opioids."
   },
   {
-    "id": 123,
+    "question_number": 123,
     "question": "Among the barriers to communication, rejecting means:",
     "options": {
       "A": "Directing communication into areas of self interest",
@@ -1473,10 +1473,10 @@
       "D": "Making the client to admit something"
     },
     "correct_answer": "B",
-    "explanation ": "Rejecting is a communication barrier in which the listener refuses to discuss or acknowledge certain topics, preventing effective therapeutic communication."
+    "explanation": "Rejecting is a communication barrier in which the listener refuses to discuss or acknowledge certain topics, preventing effective therapeutic communication."
   },
   {
-    "id": 124,
+    "question_number": 124,
     "question": "The flow rate of oxygen by simple face mask should not be less than :",
     "options": {
       "A": "5 liters per minute",
@@ -1485,10 +1485,10 @@
       "D": "2 liters per minute"
     },
     "correct_answer": "A",
-    "explanation ": "A simple face mask requires an oxygen flow rate of at least 5 L/min to prevent rebreathing of exhaled carbon dioxide."
+    "explanation": "A simple face mask requires an oxygen flow rate of at least 5 L/min to prevent rebreathing of exhaled carbon dioxide."
   },
   {
-    "id": 125,
+    "question_number": 125,
     "question": "Rapidly collapsing pulse is known as:",
     "options": {
       "A": "Bigeminal pulse",
@@ -1497,10 +1497,10 @@
       "D": "Paradoxical pulse"
     },
     "correct_answer": "B",
-    "explanation ": "A water hammer (Corrigan's) pulse is a rapidly rising and collapsing pulse classically seen in aortic regurgitation due to increased stroke volume and rapid runoff of blood."
+    "explanation": "A water hammer (Corrigan's) pulse is a rapidly rising and collapsing pulse classically seen in aortic regurgitation due to increased stroke volume and rapid runoff of blood."
   },
   {
-    "id": 126,
+    "question_number": 126,
     "question": "Which of the following is the initial care to be done when chemical burn is suspected?",
     "options": {
       "A": "Try to neutralize the chemical",
@@ -1509,10 +1509,10 @@
       "D": "Give plenty of fluids"
     },
     "correct_answer": "C",
-    "explanation ": "The first step in managing a chemical burn is to immediately irrigate the affected area with plenty of running water to dilute and remove the chemical. Neutralizing agents should not be used as they may worsen tissue damage."
+    "explanation": "The first step in managing a chemical burn is to immediately irrigate the affected area with plenty of running water to dilute and remove the chemical. Neutralizing agents should not be used as they may worsen tissue damage."
   },
   {
-    "id": 127,
+    "question_number": 127,
     "question": "Which of the following is an isotonic solution?",
     "options": {
       "A": "10% Dextrose",
@@ -1521,10 +1521,10 @@
       "D": "Dextrose normal saline"
     },
     "correct_answer": "C",
-    "explanation ": "Ringer's lactate is an isotonic crystalloid solution that closely resembles extracellular fluid. It is commonly used for fluid replacement in dehydration, burns, and shock."
+    "explanation": "Ringer's lactate is an isotonic crystalloid solution that closely resembles extracellular fluid. It is commonly used for fluid replacement in dehydration, burns, and shock."
   },
   {
-    "id": 128,
+    "question_number": 128,
     "question": "Suitable position for gynaecological examination:",
     "options": {
       "A": "Sim's position",
@@ -1533,10 +1533,10 @@
       "D": "Prone position"
     },
     "correct_answer": "B",
-    "explanation ": "The lithotomy position provides optimal visualization of the female genital tract and is routinely used for gynecological examinations, vaginal procedures, and childbirth."
+    "explanation": "The lithotomy position provides optimal visualization of the female genital tract and is routinely used for gynecological examinations, vaginal procedures, and childbirth."
   },
   {
-    "id": 129,
+    "question_number": 129,
     "question": "Which among the following is a correct action with regard to documentation?",
     "options": {
       "A": "Chart in advance of the event",
@@ -1545,10 +1545,10 @@
       "D": "Use objective, specific, factual description"
     },
     "correct_answer": "D",
-    "explanation ": "Nursing documentation should always be objective, accurate, specific, and factual. Records should never be completed in advance or on behalf of another person."
+    "explanation": "Nursing documentation should always be objective, accurate, specific, and factual. Records should never be completed in advance or on behalf of another person."
   },
   {
-    "id": 130,
+    "question_number": 130,
     "question": "Normal residual urine volume is :",
     "options": {
       "A": "50-100 ml",
@@ -1557,10 +1557,10 @@
       "D": "250-300 ml"
     },
     "correct_answer": "A",
-    "explanation ": "Normal post-void residual urine volume is approximately 50–100 mL. Larger volumes may indicate urinary retention or bladder outlet obstruction."
+    "explanation": "Normal post-void residual urine volume is approximately 50–100 mL. Larger volumes may indicate urinary retention or bladder outlet obstruction."
   },
   {
-    "id": 131,
+    "question_number": 131,
     "question": "Which of the following is primordial prevention?",
     "options": {
       "A": "Action taken to remove the possibility that a disease will ever occur",
@@ -1569,10 +1569,10 @@
       "D": "Prevention of emergence of development of risk factors"
     },
     "correct_answer": "D",
-    "explanation ": "Primordial prevention aims to prevent the development of risk factors themselves by promoting healthy lifestyles and creating supportive environmental conditions."
+    "explanation": "Primordial prevention aims to prevent the development of risk factors themselves by promoting healthy lifestyles and creating supportive environmental conditions."
   },
   {
-    "id": 132,
+    "question_number": 132,
     "question": "Most heat sensitive vaccine is:",
     "options": {
       "A": "Polio",
@@ -1581,10 +1581,10 @@
       "D": "Measles"
     },
     "correct_answer": "A",
-    "explanation ": "Oral Polio Vaccine (OPV) is highly heat-sensitive and must be maintained within the cold chain to preserve its effectiveness."
+    "explanation": "Oral Polio Vaccine (OPV) is highly heat-sensitive and must be maintained within the cold chain to preserve its effectiveness."
   },
   {
-    "id": 133,
+    "question_number": 133,
     "question": "Disinfection is one which:",
     "options": {
       "A": "Kills bacteria and viruses",
@@ -1593,10 +1593,10 @@
       "D": "Kills spores only"
     },
     "correct_answer": "C",
-    "explanation ": "Disinfection destroys most pathogenic bacteria but does not reliably destroy bacterial spores. Sterilization is required to eliminate all microorganisms, including spores."
+    "explanation": "Disinfection destroys most pathogenic bacteria but does not reliably destroy bacterial spores. Sterilization is required to eliminate all microorganisms, including spores."
   },
   {
-    "id": 134,
+    "question_number": 134,
     "question": "White polished rice causes deficiency of:",
     "options": {
       "A": "Vitamin E",
@@ -1605,10 +1605,10 @@
       "D": "Vitamin K"
     },
     "correct_answer": "B",
-    "explanation ": "Polishing rice removes the outer bran layer, which is rich in thiamine (Vitamin B1). Deficiency of thiamine can result in beriberi."
+    "explanation": "Polishing rice removes the outer bran layer, which is rich in thiamine (Vitamin B1). Deficiency of thiamine can result in beriberi."
   },
   {
-    "id": 135,
+    "question_number": 135,
     "question": "\"Health survey and planning committee\" is known as:",
     "options": {
       "A": "Kartar Singh Committee",
@@ -1617,10 +1617,10 @@
       "D": "Mudaliar Committee"
     },
     "correct_answer": "D",
-    "explanation ": "The Mudaliar Committee (Health Survey and Planning Committee) was established in 1959 to review the progress made after the Bhore Committee and recommend improvements in health services."
+    "explanation": "The Mudaliar Committee (Health Survey and Planning Committee) was established in 1959 to review the progress made after the Bhore Committee and recommend improvements in health services."
   },
   {
-    "id": 136,
+    "question_number": 136,
     "question": "Mid-day meal contains proteins and calories in what proportions?",
     "options": {
       "A": "1/2 Proteins & 1/3 Calories",
@@ -1629,10 +1629,10 @@
       "D": "1/2 Proteins & 1/2 Calories"
     },
     "correct_answer": "A",
-    "explanation ": "The Mid-Day Meal Programme is designed to provide approximately one-half of the daily protein requirement and one-third of the daily calorie requirement of school children."
+    "explanation": "The Mid-Day Meal Programme is designed to provide approximately one-half of the daily protein requirement and one-third of the daily calorie requirement of school children."
   },
   {
-    "id": 137,
+    "question_number": 137,
     "question": "Objective of the WHO is:",
     "options": {
       "A": "the attainment by all peoples of the highest level of health.",
@@ -1641,10 +1641,10 @@
       "D": "to help nations raise living standards and to improve nutrition of the people of all countries."
     },
     "correct_answer": "A",
-    "explanation ": "The objective of the World Health Organization (WHO) is 'the attainment by all peoples of the highest possible level of health.'"
+    "explanation": "The objective of the World Health Organization (WHO) is 'the attainment by all peoples of the highest possible level of health.'"
   },
   {
-    "id": 138,
+    "question_number": 138,
     "question": "All are examples of Food Fortification except:",
     "options": {
       "A": "Fluoridation of water",
@@ -1653,10 +1653,10 @@
       "D": "Vitamin A in Vanaspati"
     },
     "correct_answer": "C",
-    "explanation ": "Food fortification involves adding essential nutrients to foods, such as iodine to salt and Vitamin A to vanaspati. Adding saffron to milk is for flavour and colour, not nutritional fortification."
+    "explanation": "Food fortification involves adding essential nutrients to foods, such as iodine to salt and Vitamin A to vanaspati. Adding saffron to milk is for flavour and colour, not nutritional fortification."
   },
   {
-    "id": 139,
+    "question_number": 139,
     "question": "The peripheral outpost of the health care delivery system in rural areas:",
     "options": {
       "A": "Primary health centre",
@@ -1665,10 +1665,10 @@
       "D": "Family health centre"
     },
     "correct_answer": "B",
-    "explanation ": "The Sub-centre is the most peripheral health facility in the rural healthcare system and serves as the first point of contact between the community and health services."
+    "explanation": "The Sub-centre is the most peripheral health facility in the rural healthcare system and serves as the first point of contact between the community and health services."
   },
   {
-    "id": 140,
+    "question_number": 140,
     "question": "Night blindness is due to :",
     "options": {
       "A": "Vitamin D deficiency",
@@ -1677,10 +1677,10 @@
       "D": "Pyridoxine deficiency"
     },
     "correct_answer": "B",
-    "explanation ": "Night blindness (nyctalopia) is an early manifestation of Vitamin A deficiency due to impaired formation of rhodopsin in the retina."
+    "explanation": "Night blindness (nyctalopia) is an early manifestation of Vitamin A deficiency due to impaired formation of rhodopsin in the retina."
   },
   {
-    "id": 141,
+    "question_number": 141,
     "question": "Battle's sign refers to:",
     "options": {
       "A": "Ecchymosis of flank area",
@@ -1689,10 +1689,10 @@
       "D": "Ecchymosis of the mastoid area"
     },
     "correct_answer": "D",
-    "explanation ": "Battle's sign is bruising over the mastoid region behind the ear and is a classic indication of a basilar skull fracture."
+    "explanation": "Battle's sign is bruising over the mastoid region behind the ear and is a classic indication of a basilar skull fracture."
   },
   {
-    "id": 142,
+    "question_number": 142,
     "question": "The stage of sleep with EEG pattern similar to normal awake pattern is:",
     "options": {
       "A": "Stage 1",
@@ -1701,10 +1701,10 @@
       "D": "Stage IV"
     },
     "correct_answer": "C",
-    "explanation ": "REM (Rapid Eye Movement) sleep has an EEG pattern similar to the awake state and is associated with vivid dreaming and muscle atonia."
+    "explanation": "REM (Rapid Eye Movement) sleep has an EEG pattern similar to the awake state and is associated with vivid dreaming and muscle atonia."
   },
   {
-    "id": 143,
+    "question_number": 143,
     "question": "Stag- Horn Calculi are madeup of:",
     "options": {
       "A": "Calcium Oxalate",
@@ -1713,10 +1713,10 @@
       "D": "Magnesium Ammonium Phosphate"
     },
     "correct_answer": "D",
-    "explanation ": "Staghorn calculi are usually composed of magnesium ammonium phosphate (struvite) and are commonly associated with recurrent urinary tract infections caused by urease-producing bacteria."
+    "explanation": "Staghorn calculi are usually composed of magnesium ammonium phosphate (struvite) and are commonly associated with recurrent urinary tract infections caused by urease-producing bacteria."
   },
   {
-    "id": 144,
+    "question_number": 144,
     "question": "Electrolyte imbalance is seen hyperparathyroidism is called :",
     "options": {
       "A": "Hypercalcemia",
@@ -1725,10 +1725,10 @@
       "D": "Hypernatremia"
     },
     "correct_answer": "A",
-    "explanation ": "Hyperparathyroidism increases parathyroid hormone secretion, leading to increased calcium release from bones and resulting in hypercalcemia."
+    "explanation": "Hyperparathyroidism increases parathyroid hormone secretion, leading to increased calcium release from bones and resulting in hypercalcemia."
   },
   {
-    "id": 145,
+    "question_number": 145,
     "question": "Pancytopenia is present in:",
     "options": {
       "A": "Aplastic anemia",
@@ -1737,10 +1737,10 @@
       "D": "Pernicious anemia"
     },
     "correct_answer": "A",
-    "explanation ": "Aplastic anemia is characterized by bone marrow failure resulting in pancytopenia, which includes decreased red blood cells, white blood cells, and platelets."
+    "explanation": "Aplastic anemia is characterized by bone marrow failure resulting in pancytopenia, which includes decreased red blood cells, white blood cells, and platelets."
   },
   {
-    "id": 146,
+    "question_number": 146,
     "question": "Water-hammer pulse is a feature of :",
     "options": {
       "A": "Aortic Aneurysm",
@@ -1749,10 +1749,10 @@
       "D": "Aortic stenosis"
     },
     "correct_answer": "C",
-    "explanation ": "A water-hammer (Corrigan's) pulse is a rapidly rising and collapsing pulse that is classically associated with aortic regurgitation."
+    "explanation": "A water-hammer (Corrigan's) pulse is a rapidly rising and collapsing pulse that is classically associated with aortic regurgitation."
   },
   {
-    "id": 147,
+    "question_number": 147,
     "question": "Heimlich maneuver is used:",
     "options": {
       "A": "To improve lung capacity",
@@ -1761,10 +1761,10 @@
       "D": "To stimulate cardiovascular system"
     },
     "correct_answer": "C",
-    "explanation ": "The Heimlich maneuver is an emergency procedure used to relieve upper airway obstruction by expelling a foreign body from the trachea."
+    "explanation": "The Heimlich maneuver is an emergency procedure used to relieve upper airway obstruction by expelling a foreign body from the trachea."
   },
   {
-    "id": 148,
+    "question_number": 148,
     "question": "Principles used in closed chest drainage:",
     "options": {
       "A": "Gravity, Positive pressure, Suction",
@@ -1773,10 +1773,10 @@
       "D": "Posture"
     },
     "correct_answer": "A",
-    "explanation ": "Closed chest drainage functions through gravity, positive intrathoracic pressure during expiration, and suction to remove air or fluid from the pleural cavity."
+    "explanation": "Closed chest drainage functions through gravity, positive intrathoracic pressure during expiration, and suction to remove air or fluid from the pleural cavity."
   },
   {
-    "id": 149,
+    "question_number": 149,
     "question": "Intraocular pressure is measured with an instrument called:",
     "options": {
       "A": "Manometer",
@@ -1785,10 +1785,10 @@
       "D": "Occulometer"
     },
     "correct_answer": "B",
-    "explanation ": "A tonometer is used to measure intraocular pressure and is essential in the diagnosis and monitoring of glaucoma."
+    "explanation": "A tonometer is used to measure intraocular pressure and is essential in the diagnosis and monitoring of glaucoma."
   },
   {
-    "id": 150,
+    "question_number": 150,
     "question": "Philadelphia chromosome is associated with:",
     "options": {
       "A": "Breast cancer",
@@ -1797,10 +1797,10 @@
       "D": "Thyroid cancer"
     },
     "correct_answer": "C",
-    "explanation ": "The Philadelphia chromosome is a chromosomal translocation t(9;22) that is characteristically associated with Chronic Myeloid Leukemia (CML) and some cases of Acute Lymphoblastic Leukemia (ALL)."
+    "explanation": "The Philadelphia chromosome is a chromosomal translocation t(9;22) that is characteristically associated with Chronic Myeloid Leukemia (CML) and some cases of Acute Lymphoblastic Leukemia (ALL)."
   },
   {
-    "id": 151,
+    "question_number": 151,
     "question": "The most persistent adverse effect of ECT is:",
     "options": {
       "A": "Fractures",
@@ -1809,10 +1809,10 @@
       "D": "Hypertension"
     },
     "correct_answer": "B",
-    "explanation ": "The most persistent adverse effect of Electroconvulsive Therapy (ECT) is retrograde amnesia, where the patient has difficulty recalling events that occurred before the treatment."
+    "explanation": "The most persistent adverse effect of Electroconvulsive Therapy (ECT) is retrograde amnesia, where the patient has difficulty recalling events that occurred before the treatment."
   },
   {
-    "id": 152,
+    "question_number": 152,
     "question": "La-belle - indifference may be seen in :",
     "options": {
       "A": "Schizophrenia",
@@ -1821,10 +1821,10 @@
       "D": "Dissociative disorder"
     },
     "correct_answer": "D",
-    "explanation ": "La belle indifference refers to an inappropriate lack of concern about serious symptoms and is classically associated with dissociative (conversion) disorder."
+    "explanation": "La belle indifference refers to an inappropriate lack of concern about serious symptoms and is classically associated with dissociative (conversion) disorder."
   },
   {
-    "id": 153,
+    "question_number": 153,
     "question": "Other name of mini mental status examination is:",
     "options": {
       "A": "Freud MSE",
@@ -1833,10 +1833,10 @@
       "D": "Both (A) and (C)"
     },
     "correct_answer": "B",
-    "explanation ": "The Mini Mental State Examination (MMSE) is also known as the Folstein MMSE after its developers. It is widely used to assess cognitive function."
+    "explanation": "The Mini Mental State Examination (MMSE) is also known as the Folstein MMSE after its developers. It is widely used to assess cognitive function."
   },
   {
-    "id": 154,
+    "question_number": 154,
     "question": "Which of the following is a therapeutic communication technique?",
     "options": {
       "A": "Arguing",
@@ -1845,10 +1845,10 @@
       "D": "Advising"
     },
     "correct_answer": "C",
-    "explanation ": "Paraphrasing is a therapeutic communication technique in which the nurse restates the client's message to confirm understanding and encourage further discussion."
+    "explanation": "Paraphrasing is a therapeutic communication technique in which the nurse restates the client's message to confirm understanding and encourage further discussion."
   },
   {
-    "id": 155,
+    "question_number": 155,
     "question": "The Narcotic Drugs and Psychotrophic Substance Act (NDPSA) was passed in the year:",
     "options": {
       "A": "1982",
@@ -1857,10 +1857,10 @@
       "D": "2000"
     },
     "correct_answer": "B",
-    "explanation ": "The Narcotic Drugs and Psychotropic Substances (NDPS) Act was enacted in 1985 to regulate and control narcotic drugs and psychotropic substances in India."
+    "explanation": "The Narcotic Drugs and Psychotropic Substances (NDPS) Act was enacted in 1985 to regulate and control narcotic drugs and psychotropic substances in India."
   },
   {
-    "id": 156,
+    "question_number": 156,
     "question": "Disorientation and visual hallucinations are the hallmark sign of:",
     "options": {
       "A": "Depersonalization syndrome",
@@ -1869,10 +1869,10 @@
       "D": "Schizophrenia"
     },
     "correct_answer": "C",
-    "explanation ": "Delirium is characterized by an acute disturbance in consciousness with disorientation, fluctuating mental status, and visual hallucinations."
+    "explanation": "Delirium is characterized by an acute disturbance in consciousness with disorientation, fluctuating mental status, and visual hallucinations."
   },
   {
-    "id": 157,
+    "question_number": 157,
     "question": "What are the most common types of side effects from SSRIs?",
     "options": {
       "A": "Dizziness, drowsiness, dry mouth",
@@ -1881,10 +1881,10 @@
       "D": "Jaundice, agranulocytosis"
     },
     "correct_answer": "A",
-    "explanation ": "Selective Serotonin Reuptake Inhibitors (SSRIs) commonly cause dizziness, drowsiness, dry mouth, nausea, and sexual dysfunction as side effects."
+    "explanation": "Selective Serotonin Reuptake Inhibitors (SSRIs) commonly cause dizziness, drowsiness, dry mouth, nausea, and sexual dysfunction as side effects."
   },
   {
-    "id": 158,
+    "question_number": 158,
     "question": "Which of the following is not include in Kanner's autistic triad?",
     "options": {
       "A": "Autistic aloofness",
@@ -1893,10 +1893,10 @@
       "D": "Impulsivity"
     },
     "correct_answer": "D",
-    "explanation ": "Kanner's autistic triad includes impaired social interaction, communication difficulties, and insistence on sameness. Impulsivity is not part of the classic triad."
+    "explanation": "Kanner's autistic triad includes impaired social interaction, communication difficulties, and insistence on sameness. Impulsivity is not part of the classic triad."
   },
   {
-    "id": 159,
+    "question_number": 159,
     "question": "Which of the following are considered the positive signs of Schizophrenia?",
     "options": {
       "A": "Delusions, anhedonia, ambivalence",
@@ -1905,10 +1905,10 @@
       "D": "Disordered thinking, anhedonia, illusions"
     },
     "correct_answer": "C",
-    "explanation ": "Positive symptoms of schizophrenia include delusions, hallucinations, and disorganized thinking or speech. Negative symptoms include anhedonia and flat affect."
+    "explanation": "Positive symptoms of schizophrenia include delusions, hallucinations, and disorganized thinking or speech. Negative symptoms include anhedonia and flat affect."
   },
   {
-    "id": 160,
+    "question_number": 160,
     "question": "Role of community mental health nurse described as:",
     "options": {
       "A": "Extended role",
@@ -1917,10 +1917,10 @@
       "D": "Clinical role"
     },
     "correct_answer": "A",
-    "explanation ": "A community mental health nurse performs an extended role involving prevention, early identification, treatment, rehabilitation, counseling, and community education."
+    "explanation": "A community mental health nurse performs an extended role involving prevention, early identification, treatment, rehabilitation, counseling, and community education."
   },
   {
-    "id": 161,
+    "question_number": 161,
     "question": "In which of the following conditions is cyanosis NOT seen in a newborn?",
     "options": {
       "A": "Methemoglobinaemia",
@@ -1929,10 +1929,10 @@
       "D": "Truncus Arteriosus"
     },
     "correct_answer": "B",
-    "explanation ": "An isolated Atrial Septal Defect (ASD) usually produces a left-to-right shunt and is an acyanotic congenital heart disease; therefore cyanosis is generally absent."
+    "explanation": "An isolated Atrial Septal Defect (ASD) usually produces a left-to-right shunt and is an acyanotic congenital heart disease; therefore cyanosis is generally absent."
   },
   {
-    "id": 162,
+    "question_number": 162,
     "question": "Protein requirement of a critically ill child with Burns > 20% Total Body Surface Area burnt is:",
     "options": {
       "A": "1 g/kg/24 hours",
@@ -1941,10 +1941,10 @@
       "D": "2 – 3 g/kg/24 hours"
     },
     "correct_answer": "D",
-    "explanation ": "Children with burns involving more than 20% of the total body surface area have markedly increased protein requirements, usually 2–3 g/kg/day, to support wound healing and tissue repair."
+    "explanation": "Children with burns involving more than 20% of the total body surface area have markedly increased protein requirements, usually 2–3 g/kg/day, to support wound healing and tissue repair."
   },
   {
-    "id": 163,
+    "question_number": 163,
     "question": "Which of the following sign is NOT included in the Apgar evaluation of a newborn?",
     "options": {
       "A": "Color",
@@ -1953,10 +1953,10 @@
       "D": "Muscle tone"
     },
     "correct_answer": "C",
-    "explanation ": "The Apgar score assesses Appearance (color), Pulse, Grimace, Activity (muscle tone), and Respiration. Oxygen saturation (SpO₂) is not included."
+    "explanation": "The Apgar score assesses Appearance (color), Pulse, Grimace, Activity (muscle tone), and Respiration. Oxygen saturation (SpO₂) is not included."
   },
   {
-    "id": 164,
+    "question_number": 164,
     "question": "Daily maintenance fluid requirement of a child with weight 22 kg is:",
     "options": {
       "A": "1540 ml",
@@ -1965,10 +1965,10 @@
       "D": "1560 ml"
     },
     "correct_answer": "A",
-    "explanation ": "Using the Holliday-Segar formula: 1000 mL for the first 10 kg + 500 mL for the next 10 kg + 40 mL × 2 kg = 1540 mL/day for a 22 kg child."
+    "explanation": "Using the Holliday-Segar formula: 1000 mL for the first 10 kg + 500 mL for the next 10 kg + 40 mL × 2 kg = 1540 mL/day for a 22 kg child."
   },
   {
-    "id": 165,
+    "question_number": 165,
     "question": "A condition characterised by the absence of intramural ganglion cells of the bowel is:",
     "options": {
       "A": "Malrotation of gut",
@@ -1977,10 +1977,10 @@
       "D": "Meckel's diverticulum"
     },
     "correct_answer": "C",
-    "explanation ": "Hirschsprung's disease is caused by the congenital absence of ganglion cells in the distal bowel, resulting in functional intestinal obstruction."
+    "explanation": "Hirschsprung's disease is caused by the congenital absence of ganglion cells in the distal bowel, resulting in functional intestinal obstruction."
   },
   {
-    "id": 166,
+    "question_number": 166,
     "question": "Which type of antigen does Pneumococcal vaccine contain?",
     "options": {
       "A": "Live attenuated bacteria",
@@ -1989,10 +1989,10 @@
       "D": "Capsular polysaccharide"
     },
     "correct_answer": "D",
-    "explanation ": "Pneumococcal vaccines contain capsular polysaccharide antigens that stimulate immunity against Streptococcus pneumoniae."
+    "explanation": "Pneumococcal vaccines contain capsular polysaccharide antigens that stimulate immunity against Streptococcus pneumoniae."
   },
   {
-    "id": 167,
+    "question_number": 167,
     "question": "The conservation of length is recognised at the age of:",
     "options": {
       "A": "9-12 years",
@@ -2001,10 +2001,10 @@
       "D": "13-15 years"
     },
     "correct_answer": "B",
-    "explanation ": "According to Piaget, conservation of length develops during the concrete operational stage, usually between 6 and 7 years of age."
+    "explanation": "According to Piaget, conservation of length develops during the concrete operational stage, usually between 6 and 7 years of age."
   },
   {
-    "id": 168,
+    "question_number": 168,
     "question": "The chromosomal genetic disorder with 47, XXY is:",
     "options": {
       "A": "Klinefelter syndrome",
@@ -2013,10 +2013,10 @@
       "D": "Beckwith - Wiedemann syndrome"
     },
     "correct_answer": "A",
-    "explanation ": "Klinefelter syndrome is caused by the presence of an extra X chromosome (47, XXY) and is associated with hypogonadism, infertility, and tall stature."
+    "explanation": "Klinefelter syndrome is caused by the presence of an extra X chromosome (47, XXY) and is associated with hypogonadism, infertility, and tall stature."
   },
   {
-    "id": 169,
+    "question_number": 169,
     "question": "Which of the following is an organic cause of Failure To Thrive in children?",
     "options": {
       "A": "Poverty",
@@ -2025,10 +2025,10 @@
       "D": "Faulty food habits"
     },
     "correct_answer": "C",
-    "explanation ": "Intestinal parasitic infestation is an organic cause of Failure to Thrive because it interferes with nutrient absorption and normal growth."
+    "explanation": "Intestinal parasitic infestation is an organic cause of Failure to Thrive because it interferes with nutrient absorption and normal growth."
   },
   {
-    "id": 170,
+    "question_number": 170,
     "question": "Which of the following statements is false regarding Naso Gastric Tube (NGT) feeding in children?",
     "options": {
       "A": "Position the child in head elevated 30-45 degrees after the NGT feeding.",
@@ -2037,10 +2037,10 @@
       "D": "Cap or clamp the indwelling NGT."
     },
     "correct_answer": "B",
-    "explanation ": "NG tube feeding in children should be administered slowly. A feeding rate greater than 30 mL/minute increases the risk of regurgitation and aspiration."
+    "explanation": "NG tube feeding in children should be administered slowly. A feeding rate greater than 30 mL/minute increases the risk of regurgitation and aspiration."
   },
   {
-    "id": 171,
+    "question_number": 171,
     "question": "Sheehan's Syndrome is a complication of :",
     "options": {
       "A": "Hyperthyroidism",
@@ -2049,10 +2049,10 @@
       "D": "Cervical Insufficiency"
     },
     "correct_answer": "C",
-    "explanation ": "Sheehan's syndrome results from ischemic necrosis of the pituitary gland following severe postpartum hemorrhage, leading to hypopituitarism."
+    "explanation": "Sheehan's syndrome results from ischemic necrosis of the pituitary gland following severe postpartum hemorrhage, leading to hypopituitarism."
   },
   {
-    "id": 172,
+    "question_number": 172,
     "question": "The most obstetrically significant Anteroposterior diameter of the pelvic Inlet during labour:",
     "options": {
       "A": "Obstetrical conjugate",
@@ -2061,10 +2061,10 @@
       "D": "Sacrocotyloid diameter"
     },
     "correct_answer": "A",
-    "explanation ": "The obstetrical conjugate is the shortest anteroposterior diameter of the pelvic inlet through which the fetal head must pass during labour."
+    "explanation": "The obstetrical conjugate is the shortest anteroposterior diameter of the pelvic inlet through which the fetal head must pass during labour."
   },
   {
-    "id": 173,
+    "question_number": 173,
     "question": "The suture which separates the parietal and frontal bones in foetal skull is:",
     "options": {
       "A": "Sagittal suture",
@@ -2073,10 +2073,10 @@
       "D": "Lambdoid suture"
     },
     "correct_answer": "C",
-    "explanation ": "The coronal suture lies between the frontal bone and the two parietal bones of the fetal skull."
+    "explanation": "The coronal suture lies between the frontal bone and the two parietal bones of the fetal skull."
   },
   {
-    "id": 174,
+    "question_number": 174,
     "question": "The type of vaginal discharge expected on 2rd post natal day is :",
     "options": {
       "A": "Linea Nigra",
@@ -2085,10 +2085,10 @@
       "D": "Linea Alba"
     },
     "correct_answer": "B",
-    "explanation ": "Lochia rubra is the normal reddish postpartum vaginal discharge seen during the first 3–4 days after delivery due to blood, decidual tissue, and mucus."
+    "explanation": "Lochia rubra is the normal reddish postpartum vaginal discharge seen during the first 3–4 days after delivery due to blood, decidual tissue, and mucus."
   },
   {
-    "id": 175,
+    "question_number": 175,
     "question": "Which of the following Manoeuvre is used for the delivery of shoulders in breech presentation?",
     "options": {
       "A": "Mc Robert Manoeuvre",
@@ -2097,10 +2097,10 @@
       "D": "Mauriceau Smellie Viet Manoeuvre"
     },
     "correct_answer": "B",
-    "explanation ": "The Lovset manoeuvre is used during breech delivery to rotate the fetus and deliver the shoulders safely when they are difficult to deliver."
+    "explanation": "The Lovset manoeuvre is used during breech delivery to rotate the fetus and deliver the shoulders safely when they are difficult to deliver."
   },
   {
-    "id": 176,
+    "question_number": 176,
     "question": "The most common site of ectopic pregnancy is:",
     "options": {
       "A": "Ampulla",
@@ -2109,10 +2109,10 @@
       "D": "Cornua"
     },
     "correct_answer": "A",
-    "explanation ": "The ampulla of the fallopian tube is the most common site of ectopic pregnancy because fertilization normally occurs there, making implantation at this site more likely if transport is delayed."
+    "explanation": "The ampulla of the fallopian tube is the most common site of ectopic pregnancy because fertilization normally occurs there, making implantation at this site more likely if transport is delayed."
   },
   {
-    "id": 177,
+    "question_number": 177,
     "question": "Which one of the following is NOT TRUE regarding hormonal basis for the onset of labour?",
     "options": {
       "A": "Arachidonic acid is the precussor of prostaglandins",
@@ -2121,10 +2121,10 @@
       "D": "Oestrogen fall and Progesterone rise at term"
     },
     "correct_answer": "D",
-    "explanation ": "At term, estrogen levels rise and progesterone activity declines, promoting uterine contractions. Therefore, the statement 'Estrogen falls and progesterone rises' is incorrect."
+    "explanation": "At term, estrogen levels rise and progesterone activity declines, promoting uterine contractions. Therefore, the statement 'Estrogen falls and progesterone rises' is incorrect."
   },
   {
-    "id": 178,
+    "question_number": 178,
     "question": "Fibroids which arises from uterine surface and projects into the peritoneal cavity is :",
     "options": {
       "A": "Intramural Fibroids",
@@ -2133,10 +2133,10 @@
       "D": "Cervical Fibroids"
     },
     "correct_answer": "B",
-    "explanation ": "Subserous fibroids arise from the outer surface of the uterus and project toward the peritoneal cavity. They commonly produce pressure symptoms rather than menstrual abnormalities."
+    "explanation": "Subserous fibroids arise from the outer surface of the uterus and project toward the peritoneal cavity. They commonly produce pressure symptoms rather than menstrual abnormalities."
   },
   {
-    "id": 179,
+    "question_number": 179,
     "question": "Which one of the following statement is FALSE regarding Retraction ring?",
     "options": {
       "A": "Also known as Bandl's ring",
@@ -2145,10 +2145,10 @@
       "D": "Results in hour glass contraction"
     },
     "correct_answer": "D",
-    "explanation ": "Bandl's (retraction) ring forms at the junction of the upper and lower uterine segments during obstructed labour. It is different from an hourglass contraction caused by localized uterine spasm."
+    "explanation": "Bandl's (retraction) ring forms at the junction of the upper and lower uterine segments during obstructed labour. It is different from an hourglass contraction caused by localized uterine spasm."
   },
   {
-    "id": 180,
+    "question_number": 180,
     "question": "Which of the following structure produces Gonadotrophins?",
     "options": {
       "A": "Anterior Pituitary gland",
@@ -2157,10 +2157,10 @@
       "D": "Adrenal gland"
     },
     "correct_answer": "A",
-    "explanation ": "The anterior pituitary gland secretes the gonadotropins Follicle Stimulating Hormone (FSH) and Luteinizing Hormone (LH), which regulate reproductive function."
+    "explanation": "The anterior pituitary gland secretes the gonadotropins Follicle Stimulating Hormone (FSH) and Luteinizing Hormone (LH), which regulate reproductive function."
   },
   {
-    "id": 181,
+    "question_number": 181,
     "question": "The ethical principle which guides the nurse responsibility to keep promises is:",
     "options": {
       "A": "Justice",
@@ -2169,10 +2169,10 @@
       "D": "Veracity"
     },
     "correct_answer": "B",
-    "explanation ": "Fidelity is the ethical principle that requires nurses to keep promises, maintain trust, and fulfill professional commitments to patients."
+    "explanation": "Fidelity is the ethical principle that requires nurses to keep promises, maintain trust, and fulfill professional commitments to patients."
   },
   {
-    "id": 182,
+    "question_number": 182,
     "question": "What is the basis of VED analysis in Inventory Control?",
     "options": {
       "A": "Degree of Criticality",
@@ -2181,10 +2181,10 @@
       "D": "Consumption pattern"
     },
     "correct_answer": "A",
-    "explanation ": "VED analysis classifies inventory items according to their degree of criticality as Vital, Essential, or Desirable for patient care."
+    "explanation": "VED analysis classifies inventory items according to their degree of criticality as Vital, Essential, or Desirable for patient care."
   },
   {
-    "id": 183,
+    "question_number": 183,
     "question": "The type of patient assignment which utilizes the expertise of individual Nurses through systematic participation is:",
     "options": {
       "A": "Team Nursing",
@@ -2193,10 +2193,10 @@
       "D": "Functional Nursing"
     },
     "correct_answer": "A",
-    "explanation ": "Team Nursing utilizes the knowledge and skills of different nursing personnel working together under the supervision of a team leader to provide comprehensive patient care."
+    "explanation": "Team Nursing utilizes the knowledge and skills of different nursing personnel working together under the supervision of a team leader to provide comprehensive patient care."
   },
   {
-    "id": 184,
+    "question_number": 184,
     "question": "Communication of a statement in a printed or fixed medium which can harm another person's reputation:",
     "options": {
       "A": "Slander",
@@ -2205,10 +2205,10 @@
       "D": "Libel"
     },
     "correct_answer": "D",
-    "explanation ": "Libel is defamation communicated in written, printed, or other permanent forms that damages a person's reputation."
+    "explanation": "Libel is defamation communicated in written, printed, or other permanent forms that damages a person's reputation."
   },
   {
-    "id": 185,
+    "question_number": 185,
     "question": "Which among the following is an example of on the job staff development method?",
     "options": {
       "A": "Temporary Promotion",
@@ -2217,10 +2217,10 @@
       "D": "Role play"
     },
     "correct_answer": "A",
-    "explanation ": "Temporary promotion is an on-the-job staff development method that provides practical experience by assigning higher responsibilities for a limited period."
+    "explanation": "Temporary promotion is an on-the-job staff development method that provides practical experience by assigning higher responsibilities for a limited period."
   },
   {
-    "id": 186,
+    "question_number": 186,
     "question": "The management principle which tells that there should be a clear line of authority for connecting the various levels of a single organization:",
     "options": {
       "A": "Order",
@@ -2229,10 +2229,10 @@
       "D": "Esprit de Corps"
     },
     "correct_answer": "C",
-    "explanation ": "The scalar chain refers to the clear line of authority extending from the highest to the lowest level of management, ensuring proper communication and accountability."
+    "explanation": "The scalar chain refers to the clear line of authority extending from the highest to the lowest level of management, ensuring proper communication and accountability."
   },
   {
-    "id": 187,
+    "question_number": 187,
     "question": "The style of leadership in which the leader aims to elicit desired performance from the employee by offering rewards for performance and punishment for non performance:",
     "options": {
       "A": "Transformational leader",
@@ -2241,10 +2241,10 @@
       "D": "Transactional leadership"
     },
     "correct_answer": "D",
-    "explanation ": "Transactional leadership motivates employees through rewards for good performance and corrective actions or punishment for poor performance."
+    "explanation": "Transactional leadership motivates employees through rewards for good performance and corrective actions or punishment for poor performance."
   },
   {
-    "id": 188,
+    "question_number": 188,
     "question": "The management function which focuses on measuring results, comparing result with expected standards and taking corrective action for achievement of organizational goal:",
     "options": {
       "A": "Atuning",
@@ -2253,10 +2253,10 @@
       "D": "Co ordinating"
     },
     "correct_answer": "B",
-    "explanation ": "Controlling is the management function that compares actual performance with planned standards and takes corrective action when necessary."
+    "explanation": "Controlling is the management function that compares actual performance with planned standards and takes corrective action when necessary."
   },
   {
-    "id": 189,
+    "question_number": 189,
     "question": "The error in performance appraisal where an employer rates an employee to the low level of evaluation scale based on a recent or single negative attribute:",
     "options": {
       "A": "Recency Effect",
@@ -2265,10 +2265,10 @@
       "D": "Stereotyping effect"
     },
     "correct_answer": "C",
-    "explanation ": "The horn effect occurs when one negative characteristic unfairly influences the evaluator to rate an employee poorly in other performance areas."
+    "explanation": "The horn effect occurs when one negative characteristic unfairly influences the evaluator to rate an employee poorly in other performance areas."
   },
   {
-    "id": 190,
+    "question_number": 190,
     "question": "The management skill which is essential with high priority for top level managers:",
     "options": {
       "A": "Conceptual skill",
@@ -2277,10 +2277,10 @@
       "D": "Observation skill"
     },
     "correct_answer": "A",
-    "explanation ": "Top-level managers primarily require conceptual skills to understand the organization as a whole, formulate strategies, and make long-term decisions."
+    "explanation": "Top-level managers primarily require conceptual skills to understand the organization as a whole, formulate strategies, and make long-term decisions."
   },
   {
-    "id": 191,
+    "question_number": 191,
     "question": "The quality of a research tool to measure exactly what it is intended to measure:",
     "options": {
       "A": "Sensitivity",
@@ -2289,10 +2289,10 @@
       "D": "Objectivity"
     },
     "correct_answer": "B",
-    "explanation ": "Validity refers to the ability of a research instrument to accurately measure what it is intended to measure."
+    "explanation": "Validity refers to the ability of a research instrument to accurately measure what it is intended to measure."
   },
   {
-    "id": 192,
+    "question_number": 192,
     "question": "The simplest and lowest level of measurement:",
     "options": {
       "A": "Nominal Scale",
@@ -2301,10 +2301,10 @@
       "D": "Interval Scale"
     },
     "correct_answer": "A",
-    "explanation ": "The nominal scale is the simplest level of measurement. It classifies data into categories without any order or numerical value."
+    "explanation": "The nominal scale is the simplest level of measurement. It classifies data into categories without any order or numerical value."
   },
   {
-    "id": 193,
+    "question_number": 193,
     "question": "The statistical method used to identify the strength of association between two quantitative and continuous variables:",
     "options": {
       "A": "Variance",
@@ -2313,10 +2313,10 @@
       "D": "Standard deviation"
     },
     "correct_answer": "B",
-    "explanation ": "Correlation measures the strength and direction of the relationship between two continuous quantitative variables."
+    "explanation": "Correlation measures the strength and direction of the relationship between two continuous quantitative variables."
   },
   {
-    "id": 194,
+    "question_number": 194,
     "question": "The only measure of Central Tendency which uses Nominal Variables:",
     "options": {
       "A": "Mean",
@@ -2325,10 +2325,10 @@
       "D": "Range"
     },
     "correct_answer": "C",
-    "explanation ": "Mode is the only measure of central tendency applicable to nominal data because it identifies the most frequently occurring category."
+    "explanation": "Mode is the only measure of central tendency applicable to nominal data because it identifies the most frequently occurring category."
   },
   {
-    "id": 195,
+    "question_number": 195,
     "question": "The research design in which the investigator initially collects data about the presumed cause and then its effect on the outcome is measured:",
     "options": {
       "A": "Prospective design",
@@ -2337,10 +2337,10 @@
       "D": "Cross over design"
     },
     "correct_answer": "A",
-    "explanation ": "In a prospective study, participants are selected based on the presumed cause or exposure and are followed over time to observe the development of outcomes."
+    "explanation": "In a prospective study, participants are selected based on the presumed cause or exposure and are followed over time to observe the development of outcomes."
   },
   {
-    "id": 196,
+    "question_number": 196,
     "question": "The method of sampling used by a researcher to find out the subjects who are rare and hard to locate:",
     "options": {
       "A": "Cluster sampling",
@@ -2349,10 +2349,10 @@
       "D": "Snowball Sampling"
     },
     "correct_answer": "D",
-    "explanation ": "Snowball sampling is used to recruit rare or hard-to-find participants, where existing subjects help identify and recruit additional participants."
+    "explanation": "Snowball sampling is used to recruit rare or hard-to-find participants, where existing subjects help identify and recruit additional participants."
   },
   {
-    "id": 197,
+    "question_number": 197,
     "question": "The type of learning in which a child develop general diffuse reaction to a stimulus:",
     "options": {
       "A": "Discriminative learning",
@@ -2361,10 +2361,10 @@
       "D": "Concept learning"
     },
     "correct_answer": "B",
-    "explanation ": "Signal learning is the simplest form of learning in which a child develops a generalized response to a specific stimulus through conditioning."
+    "explanation": "Signal learning is the simplest form of learning in which a child develops a generalized response to a specific stimulus through conditioning."
   },
   {
-    "id": 198,
+    "question_number": 198,
     "question": "The educational Philosopher who admired school as a garden, teacher as a gardener and students as tender plants:",
     "options": {
       "A": "Aristotle",
@@ -2373,10 +2373,10 @@
       "D": "Pestalozzi"
     },
     "correct_answer": "C",
-    "explanation ": "Friedrich Froebel, the founder of the Kindergarten system, compared the school to a garden, the teacher to a gardener, and children to tender plants requiring careful nurturing."
+    "explanation": "Friedrich Froebel, the founder of the Kindergarten system, compared the school to a garden, the teacher to a gardener, and children to tender plants requiring careful nurturing."
   },
   {
-    "id": 199,
+    "question_number": 199,
     "question": "The method of discussion in which different viewpoints or opinions in relation to a single topic is presented by various experts under the guidance of a chair person:",
     "options": {
       "A": "Symposium",
@@ -2385,10 +2385,10 @@
       "D": "Seminar"
     },
     "correct_answer": "A",
-    "explanation ": "A symposium is a formal discussion in which several experts present different viewpoints on the same topic under the guidance of a chairperson."
+    "explanation": "A symposium is a formal discussion in which several experts present different viewpoints on the same topic under the guidance of a chairperson."
   },
   {
-    "id": 200,
+    "question_number": 200,
     "question": "The instrument of choice for evaluating the proficiency of a student to reproduce a particular Nursing Skill :",
     "options": {
       "A": "Portfolio",
@@ -2397,6 +2397,6 @@
       "D": "Checklist"
     },
     "correct_answer": "D",
-    "explanation ": "A checklist is the preferred tool for evaluating the performance of a nursing skill because it objectively records whether each required step has been performed correctly."
+    "explanation": "A checklist is the preferred tool for evaluating the performance of a nursing skill because it objectively records whether each required step has been performed correctly."
   }
 ]
