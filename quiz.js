@@ -526,8 +526,12 @@ if (!userAnswer) {
             <h3>Q${index + 1}. ${q.question}</h3>
 
             <p class="review-answer">
-                ❌ <strong>Your Answer:</strong> ${userText}
-            </p>
+    ${
+        userAnswer
+            ? `${answerIcon} <strong>Your Answer:</strong> ${userText}`
+            : `⚪ <strong>Not Answered</strong>`
+         }
+           </p>
 
             <p class="review-answer">
                 ✅ <strong>Correct Answer:</strong> ${correctText}
