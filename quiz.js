@@ -565,6 +565,50 @@ function renderReview() {
 
 }
 // ============================
+// Open Explanation
+// ============================
+
+function openExplanation(index) {
+
+    const modal = document.getElementById("explanationModal");
+
+    const explanationBox =
+        document.getElementById("modalExplanation");
+
+    const q = quizQuestions[index];
+
+    explanationBox.innerHTML =
+        q.explanation ||
+        "<p>Explanation not available.</p>";
+
+    modal.style.display = "block";
+
+}
+
+// ============================
+// Close Explanation
+// ============================
+
+document.getElementById("closeModal")
+.addEventListener("click", () => {
+
+    document.getElementById("explanationModal")
+    .style.display = "none";
+
+});
+
+document.getElementById("explanationModal")
+.addEventListener("click", (e) => {
+
+    if (e.target.id === "explanationModal") {
+
+        e.currentTarget.style.display = "none";
+
+    }
+
+});
+
+// ============================
 // Submit Quiz
 // ============================
 
