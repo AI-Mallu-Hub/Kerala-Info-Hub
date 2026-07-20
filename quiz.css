@@ -259,6 +259,26 @@ button:hover{
 
 }
 
+.result-tip{
+    background:#eef6ff;
+    border-left:5px solid #2563eb;
+    border-radius:10px;
+    padding:16px;
+    margin:20px 0;
+    text-align:left;
+}
+
+.result-tip h4{
+    margin:0 0 8px;
+    color:#2563eb;
+}
+
+.result-tip p{
+    margin:0;
+    color:#444;
+    line-height:1.6;
+}
+
 /* ==========================
    Result
 ========================== */
