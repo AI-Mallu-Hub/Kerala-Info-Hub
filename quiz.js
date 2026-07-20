@@ -494,30 +494,48 @@ function renderReview() {
     quizQuestions.forEach((q, index) => {
 
         const userAnswer = userAnswers[index];
-       console.log(index, userAnswer, q.correct_answer, userAnswer === q.correct_answer);
-        const userText = userAnswer
-            ? `${userAnswer}. ${q.options[userAnswer]}`
-            : "Not Answered";
 
         const correctText =
             `${q.correct_answer}. ${q.options[q.correct_answer]}`;
 
-           let answerIcon = "";
+        let userAnswerHtml = "";
 
+        // ----------------------------
+        // User Answer
+        // ----------------------------
 
-if (!userAnswer) {
+        if (userAnswer === undefined) {
 
-    answerIcon = "⚪";
+            userAnswerHtml = `
+                <p class="review-answer">
+                    ⚪ <strong>Not Answered</strong>
+                </p>
+            `;
 
-} else if (userAnswer === q.correct_answer) {
+        } else if (userAnswer === q.correct_answer) {
 
-    answerIcon = "✅";
+            userAnswerHtml = `
+                <p class="review-answer">
+                    ✅ <strong>Your Answer:</strong>
+                    ${userAnswer}. ${q.options[userAnswer]}
+                </p>
+            `;
 
-} else {
+        } else {
 
-    answerIcon = "❌";
+            userAnswerHtml = `
+                <p class="review-answer">
+                    ❌ <strong>Your Answer:</strong>
+                    ${userAnswer}. ${q.options[userAnswer]}
+                </p>
+            `;
 
-}
+        }
+
+        // ----------------------------
+        // Create Card
+        // ----------------------------
+
         const card = document.createElement("div");
 
         card.className = "review-card";
@@ -526,16 +544,11 @@ if (!userAnswer) {
 
             <h3>Q${index + 1}. ${q.question}</h3>
 
-            <p class="review-answer">
-    ${
-        userAnswer
-            ? `${answerIcon} <strong>Your Answer:</strong> ${userText}`
-            : `⚪ <strong>Not Answered</strong>`
-         }
-           </p>
+            ${userAnswerHtml}
 
             <p class="review-answer">
-                ✅ <strong>Correct Answer:</strong> ${correctText}
+                ✅ <strong>Correct Answer:</strong>
+                ${correctText}
             </p>
 
             <button
@@ -550,7 +563,7 @@ if (!userAnswer) {
 
     });
 
-   }
+}
 // ============================
 // Submit Quiz
 // ============================
