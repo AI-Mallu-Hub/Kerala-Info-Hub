@@ -168,7 +168,7 @@ button:hover{
 .quiz-tip{
     margin-top:15px;
     font-weight:600;
-    color:#555;
+    color:#555 !important;
 }
 
 /* ==========================
