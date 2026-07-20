@@ -494,6 +494,14 @@ button:disabled{
 
 }
 
+#reviewBtn{
+    background:#198754;
+}
+
+#reviewBtn:hover{
+    background:#157347;
+}
+
 /* =====================================
    Option Animation
 ===================================== */
