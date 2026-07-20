@@ -609,6 +609,8 @@ document.getElementById("retakeBtn").addEventListener("click", () => {
 
     document.getElementById("reviewBtn").addEventListener("click", () => {
 
+        renderReview();
+        
     document.getElementById("resultBox").style.display = "none";
 
     document.getElementById("reviewSection").style.display = "block";
