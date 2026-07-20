@@ -166,9 +166,12 @@ button:hover{
 }
 
 .quiz-tip{
-    margin-top:15px;
+    display:block;
+    color:#555;
+    font-size:16px;
+    line-height:1.6;
     font-weight:600;
-    color:#555 !important;
+    white-space:normal;
 }
 
 /* ==========================
