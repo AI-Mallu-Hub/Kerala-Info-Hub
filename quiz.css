@@ -154,8 +154,9 @@ button:hover{
 }
 
 .quiz-info-card ul{
+    list-style: none;
     margin:0;
-    padding-left:20px;
+    padding-left:0px;
 }
 
 .quiz-info-card li{
