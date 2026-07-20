@@ -476,7 +476,57 @@ function restoreReviewedPage() {
     pageScoreBox.textContent =
         `✅ Page Score : ${pageScore} / ${end - start}`;
 
-                                 }
+   }
+// ============================
+// Render Review
+// ============================
+
+function renderReview() {
+
+    const container = document.getElementById("reviewContainer");
+
+    container.innerHTML = "";
+
+    quizQuestions.forEach((q, index) => {
+
+        const userAnswer = userAnswers[index];
+
+        const userText = userAnswer
+            ? `${userAnswer}. ${q.options[userAnswer]}`
+            : "Not Answered";
+
+        const correctText =
+            `${q.correct_answer}. ${q.options[q.correct_answer]}`;
+
+        const card = document.createElement("div");
+
+        card.className = "review-card";
+
+        card.innerHTML = `
+
+            <h3>Q${index + 1}. ${q.question}</h3>
+
+            <p class="review-answer">
+                ❌ <strong>Your Answer:</strong> ${userText}
+            </p>
+
+            <p class="review-answer">
+                ✅ <strong>Correct Answer:</strong> ${correctText}
+            </p>
+
+            <button
+                class="explanation-btn"
+                data-index="${index}">
+                📖 Explanation
+            </button>
+
+        `;
+
+        container.appendChild(card);
+
+    });
+
+   }
 // ============================
 // Submit Quiz
 // ============================
