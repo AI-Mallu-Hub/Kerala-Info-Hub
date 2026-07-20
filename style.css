@@ -368,6 +368,13 @@ transform:translateY(0);
 
 }
 
+.card-note{
+    display:block;
+    margin-top:12px;
+    font-size:0.9rem;
+    font-weight:600;
+    color:#1976d2;
+}
 .card:hover{
 
     transform:translateY(-8px);
