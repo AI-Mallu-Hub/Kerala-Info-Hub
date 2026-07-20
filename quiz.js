@@ -291,6 +291,10 @@ if (reviewedPages[currentPage]) {
 
   }
     restoreReviewedPage();
+    document.getElementById("quizArea").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+});
 }
 // ============================
 // Previous Button
