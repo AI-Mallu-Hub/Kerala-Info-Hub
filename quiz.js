@@ -498,6 +498,25 @@ function renderReview() {
         const correctText =
             `${q.correct_answer}. ${q.options[q.correct_answer]}`;
 
+           let answerIcon = "";
+let answerLabel = "";
+
+if (!userAnswer) {
+
+    answerIcon = "⚪";
+    answerLabel = "Not Answered";
+
+} else if (userAnswer === q.correct_answer) {
+
+    answerIcon = "✅";
+    answerLabel = "Your Answer";
+
+} else {
+
+    answerIcon = "❌";
+    answerLabel = "Your Answer";
+
+}
         const card = document.createElement("div");
 
         card.className = "review-card";
