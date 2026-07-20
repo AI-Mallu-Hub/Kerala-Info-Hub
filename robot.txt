@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ai-mallu-hub.github.io/Kerala-Info-Hub/sitemap.xml
