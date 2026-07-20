@@ -490,7 +490,7 @@ function renderReview() {
     quizQuestions.forEach((q, index) => {
 
         const userAnswer = userAnswers[index];
-
+       console.log(index, userAnswer, q.correct_answer, userAnswer === q.correct_answer);
         const userText = userAnswer
             ? `${userAnswer}. ${q.options[userAnswer]}`
             : "Not Answered";
