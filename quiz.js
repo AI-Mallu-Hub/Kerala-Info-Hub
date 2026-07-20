@@ -552,10 +552,12 @@ function renderReview() {
             </p>
 
             <button
-                class="explanation-btn"
-                data-index="${index}">
-                📖 Explanation
-            </button>
+    class="explanation-btn"
+    onclick="openExplanation(${index})">
+
+    📖 Explanation
+
+</button>
 
         `;
 
