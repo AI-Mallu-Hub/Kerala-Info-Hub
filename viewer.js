@@ -1,19 +1,53 @@
 const params = new URLSearchParams(window.location.search);
-
 const file = params.get("file");
 
-const viewer = document.getElementById("pdfViewer");
+const canvas = document.getElementById("pdfCanvas");
+const ctx = canvas.getContext("2d");
 
-if(file){
+let pdfDoc = null;
+let pageNum = 1;
+const scale = 1.5;
 
-    viewer.src = decodeURIComponent(file);
+document.getElementById("backBtn").addEventListener("click", () => {
+    history.back();
+});
 
+if (!file) {
+    document.body.innerHTML = "<h2 style='padding:20px'>No PDF file specified.</h2>";
+    throw new Error("No PDF file specified.");
 }
 
-document
-.getElementById("backBtn")
-.addEventListener("click",()=>{
+async function renderPage(num) {
+    const page = await pdfDoc.getPage(num);
 
-    history.back();
+    const viewport = page.getViewport({ scale });
 
-});
+    canvas.width = viewport.width;
+    canvas.height = viewport.height;
+
+    await page.render({
+        canvasContext: ctx,
+        viewport: viewport
+    }).promise;
+}
+
+async function loadPDF() {
+    try {
+        pdfDoc = await pdfjsLib.getDocument(decodeURIComponent(file)).promise;
+
+        renderPage(pageNum);
+
+    } catch (err) {
+
+        console.error(err);
+
+        document.body.innerHTML = `
+            <div style="padding:20px;font-family:Arial">
+                <h2>Unable to load PDF</h2>
+                <p>${err.message}</p>
+            </div>
+        `;
+    }
+}
+
+loadPDF();
