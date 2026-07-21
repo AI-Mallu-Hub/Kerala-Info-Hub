@@ -44,7 +44,6 @@ body{
     align-items:center;
     padding:20px;
     overflow:auto;
-    height:calc(100vh - 60px);
 }
 
 #pdfCanvas{
@@ -101,6 +100,8 @@ body{
     background:#2563eb;
     color:#fff;
     padding:10px;
+    padding-bottom:30px; /* fallback */
+    
     padding-bottom:calc(10px + env(safe-area-inset-bottom));
 
     flex-shrink:0;
