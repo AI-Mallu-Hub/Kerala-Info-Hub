@@ -2,7 +2,10 @@
   {
     "id": 1,
     "post": "Staff Nurse Grade II",
-    "categoryNo": "727/2025",
+    "categoryNo": [
+    "727/2025",
+    "772/2025"
+  ],
     "questionPaperNo": "153/2025",
     "examYear": "2026",
     "pdf": "pdf/727-2025 QP 153-2025.pdf",
