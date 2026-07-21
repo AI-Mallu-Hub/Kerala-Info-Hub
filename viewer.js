@@ -10,6 +10,21 @@ let pageNum = 1;
 let baseScale = 1;
 let zoomFactor = 1;
 
+function calculateAutoFit(page) {
+
+    const container = document.querySelector(".viewer-container");
+
+    const viewport = page.getViewport({ scale: 1 });
+
+    const availableWidth = container.clientWidth - 20;
+    const availableHeight = container.clientHeight - 20;
+
+    const scaleX = availableWidth / viewport.width;
+    const scaleY = availableHeight / viewport.height;
+
+    return Math.min(scaleX, scaleY);
+}
+
 document.getElementById("backBtn").addEventListener("click", () => {
     history.back();
 });
