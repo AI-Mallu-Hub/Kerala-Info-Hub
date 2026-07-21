@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "post": "Staff Nurse Grade II",
+    "categoryNo": "727/2025",
+    "questionPaperNo": "153/2025",
+    "examYear": "2026",
+    "pdf": "pdf/727-2025 QP 153-2025.pdf",
+    "quiz": "psc-quiz.html",
+    "source": "Official Kerala PSC Website"
+    "available": true
+  },
+  {
+    "id": 2,
+    "post": "Staff Nurse Grade II",
+    "categoryNo": "624/2022",
+    "questionPaperNo": "033/2023",
+    "examYear": "2023",
+    "pdf": "pdf/624-2022 QP 033-2023.pdf",
+    "quiz": "psc-quiz.html",
+    "source": "Official Kerala PSC Website"
+    "available": true
+  }
+]
