@@ -19,14 +19,36 @@
 
 <main class="viewer-container">
 
-    <div class="page-info">
-        <button id="prevPage">◀ Previous</button>
+    <canvas id="pdfCanvas"></canvas>
 
-        <span id="pageNumber">
-            Page 1 / 1
-        </span>
+</main>
 
-        <button id="nextPage">Next ▶</button>
+<div class="viewer-controls">
+
+    <div id="pageNumber">
+        1 / 1
+    </div>
+
+    <div class="nav-row">
+
+        <button id="prevPage">
+            ◀
+        </button>
+
+        <button id="nextPage">
+            ▶
+        </button>
+
+    </div>
+
+    <div class="tool-row">
+
+        <button id="zoomBtn">🔍</button>
+
+        <button id="downloadBtn">📥</button>
+
+        <button id="fullscreenBtn">⛶</button>
+
     </div>
 
       <canvas id="pdfCanvas"></canvas>
