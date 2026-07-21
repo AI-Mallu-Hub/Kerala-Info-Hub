@@ -28,7 +28,7 @@ async function loadPapers() {
 
                     <div class="paper-buttons">
 
-                        <a href="${paper.pdf}"
+                        <a href="viewer.html?file=${encodeURIComponent(paper.pdf)}"
                            target="_blank"
                            rel="noopener">
                            📄 View Question Paper
