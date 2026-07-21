@@ -46,3 +46,45 @@ body{
     box-shadow:0 4px 12px rgba(0,0,0,.2);
     background:#fff;
 }
+
+.page-info{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.page-info button{
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    font-weight:bold;
+
+}
+
+#pageNumber{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
