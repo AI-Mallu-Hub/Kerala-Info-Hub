@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+}
+
+.viewer-header{
+    height:60px;
+    background:#2563eb;
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    padding:0 15px;
+}
+
+#backBtn{
+    border:none;
+    background:#fff;
+    color:#2563eb;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.viewer-container{
+    height:calc(100vh - 60px);
+}
+
+#pdfViewer{
+    width:100%;
+    height:100%;
+    border:none;
+}
