@@ -88,3 +88,89 @@ body{
     font-weight:bold;
 
 }
+
+.viewer-controls{
+
+    position:fixed;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    padding:10px;
+
+    box-shadow:0 -2px 8px rgba(0,0,0,.25);
+
+}
+
+#pageNumber{
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    margin-bottom:12px;
+
+}
+
+.nav-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.nav-row button{
+
+    width:70px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
+
+.tool-row{
+
+    margin-top:12px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+}
+
+.tool-row button{
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
