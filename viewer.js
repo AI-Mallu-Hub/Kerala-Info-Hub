@@ -3,6 +3,7 @@ const file = params.get("file");
 
 const canvas = document.getElementById("pdfCanvas");
 const ctx = canvas.getContext("2d");
+const pageNumber = document.getElementById("pageNumber");
 
 let pdfDoc = null;
 let pageNum = 1;
@@ -29,6 +30,8 @@ async function renderPage(num) {
         canvasContext: ctx,
         viewport: viewport
     }).promise;
+    pageNumber.textContent =
+`Page ${pageNum} / ${pdfDoc.numPages}`;
 }
 
 async function loadPDF() {
@@ -51,3 +54,27 @@ async function loadPDF() {
 }
 
 loadPDF();
+
+document
+.getElementById("nextPage")
+.addEventListener("click",()=>{
+
+    if(pageNum>=pdfDoc.numPages) return;
+
+    pageNum++;
+
+    renderPage(pageNum);
+
+});
+
+document
+.getElementById("prevPage")
+.addEventListener("click",()=>{
+
+    if(pageNum<=1) return;
+
+    pageNum--;
+
+    renderPage(pageNum);
+
+});
