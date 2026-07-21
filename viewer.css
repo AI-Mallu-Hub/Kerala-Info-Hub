@@ -101,6 +101,7 @@ body{
     background:#2563eb;
     color:#fff;
     padding:10px;
+    padding-bottom:calc(10px + env(safe-area-inset-bottom));
 
     flex-shrink:0;
 }
