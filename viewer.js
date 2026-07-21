@@ -41,6 +41,10 @@ async function loadPDF() {
     try {
         pdfDoc = await pdfjsLib.getDocument(decodeURIComponent(file)).promise;
 
+      const firstPage = await pdfDoc.getPage(1);
+
+baseScale = calculateAutoFit(firstPage);
+        
         renderPage(pageNum);
 
     } catch (err) {
