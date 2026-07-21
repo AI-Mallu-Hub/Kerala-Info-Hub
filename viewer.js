@@ -22,6 +22,8 @@ if (!file) {
 async function renderPage(num) {
     const page = await pdfDoc.getPage(num);
 
+    const scale = baseScale * zoomFactor;
+
     const viewport = page.getViewport({ scale });
 
     canvas.width = viewport.width;
