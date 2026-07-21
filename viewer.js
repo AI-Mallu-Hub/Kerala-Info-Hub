@@ -7,7 +7,7 @@ const pageNumber = document.getElementById("pageNumber");
 
 let pdfDoc = null;
 let pageNum = 1;
-const scale = 1.5;
+let scale = 1.5;
 
 document.getElementById("backBtn").addEventListener("click", () => {
     history.back();
