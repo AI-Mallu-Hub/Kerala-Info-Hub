@@ -637,3 +637,19 @@ button:disabled{
 #closeModal:hover {
     color: #e53935;
 }
+
+.seo-content{
+    margin-top:40px;
+    padding:20px;
+    background:#fff;
+    border-radius:12px;
+    line-height:1.8;
+}
+
+.seo-content h2{
+    margin-top:20px;
+}
+
+.seo-content ul{
+    padding-left:20px;
+}
