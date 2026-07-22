@@ -4,6 +4,8 @@ const file = params.get("file");
 const canvas = document.getElementById("pdfCanvas");
 const ctx = canvas.getContext("2d");
 const pageNumber = document.getElementById("pageNumber");
+const zoomSlider =
+document.getElementById("zoomSlider");
 
 let pdfDoc = null;
 let pageNum = 1;
@@ -96,6 +98,13 @@ document
     if(pageNum<=1) return;
 
     pageNum--;
+
+    renderPage(pageNum);
+
+});
+zoomSlider.addEventListener("input", () => {
+
+    zoomFactor = Number(zoomSlider.value) / 100;
 
     renderPage(pageNum);
 
