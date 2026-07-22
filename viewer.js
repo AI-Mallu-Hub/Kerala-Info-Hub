@@ -9,6 +9,10 @@ document.getElementById("zoomSlider");
 const zoomValue =
 document.getElementById("zoomValue");
 const header = document.querySelector(".viewer-header");
+const controls = document.querySelector(".viewer-controls");
+const viewer = document.querySelector(".viewer-container");
+
+let controlsVisible = true;
 
 let pdfDoc = null;
 let pageNum = 1;
@@ -149,6 +153,8 @@ document.addEventListener("fullscreenchange", async () => {
         fullscreenBtn.textContent = "🡼";
 
     } else {
+        controls.style.display = "block";
+controlsVisible = true;
 
         header.style.display = "flex";
 
@@ -161,5 +167,15 @@ document.addEventListener("fullscreenchange", async () => {
     baseScale = calculateAutoFit(firstPage);
 
     renderPage(pageNum);
+
+});
+viewer.addEventListener("click", () => {
+
+    if (!document.fullscreenElement) return;
+
+    controlsVisible = !controlsVisible;
+
+    controls.style.display =
+        controlsVisible ? "block" : "none";
 
 });
