@@ -152,13 +152,13 @@ body{
 }
 
 .tool-row{
-    margin-top:16px;
+    margin-top:10px;
 
     display:flex;
     justify-content:center;
     align-items:center;
 
-    margin-bottom:20px;
+    margin-bottom:12px;
 }
 
 .tool-row button{
