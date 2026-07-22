@@ -642,6 +642,7 @@ button:disabled{
     margin-top:40px;
     padding:20px;
     background:#fff;
+    color:#333
     border-radius:12px;
     line-height:1.8;
 }
