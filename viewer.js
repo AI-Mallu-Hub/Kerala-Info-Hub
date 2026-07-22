@@ -50,6 +50,15 @@ async function renderPage(num) {
         canvasContext: ctx,
         viewport: viewport
     }).promise;
+    const wrapper = document.querySelector(".pdf-wrapper");
+
+if (zoomFactor === 1) {
+    wrapper.style.justifyContent = "center";
+    wrapper.style.alignItems = "center";
+} else {
+    wrapper.style.justifyContent = "flex-start";
+    wrapper.style.alignItems = "flex-start";
+        }
     pageNumber.textContent =
 `Page ${pageNum} / ${pdfDoc.numPages}`;
 }
