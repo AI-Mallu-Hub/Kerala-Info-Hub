@@ -118,3 +118,19 @@ zoomSlider.addEventListener("input", () => {
     renderPage(pageNum);
 
 });
+
+const fullscreenBtn = document.getElementById("fullscreenBtn");
+
+fullscreenBtn.addEventListener("click", async () => {
+
+    if (!document.fullscreenElement) {
+
+        await document.documentElement.requestFullscreen();
+
+    } else {
+
+        await document.exitFullscreen();
+
+    }
+
+});
