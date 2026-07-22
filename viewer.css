@@ -163,13 +163,13 @@ body{
 
 .tool-row button{
 
-    width:56px;
-    height:56px;
+    width:48px;
+    height:48px;
 
     border:none;
     border-radius:50%;
 
-    font-size:26px;
+    font-size:20px;
 
     cursor:pointer;
 }
@@ -186,9 +186,9 @@ body{
 
 #zoomSlider{
 
-    width:220px;
+    width:85%;
 
-    max-width:80%;
+    max-width:320px;
 
     cursor:pointer;
 
