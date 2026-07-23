@@ -38,6 +38,7 @@ body{
 }
 
 .viewer-container{
+    position:relative;
     display:flex;
     flex:1;
     justify-content:flex-start;
