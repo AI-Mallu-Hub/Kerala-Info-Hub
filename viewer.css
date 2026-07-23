@@ -115,9 +115,6 @@ body{
     flex-shrink:0;
     transition: transform .25s ease,
                 opacity .25s ease;
-    transform: translateY(100%);
-    opacity: 50;
-    pointer-events: none;
 }
 
 #pageNumber{
