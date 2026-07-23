@@ -12,6 +12,8 @@ const header = document.querySelector(".viewer-header");
 const controls = document.querySelector(".viewer-controls");
 const viewer = document.querySelector(".viewer-container");
 const loadingOverlay = document.getElementById("loadingOverlay");
+const prevBtn = document.getElementById("prevPage");
+const nextBtn = document.getElementById("nextPage");
 
 let controlsVisible = true;
 
@@ -75,8 +77,16 @@ if (zoomFactor === 1) {
         }
     pageNumber.textContent =
 `Page ${pageNum} / ${pdfDoc.numPages}`;
+    updateNavigationButtons();
     hideLoader();
 }
+function updateNavigationButtons() {
+
+    prevBtn.disabled = (pageNum === 1);
+
+    nextBtn.disabled = (pageNum === pdfDoc.numPages);
+
+    }
 
 async function loadPDF() {
     try {
