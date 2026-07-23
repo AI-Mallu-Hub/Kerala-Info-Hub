@@ -171,8 +171,8 @@ document.addEventListener("fullscreenchange", async () => {
         fullscreenBtn.textContent = "🡼";
 
     } else {
-        controls.style.display = "block";
-controlsVisible = true;
+        controlsVisible = true;
+controls.classList.remove("hidden");
 
         header.style.display = "flex";
 
@@ -187,16 +187,14 @@ controlsVisible = true;
     renderPage(pageNum);
 
 });
-viewer.addEventListener("click", () => {
+viewer.addEventListener("click", (event) => {
 
     if (!document.fullscreenElement) return;
     if (event.target.closest(".viewer-controls")) return;
 
     controlsVisible = !controlsVisible;
-
-    controls.style.display =
-        controlsVisible ? "block" : "none";
-
+    controls.classList.toggle("hidden", !controlsVisible);
+    
 });
 viewer.addEventListener("touchstart", (event) => {
 
