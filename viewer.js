@@ -63,7 +63,7 @@ async function renderPage(num) {
         canvasContext: ctx,
         viewport: viewport
     }).promise;
-    hideLoader();
+    
     const wrapper = document.querySelector(".pdf-wrapper");
 
 if (zoomFactor === 1) {
@@ -75,6 +75,7 @@ if (zoomFactor === 1) {
         }
     pageNumber.textContent =
 `Page ${pageNum} / ${pdfDoc.numPages}`;
+    hideLoader();
 }
 
 async function loadPDF() {
