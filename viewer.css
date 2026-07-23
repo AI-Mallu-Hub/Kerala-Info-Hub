@@ -112,6 +112,8 @@ body{
     padding-bottom:calc(30px + env(safe-area-inset-bottom));
 
     flex-shrink:0;
+    transition: transform .25s ease,
+                opacity .25s ease;
 }
 #pageNumber{
 
