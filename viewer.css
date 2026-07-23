@@ -115,7 +115,17 @@ body{
     flex-shrink:0;
     transition: transform .25s ease,
                 opacity .25s ease;
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
 }
+
+.viewer-controls.hidden {
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
 #pageNumber{
 
     text-align:center;
