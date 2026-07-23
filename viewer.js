@@ -11,6 +11,7 @@ document.getElementById("zoomValue");
 const header = document.querySelector(".viewer-header");
 const controls = document.querySelector(".viewer-controls");
 const viewer = document.querySelector(".viewer-container");
+const loadingOverlay = document.getElementById("loadingOverlay");
 
 let controlsVisible = true;
 
@@ -230,3 +231,10 @@ viewer.addEventListener("touchend", (event) => {
     }
 
 });
+function showLoader() {
+    loadingOverlay.style.display = "flex";
+}
+
+function hideLoader() {
+    loadingOverlay.style.display = "none";
+}
