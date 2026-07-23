@@ -49,6 +49,7 @@ if (!file) {
 }
 
 async function renderPage(num) {
+    showLoader();
     const page = await pdfDoc.getPage(num);
 
     const scale = baseScale * zoomFactor;
@@ -62,6 +63,7 @@ async function renderPage(num) {
         canvasContext: ctx,
         viewport: viewport
     }).promise;
+    hideLoader();
     const wrapper = document.querySelector(".pdf-wrapper");
 
 if (zoomFactor === 1) {
