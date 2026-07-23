@@ -18,6 +18,10 @@ let pdfDoc = null;
 let pageNum = 1;
 let baseScale = 1;
 let zoomFactor = 1;
+let touchStartX = 0;
+let touchEndX = 0;
+
+const SWIPE_THRESHOLD = 60;
 
 function calculateAutoFit(page) {
 
@@ -178,5 +182,45 @@ viewer.addEventListener("click", () => {
 
     controls.style.display =
         controlsVisible ? "block" : "none";
+
+});
+viewer.addEventListener("touchstart", (event) => {
+
+    touchStartX = event.changedTouches[0].clientX;
+
+});
+viewer.addEventListener("touchend", (event) => {
+
+    touchEndX = event.changedTouches[0].clientX;
+
+    const distance = touchEndX - touchStartX;
+
+    if (Math.abs(distance) < SWIPE_THRESHOLD) return;
+
+    // Right Swipe
+    if (distance > 0) {
+
+        if (pageNum > 1) {
+
+            pageNum--;
+
+            renderPage(pageNum);
+
+        }
+
+    }
+
+    // Left Swipe
+    else {
+
+        if (pageNum < pdfDoc.numPages) {
+
+            pageNum++;
+
+            renderPage(pageNum);
+
+        }
+
+    }
 
 });
