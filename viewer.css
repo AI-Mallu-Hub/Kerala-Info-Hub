@@ -116,13 +116,7 @@ body{
     transition: transform .25s ease,
                 opacity .25s ease;
     transform: translateY(100%);
-    opacity: 0;
-    pointer-events: none;
-}
-
-.viewer-controls.hidden {
-    transform: translateY(100%);
-    opacity: 0;
+    opacity: 50;
     pointer-events: none;
 }
 
