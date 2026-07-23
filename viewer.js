@@ -171,8 +171,8 @@ document.addEventListener("fullscreenchange", async () => {
         fullscreenBtn.textContent = "🡼";
 
     } else {
-        controlsVisible = true;
-controls.classList.remove("hidden");
+        controls.style.display = "block";
+controlsVisible = true;
 
         header.style.display = "flex";
 
@@ -190,11 +190,14 @@ controls.classList.remove("hidden");
 viewer.addEventListener("click", (event) => {
 
     if (!document.fullscreenElement) return;
+
     if (event.target.closest(".viewer-controls")) return;
 
     controlsVisible = !controlsVisible;
-    controls.classList.toggle("hidden", !controlsVisible);
-    
+
+    controls.style.display =
+        controlsVisible ? "block" : "none";
+
 });
 viewer.addEventListener("touchstart", (event) => {
 
