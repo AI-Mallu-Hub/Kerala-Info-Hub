@@ -172,6 +172,7 @@ controlsVisible = true;
 viewer.addEventListener("click", () => {
 
     if (!document.fullscreenElement) return;
+    if (event.target.closest(".viewer-controls")) return;
 
     controlsVisible = !controlsVisible;
 
