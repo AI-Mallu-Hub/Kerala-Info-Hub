@@ -192,6 +192,12 @@ viewer.addEventListener("touchstart", (event) => {
 viewer.addEventListener("touchend", (event) => {
 
     touchEndX = event.changedTouches[0].clientX;
+    
+    if (zoomFactor > 1) {
+
+    return;
+
+    }
 
     const distance = touchEndX - touchStartX;
 
