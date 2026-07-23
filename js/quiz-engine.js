@@ -19,7 +19,7 @@ async function loadQuestions() {
 
     try {
 
-        const response = await fetch("data/psc_quiz.json");
+        const response = await fetch("../data/psc/psc_quiz.json");
 
         if (!response.ok) {
             throw new Error("Unable to load question file.");
