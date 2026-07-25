@@ -5,6 +5,12 @@ const examConfig = {
         shortName: "PSC",
         description: "Kerala PSC Staff Nurse Grade II Previous Questions Practice",
 
+        theme: {
+    color: "#1565c0",
+    accent: "#1976d2",
+    icon: "📝"
+        }
+
         whyPractice: [
             "PSC Exam-Oriented Questions",
             "Detailed Textbook-Based Explanations",
@@ -52,6 +58,12 @@ const examConfig = {
         shortName: "DOH",
         description: "Department of Health (Abu Dhabi) Nursing Practice Questions",
 
+            theme: {
+    color: "#00897b",
+    accent: "#26a69a",
+    icon: "🏥"
+        }
+
         whyPractice: [
             "DOH Licensing Exam Questions",
             "Detailed Clinical Explanations",
@@ -98,6 +110,12 @@ const examConfig = {
         shortName: "DHA",
         description: "Dubai Health Authority Nursing Practice Questions",
 
+            theme: {
+    color: "#6a1b9a",
+    accent: "#8e24aa",
+    icon: "🏙️"
+        }
+
         whyPractice: [
             "DHA Licensing Questions",
             "Detailed Clinical Explanations",
@@ -112,6 +130,12 @@ const examConfig = {
         title: "MOH Quiz",
         shortName: "MOH",
         description: "MOH Nursing Licensing Exam Practice Questions",
+
+            theme: {
+    color: "#2e7d32",
+    accent: "#43a047",
+    icon: "🌿"
+        }
 
         whyPractice: [
             "MOH Licensing Questions",
