@@ -16,7 +16,10 @@ let lockedPages = {};
 // Current Exam Configuration
 // =========================
 
-let exam = new URLSearchParams(window.location.search).get("exam") || "psc";
+const exam =
+    window.EXAM ||
+    new URLSearchParams(window.location.search).get("exam") ||
+    "psc";
 
 // Support old HAAD links
 if (exam === "haad") {
