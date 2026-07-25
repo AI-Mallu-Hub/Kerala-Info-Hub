@@ -48,6 +48,48 @@ if (nav) {
     nav.textContent = info.title;
 }
 
+// =========================
+// Render SEO Content
+// =========================
+
+function renderSeoContent() {
+
+    const seoContainer = document.getElementById("seoContent");
+
+    if (!seoContainer || !info.seo) return;
+
+    const featuresHtml = info.seo.features
+        .map(feature => `<li>${feature}</li>`)
+        .join("");
+
+    const faqHtml = info.seo.faq
+        .map(faq => `
+            <h3>${faq.question}</h3>
+            <p>${faq.answer}</p>
+        `)
+        .join("");
+
+    seoContainer.innerHTML = `
+        <h2>${info.seo.heading}</h2>
+
+        <p>${info.seo.description}</p>
+
+        <h2>Features</h2>
+
+        <ul>
+            ${featuresHtml}
+        </ul>
+
+        <h2>Who can use this quiz?</h2>
+
+        <p>${info.seo.whoCanUse}</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        ${faqHtml}
+    `;
+}
+
 // ============================
 // Load Questions
 // ============================
