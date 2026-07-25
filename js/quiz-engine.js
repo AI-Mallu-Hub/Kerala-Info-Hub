@@ -23,6 +23,23 @@ document.title = `${info.title} | Kerala Info Hub`;
 
 document.getElementById("quizTitle").textContent = info.title;
 document.getElementById("quizDescription").textContent = info.description;
+const whyPracticeList = document.getElementById("whyPracticeList");
+
+if (whyPracticeList) {
+    whyPracticeList.innerHTML = "";
+
+    info.whyPractice.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = `✅ ${item}`;
+        whyPracticeList.appendChild(li);
+    });
+}
+
+const quizTip = document.getElementById("quizTip");
+
+if (quizTip) {
+    quizTip.textContent = `💡 ${info.tip}`;
+}
 
 const nav = document.getElementById("quizNavLink");
 
