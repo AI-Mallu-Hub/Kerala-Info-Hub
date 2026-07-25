@@ -11,6 +11,26 @@ let userAnswers = {};
 let reviewedPages = {};
 let lockedPages = {};
 
+// =========================
+// Current Exam Configuration
+// =========================
+
+const exam = new URLSearchParams(window.location.search).get("exam") || "psc";
+
+const info = examConfig[exam] || examConfig.psc;
+
+document.title = `${info.title} | Kerala Info Hub`;
+
+document.getElementById("quizTitle").textContent = info.title;
+document.getElementById("quizDescription").textContent = info.description;
+
+const nav = document.getElementById("quizNavLink");
+
+if (nav) {
+    nav.href = `quiz.html?exam=${exam}`;
+    nav.textContent = info.title;
+}
+
 // ============================
 // Load Questions
 // ============================
