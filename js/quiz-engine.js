@@ -62,7 +62,7 @@ if (quizTip) {
 const nav = document.getElementById("quizNavLink");
 
 if (nav) {
-    nav.href = `quiz.html?exam=${exam}`;
+    nav.href = `${exam}.html`;
     nav.textContent = info.title;
 }
 
