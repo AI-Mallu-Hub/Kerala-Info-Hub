@@ -9,7 +9,7 @@ const examConfig = {
     color: "#1565c0",
     accent: "#1976d2",
     icon: "📝"
-        }
+        },
 
         whyPractice: [
             "PSC Exam-Oriented Questions",
@@ -62,7 +62,7 @@ const examConfig = {
     color: "#00897b",
     accent: "#26a69a",
     icon: "🏥"
-        }
+        },
 
         whyPractice: [
             "DOH Licensing Exam Questions",
