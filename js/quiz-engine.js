@@ -39,9 +39,6 @@ async function loadQuestions() {
 
     try {
 
-        const params = new URLSearchParams(window.location.search);
-        const exam = params.get("exam") || "psc";
-
         const response = await fetch(`../data/${exam}/${exam}_quiz.json`);
 
         if (!response.ok) {
