@@ -62,18 +62,36 @@ const examConfig = {
         tip: "Practice regularly to improve your DOH exam score." ,
         seo: {
 
-    heading: "DOH Nursing Practice Quiz",
+    heading: "DOH Abu Dhabi Nursing Licensing Practice Quiz",
 
-    description: "...",
+    description: "Department of Health (DOH) Abu Dhabi Nursing Licensing Exam-ന് തയ്യാറെടുക്കുന്ന നഴ്സുമാർക്കായി തയ്യാറാക്കിയ സൗജന്യ Practice Quiz ആണ് ഇത്. Clinical nursing, pharmacology, medical-surgical nursing, maternity, pediatric nursing, infection control, patient safety എന്നിവ ഉൾപ്പെടുന്ന exam-oriented questions, വിശദമായ explanations, instant score, answer review എന്നിവ ഉപയോഗിച്ച് നിങ്ങളുടെ പരീക്ഷാ തയ്യാറെടുപ്പ് മെച്ചപ്പെടുത്താം.",
 
-    features: [],
+    features: [
+        "DOH Abu Dhabi licensing exam-oriented questions",
+        "Detailed textbook and clinical explanations",
+        "Instant score and answer review",
+        "Practice mode and daily quiz mode",
+        "Regularly updated nursing question bank"
+    ],
 
-    whoCanUse: "...",
+    whoCanUse: "ഈ quiz DOH Abu Dhabi Nursing Licensing Exam എഴുതാൻ തയ്യാറെടുക്കുന്ന Registered Nurses (RN), General Nurses, BSc Nursing graduates, GNM nurses, കൂടാതെ UAE nursing licensing exam-ന് തയ്യാറെടുക്കുന്ന എല്ലാ ഉദ്യോഗാർത്ഥികൾക്കും അനുയോജ്യമാണ്.",
 
-    faq: []
-
+    faq: [
+        {
+            question: "Is this DOH practice quiz free?",
+            answer: "Yes. All DOH practice quizzes on Kerala Info Hub are completely free."
+        },
+        {
+            question: "Does this quiz follow the DOH exam pattern?",
+            answer: "The questions are designed based on common nursing topics and the style commonly seen in DOH licensing examinations."
+        },
+        {
+            question: "Is HAAD the same as DOH?",
+            answer: "Yes. HAAD (Health Authority – Abu Dhabi) was renamed as the Department of Health (DOH) Abu Dhabi. Candidates searching for HAAD practice questions can use this DOH quiz."
         }
-    },
+    ]
+
+        },
 
     dha: {
         title: "DHA Quiz",
