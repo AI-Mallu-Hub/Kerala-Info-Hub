@@ -59,12 +59,12 @@ if (quizTip) {
     quizTip.textContent = `💡 ${info.tip}`;
 }
 
-const nav = document.getElementById("quizNavLink");
+// const nav = document.getElementById("quizNavLink");
 
-if (nav) {
-    nav.href = `${exam}.html`;
-    nav.textContent = info.shortName;
-}
+// if (nav) {
+//     nav.href = `${exam}.html`;
+//     nav.textContent = info.shortName;
+// }
 
 // =========================
 // Render SEO Content
