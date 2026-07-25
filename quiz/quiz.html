@@ -260,6 +260,42 @@ This quiz is useful for Kerala PSC Staff Nurse Grade II candidates, nursing stud
     © 2026 Kerala Info Hub - AmC
 
 </footer>
+    <script>
+const exam = new URLSearchParams(window.location.search).get("exam") || "psc";
+
+const examInfo = {
+    psc: {
+        title: "PSC Quiz",
+        desc: "Kerala PSC Staff Nurse Grade II Previous Questions Practice"
+    },
+    doh: {
+        title: "DOH Quiz",
+        desc: "Department of Health (Abu Dhabi) Nursing Practice Questions"
+    },
+    haad: {
+        title: "HAAD Quiz",
+        desc: "HAAD Nursing Licensing Exam Practice Questions"
+    },
+    dha: {
+        title: "DHA Quiz",
+        desc: "Dubai Health Authority Nursing Practice Questions"
+    },
+    moh: {
+        title: "MOH Quiz",
+        desc: "MOH Nursing Licensing Exam Practice Questions"
+    }
+};
+
+const info = examInfo[exam] || examInfo.psc;
+
+document.title = info.title + " | Kerala Info Hub";
+document.getElementById("quizTitle").textContent = info.title;
+document.getElementById("quizDescription").textContent = info.desc;
+
+const nav = document.getElementById("quizNavLink");
+nav.href = `quiz.html?exam=${exam}`;
+nav.textContent = info.title;
+    </script>
 
 <script src="../js/quiz-engine.js"></script>
 
