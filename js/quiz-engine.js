@@ -23,6 +23,7 @@ if (exam === "haad") {
     exam = "doh";
 }
 alert("Exam = " + exam);
+alert(typeof examConfig);
 const info = examConfig[exam] || examConfig.psc;
 alert("Title = " + info.title);
 document.title = `${info.title} | Kerala Info Hub`;
