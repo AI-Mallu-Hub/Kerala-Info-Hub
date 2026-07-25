@@ -10,7 +10,12 @@ const examConfig = {
     accent: "#1976d2",
     icon: "📝"
         },
-
+        
+meta: {
+    title: "Kerala PSC Staff Nurse Practice Quiz with Explanations | Kerala Info Hub",
+    description: "Practice Kerala PSC Staff Nurse previous questions with detailed textbook-based explanations, instant score, answer review and daily practice quizzes."
+},
+        
         whyPractice: [
             "PSC Exam-Oriented Questions",
             "Detailed Textbook-Based Explanations",
@@ -63,6 +68,11 @@ const examConfig = {
     accent: "#26a69a",
     icon: "🏥"
         },
+        
+meta: {
+    title: "DOH Abu Dhabi Nursing Practice Quiz | Kerala Info Hub",
+    description: "Practice DOH Abu Dhabi nursing licensing questions with detailed clinical explanations, instant score and answer review."
+},        
 
         whyPractice: [
             "DOH Licensing Exam Questions",
@@ -115,7 +125,12 @@ const examConfig = {
     accent: "#8e24aa",
     icon: "🏙️"
         },
-
+        
+meta: {
+    title: "DHA Dubai Nursing Practice Quiz | Kerala Info Hub",
+    description: "Practice DHA Dubai nursing licensing questions with detailed clinical explanations and answer review."
+},
+        
         whyPractice: [
             "DHA Licensing Questions",
             "Detailed Clinical Explanations",
@@ -136,7 +151,12 @@ const examConfig = {
     accent: "#43a047",
     icon: "🌿"
         },
-
+        
+meta: {
+    title: "MOH Nursing Practice Quiz | Kerala Info Hub",
+    description: "Practice MOH nursing licensing exam questions with detailed explanations and instant score."
+},
+        
         whyPractice: [
             "MOH Licensing Questions",
             "Detailed Clinical Explanations",
