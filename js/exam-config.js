@@ -114,7 +114,7 @@ const examConfig = {
     color: "#6a1b9a",
     accent: "#8e24aa",
     icon: "🏙️"
-        }
+        },
 
         whyPractice: [
             "DHA Licensing Questions",
@@ -135,7 +135,7 @@ const examConfig = {
     color: "#2e7d32",
     accent: "#43a047",
     icon: "🌿"
-        }
+        },
 
         whyPractice: [
             "MOH Licensing Questions",
