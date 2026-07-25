@@ -19,7 +19,10 @@ async function loadQuestions() {
 
     try {
 
-        const response = await fetch("../data/psc/psc_quiz.json");
+        const params = new URLSearchParams(window.location.search);
+const exam = params.get("exam") || "psc";
+
+const response = await fetch(`../data/${exam}/${exam}_quiz.json`);
 
         if (!response.ok) {
             throw new Error("Unable to load question file.");
