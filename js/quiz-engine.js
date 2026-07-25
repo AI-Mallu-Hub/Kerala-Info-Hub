@@ -90,6 +90,8 @@ function renderSeoContent() {
     `;
 }
 
+       renderSeoContent();
+
 // ============================
 // Load Questions
 // ============================
