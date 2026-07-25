@@ -378,7 +378,7 @@ button{
 
 #checkBtn{
 
-    background:#198754;
+    background:var(--exam-color);
 
     color:#fff;
 
@@ -499,7 +499,7 @@ button:disabled{
 }
 
 #reviewBtn{
-    background:#198754;
+    background:var(--exam-color);
 }
 
 #reviewBtn:hover{
