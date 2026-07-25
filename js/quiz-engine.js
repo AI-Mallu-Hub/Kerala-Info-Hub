@@ -11,14 +11,19 @@ let userAnswers = {};
 let reviewedPages = {};
 let lockedPages = {};
 
+
 // =========================
 // Current Exam Configuration
 // =========================
 
-const exam = new URLSearchParams(window.location.search).get("exam") || "psc";
+let exam = new URLSearchParams(window.location.search).get("exam") || "psc";
+
+// Support old HAAD links
+if (exam === "haad") {
+    exam = "doh";
+}
 
 const info = examConfig[exam] || examConfig.psc;
-
 document.title = `${info.title} | Kerala Info Hub`;
 
 document.getElementById("quizTitle").textContent = info.title;
