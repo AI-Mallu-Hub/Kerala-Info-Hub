@@ -128,5 +128,32 @@ href="https://ai-mallu-hub.github.io/Kerala-Info-Hub/">
 
 <footer>© 2026 Kerala Info Hub</footer>
 <script src="script.js"></script>
+  <script>
+function showComingSoon(event) {
+    event.preventDefault();
+
+    const toast = document.createElement("div");
+
+    toast.textContent = "🚧 MOH Quiz Coming Soon";
+
+    toast.style.position = "fixed";
+    toast.style.bottom = "30px";
+    toast.style.left = "50%";
+    toast.style.transform = "translateX(-50%)";
+    toast.style.background = "#333";
+    toast.style.color = "#fff";
+    toast.style.padding = "12px 20px";
+    toast.style.borderRadius = "10px";
+    toast.style.boxShadow = "0 4px 12px rgba(0,0,0,.3)";
+    toast.style.zIndex = "9999";
+    toast.style.fontSize = "15px";
+
+    document.body.appendChild(toast);
+
+    setTimeout(() => {
+        toast.remove();
+    }, 2500);
+}
+  </script>
 </body>
 </html>
