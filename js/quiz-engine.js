@@ -20,26 +20,26 @@ async function loadQuestions() {
     try {
 
         const params = new URLSearchParams(window.location.search);
-const exam = params.get("exam") || "psc";
+        const exam = params.get("exam") || "psc";
 
-const response = await fetch(`../data/${exam}/${exam}_quiz.json`);
+        const response = await fetch(`../data/${exam}/${exam}_quiz.json`);
 
         if (!response.ok) {
             throw new Error("Unable to load question file.");
         }
 
-        return await response.json();
+        const data = await response.json();
+
+        // Support both JSON formats
+        return Array.isArray(data) ? data : data.questions;
 
     } catch (err) {
 
         console.error(err);
-
         alert(err.message);
 
         return [];
-
     }
-
 }
 
 // ============================
