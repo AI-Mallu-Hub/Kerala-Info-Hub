@@ -90,7 +90,7 @@ const examConfig = {
             answer: "Yes. HAAD (Health Authority – Abu Dhabi) was renamed as the Department of Health (DOH) Abu Dhabi. Candidates searching for HAAD practice questions can use this DOH quiz."
         }
     ]
-
+        }
         },
 
     dha: {
