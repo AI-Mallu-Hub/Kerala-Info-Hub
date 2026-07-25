@@ -63,7 +63,7 @@ const nav = document.getElementById("quizNavLink");
 
 if (nav) {
     nav.href = `${exam}.html`;
-    nav.textContent = info.title;
+    nav.textContent = info.shortName;
 }
 
 // =========================
