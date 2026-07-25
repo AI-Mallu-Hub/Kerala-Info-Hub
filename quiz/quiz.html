@@ -260,15 +260,7 @@ This quiz is useful for Kerala PSC Staff Nurse Grade II candidates, nursing stud
     © 2026 Kerala Info Hub - AmC
 
 </footer>
-    const exam = new URLSearchParams(window.location.search).get("exam") || "psc";
-
-const info = examConfig[exam] || examConfig.psc;
-
-document.title = `${info.title} | Kerala Info Hub`;
-
-document.getElementById("quizTitle").textContent = info.title;
-document.getElementById("quizDescription").textContent = info.description;
-
+    
 <script src="../js/exam-config.js"></script>
 <script src="../js/quiz-engine.js"></script>
 
