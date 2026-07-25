@@ -27,7 +27,6 @@ if (exam === "haad") {
 
 const info = examConfig[exam] || examConfig.psc;
 
-document.title = `${info.title} | Kerala Info Hub`;
 
 // Apply exam theme
 document.documentElement.style.setProperty(
