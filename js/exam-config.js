@@ -75,21 +75,6 @@ const examConfig = {
         }
     },
 
-    haad: {
-        title: "HAAD Quiz",
-        shortName: "HAAD",
-        description: "HAAD Nursing Licensing Exam Practice Questions",
-
-        whyPractice: [
-            "HAAD Licensing Questions",
-            "Detailed Clinical Explanations",
-            "Instant Score & Answer Review",
-            "Updated Nursing Question Bank"
-        ],
-
-        tip: "Practice regularly to improve your HAAD exam score."
-    },
-
     dha: {
         title: "DHA Quiz",
         shortName: "DHA",
