@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00897b">
+<meta name="author" content="Kerala Info Hub">
+    <title>DOH Abu Dhabi Nursing Practice Quiz with Explanations | Kerala Info Hub</title>
+    <meta name="description"
+content="Practice DOH Abu Dhabi Nursing licensing exam questions with detailed clinical explanations, instant score, answer review and daily practice quizzes.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_IN">
+<meta property="og:title"
+content="DOH Abu Dhabi Nursing Practice Quiz with Explanations | Kerala Info Hub">
+<meta property="og:description"
+content="Practice DOH Abu Dhabi Nursing licensing exam questions with detailed clinical explanations, instant score, answer review and daily practice quizzes.">
+<meta property="og:url"
+content="https://ai-mallu-hub.github.io/Kerala-Info-Hub/quiz/doh.html">
+<meta property="og:image" content="https://ai-mallu-hub.github.io/Kerala-Info-Hub/og-image.png">
+<meta property="og:site_name" content="Kerala Info Hub">
+    <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title"
+content="DOH Abu Dhabi Nursing Practice Quiz with Explanations | Kerala Info Hub">
+<meta name="twitter:description"
+content="Practice DOH Abu Dhabi Nursing licensing exam questions with detailed clinical explanations, instant score, answer review and daily practice quizzes.">
+<meta name="twitter:image" content="https://ai-mallu-hub.github.io/Kerala-Info-Hub/og-image.png">
+    <link rel="canonical"
+href="https://ai-mallu-hub.github.io/Kerala-Info-Hub/quiz/doh.html">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="../css/quiz.css">
+    <script>
+window.EXAM = "doh";
+    </script>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "DOH Abu Dhabi Nursing Practice Quiz with Explanations",
+  "url": "https://ai-mallu-hub.github.io/Kerala-Info-Hub/quiz/doh.html",
+  "description": "Practice DOH Abu Dhabi Nursing licensing exam questions with detailed clinical explanations, instant score, answer review and daily practice quizzes.",
+  "inLanguage": "en-IN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Kerala Info Hub",
+    "url": "https://ai-mallu-hub.github.io/Kerala-Info-Hub/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kerala Info Hub",
+    "url": "https://ai-mallu-hub.github.io/Kerala-Info-Hub/"
+  }
+}
+    </script>
+</head>
+<body>
+
+<header class="header">
+
+    <a href="../index.html" class="logo">
+        🌴 Kerala Info Hub
+    </a>
+
+    <nav>
+
+<a href="../index.html">Home</a>
+
+<a href="../previous-questions.html">Previous Questions</a>
+
+<a id="quizNavLink" href="doh.html">Quiz</a>
+
+    </nav>
+
+</header>
+
+<main class="container">
+
+    <div class="quiz-header">
+
+        <h1 id="quizTitle">Quiz</h1>
+
+        <p id="quizDescription"></p>
+
+    </div>
+
+    <div class="quiz-info-card">
+
+    <h3>📚 Why Practice Here?</h3>
+
+    <ul id="whyPracticeList"></ul>
+
+<div class="quiz-tip" id="quizTip"></div>
+
+    </div>
+
+    <div class="mode-buttons">
+
+        <button id="dailyBtn" onclick="startDailyQuiz()">
+            📅 Today's Quiz
+        </button>
+
+        <button id="practiceBtn" onclick="startPracticeQuiz()">
+            🎯 Practice Quiz
+        </button>
+
+    </div>
+
+    <div id="quizArea" style="display:none;">
+
+        <div class="progress-box">
+
+            <div id="pageInfo">
+                Page 1 / 10
+            </div>
+
+            <div id="questionInfo">
+                Questions 1 - 5 of 50
+            </div>
+
+        </div>
+
+        <div id="quizContainer">
+
+        </div>
+
+        <div class="navigation">
+
+    <button id="prevBtn">
+        ⬅ Previous
+    </button>
+
+    <button id="checkBtn">
+        ✅ Check Answers
+    </button>
+
+    <button id="nextBtn" disabled>
+        Next ➜
+    </button>
+      <button id="submitBtn" style="display:none;">
+    🏁 Submit Quiz
+      </button>      
+            <div id="pageScore" class="page-score" style="display:none;"></div>
+
+</div>
+    </div>
+
+    <div id="resultBox" style="display:none;">
+        <div class="result-actions">
+
+<button id="reviewBtn">
+    💡 Review with Explanations
+</button>
+            
+    <button id="retakeBtn">
+        🔄 Retake Quiz
+    </button>
+
+        </div>
+
+        <h2>🎉 Quiz Completed</h2>
+
+        <h3 id="scoreText"></h3>
+
+        <div class="result-tip">
+    <h4>📘 Keep Learning</h4>
+
+    <p>
+        Review all answers to understand the correct concepts with detailed explanations.
+    </p>
+        </div>
+
+        <p id="correctText"></p>
+
+        <p id="wrongText"></p>
+
+        <button onclick="location.reload()">
+            🔄 Start New Quiz
+        </button>
+
+    </div>
+
+    
+ <!-- ==========================
+     Review All Answers
+========================== -->
+
+<section id="reviewSection" style="display:none;">
+
+    <div class="review-header">
+
+        <h2>📖 Review All Answers</h2>
+
+        <button id="closeReviewBtn">
+            ✖ Close Review
+        </button>
+
+    </div>
+
+    <div id="reviewContainer"></div>
+
+</section>
+
+
+<!-- ==========================
+     Explanation Popup
+========================== -->
+
+<div id="explanationModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeModal">&times;</span>
+
+        <h3>📚 Textbook Explanation</h3>
+
+        <div id="modalExplanation"></div>
+
+    </div>
+
+</div>
+
+</main>
+    
+    <section class="seo-content" id="seoContent"></section>
+
+<footer>
+
+    © 2026 Kerala Info Hub - AmC
+
+</footer>
+    
+<script src="../js/exam-config.js"></script>
+<script src="../js/quiz-engine.js"></script>
+
+</body>
+</html>
