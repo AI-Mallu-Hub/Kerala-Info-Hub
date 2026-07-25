@@ -26,6 +26,17 @@ if (exam === "haad") {
 const info = examConfig[exam] || examConfig.psc;
 document.title = `${info.title} | Kerala Info Hub`;
 
+// Apply exam theme
+document.documentElement.style.setProperty(
+    "--exam-color",
+    info.theme.color
+);
+
+document.documentElement.style.setProperty(
+    "--exam-accent",
+    info.theme.accent
+);
+
 document.getElementById("quizTitle").textContent = info.title;
 document.getElementById("quizDescription").textContent = info.description;
 const whyPracticeList = document.getElementById("whyPracticeList");
