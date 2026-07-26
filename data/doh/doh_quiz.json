@@ -749,7 +749,7 @@
   "answer": "C",
   "explanation": "Muscle twitching and spasms are early signs of hypocalcemia caused by accidental injury or removal of the parathyroid glands during thyroidectomy. Prompt assessment and treatment are required."
 },
-{
+  {
   "id": 51,
   "exam": "DOH",
   "subject": "Nursing Ethics & Legal Issues",
@@ -1052,17 +1052,17 @@
 {
   "id": 71,
   "exam": "DOH",
-  "subject": "Perioperative Nursing",
-  "topic": "Postoperative Complication Prevention",
-  "question": "Which of the following measures is most effective in preventing postoperative thrombophlebitis?",
+  "subject": "Professional Nursing Practice",
+  "topic": "Care Plan Evaluation",
+  "question": "A patient has remained on strict bed rest for 7 months following a cerebrovascular accident (CVA). Your assessment suggests the patient may safely sit out of bed for short periods. What is the nurse's most appropriate action?",
   "options": {
-    "A": "Elevate the legs on two pillows",
-    "B": "Wear compression stockings only at night",
-    "C": "Massage the calf muscles frequently",
-    "D": "Perform leg exercises"
+    "A": "Discuss your assessment with the healthcare team, determine the reason for the current care plan, and update it as appropriate",
+    "B": "Continue strict bed rest because the existing care plan must be followed",
+    "C": "Obtain a physician's order before discussing the plan",
+    "D": "Mobilize the patient without consulting the healthcare team"
   },
-  "answer": "D",
-  "explanation": "Leg exercises promote venous return, reduce venous stasis, and help prevent postoperative thrombophlebitis. Calf massage should be avoided because it may dislodge a thrombus."
+  "answer": "A",
+  "explanation": "Nursing care plans should be continuously evaluated and revised based on current assessment findings in collaboration with the healthcare team."
 },
 {
   "id": 72,
@@ -1213,8 +1213,7 @@
   },
   "answer": "B",
   "explanation": "Black, tarry stools (melena) usually indicate bleeding from the upper gastrointestinal tract because the blood has been digested."
-},
-{
+},{
   "id": 82,
   "exam": "DOH",
   "subject": "Nursing Ethics & Legal Issues",
@@ -1499,7 +1498,7 @@
   "answer": "C",
   "explanation": "Each suction pass should last no longer than 10 to 15 seconds. Prolonged suctioning increases the risk of hypoxemia, dysrhythmias, and airway trauma."
 },
-{
+  {
   "id": 101,
   "exam": "DOH",
   "subject": "Palliative Care Nursing",
@@ -1949,7 +1948,7 @@
   "answer": "B",
   "explanation": "40,000 units are contained in 1,000 mL, so the concentration is 40 units/mL. At 1,000 units/hour: 1,000 ÷ 40 = 25 mL/hour."
 },
-{
+  {
   "id": 131,
   "exam": "DOH",
   "subject": "Pharmacology",
@@ -2072,186 +2071,6 @@
 {
   "id": 139,
   "exam": "DOH",
-  "subject": "Nursing Ethics & Legal Issues",
-  "topic": "Patient Autonomy",
-  "question": "A patient becomes angry and threatens to leave the hospital unless the physician explains the delay in discharge. The patient refuses the prescribed PRN medication for agitation and requests orange juice instead. What is the nurse's most appropriate action?",
-  "options": {
-    "A": "Secretly mix the medication into the orange juice",
-    "B": "Provide the orange juice and inform the patient that the physician is being contacted",
-    "C": "Tell the patient that staff cannot force anyone to remain in the hospital",
-    "D": "Tell the patient that nothing can be done until morning"
-  },
-  "answer": "B",
-  "explanation": "The nurse should respect the patient's right to refuse medication, provide the requested drink, and promptly notify the physician regarding the patient's concerns."
-},
-{
-  "id": 140,
-  "exam": "DOH",
-  "subject": "Palliative Care Nursing",
-  "topic": "Pain Management",
-  "question": "Pain management for terminally ill patients is most effective when analgesics are administered:",
-  "options": {
-    "A": "Around the clock",
-    "B": "Only when clearly needed",
-    "C": "After non-pharmacological methods fail",
-    "D": "Only when requested by the patient"
-  },
-  "answer": "A",
-  "explanation": "Scheduled ('around-the-clock') administration of analgesics provides consistent pain relief and helps prevent breakthrough pain in terminally ill patients."
-},
-{
-  "id": 141,
-  "exam": "DOH",
-  "subject": "Maternity / Obstetric Nursing",
-  "topic": "Ectopic Pregnancy",
-  "question": "The greatest immediate risk for a patient with a ruptured ectopic pregnancy is:",
-  "options": {
-    "A": "Hemorrhage leading to hypovolemic shock",
-    "B": "Strictures and scarring of the fallopian tube",
-    "C": "Adhesions and scarring from blood in the abdomen",
-    "D": "Infertility resulting from salpingectomy"
-  },
-  "answer": "A",
-  "explanation": "A ruptured ectopic pregnancy can cause massive intra-abdominal hemorrhage, making hypovolemic shock the greatest immediate life-threatening complication."
-},
-{
-  "id": 142,
-  "exam": "DOH",
-  "subject": "Pediatric Nursing",
-  "topic": "Congenital Heart Disease",
-  "question": "A 3-month-old infant is diagnosed with a ventricular septal defect (VSD). Which assessment finding is most characteristic?",
-  "options": {
-    "A": "High-pitched cry",
-    "B": "Harsh systolic heart murmur",
-    "C": "Bradycardia",
-    "D": "Hypertension"
-  },
-  "answer": "B",
-  "explanation": "A ventricular septal defect typically produces a harsh systolic murmur caused by turbulent blood flow between the ventricles."
-},
-{
-  "id": 143,
-  "exam": "DOH",
-  "subject": "Fluid & Electrolyte Balance",
-  "topic": "Intravenous Fluids",
-  "question": "Which type of intravenous fluid lowers plasma osmotic pressure and causes water to move into body cells?",
-  "options": {
-    "A": "Hypotonic solution",
-    "B": "Isotonic solution",
-    "C": "Hypertonic solution",
-    "D": "Colloid solution"
-  },
-  "answer": "A",
-  "explanation": "Hypotonic solutions lower plasma osmolality, causing water to move from the intravascular space into the cells."
-},
-{
-  "id": 144,
-  "exam": "DOH",
-  "subject": "Fundamentals of Nursing",
-  "topic": "Ear Medication Administration",
-  "question": "Which nursing intervention is appropriate when administering ear drops to a patient with otitis externa?",
-  "options": {
-    "A": "Irrigate the ear canal with warm saline several hours after instilling the drops",
-    "B": "Insert an ear wick into the external canal before instilling the prescribed ear drops",
-    "C": "Teach the patient to instill antibiotic ear drops before swimming",
-    "D": "Avoid touching the ear with the dropper and keep the affected ear upward for about 2 minutes after instillation"
-  },
-  "answer": "D",
-  "explanation": "The dropper should not touch the ear to maintain sterility. Keeping the affected ear upward for about 2 minutes allows the medication to reach the ear canal effectively."
-},
-{
-  "id": 145,
-  "exam": "DOH",
-  "subject": "Medical-Surgical Nursing",
-  "topic": "Diabetic Foot Care",
-  "question": "What is the correct method for trimming the toenails of a patient with diabetes?",
-  "options": {
-    "A": "Cut the nails in a curve and then file",
-    "B": "Cut the nails straight across and then file the edges",
-    "C": "File the nails straight across only",
-    "D": "File the nails into a rounded shape"
-  },
-  "answer": "B",
-  "explanation": "Patients with diabetes should cut their toenails straight across and gently file the edges to reduce the risk of ingrown toenails and foot injury."
-},
-{
-  "id": 146,
-  "exam": "DOH",
-  "subject": "Psychiatric & Mental Health Nursing",
-  "topic": "Alzheimer's Disease",
-  "question": "A patient with Alzheimer's disease is agitated and repeatedly asks to go home. What is the most appropriate nursing intervention?",
-  "options": {
-    "A": "Place the patient in a single room",
-    "B": "Provide meaningful activities to keep the patient engaged",
-    "C": "Ask the physician to discharge the patient",
-    "D": "Administer a minor tranquilizer"
-  },
-  "answer": "B",
-  "explanation": "Providing structured, meaningful activities helps reduce agitation, anxiety, and wandering behaviors in patients with Alzheimer's disease."
-},
-{
-  "id": 147,
-  "exam": "DOH",
-  "subject": "Fundamentals of Nursing",
-  "topic": "Pain Assessment",
-  "question": "During the initial pain assessment, the nurse should first:",
-  "options": {
-    "A": "Implement pain relief measures",
-    "B": "Teach the patient about pain management strategies",
-    "C": "Conduct a comprehensive pain assessment",
-    "D": "Provide treatment and evaluate its effectiveness"
-  },
-  "answer": "C",
-  "explanation": "A comprehensive pain assessment is the first step in pain management and guides appropriate treatment decisions."
-},
-{
-  "id": 148,
-  "exam": "DOH",
-  "subject": "Infection Prevention & Control",
-  "topic": "Hand Hygiene",
-  "question": "Which measure is the most effective in preventing hospital-acquired infections?",
-  "options": {
-    "A": "Double-bagging contaminated laundry",
-    "B": "Restricting visitors of infectious patients",
-    "C": "Using disposable supplies",
-    "D": "Performing proper hand hygiene"
-  },
-  "answer": "D",
-  "explanation": "Proper hand hygiene is the single most effective measure for preventing healthcare-associated infections."
-},
-{
-  "id": 149,
-  "exam": "DOH",
-  "subject": "Fluid & Electrolyte Balance",
-  "topic": "Arterial Blood Gas",
-  "question": "What is the normal arterial blood pH range?",
-  "options": {
-    "A": "7.00-7.24",
-    "B": "7.25-7.34",
-    "C": "7.35-7.45",
-    "D": "7.50-7.60"
-  },
-  "answer": "C",
-  "explanation": "The normal arterial blood pH ranges from 7.35 to 7.45, indicating normal acid-base balance."
-},
-{
-  "id": 150,
-  "exam": "DOH",
-  "subject": "Diagnostic & Laboratory Procedures",
-  "topic": "Electroencephalography (EEG)",
-  "question": "When preparing a patient for an electroencephalogram (EEG), the nurse should instruct the patient to:",
-  "options": {
-    "A": "Skip breakfast",
-    "B": "Take a sleeping pill the night before",
-    "C": "Shave the scalp",
-    "D": "Avoid coffee and other caffeinated beverages"
-  },
-  "answer": "D",
-  "explanation": "Patients should avoid caffeine before an EEG because it may alter brain activity and affect the accuracy of the test."
-},
-{
-  "id": 151,
-  "exam": "DOH",
   "subject": "Perioperative Nursing",
   "topic": "Postoperative Monitoring",
   "question": "A patient's preoperative blood pressure was 120/68 mmHg. On admission to the post-anesthesia care unit (PACU), the blood pressure is 124/70 mmHg. Thirty minutes later, it falls to 112/60 mmHg with a pulse of 72 beats/min. The patient's skin is warm and dry. What is the nurse's most appropriate action?",
@@ -2265,37 +2084,7 @@
   "explanation": "The patient's postoperative vital signs remain within an acceptable range and do not indicate hemodynamic instability. Continued monitoring is the most appropriate nursing action."
 },
 {
-  "id": 152,
-  "exam": "DOH",
-  "subject": "Medical-Surgical Nursing",
-  "topic": "Colostomy Irrigation",
-  "question": "Which nursing intervention is appropriate if a patient develops abdominal cramping during colostomy irrigation?",
-  "options": {
-    "A": "Reduce the flow rate of the irrigation solution",
-    "B": "Have the patient sit upright in bed",
-    "C": "Remove the irrigation catheter",
-    "D": "Insert the catheter farther into the stoma"
-  },
-  "answer": "A",
-  "explanation": "Abdominal cramping during colostomy irrigation usually occurs when the solution is instilled too rapidly. Slowing the flow rate relieves the cramping."
-},
-{
-  "id": 153,
-  "exam": "DOH",
-  "subject": "Professional Nursing Practice",
-  "topic": "Medication & Wound Care Safety",
-  "question": "A nurse is unfamiliar with a solution prescribed for wound irrigation. What is the most appropriate nursing action?",
-  "options": {
-    "A": "Use the solution if it is available on the unit",
-    "B": "Cross out the order and replace it with a commonly used solution",
-    "C": "Consult the pharmacist regarding the prescribed solution",
-    "D": "Ask the patient which solution should be used"
-  },
-  "answer": "C",
-  "explanation": "If the nurse is unfamiliar with a prescribed solution or medication, it should be verified with the pharmacist or prescribing clinician before administration."
-},
-{
-  "id": 154,
+  "id": 140,
   "exam": "DOH",
   "subject": "Critical Care & Emergency Nursing",
   "topic": "Pulmonary Embolism",
@@ -2310,78 +2099,3138 @@
   "explanation": "The sudden onset of dyspnea, cyanosis, anxiety, and hypoxia in a postoperative patient strongly suggests pulmonary embolism, which is a life-threatening emergency."
 },
 {
-  "id": 155,
+  "id": 141,
   "exam": "DOH",
-  "subject": "Pharmacology",
-  "topic": "Ophthalmic Medication Administration",
-  "question": "The abbreviation 'OS' on an eye medication prescription indicates administration into the:",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Liver Disorders",
+  "question": "Which of the following laboratory blood values is expected to be decreased in hepatic dysfunction?",
   "options": {
-    "A": "Both eyes",
-    "B": "Left eye",
-    "C": "Right eye",
-    "D": "Affected eye"
+    "A": "Albumin",
+    "B": "Bilirubin",
+    "C": "Ammonia",
+    "D": "ALT and AST"
+  },
+  "answer": "A",
+  "explanation": "Albumin is synthesized by the liver. Hepatic dysfunction decreases albumin production, whereas bilirubin, ammonia, ALT, and AST are typically elevated."
+},
+{
+  "id": 142,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Deep Vein Thrombosis",
+  "question": "Whilst recovering from surgery a patient develops deep vein thrombosis. The sign that would indicate this complication to the nurse would be:",
+  "options": {
+    "A": "Intermittent claudication",
+    "B": "Pitting edema of the area",
+    "C": "Severe pain when raising the legs",
+    "D": "Localized warmth and tenderness of the site"
+  },
+  "answer": "D",
+  "explanation": "Localized warmth, tenderness, redness, and swelling are classic clinical signs of deep vein thrombosis (DVT)."
+},
+{
+  "id": 143,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Stroke Care",
+  "question": "During the acute phase of a cerebrovascular accident (CVA) the nurse should maintain the patient in which of the following positions?",
+  "options": {
+    "A": "Semi-prone with the head of the bed elevated 60-90 degrees",
+    "B": "Lateral, with the head of the bed flat",
+    "C": "Prone, with the head of the bed flat",
+    "D": "Supine, with the head of the bed elevated 30-45 degrees"
+  },
+  "answer": "D",
+  "explanation": "Keeping the head elevated about 30 degrees promotes cerebral venous drainage and helps reduce intracranial pressure."
+},
+{
+  "id": 144,
+  "exam": "DOH",
+  "subject": "Fluid & Electrolyte Balance",
+  "topic": "Fluid Volume Deficit",
+  "question": "A patient who presents with acute weight loss, dry skin and mucous membranes and decreased urine output is most likely be suffering from:",
+  "options": {
+    "A": "Fluid volume deficit",
+    "B": "Acute renal failure",
+    "C": "Acute heart failure",
+    "D": "Urinary tract infection"
+  },
+  "answer": "A",
+  "explanation": "Acute weight loss, dry mucous membranes, and oliguria are classic manifestations of fluid volume deficit (dehydration)."
+},
+{
+  "id": 145,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Peptic Ulcer Disease",
+  "question": "A patient with duodenal peptic ulcer would describe his pain as:",
+  "options": {
+    "A": "Generalized burning sensation",
+    "B": "Intermittent colicky pain",
+    "C": "Gnawing sensation relieved by food",
+    "D": "Colicky pain intensified by food"
+  },
+  "answer": "C",
+  "explanation": "Pain from a duodenal ulcer is typically described as a gnawing or burning sensation that is relieved by eating."
+},
+{
+  "id": 146,
+  "exam": "DOH",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Oxygen Therapy",
+  "question": "Which of the following techniques should the nurse implement to prevent the patient's mucous membranes from drying when the oxygen flow rate is higher than 4 liters per minute?",
+  "options": {
+    "A": "Use a non rebreather mask",
+    "B": "Add humidity to the delivery system",
+    "C": "Use a high flow oxygen delivery system",
+    "D": "Ensure that the prongs are in the nares correctly"
   },
   "answer": "B",
-  "explanation": "OS (oculus sinister) refers to the left eye. OD means the right eye, and OU means both eyes."
+  "explanation": "Humidification prevents drying and irritation of the respiratory mucosa during oxygen therapy at higher flow rates."
+},
+{
+  "id": 147,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Antipsychotic Drugs",
+  "question": "Extrapyramidal adverse effects and symptoms are most often associated with which of the following drug classes?",
+  "options": {
+    "A": "Antidepressants",
+    "B": "Antipsychotics",
+    "C": "Antihypertensives",
+    "D": "Antidysrhythmics"
+  },
+  "answer": "B",
+  "explanation": "Extrapyramidal symptoms such as dystonia, akathisia, and parkinsonism are common adverse effects of antipsychotic medications."
+},
+{
+  "id": 148,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Medication Safety",
+  "question": "While preparing the midday medications, the nurse finds difficulty reading the label on a medicine bottle. The best action by the nurse is to:",
+  "options": {
+    "A": "Document that it could not be given due to difficulty in reading the label",
+    "B": "Make out a new label with clear handwriting using adhesive tape to attach it",
+    "C": "Ask the pharmacist to replace it with a clearly labeled bottle",
+    "D": "Give the medication if it is similar to a bottle present on the trolley"
+  },
+  "answer": "C",
+  "explanation": "A medication with an unreadable label should never be administered. The pharmacist should replace it with a properly labeled container."
+},
+{
+  "id": 149,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Pharmacokinetics",
+  "question": "One factor affecting the pharmacokinetics of older patients' drug absorption is:",
+  "options": {
+    "A": "Decreased gastrointestinal motility",
+    "B": "A difficulty in swallowing",
+    "C": "A prevalence of obesity",
+    "D": "Numerous medications"
+  },
+  "answer": "A",
+  "explanation": "Reduced gastrointestinal motility delays gastric emptying and can alter drug absorption in older adults."
+},
+{
+  "id": 150,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Pancreatitis",
+  "question": "Elevated levels of amylase and lipase in the blood are common in:",
+  "options": {
+    "A": "Diabetes mellitus",
+    "B": "Esophagitis",
+    "C": "Pancreatitis",
+    "D": "Hepatitis"
+  },
+  "answer": "C",
+  "explanation": "Serum amylase and lipase are important diagnostic enzymes that are significantly elevated in acute pancreatitis."
+},
+{
+  "id": 151,
+  "exam": "DOH",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Wound Care",
+  "question": "Which of the following correctly describes wound packing in a wet-to-dry dressing?",
+  "options": {
+    "A": "Pack gauze into the wound tightly",
+    "B": "Overlap the wound edges with wet packing",
+    "C": "Pack the wound with slightly moistened gauze",
+    "D": "Use gauze well saturated with saline for packing the wound"
+  },
+  "answer": "C",
+  "explanation": "Wet-to-dry dressings require the wound to be loosely packed with slightly moistened gauze to promote mechanical debridement without damaging healthy tissue."
+},
+{
+  "id": 152,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Chest Drainage",
+  "question": "A patient who sustained a chest injury has a chest tube inserted which is connected to an under water seal drainage system. When caring for this patient the nurse will:",
+  "options": {
+    "A": "Instruct the patient to limit movement of the affected shoulder",
+    "B": "Observe for fluctuation of the water level",
+    "C": "Clamp the tube when needed",
+    "D": "Administer hourly analgesia"
+  },
+  "answer": "B",
+  "explanation": "Fluctuation (tidaling) of the water seal indicates a patent chest tube and normal pressure changes during respiration."
+},
+{
+  "id": 153,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Medication Administration",
+  "question": "When preparing to administer a medication the nurse should first:",
+  "options": {
+    "A": "Ensure that the medication is on the medication cart",
+    "B": "Determine the expiry date of the medication",
+    "C": "Check the patient's identification armband",
+    "D": "Verify the physician order for accuracy"
+  },
+  "answer": "D",
+  "explanation": "The physician's order should always be verified first before preparing or administering any medication."
+},
+{
+  "id": 154,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Craniotomy Care",
+  "question": "Immediately after a craniotomy for head trauma, the nurse must monitor the drainage on the dressing. Which of the following should be reported?",
+  "options": {
+    "A": "Blood tinged",
+    "B": "Straw colored",
+    "C": "Clotted",
+    "D": "Foul-smelling"
+  },
+  "answer": "B",
+  "explanation": "Straw-colored drainage may indicate cerebrospinal fluid leakage and should be reported immediately."
+},
+{
+  "id": 155,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hemodialysis",
+  "question": "The nurse is caring for a patient who is receiving dialysis. The patient has an arteriovenous (AV) fistula. Appropriate care for this patient would include which one of the following options?",
+  "options": {
+    "A": "Infusing medications through the AV fistula",
+    "B": "Drawing blood samples from the AV fistula",
+    "C": "Massaging the AV fistula",
+    "D": "Palpating the AV fistula for a thrill"
+  },
+  "answer": "D",
+  "explanation": "A palpable thrill confirms AV fistula patency. Blood pressure, blood sampling, and IV access should be avoided in the fistula arm."
 },
 {
   "id": 156,
   "exam": "DOH",
-  "subject": "Professional Nursing Practice",
-  "topic": "Care Plan Evaluation",
-  "question": "A patient has remained on strict bed rest for 7 months following a cerebrovascular accident (CVA). Your assessment suggests the patient may safely sit out of bed for short periods. What is the nurse's most appropriate action?",
+  "subject": "Pharmacology",
+  "topic": "Antibiotics",
+  "question": "The patient is receiving piperacillin (Pipril) I.V. Which of the following should the nurse consider when administering the medication to the patient?",
   "options": {
-    "A": "Discuss your assessment with the healthcare team, determine the reason for the current care plan, and update it as appropriate",
-    "B": "Continue strict bed rest because the existing care plan must be followed",
-    "C": "Obtain a physician's order before discussing the plan",
-    "D": "Mobilize the patient without consulting the healthcare team"
+    "A": "Assess for Stevens-Johnson Syndrome",
+    "B": "Be alert for the possibility of hypersensitivity",
+    "C": "Watch for signs of increasing severity of infection",
+    "D": "Instruct patient to increase the intake of protein-rich foods"
   },
-  "answer": "A",
-  "explanation": "Nursing care plans should be continuously evaluated and revised based on current assessment findings in collaboration with the healthcare team."
+  "answer": "B",
+  "explanation": "Piperacillin is a penicillin antibiotic. Patients should be monitored closely for allergic or hypersensitivity reactions."
 },
 {
   "id": 157,
   "exam": "DOH",
-  "subject": "Critical Care & Emergency Nursing",
-  "topic": "Anaphylaxis",
-  "question": "A patient arrives at the emergency department after a bee sting with a possible allergic reaction. What is the nurse's priority action?",
+  "subject": "Mental Health Nursing",
+  "topic": "Therapeutic Communication",
+  "question": "Which of the following indicates the nurse is engaging in a therapeutic nurse-patient relationship?",
   "options": {
-    "A": "Remove the stinger with tweezers",
-    "B": "Assess immediately for signs of anaphylaxis",
-    "C": "Apply warm compresses to the sting site",
-    "D": "Squeeze the venom sac to remove more venom"
+    "A": "The nurse establishes a relationship that is mutually beneficial",
+    "B": "The nurse demonstrates sympathetic feelings toward the patient",
+    "C": "The nurse commits to helping the patient find ways to help self",
+    "D": "The nurse utilizes therapeutic touch to convey acceptance of the patient"
   },
-  "answer": "B",
-  "explanation": "The priority is to assess the airway, breathing, and circulation for signs of anaphylaxis. Immediate recognition allows prompt emergency treatment."
+  "answer": "C",
+  "explanation": "A therapeutic relationship focuses on helping the patient become as independent as possible while maintaining professional boundaries."
 },
 {
   "id": 158,
   "exam": "DOH",
-  "subject": "Fundamentals of Nursing",
-  "topic": "Urinary Catheterization",
-  "question": "During inflation of the balloon of an indwelling urinary catheter, the patient complains of pain and discomfort. What should the nurse do?",
+  "subject": "Drug Calculation",
+  "topic": "Intramuscular Injection",
+  "question": "Order: Compazine 8 mg IM stat. Drug available: 10 mg/2 mL in vial. How many mLs would you give?",
   "options": {
-    "A": "Continue the procedure and reassure the patient",
-    "B": "Deflate the balloon and remove the catheter",
-    "C": "Deflate the balloon, advance the catheter into the bladder, and then re-inflate the balloon",
-    "D": "Inject less fluid into the balloon and secure the catheter"
+    "A": "0.6 mL",
+    "B": "1.6 mL",
+    "C": "2.6 mL",
+    "D": "3.6 mL"
   },
-  "answer": "C",
-  "explanation": "Pain during balloon inflation usually indicates that the balloon is inflated in the urethra. The nurse should deflate the balloon, advance the catheter into the bladder, and then reinflate it."
+  "answer": "B",
+  "explanation": "10 mg is available in 2 mL. Therefore, 8 mg = (8 × 2) ÷ 10 = 1.6 mL."
 },
 {
   "id": 159,
   "exam": "DOH",
-  "subject": "Fundamentals of Nursing",
-  "topic": "Eye Care",
-  "question": "How should the nurse remove soft contact lenses from the eyes of an unconscious patient?",
+  "subject": "Pediatric Nursing",
+  "topic": "Drug Calculation",
+  "question": "A newborn is diagnosed with ventricular septal defect. The baby is discharged with a prescription for digoxin syrup 20 micrograms BID. The bottle of digoxin is labeled as 0.05 mg/mL. The nurse should teach the mother to administer on each dose:",
   "options": {
-    "A": "Use a small suction cup to remove the lenses",
-    "B": "Gently pinch the lens and slide it off the cornea",
-    "C": "Lift the lens with a dry cotton ball",
-    "D": "Pull the lateral canthus while stimulating a blink reflex"
+    "A": "0.1 mL",
+    "B": "0.2 mL",
+    "C": "0.4 mL",
+    "D": "0.8 mL"
+  },
+  "answer": "C",
+  "explanation": "0.05 mg = 50 micrograms per mL. Required dose = 20 micrograms. Volume = 20 ÷ 50 = 0.4 mL."
+},
+{
+  "id": 160,
+  "exam": "DOH",
+  "subject": "Infection Control",
+  "topic": "Droplet Precautions",
+  "question": "When the nurse is caring for a patient placed on droplet precautions, the nurse should:",
+  "options": {
+    "A": "Have the patient wear a high-efficiency particulate air (HEPA) mask",
+    "B": "Wear a surgical mask when standing within 3 feet (1 meter) of the patient",
+    "C": "Assign the patient to a room with monitored negative air pressure",
+    "D": "Apply a disposable gown when entering the patient's room"
   },
   "answer": "B",
-  "explanation": "Soft contact lenses are removed by gently pinching the lens between the fingers and sliding it off the cornea. Suction cups are typically used for hard contact lenses."
+  "explanation": "Droplet precautions require healthcare workers to wear a surgical mask when within about 1 meter (3 feet) of the patient to prevent transmission."
+},
+  {
+  "id": 161,
+  "exam": "DOH",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Communication",
+  "question": "A nursing measure that is helpful in communicating with a hearing impaired patient is to:",
+  "options": {
+    "A": "Use simple sentences",
+    "B": "Talk while close to patient's ear",
+    "C": "Raise the voice",
+    "D": "Write out all questions and responses"
+  },
+  "answer": "A",
+  "explanation": "Using simple, clear sentences while facing the patient promotes effective communication. Shouting or speaking directly into the ear is unnecessary and may distort speech."
+},
+{
+  "id": 162,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Cerebral Edema",
+  "question": "The patient has a nursing diagnosis of altered cerebral tissue perfusion related to cerebral edema. An appropriate nursing intervention for this problem is to:",
+  "options": {
+    "A": "Elevate the head of the bed 30 degrees",
+    "B": "Provide a position of comfort with knee flexion",
+    "C": "Provide uninterrupted periods of rest",
+    "D": "Ensure adequate hydration with mannitol"
+  },
+  "answer": "A",
+  "explanation": "Elevating the head of the bed approximately 30 degrees promotes venous drainage from the brain and helps reduce intracranial pressure."
+},
+{
+  "id": 163,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Pulmonary Embolism",
+  "question": "Nursing management of a patient with pulmonary embolism would focus on which of the following actions?",
+  "options": {
+    "A": "Assessing oxygenation status",
+    "B": "Assessing signs of DVT in legs",
+    "C": "Monitoring for other sources of clots",
+    "D": "Monitoring patient for cardiogenic shock"
+  },
+  "answer": "A",
+  "explanation": "Maintaining adequate oxygenation is the highest priority because pulmonary embolism directly impairs gas exchange."
+},
+{
+  "id": 164,
+  "exam": "DOH",
+  "subject": "Drug Calculation",
+  "topic": "Insulin Administration",
+  "question": "The physician orders 20 U of U-100 regular insulin. The only syringe on hand is a 1 mL tuberculin syringe. How many milliliters should be administered?",
+  "options": {
+    "A": "0.02 mL",
+    "B": "0.2 mL",
+    "C": "1 mL",
+    "D": "2 mL"
+  },
+  "answer": "B",
+  "explanation": "U-100 insulin contains 100 units per mL. Therefore, 20 units equals 0.2 mL."
+},
+{
+  "id": 165,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Antibiotics",
+  "question": "The nurse should be aware that tetracycline is contraindicated in children under 12 years of age because:",
+  "options": {
+    "A": "Minimal doses are needed to control infection",
+    "B": "Immunosuppression is a common side effect",
+    "C": "Staining of the teeth is an adverse effect",
+    "D": "They are prone to develop renal failure"
+  },
+  "answer": "C",
+  "explanation": "Tetracycline can permanently discolor developing teeth and affect bone growth in children."
+},
+{
+  "id": 166,
+  "exam": "DOH",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Enteral Nutrition",
+  "question": "The nurse should administer nasogastric tube (NGT) feeding slowly to reduce the hazard of:",
+  "options": {
+    "A": "Distention",
+    "B": "Abdominal cramps",
+    "C": "Diarrhea",
+    "D": "Regurgitation"
+  },
+  "answer": "A",
+  "explanation": "Slow administration of enteral feeding reduces gastric distention and improves tolerance."
+},
+{
+  "id": 167,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Defibrillation",
+  "question": "To ensure safe practice during defibrillation, the nurse must:",
+  "options": {
+    "A": "Cover paddles with electrode gel",
+    "B": "Avoid touching the patient's bed",
+    "C": "Remove paddles after the shock",
+    "D": "Synchronize prior to shock delivery"
+  },
+  "answer": "B",
+  "explanation": "Everyone must be clear of the patient and bed during defibrillation to prevent accidental electrical injury."
+},
+{
+  "id": 168,
+  "exam": "DOH",
+  "subject": "Palliative Care",
+  "topic": "Dyspnea",
+  "question": "Which of the following statements accurately describes the occurrence of dyspnea in patients who are receiving end of life care?",
+  "options": {
+    "A": "Dyspnea is only experienced by patients who have primary diagnoses that involve the lungs",
+    "B": "Dyspnea occurs in less than 50% of the patients who are receiving end of life care",
+    "C": "Dyspnea that is caused by increased fluid volume may be improved by diuretics",
+    "D": "Dyspnea may be caused by antibiotic therapy used over a long period of time"
+  },
+  "answer": "C",
+  "explanation": "When dyspnea is caused by fluid overload, diuretics help reduce pulmonary congestion and improve breathing."
+},
+{
+  "id": 169,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Medication Orders",
+  "question": "A patient admitted to the hospital in hypertensive crisis is ordered to receive hydralazine (Apresoline) 20 mg IV stat for blood pressure greater than 190/100 mmHg. The best response of the nurse to this order is to:",
+  "options": {
+    "A": "Give the dose immediately and once",
+    "B": "Give medication if patient's blood pressure is >190/100 mmHg",
+    "C": "Call the physician because the order is not clear",
+    "D": "Administer the dose and repeat as necessary"
+  },
+  "answer": "A",
+  "explanation": "A STAT order requires immediate administration. Since the order already specifies the blood pressure condition, the medication should be given immediately when that condition is met."
+},
+{
+  "id": 170,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Medication Administration",
+  "question": "The nurse manager has just prepared a medication for a patient and she asked you to give the medication. Which of the following is the best response to the nurse manager's request?",
+  "options": {
+    "A": "Give the patient his medication and record it on the chart",
+    "B": "Ask another nursing colleague to give and record the medication",
+    "C": "Explain that you cannot give a medication that you did not prepare",
+    "D": "Give the medication and ask the nurse manager to record it on the chart"
+  },
+  "answer": "C",
+  "explanation": "For medication safety and accountability, the nurse administering a medication should also be the one who prepared it whenever possible. Administering a medication prepared by another nurse is not recommended."
+},
+{
+  "id": 171,
+  "exam": "DOH",
+  "subject": "Drug Calculation",
+  "topic": "Opioid Administration",
+  "question": "A patient is to receive 2.5 mg of morphine sulfate. The ampoule contains 1000 mcg/mL. How much morphine should the nurse administer?",
+  "options": {
+    "A": "0.25 mL",
+    "B": "1 mL",
+    "C": "1.5 mL",
+    "D": "2.5 mL"
+  },
+  "answer": "D",
+  "explanation": "1000 mcg = 1 mg per mL. Therefore, 2.5 mg requires 2.5 mL."
+},
+{
+  "id": 172,
+  "exam": "DOH",
+  "subject": "Orthopedic Nursing",
+  "topic": "Hip Replacement",
+  "question": "A patient has had a total hip joint replacement. Which of the following actions should the nurse consider for the patient's daily recommended exercise program?",
+  "options": {
+    "A": "Administering an analgesic before exercising",
+    "B": "Discontinuing the program if the patient dislikes it",
+    "C": "Continuing exercises in spite of severe pain",
+    "D": "Evaluating effectiveness of exercise based on pain scale"
+  },
+  "answer": "A",
+  "explanation": "Administering analgesics before exercise improves comfort and encourages participation in rehabilitation."
+},
+{
+  "id": 173,
+  "exam": "DOH",
+  "subject": "Fluid & Electrolyte Balance",
+  "topic": "Dehydration",
+  "question": "A patient presents to the emergency department with diminished and thready pulses, hypotension and an increased pulse rate. The patient reports weight loss, lethargy, and decreased urine output. The lab work reveals increased urine specific gravity. The nurse should suspect:",
+  "options": {
+    "A": "Renal failure",
+    "B": "Sepsis",
+    "C": "Pneumonia",
+    "D": "Dehydration"
+  },
+  "answer": "D",
+  "explanation": "Weight loss, hypotension, tachycardia, oliguria, and increased urine specific gravity are classic signs of dehydration."
+},
+{
+  "id": 174,
+  "exam": "DOH",
+  "subject": "Leadership & Management",
+  "topic": "Delegation",
+  "question": "A registered nurse delegates care to a practical nurse. The person most responsible for the safe performance of the care is the:",
+  "options": {
+    "A": "Head nurse who is in-charge of the unit",
+    "B": "The practical nurse assigned to provide the care",
+    "C": "The registered nurse who delegated the care to the practical nurse",
+    "D": "The nursing care coordinator who is the supervisor of the unit"
+  },
+  "answer": "C",
+  "explanation": "The registered nurse retains accountability for delegated nursing care and must ensure that delegation is appropriate."
+},
+{
+  "id": 175,
+  "exam": "DOH",
+  "subject": "Mental Health Nursing",
+  "topic": "Alcohol Withdrawal",
+  "question": "Symptoms of alcohol withdrawal include:",
+  "options": {
+    "A": "Euphoria, hyperactivity and insomnia",
+    "B": "Depression, suicidal ideation and hypersomnia",
+    "C": "Diaphoresis, nausea and vomiting and tremors",
+    "D": "Unsteady gait, nystagmus and profound disorientation"
+  },
+  "answer": "C",
+  "explanation": "Common alcohol withdrawal manifestations include tremors, sweating, nausea, vomiting, anxiety, and agitation."
+},
+{
+  "id": 176,
+  "exam": "DOH",
+  "subject": "Mental Health Nursing",
+  "topic": "Depression Assessment",
+  "question": "What two behaviors are important when documenting the depth of the patient's depression?",
+  "options": {
+    "A": "Orientation and appearance",
+    "B": "Helplessness and hopelessness",
+    "C": "Affect and thought processes",
+    "D": "Mood and impulse control"
+  },
+  "answer": "B",
+  "explanation": "Feelings of helplessness and hopelessness are key indicators used to assess the severity of depression."
+},
+{
+  "id": 177,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Asthma",
+  "question": "An 11 year old girl with a history of asthma arrives at the primary health clinic with signs/symptoms of shortness of breath, audible wheezing, nasal flaring and mild lip cyanosis. Your immediate nursing action is to:",
+  "options": {
+    "A": "Assess respiratory distress and peak expiratory flow rate",
+    "B": "Take a blood sample to assess CO levels",
+    "C": "Instruct the parents to take the child immediately to hospital",
+    "D": "Sit the child comfortably and offer 2 puffs of Ventolin stat"
+  },
+  "answer": "A",
+  "explanation": "Assessment of airway and breathing is the priority. The severity of respiratory distress should be evaluated before further interventions."
+},
+{
+  "id": 178,
+  "exam": "DOH",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Pressure Injury Prevention",
+  "question": "Which of the following interventions is most significant in the prevention of pressure sores?",
+  "options": {
+    "A": "Increasing fluid intake",
+    "B": "Changing soiled linen",
+    "C": "Regular changing of position",
+    "D": "Use of a water mattress"
+  },
+  "answer": "C",
+  "explanation": "Frequent repositioning is the most effective intervention for preventing pressure injuries by relieving prolonged pressure."
+},
+{
+  "id": 179,
+  "exam": "DOH",
+  "subject": "Drug Calculation",
+  "topic": "Oral Medication Calculation",
+  "question": "A patient complains of pain in his right arm. The physician orders codeine 45 mg and aspirin 650 mg every 4 hours PRN. Each codeine tablet contains 15 mg of codeine and each aspirin tablet contains 325 mg of aspirin. What should the nurse administer?",
+  "options": {
+    "A": "2 codeine tablets and 4 aspirin tablets",
+    "B": "4 codeine tablets and 3½ aspirin tablets",
+    "C": "3 codeine tablets and 2 aspirin tablets",
+    "D": "3 codeine tablets and 3 aspirin tablets"
+  },
+  "answer": "C",
+  "explanation": "45 mg ÷ 15 mg = 3 codeine tablets. 650 mg ÷ 325 mg = 2 aspirin tablets."
+},
+{
+  "id": 180,
+  "exam": "DOH",
+  "subject": "Fluid & Electrolyte Balance",
+  "topic": "Hypokalemia",
+  "question": "A patient on diuretics has had vomiting and diarrhea for the past 3 days. Which of the following is this patient most at risk for developing?",
+  "options": {
+    "A": "Hypokalemia and cardiac arrhythmias",
+    "B": "Hypercalcemia and polyuria",
+    "C": "Dehydration and hyperglycemia",
+    "D": "Hyperalimentation and heart block"
+  },
+  "answer": "A",
+  "explanation": "Diuretics combined with vomiting and diarrhea can cause significant potassium loss, increasing the risk of hypokalemia and life-threatening cardiac arrhythmias."
+},
+{
+  "id": 181,
+  "exam": "DOH",
+  "subject": "Drug Calculation",
+  "topic": "Intravenous Infusion",
+  "question": "The patient is to receive 100 mL/hr of D5W through a micro drip. How many drops per minute should the patient receive?",
+  "options": {
+    "A": "25 gtts/min",
+    "B": "30 gtts/min",
+    "C": "100 gtts/min",
+    "D": "200 gtts/min"
+  },
+  "answer": "C",
+  "explanation": "A microdrip set delivers 60 gtt/mL. (100 mL × 60) ÷ 60 = 100 gtt/min."
+},
+{
+  "id": 182,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Head Injury",
+  "question": "Which of the following is the most appropriate first action for the nurse to take for a preschooler who has fallen and has a hematoma formed on the temporal bone?",
+  "options": {
+    "A": "Encourage a nap",
+    "B": "Give pain medication",
+    "C": "Apply ice and monitor vital signs",
+    "D": "Allow the child to continue activities"
+  },
+  "answer": "C",
+  "explanation": "Initial management includes applying ice to reduce swelling while closely monitoring neurological status and vital signs."
+},
+{
+  "id": 183,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Laminectomy",
+  "question": "A patient undergoes laminectomy. In the immediate post-operative period, the nurse should:",
+  "options": {
+    "A": "Monitor the patient's vital signs and log roll him to prone position",
+    "B": "Monitor the patient's vital signs and encourage him to ambulate",
+    "C": "Monitor the patient's vital signs and auscultate his bowel sounds",
+    "D": "Monitor the patient's vital signs, check sensation and motor power of the feet"
+  },
+  "answer": "D",
+  "explanation": "Neurovascular assessment of the lower extremities is essential after spinal surgery to detect neurological complications early."
+},
+{
+  "id": 184,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Vital Signs",
+  "question": "A nurse is making rounds taking vital signs. Which of the following vital signs is abnormal?",
+  "options": {
+    "A": "11-year-old male – 90 b.p.m., 22 resp/min., 100/70 mm Hg",
+    "B": "13-year-old female – 105 b.p.m., 22 resp/min., 105/60 mm Hg",
+    "C": "5-year-old male – 102 b.p.m., 24 resp/min., 90/65 mm Hg",
+    "D": "6-year-old female – 100 b.p.m., 26 resp/min., 90/70 mm Hg"
+  },
+  "answer": "B",
+  "explanation": "A resting heart rate of 105 bpm is higher than expected for most healthy adolescents and is considered the abnormal finding."
+},
+{
+  "id": 185,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Respiratory Failure",
+  "question": "An early sign of acute respiratory failure is:",
+  "options": {
+    "A": "Diaphoresis",
+    "B": "Cyanosis",
+    "C": "Restlessness",
+    "D": "Orthopnea"
+  },
+  "answer": "C",
+  "explanation": "Restlessness is often one of the earliest signs of hypoxemia before cyanosis develops."
+},
+{
+  "id": 186,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Medication Safety",
+  "question": "A medication was ordered by a physician. The nurse believes the medication dose is incorrect. What should the nurse do next?",
+  "options": {
+    "A": "Clarify the order with another physician who is available on the unit",
+    "B": "Ask the nurse in charge if the order is correct",
+    "C": "Contact the pharmacy department",
+    "D": "Call the physician who prescribed the medication"
+  },
+  "answer": "D",
+  "explanation": "The prescribing physician should be contacted directly to clarify any questionable medication order before administration."
+},
+{
+  "id": 187,
+  "exam": "DOH",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Pressure Injuries",
+  "question": "The priority nursing diagnosis for a hospitalized patient with a Stage IV pressure ulcer on the hip would be:",
+  "options": {
+    "A": "Altered body image",
+    "B": "Acute pain",
+    "C": "Risk for infection",
+    "D": "Altered nutrition"
+  },
+  "answer": "C",
+  "explanation": "A Stage IV pressure ulcer exposes deep tissues, making infection the highest priority nursing concern."
+},
+{
+  "id": 188,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Tonsillectomy",
+  "question": "You are the nurse providing post-operative care for a 9-year-old boy who is 6 hours post tonsillectomy. He is sleeping, but on routine observation you notice that his pulse has increased, he seems to be restless and trying to swallow frequently. Your immediate action would be:",
+  "options": {
+    "A": "Apply an ice collar to reduce discomfort",
+    "B": "Allow child to keep sleeping and record observations",
+    "C": "Wake him and offer some ice chips to suck",
+    "D": "Check inside his mouth for any signs of bleeding and notify the physician"
+  },
+  "answer": "D",
+  "explanation": "Frequent swallowing, restlessness, and tachycardia after tonsillectomy are early signs of hemorrhage and require immediate assessment and physician notification."
+},
+{
+  "id": 189,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Stroke Assessment",
+  "question": "A 65-year-old patient is admitted with ischemic stroke. Which of the following would be initially assessed by the nurse to determine the patient's level of consciousness?",
+  "options": {
+    "A": "Visual fields",
+    "B": "Deep tendon reflexes",
+    "C": "Auditory acuity",
+    "D": "Verbal response"
+  },
+  "answer": "D",
+  "explanation": "Verbal response is an essential component of the Glasgow Coma Scale and is used to assess level of consciousness."
+},
+{
+  "id": 190,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Controlled Drugs",
+  "question": "A nurse prepares a narcotic analgesic for administration, but the patient refuses to take it. Which of the following actions by the nurse is most appropriate?",
+  "options": {
+    "A": "Encourage the patient to reconsider taking the medication",
+    "B": "Label the medication and replace it for use at a later time",
+    "C": "Discard the medication in the presence of a witness and chart the action",
+    "D": "Call the physician with the patient's refusal to take the prescribed medication"
+  },
+  "answer": "C",
+  "explanation": "Controlled substances that are refused by a patient should be wasted according to policy, in the presence of a witness, and the action documented."
+},
+  {
+  "id": 191,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Thalassemia",
+  "question": "Whenever a child with thalassemia comes for blood transfusion, he is administered Desferoxamine (Desferal). The action of this drug is to:",
+  "options": {
+    "A": "Inhibit the inflammatory process",
+    "B": "Enhance iron excretion",
+    "C": "Antagonize the effect of vitamin C",
+    "D": "Increase red blood cell production"
+  },
+  "answer": "B",
+  "explanation": "Desferoxamine is an iron-chelating agent that binds excess iron from repeated blood transfusions and promotes its excretion."
+},
+{
+  "id": 192,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Cerebrovascular Accident",
+  "question": "A patient arrives at the emergency department with slurred speech and a right facial droop. The patient's relative states the patient 'is not himself.' Upon assessment, the nurse finds paresthesia to the right side of the body, receptive aphasia, hemianopia and altered cognitive abilities. The nurse should suspect:",
+  "options": {
+    "A": "A narcotic overdose",
+    "B": "Parkinson's disease",
+    "C": "Alcohol withdrawal",
+    "D": "A cerebrovascular accident (CVA)"
+  },
+  "answer": "D",
+  "explanation": "Slurred speech, facial droop, aphasia, sensory deficits, and hemianopia are classic manifestations of an acute stroke."
+},
+{
+  "id": 193,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Hydrocephalus",
+  "question": "An 8-month-old infant is diagnosed with communicating hydrocephalus. The nurse notices that his intracranial pressure is increasing from the following changes in his vital signs:",
+  "options": {
+    "A": "Bradycardia, hypotension and hypothermia",
+    "B": "Bradycardia, hypertension and hyperthermia",
+    "C": "Tachycardia, hypotension and hyperthermia",
+    "D": "Tachycardia, hypertension and hypothermia"
+  },
+  "answer": "B",
+  "explanation": "Increased intracranial pressure commonly produces bradycardia and hypertension (Cushing response), making option B the best answer."
+},
+{
+  "id": 194,
+  "exam": "DOH",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Rectal Medication Administration",
+  "question": "When inserting a rectal suppository for a patient the nurse should:",
+  "options": {
+    "A": "Insert the suppository while the patient performs the 'Valsalva maneuver'",
+    "B": "Place the patient in a supine position",
+    "C": "Position the suppository beyond the muscle sphincter of the rectum",
+    "D": "Insert the suppository 1/2 inch into the rectum"
+  },
+  "answer": "C",
+  "explanation": "The suppository should be inserted beyond the internal anal sphincter to prevent expulsion and ensure proper absorption."
+},
+{
+  "id": 195,
+  "exam": "DOH",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Nitroglycerin",
+  "question": "A patient with a history of angina pectoris arrives in emergency complaining of headache, visual disturbances and feeling dizzy. Your nursing assessment also notes he looks flushed, is perspiring profusely and is experiencing palpitations. You should suspect:",
+  "options": {
+    "A": "An overdose of sublingual nitroglycerin",
+    "B": "The onset of a myocardial infarction",
+    "C": "The patient has been over exercising",
+    "D": "The beginning of a severe chest infection"
+  },
+  "answer": "A",
+  "explanation": "Headache, flushing, dizziness, hypotension, and palpitations are common manifestations of nitroglycerin overdose."
+},
+{
+  "id": 196,
+  "exam": "DOH",
+  "subject": "Fluid & Electrolyte Balance",
+  "topic": "Intravenous Fluids",
+  "question": "The administration of which of the following types of parenteral fluids would result in a lowering of the osmotic pressure and cause the fluid to move into the cells?",
+  "options": {
+    "A": "Hypotonic",
+    "B": "Isotonic",
+    "C": "Hypertonic",
+    "D": "Colloid"
+  },
+  "answer": "A",
+  "explanation": "Hypotonic solutions lower plasma osmolality, causing water to shift from the intravascular space into the cells."
+},
+{
+  "id": 197,
+  "exam": "DOH",
+  "subject": "Postoperative Nursing",
+  "topic": "Urine Output",
+  "question": "The minimal amount of urine that a post-operative patient weighing 60 kg should pass is:",
+  "options": {
+    "A": "120 mL/hr",
+    "B": "90 mL/hr",
+    "C": "60 mL/hr",
+    "D": "30 mL/hr"
+  },
+  "answer": "D",
+  "explanation": "Normal minimum urine output is about 0.5 mL/kg/hr. For a 60 kg patient, this equals 30 mL/hr."
+},
+{
+  "id": 198,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Antacids",
+  "question": "A patient has been taking Aluminum Hydroxide daily for 3 weeks. The nurse should be alert for which of the following side effects?",
+  "options": {
+    "A": "Constipation",
+    "B": "Flatulence",
+    "C": "Nausea",
+    "D": "Vomiting"
+  },
+  "answer": "A",
+  "explanation": "Aluminum-containing antacids commonly cause constipation, especially with prolonged use."
+},
+{
+  "id": 199,
+  "exam": "DOH",
+  "subject": "Post-Anesthesia Care",
+  "topic": "Airway Management",
+  "question": "To maintain the airway and promote respiratory function, the best position for the nurse to place the unconscious patient in the Post Anesthesia Care Unit (PACU) is:",
+  "options": {
+    "A": "Supine",
+    "B": "Lateral",
+    "C": "Trendelenburg",
+    "D": "Fowler's"
+  },
+  "answer": "B",
+  "explanation": "The lateral recovery position helps maintain a patent airway and reduces the risk of aspiration in unconscious patients."
+},
+{
+  "id": 200,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Diabetes Mellitus",
+  "question": "The correct way to trim the toe nails of a patient with diabetes is to:",
+  "options": {
+    "A": "Cut the nails in a curve and then file",
+    "B": "Cut the nails straight across and then file",
+    "C": "File the nails straight across and square only",
+    "D": "File the nails in a curved arch with low sides only"
+  },
+  "answer": "C",
+  "explanation": "Diabetic foot care recommends filing the nails straight across with squared edges to reduce the risk of ingrown toenails and foot injury."
+},
+{
+  "id": 201,
+  "exam": "DOH",
+  "subject": "Orthopedic Nursing",
+  "topic": "Total Hip Replacement",
+  "question": "The nurse teaches a patient recovering from a total hip replacement that it is important to avoid:",
+  "options": {
+    "A": "Putting a pillow between the legs while sleeping",
+    "B": "Sitting with the legs crossed",
+    "C": "Abduction exercises of the affected leg",
+    "D": "Bearing weight exercises on the affected leg for 6 weeks"
+  },
+  "answer": "B",
+  "explanation": "Crossing the legs can cause hip dislocation after total hip replacement and should be avoided."
+},
+{
+  "id": 202,
+  "exam": "DOH",
+  "subject": "Mental Health Nursing",
+  "topic": "Patient Restraints",
+  "question": "An 85-year-old man is admitted with dementia. He continuously attempts to remove his nasogastric tube. The nurse applies cloth wrist restraints as ordered. Which of the following actions by the nurse is most appropriate?",
+  "options": {
+    "A": "Evaluate the need to restrain by observing patient's behavior once every 24 hours",
+    "B": "Perform circulation checks to the extremities every two hours",
+    "C": "Remove the restraints when the patient is sleeping",
+    "D": "Instruct family to limit physical contact with the patient"
+  },
+  "answer": "B",
+  "explanation": "Patients in restraints require frequent circulation and skin assessments to prevent injury."
+},
+{
+  "id": 203,
+  "exam": "DOH",
+  "subject": "Emergency Nursing",
+  "topic": "Airway Obstruction",
+  "question": "Mr. C has just been admitted to the emergency room with airway obstruction. The Heimlich maneuver has not been successful. Which position should the client be placed in?",
+  "options": {
+    "A": "Supine",
+    "B": "Prone",
+    "C": "Trendelenburg",
+    "D": "Fowler's"
+  },
+  "answer": "D",
+  "explanation": "Fowler's position promotes maximum chest expansion and helps maintain airway patency in a conscious patient."
+},
+{
+  "id": 204,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Shock Management",
+  "question": "The negative effect of intravenous nitroglycerin (Tridil) for shock management is:",
+  "options": {
+    "A": "Reduced preload",
+    "B": "Reduced afterload",
+    "C": "Increased cardiac output",
+    "D": "Increased blood pressure"
+  },
+  "answer": "A",
+  "explanation": "Nitroglycerin is a vasodilator that decreases venous return (preload), which may worsen hypotension in shock."
+},
+{
+  "id": 205,
+  "exam": "DOH",
+  "subject": "Mental Health Nursing",
+  "topic": "Therapeutic Communication",
+  "question": "You're working with a patient who just stimulated your anger by using a condescending tone with you. Which of the following responses would be the most therapeutic way to acknowledge the effect on you?",
+  "options": {
+    "A": "\"I feel angry when I hear that tone of voice.\"",
+    "B": "\"You make me so angry when you talk to me that way.\"",
+    "C": "\"Are you trying to make me angry?\"",
+    "D": "\"Why do you do that with me?\""
+  },
+  "answer": "A",
+  "explanation": "Using 'I' statements expresses feelings professionally without blaming the patient and supports therapeutic communication."
+},
+{
+  "id": 206,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Hip Spica Cast",
+  "question": "While assessing a child in a hip Spica cast, which of the following assessment findings would alert the nurse to suspect a possible infection under the cast?",
+  "options": {
+    "A": "Cold toes",
+    "B": "Absent pedal pulse",
+    "C": "\"Hot spots\" on the cast",
+    "D": "Cyanotic extremities"
+  },
+  "answer": "C",
+  "explanation": "Warm or 'hot spots' on a cast may indicate drainage and infection beneath the cast."
+},
+{
+  "id": 207,
+  "exam": "DOH",
+  "subject": "Nutrition",
+  "topic": "Nitrates",
+  "question": "To reduce nitrate intake because of possible carcinogenic action, the nurse suggests that a patient decrease his or her intake of:",
+  "options": {
+    "A": "Eggs and milk",
+    "B": "Fish and poultry",
+    "C": "Ham and bacon",
+    "D": "Green, leafy vegetables"
+  },
+  "answer": "C",
+  "explanation": "Processed meats such as ham and bacon contain high levels of nitrates and nitrites."
+},
+{
+  "id": 208,
+  "exam": "DOH",
+  "subject": "Mental Health Nursing",
+  "topic": "Paranoid Delusions",
+  "question": "A patient on your unit says that the mafia has a 'contract' out on him. He refuses to leave his semiprivate room and insists on frisking his roommate before allowing him to enter. Which of the following actions should you take first?",
+  "options": {
+    "A": "Have the patient transferred to a private room",
+    "B": "Acknowledge the patient's fear when he refuses to leave his room or wants to frisk his roommate",
+    "C": "Transfer the roommate to another room",
+    "D": "Lock the patient out of his room for a short time each day so that he can see that he's safe"
+  },
+  "answer": "B",
+  "explanation": "Acknowledge the patient's feelings without reinforcing the delusion, then provide reassurance and reality-based care."
+},
+{
+  "id": 209,
+  "exam": "DOH",
+  "subject": "Respiratory Nursing",
+  "topic": "Bronchoscopy",
+  "question": "After a bronchoscopy Mr. Kecklin:",
+  "options": {
+    "A": "Can be given ice chips and fluids after he demonstrates that he can perform a positive gag reflex.",
+    "B": "Should immediately be given a house diet to alleviate his hunger resulting from the required fast.",
+    "C": "Should initially be given iced ginger ale to prevent vomiting and possible aspiration.",
+    "D": "Will need to remain NPO for 6 hours to prevent pharyngeal irritation."
+  },
+  "answer": "A",
+  "explanation": "Food and fluids should be withheld until the gag reflex has returned to prevent aspiration."
+},
+{
+  "id": 210,
+  "exam": "DOH",
+  "subject": "Emergency Nursing",
+  "topic": "Heimlich Maneuver",
+  "question": "To correctly perform the Heimlich maneuver, a person should forcefully apply pressure against the victim's:",
+  "options": {
+    "A": "Abdomen",
+    "B": "Diaphragm",
+    "C": "Lungs",
+    "D": "Trachea"
+  },
+  "answer": "B",
+  "explanation": "The Heimlich maneuver applies upward pressure beneath the diaphragm to create an artificial cough that expels the airway obstruction."
+},
+{
+  "id": 211,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Play Therapy",
+  "question": "Which of the following best describes parallel play between two toddlers?",
+  "options": {
+    "A": "Sharing crayons to color separate pictures",
+    "B": "Playing a board game with a nurse",
+    "C": "Sitting near each other while playing with separate dolls",
+    "D": "Sharing their dolls with two different nurses"
+  },
+  "answer": "C",
+  "explanation": "Parallel play is characteristic of toddlers, where children play alongside one another with similar toys but without directly interacting."
+},
+{
+  "id": 212,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Tonsillectomy",
+  "question": "Isabel is to be discharged the same day of her tonsillectomy. The nurse makes sure that her family knows to:",
+  "options": {
+    "A": "Encourage her to eat a house diet to build up her resistance to infection.",
+    "B": "Offer her only clear liquids for 3 days, to prevent pharyngeal irritation.",
+    "C": "Offer her soft foods for several days to minimize local discomfort and supply her with necessary nutrients.",
+    "D": "Supplement her diet with orange and lemon juices because of the need for vitamin C to heal."
+  },
+  "answer": "C",
+  "explanation": "Soft, cool foods reduce throat irritation while maintaining adequate nutrition after tonsillectomy."
+},
+{
+  "id": 213,
+  "exam": "DOH",
+  "subject": "Mental Health Nursing",
+  "topic": "Bipolar Disorder",
+  "question": "A 38-year-old female patient has been hospitalized twice previously for episodes of hypomania (bipolar disorder). She talks incessantly, has a limited attention span, and intrudes on others. What is the nurse's best intervention?",
+  "options": {
+    "A": "Tell the patient that her behavior is inappropriate.",
+    "B": "Ask the other patient how he feels about dancing with her.",
+    "C": "Do nothing if the other patient appears comfortable.",
+    "D": "Take the patient to a quiet environment, and engage her in a structured activity."
+  },
+  "answer": "D",
+  "explanation": "Reducing environmental stimulation and providing structured activities helps manage manic behavior safely."
+},
+{
+  "id": 214,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Rheumatic Fever",
+  "question": "Which of the following organisms is responsible for the development of rheumatic fever?",
+  "options": {
+    "A": "Streptococcal pneumonia",
+    "B": "Haemophilus influenzae",
+    "C": "Group A beta-hemolytic streptococcus",
+    "D": "Staphylococcus aureus"
+  },
+  "answer": "C",
+  "explanation": "Rheumatic fever is a delayed autoimmune complication of Group A beta-hemolytic streptococcal infection."
+},
+{
+  "id": 215,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Status Asthmaticus",
+  "question": "The nurse understands that a patient with status asthmaticus will likely initially evidence symptoms of:",
+  "options": {
+    "A": "Metabolic acidosis",
+    "B": "Metabolic alkalosis",
+    "C": "Respiratory acidosis",
+    "D": "Respiratory alkalosis"
+  },
+  "answer": "D",
+  "explanation": "Early in status asthmaticus, hyperventilation causes excessive carbon dioxide loss, resulting in respiratory alkalosis."
+},
+{
+  "id": 216,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Mechanical Ventilation",
+  "question": "Neuromuscular blockers are given to patients who are on ventilators in ARF to accomplish all of the following except:",
+  "options": {
+    "A": "Maintain positive end-expiratory pressure (PEEP)",
+    "B": "Maintain better ventilation",
+    "C": "Increase the respiratory rate",
+    "D": "Keep the patient from fighting the ventilator"
+  },
+  "answer": "C",
+  "explanation": "Neuromuscular blockers improve ventilator synchrony but do not increase the patient's respiratory rate."
+},
+{
+  "id": 217,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Acid-Base Balance",
+  "question": "Which of the following acid-base disorders is most likely to develop secondary to diarrhea in a 6-month-old child?",
+  "options": {
+    "A": "Metabolic acidosis",
+    "B": "Metabolic alkalosis",
+    "C": "Respiratory alkalosis",
+    "D": "Respiratory acidosis"
+  },
+  "answer": "A",
+  "explanation": "Diarrhea causes excessive bicarbonate loss from the gastrointestinal tract, leading to metabolic acidosis."
+},
+{
+  "id": 218,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Pulmonary Embolism",
+  "question": "Nursing measures to assist in the prevention of pulmonary embolism in a hospitalized patient include all of the following except:",
+  "options": {
+    "A": "A liberal fluid intake",
+    "B": "Assisting the patient to do leg elevations above the level of the heart",
+    "C": "Encouraging the patient to dangle his or her legs over the side of the bed for 30 minutes, four times a day",
+    "D": "The use of elastic stockings, especially when decreased mobility would promote venous stasis"
+  },
+  "answer": "C",
+  "explanation": "Simply dangling the legs does not prevent venous stasis and is not an effective measure for preventing pulmonary embolism."
+},
+{
+  "id": 219,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Heparin Therapy",
+  "question": "Anticoagulation with heparin attempts to maintain the partial thromboplastin time (PTT) at ____ times normal.",
+  "options": {
+    "A": "0.5–1.0",
+    "B": "1.5–2.5",
+    "C": "2.5–3.0",
+    "D": ">3.0"
+  },
+  "answer": "B",
+  "explanation": "The therapeutic target for unfractionated heparin is generally 1.5 to 2.5 times the normal PTT value."
+},
+{
+  "id": 220,
+  "exam": "DOH",
+  "subject": "Respiratory Nursing",
+  "topic": "Emphysema",
+  "question": "Arterial blood gas measurements that are consistent with a diagnosis of emphysema are:",
+  "options": {
+    "A": "pH 7.32; PaO₂ 70 mmHg; PaCO₂ 50 mmHg",
+    "B": "pH 7.37; PaO₂ 90 mmHg; PaCO₂ 42 mmHg",
+    "C": "pH 7.39; PaO₂ 80 mmHg; PaCO₂ 35 mmHg",
+    "D": "pH 7.40; PaO₂ 85 mmHg; PaCO₂ 42 mmHg"
+  },
+  "answer": "A",
+  "explanation": "Advanced emphysema commonly produces respiratory acidosis with elevated PaCO₂, reduced PaO₂, and a decreased pH."
+},
+  {
+  "id": 221,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Nephrotic Syndrome",
+  "question": "Which of the following findings would the nurse expect to assess in a patient diagnosed with nephrotic syndrome?",
+  "options": {
+    "A": "Generalized edema and proteinuria",
+    "B": "Hematuria and hypertension",
+    "C": "Polyuria and glycosuria",
+    "D": "Flank pain and fever"
+  },
+  "answer": "A",
+  "explanation": "Nephrotic syndrome is characterized by massive proteinuria, hypoalbuminemia, generalized edema, and hyperlipidemia."
+},
+{
+  "id": 222,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Digoxin Toxicity",
+  "question": "Which of the following symptoms is most suggestive of digoxin toxicity?",
+  "options": {
+    "A": "Blurred vision with yellow-green halos",
+    "B": "Excessive thirst",
+    "C": "Polyuria",
+    "D": "Persistent cough"
+  },
+  "answer": "A",
+  "explanation": "Visual disturbances, including yellow-green halos, nausea, and dysrhythmias, are classic signs of digoxin toxicity."
+},
+{
+  "id": 223,
+  "exam": "DOH",
+  "subject": "Obstetric Nursing",
+  "topic": "Placenta Previa",
+  "question": "A pregnant woman diagnosed with placenta previa is most likely to present with:",
+  "options": {
+    "A": "Painful vaginal bleeding",
+    "B": "Painless bright red vaginal bleeding",
+    "C": "Severe abdominal rigidity",
+    "D": "Dark brown vaginal discharge"
+  },
+  "answer": "B",
+  "explanation": "Placenta previa classically presents with painless, bright red vaginal bleeding during the second half of pregnancy."
+},
+{
+  "id": 224,
+  "exam": "DOH",
+  "subject": "Maternal Nursing",
+  "topic": "Postpartum Hemorrhage",
+  "question": "The priority nursing intervention for a woman experiencing postpartum hemorrhage due to uterine atony is:",
+  "options": {
+    "A": "Administer oral fluids",
+    "B": "Massage the uterine fundus",
+    "C": "Place the patient in high Fowler's position",
+    "D": "Apply warm compresses to the abdomen"
+  },
+  "answer": "B",
+  "explanation": "Fundal massage stimulates uterine contraction and is the first nursing intervention for uterine atony."
+},
+{
+  "id": 225,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Dehydration",
+  "question": "Which assessment finding is most indicative of severe dehydration in an infant?",
+  "options": {
+    "A": "Moist mucous membranes",
+    "B": "Sunken fontanelle",
+    "C": "Brisk capillary refill",
+    "D": "Bounding pulse"
+  },
+  "answer": "B",
+  "explanation": "A sunken fontanelle is a classic sign of significant dehydration in infants."
+},
+{
+  "id": 226,
+  "exam": "DOH",
+  "subject": "Infection Control",
+  "topic": "Hand Hygiene",
+  "question": "The single most effective measure for preventing the spread of hospital-acquired infections is:",
+  "options": {
+    "A": "Wearing sterile gloves",
+    "B": "Proper hand hygiene",
+    "C": "Routine antibiotic therapy",
+    "D": "Daily environmental fumigation"
+  },
+  "answer": "B",
+  "explanation": "Proper hand hygiene is the most effective method for preventing healthcare-associated infections."
+},
+{
+  "id": 227,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hypokalemia",
+  "question": "Which electrocardiogram (ECG) finding is commonly associated with hypokalemia?",
+  "options": {
+    "A": "Peaked T waves",
+    "B": "Prominent U waves",
+    "C": "ST-segment elevation",
+    "D": "Shortened QT interval"
+  },
+  "answer": "B",
+  "explanation": "Hypokalemia commonly causes flattened T waves, ST depression, and prominent U waves on the ECG."
+},
+{
+  "id": 228,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Blood Transfusion",
+  "question": "Which symptom during a blood transfusion requires the nurse to stop the transfusion immediately?",
+  "options": {
+    "A": "Mild hunger",
+    "B": "Chills and fever",
+    "C": "Increased appetite",
+    "D": "Drowsiness after medication"
+  },
+  "answer": "B",
+  "explanation": "Fever and chills may indicate an acute transfusion reaction and require immediate discontinuation of the transfusion."
+},
+{
+  "id": 229,
+  "exam": "DOH",
+  "subject": "Emergency Nursing",
+  "topic": "Burns",
+  "question": "The priority nursing action for a patient with extensive thermal burns is:",
+  "options": {
+    "A": "Apply topical antibiotic cream",
+    "B": "Maintain a patent airway",
+    "C": "Perform range-of-motion exercises",
+    "D": "Encourage oral feeding"
+  },
+  "answer": "B",
+  "explanation": "Airway management is the highest priority because inhalation injury and airway edema can rapidly become life-threatening."
+},
+{
+  "id": 230,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Cardiopulmonary Resuscitation",
+  "question": "During adult cardiopulmonary resuscitation (CPR), the recommended compression-to-ventilation ratio for a single rescuer is:",
+  "options": {
+    "A": "15:2",
+    "B": "30:2",
+    "C": "5:1",
+    "D": "50:5"
+  },
+  "answer": "B",
+  "explanation": "Current Basic Life Support (BLS) guidelines recommend a compression-to-ventilation ratio of 30:2 for a single rescuer performing adult CPR."
+},
+{
+  "id": 231,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Acute Myocardial Infarction",
+  "question": "A patient admitted with acute myocardial infarction suddenly develops severe chest pain unrelieved by nitroglycerin. What is the nurse's priority action?",
+  "options": {
+    "A": "Encourage deep breathing",
+    "B": "Administer oxygen and notify the physician",
+    "C": "Assist the patient to ambulate",
+    "D": "Give oral fluids"
+  },
+  "answer": "B",
+  "explanation": "Persistent chest pain may indicate ongoing myocardial ischemia. Oxygen administration and immediate physician notification are priority interventions."
+},
+{
+  "id": 232,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Chest Tube Care",
+  "question": "The nurse notices continuous bubbling in the water-seal chamber of a chest drainage system. The nurse should first:",
+  "options": {
+    "A": "Clamp the chest tube near the patient",
+    "B": "Assess the drainage system for an air leak",
+    "C": "Remove the chest tube",
+    "D": "Increase the suction pressure"
+  },
+  "answer": "B",
+  "explanation": "Continuous bubbling usually indicates an air leak. The nurse should first inspect the drainage system and tubing before taking further action."
+},
+{
+  "id": 233,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Insulin Administration",
+  "question": "Which insulin has the fastest onset of action?",
+  "options": {
+    "A": "Regular insulin",
+    "B": "NPH insulin",
+    "C": "Insulin lispro",
+    "D": "Insulin glargine"
+  },
+  "answer": "C",
+  "explanation": "Insulin lispro is a rapid-acting insulin with an onset of approximately 15 minutes."
+},
+{
+  "id": 234,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Chronic Kidney Disease",
+  "question": "Which laboratory value is most indicative of worsening renal function?",
+  "options": {
+    "A": "Serum creatinine 5.2 mg/dL",
+    "B": "Hemoglobin 13 g/dL",
+    "C": "Platelet count 250,000/mm³",
+    "D": "Blood glucose 98 mg/dL"
+  },
+  "answer": "A",
+  "explanation": "An elevated serum creatinine level indicates impaired kidney function and reduced glomerular filtration."
+},
+{
+  "id": 235,
+  "exam": "DOH",
+  "subject": "Obstetric Nursing",
+  "topic": "Preeclampsia",
+  "question": "Which assessment finding is most characteristic of severe preeclampsia?",
+  "options": {
+    "A": "Blood pressure 170/110 mmHg with proteinuria",
+    "B": "Blood pressure 120/80 mmHg",
+    "C": "Temperature 38.5°C",
+    "D": "Heart rate 62 beats/min"
+  },
+  "answer": "A",
+  "explanation": "Severe hypertension with significant proteinuria is a hallmark of severe preeclampsia."
+},
+{
+  "id": 236,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Febrile Seizures",
+  "question": "The priority nursing action during a child's febrile seizure is:",
+  "options": {
+    "A": "Insert an oral airway",
+    "B": "Restrain the child",
+    "C": "Protect the child from injury and maintain the airway",
+    "D": "Offer cool water"
+  },
+  "answer": "C",
+  "explanation": "The priority during any seizure is maintaining airway patency and protecting the patient from injury."
+},
+{
+  "id": 237,
+  "exam": "DOH",
+  "subject": "Infection Control",
+  "topic": "Standard Precautions",
+  "question": "Standard precautions should be used:",
+  "options": {
+    "A": "Only for patients with known infections",
+    "B": "Only in intensive care units",
+    "C": "For all patients regardless of diagnosis",
+    "D": "Only when handling blood products"
+  },
+  "answer": "C",
+  "explanation": "Standard precautions are applied to all patients because any patient may carry transmissible pathogens."
+},
+{
+  "id": 238,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hyperkalemia",
+  "question": "Which ECG change is commonly associated with hyperkalemia?",
+  "options": {
+    "A": "Prominent U waves",
+    "B": "Peaked T waves",
+    "C": "ST depression",
+    "D": "Prolonged PR interval only"
+  },
+  "answer": "B",
+  "explanation": "Tall, peaked T waves are one of the earliest ECG manifestations of hyperkalemia."
+},
+{
+  "id": 239,
+  "exam": "DOH",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Pressure Injury Prevention",
+  "question": "How often should an immobile patient generally be repositioned to reduce the risk of pressure injuries?",
+  "options": {
+    "A": "Every 30 minutes",
+    "B": "Every 2 hours",
+    "C": "Every 6 hours",
+    "D": "Once every shift"
+  },
+  "answer": "B",
+  "explanation": "Repositioning at least every two hours helps reduce prolonged pressure over bony prominences and decreases the risk of pressure injuries."
+},
+{
+  "id": 240,
+  "exam": "DOH",
+  "subject": "Emergency Nursing",
+  "topic": "Hypovolemic Shock",
+  "question": "Which assessment finding is an early sign of hypovolemic shock?",
+  "options": {
+    "A": "Bradycardia",
+    "B": "Warm flushed skin",
+    "C": "Tachycardia",
+    "D": "Decreased respiratory rate"
+  },
+  "answer": "C",
+  "explanation": "Tachycardia is usually the earliest compensatory response to decreased circulating blood volume."
+},
+{
+  "id": 241,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Heart Failure",
+  "question": "A patient with left-sided heart failure is most likely to develop which of the following symptoms first?",
+  "options": {
+    "A": "Peripheral edema",
+    "B": "Jugular vein distention",
+    "C": "Pulmonary crackles",
+    "D": "Ascites"
+  },
+  "answer": "C",
+  "explanation": "Left-sided heart failure causes pulmonary congestion, making crackles one of the earliest assessment findings."
+},
+{
+  "id": 242,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Warfarin Therapy",
+  "question": "A patient receiving warfarin therapy should be monitored routinely using which laboratory test?",
+  "options": {
+    "A": "Activated partial thromboplastin time (aPTT)",
+    "B": "International Normalized Ratio (INR)",
+    "C": "Bleeding time",
+    "D": "Platelet count"
+  },
+  "answer": "B",
+  "explanation": "Warfarin therapy is monitored using the prothrombin time expressed as the International Normalized Ratio (INR)."
+},
+{
+  "id": 243,
+  "exam": "DOH",
+  "subject": "Obstetric Nursing",
+  "topic": "Oxytocin Infusion",
+  "question": "While administering oxytocin for labor induction, the nurse should immediately stop the infusion if:",
+  "options": {
+    "A": "Contractions occur every 2 minutes and last 90 seconds",
+    "B": "The mother requests pain medication",
+    "C": "The cervix dilates to 5 cm",
+    "D": "The fetal heart rate is 140 beats/min"
+  },
+  "answer": "A",
+  "explanation": "Excessively frequent or prolonged uterine contractions indicate uterine hyperstimulation and require immediate discontinuation of oxytocin."
+},
+{
+  "id": 244,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Meningitis",
+  "question": "Which of the following findings is most consistent with bacterial meningitis in a child?",
+  "options": {
+    "A": "Brudzinski's sign",
+    "B": "Pitting edema",
+    "C": "Absent bowel sounds",
+    "D": "Hyperactive deep tendon reflexes only"
+  },
+  "answer": "A",
+  "explanation": "Brudzinski's sign is a classic indication of meningeal irritation associated with meningitis."
+},
+{
+  "id": 245,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Liver Cirrhosis",
+  "question": "A patient with liver cirrhosis suddenly becomes confused and drowsy. The nurse should suspect:",
+  "options": {
+    "A": "Hypoglycemia",
+    "B": "Hepatic encephalopathy",
+    "C": "Acute pancreatitis",
+    "D": "Pulmonary edema"
+  },
+  "answer": "B",
+  "explanation": "Changes in mental status in a patient with cirrhosis commonly indicate hepatic encephalopathy caused by elevated ammonia levels."
+},
+{
+  "id": 246,
+  "exam": "DOH",
+  "subject": "Emergency Nursing",
+  "topic": "Anaphylaxis",
+  "question": "The priority medication for a patient experiencing anaphylactic shock is:",
+  "options": {
+    "A": "Diphenhydramine",
+    "B": "Hydrocortisone",
+    "C": "Epinephrine",
+    "D": "Furosemide"
+  },
+  "answer": "C",
+  "explanation": "Intramuscular epinephrine is the first-line treatment for anaphylaxis because it rapidly reverses airway edema, bronchospasm, and hypotension."
+},
+{
+  "id": 247,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Deep Vein Thrombosis",
+  "question": "Which intervention is contraindicated for a patient with suspected deep vein thrombosis (DVT)?",
+  "options": {
+    "A": "Elevating the affected leg",
+    "B": "Applying warm, moist compresses",
+    "C": "Massaging the affected leg",
+    "D": "Administering prescribed anticoagulants"
+  },
+  "answer": "C",
+  "explanation": "Massaging the affected extremity may dislodge the thrombus, increasing the risk of pulmonary embolism."
+},
+{
+  "id": 248,
+  "exam": "DOH",
+  "subject": "Infection Control",
+  "topic": "Tuberculosis",
+  "question": "A nurse caring for a patient with active pulmonary tuberculosis should wear:",
+  "options": {
+    "A": "A surgical mask",
+    "B": "An N95 respirator",
+    "C": "Sterile gloves only",
+    "D": "A face shield only"
+  },
+  "answer": "B",
+  "explanation": "Airborne precautions require the use of a properly fitted N95 respirator when caring for patients with active pulmonary tuberculosis."
+},
+{
+  "id": 249,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Burn Management",
+  "question": "During the emergent phase of major burn management, the priority is to:",
+  "options": {
+    "A": "Prevent scar formation",
+    "B": "Maintain airway and fluid resuscitation",
+    "C": "Begin physical therapy",
+    "D": "Provide a high-protein diet"
+  },
+  "answer": "B",
+  "explanation": "The initial priorities in major burn care are airway protection and aggressive fluid replacement to prevent shock."
+},
+{
+  "id": 250,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Peptic Ulcer Disease",
+  "question": "Which assessment finding suggests perforation of a peptic ulcer?",
+  "options": {
+    "A": "Gradual onset of epigastric discomfort",
+    "B": "Sudden severe abdominal pain with a rigid abdomen",
+    "C": "Relief of pain after eating",
+    "D": "Black, tarry stools"
+  },
+  "answer": "B",
+  "explanation": "A perforated peptic ulcer typically presents with sudden, severe abdominal pain and a board-like rigid abdomen due to peritonitis."
+},
+  {
+  "id": 251,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Acute Pancreatitis",
+  "question": "Which laboratory finding is most consistent with acute pancreatitis?",
+  "options": {
+    "A": "Decreased serum amylase",
+    "B": "Elevated serum amylase and lipase",
+    "C": "Decreased serum potassium",
+    "D": "Elevated hemoglobin"
+  },
+  "answer": "B",
+  "explanation": "Acute pancreatitis is characterized by elevated pancreatic enzymes, especially serum amylase and lipase."
+},
+{
+  "id": 252,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Morphine",
+  "question": "Before administering morphine sulfate intravenously, the nurse should first assess the patient's:",
+  "options": {
+    "A": "Respiratory rate",
+    "B": "Temperature",
+    "C": "Blood glucose",
+    "D": "Urine specific gravity"
+  },
+  "answer": "A",
+  "explanation": "Morphine can cause respiratory depression. Respiratory status should always be assessed before administration."
+},
+{
+  "id": 253,
+  "exam": "DOH",
+  "subject": "Maternal Nursing",
+  "topic": "Abruptio Placentae",
+  "question": "A pregnant woman with abruptio placentae is most likely to present with:",
+  "options": {
+    "A": "Painless vaginal bleeding",
+    "B": "Painful vaginal bleeding with uterine tenderness",
+    "C": "Clear amniotic fluid leakage",
+    "D": "Absence of uterine contractions"
+  },
+  "answer": "B",
+  "explanation": "Abruptio placentae typically presents with painful vaginal bleeding, uterine tenderness, and increased uterine tone."
+},
+{
+  "id": 254,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Congenital Heart Disease",
+  "question": "A child with Tetralogy of Fallot suddenly develops cyanosis and dyspnea. What is the nurse's priority action?",
+  "options": {
+    "A": "Place the child in the knee-chest position",
+    "B": "Lay the child flat",
+    "C": "Encourage vigorous exercise",
+    "D": "Give oral fluids immediately"
+  },
+  "answer": "A",
+  "explanation": "The knee-chest position increases systemic vascular resistance and reduces right-to-left shunting during a hypercyanotic spell."
+},
+{
+  "id": 255,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Addison's Disease",
+  "question": "Which electrolyte imbalance is commonly associated with Addison's disease?",
+  "options": {
+    "A": "Hypernatremia and hypokalemia",
+    "B": "Hyponatremia and hyperkalemia",
+    "C": "Hypercalcemia and hypokalemia",
+    "D": "Hypernatremia and hypercalcemia"
+  },
+  "answer": "B",
+  "explanation": "Aldosterone deficiency in Addison's disease leads to sodium loss and potassium retention, causing hyponatremia and hyperkalemia."
+},
+{
+  "id": 256,
+  "exam": "DOH",
+  "subject": "Emergency Nursing",
+  "topic": "Head Injury",
+  "question": "A patient with a head injury begins vomiting repeatedly and becomes increasingly drowsy. The nurse should suspect:",
+  "options": {
+    "A": "Improvement in neurological status",
+    "B": "Increased intracranial pressure",
+    "C": "Hypoglycemia",
+    "D": "Dehydration"
+  },
+  "answer": "B",
+  "explanation": "Repeated vomiting and decreasing level of consciousness are classic signs of increased intracranial pressure."
+},
+{
+  "id": 257,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "COPD",
+  "question": "Which oxygen delivery method is generally preferred for a stable patient with chronic obstructive pulmonary disease (COPD)?",
+  "options": {
+    "A": "Non-rebreather mask at 15 L/min",
+    "B": "Venturi mask",
+    "C": "Simple face mask at 10 L/min",
+    "D": "Face tent"
+  },
+  "answer": "B",
+  "explanation": "A Venturi mask delivers a precise oxygen concentration and is preferred for many patients with COPD."
+},
+{
+  "id": 258,
+  "exam": "DOH",
+  "subject": "Infection Control",
+  "topic": "Surgical Asepsis",
+  "question": "Which action breaks sterile technique during a sterile dressing change?",
+  "options": {
+    "A": "Keeping sterile objects above waist level",
+    "B": "Allowing a sterile object to become wet",
+    "C": "Opening the sterile package away from the body first",
+    "D": "Touching only the outer edge of the sterile field"
+  },
+  "answer": "B",
+  "explanation": "Moisture causes strike-through contamination, making a sterile field no longer sterile."
+},
+{
+  "id": 259,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Cardiac Arrest",
+  "question": "The first intervention after confirming an adult patient is unresponsive and not breathing normally is to:",
+  "options": {
+    "A": "Check blood pressure",
+    "B": "Begin high-quality chest compressions",
+    "C": "Insert an intravenous line",
+    "D": "Administer epinephrine"
+  },
+  "answer": "B",
+  "explanation": "According to Basic Life Support (BLS) guidelines, chest compressions should be started immediately after confirming cardiac arrest."
+},
+{
+  "id": 260,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Thyroid Disorders",
+  "question": "Which assessment finding is most characteristic of hypothyroidism?",
+  "options": {
+    "A": "Heat intolerance",
+    "B": "Weight loss",
+    "C": "Cold intolerance",
+    "D": "Exophthalmos"
+  },
+  "answer": "C",
+  "explanation": "Patients with hypothyroidism commonly experience cold intolerance, fatigue, weight gain, dry skin, and bradycardia."
+},
+{
+  "id": 261,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Diabetes Mellitus",
+  "question": "A patient with diabetes suddenly becomes pale, diaphoretic, confused, and shaky. What should the nurse suspect?",
+  "options": {
+    "A": "Hyperglycemia",
+    "B": "Hypoglycemia",
+    "C": "Diabetic ketoacidosis",
+    "D": "Hyperosmolar syndrome"
+  },
+  "answer": "B",
+  "explanation": "Pallor, diaphoresis, tremors, and confusion are classic manifestations of hypoglycemia caused by low blood glucose."
+},
+{
+  "id": 262,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Heparin Therapy",
+  "question": "Which medication is the antidote for heparin overdose?",
+  "options": {
+    "A": "Vitamin K",
+    "B": "Protamine sulfate",
+    "C": "Naloxone",
+    "D": "Atropine"
+  },
+  "answer": "B",
+  "explanation": "Protamine sulfate binds to heparin and rapidly neutralizes its anticoagulant effect."
+},
+{
+  "id": 263,
+  "exam": "DOH",
+  "subject": "Maternal Nursing",
+  "topic": "Eclampsia",
+  "question": "Which medication is most commonly administered to prevent seizures in a patient with severe preeclampsia?",
+  "options": {
+    "A": "Diazepam",
+    "B": "Magnesium sulfate",
+    "C": "Phenytoin",
+    "D": "Phenobarbital"
+  },
+  "answer": "B",
+  "explanation": "Magnesium sulfate is the drug of choice for seizure prevention and treatment in severe preeclampsia and eclampsia."
+},
+{
+  "id": 264,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Croup",
+  "question": "A child with croup is most likely to exhibit which characteristic symptom?",
+  "options": {
+    "A": "Barking cough",
+    "B": "Productive cough",
+    "C": "Bloody sputum",
+    "D": "Wheezing only during expiration"
+  },
+  "answer": "A",
+  "explanation": "A barking cough with inspiratory stridor is the classic presentation of viral croup."
+},
+{
+  "id": 265,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hyperthyroidism",
+  "question": "Which finding would the nurse expect in a patient with hyperthyroidism?",
+  "options": {
+    "A": "Cold intolerance",
+    "B": "Bradycardia",
+    "C": "Weight gain",
+    "D": "Heat intolerance"
+  },
+  "answer": "D",
+  "explanation": "Hyperthyroidism increases metabolic rate, leading to heat intolerance, weight loss, tachycardia, and nervousness."
+},
+{
+  "id": 266,
+  "exam": "DOH",
+  "subject": "Emergency Nursing",
+  "topic": "Cardiac Arrest",
+  "question": "During CPR, chest compressions should be performed at a rate of:",
+  "options": {
+    "A": "60–80 compressions per minute",
+    "B": "80–90 compressions per minute",
+    "C": "100–120 compressions per minute",
+    "D": "140–160 compressions per minute"
+  },
+  "answer": "C",
+  "explanation": "Current adult Basic Life Support (BLS) guidelines recommend a compression rate of 100 to 120 compressions per minute."
+},
+{
+  "id": 267,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Blood Transfusion",
+  "question": "Which blood type is considered the universal donor for packed red blood cells?",
+  "options": {
+    "A": "A positive",
+    "B": "B positive",
+    "C": "AB positive",
+    "D": "O negative"
+  },
+  "answer": "D",
+  "explanation": "O negative red blood cells lack A, B, and Rh antigens and can generally be transfused in emergencies to patients of any blood type."
+},
+{
+  "id": 268,
+  "exam": "DOH",
+  "subject": "Infection Control",
+  "topic": "Isolation Precautions",
+  "question": "A patient diagnosed with pulmonary tuberculosis should be placed in:",
+  "options": {
+    "A": "Contact isolation",
+    "B": "Droplet isolation",
+    "C": "Airborne isolation",
+    "D": "Protective isolation"
+  },
+  "answer": "C",
+  "explanation": "Pulmonary tuberculosis spreads through airborne particles and requires airborne isolation in a negative-pressure room."
+},
+{
+  "id": 269,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Shock",
+  "question": "Which assessment finding is most consistent with septic shock?",
+  "options": {
+    "A": "Warm flushed skin during the early stage",
+    "B": "Bradycardia",
+    "C": "Cold dry skin from the onset",
+    "D": "Marked hypertension"
+  },
+  "answer": "A",
+  "explanation": "Early septic shock is characterized by peripheral vasodilation, resulting in warm, flushed skin before progressing to the cold phase."
+},
+{
+  "id": 270,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Iron Deficiency Anemia",
+  "question": "Which laboratory value is most consistent with iron deficiency anemia?",
+  "options": {
+    "A": "Elevated hemoglobin",
+    "B": "Low serum ferritin",
+    "C": "High hematocrit",
+    "D": "Elevated vitamin B12 level"
+  },
+  "answer": "B",
+  "explanation": "Low serum ferritin reflects depleted iron stores and is one of the earliest and most specific laboratory findings in iron deficiency anemia."
+},
+{
+  "id": 271,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Chronic Renal Failure",
+  "question": "A patient with chronic renal failure is prescribed a low-protein diet primarily to:",
+  "options": {
+    "A": "Increase muscle mass",
+    "B": "Reduce nitrogenous waste production",
+    "C": "Prevent hypoglycemia",
+    "D": "Increase calcium absorption"
+  },
+  "answer": "B",
+  "explanation": "Protein metabolism produces nitrogenous wastes such as urea. Reducing protein intake helps decrease the workload on impaired kidneys."
+},
+{
+  "id": 272,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Insulin",
+  "question": "Which insulin preparation has no pronounced peak of action?",
+  "options": {
+    "A": "Regular insulin",
+    "B": "NPH insulin",
+    "C": "Insulin glargine",
+    "D": "Insulin lispro"
+  },
+  "answer": "C",
+  "explanation": "Insulin glargine is a long-acting basal insulin that provides a relatively constant effect without a significant peak."
+},
+{
+  "id": 273,
+  "exam": "DOH",
+  "subject": "Maternal Nursing",
+  "topic": "Postpartum Assessment",
+  "question": "A boggy uterus palpated after delivery indicates:",
+  "options": {
+    "A": "Normal involution",
+    "B": "Uterine atony",
+    "C": "Bladder infection",
+    "D": "Retained placenta only"
+  },
+  "answer": "B",
+  "explanation": "A boggy uterus suggests uterine atony, the leading cause of postpartum hemorrhage."
+},
+{
+  "id": 274,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Acute Epiglottitis",
+  "question": "Which intervention should be avoided in a child suspected of having acute epiglottitis?",
+  "options": {
+    "A": "Keeping the child calm",
+    "B": "Providing humidified oxygen",
+    "C": "Inspecting the throat with a tongue blade",
+    "D": "Preparing emergency airway equipment"
+  },
+  "answer": "C",
+  "explanation": "Manipulating the throat may trigger complete airway obstruction in acute epiglottitis and should be avoided."
+},
+{
+  "id": 275,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hypercalcemia",
+  "question": "Which assessment finding is most commonly associated with hypercalcemia?",
+  "options": {
+    "A": "Tetany",
+    "B": "Hyperactive deep tendon reflexes",
+    "C": "Muscle weakness",
+    "D": "Positive Chvostek's sign"
+  },
+  "answer": "C",
+  "explanation": "Hypercalcemia decreases neuromuscular excitability, resulting in muscle weakness, fatigue, and constipation."
+},
+{
+  "id": 276,
+  "exam": "DOH",
+  "subject": "Emergency Nursing",
+  "topic": "Poisoning",
+  "question": "A patient arrives after ingesting an unknown poison. The nurse's first priority is to:",
+  "options": {
+    "A": "Administer activated charcoal immediately",
+    "B": "Assess and maintain the airway",
+    "C": "Induce vomiting",
+    "D": "Obtain a blood sample"
+  },
+  "answer": "B",
+  "explanation": "Following the ABC approach, airway assessment and maintenance are the first priorities in any poisoning emergency."
+},
+{
+  "id": 277,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Rheumatoid Arthritis",
+  "question": "Morning stiffness lasting longer than one hour is a characteristic finding of:",
+  "options": {
+    "A": "Osteoarthritis",
+    "B": "Rheumatoid arthritis",
+    "C": "Gout",
+    "D": "Osteoporosis"
+  },
+  "answer": "B",
+  "explanation": "Prolonged morning stiffness is a classic manifestation of rheumatoid arthritis due to chronic inflammatory joint disease."
+},
+{
+  "id": 278,
+  "exam": "DOH",
+  "subject": "Infection Control",
+  "topic": "Needlestick Injury",
+  "question": "Following an accidental needlestick injury, the nurse should first:",
+  "options": {
+    "A": "Apply a pressure dressing",
+    "B": "Wash the affected area with soap and water",
+    "C": "Begin post-exposure prophylaxis immediately",
+    "D": "Cover the site with sterile gauze"
+  },
+  "answer": "B",
+  "explanation": "The immediate first aid after a needlestick injury is to wash the affected area thoroughly with soap and water before reporting the incident."
+},
+{
+  "id": 279,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Cardiogenic Shock",
+  "question": "Which assessment finding is most consistent with cardiogenic shock?",
+  "options": {
+    "A": "Warm flushed skin",
+    "B": "Bounding pulses",
+    "C": "Hypotension with cool clammy skin",
+    "D": "Hypertension with bradycardia"
+  },
+  "answer": "C",
+  "explanation": "Cardiogenic shock results in poor cardiac output, producing hypotension, cool clammy skin, weak pulses, and signs of tissue hypoperfusion."
+},
+{
+  "id": 280,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Cushing's Syndrome",
+  "question": "Which assessment finding is most characteristic of Cushing's syndrome?",
+  "options": {
+    "A": "Weight loss and hypotension",
+    "B": "Moon face and truncal obesity",
+    "C": "Bronze skin pigmentation",
+    "D": "Cold intolerance"
+  },
+  "answer": "B",
+  "explanation": "Excess cortisol causes fat redistribution, producing the characteristic moon face, truncal obesity, and buffalo hump."
+},
+  {
+  "id": 281,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Diabetic Ketoacidosis",
+  "question": "Which laboratory finding is most characteristic of diabetic ketoacidosis (DKA)?",
+  "options": {
+    "A": "Hypoglycemia",
+    "B": "Metabolic acidosis with positive ketones",
+    "C": "Respiratory alkalosis",
+    "D": "Hypercalcemia"
+  },
+  "answer": "B",
+  "explanation": "Diabetic ketoacidosis is characterized by hyperglycemia, metabolic acidosis, and the presence of serum and urine ketones."
+},
+{
+  "id": 282,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Furosemide",
+  "question": "A patient receiving furosemide should be monitored closely for signs of:",
+  "options": {
+    "A": "Hyperkalemia",
+    "B": "Hypokalemia",
+    "C": "Hypercalcemia",
+    "D": "Hypernatremia"
+  },
+  "answer": "B",
+  "explanation": "Furosemide is a loop diuretic that increases potassium excretion and may cause hypokalemia."
+},
+{
+  "id": 283,
+  "exam": "DOH",
+  "subject": "Maternal Nursing",
+  "topic": "Labor",
+  "question": "The first stage of labor begins with:",
+  "options": {
+    "A": "Delivery of the placenta",
+    "B": "Full cervical dilation",
+    "C": "The onset of true labor contractions",
+    "D": "Birth of the baby"
+  },
+  "answer": "C",
+  "explanation": "The first stage of labor starts with the onset of true labor contractions and ends when the cervix is fully dilated."
+},
+{
+  "id": 284,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Growth and Development",
+  "question": "At approximately what age does an infant typically begin to sit without support?",
+  "options": {
+    "A": "2 months",
+    "B": "4 months",
+    "C": "8 months",
+    "D": "12 months"
+  },
+  "answer": "C",
+  "explanation": "Most infants are able to sit independently without support at around 8 months of age."
+},
+{
+  "id": 285,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hypocalcemia",
+  "question": "Which assessment finding is most suggestive of hypocalcemia?",
+  "options": {
+    "A": "Positive Trousseau's sign",
+    "B": "Bradycardia",
+    "C": "Warm flushed skin",
+    "D": "Decreased neuromuscular excitability"
+  },
+  "answer": "A",
+  "explanation": "Positive Trousseau's sign is a classic manifestation of hypocalcemia due to increased neuromuscular excitability."
+},
+{
+  "id": 286,
+  "exam": "DOH",
+  "subject": "Emergency Nursing",
+  "topic": "Heat Stroke",
+  "question": "The priority intervention for a patient with heat stroke is:",
+  "options": {
+    "A": "Administer antibiotics",
+    "B": "Rapid cooling measures",
+    "C": "Encourage ambulation",
+    "D": "Provide high-calorie food"
+  },
+  "answer": "B",
+  "explanation": "Heat stroke is a medical emergency. Immediate rapid cooling is the priority to reduce core body temperature."
+},
+{
+  "id": 287,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Parkinson's Disease",
+  "question": "Which clinical manifestation is most characteristic of Parkinson's disease?",
+  "options": {
+    "A": "Resting tremor",
+    "B": "Spastic paralysis",
+    "C": "Hyperactive reflexes",
+    "D": "Loss of sensation"
+  },
+  "answer": "A",
+  "explanation": "The classic triad of Parkinson's disease includes resting tremor, rigidity, and bradykinesia."
+},
+{
+  "id": 288,
+  "exam": "DOH",
+  "subject": "Infection Control",
+  "topic": "Personal Protective Equipment",
+  "question": "When removing personal protective equipment (PPE), which item should generally be removed first because it is the most contaminated?",
+  "options": {
+    "A": "Gloves",
+    "B": "Mask",
+    "C": "Goggles",
+    "D": "Gown"
+  },
+  "answer": "A",
+  "explanation": "Gloves are considered the most contaminated PPE and are generally removed first to reduce the risk of self-contamination."
+},
+{
+  "id": 289,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Hypovolemic Shock",
+  "question": "Which finding indicates that fluid resuscitation for hypovolemic shock is effective?",
+  "options": {
+    "A": "Urine output of 35 mL/hour",
+    "B": "Heart rate of 140 beats/min",
+    "C": "Cold clammy skin",
+    "D": "Systolic blood pressure of 70 mmHg"
+  },
+  "answer": "A",
+  "explanation": "Adequate urine output (at least 30 mL/hour in adults) is a reliable indicator of improved tissue perfusion following fluid resuscitation."
+},
+{
+  "id": 290,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Peritonitis",
+  "question": "Which assessment finding is most characteristic of peritonitis?",
+  "options": {
+    "A": "Soft, non-tender abdomen",
+    "B": "Board-like abdominal rigidity",
+    "C": "Hyperactive bowel sounds",
+    "D": "Painless abdominal distension"
+  },
+  "answer": "B",
+  "explanation": "Peritonitis commonly presents with severe abdominal pain, guarding, rebound tenderness, and a board-like rigid abdomen."
+},
+{
+  "id": 291,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Chronic Obstructive Pulmonary Disease",
+  "question": "Which assessment finding indicates that a patient with chronic obstructive pulmonary disease (COPD) is experiencing worsening hypoxemia?",
+  "options": {
+    "A": "Bradycardia",
+    "B": "Restlessness and confusion",
+    "C": "Decreased respiratory rate",
+    "D": "Warm flushed skin"
+  },
+  "answer": "B",
+  "explanation": "Restlessness and confusion are early neurological signs of inadequate oxygenation and worsening hypoxemia."
+},
+{
+  "id": 292,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Potassium Chloride",
+  "question": "Which statement regarding intravenous potassium chloride administration is correct?",
+  "options": {
+    "A": "It may be given as an IV push",
+    "B": "It should be diluted and infused using an infusion pump",
+    "C": "It should always be mixed with dextrose only",
+    "D": "Rapid administration is recommended for severe hypokalemia"
+  },
+  "answer": "B",
+  "explanation": "Intravenous potassium chloride should always be diluted and administered slowly using an infusion pump. It must never be given by IV push."
+},
+{
+  "id": 293,
+  "exam": "DOH",
+  "subject": "Maternal Nursing",
+  "topic": "Postpartum Assessment",
+  "question": "During the immediate postpartum period, the nurse should assess the uterine fundus primarily to evaluate:",
+  "options": {
+    "A": "Bladder function",
+    "B": "Risk of postpartum hemorrhage",
+    "C": "Kidney function",
+    "D": "Breast milk production"
+  },
+  "answer": "B",
+  "explanation": "A firm, contracted uterus helps prevent postpartum hemorrhage, while a boggy uterus suggests uterine atony."
+},
+{
+  "id": 294,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Dehydration",
+  "question": "Which assessment finding best indicates adequate fluid replacement in a dehydrated child?",
+  "options": {
+    "A": "Persistent tachycardia",
+    "B": "Urine output of at least 1 mL/kg/hour",
+    "C": "Sunken eyes",
+    "D": "Delayed capillary refill"
+  },
+  "answer": "B",
+  "explanation": "Adequate urine output is one of the most reliable indicators that fluid replacement therapy is effective."
+},
+{
+  "id": 295,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hyperkalemia",
+  "question": "Which medication may be administered intravenously to help stabilize the cardiac membrane in severe hyperkalemia?",
+  "options": {
+    "A": "Calcium gluconate",
+    "B": "Furosemide",
+    "C": "Sodium bicarbonate",
+    "D": "Regular insulin"
+  },
+  "answer": "A",
+  "explanation": "Intravenous calcium gluconate stabilizes the myocardial cell membrane and reduces the risk of life-threatening dysrhythmias."
+},
+{
+  "id": 296,
+  "exam": "DOH",
+  "subject": "Emergency Nursing",
+  "topic": "Snake Bite",
+  "question": "The priority nursing action for a patient with a suspected venomous snake bite is:",
+  "options": {
+    "A": "Apply a tight tourniquet",
+    "B": "Immobilize the affected limb and seek emergency treatment",
+    "C": "Incise the wound and suck out the venom",
+    "D": "Apply ice directly over the bite"
+  },
+  "answer": "B",
+  "explanation": "The affected limb should be immobilized to reduce venom spread while arranging urgent medical treatment. Incision, suction, and tight tourniquets are not recommended."
+},
+{
+  "id": 297,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Seizure Precautions",
+  "question": "Which intervention is appropriate during an active generalized tonic-clonic seizure?",
+  "options": {
+    "A": "Insert a tongue blade into the patient's mouth",
+    "B": "Restrain the patient's arms and legs",
+    "C": "Turn the patient onto the side and protect the head",
+    "D": "Give oral fluids immediately after the seizure begins"
+  },
+  "answer": "C",
+  "explanation": "During a seizure, protect the patient from injury, maintain the airway by positioning the patient on the side if possible, and never insert objects into the mouth."
+},
+{
+  "id": 298,
+  "exam": "DOH",
+  "subject": "Infection Control",
+  "topic": "Catheter-Associated Urinary Tract Infection",
+  "question": "Which intervention is most effective in reducing catheter-associated urinary tract infections (CAUTIs)?",
+  "options": {
+    "A": "Routine antibiotic administration",
+    "B": "Maintaining a closed urinary drainage system",
+    "C": "Changing the catheter every 24 hours",
+    "D": "Irrigating the catheter daily"
+  },
+  "answer": "B",
+  "explanation": "Maintaining a closed sterile drainage system and removing the catheter as soon as possible are key measures to prevent CAUTIs."
+},
+{
+  "id": 299,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Acute Respiratory Distress Syndrome",
+  "question": "A patient with acute respiratory distress syndrome (ARDS) is receiving mechanical ventilation. Which intervention helps improve oxygenation?",
+  "options": {
+    "A": "Reducing positive end-expiratory pressure (PEEP)",
+    "B": "Prone positioning as prescribed",
+    "C": "Restricting oxygen therapy",
+    "D": "Maintaining the patient in Trendelenburg position"
+  },
+  "answer": "B",
+  "explanation": "Prone positioning improves ventilation-perfusion matching and oxygenation in selected patients with ARDS."
+},
+{
+  "id": 300,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Heart Failure",
+  "question": "Which assessment finding indicates improvement in a patient receiving treatment for congestive heart failure?",
+  "options": {
+    "A": "Decreased urine output",
+    "B": "Reduced bilateral lung crackles",
+    "C": "Increasing peripheral edema",
+    "D": "Progressive weight gain"
+  },
+  "answer": "B",
+  "explanation": "A reduction in pulmonary crackles indicates decreased pulmonary congestion and an improvement in heart failure."
+},
+{
+  "id": 301,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Upper Gastrointestinal Bleeding",
+  "question": "Which clinical finding is most suggestive of an upper gastrointestinal bleed?",
+  "options": {
+    "A": "Bright red rectal bleeding",
+    "B": "Coffee-ground emesis",
+    "C": "Clay-colored stool",
+    "D": "Yellow diarrhea"
+  },
+  "answer": "B",
+  "explanation": "Coffee-ground emesis indicates partially digested blood in the stomach and is a classic sign of an upper gastrointestinal bleed."
+},
+{
+  "id": 302,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Digoxin",
+  "question": "Before administering digoxin, the nurse should first assess the patient's:",
+  "options": {
+    "A": "Respiratory rate",
+    "B": "Apical pulse",
+    "C": "Blood glucose level",
+    "D": "Temperature"
+  },
+  "answer": "B",
+  "explanation": "Digoxin slows the heart rate. The apical pulse should be assessed for one full minute, and the medication withheld if the rate is below the prescribed limit."
+},
+{
+  "id": 303,
+  "exam": "DOH",
+  "subject": "Maternal Nursing",
+  "topic": "Premature Rupture of Membranes",
+  "question": "Following premature rupture of membranes, the priority nursing assessment is for:",
+  "options": {
+    "A": "Maternal appetite",
+    "B": "Fetal heart rate",
+    "C": "Maternal weight",
+    "D": "Urine output"
+  },
+  "answer": "B",
+  "explanation": "Umbilical cord prolapse and fetal distress are immediate concerns after rupture of membranes, making fetal heart rate assessment the priority."
+},
+{
+  "id": 304,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Congenital Heart Disease",
+  "question": "A child with a ventricular septal defect (VSD) is at increased risk for developing:",
+  "options": {
+    "A": "Infective endocarditis",
+    "B": "Appendicitis",
+    "C": "Otitis media",
+    "D": "Nephrotic syndrome"
+  },
+  "answer": "A",
+  "explanation": "Children with congenital heart defects such as VSD have an increased risk of infective endocarditis."
+},
+{
+  "id": 305,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hyponatremia",
+  "question": "Which neurological manifestation is commonly associated with severe hyponatremia?",
+  "options": {
+    "A": "Seizures",
+    "B": "Exophthalmos",
+    "C": "Hyperactivity",
+    "D": "Polyuria"
+  },
+  "answer": "A",
+  "explanation": "Severe hyponatremia causes cerebral edema, which may result in confusion, seizures, and coma."
+},
+{
+  "id": 306,
+  "exam": "DOH",
+  "subject": "Emergency Nursing",
+  "topic": "Anaphylaxis",
+  "question": "Following administration of intramuscular epinephrine for anaphylaxis, the nurse's next priority is to:",
+  "options": {
+    "A": "Prepare for discharge",
+    "B": "Maintain airway and administer oxygen as needed",
+    "C": "Encourage oral fluids immediately",
+    "D": "Place the patient in Trendelenburg position for one hour"
+  },
+  "answer": "B",
+  "explanation": "After epinephrine, airway management, oxygen administration, and close monitoring remain priorities because symptoms may recur."
+},
+{
+  "id": 307,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Cerebrovascular Accident",
+  "question": "A patient with a left hemispheric stroke is most likely to exhibit:",
+  "options": {
+    "A": "Left-sided paralysis",
+    "B": "Right-sided weakness with aphasia",
+    "C": "Poor depth perception only",
+    "D": "Impulsive behavior with neglect syndrome"
+  },
+  "answer": "B",
+  "explanation": "A left hemispheric stroke commonly causes right-sided motor deficits along with language impairment (aphasia)."
+},
+{
+  "id": 308,
+  "exam": "DOH",
+  "subject": "Infection Control",
+  "topic": "Medical Asepsis",
+  "question": "The most effective method for preventing cross-contamination between patients is:",
+  "options": {
+    "A": "Wearing sterile gloves at all times",
+    "B": "Performing hand hygiene before and after patient contact",
+    "C": "Changing uniforms every shift",
+    "D": "Using disposable stethoscopes for every patient"
+  },
+  "answer": "B",
+  "explanation": "Proper hand hygiene before and after patient contact is the single most effective method for preventing cross-contamination."
+},
+{
+  "id": 309,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Mechanical Ventilation",
+  "question": "Which assessment finding most strongly suggests that a mechanically ventilated patient requires immediate suctioning?",
+  "options": {
+    "A": "Clear breath sounds",
+    "B": "Visible secretions with coarse crackles",
+    "C": "Respiratory rate of 18/min",
+    "D": "Oxygen saturation of 99%"
+  },
+  "answer": "B",
+  "explanation": "Visible secretions, coarse crackles, and signs of airway obstruction indicate the need for suctioning."
+},
+{
+  "id": 310,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Deep Vein Thrombosis Prevention",
+  "question": "Which nursing intervention is most effective in preventing deep vein thrombosis (DVT) in a postoperative patient?",
+  "options": {
+    "A": "Maintaining complete bed rest",
+    "B": "Encouraging early ambulation",
+    "C": "Restricting fluid intake",
+    "D": "Placing pillows directly under the knees"
+  },
+  "answer": "B",
+  "explanation": "Early ambulation promotes venous return, reduces venous stasis, and is one of the most effective measures for preventing postoperative DVT."
+},
+  {
+  "id": 311,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Pulmonary Edema",
+  "question": "Which assessment finding is most characteristic of acute pulmonary edema?",
+  "options": {
+    "A": "Bradycardia",
+    "B": "Pink frothy sputum",
+    "C": "Dry hacking cough",
+    "D": "Absent breath sounds only"
+  },
+  "answer": "B",
+  "explanation": "Pink frothy sputum, severe dyspnea, crackles, and hypoxemia are classic findings in acute pulmonary edema."
+},
+{
+  "id": 312,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Nitroglycerin",
+  "question": "A common adverse effect of sublingual nitroglycerin is:",
+  "options": {
+    "A": "Hypertension",
+    "B": "Headache",
+    "C": "Bradycardia",
+    "D": "Constipation"
+  },
+  "answer": "B",
+  "explanation": "Nitroglycerin causes vasodilation, commonly producing headache, flushing, dizziness, and hypotension."
+},
+{
+  "id": 313,
+  "exam": "DOH",
+  "subject": "Maternal Nursing",
+  "topic": "Fetal Distress",
+  "question": "Which fetal heart rate pattern is most concerning and requires immediate intervention?",
+  "options": {
+    "A": "Baseline 140 beats/min with moderate variability",
+    "B": "Early decelerations",
+    "C": "Late decelerations",
+    "D": "Accelerations during fetal movement"
+  },
+  "answer": "C",
+  "explanation": "Late decelerations indicate uteroplacental insufficiency and fetal hypoxia, requiring prompt intervention."
+},
+{
+  "id": 314,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Acute Otitis Media",
+  "question": "A child with acute otitis media is most likely to exhibit:",
+  "options": {
+    "A": "Ear pain with fever",
+    "B": "Painless hearing loss",
+    "C": "Hematuria",
+    "D": "Persistent diarrhea"
+  },
+  "answer": "A",
+  "explanation": "Acute otitis media commonly presents with ear pain, fever, irritability, and occasionally decreased hearing."
+},
+{
+  "id": 315,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hypermagnesemia",
+  "question": "Which assessment finding is expected in a patient with hypermagnesemia?",
+  "options": {
+    "A": "Hyperactive deep tendon reflexes",
+    "B": "Increased muscle spasms",
+    "C": "Diminished deep tendon reflexes",
+    "D": "Positive Chvostek's sign"
+  },
+  "answer": "C",
+  "explanation": "Hypermagnesemia depresses neuromuscular function, leading to diminished reflexes, muscle weakness, and hypotension."
+},
+{
+  "id": 316,
+  "exam": "DOH",
+  "subject": "Emergency Nursing",
+  "topic": "Heat Exhaustion",
+  "question": "A patient with heat exhaustion should initially receive:",
+  "options": {
+    "A": "Rapid cooling and fluid replacement",
+    "B": "Broad-spectrum antibiotics",
+    "C": "Immediate insulin therapy",
+    "D": "High-protein meals"
+  },
+  "answer": "A",
+  "explanation": "Heat exhaustion is treated with cooling measures, fluid replacement, and rest to prevent progression to heat stroke."
+},
+{
+  "id": 317,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Meningitis",
+  "question": "Which nursing intervention is appropriate for a patient with bacterial meningitis?",
+  "options": {
+    "A": "Encourage bright lighting",
+    "B": "Maintain a quiet, darkened environment",
+    "C": "Restrict prescribed antibiotics",
+    "D": "Place the patient in Trendelenburg position"
+  },
+  "answer": "B",
+  "explanation": "Patients with meningitis often experience photophobia and severe headache. A quiet, darkened environment helps reduce discomfort."
+},
+{
+  "id": 318,
+  "exam": "DOH",
+  "subject": "Infection Control",
+  "topic": "Standard Precautions",
+  "question": "Hand hygiene using an alcohol-based hand rub is appropriate when:",
+  "options": {
+    "A": "Hands are visibly soiled with blood",
+    "B": "Hands are visibly dirty",
+    "C": "Hands are not visibly soiled",
+    "D": "After exposure to Clostridioides difficile spores"
+  },
+  "answer": "C",
+  "explanation": "Alcohol-based hand rubs are recommended when hands are not visibly soiled. Soap and water are required when hands are visibly dirty or after exposure to spore-forming organisms."
+},
+{
+  "id": 319,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Septic Shock",
+  "question": "Which laboratory finding is commonly associated with septic shock?",
+  "options": {
+    "A": "Elevated serum lactate",
+    "B": "Low white blood cell count only",
+    "C": "Decreased blood glucose",
+    "D": "Elevated serum calcium"
+  },
+  "answer": "A",
+  "explanation": "An elevated serum lactate level reflects tissue hypoperfusion and is an important marker of septic shock severity."
+},
+{
+  "id": 320,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Liver Cirrhosis",
+  "question": "Which assessment finding suggests worsening hepatic encephalopathy in a patient with liver cirrhosis?",
+  "options": {
+    "A": "Increasing level of consciousness",
+    "B": "Asterixis (flapping tremor)",
+    "C": "Improved appetite",
+    "D": "Brisk deep tendon reflexes only"
+  },
+  "answer": "B",
+  "explanation": "Asterixis, confusion, altered mental status, and elevated serum ammonia are characteristic findings of hepatic encephalopathy."
+},
+{
+  "id": 321,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Acute Appendicitis",
+  "question": "Which assessment finding is most characteristic of acute appendicitis?",
+  "options": {
+    "A": "Pain in the right lower quadrant with rebound tenderness",
+    "B": "Left upper quadrant pain after meals",
+    "C": "Painless abdominal distention",
+    "D": "Generalized itching"
+  },
+  "answer": "A",
+  "explanation": "Acute appendicitis typically presents with right lower quadrant pain, rebound tenderness, and guarding, especially at McBurney's point."
+},
+{
+  "id": 322,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Morphine",
+  "question": "Which medication should always be readily available when administering intravenous morphine?",
+  "options": {
+    "A": "Protamine sulfate",
+    "B": "Naloxone",
+    "C": "Vitamin K",
+    "D": "Atropine"
+  },
+  "answer": "B",
+  "explanation": "Naloxone is an opioid antagonist used to reverse opioid-induced respiratory depression caused by morphine."
+},
+{
+  "id": 323,
+  "exam": "DOH",
+  "subject": "Maternal Nursing",
+  "topic": "Umbilical Cord Prolapse",
+  "question": "A nurse identifies an umbilical cord prolapse during labor. What is the priority nursing intervention?",
+  "options": {
+    "A": "Place the woman in the knee-chest or Trendelenburg position",
+    "B": "Encourage the woman to push",
+    "C": "Administer oral fluids",
+    "D": "Prepare for routine vaginal delivery"
+  },
+  "answer": "A",
+  "explanation": "Relieving pressure on the prolapsed cord by positioning the mother appropriately helps maintain fetal oxygenation until delivery."
+},
+{
+  "id": 324,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Nephrotic Syndrome",
+  "question": "A child with nephrotic syndrome is expected to have:",
+  "options": {
+    "A": "Generalized edema",
+    "B": "Severe dehydration",
+    "C": "Hypertension without edema",
+    "D": "Polycythemia"
+  },
+  "answer": "A",
+  "explanation": "Protein loss through the kidneys causes hypoalbuminemia, leading to generalized edema in nephrotic syndrome."
+},
+{
+  "id": 325,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hypernatremia",
+  "question": "Which assessment finding is most commonly associated with hypernatremia?",
+  "options": {
+    "A": "Moist mucous membranes",
+    "B": "Muscle twitching and intense thirst",
+    "C": "Positive Trousseau's sign",
+    "D": "Bradycardia"
+  },
+  "answer": "B",
+  "explanation": "Hypernatremia commonly causes cellular dehydration, resulting in intense thirst, restlessness, and muscle twitching."
+},
+{
+  "id": 326,
+  "exam": "DOH",
+  "subject": "Emergency Nursing",
+  "topic": "Electrical Burns",
+  "question": "The priority assessment for a patient with an electrical burn is:",
+  "options": {
+    "A": "Skin color only",
+    "B": "Cardiac rhythm",
+    "C": "Bowel sounds",
+    "D": "Visual acuity"
+  },
+  "answer": "B",
+  "explanation": "Electrical injuries can cause life-threatening cardiac dysrhythmias, making continuous cardiac monitoring a priority."
+},
+{
+  "id": 327,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Parkinson's Disease",
+  "question": "A priority nursing intervention for a patient with Parkinson's disease is to:",
+  "options": {
+    "A": "Encourage rapid movements",
+    "B": "Implement fall precautions",
+    "C": "Restrict fluid intake",
+    "D": "Maintain prolonged bed rest"
+  },
+  "answer": "B",
+  "explanation": "Rigidity, bradykinesia, and postural instability increase the risk of falls in patients with Parkinson's disease."
+},
+{
+  "id": 328,
+  "exam": "DOH",
+  "subject": "Infection Control",
+  "topic": "Clostridioides difficile",
+  "question": "Which isolation precaution is required for a patient with Clostridioides difficile infection?",
+  "options": {
+    "A": "Airborne precautions",
+    "B": "Droplet precautions",
+    "C": "Contact precautions",
+    "D": "Protective isolation"
+  },
+  "answer": "C",
+  "explanation": "Clostridioides difficile spreads by spores through contact. Contact precautions and handwashing with soap and water are required."
+},
+{
+  "id": 329,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Acute Kidney Injury",
+  "question": "Which laboratory finding most strongly suggests acute kidney injury?",
+  "options": {
+    "A": "Decreasing serum creatinine",
+    "B": "Elevated serum creatinine and blood urea nitrogen",
+    "C": "Low serum potassium",
+    "D": "Decreased urine specific gravity only"
+  },
+  "answer": "B",
+  "explanation": "Acute kidney injury is characterized by reduced renal filtration, causing elevations in serum creatinine and blood urea nitrogen."
+},
+{
+  "id": 330,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Intestinal Obstruction",
+  "question": "Which assessment finding is most consistent with an acute intestinal obstruction?",
+  "options": {
+    "A": "Hyperactive high-pitched bowel sounds",
+    "B": "Bradycardia",
+    "C": "Clear lung sounds",
+    "D": "Increased urine output"
+  },
+  "answer": "A",
+  "explanation": "Early intestinal obstruction commonly produces high-pitched, hyperactive bowel sounds along with abdominal pain, distention, and vomiting."
+},
+{
+  "id": 331,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Pneumothorax",
+  "question": "Which assessment finding is most consistent with a tension pneumothorax?",
+  "options": {
+    "A": "Bilateral equal breath sounds",
+    "B": "Tracheal deviation away from the affected side",
+    "C": "Slow regular respirations",
+    "D": "Bounding peripheral pulses"
+  },
+  "answer": "B",
+  "explanation": "A tension pneumothorax causes increasing intrathoracic pressure, leading to tracheal deviation, absent breath sounds on the affected side, severe respiratory distress, and hypotension."
+},
+{
+  "id": 332,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Warfarin",
+  "question": "Which laboratory value is routinely monitored to evaluate the effectiveness of warfarin therapy?",
+  "options": {
+    "A": "Activated partial thromboplastin time (aPTT)",
+    "B": "International Normalized Ratio (INR)",
+    "C": "Bleeding time",
+    "D": "Platelet count"
+  },
+  "answer": "B",
+  "explanation": "Warfarin therapy is monitored using the PT/INR. Most indications require an INR between 2.0 and 3.0."
+},
+{
+  "id": 333,
+  "exam": "DOH",
+  "subject": "Maternal Nursing",
+  "topic": "Preeclampsia",
+  "question": "Which assessment finding indicates worsening preeclampsia?",
+  "options": {
+    "A": "Blood pressure of 118/72 mmHg",
+    "B": "Persistent severe headache and visual disturbances",
+    "C": "Improved deep tendon reflexes",
+    "D": "Urine output greater than 60 mL/hour"
+  },
+  "answer": "B",
+  "explanation": "Severe headache, blurred vision, hyperreflexia, and epigastric pain are warning signs of severe preeclampsia and possible progression to eclampsia."
+},
+{
+  "id": 334,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Chronic Kidney Disease",
+  "question": "Which laboratory finding is commonly associated with chronic kidney disease (CKD)?",
+  "options": {
+    "A": "Decreased serum creatinine",
+    "B": "Elevated blood urea nitrogen (BUN) and serum creatinine",
+    "C": "Low serum potassium",
+    "D": "Decreased serum phosphorus"
+  },
+  "answer": "B",
+  "explanation": "Reduced kidney function causes retention of nitrogenous waste products, resulting in elevated BUN and serum creatinine levels."
+},
+{
+  "id": 335,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hypophosphatemia",
+  "question": "Which clinical manifestation is commonly associated with hypophosphatemia?",
+  "options": {
+    "A": "Muscle weakness",
+    "B": "Hyperactive bowel sounds",
+    "C": "Bradycardia with hypertension",
+    "D": "Flushed warm skin"
+  },
+  "answer": "A",
+  "explanation": "Hypophosphatemia can cause muscle weakness, respiratory muscle dysfunction, confusion, and impaired cardiac function."
+},
+{
+  "id": 336,
+  "exam": "DOH",
+  "subject": "Emergency Nursing",
+  "topic": "Near Drowning",
+  "question": "What is the priority nursing action for a patient rescued after a near-drowning incident?",
+  "options": {
+    "A": "Assess and maintain airway, breathing, and circulation",
+    "B": "Encourage immediate ambulation",
+    "C": "Provide oral fluids",
+    "D": "Apply warm compresses only"
+  },
+  "answer": "A",
+  "explanation": "Management of near drowning follows the ABC approach, with priority given to airway, breathing, and circulation."
+},
+{
+  "id": 337,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Glasgow Coma Scale",
+  "question": "A Glasgow Coma Scale (GCS) score of 8 or less generally indicates:",
+  "options": {
+    "A": "Mild brain injury",
+    "B": "Need for airway protection due to severe brain injury",
+    "C": "Normal neurological status",
+    "D": "No further assessment required"
+  },
+  "answer": "B",
+  "explanation": "A GCS score of 8 or below indicates severe brain injury and often necessitates airway protection through endotracheal intubation."
+},
+{
+  "id": 338,
+  "exam": "DOH",
+  "subject": "Infection Control",
+  "topic": "Needlestick Injury",
+  "question": "Following a needlestick injury, what is the nurse's first action?",
+  "options": {
+    "A": "Report the incident the next day",
+    "B": "Wash the affected area immediately with soap and water",
+    "C": "Cover the site and continue working",
+    "D": "Begin antibiotics immediately"
+  },
+  "answer": "B",
+  "explanation": "The puncture site should be washed immediately with soap and water, followed by prompt reporting and post-exposure evaluation."
+},
+{
+  "id": 339,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Cardiogenic Shock",
+  "question": "Which hemodynamic finding is expected in cardiogenic shock?",
+  "options": {
+    "A": "Decreased pulmonary capillary wedge pressure",
+    "B": "Increased pulmonary capillary wedge pressure",
+    "C": "High cardiac output",
+    "D": "Warm dry skin"
+  },
+  "answer": "B",
+  "explanation": "Cardiogenic shock results in poor left ventricular pumping, causing elevated pulmonary capillary wedge pressure and reduced cardiac output."
+},
+{
+  "id": 340,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Acute Pancreatitis",
+  "question": "Which laboratory value is most commonly elevated in acute pancreatitis?",
+  "options": {
+    "A": "Serum amylase",
+    "B": "Hemoglobin",
+    "C": "Serum sodium",
+    "D": "Platelet count"
+  },
+  "answer": "A",
+  "explanation": "Acute pancreatitis typically causes elevation of pancreatic enzymes, especially serum amylase and lipase."
+},
+{
+  "id": 341,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hypovolemic Shock",
+  "question": "Which clinical finding is an early indicator of hypovolemic shock?",
+  "options": {
+    "A": "Bradycardia",
+    "B": "Tachycardia",
+    "C": "Hypertension",
+    "D": "Bounding pulses"
+  },
+  "answer": "B",
+  "explanation": "Tachycardia is an early compensatory response to decreased circulating blood volume and is often the first sign of hypovolemic shock."
+},
+{
+  "id": 342,
+  "exam": "DOH",
+  "subject": "Pharmacology",
+  "topic": "Insulin Therapy",
+  "question": "Which type of insulin has the fastest onset of action?",
+  "options": {
+    "A": "Insulin glargine",
+    "B": "Regular insulin",
+    "C": "Insulin lispro",
+    "D": "NPH insulin"
+  },
+  "answer": "C",
+  "explanation": "Insulin lispro is a rapid-acting insulin that begins working within about 15 minutes after injection."
+},
+{
+  "id": 343,
+  "exam": "DOH",
+  "subject": "Maternal Nursing",
+  "topic": "Placental Abruption",
+  "question": "Which assessment finding is most consistent with placental abruption?",
+  "options": {
+    "A": "Painless bright red vaginal bleeding",
+    "B": "Painful vaginal bleeding with a rigid uterus",
+    "C": "Clear amniotic fluid leakage only",
+    "D": "Absent uterine contractions"
+  },
+  "answer": "B",
+  "explanation": "Placental abruption commonly presents with painful vaginal bleeding, uterine tenderness, and a rigid or board-like uterus."
+},
+{
+  "id": 344,
+  "exam": "DOH",
+  "subject": "Pediatric Nursing",
+  "topic": "Dehydration",
+  "question": "Which assessment finding indicates severe dehydration in an infant?",
+  "options": {
+    "A": "Moist mucous membranes",
+    "B": "Sunken fontanelle and poor skin turgor",
+    "C": "Normal urine output",
+    "D": "Brisk capillary refill"
+  },
+  "answer": "B",
+  "explanation": "A sunken fontanelle, poor skin turgor, dry mucous membranes, and delayed capillary refill are signs of severe dehydration."
+},
+{
+  "id": 345,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hypercalcemia",
+  "question": "Which assessment finding is commonly associated with hypercalcemia?",
+  "options": {
+    "A": "Hyperactive deep tendon reflexes",
+    "B": "Muscle weakness and constipation",
+    "C": "Positive Chvostek's sign",
+    "D": "Tetany"
+  },
+  "answer": "B",
+  "explanation": "Hypercalcemia decreases neuromuscular excitability and commonly causes muscle weakness, constipation, fatigue, and confusion."
+},
+{
+  "id": 346,
+  "exam": "DOH",
+  "subject": "Emergency Nursing",
+  "topic": "Poisoning",
+  "question": "The priority nursing action for a patient with suspected poisoning is to:",
+  "options": {
+    "A": "Induce vomiting immediately",
+    "B": "Assess and maintain airway, breathing, and circulation",
+    "C": "Administer activated charcoal to every patient",
+    "D": "Offer large amounts of water"
+  },
+  "answer": "B",
+  "explanation": "The initial management of poisoning follows the ABC approach. Airway, breathing, and circulation always take priority."
+},
+{
+  "id": 347,
+  "exam": "DOH",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Stroke",
+  "question": "Which intervention helps reduce the risk of aspiration in a patient with dysphagia following a stroke?",
+  "options": {
+    "A": "Position the patient flat during meals",
+    "B": "Keep the patient upright while eating",
+    "C": "Encourage rapid eating",
+    "D": "Provide fluids through a straw routinely"
+  },
+  "answer": "B",
+  "explanation": "Keeping the patient in an upright position during meals reduces the risk of aspiration in patients with swallowing difficulties."
+},
+  {
+  "id": 348,
+  "exam": "DOH",
+  "subject": "Infection Control",
+  "topic": "Sterile Technique",
+  "question": "Which action breaks sterile technique during a dressing change?",
+  "options": {
+    "A": "Keeping sterile supplies above waist level",
+    "B": "Allowing a sterile glove to touch a non-sterile surface",
+    "C": "Opening the sterile package away from the body first",
+    "D": "Using sterile forceps to handle sterile dressings"
+  },
+  "answer": "B",
+  "explanation": "Any contact between a sterile item and a non-sterile surface contaminates the sterile field."
+},
+{
+  "id": 349,
+  "exam": "DOH",
+  "subject": "Critical Care Nursing",
+  "topic": "Cardiac Arrest",
+  "question": "During cardiopulmonary resuscitation (CPR), what is the recommended compression depth for an adult?",
+  "options": {
+    "A": "At least 5 cm (2 inches)",
+    "B": "About 2 cm",
+    "C": "About 3 cm",
+    "D": "At least 8 cm"
+  },
+  "answer": "A",
+  "explanation": "Current CPR guidelines recommend chest compressions at a depth of at least 5 cm (2 inches), but not more than 6 cm, for adults."
 }
 ]
