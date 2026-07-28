@@ -663,7 +663,7 @@ button:disabled{
     display: inline-block;
 }
 
-.dropdown-btn {
+#otherExamsBtn {
     background: none;
     border: none;
     cursor: pointer;
@@ -694,6 +694,6 @@ button:disabled{
     background: #f5f5f5;
 }
 
-.dropdown.open .dropdown-content {
+.dropdown.show .dropdown-content {
     display: block;
-        }
+}
