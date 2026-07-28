@@ -583,6 +583,7 @@ function restoreReviewedPage() {
     for (let i = start; i < end; i++) {
 
         const q = quizQuestions[i];
+        const correctAnswer = q.correct_answer || q.answer;
 
         const radios = document.querySelectorAll(`input[name="q${i}"]`);
 
@@ -636,6 +637,7 @@ function renderReview() {
     container.innerHTML = "";
 
     quizQuestions.forEach((q, index) => {
+        const correctAnswer = q.correct_answer || q.answer;
 
         const userAnswer = userAnswers[index];
 
@@ -763,6 +765,7 @@ document.getElementById("submitBtn").addEventListener("click", () => {
     let score = 0;
 
     quizQuestions.forEach((q, index) => {
+        const correctAnswer = q.correct_answer || q.answer;
 
         if (userAnswers[index] === correctAnswer) {
 
