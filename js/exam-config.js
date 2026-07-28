@@ -142,9 +142,9 @@ meta: {
     },
 
     moh: {
-        title: "MOH Nursing Practice Quiz",
-        shortName: "MOH",
-        description: "MOH Nursing Licensing Exam Practice Questions",
+        title: "MOHAP Nursing Practice Quiz",
+        shortName: "MOHAP",
+        description: "MOHAP Nursing Licensing Exam Practice Questions",
 
             theme: {
     color: "#2e7d32",
@@ -153,18 +153,18 @@ meta: {
         },
         
 meta: {
-    title: "MOH Nursing Practice Quiz | Kerala Info Hub",
-    description: "Practice MOH nursing licensing exam questions with detailed explanations and instant score."
+    title: "MOHAP Nursing Practice Quiz | Kerala Info Hub",
+    description: "Practice MOHAP nursing licensing exam questions with detailed explanations and instant score."
 },
         
         whyPractice: [
-            "MOH Licensing Questions",
+            "MOHAP Licensing Questions",
             "Detailed Clinical Explanations",
             "Instant Score & Answer Review",
             "Updated Nursing Question Bank"
         ],
 
-        tip: "Practice regularly to improve your MOH exam score."
+        tip: "Practice regularly to improve your MOHAP exam score."
     }
 
 };
