@@ -120,7 +120,7 @@ meta: {
     dha: {
         title: "DHA Dubai Nursing Practice Quiz",
         shortName: "DHA",
-        menuName: "DHA Dubai"
+        menuName: "DHA Dubai",
         description: "Dubai Health Authority Nursing Practice Questions",
 
             theme: {
