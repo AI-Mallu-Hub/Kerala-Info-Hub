@@ -498,6 +498,8 @@ if (!hasAnswer) {
     for (let i = start; i < end; i++) {
 
         const q = quizQuestions[i];
+        const correctAnswer = q.correct_answer || q.answer;
+
 
         const radios = document.querySelectorAll(`input[name="q${i}"]`);
 
@@ -513,7 +515,7 @@ if (!hasAnswer) {
             radio.disabled = true;
 
             // Correct Answer
-            if (radio.value === q.correct_answer) {
+            if (radio.value === correctAnswer) {
 
                 label.classList.add("correct");
 
@@ -522,7 +524,7 @@ if (!hasAnswer) {
             // Wrong Selected Answer
             if (
                 userAnswers[i] === radio.value &&
-                radio.value !== q.correct_answer
+                radio.value !== correctAnswer
             ) {
 
                 label.classList.add("wrong");
@@ -531,7 +533,7 @@ if (!hasAnswer) {
 
         });
 
-        if (userAnswers[i] === q.correct_answer) {
+        if (userAnswers[i] === correctAnswer) {
 
             pageScore++;
 
@@ -590,7 +592,7 @@ function restoreReviewedPage() {
 
             radio.disabled = true;
 
-            if (radio.value === q.correct_answer) {
+            if (radio.value === correctAnswer) {
 
                 label.classList.add("correct");
 
@@ -598,7 +600,7 @@ function restoreReviewedPage() {
 
             if (
                 userAnswers[i] === radio.value &&
-                radio.value !== q.correct_answer
+                radio.value !== correctAnswer
             ) {
 
                 label.classList.add("wrong");
@@ -607,7 +609,7 @@ function restoreReviewedPage() {
 
         });
 
-        if (userAnswers[i] === q.correct_answer) {
+        if (userAnswers[i] === correctAnswer) {
 
             pageScore++;
 
@@ -638,7 +640,7 @@ function renderReview() {
         const userAnswer = userAnswers[index];
 
         const correctText =
-            `${q.correct_answer}. ${q.options[q.correct_answer]}`;
+            `${correctAnswer}. ${q.options[correctAnswer]}`;
 
         let userAnswerHtml = "";
 
@@ -654,7 +656,7 @@ function renderReview() {
                 </p>
             `;
 
-        } else if (userAnswer === q.correct_answer) {
+        } else if (userAnswer === correctAnswer) {
 
             userAnswerHtml = `
                 <p class="review-answer">
@@ -762,7 +764,7 @@ document.getElementById("submitBtn").addEventListener("click", () => {
 
     quizQuestions.forEach((q, index) => {
 
-        if (userAnswers[index] === q.correct_answer) {
+        if (userAnswers[index] === correctAnswer) {
 
             score++;
 
