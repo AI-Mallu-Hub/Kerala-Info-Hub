@@ -66,6 +66,7 @@ if (quizTip) {
 //     nav.textContent = info.shortName;
 // }
 
+buildOtherExamsMenu();
 
 // =========================
 // Render SEO Content
