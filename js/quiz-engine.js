@@ -66,7 +66,7 @@ if (quizTip) {
 //     nav.textContent = info.shortName;
 // }
 
-buildOtherExamsMenu();
+
 
 // =========================
 // Render SEO Content
@@ -111,6 +111,47 @@ function renderSeoContent() {
 }
 
        renderSeoContent();
+
+function buildOtherExamsMenu() {
+
+    const menu = document.getElementById("otherExamsMenu");
+    const button = document.getElementById("otherExamsBtn");
+
+    if (!menu || !button) return;
+
+    menu.innerHTML = "";
+
+    Object.keys(examConfig).forEach(key => {
+
+        if (key === exam) return;
+
+        const link = document.createElement("a");
+
+        link.href = `${key}.html`;
+
+        link.textContent = examConfig[key].shortName;
+
+        menu.appendChild(link);
+
+    });
+
+    button.addEventListener("click", function (e) {
+
+        e.stopPropagation();
+
+        menu.parentElement.classList.toggle("show");
+
+    });
+
+    document.addEventListener("click", function () {
+
+        menu.parentElement.classList.remove("show");
+
+    });
+
+}
+
+buildOtherExamsMenu();
 
 // ============================
 // Load Questions
