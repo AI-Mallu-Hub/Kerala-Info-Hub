@@ -1,0 +1,3998 @@
+[
+  {
+    "id": 1,
+    "exam": "MOHAP",
+    "subject": "Psychiatric Nursing",
+    "topic": "Emergency Psychiatry",
+    "question": "Antipsychiatric drug not administered parenterally in emergency psychiatric presentation is:",
+    "options": {
+      "A": "Ziprasidone",
+      "B": "Haloperidol",
+      "C": "Lorazepam",
+      "D": "Olanzapine"
+    },
+    "answer": "B",
+    "explanation": "According to the source question bank, Haloperidol is the correct answer. Emergency psychiatric management commonly uses parenteral medications for rapid control of agitation."
+  },
+  {
+    "id": 2,
+    "exam": "MOHAP",
+    "subject": "Medical-Surgical Nursing",
+    "topic": "Musculoskeletal Disorders",
+    "question": "A patient presented with enlarged painful bilateral knee joints. ESR and CRP are normal, and there are no signs of joint effusion. What is the most likely diagnosis?",
+    "options": {
+      "A": "Gout",
+      "B": "Rheumatoid arthritis",
+      "C": "Osteoarthritis",
+      "D": "Septic arthritis"
+    },
+    "answer": "C",
+    "explanation": "Osteoarthritis typically presents with joint pain and enlargement while inflammatory markers such as ESR and CRP are usually normal."
+  },
+  {
+    "id": 3,
+    "exam": "MOHAP",
+    "subject": "Obstetric Nursing",
+    "topic": "Labor Analgesia",
+    "question": "A 20-year-old woman presented in the first stage of labor. Which type of anesthesia is most appropriate?",
+    "options": {
+      "A": "Morphine",
+      "B": "General anesthesia",
+      "C": "Local anesthesia",
+      "D": "Epidural anesthesia"
+    },
+    "answer": "C",
+    "explanation": "According to the source question bank, local anesthesia is the correct answer for this scenario."
+  },
+  {
+    "id": 4,
+    "exam": "MOHAP",
+    "subject": "Pharmacology",
+    "topic": "Pain Management",
+    "question": "Best drug used for chronic pain is:",
+    "options": {
+      "A": "Ibuprofen",
+      "B": "Aspirin",
+      "C": "Acetaminophen",
+      "D": "Naproxen"
+    },
+    "answer": "C",
+    "explanation": "Acetaminophen is commonly recommended as first-line therapy for many chronic mild to moderate pain conditions because of its favorable safety profile."
+  },
+  {
+    "id": 5,
+    "exam": "MOHAP",
+    "subject": "Medical-Surgical Nursing",
+    "topic": "Tuberculosis Complications",
+    "question": "A 40-year-old woman diagnosed with tuberculosis presents with painful red eyes and photophobia. What is the most likely diagnosis?",
+    "options": {
+      "A": "Uveitis",
+      "B": "Bacterial conjunctivitis",
+      "C": "Viral conjunctivitis",
+      "D": "Glaucoma"
+    },
+    "answer": "A",
+    "explanation": "Tuberculosis can involve the uveal tract, producing painful red eyes, photophobia, and decreased vision due to uveitis."
+  },
+  {
+    "id": 6,
+    "exam": "MOHAP",
+    "subject": "ENT Nursing",
+    "topic": "Hearing Disorders",
+    "question": "An ENT patient works in a noisy environment and increases the radio volume because he cannot hear properly in noise. What is the most likely diagnosis?",
+    "options": {
+      "A": "Noise-induced deafness",
+      "B": "Otitis media",
+      "C": "Presbycusis",
+      "D": "Otosclerosis"
+    },
+    "answer": "A",
+    "explanation": "Long-term exposure to loud noise damages cochlear hair cells, leading to noise-induced sensorineural hearing loss."
+  },
+  {
+    "id": 7,
+    "exam": "MOHAP",
+    "subject": "Medical-Surgical Nursing",
+    "topic": "Hematology",
+    "question": "A patient taking oral contraceptive pills (OCPs) for the last 2 weeks presents with venous thrombosis. What is the underlying mechanism?",
+    "options": {
+      "A": "Factor V Leiden mutation",
+      "B": "Disseminated intravascular coagulation (DIC)",
+      "C": "Von Willebrand disease",
+      "D": "Hemophilia B"
+    },
+    "answer": "A",
+    "explanation": "Factor V Leiden mutation is the most common inherited thrombophilia and significantly increases the risk of venous thromboembolism, especially with estrogen-containing contraceptives."
+  },
+  {
+    "id": 8,
+    "exam": "MOHAP",
+    "subject": "ENT Nursing",
+    "topic": "Noise-Induced Hearing Loss",
+    "question": "What is the mechanism of noise-induced deafness?",
+    "options": {
+      "A": "Sensorineural hearing loss",
+      "B": "Conductive hearing loss",
+      "C": "Mixed hearing loss",
+      "D": "Central hearing loss"
+    },
+    "answer": "A",
+    "explanation": "Noise exposure permanently damages the cochlear hair cells, producing irreversible sensorineural hearing loss."
+  },
+  {
+    "id": 9,
+    "exam": "MOHAP",
+    "subject": "Pediatric Nursing",
+    "topic": "Rheumatic Fever",
+    "question": "A child presents with migratory arthritis, sore throat, and fever. What is the most likely diagnosis?",
+    "options": {
+      "A": "Rheumatic fever",
+      "B": "Rheumatoid arthritis",
+      "C": "Juvenile idiopathic arthritis",
+      "D": "Septic arthritis"
+    },
+    "answer": "A",
+    "explanation": "Migratory polyarthritis following a streptococcal sore throat is a classic manifestation of acute rheumatic fever."
+  },
+  {
+    "id": 10,
+    "exam": "MOHAP",
+    "subject": "Cardiovascular Nursing",
+    "topic": "Atrial Fibrillation",
+    "question": "Atrial fibrillation may be caused by all of the following EXCEPT:",
+    "options": {
+      "A": "Smoking",
+      "B": "Ischemic heart disease (IHD)",
+      "C": "Hyperthyroidism",
+      "D": "Chest trauma"
+    },
+    "answer": "D",
+    "explanation": "Smoking, ischemic heart disease, and hyperthyroidism are recognized risk factors for atrial fibrillation. Chest trauma is not a typical cause."
+  },
+  {
+    "id": 11,
+    "exam": "MOHAP",
+    "subject": "Cardiovascular Nursing",
+    "topic": "Syncope",
+    "question": "A known hypertensive patient taking a beta-blocker and hydrochlorothiazide presents with recurrent syncopal attacks. His pulse is 64/min, BP is 120/80 mmHg, and ECG is normal. He is discharged but returns with another syncopal episode and a normal ECG. What is the next best step?",
+    "options": {
+      "A": "Stop hydrochlorothiazide",
+      "B": "Holter monitoring",
+      "C": "Exercise stress ECG",
+      "D": "Echocardiography"
+    },
+    "answer": "B",
+    "explanation": "Holter monitoring is the next appropriate investigation because intermittent arrhythmias may not be detected on a routine ECG."
+  },
+  {
+    "id": 12,
+    "exam": "MOHAP",
+    "subject": "Medical-Surgical Nursing",
+    "topic": "Mesenteric Ischemia",
+    "question": "An elderly patient with a history of stroke presents with abdominal pain. What is the most likely diagnosis?",
+    "options": {
+      "A": "Diverticulitis",
+      "B": "Mesenteric ischemia",
+      "C": "Acute pancreatitis",
+      "D": "Acute appendicitis"
+    },
+    "answer": "B",
+    "explanation": "Older patients with vascular disease who develop severe abdominal pain should be evaluated for mesenteric ischemia."
+  },
+  {
+    "id": 13,
+    "exam": "MOHAP",
+    "subject": "Pediatric Nursing",
+    "topic": "Dehydration",
+    "question": "An infant presents with a depressed anterior fontanelle and decreased tears, indicating moderate to severe dehydration. What is the appropriate management?",
+    "options": {
+      "A": "Oral rehydration solution (ORS)",
+      "B": "Intravenous rehydration",
+      "C": "Nasogastric rehydration",
+      "D": "Zinc supplementation only"
+    },
+    "answer": "B",
+    "explanation": "Moderate to severe dehydration with clinical signs requires prompt intravenous fluid replacement."
+  },
+  {
+    "id": 14,
+    "exam": "MOHAP",
+    "subject": "Medical-Surgical Nursing",
+    "topic": "Varicose Veins",
+    "question": "A very obese patient (BMI 42) with hypertension has painful ruptured thrombosed varicose veins. Conservative management has failed. What is the next step?",
+    "options": {
+      "A": "Add an antihypertensive medication",
+      "B": "Surgical referral",
+      "C": "Continue conservative management",
+      "D": "Compression stockings only"
+    },
+    "answer": "B",
+    "explanation": "Patients with symptomatic varicose veins who fail conservative treatment should be referred for surgical or interventional management."
+  },
+  {
+    "id": 15,
+    "exam": "MOHAP",
+    "subject": "Medical-Surgical Nursing",
+    "topic": "Diabetic Ketoacidosis",
+    "question": "A patient presents with diabetic ketoacidosis (DKA). What is the most likely precipitating cause?",
+    "options": {
+      "A": "Insulin mismanagement",
+      "B": "Diet mismanagement",
+      "C": "Acute pancreatitis",
+      "D": "Hyperthyroidism"
+    },
+    "answer": "A",
+    "explanation": "Missed or inadequate insulin therapy is one of the most common causes of diabetic ketoacidosis."
+  },
+  {
+    "id": 16,
+    "exam": "MOHAP",
+    "subject": "Pharmacology",
+    "topic": "Type 2 Diabetes Mellitus",
+    "question": "An obese patient with type 2 diabetes has failed conservative management. Which medication class should be added?",
+    "options": {
+      "A": "Insulin",
+      "B": "Biguanides (Metformin)",
+      "C": "Glucagon",
+      "D": "Thiazolidinediones"
+    },
+    "answer": "B",
+    "explanation": "Metformin, a biguanide, is the recommended first-line medication for most patients with type 2 diabetes."
+  },
+  {
+    "id": 17,
+    "exam": "MOHAP",
+    "subject": "Dermatology",
+    "topic": "Plantar Wart",
+    "question": "A basketball player presents with a plantar wart on the foot. What is the most appropriate treatment?",
+    "options": {
+      "A": "Electrocautery",
+      "B": "Curettage",
+      "C": "Cryotherapy",
+      "D": "Topical antibiotics"
+    },
+    "answer": "C",
+    "explanation": "Cryotherapy is a commonly recommended treatment for plantar warts caused by human papillomavirus (HPV)."
+  },
+  {
+    "id": 18,
+    "exam": "MOHAP",
+    "subject": "Medical-Surgical Nursing",
+    "topic": "Urinary Tract Infection",
+    "question": "A woman presents with an uncomplicated urinary tract infection (UTI). What is the most appropriate treatment?",
+    "options": {
+      "A": "Ciprofloxacin and review within 2 days",
+      "B": "Ampicillin and review within 2 days",
+      "C": "Piperacillin/Tazobactam",
+      "D": "Nitrofurantoin"
+    },
+    "answer": "D",
+    "explanation": "Nitrofurantoin is a first-line treatment for uncomplicated lower urinary tract infection in most adults."
+  },
+  {
+    "id": 19,
+    "exam": "MOHAP",
+    "subject": "Obstetric Nursing",
+    "topic": "Postpartum Infection",
+    "question": "A woman develops fever and vaginal discharge following a cesarean section. What is the recommended treatment?",
+    "options": {
+      "A": "Clindamycin + Gentamicin",
+      "B": "Metronidazole",
+      "C": "Ceftriaxone",
+      "D": "Amoxicillin"
+    },
+    "answer": "A",
+    "explanation": "Clindamycin plus gentamicin provides broad-spectrum coverage and is a standard regimen for postpartum endometritis."
+  },
+  {
+    "id": 20,
+    "exam": "MOHAP",
+    "subject": "Endocrine Nursing",
+    "topic": "Addisonian Crisis",
+    "question": "A patient with Addison's disease presents with weakness, clammy skin, and shock (BP 80/40 mmHg). What is the immediate treatment?",
+    "options": {
+      "A": "0.9% Normal Saline over 1 hour + IV Hydrocortisone",
+      "B": "0.9% Normal Saline over 8 hours + IV Hydrocortisone",
+      "C": "0.9% Normal Saline over 1 hour + Oral Fludrocortisone",
+      "D": "Oral Hydrocortisone only"
+    },
+    "answer": "A",
+    "explanation": "An Addisonian crisis is a medical emergency requiring rapid IV normal saline resuscitation and intravenous hydrocortisone."
+  },
+{
+  "id": 21,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "HIV/AIDS",
+  "question": "An HIV-positive patient presents with purplish skin lesions involving the oral cavity. What is the most likely treatment?",
+  "options": {
+    "A": "Topical antibiotics",
+    "B": "Oral antibiotics",
+    "C": "Oral corticosteroids",
+    "D": "Radiotherapy and chemotherapy"
+  },
+  "answer": "D",
+  "explanation": "Purplish skin and oral lesions in an HIV-positive patient are characteristic of Kaposi's sarcoma, which is managed with radiotherapy, chemotherapy, and appropriate antiretroviral therapy."
+},
+{
+  "id": 22,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Herpangina",
+  "question": "A child presents with vesicles on the roof of the mouth while the gingiva is spared. What is the most likely diagnosis?",
+  "options": {
+    "A": "Aphthous ulcer",
+    "B": "Congenital ulcer",
+    "C": "Herpangina",
+    "D": "Herpetic gingivostomatitis"
+  },
+  "answer": "C",
+  "explanation": "Herpangina commonly presents with vesicles on the soft palate and posterior oropharynx while the gingiva usually remains unaffected."
+},
+{
+  "id": 23,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Typhoid Fever",
+  "question": "A patient develops fever, hepatosplenomegaly, and abdominal rash about 10 days after travel. What is the most likely diagnosis?",
+  "options": {
+    "A": "Malaria",
+    "B": "Hepatitis",
+    "C": "Kala-azar",
+    "D": "Typhoid fever"
+  },
+  "answer": "D",
+  "explanation": "Persistent fever, rose spots, hepatosplenomegaly, and recent travel are classic features of typhoid fever caused by Salmonella Typhi."
+},
+{
+  "id": 24,
+  "exam": "MOHAP",
+  "subject": "Obstetric & Gynecological Nursing",
+  "topic": "Polycystic Ovary Syndrome",
+  "question": "A woman with polycystic ovary syndrome (PCOS) has chronic anovulation and stopped progesterone therapy after 5 years. She is at increased risk of:",
+  "options": {
+    "A": "Cervical hyperplasia",
+    "B": "Breast carcinoma",
+    "C": "Endometriosis",
+    "D": "Endometrial hyperplasia"
+  },
+  "answer": "D",
+  "explanation": "Chronic anovulation causes prolonged unopposed estrogen stimulation, increasing the risk of endometrial hyperplasia and carcinoma."
+},
+{
+  "id": 25,
+  "exam": "MOHAP",
+  "subject": "Obstetric & Gynecological Nursing",
+  "topic": "Menstrual Disorders",
+  "question": "A 14-year-old girl started menstruating 6 months ago and now has menstrual cycles every 3 weeks. Pregnancy test is negative. What is the most appropriate management?",
+  "options": {
+    "A": "Reassure that irregular cycles are common during the first few years after menarche",
+    "B": "Start combined oral contraceptive pills immediately",
+    "C": "Perform dilation and curettage (D&C)",
+    "D": "Start progesterone injections"
+  },
+  "answer": "A",
+  "explanation": "Irregular menstrual cycles are common during the first few years after menarche because the hypothalamic-pituitary-ovarian axis is still maturing."
+},
+{
+  "id": 26,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Cranial Nerve III Palsy",
+  "question": "A diabetic patient presents with ptosis, the eye deviated down and out, inability to adduct the eye, and limited upward and downward movement. What is the diagnosis?",
+  "options": {
+    "A": "Right facial nerve palsy",
+    "B": "Right oculomotor nerve (CN III) palsy",
+    "C": "Right trochlear nerve palsy",
+    "D": "Right abducens nerve palsy"
+  },
+  "answer": "B",
+  "explanation": "Ptosis with a 'down and out' eye position is the classic presentation of an oculomotor (cranial nerve III) palsy."
+},
+{
+  "id": 27,
+  "exam": "MOHAP",
+  "subject": "Psychiatric Nursing",
+  "topic": "Specific Phobia",
+  "question": "A patient has an intense fear of parks and zoos and avoids leaving home because of this fear. What is the most likely diagnosis?",
+  "options": {
+    "A": "Generalized anxiety disorder",
+    "B": "Specific phobia",
+    "C": "Post-traumatic stress disorder (PTSD)",
+    "D": "Panic disorder"
+  },
+  "answer": "B",
+  "explanation": "A persistent irrational fear of a particular object or situation that leads to avoidance is classified as a specific phobia."
+},
+{
+  "id": 28,
+  "exam": "MOHAP",
+  "subject": "Oncology Nursing",
+  "topic": "Bronchial Carcinoma",
+  "question": "A patient diagnosed with bronchial carcinoma returns for routine follow-up. Which imaging modality is most appropriate?",
+  "options": {
+    "A": "MRI",
+    "B": "CT scan",
+    "C": "Chest X-ray",
+    "D": "PET-CT"
+  },
+  "answer": "B",
+  "explanation": "CT scan is routinely used to assess treatment response, recurrence, and disease progression during follow-up of bronchial carcinoma."
+},
+{
+  "id": 29,
+  "exam": "MOHAP",
+  "subject": "Respiratory Nursing",
+  "topic": "Bronchiectasis",
+  "question": "A smoker diagnosed with bronchiectasis should receive which of the following as an important part of management?",
+  "options": {
+    "A": "Continuous antibiotics",
+    "B": "Postural drainage",
+    "C": "Bronchodilators",
+    "D": "CPAP therapy"
+  },
+  "answer": "B",
+  "explanation": "Postural drainage helps mobilize retained secretions and is a key component of long-term bronchiectasis management."
+},
+{
+  "id": 30,
+  "exam": "MOHAP",
+  "subject": "Orthopedic Nursing",
+  "topic": "Legg-Calvé-Perthes Disease",
+  "question": "A child presents with a limp, and X-ray shows avascular necrosis of the femoral head (Legg-Calvé-Perthes disease). What is the most appropriate initial treatment?",
+  "options": {
+    "A": "Physical therapy only",
+    "B": "Surgical intervention",
+    "C": "Non-weight-bearing",
+    "D": "Hip replacement"
+  },
+  "answer": "C",
+  "explanation": "Initial management aims to reduce stress on the femoral head. Restricting weight-bearing helps preserve the shape of the femoral head during healing."
+},
+  {
+  "id": 31,
+  "exam": "MOHAP",
+  "subject": "Obstetric Nursing",
+  "topic": "Multiple Pregnancy",
+  "question": "Most common cause of perinatal mortality in multiple pregnancy is:",
+  "options": {
+    "A": "Interlocking twins",
+    "B": "Prematurity",
+    "C": "Anemia",
+    "D": "Dystocia"
+  },
+  "answer": "B",
+  "explanation": "Prematurity is the leading cause of perinatal morbidity and mortality in multiple pregnancies because preterm birth is significantly more common."
+},
+{
+  "id": 32,
+  "exam": "MOHAP",
+  "subject": "Community Health Nursing",
+  "topic": "Tuberculosis Control",
+  "question": "DOTS programme was introduced for the treatment of:",
+  "options": {
+    "A": "Malaria",
+    "B": "Leprosy",
+    "C": "Poliomyelitis",
+    "D": "Tuberculosis"
+  },
+  "answer": "D",
+  "explanation": "DOTS (Directly Observed Treatment, Short-course) is the WHO-recommended strategy for tuberculosis control."
+},
+{
+  "id": 33,
+  "exam": "MOHAP",
+  "subject": "Immunology",
+  "topic": "Immunoglobulins",
+  "question": "Which immunoglobulin is primarily responsible for hypersensitivity reactions and anaphylaxis?",
+  "options": {
+    "A": "IgA",
+    "B": "IgG",
+    "C": "IgE",
+    "D": "IgM"
+  },
+  "answer": "C",
+  "explanation": "IgE mediates immediate (Type I) hypersensitivity reactions by triggering mast cell and basophil degranulation."
+},
+{
+  "id": 34,
+  "exam": "MOHAP",
+  "subject": "Biochemistry",
+  "topic": "Carbohydrates",
+  "question": "Which of the following is NOT a disaccharide?",
+  "options": {
+    "A": "Sucrose",
+    "B": "Lactose",
+    "C": "Maltose",
+    "D": "Erythrose"
+  },
+  "answer": "D",
+  "explanation": "Erythrose is a monosaccharide (a four-carbon sugar), whereas sucrose, lactose, and maltose are disaccharides."
+},
+{
+  "id": 35,
+  "exam": "MOHAP",
+  "subject": "Endocrine Nursing",
+  "topic": "Hypothyroidism",
+  "question": "A 30-year-old woman complains of fatigue, constipation, weight gain, hoarseness of voice, and dry skin. Laboratory tests show high TSH and low T4. What is the most likely diagnosis?",
+  "options": {
+    "A": "Hypothyroidism",
+    "B": "Pituitary hypofunction",
+    "C": "Thyroid carcinoma",
+    "D": "Viral thyroiditis"
+  },
+  "answer": "A",
+  "explanation": "Primary hypothyroidism is characterized by elevated TSH with decreased T4, along with symptoms such as fatigue, constipation, weight gain, and dry skin."
+},
+{
+  "id": 36,
+  "exam": "MOHAP",
+  "subject": "Palliative Care",
+  "topic": "Interdisciplinary Care",
+  "question": "A nurse assembles an interdisciplinary team including physicians, social workers, clergy, and nutritionists to care for a patient with terminal illness. What type of care is being provided?",
+  "options": {
+    "A": "Respite care",
+    "B": "Palliative care",
+    "C": "Curative care",
+    "D": "Preventive care"
+  },
+  "answer": "B",
+  "explanation": "Palliative care uses an interdisciplinary team to improve quality of life for patients with serious or terminal illnesses."
+},
+{
+  "id": 37,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "Antifungal Drugs",
+  "question": "The therapeutic use of Clotrimazole is:",
+  "options": {
+    "A": "Systemic antifungal",
+    "B": "Topical antifungal",
+    "C": "Systemic antibacterial",
+    "D": "Topical antibacterial"
+  },
+  "answer": "B",
+  "explanation": "Clotrimazole is an imidazole antifungal commonly used topically to treat fungal infections of the skin and mucous membranes."
+},
+{
+  "id": 38,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "Metronidazole",
+  "question": "A patient receiving Metronidazole should be instructed to:",
+  "options": {
+    "A": "Expect reddish-brown discoloration of urine",
+    "B": "Take the medication with meals if gastric irritation occurs",
+    "C": "Avoid alcohol during treatment and for at least 48 hours after completion",
+    "D": "All of the above"
+  },
+  "answer": "D",
+  "explanation": "All the listed instructions are appropriate. Metronidazole may discolor urine, should be taken with food if gastric upset occurs, and alcohol must be avoided because of a disulfiram-like reaction."
+},
+{
+  "id": 39,
+  "exam": "MOHAP",
+  "subject": "Burn & Plastic Surgery Nursing",
+  "topic": "Skin Graft Care",
+  "question": "A patient with a new skin graft on the leg has copious red drainage around the dressing. What should the nurse do first?",
+  "options": {
+    "A": "Ask whether the patient has pain",
+    "B": "Apply firm pressure over the dressing for 10 to 15 minutes",
+    "C": "Lift the dressing to inspect the graft",
+    "D": "Assess the apical pulse"
+  },
+  "answer": "B",
+  "explanation": "Excessive fresh bleeding following skin grafting should initially be controlled by applying firm pressure without disturbing the graft."
+},
+{
+  "id": 40,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "Dosage Forms",
+  "question": "Nasal suppositories are known as:",
+  "options": {
+    "A": "Pessaries",
+    "B": "Bougies",
+    "C": "Poultices",
+    "D": "Cones"
+  },
+  "answer": "B",
+  "explanation": "Bougies are medicated suppository-like preparations designed for insertion into body passages such as the nose or urethra."
+},
+{
+  "id": 41,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Heart Failure",
+  "question": "A patient with congestive heart failure develops increasing shortness of breath and bilateral basal crackles. Which nursing intervention should be performed first?",
+  "options": {
+    "A": "Encourage oral fluids",
+    "B": "Place the patient in High Fowler's position",
+    "C": "Keep the patient flat in bed",
+    "D": "Start passive range-of-motion exercises"
+  },
+  "answer": "B",
+  "explanation": "High Fowler's position reduces venous return, improves lung expansion, and relieves dyspnea in patients with pulmonary congestion."
+},
+{
+  "id": 42,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "Insulin",
+  "question": "Which insulin has the fastest onset of action?",
+  "options": {
+    "A": "Regular insulin",
+    "B": "NPH insulin",
+    "C": "Insulin Lispro",
+    "D": "Insulin Glargine"
+  },
+  "answer": "C",
+  "explanation": "Insulin Lispro is a rapid-acting insulin that begins working within approximately 15 minutes."
+},
+{
+  "id": 43,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Growth and Development",
+  "question": "At what age does a child usually begin walking independently?",
+  "options": {
+    "A": "6 months",
+    "B": "9 months",
+    "C": "12 months",
+    "D": "24 months"
+  },
+  "answer": "C",
+  "explanation": "Most children begin walking independently around 12 months of age, although a normal range extends from about 9 to 18 months."
+},
+{
+  "id": 44,
+  "exam": "MOHAP",
+  "subject": "Community Health Nursing",
+  "topic": "Primary Prevention",
+  "question": "Which of the following is an example of primary prevention?",
+  "options": {
+    "A": "Rehabilitation after stroke",
+    "B": "Vaccination",
+    "C": "Treatment of tuberculosis",
+    "D": "Physiotherapy after fracture"
+  },
+  "answer": "B",
+  "explanation": "Primary prevention aims to prevent disease before it occurs. Immunization is one of its most effective strategies."
+},
+{
+  "id": 45,
+  "exam": "MOHAP",
+  "subject": "Obstetric Nursing",
+  "topic": "Preeclampsia",
+  "question": "Which assessment finding is most suggestive of severe preeclampsia?",
+  "options": {
+    "A": "Blood pressure 130/80 mmHg",
+    "B": "Proteinuria with blood pressure of 170/110 mmHg",
+    "C": "Mild ankle edema",
+    "D": "Weight gain of 1 kg during pregnancy"
+  },
+  "answer": "B",
+  "explanation": "Severe hypertension accompanied by proteinuria is a hallmark feature of severe preeclampsia and requires urgent management."
+},
+{
+  "id": 46,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Acute Myocardial Infarction",
+  "question": "Which cardiac biomarker is the most specific for diagnosing acute myocardial infarction?",
+  "options": {
+    "A": "Creatine kinase",
+    "B": "Lactate dehydrogenase",
+    "C": "Cardiac Troponin I",
+    "D": "Myoglobin"
+  },
+  "answer": "C",
+  "explanation": "Cardiac Troponin I is highly sensitive and specific for myocardial injury and is the preferred biomarker for diagnosing acute myocardial infarction."
+},
+{
+  "id": 47,
+  "exam": "MOHAP",
+  "subject": "Infection Control",
+  "topic": "Hand Hygiene",
+  "question": "The single most effective measure to prevent hospital-acquired infections is:",
+  "options": {
+    "A": "Use of antibiotics",
+    "B": "Hand hygiene",
+    "C": "Patient isolation",
+    "D": "Routine chest X-ray"
+  },
+  "answer": "B",
+  "explanation": "Proper hand hygiene is the most effective and evidence-based method of preventing healthcare-associated infections."
+},
+{
+  "id": 48,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Raised Intracranial Pressure",
+  "question": "Which finding is an early sign of increased intracranial pressure?",
+  "options": {
+    "A": "Bradycardia",
+    "B": "Projectile vomiting",
+    "C": "Altered level of consciousness",
+    "D": "Irregular respiration"
+  },
+  "answer": "C",
+  "explanation": "A change in the level of consciousness is often the earliest clinical indicator of rising intracranial pressure."
+},
+{
+  "id": 49,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "Heparin Therapy",
+  "question": "Which laboratory test is routinely used to monitor unfractionated heparin therapy?",
+  "options": {
+    "A": "INR",
+    "B": "Bleeding time",
+    "C": "Activated Partial Thromboplastin Time (aPTT)",
+    "D": "Platelet count"
+  },
+  "answer": "C",
+  "explanation": "Unfractionated heparin dosage is adjusted according to the activated partial thromboplastin time (aPTT)."
+},
+{
+  "id": 50,
+  "exam": "MOHAP",
+  "subject": "Emergency Nursing",
+  "topic": "Cardiopulmonary Resuscitation",
+  "question": "According to adult Basic Life Support (BLS) guidelines, the recommended compression-to-ventilation ratio for a single rescuer is:",
+  "options": {
+    "A": "15:2",
+    "B": "30:2",
+    "C": "5:1",
+    "D": "10:2"
+  },
+  "answer": "B",
+  "explanation": "For adult CPR performed by a single rescuer, the recommended compression-to-ventilation ratio is 30:2."
+},
+{
+  "id": 51,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Ileostomy Care",
+  "question": "A nurse evaluates a patient with an ileostomy for the possible development of which acid-base imbalance?",
+  "options": {
+    "A": "Respiratory acidosis",
+    "B": "Metabolic acidosis",
+    "C": "Metabolic alkalosis",
+    "D": "Respiratory alkalosis"
+  },
+  "answer": "B",
+  "explanation": "Patients with an ileostomy lose bicarbonate-rich intestinal fluid, increasing the risk of metabolic acidosis."
+},
+{
+  "id": 52,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Acid-Base Balance",
+  "question": "A patient develops metabolic acidosis. Which clinical response should the nurse expect?",
+  "options": {
+    "A": "Heart rate of 105 beats/min",
+    "B": "Urine output of 15 mL/hour",
+    "C": "Respiratory rate of 30 breaths/min",
+    "D": "Temperature of 39°C"
+  },
+  "answer": "C",
+  "explanation": "Metabolic acidosis is compensated by hyperventilation (Kussmaul respirations), resulting in an increased respiratory rate."
+},
+{
+  "id": 53,
+  "exam": "MOHAP",
+  "subject": "Obstetric Nursing",
+  "topic": "Labor Pain Management",
+  "question": "A patient is in the first stage of labor. Which nursing interventions help manage labor pain?",
+  "options": {
+    "A": "Encourage walking if not contraindicated",
+    "B": "Teach slow chest breathing",
+    "C": "Lightly massage the abdomen/back",
+    "D": "All of the above"
+  },
+  "answer": "D",
+  "explanation": "Walking, breathing exercises, and massage are effective non-pharmacological pain relief measures during the first stage of labor."
+},
+{
+  "id": 54,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Burn Shock",
+  "question": "A child with burns is receiving treatment for burn shock. Which finding is the best indicator of adequate fluid resuscitation?",
+  "options": {
+    "A": "Skin turgor",
+    "B": "Degree of edema at the burn site",
+    "C": "Capillary refill time",
+    "D": "Urine output"
+  },
+  "answer": "D",
+  "explanation": "Urine output is the most reliable indicator of adequate fluid replacement during burn resuscitation."
+},
+{
+  "id": 55,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hyperphosphatemia",
+  "question": "A patient has a serum phosphorus level of 5.0 mg/dL. The nurse should closely assess the patient for:",
+  "options": {
+    "A": "Signs of tetany",
+    "B": "Hyperglycemia",
+    "C": "Cardiac dysrhythmias",
+    "D": "Hypoglycemia"
+  },
+  "answer": "A",
+  "explanation": "Hyperphosphatemia can lower serum calcium levels, leading to neuromuscular irritability and tetany."
+},
+{
+  "id": 56,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Pyloric Stenosis",
+  "question": "A nurse caring for a child with pyloric stenosis should expect which classic symptom?",
+  "options": {
+    "A": "Large-volume vomiting",
+    "B": "Watery diarrhea",
+    "C": "Projectile vomiting",
+    "D": "Dark-colored stool"
+  },
+  "answer": "C",
+  "explanation": "Projectile, non-bilious vomiting is the classic presenting feature of hypertrophic pyloric stenosis."
+},
+{
+  "id": 57,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Pancreatic Disorders",
+  "question": "Pancreatic enzyme replacement therapy is indicated in which of the following conditions?",
+  "options": {
+    "A": "Ulcerative colitis",
+    "B": "Appendicitis",
+    "C": "Chronic pancreatitis and cystic fibrosis",
+    "D": "Diverticulitis"
+  },
+  "answer": "C",
+  "explanation": "Pancreatic enzyme replacement is indicated in exocrine pancreatic insufficiency, commonly seen in chronic pancreatitis and cystic fibrosis."
+},
+{
+  "id": 58,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Acute Asthma",
+  "question": "A child with a severe asthma attack has the following ABG values: pH 7.33, PaCO₂ 48 mmHg, PaO₂ 58 mmHg, HCO₃⁻ 26 mEq/L. What is the nurse's priority intervention?",
+  "options": {
+    "A": "Administer Albuterol (Salbutamol) nebulization",
+    "B": "Obtain a chest X-ray",
+    "C": "Administer Ipratropium inhaler",
+    "D": "Collect a sputum specimen"
+  },
+  "answer": "A",
+  "explanation": "Rapid administration of an inhaled short-acting beta₂ agonist such as albuterol is the first-line treatment for an acute severe asthma attack."
+},
+{
+  "id": 59,
+  "exam": "MOHAP",
+  "subject": "Respiratory Nursing",
+  "topic": "Chest Drainage System",
+  "question": "Continuous bubbling is observed in the water-seal chamber of a chest drainage system. What does this indicate?",
+  "options": {
+    "A": "The tubing is clamped",
+    "B": "The tubing is kinked",
+    "C": "Normal lung expansion",
+    "D": "An air leak in the system"
+  },
+  "answer": "D",
+  "explanation": "Continuous bubbling in the water-seal chamber usually indicates an air leak somewhere in the chest drainage system."
+},
+{
+  "id": 60,
+  "exam": "MOHAP",
+  "subject": "Endocrine Nursing",
+  "topic": "Post-Thyroidectomy Care",
+  "question": "Following thyroidectomy, which complication should the nurse monitor for most closely?",
+  "options": {
+    "A": "Polyuria",
+    "B": "Hypoactive deep tendon reflexes",
+    "C": "Hypertension",
+    "D": "Laryngospasm"
+  },
+  "answer": "D",
+  "explanation": "Laryngospasm is a life-threatening complication after thyroidectomy, often resulting from hypocalcemia or airway compromise, and requires immediate attention."
+},
+  {
+  "id": 61,
+  "exam": "MOHAP",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Cardiac Pacing",
+  "question": "A method of suppressing tachycardia by pacing the heart at a rate faster than the patient's intrinsic heart rate is called:",
+  "options": {
+    "A": "Sensing",
+    "B": "Pacing threshold",
+    "C": "Oversensing",
+    "D": "Overdrive pacing"
+  },
+  "answer": "D",
+  "explanation": "Overdrive pacing suppresses tachyarrhythmias by pacing the heart at a rate slightly faster than the patient's intrinsic rhythm."
+},
+{
+  "id": 62,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "Propylthiouracil (PTU)",
+  "question": "A patient receiving Propylthiouracil (PTU) should immediately report which symptom?",
+  "options": {
+    "A": "Constipation",
+    "B": "Dysmenorrhea",
+    "C": "Sore throat",
+    "D": "Urinary frequency"
+  },
+  "answer": "C",
+  "explanation": "A sore throat may indicate agranulocytosis, a rare but serious adverse effect of PTU that requires immediate medical evaluation."
+},
+{
+  "id": 63,
+  "exam": "MOHAP",
+  "subject": "Respiratory Nursing",
+  "topic": "Chest Tube Complications",
+  "question": "The most serious complication associated with chest tube placement is:",
+  "options": {
+    "A": "Subcutaneous emphysema",
+    "B": "Tension pneumothorax",
+    "C": "Pneumonia",
+    "D": "Atelectasis"
+  },
+  "answer": "B",
+  "explanation": "Tension pneumothorax is a life-threatening complication that can rapidly compromise ventilation and circulation."
+},
+{
+  "id": 64,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Diabetic Neuropathy",
+  "question": "A client with diabetic neuropathy has decreased sensation in the feet. Which instruction regarding bathing is most important?",
+  "options": {
+    "A": "Clean the bathtub with full-strength peroxide before use",
+    "B": "Dry the feet thoroughly after bathing",
+    "C": "Apply lotion after bathing",
+    "D": "Test the water temperature before entering the tub"
+  },
+  "answer": "D",
+  "explanation": "Patients with diabetic neuropathy may not sense excessively hot water, increasing the risk of burns. Water temperature should always be tested first."
+},
+{
+  "id": 65,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Liver Disease",
+  "question": "Which laboratory values are included in the MELD (Model for End-stage Liver Disease) Score?",
+  "options": {
+    "A": "Creatinine, Bilirubin, Albumin",
+    "B": "Creatinine, Bilirubin, INR",
+    "C": "Creatinine, Bilirubin, Bleeding time",
+    "D": "Creatinine, Bilirubin, Ammonia"
+  },
+  "answer": "B",
+  "explanation": "The MELD score is calculated using serum creatinine, bilirubin, and INR to estimate the severity of chronic liver disease."
+},
+{
+  "id": 66,
+  "exam": "MOHAP",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Denture Care",
+  "question": "A client has dentures but refuses to wear them because they make him feel old. Which nursing response is most appropriate?",
+  "options": {
+    "A": "You are not really old.",
+    "B": "It is okay if you do not wear your dentures.",
+    "C": "You look better with your dentures.",
+    "D": "Wearing dentures helps prevent gum shrinkage."
+  },
+  "answer": "D",
+  "explanation": "This response provides accurate health education while encouraging denture use without making value judgments."
+},
+{
+  "id": 67,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "Inhaled Corticosteroids",
+  "question": "After using an inhaled corticosteroid, the patient should be instructed to rinse the mouth to prevent:",
+  "options": {
+    "A": "Tooth decay",
+    "B": "Oral candidiasis",
+    "C": "Mouth ulcers",
+    "D": "Halitosis"
+  },
+  "answer": "B",
+  "explanation": "Rinsing the mouth after inhaled corticosteroids reduces the risk of oral candidiasis (thrush)."
+},
+{
+  "id": 68,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "Antiemetics",
+  "question": "Which antiemetic should be avoided in patients with liver dysfunction because of its cholestatic effect?",
+  "options": {
+    "A": "Ondansetron",
+    "B": "Metoclopramide",
+    "C": "Prochlorperazine",
+    "D": "Domperidone"
+  },
+  "answer": "C",
+  "explanation": "Prochlorperazine may cause cholestatic jaundice and should be used cautiously or avoided in patients with liver dysfunction."
+},
+{
+  "id": 69,
+  "exam": "MOHAP",
+  "subject": "Nursing Theories",
+  "topic": "Hildegard Peplau",
+  "question": "In Hildegard Peplau's Interpersonal Relations Theory, the primary focus is on the:",
+  "options": {
+    "A": "Individual",
+    "B": "Community",
+    "C": "Society",
+    "D": "Family"
+  },
+  "answer": "A",
+  "explanation": "Peplau's theory emphasizes the therapeutic nurse-patient relationship, focusing primarily on the individual."
+},
+{
+  "id": 70,
+  "exam": "MOHAP",
+  "subject": "Orthopedic Nursing",
+  "topic": "Fractures",
+  "question": "A fracture in which the bone is splintered into several fragments is known as:",
+  "options": {
+    "A": "Avulsion fracture",
+    "B": "Greenstick fracture",
+    "C": "Complete fracture",
+    "D": "Comminuted fracture"
+  },
+  "answer": "D",
+  "explanation": "A comminuted fracture occurs when the bone breaks into three or more fragments, usually following high-impact trauma."
+},
+{
+  "id": 71,
+  "exam": "MOHAP",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Prinzmetal Angina",
+  "question": "Prinzmetal (Variant) angina is primarily caused by:",
+  "options": {
+    "A": "Coronary artery thrombosis",
+    "B": "Coronary artery spasm",
+    "C": "Atherosclerosis",
+    "D": "Pulmonary embolism"
+  },
+  "answer": "B",
+  "explanation": "Prinzmetal (variant) angina results from transient coronary artery vasospasm, leading to temporary myocardial ischemia."
+},
+{
+  "id": 72,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Multiple Sclerosis",
+  "question": "A patient with Multiple Sclerosis (MS) experiences frequent muscle spasms. Which medication is commonly prescribed to reduce spasticity?",
+  "options": {
+    "A": "Baclofen",
+    "B": "Diazepam",
+    "C": "Phenytoin",
+    "D": "Levodopa"
+  },
+  "answer": "A",
+  "explanation": "Baclofen is a centrally acting skeletal muscle relaxant commonly used to treat spasticity associated with multiple sclerosis."
+},
+{
+  "id": 73,
+  "exam": "MOHAP",
+  "subject": "Nutrition",
+  "topic": "Vitamins",
+  "question": "Tocopherol is the chemical name for:",
+  "options": {
+    "A": "Vitamin A",
+    "B": "Vitamin C",
+    "C": "Vitamin D",
+    "D": "Vitamin E"
+  },
+  "answer": "D",
+  "explanation": "Tocopherol is the chemical name for Vitamin E, a fat-soluble antioxidant."
+},
+{
+  "id": 74,
+  "exam": "MOHAP",
+  "subject": "Community Health Nursing",
+  "topic": "Tuberculosis",
+  "question": "Which of the following is the causative organism of tuberculosis?",
+  "options": {
+    "A": "Streptococcus pneumoniae",
+    "B": "Mycobacterium tuberculosis",
+    "C": "Staphylococcus aureus",
+    "D": "Haemophilus influenzae"
+  },
+  "answer": "B",
+  "explanation": "Tuberculosis is caused by Mycobacterium tuberculosis, an acid-fast bacillus."
+},
+{
+  "id": 75,
+  "exam": "MOHAP",
+  "subject": "Anesthesia",
+  "topic": "Inhalational Anesthetics",
+  "question": "Nitrous oxide is primarily used for:",
+  "options": {
+    "A": "Local anesthesia only",
+    "B": "General anesthesia and analgesia",
+    "C": "Muscle relaxation only",
+    "D": "Sedation without analgesia"
+  },
+  "answer": "B",
+  "explanation": "Nitrous oxide is widely used for general anesthesia and analgesia because of its rapid onset and recovery."
+},
+{
+  "id": 76,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Electrolyte Imbalance",
+  "question": "Which electrolyte imbalance is most commonly associated with prolonged diarrhea?",
+  "options": {
+    "A": "Hyperkalemia",
+    "B": "Hypokalemia",
+    "C": "Hypercalcemia",
+    "D": "Hypermagnesemia"
+  },
+  "answer": "B",
+  "explanation": "Prolonged diarrhea causes significant potassium loss through the gastrointestinal tract, leading to hypokalemia."
+},
+{
+  "id": 77,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Cranial Nerves",
+  "question": "Which cranial nerve is primarily responsible for hearing?",
+  "options": {
+    "A": "Cranial Nerve VII (Facial)",
+    "B": "Cranial Nerve VIII (Vestibulocochlear)",
+    "C": "Cranial Nerve IX (Glossopharyngeal)",
+    "D": "Cranial Nerve X (Vagus)"
+  },
+  "answer": "B",
+  "explanation": "The vestibulocochlear nerve (Cranial Nerve VIII) is responsible for hearing and balance."
+},
+{
+  "id": 78,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Meningitis",
+  "question": "Which condition is characterized by inflammation of the meninges?",
+  "options": {
+    "A": "Encephalitis",
+    "B": "Meningitis",
+    "C": "Myelitis",
+    "D": "Neuritis"
+  },
+  "answer": "B",
+  "explanation": "Meningitis is inflammation of the protective membranes (meninges) covering the brain and spinal cord."
+},
+{
+  "id": 79,
+  "exam": "MOHAP",
+  "subject": "Emergency Nursing",
+  "topic": "Dehydration",
+  "question": "A patient with severe dehydration is most likely to exhibit:",
+  "options": {
+    "A": "Bounding pulse and hypertension",
+    "B": "Bradycardia and edema",
+    "C": "Tachycardia and hypotension",
+    "D": "Hypertension and flushed skin"
+  },
+  "answer": "C",
+  "explanation": "Severe dehydration reduces circulating blood volume, causing tachycardia and hypotension."
+},
+{
+  "id": 80,
+  "exam": "MOHAP",
+  "subject": "Emergency Nursing",
+  "topic": "Seizure Management",
+  "question": "Which nursing intervention is the highest priority for a patient experiencing an active generalized tonic-clonic seizure?",
+  "options": {
+    "A": "Insert an oral airway immediately",
+    "B": "Restrain the patient's movements",
+    "C": "Protect the patient from injury and maintain airway safety",
+    "D": "Offer water after the seizure begins"
+  },
+  "answer": "C",
+  "explanation": "During an active seizure, the priority is to protect the patient from injury and maintain a patent airway. Objects should never be inserted into the mouth, and the patient should not be restrained."
+},
+{
+  "id": 81,
+  "exam": "MOHAP",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Prinzmetal Angina",
+  "question": "A client with angina complains that the pain is prolonged, severe, occurs at the same time each day (usually in the morning), and occurs without precipitating factors. This type of angina is:",
+  "options": {
+    "A": "Stable angina",
+    "B": "Variant (Prinzmetal) angina",
+    "C": "Unstable angina",
+    "D": "Non-cardiac chest pain"
+  },
+  "answer": "B",
+  "explanation": "Variant (Prinzmetal) angina is caused by coronary artery spasm and typically occurs at rest, often at the same time each day."
+},
+{
+  "id": 82,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Multiple Sclerosis",
+  "question": "While reviewing stress-management techniques with a patient diagnosed with Multiple Sclerosis (MS), which activity is MOST appropriate?",
+  "options": {
+    "A": "Sunbathing",
+    "B": "Relaxing in a warm bubble bath",
+    "C": "Yoga in a cool room",
+    "D": "Cross-country running"
+  },
+  "answer": "C",
+  "explanation": "Patients with MS should avoid overheating. Yoga in a cool environment helps reduce stress without worsening symptoms."
+},
+{
+  "id": 83,
+  "exam": "MOHAP",
+  "subject": "Nutrition",
+  "topic": "Calcium Deficiency",
+  "question": "A patient with bowed legs due to abnormal bone formation and deformities has a serum calcium level of 7.5 mg/100 mL. Which food should the nurse encourage?",
+  "options": {
+    "A": "Chicken meat",
+    "B": "Egg yolks",
+    "C": "Organ meats",
+    "D": "Whole grains"
+  },
+  "answer": "B",
+  "explanation": "Egg yolks are a source of vitamin D, which promotes calcium absorption and supports bone health."
+},
+{
+  "id": 84,
+  "exam": "MOHAP",
+  "subject": "Immunology",
+  "topic": "Immunoglobulins",
+  "question": "The immunoglobulin related to hypersensitivity and anaphylaxis is:",
+  "options": {
+    "A": "IgA",
+    "B": "IgE",
+    "C": "IgM",
+    "D": "IgG"
+  },
+  "answer": "B",
+  "explanation": "IgE mediates immediate hypersensitivity reactions and is responsible for allergic responses and anaphylaxis."
+},
+{
+  "id": 85,
+  "exam": "MOHAP",
+  "subject": "Biochemistry",
+  "topic": "Antioxidants",
+  "question": "Which of the following is an antioxidant?",
+  "options": {
+    "A": "Benzalkonium chloride",
+    "B": "Vanillin",
+    "C": "Benzoic acid",
+    "D": "Tocopherol"
+  },
+  "answer": "D",
+  "explanation": "Tocopherol (Vitamin E) is a fat-soluble antioxidant that protects cells from oxidative damage."
+},
+{
+  "id": 86,
+  "exam": "MOHAP",
+  "subject": "Anesthesia",
+  "topic": "Inhalational Anesthetics",
+  "question": "Which inorganic compound is commonly used as an anesthetic?",
+  "options": {
+    "A": "Nitrogen dioxide",
+    "B": "Nitrous oxide",
+    "C": "Hyperbaric oxygen",
+    "D": "Halothane"
+  },
+  "answer": "B",
+  "explanation": "Nitrous oxide is an inorganic gas commonly used as an inhalational anesthetic and analgesic."
+},
+{
+  "id": 87,
+  "exam": "MOHAP",
+  "subject": "Palliative Care",
+  "topic": "Interdisciplinary Care",
+  "question": "The nurse assembles an interdisciplinary team including physicians, social workers, clergy, and nutritionists to care for a terminally ill patient. This is an example of:",
+  "options": {
+    "A": "Respite care",
+    "B": "Curative care",
+    "C": "Preventive care",
+    "D": "Palliative care"
+  },
+  "answer": "D",
+  "explanation": "Palliative care involves an interdisciplinary team to improve quality of life for patients with serious or terminal illness."
+},
+{
+  "id": 88,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Diabetic Neuropathy",
+  "question": "A client with diabetic neuropathy has impaired sensation in the feet. Which instruction regarding bathing is most important?",
+  "options": {
+    "A": "Clean the tub with full-strength peroxide before use",
+    "B": "Dry the feet thoroughly after bathing",
+    "C": "Apply lotion after bathing",
+    "D": "Test the water temperature before entering the tub"
+  },
+  "answer": "D",
+  "explanation": "Patients with diabetic neuropathy should always test water temperature first because decreased sensation increases the risk of burns."
+},
+{
+  "id": 89,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "Inhaled Corticosteroids",
+  "question": "After using an inhaled corticosteroid, the patient should be instructed to rinse the mouth and spit to prevent:",
+  "options": {
+    "A": "Tooth decay",
+    "B": "Oral candidiasis",
+    "C": "Mouth ulceration",
+    "D": "Halitosis"
+  },
+  "answer": "B",
+  "explanation": "Rinsing the mouth after inhaled corticosteroid use helps prevent oral candidiasis (thrush)."
+},
+{
+  "id": 90,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "Antiemetics",
+  "question": "Which antiemetic drug should be avoided in patients with liver dysfunction because of its cholestatic effect?",
+  "options": {
+    "A": "Ondansetron",
+    "B": "Metoclopramide",
+    "C": "Prochlorperazine",
+    "D": "Domperidone"
+  },
+  "answer": "C",
+  "explanation": "Prochlorperazine has been associated with cholestatic jaundice and should be avoided in significant liver dysfunction."
+},
+  {
+  "id": 91,
+  "exam": "MOHAP",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Prinzmetal Angina",
+  "question": "A client with angina experiences prolonged, severe chest pain that occurs at the same time each day, usually in the morning, without precipitating factors. This type of angina is:",
+  "options": {
+    "A": "Stable angina",
+    "B": "Variant (Prinzmetal) angina",
+    "C": "Non-cardiac angina",
+    "D": "Unstable angina"
+  },
+  "answer": "B",
+  "explanation": "Variant (Prinzmetal) angina results from coronary artery vasospasm and typically occurs at rest, often in the early morning."
+},
+{
+  "id": 92,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Multiple Sclerosis",
+  "question": "While teaching stress management to a patient with Multiple Sclerosis (MS), which activity is most appropriate?",
+  "options": {
+    "A": "Sunbathing",
+    "B": "Relaxing in a warm bubble bath",
+    "C": "Yoga in a cool room",
+    "D": "Cross-country running"
+  },
+  "answer": "C",
+  "explanation": "Keeping cool while exercising helps prevent worsening of MS symptoms. Yoga in a cool room is an appropriate choice."
+},
+{
+  "id": 93,
+  "exam": "MOHAP",
+  "subject": "Nutrition",
+  "topic": "Vitamin D",
+  "question": "A patient with bowed legs due to abnormal bone formation and a serum calcium level of 7.5 mg/100 mL should be encouraged to eat:",
+  "options": {
+    "A": "Chicken meat",
+    "B": "Egg yolks",
+    "C": "Organ meats",
+    "D": "Whole grains"
+  },
+  "answer": "B",
+  "explanation": "Egg yolks are a good source of vitamin D, which promotes calcium absorption and supports bone mineralization."
+},
+{
+  "id": 94,
+  "exam": "MOHAP",
+  "subject": "Immunology",
+  "topic": "Hypersensitivity",
+  "question": "The immunoglobulin primarily responsible for hypersensitivity reactions and anaphylaxis is:",
+  "options": {
+    "A": "IgA",
+    "B": "IgE",
+    "C": "IgM",
+    "D": "IgG"
+  },
+  "answer": "B",
+  "explanation": "IgE binds to mast cells and basophils and mediates immediate hypersensitivity reactions."
+},
+{
+  "id": 95,
+  "exam": "MOHAP",
+  "subject": "Palliative Care",
+  "topic": "Interdisciplinary Care",
+  "question": "The nurse assembles an interdisciplinary team including physicians, social workers, clergy, and nutritionists to care for a terminally ill patient. Which type of care is being provided?",
+  "options": {
+    "A": "Respite care",
+    "B": "Palliative care",
+    "C": "Curative care",
+    "D": "Preventive care"
+  },
+  "answer": "B",
+  "explanation": "Palliative care involves an interdisciplinary team that focuses on improving quality of life for patients with serious or terminal illnesses."
+},
+{
+  "id": 96,
+  "exam": "MOHAP",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Prinzmetal Angina",
+  "question": "A client experiences prolonged chest pain that occurs at the same time each morning without exertion. Which type of angina is this?",
+  "options": {
+    "A": "Stable angina",
+    "B": "Variant (Prinzmetal) angina",
+    "C": "Unstable angina",
+    "D": "Silent ischemia"
+  },
+  "answer": "B",
+  "explanation": "Variant (Prinzmetal) angina is caused by coronary artery spasm and typically occurs at rest, often in the early morning."
+},
+{
+  "id": 97,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Multiple Sclerosis",
+  "question": "Which activity is most appropriate for a patient with Multiple Sclerosis (MS)?",
+  "options": {
+    "A": "Sunbathing",
+    "B": "Warm bubble bath",
+    "C": "Yoga in a cool room",
+    "D": "Long-distance running"
+  },
+  "answer": "C",
+  "explanation": "Cool-environment exercise such as yoga helps reduce stress while avoiding heat-related worsening of MS symptoms."
+},
+{
+  "id": 98,
+  "exam": "MOHAP",
+  "subject": "Community Health Nursing",
+  "topic": "Tuberculosis",
+  "question": "The DOTS programme was introduced for the treatment of:",
+  "options": {
+    "A": "Poliomyelitis",
+    "B": "Tuberculosis",
+    "C": "Leprosy",
+    "D": "Malaria"
+  },
+  "answer": "B",
+  "explanation": "DOTS is the internationally recommended strategy for tuberculosis treatment and control."
+},
+{
+  "id": 99,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Cerebrovascular Accident",
+  "question": "The most common type of cerebrovascular accident (CVA) is:",
+  "options": {
+    "A": "Cerebral hemorrhage",
+    "B": "Cerebral thrombosis",
+    "C": "Cerebral embolism",
+    "D": "Cerebral vasospasm"
+  },
+  "answer": "B",
+  "explanation": "Cerebral thrombosis is the most common type of stroke, accounting for the majority of ischemic cerebrovascular accidents."
+},
+{
+  "id": 100,
+  "exam": "MOHAP",
+  "subject": "Nutrition",
+  "topic": "Vitamin A",
+  "question": "Which vitamin is essential for healthy vision?",
+  "options": {
+    "A": "Vitamin D",
+    "B": "Vitamin B",
+    "C": "Vitamin C",
+    "D": "Vitamin A"
+  },
+  "answer": "D",
+  "explanation": "Vitamin A is essential for normal vision, especially night vision, and for maintaining healthy epithelial tissues."
+},
+{
+  "id": 101,
+  "exam": "MOHAP",
+  "subject": "Obstetric Nursing",
+  "topic": "Rh Incompatibility",
+  "question": "Rh incompatibility during pregnancy may result in:",
+  "options": {
+    "A": "AIDS",
+    "B": "Erythroblastosis fetalis",
+    "C": "Turner syndrome",
+    "D": "Sickle cell anemia"
+  },
+  "answer": "B",
+  "explanation": "Rh incompatibility can cause hemolytic disease of the newborn, also known as erythroblastosis fetalis."
+},
+{
+  "id": 102,
+  "exam": "MOHAP",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Blood Pressure",
+  "question": "Pulse pressure is defined as:",
+  "options": {
+    "A": "Diastolic blood pressure",
+    "B": "Systolic blood pressure",
+    "C": "The difference between systolic and diastolic blood pressure",
+    "D": "Pressure in the pulmonary veins"
+  },
+  "answer": "C",
+  "explanation": "Pulse pressure is the numerical difference between systolic and diastolic blood pressure."
+},
+{
+  "id": 103,
+  "exam": "MOHAP",
+  "subject": "Renal Nursing",
+  "topic": "Urinalysis",
+  "question": "The pH of fresh urine is approximately:",
+  "options": {
+    "A": "7.1",
+    "B": "5.0",
+    "C": "8.4",
+    "D": "9.9"
+  },
+  "answer": "B",
+  "explanation": "Fresh urine is normally slightly acidic, with an average pH of about 5 to 6."
+},
+{
+  "id": 104,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Gallbladder Disorders",
+  "question": "Removal of the gallbladder primarily affects:",
+  "options": {
+    "A": "Fat digestion",
+    "B": "Protein digestion",
+    "C": "Causes jaundice",
+    "D": "Increases intestinal acidity"
+  },
+  "answer": "A",
+  "explanation": "The gallbladder stores bile, which is essential for fat digestion and absorption."
+},
+{
+  "id": 105,
+  "exam": "MOHAP",
+  "subject": "Nutrition",
+  "topic": "Vitamin B Complex",
+  "question": "Loss of appetite, gastrointestinal disturbances, and muscular weakness are symptoms of deficiency of:",
+  "options": {
+    "A": "Vitamin A",
+    "B": "Vitamin B complex",
+    "C": "Vitamin C",
+    "D": "Vitamin D"
+  },
+  "answer": "B",
+  "explanation": "Vitamin B complex deficiency commonly causes gastrointestinal symptoms, poor appetite, and muscle weakness."
+},
+{
+  "id": 106,
+  "exam": "MOHAP",
+  "subject": "Anatomy & Physiology",
+  "topic": "Digestive System",
+  "question": "The largest gland in the human body is:",
+  "options": {
+    "A": "Liver",
+    "B": "Thyroid gland",
+    "C": "Pituitary gland",
+    "D": "None of the above"
+  },
+  "answer": "A",
+  "explanation": "The liver is the largest gland and the largest internal organ in the human body."
+},
+{
+  "id": 107,
+  "exam": "MOHAP",
+  "subject": "Pathophysiology",
+  "topic": "Edema",
+  "question": "Edema may result from:",
+  "options": {
+    "A": "Increased capillary permeability",
+    "B": "Reduced lymphatic drainage",
+    "C": "Increased capillary hydrostatic pressure",
+    "D": "All of the above"
+  },
+  "answer": "D",
+  "explanation": "Edema can result from increased hydrostatic pressure, increased capillary permeability, or impaired lymphatic drainage."
+},
+{
+  "id": 108,
+  "exam": "MOHAP",
+  "subject": "Obstetric Nursing",
+  "topic": "Fetal Circulation",
+  "question": "In the fetus, which blood vessel carries the blood with the highest oxygen content?",
+  "options": {
+    "A": "Aorta",
+    "B": "Umbilical vein",
+    "C": "Pulmonary artery",
+    "D": "Inferior vena cava"
+  },
+  "answer": "B",
+  "explanation": "The umbilical vein carries oxygen-rich blood from the placenta to the fetus."
+},
+
+
+
+
+
+
+{
+  "id": 110,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Growth and Development",
+  "question": "The nurse is assessing the growth and development of a healthy 3-year-old child. Which skill should the nurse expect?",
+  "options": {
+    "A": "Ride a bicycle",
+    "B": "Jump rope",
+    "C": "Throw a ball overhead",
+    "D": "Hop on one foot"
+  },
+  "answer": "C",
+  "explanation": "A healthy 3-year-old can typically throw a ball overhead, while hopping and jump rope develop later."
+},
+{
+  "id": 111,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Ostomy Care",
+  "question": "Which ostomy requires the greatest protection of the surrounding skin?",
+  "options": {
+    "A": "Ileostomy",
+    "B": "Ascending colostomy",
+    "C": "Transverse colostomy",
+    "D": "Sigmoid colostomy"
+  },
+  "answer": "A",
+  "explanation": "Ileostomy output contains digestive enzymes that can rapidly irritate and damage the surrounding skin."
+},
+{
+  "id": 112,
+  "exam": "MOHAP",
+  "subject": "Palliative Care",
+  "topic": "Interdisciplinary Care",
+  "question": "A nurse assembles an interdisciplinary team including physicians, social workers, clergy, and nutritionists to care for a terminally ill patient. Which type of care is being provided?",
+  "options": {
+    "A": "Palliative care",
+    "B": "Curative care",
+    "C": "Respite care",
+    "D": "Preventive care"
+  },
+  "answer": "A",
+  "explanation": "Palliative care uses an interdisciplinary approach to improve the quality of life of patients with serious illnesses."
+},
+{
+  "id": 113,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Burn Care",
+  "question": "To minimize a toddler from scratching and picking at a healing skin graft, the nurse should use:",
+  "options": {
+    "A": "Mild sedatives",
+    "B": "Hand mittens",
+    "C": "Punishment for picking",
+    "D": "Distractions"
+  },
+  "answer": "B",
+  "explanation": "Hand mittens help prevent scratching and protect the healing skin graft in young children."
+},
+{
+  "id": 114,
+  "exam": "MOHAP",
+  "subject": "Obstetric Nursing",
+  "topic": "Multiple Pregnancy",
+  "question": "The most common cause of perinatal mortality in multiple pregnancy is:",
+  "options": {
+    "A": "Dystocia",
+    "B": "Anemia",
+    "C": "Interlocking twins",
+    "D": "Prematurity"
+  },
+  "answer": "D",
+  "explanation": "Prematurity is the leading cause of perinatal morbidity and mortality in multiple pregnancies."
+},
+{
+  "id": 115,
+  "exam": "MOHAP",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Prinzmetal Angina",
+  "question": "A client complains of prolonged, severe chest pain occurring at the same time each morning without precipitating factors. This type of angina is:",
+  "options": {
+    "A": "Stable angina",
+    "B": "Unstable angina",
+    "C": "Variant (Prinzmetal) angina",
+    "D": "Non-cardiac chest pain"
+  },
+  "answer": "C",
+  "explanation": "Variant (Prinzmetal) angina is caused by coronary artery spasm and typically occurs at rest."
+},
+{
+  "id": 116,
+  "exam": "MOHAP",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Coronary Artery Bypass Grafting",
+  "question": "A patient has recently undergone coronary artery bypass graft (CABG) surgery. Which nursing diagnosis has the highest priority?",
+  "options": {
+    "A": "Anxiety",
+    "B": "Impaired gas exchange",
+    "C": "Acute pain",
+    "D": "Sleep deprivation"
+  },
+  "answer": "B",
+  "explanation": "Maintaining adequate oxygenation is the highest priority after CABG surgery."
+},
+{
+  "id": 117,
+  "exam": "MOHAP",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Dehydration",
+  "question": "Which assessment finding is most indicative of dehydration?",
+  "options": {
+    "A": "Moist mucous membranes",
+    "B": "Increased urine output",
+    "C": "Poor skin turgor",
+    "D": "Bradycardia"
+  },
+  "answer": "C",
+  "explanation": "Poor skin turgor is a classic clinical sign of dehydration."
+},
+{
+  "id": 118,
+  "exam": "MOHAP",
+  "subject": "Ophthalmic Nursing",
+  "topic": "Eye Irrigation",
+  "question": "Before irrigating the eye, the nurse should first instruct the patient to:",
+  "options": {
+    "A": "Close both eyes tightly",
+    "B": "Remove soft contact lenses",
+    "C": "Rub the affected eye gently",
+    "D": "Apply an eye patch"
+  },
+  "answer": "B",
+  "explanation": "Soft contact lenses should be removed before eye irrigation to prevent further irritation or trapping of chemicals."
+},
+{
+  "id": 119,
+  "exam": "MOHAP",
+  "subject": "Orthopedic Nursing",
+  "topic": "Laminectomy",
+  "question": "Following a laminectomy, which nursing intervention is most appropriate?",
+  "options": {
+    "A": "Place the patient in High Fowler's position",
+    "B": "Encourage twisting exercises",
+    "C": "Log-roll the patient when turning",
+    "D": "Allow unrestricted sitting immediately"
+  },
+  "answer": "C",
+  "explanation": "Log-rolling maintains spinal alignment and prevents injury following laminectomy."
+},
+{
+  "id": 120,
+  "exam": "MOHAP",
+  "subject": "Gastrointestinal Nursing",
+  "topic": "Duodenal Ulcer",
+  "question": "Pain associated with a duodenal ulcer typically:",
+  "options": {
+    "A": "Occurs immediately after meals",
+    "B": "Is relieved by eating or taking antacids",
+    "C": "Is associated with hematemesis only",
+    "D": "Is unrelated to food intake"
+  },
+  "answer": "B",
+  "explanation": "Duodenal ulcer pain is classically relieved by food or antacids and often recurs a few hours later."
+},
+    {
+  "id": 121,
+  "exam": "MOHAP",
+  "subject": "ENT Nursing",
+  "topic": "Ludwig's Angina",
+  "question": "Ludwig's angina primarily affects the:",
+  "options": {
+    "A": "Heart muscle",
+    "B": "Floor of the mouth and submandibular space",
+    "C": "Lungs",
+    "D": "Esophagus"
+  },
+  "answer": "B",
+  "explanation": "Ludwig's angina is a rapidly spreading cellulitis involving the floor of the mouth and submandibular space."
+},
+{
+  "id": 122,
+  "exam": "MOHAP",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Deep Vein Thrombosis",
+  "question": "Which is the most common complication of deep vein thrombosis (DVT)?",
+  "options": {
+    "A": "Myocardial infarction",
+    "B": "Pulmonary embolism",
+    "C": "Stroke",
+    "D": "Congestive heart failure"
+  },
+  "answer": "B",
+  "explanation": "Pulmonary embolism is the most serious and common complication of deep vein thrombosis."
+},
+{
+  "id": 123,
+  "exam": "MOHAP",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Sputum Specimen Collection",
+  "question": "When collecting a sputum specimen for culture, the nurse should instruct the patient to:",
+  "options": {
+    "A": "Collect saliva after meals",
+    "B": "Collect the specimen early in the morning after deep coughing",
+    "C": "Drink plenty of water immediately before collection",
+    "D": "Use a cotton swab to collect oral secretions"
+  },
+  "answer": "B",
+  "explanation": "Early morning deep-cough sputum provides the best specimen for culture and sensitivity testing."
+},
+{
+  "id": 124,
+  "exam": "MOHAP",
+  "subject": "Renal Nursing",
+  "topic": "Hyperkalemia",
+  "question": "A patient with chronic renal failure has a serum potassium level of 6.8 mEq/L. Which assessment finding requires immediate attention?",
+  "options": {
+    "A": "Dry skin",
+    "B": "Muscle weakness with ECG changes",
+    "C": "Constipation",
+    "D": "Increased appetite"
+  },
+  "answer": "B",
+  "explanation": "Severe hyperkalemia can cause life-threatening cardiac dysrhythmias, especially when ECG changes are present."
+},
+{
+  "id": 125,
+  "exam": "MOHAP",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Hypertensive Crisis",
+  "question": "A patient is admitted with a hypertensive crisis. Which medication is commonly administered intravenously for rapid blood pressure control?",
+  "options": {
+    "A": "Hydralazine",
+    "B": "Digoxin",
+    "C": "Furosemide",
+    "D": "Atorvastatin"
+  },
+  "answer": "A",
+  "explanation": "Intravenous hydralazine is commonly used for rapid blood pressure reduction in hypertensive emergencies."
+},
+{
+  "id": 126,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Seizure Disorders",
+  "question": "Which diagnostic test is most commonly used to evaluate seizure disorders?",
+  "options": {
+    "A": "Electroencephalogram (EEG)",
+    "B": "Electrocardiogram (ECG)",
+    "C": "Echocardiography",
+    "D": "Spirometry"
+  },
+  "answer": "A",
+  "explanation": "EEG records the brain's electrical activity and is the primary diagnostic test for seizure disorders."
+},
+{
+  "id": 127,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Increased Intracranial Pressure",
+  "question": "Which nursing intervention is most appropriate for a patient with increased intracranial pressure (ICP)?",
+  "options": {
+    "A": "Keep the head of the bed flat",
+    "B": "Maintain the head of the bed at 30 degrees",
+    "C": "Flex the patient's neck frequently",
+    "D": "Encourage frequent coughing"
+  },
+  "answer": "B",
+  "explanation": "Elevating the head of the bed to about 30° promotes cerebral venous drainage and helps reduce ICP."
+},
+{
+  "id": 128,
+  "exam": "MOHAP",
+  "subject": "Infection Control",
+  "topic": "Meningitis",
+  "question": "A patient with suspected meningitis should be placed under which type of isolation?",
+  "options": {
+    "A": "Airborne precautions",
+    "B": "Contact precautions",
+    "C": "Droplet precautions",
+    "D": "Protective isolation"
+  },
+  "answer": "C",
+  "explanation": "Patients with suspected bacterial meningitis require droplet precautions to prevent transmission."
+},
+{
+  "id": 129,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Electrolyte Imbalance",
+  "question": "Which electrolyte imbalance is most commonly associated with prolonged vomiting?",
+  "options": {
+    "A": "Hyperkalemia",
+    "B": "Hypokalemia",
+    "C": "Hypermagnesemia",
+    "D": "Hyperphosphatemia"
+  },
+  "answer": "B",
+  "explanation": "Prolonged vomiting causes potassium loss, leading to hypokalemia."
+},
+{
+  "id": 130,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Cranial Nerves",
+  "question": "Which cranial nerve is responsible for the gag reflex?",
+  "options": {
+    "A": "Facial nerve (VII)",
+    "B": "Vestibulocochlear nerve (VIII)",
+    "C": "Glossopharyngeal and Vagus nerves (IX & X)",
+    "D": "Hypoglossal nerve (XII)"
+  },
+  "answer": "C",
+  "explanation": "The gag reflex is mediated by the Glossopharyngeal (IX) and Vagus (X) cranial nerves."
+},
+{
+  "id": 131,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Parkinson's Disease",
+  "question": "A patient with Parkinson's disease is receiving Levodopa therapy. Which instruction should the nurse include?",
+  "options": {
+    "A": "Stop the medication when symptoms improve.",
+    "B": "Change positions slowly to prevent dizziness.",
+    "C": "Avoid all physical activity.",
+    "D": "Take the medication only at bedtime."
+  },
+  "answer": "B",
+  "explanation": "Levodopa may cause orthostatic hypotension, so patients should change positions slowly."
+},
+{
+  "id": 132,
+  "exam": "MOHAP",
+  "subject": "Respiratory Nursing",
+  "topic": "Hypoxia",
+  "question": "Which of the following is the earliest sign of hypoxia?",
+  "options": {
+    "A": "Cyanosis",
+    "B": "Bradycardia",
+    "C": "Restlessness",
+    "D": "Hypotension"
+  },
+  "answer": "C",
+  "explanation": "Restlessness is often the earliest clinical manifestation of inadequate oxygenation."
+},
+{
+  "id": 133,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Lumbar Puncture",
+  "question": "Which position is recommended after a lumbar puncture?",
+  "options": {
+    "A": "High Fowler's position",
+    "B": "Supine position",
+    "C": "Trendelenburg position",
+    "D": "Left lateral position only"
+  },
+  "answer": "B",
+  "explanation": "The supine position is commonly recommended after lumbar puncture to reduce the risk of post-procedure headache."
+},
+{
+  "id": 134,
+  "exam": "MOHAP",
+  "subject": "Emergency Nursing",
+  "topic": "Drug Antidotes",
+  "question": "Which medication is the antidote for opioid overdose?",
+  "options": {
+    "A": "Flumazenil",
+    "B": "Naloxone",
+    "C": "Atropine",
+    "D": "Vitamin K"
+  },
+  "answer": "B",
+  "explanation": "Naloxone rapidly reverses respiratory and central nervous system depression caused by opioid overdose."
+},
+{
+  "id": 135,
+  "exam": "MOHAP",
+  "subject": "Endocrine Nursing",
+  "topic": "Diabetes Mellitus",
+  "question": "Which laboratory test is the best indicator of long-term blood glucose control?",
+  "options": {
+    "A": "Random Blood Sugar (RBS)",
+    "B": "Fasting Blood Sugar (FBS)",
+    "C": "HbA1c",
+    "D": "Oral Glucose Tolerance Test (OGTT)"
+  },
+  "answer": "C",
+  "explanation": "HbA1c reflects the average blood glucose level over the previous 2 to 3 months."
+},
+{
+  "id": 136,
+  "exam": "MOHAP",
+  "subject": "Orthopedic Nursing",
+  "topic": "Total Hip Replacement",
+  "question": "A patient has had a total hip joint replacement. Which of the following actions should the nurse consider for the patient's daily recommended exercise program?",
+  "options": {
+    "A": "Administer an analgesic before exercising",
+    "B": "Discontinue the program if the patient dislikes it",
+    "C": "Continue exercises despite severe pain",
+    "D": "Evaluate effectiveness of exercise only after discharge"
+  },
+  "answer": "A",
+  "explanation": "Giving an analgesic before exercise helps reduce pain and improves participation in rehabilitation."
+},
+{
+  "id": 137,
+  "exam": "MOHAP",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Deep Vein Thrombosis",
+  "question": "Whilst recovering from surgery, a patient develops deep vein thrombosis. Which sign would indicate this complication?",
+  "options": {
+    "A": "Intermittent claudication",
+    "B": "Pitting edema of the affected area",
+    "C": "Severe pain when raising the leg",
+    "D": "Localized warmth and tenderness of the affected site"
+  },
+  "answer": "D",
+  "explanation": "Localized warmth, tenderness, swelling, and pain are classic signs of deep vein thrombosis."
+},
+{
+  "id": 138,
+  "exam": "MOHAP",
+  "subject": "Respiratory Nursing",
+  "topic": "Oxygen Therapy",
+  "question": "Which of the following techniques should the nurse implement to prevent the patient's mucous membranes from drying when the oxygen flow rate is higher than 4 L/min?",
+  "options": {
+    "A": "Use a non-rebreather mask",
+    "B": "Add humidity to the oxygen delivery system",
+    "C": "Use a high-flow oxygen delivery system",
+    "D": "Ensure that the nasal prongs are positioned correctly"
+  },
+  "answer": "B",
+  "explanation": "Humidification prevents drying and irritation of the respiratory mucosa during high-flow oxygen therapy."
+},
+{
+  "id": 139,
+  "exam": "MOHAP",
+  "subject": "Psychiatric Nursing",
+  "topic": "Antipsychotic Drugs",
+  "question": "Extrapyramidal adverse effects and symptoms are most often associated with which class of drugs?",
+  "options": {
+    "A": "Antidepressants",
+    "B": "Antipsychotics",
+    "C": "Antihypertensives",
+    "D": "Antidysrhythmics"
+  },
+  "answer": "B",
+  "explanation": "Extrapyramidal symptoms (EPS) such as dystonia, akathisia, and parkinsonism are common adverse effects of antipsychotic medications."
+},
+{
+  "id": 140,
+  "exam": "MOHAP",
+  "subject": "Emergency Nursing",
+  "topic": "Heat Stroke",
+  "question": "A construction worker was brought to the emergency department with heat stroke due to strenuous physical activity in hot weather. Which action should the nurse take?",
+  "options": {
+    "A": "Immediately immerse the patient in cold water",
+    "B": "Administer an antipyretic such as acetaminophen",
+    "C": "Place ice packs on the neck, axillae, scalp, and groin",
+    "D": "Encourage oral fluids containing carbohydrates and electrolytes"
+  },
+  "answer": "C",
+  "explanation": "Rapid cooling with ice packs over major blood vessels is an appropriate emergency intervention for heat stroke."
+},
+{
+  "id": 141,
+  "exam": "MOHAP",
+  "subject": "Endocrine Nursing",
+  "topic": "Thyroidectomy",
+  "question": "The nurse should observe for which symptom in a patient who has just undergone a total thyroidectomy?",
+  "options": {
+    "A": "Weight gain",
+    "B": "Depressed reflexes",
+    "C": "Muscle spasm and twitching",
+    "D": "Irritable behavior"
+  },
+  "answer": "C",
+  "explanation": "Muscle spasm and twitching are signs of hypocalcemia due to accidental parathyroid gland injury after thyroidectomy."
+},
+{
+  "id": 142,
+  "exam": "MOHAP",
+  "subject": "Psychiatric Nursing",
+  "topic": "Therapeutic Communication",
+  "question": "Which of the following indicates the nurse is engaging in a therapeutic nurse-patient relationship?",
+  "options": {
+    "A": "The nurse establishes a relationship that is mutually beneficial.",
+    "B": "The nurse demonstrates sympathetic feelings toward the patient.",
+    "C": "The nurse commits to helping the patient find ways to help self.",
+    "D": "The nurse uses therapeutic touch to convey acceptance of the patient."
+  },
+  "answer": "C",
+  "explanation": "A therapeutic relationship focuses on helping the patient achieve independence and improve self-care."
+},
+{
+  "id": 143,
+  "exam": "MOHAP",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Dehydration",
+  "question": "A patient is admitted with dehydration. Which assessment finding is most consistent with this diagnosis?",
+  "options": {
+    "A": "Bounding pulse and moist skin",
+    "B": "Bradycardia and edema",
+    "C": "Poor skin turgor and dry mucous membranes",
+    "D": "Hypertension and weight gain"
+  },
+  "answer": "C",
+  "explanation": "Dry mucous membranes and poor skin turgor are classic clinical signs of dehydration."
+},
+{
+  "id": 144,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hyperkalemia",
+  "question": "Which electrolyte imbalance is most likely to cause cardiac dysrhythmias?",
+  "options": {
+    "A": "Hyperkalemia",
+    "B": "Hypernatremia",
+    "C": "Hypercalcemia",
+    "D": "Hypermagnesemia"
+  },
+  "answer": "A",
+  "explanation": "Hyperkalemia significantly affects cardiac conduction and can cause life-threatening dysrhythmias."
+},
+{
+  "id": 145,
+  "exam": "MOHAP",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Deep Vein Thrombosis",
+  "question": "Which nursing intervention is the priority for a patient with suspected deep vein thrombosis (DVT)?",
+  "options": {
+    "A": "Massage the affected leg",
+    "B": "Encourage vigorous ambulation",
+    "C": "Maintain bed rest and notify the physician",
+    "D": "Apply warm compresses every hour without assessment"
+  },
+  "answer": "C",
+  "explanation": "Bed rest helps reduce the risk of embolization until the patient is evaluated and treated."
+},
+{
+  "id": 146,
+  "exam": "MOHAP",
+  "subject": "Gastrointestinal Nursing",
+  "topic": "Liver Cirrhosis",
+  "question": "The patient with liver cirrhosis receives 100 mL of 25% serum albumin intravenously. Which finding indicates that the albumin is having its desired effect?",
+  "options": {
+    "A": "Decreased blood pressure",
+    "B": "Increased serum albumin level",
+    "C": "Increased urine output",
+    "D": "Improved breathing pattern"
+  },
+  "answer": "C",
+  "explanation": "Albumin increases intravascular oncotic pressure, improving circulating volume and urine output."
+},
+{
+  "id": 147,
+  "exam": "MOHAP",
+  "subject": "Gastrointestinal Nursing",
+  "topic": "Upper Gastrointestinal Bleeding",
+  "question": "The nurse should suspect that a patient has bleeding in the upper gastrointestinal tract when the color of the patient's stool is:",
+  "options": {
+    "A": "Yellow",
+    "B": "Black",
+    "C": "Clay-colored",
+    "D": "Red"
+  },
+  "answer": "B",
+  "explanation": "Black, tarry stools (melena) are characteristic of upper gastrointestinal bleeding."
+},
+{
+  "id": 148,
+  "exam": "MOHAP",
+  "subject": "Nursing Management",
+  "topic": "Delegation",
+  "question": "A registered nurse delegates care to a practical nurse. The person most responsible for the safe performance of the care is:",
+  "options": {
+    "A": "Head nurse who is in charge of the unit",
+    "B": "The practical nurse assigned to provide the care",
+    "C": "The registered nurse who delegated the care to the practical nurse",
+    "D": "The nursing care coordinator who is the supervisor of the unit"
+  },
+  "answer": "C",
+  "explanation": "The registered nurse retains accountability for delegated nursing care, even after delegation."
+},
+{
+  "id": 149,
+  "exam": "MOHAP",
+  "subject": "Nutrition",
+  "topic": "Vitamin D",
+  "question": "A deficiency of which vitamin can affect the absorption of calcium?",
+  "options": {
+    "A": "Vitamin C",
+    "B": "Vitamin B6",
+    "C": "Vitamin D",
+    "D": "Vitamin B12"
+  },
+  "answer": "C",
+  "explanation": "Vitamin D promotes intestinal absorption of calcium and is essential for normal bone mineralization."
+},
+{
+  "id": 150,
+  "exam": "MOHAP",
+  "subject": "Critical Care Nursing",
+  "topic": "Central Venous Line Complications",
+  "question": "A patient with a central venous line develops sudden hypotension, tachycardia, cyanosis, tachypnea, and altered mental status. What is the most likely cause?",
+  "options": {
+    "A": "Air embolism",
+    "B": "Circulatory overload",
+    "C": "Venous thrombosis",
+    "D": "Developing bacteremia"
+  },
+  "answer": "A",
+  "explanation": "Air entering a central venous catheter can cause an air embolism, leading to sudden cardiovascular and respiratory compromise."
+},
+  {
+  "id": 151,
+  "exam": "MOHAP",
+  "subject": "Postoperative Nursing",
+  "topic": "Postoperative Assessment",
+  "question": "When taking routine postoperative observations on a patient who underwent an exploratory laparotomy, which finding requires immediate attention?",
+  "options": {
+    "A": "Serosanguineous drainage on the dressing",
+    "B": "Blood pressure of 105/65 mmHg",
+    "C": "Urinary output of 20 mL in the last hour",
+    "D": "Temperature of 37.6°C"
+  },
+  "answer": "C",
+  "explanation": "Urine output below 30 mL/hour may indicate inadequate renal perfusion or hypovolemia and requires prompt intervention."
+},
+{
+  "id": 152,
+  "exam": "MOHAP",
+  "subject": "Infection Control",
+  "topic": "Droplet Precautions",
+  "question": "When caring for a patient placed on droplet precautions, the nurse should:",
+  "options": {
+    "A": "Have the patient wear a HEPA mask",
+    "B": "Wear a surgical mask when within 1 meter (3 feet) of the patient",
+    "C": "Place the patient in a negative-pressure room",
+    "D": "Wear a disposable gown when entering the room"
+  },
+  "answer": "B",
+  "explanation": "Droplet precautions require healthcare workers to wear a surgical mask when within approximately 1 meter (3 feet) of the patient."
+},
+{
+  "id": 153,
+  "exam": "MOHAP",
+  "subject": "Obstetric Nursing",
+  "topic": "Miscarriage",
+  "question": "A patient who has had a miscarriage at 8 weeks' gestation is admitted to the hospital. The nurse should be alert for signs of:",
+  "options": {
+    "A": "Dehydration",
+    "B": "Subinvolution",
+    "C": "Hemorrhage",
+    "D": "Hypertension"
+  },
+  "answer": "C",
+  "explanation": "Hemorrhage is a major complication following miscarriage and requires close observation."
+},
+{
+  "id": 154,
+  "exam": "MOHAP",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Urinary Catheter Care",
+  "question": "A urinary drainage bag should be emptied as necessary and at least every 8 to 9 hours to prevent:",
+  "options": {
+    "A": "Pooling of urine in the tubing",
+    "B": "Reflux of urine into the bladder",
+    "C": "Pulling on the catheter",
+    "D": "Bacterial contamination"
+  },
+  "answer": "D",
+  "explanation": "Regular emptying of the drainage bag reduces bacterial growth and lowers the risk of catheter-associated urinary tract infection."
+},
+{
+  "id": 155,
+  "exam": "MOHAP",
+  "subject": "Palliative Care",
+  "topic": "Dyspnea",
+  "question": "Which statement accurately describes dyspnea in patients receiving end-of-life care?",
+  "options": {
+    "A": "Dyspnea occurs only in patients with lung disease.",
+    "B": "Dyspnea occurs in less than 50% of end-of-life patients.",
+    "C": "Dyspnea caused by increased fluid volume may improve with diuretics.",
+    "D": "Dyspnea may be caused only by long-term antibiotic therapy."
+  },
+  "answer": "C",
+  "explanation": "Fluid overload can contribute to dyspnea in end-of-life patients, and diuretics may provide symptomatic relief."
+},
+{
+  "id": 156,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Increased Intracranial Pressure",
+  "question": "The patient has a nursing diagnosis of altered cerebral tissue perfusion related to cerebral edema. An appropriate nursing intervention is to:",
+  "options": {
+    "A": "Elevate the head of the bed 30 degrees",
+    "B": "Provide a position of comfort with knee flexion",
+    "C": "Provide uninterrupted periods of rest",
+    "D": "Ensure adequate hydration with mannitol"
+  },
+  "answer": "A",
+  "explanation": "Elevating the head of the bed to 30° promotes venous drainage and helps reduce intracranial pressure."
+},
+{
+  "id": 157,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Allergic Reactions",
+  "question": "While assessing a patient, the nurse learns that the patient has a history of allergic rhinitis, asthma, and multiple food allergies. The nurse must:",
+  "options": {
+    "A": "Be alert for hypersensitivity responses to prescribed medications",
+    "B": "Encourage the patient to carry an epinephrine kit in case of an allergic reaction",
+    "C": "Advise the patient to use aspirin in case of febrile illness",
+    "D": "Admit the patient to a single room with limited exposure to healthcare personnel"
+  },
+  "answer": "A",
+  "explanation": "Patients with multiple allergies are at increased risk for hypersensitivity reactions to medications and should be monitored carefully."
+},
+{
+  "id": 158,
+  "exam": "MOHAP",
+  "subject": "Nutrition",
+  "topic": "Nasogastric Feeding",
+  "question": "The nurse should administer nasogastric tube (NGT) feeding slowly to reduce the risk of:",
+  "options": {
+    "A": "Abdominal distention",
+    "B": "Abdominal cramps",
+    "C": "Diarrhea",
+    "D": "Regurgitation"
+  },
+  "answer": "A",
+  "explanation": "Administering enteral feedings slowly helps prevent abdominal distention and improves feeding tolerance."
+},
+{
+  "id": 159,
+  "exam": "MOHAP",
+  "subject": "Nutrition",
+  "topic": "Vitamin D",
+  "question": "A deficiency of which vitamin can affect the absorption of calcium?",
+  "options": {
+    "A": "Vitamin C",
+    "B": "Vitamin B6",
+    "C": "Vitamin D",
+    "D": "Vitamin B12"
+  },
+  "answer": "C",
+  "explanation": "Vitamin D promotes intestinal absorption of calcium and is essential for normal bone mineralization."
+},
+{
+  "id": 160,
+  "exam": "MOHAP",
+  "subject": "Critical Care Nursing",
+  "topic": "Central Venous Line Complications",
+  "question": "A patient with a central venous line develops sudden hypotension, tachycardia, cyanosis, tachypnea, and altered mental status. What is the most likely cause?",
+  "options": {
+    "A": "Air embolism",
+    "B": "Circulatory overload",
+    "C": "Venous thrombosis",
+    "D": "Developing bacteremia"
+  },
+  "answer": "A",
+  "explanation": "Air entering a central venous catheter can cause an air embolism, leading to sudden cardiovascular and respiratory compromise."
+},
+{
+  "id": 161,
+  "exam": "MOHAP",
+  "subject": "Postoperative Nursing",
+  "topic": "Postoperative Assessment",
+  "question": "When taking routine postoperative observations on a patient who underwent an exploratory laparotomy, which finding requires immediate attention?",
+  "options": {
+    "A": "Serosanguineous drainage on the dressing",
+    "B": "Blood pressure of 105/65 mmHg",
+    "C": "Urinary output of 20 mL in the last hour",
+    "D": "Temperature of 37.6°C"
+  },
+  "answer": "C",
+  "explanation": "Urine output below 30 mL/hour may indicate inadequate renal perfusion or hypovolemia and requires prompt intervention."
+},
+{
+  "id": 162,
+  "exam": "MOHAP",
+  "subject": "Infection Control",
+  "topic": "Droplet Precautions",
+  "question": "When caring for a patient placed on droplet precautions, the nurse should:",
+  "options": {
+    "A": "Have the patient wear a HEPA mask",
+    "B": "Wear a surgical mask when within 1 meter (3 feet) of the patient",
+    "C": "Place the patient in a negative-pressure room",
+    "D": "Wear a disposable gown when entering the room"
+  },
+  "answer": "B",
+  "explanation": "Droplet precautions require healthcare workers to wear a surgical mask when within approximately 1 meter (3 feet) of the patient."
+},
+{
+  "id": 163,
+  "exam": "MOHAP",
+  "subject": "Obstetric Nursing",
+  "topic": "Miscarriage",
+  "question": "A patient who has had a miscarriage at 8 weeks' gestation is admitted to the hospital. The nurse should be alert for signs of:",
+  "options": {
+    "A": "Dehydration",
+    "B": "Subinvolution",
+    "C": "Hemorrhage",
+    "D": "Hypertension"
+  },
+  "answer": "C",
+  "explanation": "Hemorrhage is a major complication following miscarriage and requires close observation."
+},
+{
+  "id": 164,
+  "exam": "MOHAP",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Urinary Catheter Care",
+  "question": "A urinary drainage bag should be emptied as necessary and at least every 8 to 9 hours to prevent:",
+  "options": {
+    "A": "Pooling of urine in the tubing",
+    "B": "Reflux of urine into the bladder",
+    "C": "Pulling on the catheter",
+    "D": "Bacterial contamination"
+  },
+  "answer": "D",
+  "explanation": "Regular emptying of the drainage bag reduces bacterial growth and lowers the risk of catheter-associated urinary tract infection."
+},
+{
+  "id": 165,
+  "exam": "MOHAP",
+  "subject": "Palliative Care",
+  "topic": "Dyspnea",
+  "question": "Which statement accurately describes dyspnea in patients receiving end-of-life care?",
+  "options": {
+    "A": "Dyspnea occurs only in patients with lung disease.",
+    "B": "Dyspnea occurs in less than 50% of end-of-life patients.",
+    "C": "Dyspnea caused by increased fluid volume may improve with diuretics.",
+    "D": "Dyspnea may be caused only by long-term antibiotic therapy."
+  },
+  "answer": "C",
+  "explanation": "Fluid overload can contribute to dyspnea in end-of-life patients, and diuretics may provide symptomatic relief."
+},
+{
+  "id": 166,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Increased Intracranial Pressure",
+  "question": "The patient has a nursing diagnosis of altered cerebral tissue perfusion related to cerebral edema. An appropriate nursing intervention is to:",
+  "options": {
+    "A": "Elevate the head of the bed 30 degrees",
+    "B": "Provide a position of comfort with knee flexion",
+    "C": "Provide uninterrupted periods of rest",
+    "D": "Ensure adequate hydration with mannitol"
+  },
+  "answer": "A",
+  "explanation": "Elevating the head of the bed to 30° promotes venous drainage and helps reduce intracranial pressure."
+},
+{
+  "id": 167,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Allergic Reactions",
+  "question": "While assessing a patient, the nurse learns that the patient has a history of allergic rhinitis, asthma, and multiple food allergies. The nurse must:",
+  "options": {
+    "A": "Be alert for hypersensitivity responses to prescribed medications",
+    "B": "Encourage the patient to carry an epinephrine kit in case of an allergic reaction",
+    "C": "Advise the patient to use aspirin in case of febrile illness",
+    "D": "Admit the patient to a single room with limited exposure to healthcare personnel"
+  },
+  "answer": "A",
+  "explanation": "Patients with multiple allergies are at increased risk for hypersensitivity reactions to medications and should be monitored carefully."
+},
+{
+  "id": 168,
+  "exam": "MOHAP",
+  "subject": "Nutrition",
+  "topic": "Nasogastric Feeding",
+  "question": "The nurse should administer nasogastric tube (NGT) feeding slowly to reduce the risk of:",
+  "options": {
+    "A": "Abdominal distention",
+    "B": "Abdominal cramps",
+    "C": "Diarrhea",
+    "D": "Regurgitation"
+  },
+  "answer": "A",
+  "explanation": "Administering enteral feedings slowly helps prevent abdominal distention and improves feeding tolerance."
+},
+{
+  "id": 169,
+  "exam": "MOHAP",
+  "subject": "Postoperative Nursing",
+  "topic": "Pain Assessment",
+  "question": "A patient arrives in the Post Anesthesia Care Unit (PACU) complaining of pain after undergoing a right total hip arthroplasty. Which action should the nurse take to best assess the patient's pain?",
+  "options": {
+    "A": "Determine the patient's position during surgery and how long the patient remained in that position.",
+    "B": "Inspect the dressing, note the type and amount of drainage, and ensure the adhesive is not pulling on the skin.",
+    "C": "Ask the anesthesiologist what type of anesthesia was given and the last dose of pain medication.",
+    "D": "Assess the location, intensity, duration of pain, and the last dose and time of pain medication."
+  },
+  "answer": "D",
+  "explanation": "A comprehensive pain assessment includes the location, intensity, duration, and the effectiveness and timing of previous analgesics."
+},
+{
+  "id": 170,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Stroke Rehabilitation",
+  "question": "When caring for a patient with right-sided weakness following a stroke (CVA), which assistive device provides the best stability for ambulation?",
+  "options": {
+    "A": "Crutches",
+    "B": "Single straight cane",
+    "C": "Quad cane",
+    "D": "Walker"
+  },
+  "answer": "C",
+  "explanation": "A quad cane offers greater stability than a standard cane while allowing mobility for patients with unilateral weakness."
+},
+{
+  "id": 171,
+  "exam": "MOHAP",
+  "subject": "Orthopedic Nursing",
+  "topic": "Total Hip Replacement",
+  "question": "The nurse teaches a patient recovering from a total hip replacement that it is important to avoid:",
+  "options": {
+    "A": "Putting a pillow between the legs while sleeping",
+    "B": "Sitting with the legs crossed",
+    "C": "Abduction exercises of the affected leg",
+    "D": "Weight-bearing exercises on the affected leg for 6 weeks"
+  },
+  "answer": "B",
+  "explanation": "Crossing the legs can cause hip dislocation after total hip replacement and should be avoided."
+},
+{
+  "id": 172,
+  "exam": "MOHAP",
+  "subject": "Gastrointestinal Nursing",
+  "topic": "Duodenal Peptic Ulcer",
+  "question": "A patient with a duodenal peptic ulcer would describe the pain as:",
+  "options": {
+    "A": "Generalized burning sensation",
+    "B": "Intermittent colicky pain",
+    "C": "Gnawing sensation relieved by food",
+    "D": "Colicky pain intensified by food"
+  },
+  "answer": "C",
+  "explanation": "Duodenal ulcer pain is typically described as a gnawing pain that is relieved by food or antacids."
+},
+{
+  "id": 173,
+  "exam": "MOHAP",
+  "subject": "Nursing Management",
+  "topic": "Care Planning",
+  "question": "You have started work on a new ward. One of your patients has been on strict bed rest for 7 months following a cerebrovascular accident (CVA). On assessment, you find no reason for continued bed rest. What should the nurse do first?",
+  "options": {
+    "A": "Check with the nursing staff to determine the reason for the care plan before making changes.",
+    "B": "Assist the patient out of bed immediately since no contraindications are found.",
+    "C": "Discontinue the bed-rest order and begin ambulation.",
+    "D": "Ignore the care plan because the patient appears stable."
+  },
+  "answer": "A",
+  "explanation": "The nurse should first verify the rationale for the existing care plan before making any changes."
+},
+{
+  "id": 174,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "Warfarin Therapy",
+  "question": "A nurse is caring for a patient receiving warfarin therapy. Which laboratory test is the most appropriate to monitor its therapeutic effect?",
+  "options": {
+    "A": "Activated Partial Thromboplastin Time (aPTT)",
+    "B": "International Normalized Ratio (INR)",
+    "C": "Bleeding Time",
+    "D": "Platelet Count"
+  },
+  "answer": "B",
+  "explanation": "Warfarin therapy is monitored using the Prothrombin Time (PT), reported as the International Normalized Ratio (INR)."
+},
+{
+  "id": 175,
+  "exam": "MOHAP",
+  "subject": "Respiratory Nursing",
+  "topic": "COPD",
+  "question": "A nurse is caring for a patient with chronic obstructive pulmonary disease (COPD). Which oxygen delivery method is most appropriate for long-term oxygen therapy?",
+  "options": {
+    "A": "Non-rebreather mask",
+    "B": "Venturi mask",
+    "C": "Nasal cannula at low flow",
+    "D": "Simple face mask"
+  },
+  "answer": "C",
+  "explanation": "Low-flow oxygen via nasal cannula is commonly used for long-term oxygen therapy in stable COPD patients."
+},
+{
+  "id": 176,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hepatic Dysfunction",
+  "question": "Which of the following laboratory blood values is expected to be decreased in hepatic dysfunction?",
+  "options": {
+    "A": "Albumin",
+    "B": "Bilirubin",
+    "C": "Ammonia",
+    "D": "ALT and AST"
+  },
+  "answer": "A",
+  "explanation": "The liver synthesizes albumin, so hepatic dysfunction commonly results in decreased serum albumin levels."
+},
+{
+  "id": 177,
+  "exam": "MOHAP",
+  "subject": "ENT Nursing",
+  "topic": "Allergic Rhinitis",
+  "question": "A patient with allergic rhinitis reports severe nasal congestion, sneezing, and watery eyes at various times of the year. To teach the patient to control these symptoms the nurse advises the patient to:",
+  "options": {
+    "A": "Avoid all over-the-counter intranasal sprays",
+    "B": "Limit the use of nasal decongestant sprays to 10 days",
+    "C": "Use oral decongestants at bedtime to prevent symptoms during the night",
+    "D": "Keep a diary of when allergic reactions occur and what precipitates them"
+  },
+  "answer": "D",
+  "explanation": "Keeping a symptom diary helps identify allergens and triggers so they can be avoided."
+},
+{
+  "id": 178,
+  "exam": "MOHAP",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Cardiovascular Assessment",
+  "question": "The apical pulse can be best auscultated at the:",
+  "options": {
+    "A": "Left 2nd intercostal space lateral to the midclavicular line",
+    "B": "Left 2nd intercostal space at the left sternal border",
+    "C": "Left 5th intercostal space at the midclavicular line",
+    "D": "Left 5th intercostal space at the midaxillary line"
+  },
+  "answer": "C",
+  "explanation": "The apical impulse (point of maximal impulse) is normally located at the left 5th intercostal space along the midclavicular line."
+},
+{
+  "id": 179,
+  "exam": "MOHAP",
+  "subject": "Endocrine Nursing",
+  "topic": "Postoperative Diabetes Management",
+  "question": "The nurse notes that there are no physician's orders regarding Fatima's postoperative daily insulin dose. The most appropriate action by the nurse is to:",
+  "options": {
+    "A": "Withhold any insulin dose since none is ordered and the patient is NPO",
+    "B": "Call the physician to clarify whether insulin should be given and at what dose",
+    "C": "Give half the usual daily insulin dose since she will not be eating in the morning",
+    "D": "Give the patient her usual daily insulin dose since the stress of surgery will increase her blood glucose"
+  },
+  "answer": "B",
+  "explanation": "The nurse should clarify the medication order with the physician rather than making an independent decision about insulin dosing."
+},
+{
+  "id": 180,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Hydrocephalus",
+  "question": "An 8-month-old infant is diagnosed with communicating hydrocephalus. The nurse notices that intracranial pressure is increasing from the following changes in his vital signs:",
+  "options": {
+    "A": "Bradycardia, hypotension and hypothermia",
+    "B": "Bradycardia, hypertension and hyperthermia",
+    "C": "Tachycardia, hypotension and hyperthermia",
+    "D": "Tachycardia, hypertension and hypothermia"
+  },
+  "answer": "B",
+  "explanation": "Increased intracranial pressure commonly presents with bradycardia and hypertension (Cushing response)."
+},
+  {
+  "id": 181,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Thalassemia",
+  "question": "Whenever a child with thalassemia comes for blood transfusion, he is administered Desferrioxamine (Desferal). The action of this drug is to:",
+  "options": {
+    "A": "Inhibit the inflammatory process",
+    "B": "Enhance iron excretion",
+    "C": "Antagonize the effect of vitamin C",
+    "D": "Increase red blood cell production"
+  },
+  "answer": "B",
+  "explanation": "Desferrioxamine is an iron-chelating agent used to remove excess iron caused by repeated blood transfusions."
+},
+{
+  "id": 182,
+  "exam": "MOHAP",
+  "subject": "Psychiatric Nursing",
+  "topic": "Therapeutic Communication",
+  "question": "A patient becomes angry and threatens to leave the hospital unless the physician reviews the reason for the patient's delay in discharge. The patient has a medication order for agitation available PRN but refuses the medication and requests a drink of orange juice instead. What should the nurse do?",
+  "options": {
+    "A": "Secretly slip the PRN medication into the orange juice and give it to the patient",
+    "B": "Give the patient the orange juice and tell the patient that a staff member is attempting to call the physician",
+    "C": "Inform the patient that staff is unable to force anyone to stay in the hospital",
+    "D": "Inform the patient that nothing can be done until the morning"
+  },
+  "answer": "B",
+  "explanation": "The nurse should respect the patient's refusal, provide support, and contact the physician."
+},
+{
+  "id": 183,
+  "exam": "MOHAP",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Intravenous Therapy",
+  "question": "A nurse prepares to set up a secondary intravenous (IV) cannula. The primary IV infusing is normal saline. In order for the secondary cannula to infuse correctly, the nurse should set up the primary IV to:",
+  "options": {
+    "A": "Hang higher than the secondary IV",
+    "B": "Hang at the same level as the secondary IV",
+    "C": "Hang lower than the secondary IV",
+    "D": "Discontinue before the secondary IV starts"
+  },
+  "answer": "C",
+  "explanation": "The primary IV bag should hang lower so the secondary (piggyback) solution infuses first."
+},
+{
+  "id": 184,
+  "exam": "MOHAP",
+  "subject": "Critical Care Nursing",
+  "topic": "Central Venous Pressure",
+  "question": "A 21-year-old woman is being treated for injuries sustained in a car accident. The patient has a central venous pressure (CVP) line in situ. The nurse recognizes that CVP measurements:",
+  "options": {
+    "A": "Estimate cardiac output",
+    "B": "Assess myocardial workload",
+    "C": "Determine need for fluid replacement",
+    "D": "Determine ventilation-perfusion mismatch"
+  },
+  "answer": "C",
+  "explanation": "CVP reflects right atrial pressure and helps assess fluid volume status."
+},
+{
+  "id": 185,
+  "exam": "MOHAP",
+  "subject": "Orthopedic Nursing",
+  "topic": "Cast Care",
+  "question": "After application of a cast in the upper extremity, the patient complains of severe pain in the affected site. Which of the following should the nurse initiate?",
+  "options": {
+    "A": "Administer analgesics as ordered",
+    "B": "Assess neurovascular status",
+    "C": "Notify the physician",
+    "D": "Pad the edges of the cast"
+  },
+  "answer": "B",
+  "explanation": "Severe pain after cast application may indicate neurovascular compromise and requires immediate assessment."
+},
+{
+  "id": 186,
+  "exam": "MOHAP",
+  "subject": "Rehabilitation Nursing",
+  "topic": "Activities of Daily Living",
+  "question": "A nurse is assessing a stroke patient's ability to bathe, dress, and eat independently. This assessment evaluates:",
+  "options": {
+    "A": "Basic self-care including bathing, eating, and dressing (Activities of Daily Living)",
+    "B": "Performing medical procedures",
+    "C": "Determining the condition of internal organs",
+    "D": "Interaction and involvement with society and community"
+  },
+  "answer": "A",
+  "explanation": "Activities of Daily Living (ADLs) assess a person's ability to perform essential self-care tasks."
+},
+{
+  "id": 187,
+  "exam": "MOHAP",
+  "subject": "Obstetric Nursing",
+  "topic": "Pregnancy-Induced Hypertension",
+  "question": "The best dietary advice a nurse can give to a woman diagnosed with mild pregnancy-induced hypertension is to:",
+  "options": {
+    "A": "Follow a strict low-salt diet",
+    "B": "Restrict fluid intake",
+    "C": "Increase protein intake",
+    "D": "Maintain a well-balanced diet"
+  },
+  "answer": "D",
+  "explanation": "Women with mild PIH should maintain a nutritious, well-balanced diet. Routine salt or fluid restriction is not recommended."
+},
+{
+  "id": 188,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Vital Signs",
+  "question": "A nurse is making rounds taking vital signs. Which of the following vital signs is abnormal?",
+  "options": {
+    "A": "11-year-old male: 90 bpm, 22 respirations/min, 100/70 mmHg",
+    "B": "13-year-old female: 105 bpm, 22 respirations/min, 105/60 mmHg",
+    "C": "5-year-old male: 102 bpm, 24 respirations/min, 90/65 mmHg",
+    "D": "6-year-old female: 100 bpm, 26 respirations/min, 90/70 mmHg"
+  },
+  "answer": "B",
+  "explanation": "A heart rate of 105 bpm is relatively high for a resting 13-year-old and is the abnormal set of vital signs among the options."
+},
+{
+  "id": 189,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Seizure Management",
+  "question": "Which of the following actions is the most appropriate when the nurse is responding to a patient during a tonic-clonic seizure?",
+  "options": {
+    "A": "Restrain the patient",
+    "B": "Protect the patient from harm",
+    "C": "Minimize noise and light stimulus",
+    "D": "Apply oxygen by mask or nasal cannula"
+  },
+  "answer": "B",
+  "explanation": "During a seizure, the priority is to protect the patient from injury without restraining movement."
+},
+{
+  "id": 190,
+  "exam": "MOHAP",
+  "subject": "Postoperative Nursing",
+  "topic": "PACU Assessment",
+  "question": "The patient's pre-operative blood pressure was 120/68 mmHg. On admission to the Post Anesthesia Care Unit (PACU), the blood pressure was 124/70 mmHg. Thirty minutes after admission, the patient's blood pressure falls to 112/60 mmHg, pulse to 72 bpm, and the skin appears warm and dry. The most appropriate nursing action is:",
+  "options": {
+    "A": "Raise the head of the bed",
+    "B": "Notify the anesthetist immediately",
+    "C": "Increase the rate of IV fluid replacement",
+    "D": "Continue to monitor the patient"
+  },
+  "answer": "D",
+  "explanation": "The patient's vital signs remain within acceptable limits after surgery, so continued observation is appropriate."
+},
+{
+  "id": 191,
+  "exam": "MOHAP",
+  "subject": "Nursing Ethics & Legal Issues",
+  "topic": "Questioning Medical Orders",
+  "question": "An 84-year-old man has arthritis and is admitted for a severely edematous knee. The physician orders heat packs every 2 hours and you feel this order may worsen the tissue congestion. An appropriate nursing action would be:",
+  "options": {
+    "A": "Contact the physician and discuss your concerns about the order",
+    "B": "Include the order in the nursing care plan and monitor outcome",
+    "C": "Complete an incident report form and document concerns in the nursing notes",
+    "D": "Involve the patient by asking what his treatment preference is"
+  },
+  "answer": "A",
+  "explanation": "When an order appears potentially harmful, the nurse should clarify it with the physician before implementation."
+},
+{
+  "id": 192,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Increased Intracranial Pressure",
+  "question": "The nurse plans the care for a patient with increased intracranial pressure. The best position for this patient is:",
+  "options": {
+    "A": "Keep the patient in a supine position until stable",
+    "B": "Elevate the head of the bed to 30 degrees",
+    "C": "Maintain the patient on the right side with head supported on a pillow",
+    "D": "Keep the patient in a semi-sitting position"
+  },
+  "answer": "B",
+  "explanation": "Elevating the head of the bed 30° promotes cerebral venous drainage and helps reduce intracranial pressure."
+},
+{
+  "id": 193,
+  "exam": "MOHAP",
+  "subject": "Critical Care Nursing",
+  "topic": "Arterial Blood Gas Analysis",
+  "question": "The coronary care nurse draws an arterial blood gas (ABG) sample to assess a patient for acidosis. A normal arterial blood pH is:",
+  "options": {
+    "A": "7.00 to 7.24",
+    "B": "7.25 to 7.34",
+    "C": "7.35 to 7.45",
+    "D": "7.50 to 7.60"
+  },
+  "answer": "C",
+  "explanation": "The normal arterial blood pH range is 7.35 to 7.45."
+},
+{
+  "id": 194,
+  "exam": "MOHAP",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Specimen Collection",
+  "question": "A patient voided a urine specimen at 9:00 AM. The specimen should be sent to the laboratory before:",
+  "options": {
+    "A": "9:30 AM",
+    "B": "10:00 AM",
+    "C": "10:30 AM",
+    "D": "11:00 AM"
+  },
+  "answer": "A",
+  "explanation": "Fresh urine specimens should be sent to the laboratory promptly, ideally within 30 minutes."
+},
+{
+  "id": 195,
+  "exam": "MOHAP",
+  "subject": "Wound Care",
+  "topic": "Wet-to-Dry Dressing",
+  "question": "Which of the following correctly describes wound packing in a wet-to-dry dressing?",
+  "options": {
+    "A": "Pack gauze into the wound tightly",
+    "B": "Overlap the wound edges with wet packing",
+    "C": "Pack the wound with slightly moistened gauze",
+    "D": "Use gauze well saturated with saline for packing the wound"
+  },
+  "answer": "C",
+  "explanation": "Wet-to-dry dressings use slightly moistened gauze to fill the wound without excessive pressure."
+},
+{
+  "id": 196,
+  "exam": "MOHAP",
+  "subject": "Psychiatric Nursing",
+  "topic": "Group Therapy",
+  "question": "Psychotherapy groups in which all members join at the same time and no new members are added are called:",
+  "options": {
+    "A": "Closed groups",
+    "B": "Open groups",
+    "C": "Homogeneous groups",
+    "D": "Heterogeneous groups"
+  },
+  "answer": "A",
+  "explanation": "Closed groups begin and end with the same members throughout therapy."
+},
+{
+  "id": 197,
+  "exam": "MOHAP",
+  "subject": "Psychiatric Nursing",
+  "topic": "Therapeutic Relationship",
+  "question": "Which of the following is an essential principle in the therapeutic relationship?",
+  "options": {
+    "A": "Using medical jargon to show expertise",
+    "B": "Speaking in a loud voice",
+    "C": "Establishing trust and rapport",
+    "D": "Providing all information in a single, lengthy session"
+  },
+  "answer": "C",
+  "explanation": "Trust and rapport form the foundation of an effective therapeutic nurse-patient relationship."
+},
+{
+  "id": 198,
+  "exam": "MOHAP",
+  "subject": "Postoperative Nursing",
+  "topic": "Prevention of Thrombophlebitis",
+  "question": "To prevent post-operative thrombophlebitis, which one of the following measures is effective?",
+  "options": {
+    "A": "Elevation of the leg on two pillows",
+    "B": "Using compression stockings at night",
+    "C": "Massage the calf muscle frequently",
+    "D": "Performing leg exercises"
+  },
+  "answer": "D",
+  "explanation": "Early leg exercises promote venous return and are an effective measure to reduce the risk of postoperative thrombophlebitis."
+},
+{
+  "id": 199,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Nephrotic Syndrome",
+  "question": "The mother of a child with nephrotic syndrome asks why her child must be weighed each morning. The nurse's response should be based on the fact that this is important to determine the:",
+  "options": {
+    "A": "Nutritional status",
+    "B": "Water retention",
+    "C": "Medication doses",
+    "D": "Blood volume"
+  },
+  "answer": "B",
+  "explanation": "Daily weight is the most accurate indicator of fluid retention or loss in children with nephrotic syndrome."
+},
+{
+  "id": 200,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hepatic Encephalopathy",
+  "question": "When caring for a patient with hepatic encephalopathy the nurse may carry out the following orders: give enemas, provide a low-protein diet, and limit physical activities. These measures are performed to:",
+  "options": {
+    "A": "Minimize edema",
+    "B": "Decrease portal pressure",
+    "C": "Reduce hyperkalemia",
+    "D": "Decrease serum ammonia"
+  },
+  "answer": "D",
+  "explanation": "These interventions reduce ammonia production and absorption, thereby improving hepatic encephalopathy."
+},
+{
+  "id": 201,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "Medication Calculation",
+  "question": "A patient is to receive 2.5 mg of morphine sulfate. The ampoule contains 1000 mcg/mL. How much morphine should the nurse administer?",
+  "options": {
+    "A": "0.25 mL",
+    "B": "1 mL",
+    "C": "1.5 mL",
+    "D": "2.5 mL"
+  },
+  "answer": "D",
+  "explanation": "1000 mcg = 1 mg. Therefore, 2.5 mg = 2500 mcg. At a concentration of 1000 mcg/mL, administer 2.5 mL."
+},
+{
+  "id": 202,
+  "exam": "MOHAP",
+  "subject": "Postoperative Nursing",
+  "topic": "Immediate Postoperative Care",
+  "question": "When the post-operative patient returns to the surgical unit, the priority is to:",
+  "options": {
+    "A": "Assess the patient's pain",
+    "B": "Measure the patient's vital signs",
+    "C": "Monitor the rate of the IV infusion",
+    "D": "Check the physician's post-operative orders"
+  },
+  "answer": "B",
+  "explanation": "Assessment of vital signs is the immediate priority to detect early postoperative complications."
+},
+{
+  "id": 203,
+  "exam": "MOHAP",
+  "subject": "Medication Safety",
+  "topic": "Medication Administration",
+  "question": "While preparing the midday medications, the nurse finds difficulty reading the label on a medicine bottle. The best action by the nurse is to:",
+  "options": {
+    "A": "Document that it could not be given due to difficulty in reading the label",
+    "B": "Make out a new label with clear handwriting using adhesive tape to attach it",
+    "C": "Ask the pharmacist to replace it with a clearly labeled bottle",
+    "D": "Give the medication if it is similar to a bottle present on the trolley"
+  },
+  "answer": "C",
+  "explanation": "Medications with unclear labels should never be administered. The pharmacist should replace the container."
+},
+{
+  "id": 204,
+  "exam": "MOHAP",
+  "subject": "Critical Care Nursing",
+  "topic": "Defibrillation",
+  "question": "To ensure safe practice during defibrillation, the nurse must:",
+  "options": {
+    "A": "Cover paddles with electrode gel",
+    "B": "Avoid touching the patient's bed",
+    "C": "Remove paddles after the shock",
+    "D": "Synchronize prior to shock delivery"
+  },
+  "answer": "B",
+  "explanation": "Everyone must be clear of the patient and bed during defibrillation to prevent accidental electrical shock."
+},
+{
+  "id": 205,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "IV Flow Rate Calculation",
+  "question": "The physician orders heparin 40,000 units in 1 liter of D5W IV to infuse at 1000 units/hour. What is the flow rate in milliliters per hour?",
+  "options": {
+    "A": "250 mL/hr",
+    "B": "25 mL/hr",
+    "C": "2.5 mL/hr",
+    "D": "0.25 mL/hr"
+  },
+  "answer": "B",
+  "explanation": "40,000 units are in 1000 mL. Therefore, 1000 units/hour equals 25 mL/hour."
+},
+{
+  "id": 206,
+  "exam": "MOHAP",
+  "subject": "Psychiatric Nursing",
+  "topic": "Depression Assessment",
+  "question": "What two behaviors are important when documenting the depth of the patient's depression?",
+  "options": {
+    "A": "Orientation and appearance",
+    "B": "Helplessness and hopelessness",
+    "C": "Affect and thought processes",
+    "D": "Mood and impulse control"
+  },
+  "answer": "B",
+  "explanation": "Feelings of helplessness and hopelessness are key indicators of the severity of depression."
+},
+{
+  "id": 207,
+  "exam": "MOHAP",
+  "subject": "Obstetric Nursing",
+  "topic": "Ectopic Pregnancy",
+  "question": "The nurse knows that the greatest risk for a patient with a ruptured ectopic pregnancy is:",
+  "options": {
+    "A": "Hemorrhage leading to hypovolemic shock",
+    "B": "Strictures and scarring of the fallopian tube",
+    "C": "Adhesions and scarring from blood in the abdomen",
+    "D": "Infertility resulting from treatment with a salpingectomy"
+  },
+  "answer": "A",
+  "explanation": "A ruptured ectopic pregnancy can cause massive internal bleeding and life-threatening hypovolemic shock."
+},
+{
+  "id": 208,
+  "exam": "MOHAP",
+  "subject": "Medication Safety",
+  "topic": "Medication Administration",
+  "question": "The nurse manager has just prepared a medication for a patient and asks you to give the medication. Which of the following is the best response to the nurse manager's request?",
+  "options": {
+    "A": "Give the patient the medication and record it on the chart.",
+    "B": "Ask another nursing colleague to give and record the medication.",
+    "C": "Explain that you cannot give a medication that you did not prepare.",
+    "D": "Give the medication and ask the nurse manager to record it on the chart."
+  },
+  "answer": "C",
+  "explanation": "For medication safety and accountability, nurses should administer only medications they have personally prepared and verified."
+},
+{
+  "id": 209,
+  "exam": "MOHAP",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Dehydration",
+  "question": "A patient presents to the emergency department with diminished and thready pulses, hypotension, an increased pulse rate, weight loss, lethargy, decreased urine output, and increased urine specific gravity. The nurse should suspect:",
+  "options": {
+    "A": "Renal failure",
+    "B": "Sepsis",
+    "C": "Pneumonia",
+    "D": "Dehydration"
+  },
+  "answer": "D",
+  "explanation": "These findings are classic signs of dehydration and hypovolemia."
+},
+{
+  "id": 210,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "IV Infusion Rate Calculation",
+  "question": "A patient is to receive 50 mL of fluid in 30 minutes. The infusion pump should be set to deliver how many milliliters per hour?",
+  "options": {
+    "A": "25 mL/hr",
+    "B": "50 mL/hr",
+    "C": "75 mL/hr",
+    "D": "100 mL/hr"
+  },
+  "answer": "D",
+  "explanation": "50 mL in 30 minutes equals 100 mL/hour (50 × 2 = 100)."
+},
+  {
+  "id": 211,
+  "exam": "MOHAP",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Nitroglycerin Therapy",
+  "question": "A patient with a history of angina pectoris arrives in the emergency department complaining of headache, visual disturbances, dizziness, flushing, perspiration, and palpitations. The nurse should suspect:",
+  "options": {
+    "A": "An overdose of sublingual nitroglycerin",
+    "B": "The onset of a myocardial infarction",
+    "C": "The patient has been overexercising",
+    "D": "The beginning of a severe chest infection"
+  },
+  "answer": "A",
+  "explanation": "Headache, flushing, dizziness, and hypotension are common manifestations of nitroglycerin overdose."
+},
+{
+  "id": 212,
+  "exam": "MOHAP",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Cardiac Pacemaker",
+  "question": "The purpose of a cardiac pacemaker is to:",
+  "options": {
+    "A": "Initiate and maintain the heart rate when the SA node is unable to do so",
+    "B": "Stabilize the heart rate when it is above 100 beats per minute",
+    "C": "Stabilize the heart when the patient has had a heart attack",
+    "D": "Regulate the heart when the patient is going for open-heart surgery"
+  },
+  "answer": "A",
+  "explanation": "A pacemaker generates electrical impulses when the heart's natural pacemaker fails."
+},
+{
+  "id": 213,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Metabolic Disorders",
+  "question": "A nurse is monitoring a patient with genetic alterations affecting enzyme production. Which finding is expected?",
+  "options": {
+    "A": "Improved cellular energy efficiency",
+    "B": "Enhanced immune response activity",
+    "C": "Abnormal metabolic pathway regulation",
+    "D": "Reduced hormone receptor sensitivity"
+  },
+  "answer": "C",
+  "explanation": "Enzyme deficiencies disrupt normal metabolic pathways, leading to abnormal metabolism."
+},
+{
+  "id": 214,
+  "exam": "MOHAP",
+  "subject": "Psychiatric Nursing",
+  "topic": "Obsessive-Compulsive Disorder",
+  "question": "A 39-year-old mother with OCD has become immobilized by elaborate hand-washing rituals. These rituals are most commonly associated with:",
+  "options": {
+    "A": "Problems with being too conscientious",
+    "B": "Problems with anger and remorse",
+    "C": "Feelings of guilt and inadequacy",
+    "D": "Feelings of unworthiness and hopelessness"
+  },
+  "answer": "C",
+  "explanation": "Individuals with OCD commonly experience excessive guilt and feelings of inadequacy."
+},
+{
+  "id": 215,
+  "exam": "MOHAP",
+  "subject": "Nursing Management",
+  "topic": "Floating to Another Unit",
+  "question": "A nurse has been working in a general hospital on the same medical unit for 6 years. The Behavioral Unit is short-staffed and the nurse is asked to work her shift in this other unit. What would be the expected response of the nurse to this request?",
+  "options": {
+    "A": "I will go to the unit and hopefully the behavioral health staff members will assist me with my assignment.",
+    "B": "I cannot go. I have no previous behavioral health experience. I do not want to reduce the quality of patient care.",
+    "C": "I have no previous behavioral health experience. I am willing to go and help with any duties that are similar to those I perform on my unit.",
+    "D": "I should not be expected to float to another unit without a proper orientation. I will fill out an incident report if I am sent there."
+  },
+  "answer": "C",
+  "explanation": "A nurse may float to another unit and should accept assignments within their competence while seeking assistance when needed."
+},
+{
+  "id": 216,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "Dosage Calculation",
+  "question": "Order: Allopurinol 450 mg PO daily. Drug available: Allopurinol 300 mg scored tablets. Which of the following will you administer?",
+  "options": {
+    "A": "0.5 tablet",
+    "B": "1.5 tablets",
+    "C": "2 tablets",
+    "D": "2.5 tablets"
+  },
+  "answer": "B",
+  "explanation": "450 mg ÷ 300 mg = 1.5 tablets."
+},
+{
+  "id": 217,
+  "exam": "MOHAP",
+  "subject": "Endocrine Nursing",
+  "topic": "Diabetic Foot Care",
+  "question": "The correct way to trim the toenails of a patient with diabetes is to:",
+  "options": {
+    "A": "Cut the nails in a curve and then file",
+    "B": "Cut the nails straight across and then file",
+    "C": "File the nails straight across and square only",
+    "D": "File the nails in a curved arch with low sides only"
+  },
+  "answer": "C",
+  "explanation": "Diabetic foot care recommends filing nails straight across and square to reduce the risk of ingrown toenails and injury."
+},
+{
+  "id": 218,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "Dosage Calculation",
+  "question": "A patient complains of pain in the right arm. The physician orders codeine 45 mg and aspirin 650 mg every 4 hours PRN. Each codeine tablet contains 15 mg of codeine and each aspirin tablet contains 325 mg of aspirin. What should the nurse administer?",
+  "options": {
+    "A": "2 codeine tablets and 4 aspirin tablets",
+    "B": "4 codeine tablets and 3½ aspirin tablets",
+    "C": "3 codeine tablets and 2 aspirin tablets",
+    "D": "3 codeine tablets and 3 aspirin tablets"
+  },
+  "answer": "C",
+  "explanation": "45 mg codeine requires 3 tablets, and 650 mg aspirin requires 2 tablets."
+},
+{
+  "id": 219,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Stroke Care",
+  "question": "During the acute phase of a cerebrovascular accident (CVA), the nurse should maintain the patient in which of the following positions?",
+  "options": {
+    "A": "Semi-prone with the head of the bed elevated 60 to 90 degrees",
+    "B": "Lateral, with the head of the bed flat",
+    "C": "Prone, with the head of the bed flat",
+    "D": "Supine, with the head of the bed elevated 30 to 45 degrees"
+  },
+  "answer": "D",
+  "explanation": "Elevating the head of the bed about 30° promotes venous drainage and helps control intracranial pressure in acute stroke."
+},
+{
+  "id": 220,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Hypokalemia",
+  "question": "A patient on diuretics has had vomiting and diarrhea for the past 3 days. Which of the following is this patient most at risk for developing?",
+  "options": {
+    "A": "Hypokalemia and cardiac arrhythmias",
+    "B": "Hypercalcemia and polyuria",
+    "C": "Dehydration and hyperglycemia",
+    "D": "Hyperalimentation and heart block"
+  },
+  "answer": "A",
+  "explanation": "Diuretics combined with vomiting and diarrhea increase potassium loss, leading to hypokalemia and potentially life-threatening cardiac arrhythmias."
+},
+{
+  "id": 221,
+  "exam": "MOHAP",
+  "subject": "Emergency Nursing",
+  "topic": "Hypertensive Crisis",
+  "question": "A patient admitted to the hospital in hypertensive crisis is ordered to receive Hydralazine (Apresoline) 20 mg IV stat for blood pressure greater than 190/100 mmHg. The best response of the nurse to this order is to:",
+  "options": {
+    "A": "Give the dose immediately and once",
+    "B": "Give medication if the patient's blood pressure is greater than 190/100 mmHg",
+    "C": "Call the physician because the order is not clear",
+    "D": "Administer the dose and repeat as necessary"
+  },
+  "answer": "A",
+  "explanation": "A STAT order requires the medication to be administered immediately as a one-time dose."
+},
+{
+  "id": 222,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Head Injury",
+  "question": "Which of the following is the most appropriate first action for the nurse to take for a preschooler who has fallen and has a hematoma formed on the temporal bone?",
+  "options": {
+    "A": "Encourage a nap",
+    "B": "Give pain medication",
+    "C": "Apply ice and monitor vital signs",
+    "D": "Allow the child to continue activities"
+  },
+  "answer": "C",
+  "explanation": "Applying ice helps reduce swelling while monitoring vital signs allows early detection of neurological deterioration."
+},
+{
+  "id": 223,
+  "exam": "MOHAP",
+  "subject": "Postoperative Nursing",
+  "topic": "Urine Output",
+  "question": "The minimal amount of urine that a post-operative patient weighing 60 kg should pass is:",
+  "options": {
+    "A": "120 mL/hr",
+    "B": "90 mL/hr",
+    "C": "60 mL/hr",
+    "D": "30 mL/hr"
+  },
+  "answer": "D",
+  "explanation": "Normal urine output in adults is at least 0.5 mL/kg/hr. For a 60 kg patient, the minimum is 30 mL/hr."
+},
+{
+  "id": 224,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Post-Tonsillectomy Care",
+  "question": "You are the nurse providing post-operative care for a 9-year-old boy who is 6 hours post-tonsillectomy. He is sleeping, but on routine observation you notice that his pulse has increased, he seems to be restless and is trying to swallow frequently. Your immediate action would be:",
+  "options": {
+    "A": "Apply an ice collar to reduce discomfort",
+    "B": "Allow the child to keep sleeping and record observations",
+    "C": "Wake him and offer some ice chips to suck",
+    "D": "Check inside his mouth for any signs of bleeding and notify the physician"
+  },
+  "answer": "D",
+  "explanation": "Frequent swallowing and tachycardia after tonsillectomy are signs of hemorrhage and require immediate assessment."
+},
+{
+  "id": 225,
+  "exam": "MOHAP",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Rectal Suppository Administration",
+  "question": "When inserting a rectal suppository for a patient, the nurse should:",
+  "options": {
+    "A": "Insert the suppository while the patient performs the Valsalva maneuver",
+    "B": "Place the patient in a supine position",
+    "C": "Position the suppository beyond the muscle sphincter of the rectum",
+    "D": "Insert the suppository ½ inch into the rectum"
+  },
+  "answer": "C",
+  "explanation": "The suppository should be inserted beyond the internal anal sphincter to prevent expulsion."
+},
+{
+  "id": 226,
+  "exam": "MOHAP",
+  "subject": "Respiratory Nursing",
+  "topic": "Pneumonia",
+  "question": "A patient with pneumonia is coughing up purulent thick sputum. Which one of the following nursing measures is most likely helpful to loosen the secretions?",
+  "options": {
+    "A": "Postural drainage",
+    "B": "Breathing humidified air",
+    "C": "Percussion over the affected lung",
+    "D": "Coughing and deep breathing exercises"
+  },
+  "answer": "B",
+  "explanation": "Humidified air helps thin thick respiratory secretions, making them easier to expectorate."
+},
+{
+  "id": 227,
+  "exam": "MOHAP",
+  "subject": "Renal Nursing",
+  "topic": "Acute Renal Failure",
+  "question": "A patient is admitted to a hospital with acute renal failure. The patient wakes up complaining of abdominal pain. On assessment, the nurse observes edema to the patient's ankles and distended neck veins. The patient is dyspneic with a blood pressure of 200/96 mmHg. The proper nursing diagnosis for this patient is:",
+  "options": {
+    "A": "Deficient fluid volume related to disease process",
+    "B": "Excess fluid volume related to decreased glomerular filtration rate",
+    "C": "Knowledge deficit related to proper medication regimen",
+    "D": "Acute pain related to renal edema"
+  },
+  "answer": "B",
+  "explanation": "Acute renal failure commonly causes fluid retention, resulting in edema, hypertension, and jugular venous distention."
+},
+{
+  "id": 228,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Stroke",
+  "question": "A patient arrives at the emergency department with slurred speech and a right facial droop. The patient's relative states the patient is 'not himself.' On assessment, the nurse finds paresthesia to the right side of the body, receptive aphasia, hemianopia, and altered cognitive abilities. The nurse should suspect:",
+  "options": {
+    "A": "A narcotic overdose",
+    "B": "Parkinson's disease",
+    "C": "Alcohol withdrawal",
+    "D": "A cerebrovascular accident (CVA)"
+  },
+  "answer": "D",
+  "explanation": "These focal neurological deficits are characteristic of an acute cerebrovascular accident (stroke)."
+},
+{
+  "id": 229,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Fluid and Electrolyte Balance",
+  "question": "The nurse is preparing teaching plans for several patients. The nurse should recognize which of the following patients is at greatest risk for fluid and electrolyte imbalance?",
+  "options": {
+    "A": "A 2-year-old patient who is receiving gastrostomy feedings",
+    "B": "A 20-year-old patient with a sigmoid colostomy",
+    "C": "A 40-year-old patient who is 3 days post-operative with an ileostomy",
+    "D": "A 60-year-old patient who is 8 hours post-renal arteriography"
+  },
+  "answer": "C",
+  "explanation": "An ileostomy produces large fluid and electrolyte losses, especially during the early postoperative period."
+},
+{
+  "id": 230,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Congenital Heart Disease",
+  "question": "A 3-month-old infant is admitted with a diagnosis of ventricular septal defect (VSD). The physical assessment for this infant would reveal:",
+  "options": {
+    "A": "High-pitched cry",
+    "B": "Harsh heart murmur",
+    "C": "Bradycardia",
+    "D": "Hypertension"
+  },
+  "answer": "B",
+  "explanation": "A harsh systolic murmur is a classic finding in infants with a ventricular septal defect."
+},
+{
+  "id": 231,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Meningitis",
+  "question": "A young patient is extremely irritable due to meningitis. It would be most important for the nurse to:",
+  "options": {
+    "A": "Use low-level lighting in the room",
+    "B": "Ventilate the room",
+    "C": "Eliminate strong odors",
+    "D": "Allow frequent visitors"
+  },
+  "answer": "A",
+  "explanation": "Patients with meningitis are often sensitive to light (photophobia). A dimly lit, quiet environment helps reduce discomfort."
+},
+{
+  "id": 232,
+  "exam": "MOHAP",
+  "subject": "Respiratory Nursing",
+  "topic": "Thoracentesis",
+  "question": "A male patient with a right pleural effusion noted on a chest X-ray is being prepared for thoracentesis. The patient experiences severe dizziness when sitting upright. To provide a safe environment, the nurse assists the patient to which position for the procedure?",
+  "options": {
+    "A": "Prone with head turned toward the side supported by a pillow",
+    "B": "Sims' position with the head of the bed flat",
+    "C": "Right side-lying with the head of the bed elevated 45°",
+    "D": "Left side-lying with the head of the bed elevated 45°"
+  },
+  "answer": "D",
+  "explanation": "If the patient cannot sit upright, the unaffected side should be down with the head of the bed elevated to facilitate thoracentesis."
+},
+{
+  "id": 233,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Medication Calculation",
+  "question": "A newborn is diagnosed with ventricular septal defect. The baby is discharged with a prescription for digoxin syrup 20 micrograms BID. The bottle of digoxin is labeled as 0.05 mg/mL. The nurse should teach the mother to administer on each dose:",
+  "options": {
+    "A": "0.1 mL",
+    "B": "0.2 mL",
+    "C": "0.4 mL",
+    "D": "0.8 mL"
+  },
+  "answer": "C",
+  "explanation": "0.05 mg = 50 mcg/mL. Required dose = 20 mcg. Volume = 20 ÷ 50 = 0.4 mL."
+},
+{
+  "id": 234,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Leukemia",
+  "question": "As a part of the treatment given to a child with leukemia, the child is placed on reverse barrier isolation to:",
+  "options": {
+    "A": "Protect the child from injury",
+    "B": "Protect the child from infectious agents",
+    "C": "Provide the child with a quiet environment",
+    "D": "Keep the child away from other children"
+  },
+  "answer": "B",
+  "explanation": "Children with leukemia are often immunocompromised and require protective isolation to reduce the risk of infection."
+},
+{
+  "id": 235,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "Tetracycline",
+  "question": "The nurse should be aware that tetracycline is contraindicated in children under 12 years of age because:",
+  "options": {
+    "A": "Minimal doses are needed to control infection",
+    "B": "Immunosuppression is a common side effect",
+    "C": "Staining of the teeth is an adverse effect",
+    "D": "They are prone to develop renal failure"
+  },
+  "answer": "C",
+  "explanation": "Tetracycline can permanently discolor developing teeth and affect bone growth in young children."
+},
+{
+  "id": 236,
+  "exam": "MOHAP",
+  "subject": "Emergency Nursing",
+  "topic": "Pulmonary Embolism",
+  "question": "While assessing an 84-year-old post-operative patient, the nurse observes that the patient suddenly becomes very anxious, appears cyanotic, and has severe dyspnea. The nurse recognizes these symptoms to be consistent with:",
+  "options": {
+    "A": "Congestive heart failure",
+    "B": "Pulmonary embolism",
+    "C": "COPD exacerbation",
+    "D": "Myocardial infarction"
+  },
+  "answer": "B",
+  "explanation": "Sudden dyspnea, cyanosis, and anxiety in a postoperative patient are classic signs of pulmonary embolism."
+},
+{
+  "id": 237,
+  "exam": "MOHAP",
+  "subject": "Ophthalmic Nursing",
+  "topic": "Medical Abbreviations",
+  "question": "When preparing an eye medication, the nurse reads the order \"OS\". Medication is given into:",
+  "options": {
+    "A": "Both eyes",
+    "B": "Left eye",
+    "C": "Right eye",
+    "D": "Infected eye"
+  },
+  "answer": "B",
+  "explanation": "OS (Oculus Sinister) refers to the left eye."
+},
+{
+  "id": 238,
+  "exam": "MOHAP",
+  "subject": "Pharmacology",
+  "topic": "Antacids",
+  "question": "A patient has been taking Aluminum Hydroxide daily for 3 weeks. The nurse should be alert for which of the following side effects?",
+  "options": {
+    "A": "Constipation",
+    "B": "Flatulence",
+    "C": "Nausea",
+    "D": "Vomiting"
+  },
+  "answer": "A",
+  "explanation": "Constipation is a common adverse effect of aluminum-containing antacids."
+},
+{
+  "id": 239,
+  "exam": "MOHAP",
+  "subject": "Respiratory Nursing",
+  "topic": "Acute Respiratory Failure",
+  "question": "An early sign of acute respiratory failure is:",
+  "options": {
+    "A": "Diaphoresis",
+    "B": "Cyanosis",
+    "C": "Restlessness",
+    "D": "Orthopnea"
+  },
+  "answer": "C",
+  "explanation": "Restlessness is often the earliest manifestation of hypoxemia and acute respiratory failure."
+},
+{
+  "id": 240,
+  "exam": "MOHAP",
+  "subject": "Neonatal Nursing",
+  "topic": "Neonatal Bowel Function",
+  "question": "In caring for a woman and baby on day 3 postnatally, she tells you that her baby has not had a bowel action since delivery. Your appropriate response would be:",
+  "options": {
+    "A": "Reassure the mother that it is quite normal for a baby to not move their bowels until day 5 after a few days of milk feeding",
+    "B": "Start a bowel chart, document all findings, and wait another 48 hours before reporting to the physician",
+    "C": "Encourage more frequent warm baths for the neonate with gentle abdomen massages",
+    "D": "Tell the mother that you will let the physician know, so the baby can be checked for any obstruction"
+  },
+  "answer": "D",
+  "explanation": "Failure to pass stool by the third postnatal day warrants prompt medical evaluation to rule out intestinal obstruction or conditions such as Hirschsprung disease."
+},
+  {
+  "id": 241,
+  "exam": "MOHAP",
+  "subject": "Gastrointestinal Nursing",
+  "topic": "Acute Pancreatitis",
+  "question": "When caring for a patient with acute pancreatitis, the patient is most likely to complain of pain which is:",
+  "options": {
+    "A": "Severe and located in the left lower quadrant and radiating to the groin",
+    "B": "Burning and located in the epigastric area and radiating to the groin",
+    "C": "Severe and located in the epigastric area and radiating to the back",
+    "D": "Burning and located in the left lower quadrant and radiating to the back"
+  },
+  "answer": "C",
+  "explanation": "Acute pancreatitis typically presents with severe epigastric pain that radiates to the back."
+},
+{
+  "id": 242,
+  "exam": "MOHAP",
+  "subject": "Postoperative Nursing",
+  "topic": "Patient-Controlled Analgesia (PCA)",
+  "question": "The best time for the nurse to teach an anxious patient about the patient-controlled analgesic (PCA) pump would be during which stage of patient care?",
+  "options": {
+    "A": "Post-operative",
+    "B": "Pre-operative",
+    "C": "Intra-operative",
+    "D": "Post-anesthesia"
+  },
+  "answer": "B",
+  "explanation": "Teaching is most effective before surgery, when the patient is awake and able to understand the instructions."
+},
+{
+  "id": 243,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Pancreatitis",
+  "question": "Elevated levels of amylase and lipase in the blood are common in:",
+  "options": {
+    "A": "Diabetes mellitus",
+    "B": "Esophagitis",
+    "C": "Pancreatitis",
+    "D": "Hepatitis"
+  },
+  "answer": "C",
+  "explanation": "Serum amylase and lipase are elevated in acute pancreatitis due to pancreatic inflammation."
+},
+{
+  "id": 244,
+  "exam": "MOHAP",
+  "subject": "Neurological Nursing",
+  "topic": "Electroencephalogram (EEG)",
+  "question": "In preparing the patient for electroencephalogram (EEG), the nurse should:",
+  "options": {
+    "A": "Withhold breakfast",
+    "B": "Give sleeping pills the night before",
+    "C": "Shave the hair",
+    "D": "Restrict intake of coffee"
+  },
+  "answer": "D",
+  "explanation": "Caffeine should be avoided before an EEG because it can alter brain wave activity."
+},
+{
+  "id": 245,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Acute Asthma",
+  "question": "An 11-year-old girl with a history of asthma arrives at the primary health clinic with signs and symptoms of shortness of breath, audible wheezing, nasal flaring, and mild lip cyanosis. Your immediate nursing action is to:",
+  "options": {
+    "A": "Assess respiratory distress and peak expiratory flow rate",
+    "B": "Take a blood sample to assess CO₂ levels",
+    "C": "Instruct the parents to take the child immediately to hospital",
+    "D": "Sit the child comfortably and offer 2 puffs of Ventolin stat"
+  },
+  "answer": "A",
+  "explanation": "The first nursing priority is assessment of airway status and severity of respiratory distress before further interventions."
+},
+{
+  "id": 246,
+  "exam": "MOHAP",
+  "subject": "Obstetric Nursing",
+  "topic": "Puerperium",
+  "question": "What is the main benefit of early ambulation during the puerperium?",
+  "options": {
+    "A": "Reduction in lochia",
+    "B": "Prevention of uterine prolapse",
+    "C": "Prevention of thromboembolism",
+    "D": "Increase in lactation"
+  },
+  "answer": "C",
+  "explanation": "Early ambulation improves venous circulation and helps prevent deep vein thrombosis and thromboembolism."
+},
+{
+  "id": 247,
+  "exam": "MOHAP",
+  "subject": "Obstetric Nursing",
+  "topic": "Leopold's Maneuvers",
+  "question": "Which maneuver involves palpating both sides of the maternal abdomen?",
+  "options": {
+    "A": "First Leopold maneuver",
+    "B": "Second Leopold maneuver",
+    "C": "Third Leopold maneuver",
+    "D": "Fourth Leopold maneuver"
+  },
+  "answer": "B",
+  "explanation": "The second Leopold maneuver identifies the fetal back and small parts by palpating both sides of the maternal abdomen."
+},
+{
+  "id": 248,
+  "exam": "MOHAP",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Valvular Heart Disease",
+  "question": "Backflow of blood through the mitral valve during contraction of the left ventricle is called:",
+  "options": {
+    "A": "Mitral regurgitation",
+    "B": "Mitral prolapse",
+    "C": "Mitral stenosis",
+    "D": "Mitral systole"
+  },
+  "answer": "A",
+  "explanation": "Mitral regurgitation is the backward flow of blood from the left ventricle into the left atrium during systole."
+},
+{
+  "id": 249,
+  "exam": "MOHAP",
+  "subject": "Neonatal Nursing",
+  "topic": "Collodion Baby",
+  "question": "The eyelids may turn outward in a collodion baby, a condition called:",
+  "options": {
+    "A": "Entropion",
+    "B": "Ectropion",
+    "C": "Ptosis",
+    "D": "Strabismus"
+  },
+  "answer": "B",
+  "explanation": "Ectropion is the outward turning of the eyelids and is commonly associated with collodion baby syndrome."
+},
+{
+  "id": 250,
+  "exam": "MOHAP",
+  "subject": "Obstetric Nursing",
+  "topic": "Rupture of Membranes",
+  "question": "A client's membranes spontaneously rupture during active labor. The nurse inspects the perineum and notes that the umbilical cord is not visible. What should the nurse do next?",
+  "options": {
+    "A": "Obtain the maternal vital signs",
+    "B": "Call the physician",
+    "C": "Record the time of contraction",
+    "D": "Auscultate the fetal heart rate (FHR)"
+  },
+  "answer": "D",
+  "explanation": "After rupture of membranes, the priority is to assess the fetal heart rate to detect possible umbilical cord prolapse or fetal distress."
+},
+{
+  "id": 251,
+  "exam": "MOHAP",
+  "subject": "Respiratory Nursing",
+  "topic": "Chest Tube Drainage",
+  "question": "A patient has a chest tube connected to an underwater-seal drainage system. Continuous bubbling is observed in the water-seal chamber. The nurse should first:",
+  "options": {
+    "A": "Clamp the chest tube immediately",
+    "B": "Notify the physician",
+    "C": "Check the drainage system for an air leak",
+    "D": "Remove the chest tube"
+  },
+  "answer": "C",
+  "explanation": "Continuous bubbling in the water-seal chamber usually indicates an air leak. The nurse should first inspect the drainage system and tubing."
+},
+{
+  "id": 252,
+  "exam": "MOHAP",
+  "subject": "Cardiovascular Nursing",
+  "topic": "Digoxin Therapy",
+  "question": "Before administering digoxin to an adult patient, the nurse should:",
+  "options": {
+    "A": "Assess the respiratory rate",
+    "B": "Measure the apical pulse for one full minute",
+    "C": "Check the blood pressure only",
+    "D": "Administer the medication with food"
+  },
+  "answer": "B",
+  "explanation": "The apical pulse should be assessed for one full minute. Digoxin is withheld and the physician notified if the pulse is below the prescribed limit."
+},
+{
+  "id": 253,
+  "exam": "MOHAP",
+  "subject": "Endocrine Nursing",
+  "topic": "Hypoglycemia",
+  "question": "A conscious patient with diabetes develops sweating, tremors, and confusion. What is the nurse's priority action?",
+  "options": {
+    "A": "Administer regular insulin",
+    "B": "Give 15–20 g of fast-acting carbohydrate",
+    "C": "Restrict oral fluids",
+    "D": "Encourage physical exercise"
+  },
+  "answer": "B",
+  "explanation": "These are signs of hypoglycemia. A conscious patient should receive a rapid-acting carbohydrate immediately."
+},
+{
+  "id": 254,
+  "exam": "MOHAP",
+  "subject": "Infection Control",
+  "topic": "Hand Hygiene",
+  "question": "The single most effective measure for preventing hospital-acquired infections is:",
+  "options": {
+    "A": "Routine antibiotic therapy",
+    "B": "Use of sterile gloves",
+    "C": "Proper hand hygiene",
+    "D": "Daily room fumigation"
+  },
+  "answer": "C",
+  "explanation": "Hand hygiene remains the most effective method of preventing healthcare-associated infections."
+},
+{
+  "id": 255,
+  "exam": "MOHAP",
+  "subject": "Renal Nursing",
+  "topic": "Hemodialysis",
+  "question": "A patient has an arteriovenous fistula for hemodialysis. Which nursing action is appropriate?",
+  "options": {
+    "A": "Measure blood pressure in the affected arm",
+    "B": "Perform venipuncture in the affected arm",
+    "C": "Assess the fistula for a thrill and bruit",
+    "D": "Apply a tight dressing over the fistula"
+  },
+  "answer": "C",
+  "explanation": "A palpable thrill and audible bruit indicate that the arteriovenous fistula is functioning properly."
+},
+{
+  "id": 256,
+  "exam": "MOHAP",
+  "subject": "Fundamentals of Nursing",
+  "topic": "Pressure Injury Prevention",
+  "question": "The most effective nursing intervention to prevent pressure injuries in a bedridden patient is:",
+  "options": {
+    "A": "Massage reddened areas",
+    "B": "Reposition the patient at regular intervals",
+    "C": "Restrict fluid intake",
+    "D": "Keep the head of the bed elevated above 60 degrees"
+  },
+  "answer": "B",
+  "explanation": "Regular repositioning relieves pressure over bony prominences and is the cornerstone of pressure injury prevention."
+},
+{
+  "id": 257,
+  "exam": "MOHAP",
+  "subject": "Critical Care Nursing",
+  "topic": "Shock",
+  "question": "Which type of shock usually presents with warm peripheral extremities?",
+  "options": {
+    "A": "Hypovolemic",
+    "B": "Neurogenic",
+    "C": "Cardiogenic",
+    "D": "Anaphylactic"
+  },
+  "answer": "B",
+  "explanation": "Neurogenic shock causes vasodilation, resulting in warm, dry skin."
+},
+{
+  "id": 258,
+  "exam": "MOHAP",
+  "subject": "Obstetric Nursing",
+  "topic": "Postpartum Hemorrhage",
+  "question": "The first nursing action for a woman with postpartum hemorrhage due to uterine atony is to:",
+  "options": {
+    "A": "Apply an ice pack to the abdomen",
+    "B": "Massage the uterine fundus",
+    "C": "Encourage ambulation",
+    "D": "Place the patient in Trendelenburg position"
+  },
+  "answer": "B",
+  "explanation": "Fundal massage stimulates uterine contraction and is the immediate nursing intervention for uterine atony."
+},
+{
+  "id": 259,
+  "exam": "MOHAP",
+  "subject": "Medical-Surgical Nursing",
+  "topic": "Blood Transfusion",
+  "question": "Which sign is most suggestive of an acute hemolytic transfusion reaction?",
+  "options": {
+    "A": "Mild headache",
+    "B": "Flank pain with fever and chills",
+    "C": "Constipation",
+    "D": "Hypertension without symptoms"
+  },
+  "answer": "B",
+  "explanation": "Acute hemolytic transfusion reactions commonly present with fever, chills, flank pain, and may rapidly progress to shock."
+},
+{
+  "id": 260,
+  "exam": "MOHAP",
+  "subject": "Emergency Nursing",
+  "topic": "Cardiopulmonary Resuscitation",
+  "question": "When an adult patient is found unresponsive with no normal breathing and no pulse, the nurse should first:",
+  "options": {
+    "A": "Check the blood glucose level",
+    "B": "Begin high-quality chest compressions",
+    "C": "Insert an oropharyngeal airway",
+    "D": "Obtain a 12-lead ECG"
+  },
+  "answer": "B",
+  "explanation": "According to current CPR guidelines, high-quality chest compressions should be started immediately after confirming cardiac arrest."
+},
+{
+  "id": 261,
+  "exam": "MOHAP",
+  "subject": "Pediatric Nursing",
+  "topic": "Hemophilia",
+  "question": "The nurse analyzes the laboratory results of a child with hemophilia. The nurse expects which laboratory value to be abnormal?",
+  "options": {
+    "A": "Platelet count",
+    "B": "Hematocrit level",
+    "C": "Hemoglobin level",
+    "D": "Partial thromboplastin time (PTT)"
+  },
+  "answer": "D",
+  "explanation": "Hemophilia is characterized by deficiency of clotting factors, resulting in a prolonged partial thromboplastin time (PTT)."
+},
+{
+  "id": 262,
+  "exam": "MOHAP",
+  "subject": "Infection Control",
+  "topic": "Disinfection",
+  "question": "HIV-contaminated waste products can be decontaminated by the following agents except:",
+  "options": {
+    "A": "Sodium hypochlorite",
+    "B": "Formaldehyde",
+    "C": "Glutaraldehyde",
+    "D": "Methanol"
+  },
+  "answer": "D",
+  "explanation": "Methanol is not recommended as a disinfectant for HIV-contaminated materials."
+},
+{
+  "id": 263,
+  "exam": "MOHAP",
+  "subject": "Nutrition",
+  "topic": "Essential Fatty Acids",
+  "question": "The most essential fatty acid that serves as a basis for the production of other fatty acids is:",
+  "options": {
+    "A": "Linoleic acid",
+    "B": "Trans fatty acid",
+    "C": "Butyric acid",
+    "D": "Caproic acid"
+  },
+  "answer": "A",
+  "explanation": "Linoleic acid is an essential fatty acid that cannot be synthesized by the body."
+},
+{
+  "id": 264,
+  "exam": "MOHAP",
+  "subject": "Obstetric & Gynecologic Nursing",
+  "topic": "Cervical Intraepithelial Neoplasia",
+  "question": "A 35-year-old woman has an abnormal Pap smear and is found to have cervical intraepithelial neoplasia (CIN). What is the next appropriate step?",
+  "options": {
+    "A": "Initiation of chemotherapy",
+    "B": "Observation and repeat Pap smear in one year",
+    "C": "Colposcopy-guided biopsy",
+    "D": "Total abdominal hysterectomy"
+  },
+  "answer": "C",
+  "explanation": "Colposcopy-guided biopsy is the standard next step for evaluating abnormal cervical cytology."
+},
+{
+  "id": 265,
+  "exam": "MOHAP",
+  "subject": "Obstetric Nursing",
+  "topic": "Stages of Labor",
+  "question": "Which assessment finding indicates progression from the latent to the active phase of labor?",
+  "options": {
+    "A": "Cervical dilatation increases from 3 cm to 5 cm",
+    "B": "Maternal urge to push intensifies",
+    "C": "Regular contractions at 10-minute intervals",
+    "D": "Presence of bloody show and backache"
+  },
+  "answer": "A",
+  "explanation": "The active phase begins with progressive cervical dilatation, generally around 4 to 6 cm."
+},
+{
+  "id": 266,
+  "exam": "MOHAP",
+  "subject": "Obstetric Nursing",
+  "topic": "Magnesium Sulfate Therapy",
+  "question": "A client is receiving magnesium sulfate therapy for severe preeclampsia. Which finding indicates magnesium toxicity?",
+  "options": {
+    "A": "Hyperactive sensorium",
+    "B": "Increase in respiratory rate",
+    "C": "Lack of knee jerk reflex",
+    "D": "Development of a cardiac dysrhythmia"
+  },
+  "answer": "C",
+  "explanation": "Loss of deep tendon reflexes is an early sign of magnesium sulfate toxicity."
+},
+{
+  "id": 267,
+  "exam": "MOHAP",
+  "subject": "Community Health Nursing",
+  "topic": "Family Types",
+  "question": "The type of family that consists of blood relations together with their mates and their children is called:",
+  "options": {
+    "A": "Conjugal family",
+    "B": "Neolocal family",
+    "C": "Consanguineous family",
+    "D": "Avunculocal family"
+  },
+  "answer": "C",
+  "explanation": "A consanguineous family is based primarily on blood relationships."
+}
+    ]
