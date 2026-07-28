@@ -3,6 +3,7 @@ const examConfig = {
     psc: {
         title: "Kerala PSC Staff Nurse Practice Quiz",
         shortName: "PSC",
+        menuName: "Kerala PSC",
         description: "Kerala PSC Staff Nurse Grade II Previous Questions Practice",
 
         theme: {
@@ -61,6 +62,7 @@ meta: {
     doh: {
         title: "DOH Abu Dhabi Nursing Practice Quiz",
         shortName: "DOH",
+        menuName: "DOH Abu Dhabi",
         description: "Department of Health (Abu Dhabi) Nursing Practice Questions",
 
             theme: {
@@ -118,6 +120,7 @@ meta: {
     dha: {
         title: "DHA Dubai Nursing Practice Quiz",
         shortName: "DHA",
+        menuName: "DHA Dubai"
         description: "Dubai Health Authority Nursing Practice Questions",
 
             theme: {
@@ -144,6 +147,7 @@ meta: {
     moh: {
         title: "MOHAP Nursing Practice Quiz",
         shortName: "MOHAP",
+        menuName: "MOHAP UAE",
         description: "MOHAP Nursing Licensing Exam Practice Questions",
 
             theme: {
