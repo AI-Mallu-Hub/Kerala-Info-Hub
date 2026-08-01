@@ -8,3 +8,22 @@ s.oninput=()=>{
    c.style.display=c.innerText.toLowerCase().includes(q)?'block':'none';
  });
 };
+if ("serviceWorker" in navigator) {
+
+    window.addEventListener("load", () => {
+
+        navigator.serviceWorker.register("/Kerala-Info-Hub/sw.js")
+            .then(() => {
+
+                console.log("Service Worker Registered");
+
+            })
+            .catch(err => {
+
+                console.error(err);
+
+            });
+
+    });
+
+}
