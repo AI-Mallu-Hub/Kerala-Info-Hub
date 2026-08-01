@@ -1,4 +1,4 @@
-const CACHE_NAME = "kih-v2";
+const CACHE_NAME = "kih-v3";
 
 const FILES_TO_CACHE = [
   "/Kerala-Info-Hub/",
@@ -11,9 +11,16 @@ const FILES_TO_CACHE = [
   "/Kerala-Info-Hub/previous-questions.js",
   "/Kerala-Info-Hub/data/papers.json",
 
-  "/Kerala-Info-Hub/viewer.html",
-  "/Kerala-Info-Hub/viewer.css",
-  "/Kerala-Info-Hub/viewer.js",
+  "/Kerala-Info-Hub/quiz/psc.html",
+"/Kerala-Info-Hub/quiz/doh.html",
+"/Kerala-Info-Hub/quiz/moh.html",
+
+"/Kerala-Info-Hub/css/quiz.css",
+"/Kerala-Info-Hub/js/quiz-engine.js",
+
+"/Kerala-Info-Hub/data/psc/psc_quiz.json",
+"/Kerala-Info-Hub/data/doh/doh_quiz.json",
+"/Kerala-Info-Hub/data/moh/moh_quiz.json",
 
   "/Kerala-Info-Hub/manifest.json",
 
