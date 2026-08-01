@@ -1,4 +1,4 @@
-const CACHE_NAME = "kih-v4";
+const CACHE_NAME = "kih-v5";
 
 const STATIC_FILES = [
   "/Kerala-Info-Hub/",
