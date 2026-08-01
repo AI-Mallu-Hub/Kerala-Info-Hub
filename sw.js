@@ -13,6 +13,8 @@ const STATIC_FILES = [
 
   "/Kerala-Info-Hub/manifest.json",
 
+  "/Kerala-Info-Hub/offline.html",
+
   "/Kerala-Info-Hub/favicon.png",
   "/Kerala-Info-Hub/og-image.png",
 
