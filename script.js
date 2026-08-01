@@ -27,6 +27,37 @@ if ("serviceWorker" in navigator) {
     });
 
 }
+let newWorker;
+
+if ("serviceWorker" in navigator) {
+
+    navigator.serviceWorker.register("sw.js").then(registration => {
+
+        registration.addEventListener("updatefound", () => {
+
+            newWorker = registration.installing;
+
+            newWorker.addEventListener("statechange", () => {
+
+                if (
+
+                    newWorker.state === "installed" &&
+
+                    navigator.serviceWorker.controller
+
+                ) {
+
+                    document.getElementById("updateCard").hidden = false;
+
+                }
+
+            });
+
+        });
+
+    });
+
+}
 let deferredPrompt;
 
 const installBtn = document.getElementById("installBtn");
