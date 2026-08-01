@@ -98,3 +98,13 @@ return res || caches.match("/Kerala-Info-Hub/offline.html");
 );
 
 });
+
+self.addEventListener("message", (event) => {
+
+    if (event.data && event.data.type === "SKIP_WAITING") {
+
+        self.skipWaiting();
+
+    }
+
+});
