@@ -625,3 +625,31 @@ footer{
     cursor:pointer;
 
 }
+
+.network-status{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    background:#ff9800;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    z-index:9999;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+
+}
