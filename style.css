@@ -555,3 +555,23 @@ footer{
     color:#666;
     line-height:1.5;
 }
+
+.install-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:14px 28px;
+    background:#1565C0;
+    color:#fff;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 4px 12px rgba(21,101,192,.3);
+}
+
+.install-btn:hover{
+    background:#0d47a1;
+    transform:translateY(-2px);
+}
