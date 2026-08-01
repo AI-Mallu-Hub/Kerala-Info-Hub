@@ -653,6 +653,54 @@ footer{
     box-shadow:0 2px 8px rgba(0,0,0,.2);
 
 }
+
+.feedback-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+.feedback-card h3{
+
+    color:#1976d2;
+
+}
+
+.feedback-card p{
+
+    color:#666;
+
+    margin:15px 0;
+
+}
+
+.feedback-btn{
+
+    display:inline-block;
+
+    background:#1976d2;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
 .support-card{
 
     background:#ffffff;
@@ -701,7 +749,7 @@ footer{
 
     margin-top:10px;
 
-    background:#1976d2;
+    background:#2e7d32;
 
     color:#fff;
 
