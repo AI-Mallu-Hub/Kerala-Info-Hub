@@ -106,3 +106,8 @@ document.getElementById("updateBtn").onclick = () => {
     }
 
 };
+navigator.serviceWorker.addEventListener("controllerchange", () => {
+
+    window.location.reload();
+
+});
