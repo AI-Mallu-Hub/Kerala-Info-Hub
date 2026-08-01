@@ -1,4 +1,4 @@
-const CACHE_NAME = "kih-v1";
+const CACHE_NAME = "kih-v2";
 
 const FILES_TO_CACHE = [
   "/Kerala-Info-Hub/",
@@ -9,6 +9,7 @@ const FILES_TO_CACHE = [
   "/Kerala-Info-Hub/previous-questions.html",
   "/Kerala-Info-Hub/previous-questions.css",
   "/Kerala-Info-Hub/previous-questions.js",
+  "/Kerala-Info-Hub/data/papers.json",
 
   "/Kerala-Info-Hub/viewer.html",
   "/Kerala-Info-Hub/viewer.css",
