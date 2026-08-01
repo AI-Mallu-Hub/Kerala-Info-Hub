@@ -92,3 +92,17 @@ window.addEventListener("appinstalled", () => {
     console.log("Kerala Info Hub Installed");
 
 });
+
+document.getElementById("updateBtn").onclick = () => {
+
+    if (newWorker) {
+
+        newWorker.postMessage({
+
+            type: "SKIP_WAITING"
+
+        });
+
+    }
+
+};
