@@ -535,38 +535,23 @@ footer{
 
 }
 
-.install-btn{
-
-display:block;
-
-margin:20px auto;
-
-padding:14px 24px;
-
-background:#1565C0;
-
-color:white;
-
-border:none;
-
-border-radius:12px;
-
-font-size:17px;
-
-font-weight:bold;
-
-cursor:pointer;
-
-box-shadow:0 6px 18px rgba(0,0,0,.25);
-
-transition:.25s;
-
+.install-card{
+    max-width:500px;
+    margin:30px auto;
+    padding:24px;
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+    text-align:center;
 }
 
-.install-btn:hover{
+.install-card h3{
+    margin:0 0 10px;
+    color:#1565C0;
+}
 
-transform:translateY(-2px);
-
-opacity:.9;
-
+.install-card p{
+    margin:0 0 18px;
+    color:#666;
+    line-height:1.5;
 }
