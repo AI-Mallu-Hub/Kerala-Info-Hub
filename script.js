@@ -30,6 +30,7 @@ if ("serviceWorker" in navigator) {
 let deferredPrompt;
 
 const installBtn = document.getElementById("installBtn");
+const installCard = document.getElementById("installCard");
 
 window.addEventListener("beforeinstallprompt", (e) => {
 
@@ -37,17 +38,17 @@ window.addEventListener("beforeinstallprompt", (e) => {
 
     deferredPrompt = e;
 
-    installBtn.hidden = false;
+    installCard.hidden = false;
 
 });
 
 installBtn.addEventListener("click", async () => {
 
-    installBtn.hidden = true;
+    installCard.hidden = true;
 
     deferredPrompt.prompt();
 
-    const choice = await deferredPrompt.userChoice;
+    await deferredPrompt.userChoice;
 
     deferredPrompt = null;
 
@@ -55,7 +56,7 @@ installBtn.addEventListener("click", async () => {
 
 window.addEventListener("appinstalled", () => {
 
-    installBtn.hidden = true;
+    installCard.hidden = true;
 
     console.log("Kerala Info Hub Installed");
 
