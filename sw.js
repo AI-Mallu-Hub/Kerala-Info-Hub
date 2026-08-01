@@ -65,39 +65,36 @@ self.addEventListener("activate", event => {
 // Fetch
 self.addEventListener("fetch", event => {
 
-  if (event.request.method !== "GET") return;
+if(event.request.method!=="GET") return;
 
-  event.respondWith(
+event.respondWith(
 
-    caches.match(event.request).then(cached => {
+fetch(event.request)
 
-      const networkFetch = fetch(event.request)
+.then(response=>{
 
-        .then(response => {
+const copy=response.clone();
 
-          if (
-            response &&
-            response.status === 200 &&
-            response.type === "basic"
-          ) {
+caches.open(CACHE_NAME)
 
-            const clone = response.clone();
+.then(cache=>cache.put(event.request,copy));
 
-            caches.open(CACHE_NAME)
-              .then(cache => cache.put(event.request, clone));
+return response;
 
-          }
+})
 
-          return response;
+.catch(()=>{
 
-        })
+return caches.match(event.request)
 
-        .catch(() => cached);
+.then(res=>{
 
-      return cached || networkFetch;
+return res || caches.match("/Kerala-Info-Hub/offline.html");
 
-    })
+});
 
-  );
+})
+
+);
 
 });
