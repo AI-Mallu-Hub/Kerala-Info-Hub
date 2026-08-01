@@ -653,3 +653,74 @@ footer{
     box-shadow:0 2px 8px rgba(0,0,0,.2);
 
 }
+.support-card{
+
+    background:#ffffff;
+
+    margin:30px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+.support-card h3{
+
+    color:#1976d2;
+
+    margin-bottom:15px;
+
+}
+
+.support-card p{
+
+    color:#555;
+
+    line-height:1.7;
+
+    margin-bottom:15px;
+
+}
+
+.support-note{
+
+    font-size:15px;
+
+    color:#777;
+
+}
+
+.support-btn{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    background:#1976d2;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.support-btn:hover{
+
+    opacity:.9;
+
+   }
