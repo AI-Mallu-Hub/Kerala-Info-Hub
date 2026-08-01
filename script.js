@@ -111,3 +111,23 @@ navigator.serviceWorker.addEventListener("controllerchange", () => {
     window.location.reload();
 
 });
+const networkStatus = document.getElementById("networkStatus");
+
+function updateNetworkStatus() {
+
+    if (navigator.onLine) {
+
+        networkStatus.hidden = true;
+
+    } else {
+
+        networkStatus.hidden = false;
+
+    }
+
+}
+
+window.addEventListener("online", updateNetworkStatus);
+window.addEventListener("offline", updateNetworkStatus);
+
+updateNetworkStatus();
