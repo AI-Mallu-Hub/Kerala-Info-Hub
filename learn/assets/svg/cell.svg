@@ -86,20 +86,189 @@ stroke="#ffffff"
 stroke-width="3"/>
 
 </g>
-<g id="mitochondria"></g>
+  
+<g id="mitochondria" class="organelle">
 
-<g id="golgi"></g>
+<ellipse
+cx="260"
+cy="280"
+rx="38"
+ry="18"
+fill="#ffb74d"
+stroke="#ef6c00"
+stroke-width="3"
+transform="rotate(-20 260 280)"/>
 
-<g id="rough-er"></g>
+<path
+d="M240 280
+Q250 270 260 280
+Q270 290 280 280"
 
-<g id="smooth-er"></g>
+stroke="#d84315"
+stroke-width="2"
+fill="none"/>
 
-<g id="ribosomes"></g>
+<ellipse
+cx="560"
+cy="505"
+rx="38"
+ry="18"
+fill="#ffb74d"
+stroke="#ef6c00"
+stroke-width="3"
+transform="rotate(25 560 505)"/>
 
-<g id="lysosome"></g>
+<path
+d="M540 505
+Q550 495 560 505
+Q570 515 580 505"
 
-<g id="vacuole"></g>
+stroke="#d84315"
+stroke-width="2"
+fill="none"/>
 
-<g id="centrosome"></g>
+</g>
+
+<g id="golgi" class="organelle">
+
+<path d="M510 285
+Q545 270 580 285"
+
+stroke="#43a047"
+stroke-width="6"
+fill="none"/>
+
+<path d="M500 300
+Q545 315 590 300"
+
+stroke="#43a047"
+stroke-width="6"
+fill="none"/>
+
+<path d="M510 318
+Q545 335 580 318"
+
+stroke="#43a047"
+stroke-width="6"
+fill="none"/>
+
+</g>
+
+<g id="rough-er" class="organelle">
+
+<path
+
+d="M315 455
+
+C340 430 360 480 390 455
+
+S440 430 470 455"
+
+stroke="#42a5f5"
+
+stroke-width="6"
+
+fill="none"/>
+
+</g>
+  
+<g id="smooth-er" class="organelle">
+
+<path
+
+d="M315 500
+
+C350 470 390 530 430 500"
+
+stroke="#29b6f6"
+
+stroke-width="6"
+
+fill="none"/>
+
+</g>
+
+<g id="ribosomes" class="organelle">
+
+<circle cx="220" cy="430" r="4" fill="#333"/>
+<circle cx="250" cy="470" r="4" fill="#333"/>
+<circle cx="310" cy="230" r="4" fill="#333"/>
+<circle cx="600" cy="380" r="4" fill="#333"/>
+<circle cx="510" cy="580" r="4" fill="#333"/>
+<circle cx="330" cy="565" r="4" fill="#333"/>
+<circle cx="440" cy="245" r="4" fill="#333"/>
+<circle cx="610" cy="470" r="4" fill="#333"/>
+
+</g>
+
+<g id="lysosome" class="organelle">
+
+<circle
+
+cx="540"
+
+cy="420"
+
+r="16"
+
+fill="#ffd54f"
+
+stroke="#f9a825"
+
+stroke-width="3"/>
+
+</g>
+
+<g id="vacuole" class="organelle">
+
+<circle
+
+cx="285"
+
+cy="540"
+
+r="26"
+
+fill="#90caf9"
+
+opacity=".65"
+
+stroke="#1976d2"
+
+stroke-width="3"/>
+
+</g>
+
+  <g id="centrosome" class="organelle">
+
+<line
+
+x1="470"
+
+y1="360"
+
+x2="492"
+
+y2="382"
+
+stroke="#8e24aa"
+
+stroke-width="4"/>
+
+<line
+
+x1="492"
+
+y1="360"
+
+x2="470"
+
+y2="382"
+
+stroke="#8e24aa"
+
+stroke-width="4"/>
+
+</g>
 
 </svg>
