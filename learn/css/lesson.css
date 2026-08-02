@@ -1,45 +1,187 @@
-body{margin:0;
-     font-family:Arial,sans-serif;
-     background:#eef3fb}
-.hero{background:#1565d8;
-      color:#fff;
-      text-align:center;
-      padding:24px}
-.crumb{font-size:14px}
-.meta{display:flex;
-      justify-content:center;
-      gap:10px;
-      flex-wrap:wrap;
-      margin:15px 0}
-.progress{height:10px;
-          background:#8fb6ff;
-          border-radius:10px;
-          max-width:340px;
-          margin:auto}
-.bar{width:8%;
-     height:100%;
-     background:#34d399}
-.container{max-width:900px;
-           margin:auto;
-           padding:18px}
-.card{background:#fff;
-      padding:18px;
-      border-radius:18px;
-      margin-bottom:18px;
-      box-shadow:0 4px 12px rgba(0,0,0,.08)}
-.diagram{width:100%;
-         max-width:500px;
-         display:block;
-         margin:auto}
-.btn{display:inline-block;
-     background:#198754;
-     color:#fff;
-     text-decoration:none;
-     padding:12px 18px;
-     border-radius:10px}
-.secondary{background:#6c757d}
-.center{text-align:center}
-.navbuttons{display:flex;
-            justify-content:space-between;
-            flex-wrap:wrap;
-            gap:10px}
+/* ==========================
+   Medical Learning Platform
+   Master Lesson CSS v1.0
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#eef3fb;
+    color:#222;
+    line-height:1.7;
+}
+
+/* Header */
+
+.lesson-header{
+    background:#1565d8;
+    color:#fff;
+    padding:20px;
+}
+
+.back-btn{
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    display:inline-block;
+    margin-bottom:18px;
+}
+
+.lesson-hero h1{
+    font-size:42px;
+    margin-bottom:12px;
+}
+
+.lesson-subtitle{
+    font-size:20px;
+    opacity:.95;
+    margin-bottom:20px;
+}
+
+.lesson-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.lesson-meta span{
+    background:rgba(255,255,255,.18);
+    padding:8px 14px;
+    border-radius:25px;
+    font-size:14px;
+}
+
+.badge.beginner{
+    background:#16a34a;
+    color:#fff;
+}
+
+/* Progress */
+
+.progress-wrapper{
+    margin-top:10px;
+}
+
+.progress-bar{
+    width:100%;
+    height:10px;
+    background:#90b7ff;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.progress-fill{
+    width:8%;
+    height:100%;
+    background:#22c55e;
+}
+
+/* Main */
+
+.lesson-container{
+    max-width:900px;
+    margin:auto;
+    padding:24px 16px;
+}
+
+/* Cards */
+
+.lesson-card,
+.toc-card,
+.exam-tip,
+.clinical-box,
+.memory-box,
+.summary-box,
+.quiz-box{
+
+    background:#fff;
+    border-radius:20px;
+    padding:22px;
+    margin-bottom:22px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+/* Colored Left Border */
+
+.exam-tip{
+    border-left:7px solid #f59e0b;
+}
+
+.clinical-box{
+    border-left:7px solid #0ea5e9;
+}
+
+.memory-box{
+    border-left:7px solid #8b5cf6;
+}
+
+.summary-box{
+    border-left:7px solid #16a34a;
+}
+
+.quiz-box{
+    border-left:7px solid #ef4444;
+}
+
+/* Headings */
+
+.lesson-card h2,
+.toc-card h2,
+.exam-tip h2,
+.clinical-box h2,
+.memory-box h2,
+.summary-box h2,
+.quiz-box h2{
+
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+/* Lists */
+
+.lesson-card ul,
+.lesson-card ol,
+.toc-card ol{
+
+    margin-left:24px;
+}
+
+.lesson-card li,
+.toc-card li{
+
+    margin-bottom:10px;
+}
+
+/* Diagram */
+
+.diagram-placeholder{
+
+    height:240px;
+
+    background:#edf3ff;
+
+    border:2px dashed #8db7ff;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#3b82f6;
+
+    font-size:20px;
+
+    font-weight:bold;
+}
+
+/*
