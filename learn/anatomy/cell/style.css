@@ -1,0 +1,43 @@
+body{margin:0;font-family:Arial,sans-serif;background:#eef3fb}
+.hero{background:#1565d8;
+      color:#fff;
+      text-align:center;
+      padding:24px}
+.crumb{font-size:14px}
+.meta{display:flex;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+      margin:15px 0}
+.progress{height:10px;
+          background:#8fb6ff;
+          border-radius:10px;
+          max-width:340px;
+          margin:auto}
+.bar{width:8%;
+     height:100%;
+     background:#34d399}
+.container{max-width:900px;
+           margin:auto;
+           padding:18px}
+.card{background:#fff;
+      padding:18px;
+      border-radius:18px;
+      margin-bottom:18px;
+      box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.diagram{width:100%;
+         max-width:500px;
+         display:block;
+         margin:auto}
+.btn{display:inline-block;
+     background:#198754;
+     color:#fff;
+     text-decoration:none;
+     padding:12px 18px;
+     border-radius:10px}
+.secondary{background:#6c757d}
+.center{text-align:center}
+.navbuttons{display:flex;
+            justify-content:space-between;
+            flex-wrap:wrap;
+            gap:10px}
