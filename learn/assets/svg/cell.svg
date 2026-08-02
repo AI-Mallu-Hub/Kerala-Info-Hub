@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg
+xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 800 800"
+id="cell-diagram">
+
+<!-- ========================= -->
+<!-- CELL MEMBRANE -->
+<!-- ========================= -->
+
+<g id="cell-membrane">
+
+<ellipse
+cx="400"
+cy="400"
+rx="320"
+ry="250"
+fill="#d9f3ff"
+stroke="#1976d2"
+stroke-width="8"/>
+
+</g>
+
+<!-- ========================= -->
+<!-- CYTOPLASM -->
+<!-- ========================= -->
+
+<g id="cytoplasm">
+
+<ellipse
+cx="400"
+cy="400"
+rx="285"
+ry="215"
+fill="#eefcff"/>
+
+</g>
+
+<!-- ========================= -->
+<!-- PLACEHOLDER GROUPS -->
+<!-- ========================= -->
+
+<g id="nucleus"></g>
+
+<g id="nucleolus"></g>
+
+<g id="mitochondria"></g>
+
+<g id="golgi"></g>
+
+<g id="rough-er"></g>
+
+<g id="smooth-er"></g>
+
+<g id="ribosomes"></g>
+
+<g id="lysosome"></g>
+
+<g id="vacuole"></g>
+
+<g id="centrosome"></g>
+
+</svg>
