@@ -185,3 +185,33 @@ body{
 }
 
 /*
+
+.comparison-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:18px;
+}
+
+.comparison-table th{
+    background:#1565d8;
+    color:#fff;
+    padding:12px;
+}
+
+.comparison-table td{
+    border:1px solid #d8d8d8;
+    padding:12px;
+}
+
+.comparison-table tr:nth-child(even){
+    background:#f7faff;
+}
+
+@media(max-width:768px){
+
+.comparison-table{
+    display:block;
+    overflow-x:auto;
+}
+
+}
