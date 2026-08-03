@@ -424,6 +424,15 @@ function closeModal() {
 
         animationState.isAnimating = false;
         animationState.activeOrganelle = null;
+       if(tourState.running){
+
+setTimeout(()=>{
+
+startTourStep(tourState.step+1);
+
+},350);
+
+       }
        document
 .getElementById("cell-diagram")
 .classList.remove("focus-mode");
@@ -459,11 +468,10 @@ btn.textContent="⏸ Touring...";
 });
 
    }
+
 function startTourStep(index){
 
-const ids=Object.keys(organelles);
-
-if(index>=ids.length){
+if(index>=tourState.order.length){
 
 finishTour();
 
@@ -473,9 +481,11 @@ return;
 
 tourState.step=index;
 
-const id=ids[index];
+const id=tourState.order[index];
 
 const svg=document.querySelector("#cell-diagram svg");
+
+if(!svg) return;
 
 const part=svg.getElementById(id);
 
@@ -496,16 +506,48 @@ showInfo(organelles[id]);
 
 },550);
 
-       }
+}
 
+const tourState={
+
+running:false,
+
+step:0,
+
+order:[
+"nucleus",
+"mitochondria",
+"golgi",
+"rough-er",
+"smooth-er",
+"ribosomes",
+"lysosome",
+"vacuole",
+"centrosome",
+"nucleolus"
+]
+
+};
+   
 function finishTour(){
 
 tourState.running=false;
+
+tourState.step=0;
+
+document
+.querySelectorAll(".organelle")
+.forEach(el=>{
+
+el.classList.remove("active","dim");
+
+});
 
 const btn=document.getElementById("startTour");
 
 btn.textContent="▶ Explore Again";
 
-debug("✅ Tour Finished");
+debug("🏁 Guided Tour Finished");
 
-   }
+}
+
