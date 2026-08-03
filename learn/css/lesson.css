@@ -301,9 +301,7 @@ box-shadow .35s ease;
 
 .modal.show .modal-card{
 
-transform:
-
-scale(1);
+transform:scale(1);
 
 opacity:1;
 
