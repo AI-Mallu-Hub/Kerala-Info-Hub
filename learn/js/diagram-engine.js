@@ -226,13 +226,6 @@ const animationState = {
 
 };
 
-const tourState={
-
-running:false,
-
-step:0
-
-};
 
 /* ==========================================================
    Register Click Events
@@ -394,12 +387,6 @@ setTimeout(() => {
 
    zoomDiagram();
 
-setTimeout(()=>{
-
-    showInfo(organelles[id]);
-
-},220);
-   
 
 document.getElementById("organelleModal").classList.add("show");
    debug("Modal Opened");
@@ -548,6 +535,15 @@ const btn=document.getElementById("startTour");
 btn.textContent="▶ Explore Again";
 
 debug("🏁 Guided Tour Finished");
+
+   resetZoom();
+
+document
+.getElementById("cell-diagram")
+.classList.remove("focus-mode");
+
+   animationState.isAnimating=false;
+animationState.activeOrganelle=null;
 
 }
 
