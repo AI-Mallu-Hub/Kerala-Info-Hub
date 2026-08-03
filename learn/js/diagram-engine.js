@@ -454,6 +454,58 @@ debug("🧬 Guided Tour Started");
 
 btn.textContent="⏸ Touring...";
 
+   startTourStep(0);
+
 });
+
+   }
+function startTourStep(index){
+
+const ids=Object.keys(organelles);
+
+if(index>=ids.length){
+
+finishTour();
+
+return;
+
+}
+
+tourState.step=index;
+
+const id=ids[index];
+
+const svg=document.querySelector("#cell-diagram svg");
+
+const part=svg.getElementById(id);
+
+if(!part) return;
+
+animationState.activeOrganelle=part;
+
+animationState.clickedRect=
+part.getBoundingClientRect();
+
+highlightOrganelle(svg,id);
+
+showTooltip(organelles[id].title);
+
+setTimeout(()=>{
+
+showInfo(organelles[id]);
+
+},550);
+
+       }
+
+function finishTour(){
+
+tourState.running=false;
+
+const btn=document.getElementById("startTour");
+
+btn.textContent="▶ Explore Again";
+
+debug("✅ Tour Finished");
 
    }
