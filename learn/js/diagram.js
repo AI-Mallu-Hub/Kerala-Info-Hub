@@ -1,88 +1,161 @@
-window.addEventListener("DOMContentLoaded", loadDiagram);
+/* ==========================================================
+   Kerala Info Hub - Interactive Diagram Engine v1.0
+   Reusable for Cell, Heart, Brain, Kidney, etc.
+   ========================================================== */
 
-async function loadDiagram(){
+window.addEventListener("DOMContentLoaded", initDiagram);
 
-const container=document.getElementById("cell-diagram");
+async function initDiagram() {
 
-if(!container){
+    const container = document.getElementById("cell-diagram");
 
-console.error("Container not found");
+    if (!container) {
+        console.error("Diagram container not found.");
+        return;
+    }
 
-return;
+    try {
+
+        // Load SVG
+        const response = await fetch("/Kerala-Info-Hub/learn/assets/svg/cell.svg");
+
+        if (!response.ok) {
+            throw new Error("SVG file not found.");
+        }
+
+        const svgText = await response.text();
+
+        container.innerHTML = svgText;
+
+        const svg = container.querySelector("svg");
+
+        if (!svg) {
+            throw new Error("SVG element missing.");
+        }
+
+        console.log("✅ SVG Loaded");
+
+        registerOrganelles(svg);
+
+    }
+
+    catch (error) {
+
+        console.error(error);
+
+        container.innerHTML = `
+            <div style="
+                padding:40px;
+                text-align:center;
+                color:#d32f2f;
+                font-weight:bold;
+            ">
+                ❌ Unable to load Interactive Diagram
+            </div>
+        `;
+
+    }
 
 }
 
-try{
 
-const response=await fetch("../../assets/svg/cell.svg");
+/* ==========================================================
+   Organelle Database
+   ========================================================== */
 
-const svgText=await response.text();
-
-container.innerHTML=svgText;
-
-console.log("SVG Loaded Successfully");
-
-}
-catch(error){
-
-container.innerHTML=`
-
-<p style="color:red;text-align:center">
-
-Unable to load diagram.
-
-</p>
-
-`;
-
-console.error(error);
-
-}
-
-}
 const organelles = {
 
-mitochondria:"⚡ Mitochondria\n\nPowerhouse of the Cell.",
+    nucleus: {
+        title: "🧠 Nucleus",
+        description: "Controls all activities of the cell and stores DNA."
+    },
 
-golgi:"📦 Golgi Apparatus\n\nPackages proteins.",
+    nucleolus: {
+        title: "🟣 Nucleolus",
+        description: "Produces ribosomes."
+    },
 
-"rough-er":"🌊 Rough ER\n\nProtein synthesis.",
+    mitochondria: {
+        title: "⚡ Mitochondria",
+        description: "Powerhouse of the cell. Produces ATP."
+    },
 
-"smooth-er":"🌊 Smooth ER\n\nLipid synthesis.",
+    golgi: {
+        title: "📦 Golgi Apparatus",
+        description: "Packages and transports proteins."
+    },
 
-ribosomes:"⚫ Ribosomes\n\nProtein factories.",
+    "rough-er": {
+        title: "🌊 Rough ER",
+        description: "Protein synthesis."
+    },
 
-lysosome:"🟡 Lysosome\n\nDigests waste materials.",
+    "smooth-er": {
+        title: "🌊 Smooth ER",
+        description: "Lipid synthesis."
+    },
 
-vacuole:"🔵 Vacuole\n\nStores water and nutrients.",
+    ribosomes: {
+        title: "⚫ Ribosomes",
+        description: "Protein factories."
+    },
 
-centrosome:"⭐ Centrosome\n\nHelps cell division."
+    lysosome: {
+        title: "🟡 Lysosome",
+        description: "Digests waste materials."
+    },
+
+    vacuole: {
+        title: "🔵 Vacuole",
+        description: "Stores water and nutrients."
+    },
+
+    centrosome: {
+        title: "⭐ Centrosome",
+        description: "Helps in cell division."
+    }
 
 };
 
-Object.keys(organelles).forEach(id=>{
 
-const el=svg.getElementById(id);
+/* ==========================================================
+   Register Click Events
+   ========================================================== */
 
-if(el){
+function registerOrganelles(svg) {
 
-el.addEventListener("click",()=>{
+    Object.keys(organelles).forEach(id => {
 
-alert(organelles[id]);
+        const part = svg.getElementById(id);
 
-});
+        if (!part) return;
+
+        part.classList.add("organelle");
+
+        part.addEventListener("click", () => {
+
+            showInfo(
+                organelles[id].title,
+                organelles[id].description
+            );
+
+        });
+
+    });
 
 }
 
-});
-.loading-diagram{
 
-text-align:center;
+/* ==========================================================
+   Info Popup
+   ========================================================== */
 
-padding:70px 20px;
+function showInfo(title, description) {
 
-font-size:18px;
+    alert(
+        title +
+        "\n\n" +
+        description
+    );
 
-color:#666;
-
-}
+      }
