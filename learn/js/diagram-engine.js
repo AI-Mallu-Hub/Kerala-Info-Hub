@@ -428,11 +428,11 @@ startTourStep(tourState.step+1);
             .querySelectorAll(".organelle")
             .forEach(el => el.classList.remove("active", "dim"));
 
+       resetZoom();
+       
     }, 450);
 
-   resetZoom();
-   
-}
+   }
 
 function setupGuidedTour(){
 
