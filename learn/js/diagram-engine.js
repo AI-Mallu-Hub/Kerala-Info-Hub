@@ -325,13 +325,6 @@ function resetZoom(){
 
 }
 
-zoomDiagram();
-
-setTimeout(()=>{
-
-    showInfo(organelles[id]);
-
-},220);
 
 
 function showInfo(data){
@@ -372,6 +365,14 @@ flash.classList.add("active");
 setTimeout(() => {
 
     flash.classList.remove("active");
+
+},220);
+
+   zoomDiagram();
+
+setTimeout(()=>{
+
+    showInfo(organelles[id]);
 
 },220);
    
