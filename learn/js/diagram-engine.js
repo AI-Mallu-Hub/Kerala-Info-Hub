@@ -172,6 +172,30 @@ function registerOrganelles(svg) {
    Info Popup
    ========================================================== */
 
+function highlightOrganelle(svg,selectedId){
+
+    Object.keys(organelles).forEach(id=>{
+
+        const item=svg.getElementById(id);
+
+        if(!item) return;
+
+        item.classList.remove("active","dim");
+
+        if(id===selectedId){
+
+            item.classList.add("active");
+
+        }else{
+
+            item.classList.add("dim");
+
+        }
+
+    });
+
+}
+
 function showInfo(data){
 
     showModal(data);
@@ -203,6 +227,13 @@ closeBtn.addEventListener("click", () => {
 
         modal.classList.remove("show");
         modal.classList.remove("closing");
+       document
+.querySelectorAll(".organelle")
+.forEach(el=>{
+
+el.classList.remove("active","dim");
+
+});
 
     }, 450);
 
