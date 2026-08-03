@@ -423,3 +423,34 @@ opacity:0;
 transform:translateY(12px);
 
 }
+
+/* ==========================================
+   Diagram Highlight Engine
+========================================== */
+
+.organelle{
+
+transition:
+transform .35s ease,
+opacity .35s ease,
+filter .35s ease;
+
+transform-origin:center center;
+
+}
+
+.organelle.active{
+
+transform:scale(1.08);
+
+filter:
+brightness(1.18)
+drop-shadow(0 0 10px rgba(33,150,243,.55));
+
+}
+
+.organelle.dim{
+
+opacity:.28;
+
+}
