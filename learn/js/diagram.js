@@ -40,3 +40,49 @@ console.error(error);
 }
 
 }
+const organelles = {
+
+mitochondria:"⚡ Mitochondria\n\nPowerhouse of the Cell.",
+
+golgi:"📦 Golgi Apparatus\n\nPackages proteins.",
+
+"rough-er":"🌊 Rough ER\n\nProtein synthesis.",
+
+"smooth-er":"🌊 Smooth ER\n\nLipid synthesis.",
+
+ribosomes:"⚫ Ribosomes\n\nProtein factories.",
+
+lysosome:"🟡 Lysosome\n\nDigests waste materials.",
+
+vacuole:"🔵 Vacuole\n\nStores water and nutrients.",
+
+centrosome:"⭐ Centrosome\n\nHelps cell division."
+
+};
+
+Object.keys(organelles).forEach(id=>{
+
+const el=svg.getElementById(id);
+
+if(el){
+
+el.addEventListener("click",()=>{
+
+alert(organelles[id]);
+
+});
+
+}
+
+});
+.loading-diagram{
+
+text-align:center;
+
+padding:70px 20px;
+
+font-size:18px;
+
+color:#666;
+
+}
