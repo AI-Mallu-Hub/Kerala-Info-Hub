@@ -1,4 +1,7 @@
 alert("diagram.js loaded");
+svgObject.addEventListener("load", () => {
+    alert("SVG Loaded");
+});
 window.addEventListener("load",()=>{
 
 const svgObject=document.getElementById("cell-svg");
