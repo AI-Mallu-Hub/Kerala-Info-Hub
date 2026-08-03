@@ -152,10 +152,34 @@ function registerOrganelles(svg) {
 
 function showInfo(title, description) {
 
-    alert(
-        title +
-        "\n\n" +
-        description
-    );
-
+    showModal({
+ title:"🧠 Nucleus",
+ function:"Controls all activities of the cell.",
+ clinical:"DNA mutations can produce disease.",
+ exam:"Frequently asked in PSC and MOHAP."
+});
       }
+
+function showModal(data){
+
+document.getElementById("modalTitle").textContent=data.title;
+
+document.getElementById("modalFunction").textContent=data.function;
+
+document.getElementById("modalClinical").textContent=data.clinical;
+
+document.getElementById("modalExam").textContent=data.exam;
+
+document.getElementById("organelleModal").classList.add("show");
+
+}
+
+document
+.getElementById("closeModal")
+.addEventListener("click",()=>{
+
+document
+.getElementById("organelleModal")
+.classList.remove("show");
+
+});
