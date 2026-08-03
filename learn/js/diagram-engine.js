@@ -141,7 +141,9 @@ const organelles = {
    Register Click Events
    ========================================================== */
 
-function registerOrganelles(svg) {
+function animationState.currentSVG = svg;
+
+registerOrganelles(svg); {
 
     Object.keys(organelles).forEach(id => {
 
@@ -153,6 +155,10 @@ function registerOrganelles(svg) {
 
         part.addEventListener("click", () => {
 
+    if(animationState.isAnimating) return;
+
+    animationState.activeOrganelle = part;
+
     highlightOrganelle(svg,id);
 
     setTimeout(()=>{
@@ -162,10 +168,23 @@ function registerOrganelles(svg) {
     },180);
 
 });
-
     });
 
 }
+
+/* ==========================================================
+   Animation State
+   ========================================================== */
+
+const animationState = {
+
+    activeOrganelle: null,
+
+    isAnimating: false,
+
+    currentSVG: null
+
+};
 
 
 /* ==========================================================
@@ -213,6 +232,7 @@ document.getElementById("modalClinical").textContent=data.clinical;
 document.getElementById("modalExam").textContent=data.exam;
 
 document.getElementById("organelleModal").classList.add("show");
+   animationState.isAnimating = true;
 
 }
 
@@ -227,6 +247,9 @@ closeBtn.addEventListener("click", () => {
 
         modal.classList.remove("show");
         modal.classList.remove("closing");
+       animationState.isAnimating = false;
+       animationState.activeOrganelle = null;
+       
        document
 .querySelectorAll(".organelle")
 .forEach(el=>{
