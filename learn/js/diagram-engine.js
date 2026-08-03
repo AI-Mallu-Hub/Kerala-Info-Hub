@@ -261,3 +261,11 @@ el.classList.remove("active","dim");
     }, 450);
 
 });
+
+function debug(msg){
+    document.getElementById("debugBox").innerHTML += msg + "<br>";
+               }
+debug("Fetch started");
+debug("SVG loaded");
+debug("Register started");
+debug("Modal initialized");
