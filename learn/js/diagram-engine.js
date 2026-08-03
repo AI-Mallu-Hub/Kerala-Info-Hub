@@ -349,6 +349,11 @@ setTimeout(() => {
     flash.classList.remove("active");
 
 },220);
+   const modalCard = document.querySelector(".modal-card");
+
+modalCard.style.display = "block";
+modalCard.style.opacity = "1";
+modalCard.style.transform = "scale(1)";
 
 document.getElementById("organelleModal").classList.add("show");
    debug("Modal Opened");
