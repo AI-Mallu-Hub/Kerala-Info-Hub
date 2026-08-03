@@ -285,6 +285,10 @@ function highlightOrganelle(svg,selectedId){
 "--glow-color",
 organelles[id].glow
 );
+           document.documentElement.style.setProperty(
+    "--accent-color",
+    organelles[id].glow
+);
 
         }else{
 
