@@ -301,6 +301,7 @@ document.getElementById("modalClinical").textContent=data.clinical;
 document.getElementById("modalExam").textContent=data.exam;
 
 document.getElementById("organelleModal").classList.add("show");
+   debug("Modal Opened");
    animationState.isAnimating = true;
 
 }
