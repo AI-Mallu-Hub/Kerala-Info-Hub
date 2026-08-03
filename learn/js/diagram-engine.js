@@ -219,7 +219,9 @@ const animationState = {
 
     isAnimating: false,
 
-    currentSVG: null
+    currentSVG: null,
+
+    clickedRect: null
 
 };
 
@@ -248,6 +250,9 @@ function registerOrganelles(svg) {
             if (animationState.isAnimating) return;
 
             animationState.activeOrganelle = part;
+
+            animationState.clickedRect =
+part.getBoundingClientRect();
 
             highlightOrganelle(svg, id);
 
@@ -320,6 +325,21 @@ document.getElementById("modalFunction").textContent=data.function;
 document.getElementById("modalClinical").textContent=data.clinical;
 
 document.getElementById("modalExam").textContent=data.exam;
+
+   const modalCard=document.querySelector(".modal-card");
+
+const r=animationState.clickedRect;
+
+if(r){
+
+const cx=r.left+r.width/2;
+
+const cy=r.top+r.height/2;
+
+modalCard.style.transformOrigin=
+`${cx}px ${cy}px`;
+
+}
 
 document.getElementById("organelleModal").classList.add("show");
    debug("Modal Opened");
