@@ -310,6 +310,7 @@ const closeBtn = document.getElementById("closeModal");
 const modal = document.getElementById("organelleModal");
 
 closeBtn.addEventListener("click", () => {
+   debug("Close button clicked");
    debug("Closing Modal");
 
     modal.classList.add("closing");
