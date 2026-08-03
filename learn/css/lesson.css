@@ -226,6 +226,14 @@ inset:0;
 
 display:none;
 
+opacity:0;
+   
+visibility:hidden;
+   
+transition:.28s ease;
+   
+backdrop-filter:blur(0px);
+
 justify-content:center;
 
 align-items:center;
@@ -241,6 +249,12 @@ z-index:9999;
 .modal.show{
 
 display:flex;
+
+opacity:1;
+   
+visibility:visible;
+   
+backdrop-filter:blur(5px);
 
 }
 
@@ -259,6 +273,16 @@ padding:24px;
 position:relative;
 
 box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+transform:translateY(45px) scale(.95);
+
+transition:.28s ease;
+
+}
+
+.modal.show .modal-card{
+
+transform:translateY(0);
 
 }
 
@@ -280,6 +304,22 @@ cursor:pointer;
 
 color:#666;
 
+transition:.25s;
+
+border-radius:50%;
+
+width:42px;
+
+height:42px;
+
+}
+
+.close-btn:hover{
+
+background:#f4f4f4;
+
+transform:rotate(90deg);
+
 }
 
 .modal h2{
@@ -298,6 +338,12 @@ padding-top:16px;
 
 border-top:1px solid #eee;
 
+opacity:0;
+
+transform:translateY(12px);
+
+transition:.25s ease;
+
 }
 
 .modal-section h3{
@@ -306,4 +352,12 @@ margin-bottom:8px;
 
 font-size:18px;
 
-   }
+}
+
+.modal.show .modal-section{
+
+opacity:1;
+
+transform:none;
+
+}
