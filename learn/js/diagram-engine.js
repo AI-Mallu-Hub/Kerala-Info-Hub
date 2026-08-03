@@ -217,7 +217,6 @@ const animationState = {
    Register Click Events
    ========================================================== */
 
-debug("Clicked : " + id);
 
 function registerOrganelles(svg) {
 
@@ -329,6 +328,4 @@ function closeModal() {
 
     }, 450);
    
-  }
-
-});
+}
