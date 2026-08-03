@@ -520,7 +520,7 @@ step:0,
 
 auto: true,
 
-timer: null
+timer: null,
 
 order:[
 "nucleus",
