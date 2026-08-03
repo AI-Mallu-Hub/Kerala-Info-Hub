@@ -449,8 +449,14 @@ transform:scale(1.08);
 
 filter:
 brightness(1.18)
-drop-shadow(0 0 10px rgba(33,150,243,.55));
-
+drop-shadow(
+0 0 10px
+var(--glow-color,#42A5F5)
+)
+drop-shadow(
+0 0 18px
+var(--glow-color,#42A5F5)
+);
 }
 
 .organelle.dim{
