@@ -328,17 +328,7 @@ function closeModal() {
             .forEach(el => el.classList.remove("active", "dim"));
 
     }, 450);
-   document.getElementById("organelleModal").onclick = function(e){
-
-    if(e.target === this){
-
-        closeModal();
-
-    }
-
-};
-
-
-   }
+   
+  }
 
 });
