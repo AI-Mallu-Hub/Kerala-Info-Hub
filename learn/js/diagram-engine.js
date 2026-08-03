@@ -1,4 +1,59 @@
 /* ==========================================================
+   Developer Debug Mode
+========================================================== */
+
+const DEBUG = true;
+
+function debug(message, type = "info") {
+
+    if (!DEBUG) return;
+
+    let panel = document.getElementById("debug-panel");
+
+    if (!panel) {
+
+        panel = document.createElement("div");
+
+        panel.id = "debug-panel";
+
+        panel.style.cssText = `
+            position:fixed;
+            bottom:12px;
+            left:12px;
+            right:12px;
+            max-height:180px;
+            overflow:auto;
+            background:#111;
+            color:#0f0;
+            font:12px monospace;
+            padding:10px;
+            border-radius:12px;
+            z-index:999999;
+            box-shadow:0 6px 18px rgba(0,0,0,.35);
+        `;
+
+        document.body.appendChild(panel);
+
+    }
+
+    const color = {
+        info: "#00ff88",
+        warn: "#ffd54f",
+        error: "#ff5252",
+        success: "#4caf50"
+    };
+
+    panel.innerHTML += `
+        <div style="color:${color[type] || "#fff"}">
+            ${new Date().toLocaleTimeString()} → ${message}
+        </div>
+    `;
+
+    panel.scrollTop = panel.scrollHeight;
+
+}
+
+/* ==========================================================
    Kerala Info Hub - Interactive Diagram Engine v1.0
    Reusable for Cell, Heart, Brain, Kidney, etc.
    ========================================================== */
@@ -6,6 +61,7 @@
 window.addEventListener("DOMContentLoaded", initDiagram);
 
 async function initDiagram() {
+   debug("Initializing Diagram...");
 
     const container = document.getElementById("cell-diagram");
 
@@ -15,9 +71,11 @@ async function initDiagram() {
     }
 
     try {
+       debug("Loading SVG...");
 
         // Load SVG
         const response = await fetch("/Kerala-Info-Hub/learn/assets/svg/cell.svg");
+       debug("HTTP Status : " + response.status);
 
         if (!response.ok) {
             throw new Error("SVG file not found.");
@@ -26,6 +84,7 @@ async function initDiagram() {
         const svgText = await response.text();
 
         container.innerHTML = svgText;
+       debug("SVG inserted.", "success");
 
         const svg = container.querySelector("svg");
 
@@ -36,6 +95,7 @@ async function initDiagram() {
         console.log("✅ SVG Loaded");
 
         registerOrganelles(svg);
+       debug("Events Registered.", "success");
 
     }
 
