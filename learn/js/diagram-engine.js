@@ -343,6 +343,11 @@ modalCard.style.transformOrigin=
 
 document.getElementById("organelleModal").classList.add("show");
    debug("Modal Opened");
+   requestAnimationFrame(()=>{
+
+modalCard.style.transform="scale(1)";
+
+});
    animationState.isAnimating = true;
 document.getElementById("closeModal").onclick = closeModal;
 
