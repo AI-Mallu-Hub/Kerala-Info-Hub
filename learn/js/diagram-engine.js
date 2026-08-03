@@ -200,52 +200,6 @@ const organelles = {
 };
 
 /* ==========================================================
-   Register Click Events
-   ========================================================== */
-
-debug("Clicked : " + id);
-
-function animationState.currentSVG = svg;
-
-registerOrganelles(svg); {
-
-    Object.keys(organelles).forEach(id => {
-
-        const part = svg.getElementById(id);
-       if(!part){
-
-    debug(id + " NOT FOUND","warn");
-
-    return;
-
-}
-
-debug(id + " OK");
-
-        if (!part) return;
-
-        part.classList.add("organelle");
-
-        part.addEventListener("click", () => {
-
-    if(animationState.isAnimating) return;
-
-    animationState.activeOrganelle = part;
-
-    highlightOrganelle(svg,id);
-
-    setTimeout(()=>{
-
-        showInfo(organelles[id]);
-
-    },180);
-
-});
-    });
-
-}
-
-/* ==========================================================
    Animation State
    ========================================================== */
 
@@ -258,6 +212,47 @@ const animationState = {
     currentSVG: null
 
 };
+
+/* ==========================================================
+   Register Click Events
+   ========================================================== */
+
+debug("Clicked : " + id);
+
+function registerOrganelles(svg) {
+
+    Object.keys(organelles).forEach(id => {
+
+        const part = svg.getElementById(id);
+
+        if (!part) {
+            debug(id + " NOT FOUND", "warn");
+            return;
+        }
+
+        debug(id + " OK");
+
+        part.classList.add("organelle");
+
+        part.addEventListener("click", () => {
+
+            if (animationState.isAnimating) return;
+
+            animationState.activeOrganelle = part;
+
+            highlightOrganelle(svg, id);
+
+            setTimeout(() => {
+
+                showInfo(organelles[id]);
+
+            }, 180);
+
+        });
+
+    });
+
+}
 
 
 /* ==========================================================
@@ -336,12 +331,4 @@ el.classList.remove("active","dim");
     }, 450);
 
 });
-
-function debug(msg){
-    document.getElementById("debugBox").innerHTML += msg + "<br>";
-               }
-debug("Fetch started");
-debug("SVG loaded");
-debug("Register started");
-debug("Modal initialized");
 
