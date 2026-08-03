@@ -153,7 +153,13 @@ function registerOrganelles(svg) {
 
         part.addEventListener("click", () => {
 
-    showInfo(organelles[id]);
+    highlightOrganelle(svg,id);
+
+    setTimeout(()=>{
+
+        showInfo(organelles[id]);
+
+    },180);
 
 });
 
