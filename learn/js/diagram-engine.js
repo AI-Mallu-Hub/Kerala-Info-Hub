@@ -269,3 +269,4 @@ debug("Fetch started");
 debug("SVG loaded");
 debug("Register started");
 debug("Modal initialized");
+
