@@ -389,3 +389,37 @@ transform:none;
 transition-delay:.12s;
 
 }
+
+.modal.closing{
+
+opacity:0;
+
+visibility:hidden;
+
+backdrop-filter:blur(0px);
+
+}
+
+.modal.closing .modal-card{
+
+transform:translateY(60px) scale(.92);
+
+opacity:0;
+
+}
+
+.modal.closing .modal-title{
+
+opacity:0;
+
+transform:translateY(10px);
+
+}
+
+.modal.closing .modal-section{
+
+opacity:0;
+
+transform:translateY(12px);
+
+}
