@@ -275,34 +275,27 @@ backdrop-filter:blur(5px);
 background:#fff;
 
 width:100%;
-
 max-width:420px;
 
 border-radius:24px;
 
 padding:24px;
 
-border-top:5px solid var(--accent-color);
-
-transition:
-
-border-color .35s ease,
-
-box-shadow .35s ease;
-
 position:relative;
+
+border-top:5px solid var(--accent-color);
 
 box-shadow:0 20px 50px rgba(0,0,0,.25);
 
 transform:scale(.15);
-   
-transform:scale(1);
 
 opacity:0;
 
 transition:
-    transform .50s cubic-bezier(.22,.8,.28,1),
-    opacity .45s ease-in;
+transform .50s cubic-bezier(.22,.8,.28,1),
+opacity .45s ease,
+border-color .35s ease,
+box-shadow .35s ease;
 
 }
 
