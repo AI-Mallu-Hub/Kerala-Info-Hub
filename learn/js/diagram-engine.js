@@ -303,15 +303,15 @@ document.getElementById("modalExam").textContent=data.exam;
 document.getElementById("organelleModal").classList.add("show");
    debug("Modal Opened");
    animationState.isAnimating = true;
+document.getElementById("closeModal").onclick = closeModal;
 
 }
 
-const closeBtn = document.getElementById("closeModal");
-const modal = document.getElementById("organelleModal");
+function closeModal() {
 
-closeBtn.addEventListener("click", () => {
-   debug("Close button clicked");
-   debug("Closing Modal");
+    debug("Closing Modal");
+
+    const modal = document.getElementById("organelleModal");
 
     modal.classList.add("closing");
 
@@ -319,18 +319,17 @@ closeBtn.addEventListener("click", () => {
 
         modal.classList.remove("show");
         modal.classList.remove("closing");
-       animationState.isAnimating = false;
-       animationState.activeOrganelle = null;
-       
-       document
-.querySelectorAll(".organelle")
-.forEach(el=>{
 
-el.classList.remove("active","dim");
+        animationState.isAnimating = false;
+        animationState.activeOrganelle = null;
 
-});
+        document
+            .querySelectorAll(".organelle")
+            .forEach(el => el.classList.remove("active", "dim"));
 
     }, 450);
+
+   }
 
 });
 
