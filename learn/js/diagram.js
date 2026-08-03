@@ -65,58 +65,77 @@ async function initDiagram() {
 
 const organelles = {
 
-    nucleus: {
-        title: "🧠 Nucleus",
-        description: "Controls all activities of the cell and stores DNA."
+    nucleus:{
+        title:"🧠 Nucleus",
+        function:"Controls all activities of the cell.",
+        clinical:"Stores DNA. Damage may lead to genetic diseases.",
+        exam:"Largest organelle in animal cells."
     },
 
-    nucleolus: {
-        title: "🟣 Nucleolus",
-        description: "Produces ribosomes."
+    nucleolus:{
+        title:"🟣 Nucleolus",
+        function:"Produces ribosomes.",
+        clinical:"Highly active in rapidly dividing cells.",
+        exam:"Found inside the nucleus."
     },
 
-    mitochondria: {
-        title: "⚡ Mitochondria",
-        description: "Powerhouse of the cell. Produces ATP."
+    mitochondria:{
+        title:"⚡ Mitochondria",
+        function:"Produces ATP (energy).",
+        clinical:"Mitochondrial diseases reduce energy production.",
+        exam:"Powerhouse of the cell."
     },
 
-    golgi: {
-        title: "📦 Golgi Apparatus",
-        description: "Packages and transports proteins."
+    golgi:{
+        title:"📦 Golgi Apparatus",
+        function:"Packages and transports proteins.",
+        clinical:"Essential for secretion.",
+        exam:"Packaging centre of the cell."
     },
 
-    "rough-er": {
-        title: "🌊 Rough ER",
-        description: "Protein synthesis."
+    "rough-er":{
+        title:"🌊 Rough ER",
+        function:"Protein synthesis.",
+        clinical:"Contains ribosomes.",
+        exam:"RER = Ribosomes."
     },
 
-    "smooth-er": {
-        title: "🌊 Smooth ER",
-        description: "Lipid synthesis."
+    "smooth-er":{
+        title:"🌊 Smooth ER",
+        function:"Lipid synthesis.",
+        clinical:"Drug detoxification occurs here.",
+        exam:"SER has NO ribosomes."
     },
 
-    ribosomes: {
-        title: "⚫ Ribosomes",
-        description: "Protein factories."
+    ribosomes:{
+        title:"⚫ Ribosomes",
+        function:"Protein factories.",
+        clinical:"Necessary for protein synthesis.",
+        exam:"Smallest organelle."
     },
 
-    lysosome: {
-        title: "🟡 Lysosome",
-        description: "Digests waste materials."
+    lysosome:{
+        title:"🟡 Lysosome",
+        function:"Digests waste materials.",
+        clinical:"Called the suicide bag of the cell.",
+        exam:"Contains digestive enzymes."
     },
 
-    vacuole: {
-        title: "🔵 Vacuole",
-        description: "Stores water and nutrients."
+    vacuole:{
+        title:"🔵 Vacuole",
+        function:"Stores water and nutrients.",
+        clinical:"Large in plant cells.",
+        exam:"Storage organelle."
     },
 
-    centrosome: {
-        title: "⭐ Centrosome",
-        description: "Helps in cell division."
+    centrosome:{
+        title:"⭐ Centrosome",
+        function:"Helps cell division.",
+        clinical:"Forms spindle fibres.",
+        exam:"Important during mitosis."
     }
 
 };
-
 
 /* ==========================================================
    Register Click Events
@@ -134,12 +153,9 @@ function registerOrganelles(svg) {
 
         part.addEventListener("click", () => {
 
-            showInfo(
-                organelles[id].title,
-                organelles[id].description
-            );
+    showInfo(organelles[id]);
 
-        });
+});
 
     });
 
@@ -150,15 +166,11 @@ function registerOrganelles(svg) {
    Info Popup
    ========================================================== */
 
-function showInfo(title, description) {
+function showInfo(data){
 
-    showModal({
- title:"🧠 Nucleus",
- function:"Controls all activities of the cell.",
- clinical:"DNA mutations can produce disease.",
- exam:"Frequently asked in PSC and MOHAP."
-});
-      }
+    showModal(data);
+
+}
 
 function showModal(data){
 
