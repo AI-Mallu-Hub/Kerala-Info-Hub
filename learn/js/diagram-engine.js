@@ -3,7 +3,7 @@
    Developer Debug Mode
 ========================================================== */
 
-const DEBUG = false;
+const DEBUG = true;
 
 function debug(message, type = "info") {
 
