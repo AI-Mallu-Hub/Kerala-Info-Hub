@@ -1,38 +1,42 @@
+window.addEventListener("DOMContentLoaded", loadDiagram);
 
-window.addEventListener("load",()=>{
+async function loadDiagram(){
 
-const svgObject=document.getElementById("cell-svg");
+const container=document.getElementById("cell-diagram");
 
-if(!svgObject)return;
+if(!container){
 
-svgObject.addEventListener("load",()=>{
+console.error("Container not found");
 
-const svg=svgObject.contentDocument;
-
-const nucleus=svg.getElementById("nucleus");
-
-const nucleolus=svg.getElementById("nucleolus");
-
-if(nucleus){
-
-nucleus.addEventListener("click",()=>{
-
-alert("🟣 Nucleus\n\nControls all activities of the cell.\n\nContains DNA.");
-
-});
+return;
 
 }
 
-if(nucleolus){
+try{
 
-nucleolus.addEventListener("click",()=>{
+const response=await fetch("../../assets/svg/cell.svg");
 
-alert("🟣 Nucleolus\n\nProduces ribosomes.");
+const svgText=await response.text();
 
-});
+container.innerHTML=svgText;
+
+console.log("SVG Loaded Successfully");
+
+}
+catch(error){
+
+container.innerHTML=`
+
+<p style="color:red;text-align:center">
+
+Unable to load diagram.
+
+</p>
+
+`;
+
+console.error(error);
 
 }
 
-});
-
-});
+}
