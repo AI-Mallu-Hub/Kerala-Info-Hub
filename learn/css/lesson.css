@@ -493,12 +493,14 @@ opacity:.28;
 
 #cell-diagram{
 
-transition:
-filter .45s ease,
-transform .45s ease,
-opacity .45s ease;
+    transition:
+        transform .65s cubic-bezier(.22,.8,.28,1),
+        filter .45s ease,
+        opacity .45s ease;
 
-transform-origin:center;
+    transform-origin:center center;
+
+    will-change:transform;
 
 }
 
@@ -612,3 +614,19 @@ transform:scale(1.12);
 }
 
    }
+
+#diagramViewport{
+
+    overflow:hidden;
+
+    position:relative;
+
+    border-radius:24px;
+
+}
+
+#cell-diagram.zoom{
+
+    transform:scale(1.55);
+
+}
