@@ -100,6 +100,7 @@ async function initDiagram() {
     }
 
     catch (error) {
+       debug(error.message,"error");
 
         console.error(error);
 
@@ -201,6 +202,8 @@ const organelles = {
    Register Click Events
    ========================================================== */
 
+debug("Clicked : " + id);
+
 function animationState.currentSVG = svg;
 
 registerOrganelles(svg); {
@@ -208,6 +211,15 @@ registerOrganelles(svg); {
     Object.keys(organelles).forEach(id => {
 
         const part = svg.getElementById(id);
+       if(!part){
+
+    debug(id + " NOT FOUND","warn");
+
+    return;
+
+}
+
+debug(id + " OK");
 
         if (!part) return;
 
@@ -282,6 +294,7 @@ function showInfo(data){
 }
 
 function showModal(data){
+   debug("Opening Modal : " + data.title);
 
 document.getElementById("modalTitle").textContent=data.title;
 
@@ -300,6 +313,7 @@ const closeBtn = document.getElementById("closeModal");
 const modal = document.getElementById("organelleModal");
 
 closeBtn.addEventListener("click", () => {
+   debug("Closing Modal");
 
     modal.classList.add("closing");
 
