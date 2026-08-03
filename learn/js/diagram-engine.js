@@ -340,6 +340,15 @@ modalCard.style.transformOrigin=
 `${cx}px ${cy}px`;
 
 }
+const flash = document.getElementById("microscope-flash");
+
+flash.classList.add("active");
+
+setTimeout(() => {
+
+    flash.classList.remove("active");
+
+},220);
 
 document.getElementById("organelleModal").classList.add("show");
    debug("Modal Opened");
