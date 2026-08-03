@@ -282,6 +282,14 @@ border-radius:24px;
 
 padding:24px;
 
+border-top:5px solid var(--accent-color);
+
+transition:
+
+border-color .35s ease,
+
+box-shadow .35s ease;
+
 position:relative;
 
 box-shadow:0 20px 50px rgba(0,0,0,.25);
@@ -321,7 +329,11 @@ cursor:pointer;
 
 color:#666;
 
-transition:.25s;
+transition:
+
+color .25s ease,
+
+transform .25s ease;
 
 border-radius:50%;
 
@@ -334,6 +346,8 @@ height:42px;
 .close-btn:hover{
 
 background:#f4f4f4;
+
+color:var(--accent-color);
 
 transform:rotate(90deg);
 
@@ -370,6 +384,10 @@ margin-bottom:8px;
 
 font-size:18px;
 
+color:var(--accent-color);
+
+transition:color .35s ease;
+
 }
 
 .modal.show .modal-section{
@@ -386,7 +404,9 @@ opacity:0;
 
 transform:translateY(10px);
 
-transition:.45s ease;
+color:var(--accent-color);
+
+transition:color .35s ease;
 
 }
 
