@@ -309,6 +309,31 @@ wrapper.classList.add("focus-mode");
 
 }
 
+function zoomDiagram(){
+
+    document
+        .getElementById("cell-diagram")
+        .classList.add("zoom");
+
+}
+
+function resetZoom(){
+
+    document
+        .getElementById("cell-diagram")
+        .classList.remove("zoom");
+
+}
+
+zoomDiagram();
+
+setTimeout(()=>{
+
+    showInfo(organelles[id]);
+
+},220);
+
+
 function showInfo(data){
 
     showModal(data);
@@ -383,5 +408,7 @@ function closeModal() {
             .forEach(el => el.classList.remove("active", "dim"));
 
     }, 450);
+
+   resetZoom();
    
 }
