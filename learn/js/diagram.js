@@ -186,12 +186,18 @@ document.getElementById("organelleModal").classList.add("show");
 
 }
 
-document
-.getElementById("closeModal")
-.addEventListener("click",()=>{
+const closeBtn = document.getElementById("closeModal");
+const modal = document.getElementById("organelleModal");
 
-document
-.getElementById("organelleModal")
-.classList.remove("show");
+closeBtn.addEventListener("click", () => {
+
+    modal.classList.add("closing");
+
+    setTimeout(() => {
+
+        modal.classList.remove("show");
+        modal.classList.remove("closing");
+
+    }, 450);
 
 });
