@@ -458,3 +458,59 @@ drop-shadow(0 0 10px rgba(33,150,243,.55));
 opacity:.28;
 
 }
+
+/* ==========================================
+   Microscope Focus Engine
+========================================== */
+
+#cell-diagram{
+
+transition:
+filter .45s ease,
+transform .45s ease,
+opacity .45s ease;
+
+transform-origin:center;
+
+}
+
+#cell-diagram.focus-mode{
+
+filter:brightness(.82);
+
+}
+
+.organelle.active{
+
+animation:
+pulseFocus .6s ease;
+
+}
+
+@keyframes pulseFocus{
+
+0%{
+
+transform:scale(1);
+
+}
+
+40%{
+
+transform:scale(1.14);
+
+}
+
+70%{
+
+transform:scale(1.08);
+
+}
+
+100%{
+
+transform:scale(1.1);
+
+}
+
+}
