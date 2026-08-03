@@ -3,7 +3,7 @@ alert("diagram-engine.js loaded");
    Developer Debug Mode
 ========================================================== */
 
-const DEBUG = true;
+const DEBUG = false;
 
 function debug(message, type = "info") {
 
