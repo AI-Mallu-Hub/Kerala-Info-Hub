@@ -280,6 +280,10 @@ function highlightOrganelle(svg,selectedId){
 
     });
 
+   const wrapper = document.getElementById("cell-diagram");
+
+wrapper.classList.add("focus-mode");
+
 }
 
 function showInfo(data){
@@ -321,6 +325,9 @@ function closeModal() {
 
         animationState.isAnimating = false;
         animationState.activeOrganelle = null;
+       document
+.getElementById("cell-diagram")
+.classList.remove("focus-mode");
 
         document
             .querySelectorAll(".organelle")
