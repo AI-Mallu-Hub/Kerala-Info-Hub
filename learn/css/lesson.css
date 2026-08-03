@@ -630,3 +630,70 @@ transform:scale(1.12);
     transform:scale(1.55);
 
 }
+
+#organelleTooltip{
+
+position:fixed;
+
+left:50%;
+
+top:50%;
+
+transform:
+translate(-50%,-50%)
+scale(.85);
+
+background:rgba(25,25,28,.95);
+
+color:#fff;
+
+padding:14px 22px;
+
+border-radius:18px;
+
+font-weight:700;
+
+text-align:center;
+
+pointer-events:none;
+
+opacity:0;
+
+transition:
+
+opacity .22s ease,
+
+transform .22s ease;
+
+z-index:9998;
+
+backdrop-filter:blur(8px);
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.35);
+
+}
+
+#organelleTooltip.show{
+
+opacity:1;
+
+transform:
+translate(-50%,-50%)
+scale(1);
+
+}
+
+#organelleTooltip small{
+
+display:block;
+
+margin-top:4px;
+
+font-size:12px;
+
+opacity:.7;
+
+font-weight:500;
+
+}
