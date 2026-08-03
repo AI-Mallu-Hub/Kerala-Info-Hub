@@ -281,6 +281,10 @@ function highlightOrganelle(svg,selectedId){
         if(id===selectedId){
 
             item.classList.add("active");
+           item.style.setProperty(
+"--glow-color",
+organelles[id].glow
+);
 
         }else{
 
