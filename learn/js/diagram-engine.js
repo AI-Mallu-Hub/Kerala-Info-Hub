@@ -254,13 +254,15 @@ function registerOrganelles(svg) {
             animationState.clickedRect =
 part.getBoundingClientRect();
 
-            highlightOrganelle(svg, id);
+            highlightOrganelle(svg,id);
 
-            setTimeout(() => {
+showTooltip(organelles[id].title);
 
-                showInfo(organelles[id]);
+setTimeout(()=>{
 
-            }, 180);
+showInfo(organelles[id]);
+
+},700);
 
         });
 
@@ -325,7 +327,21 @@ function resetZoom(){
 
 }
 
+function showTooltip(title){
 
+const tip=document.getElementById("organelleTooltip");
+
+document.getElementById("tooltipTitle").textContent=title;
+
+tip.classList.add("show");
+
+setTimeout(()=>{
+
+tip.classList.remove("show");
+
+},700);
+
+}
 
 function showInfo(data){
 
