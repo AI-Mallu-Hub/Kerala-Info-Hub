@@ -96,6 +96,7 @@ async function initDiagram() {
         console.log("✅ SVG Loaded");
 
         registerOrganelles(svg);
+       setupGuidedTour();
        debug("Events Registered.", "success");
 
     }
@@ -222,6 +223,14 @@ const animationState = {
     currentSVG: null,
 
     clickedRect: null
+
+};
+
+const tourState={
+
+running:false,
+
+step:0
 
 };
 
@@ -429,3 +438,23 @@ function closeModal() {
    resetZoom();
    
 }
+
+function setupGuidedTour(){
+
+const btn=document.getElementById("startTour");
+
+if(!btn) return;
+
+btn.addEventListener("click",()=>{
+
+if(tourState.running) return;
+
+tourState.running=true;
+
+debug("🧬 Guided Tour Started");
+
+btn.textContent="⏸ Touring...";
+
+});
+
+   }
