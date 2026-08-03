@@ -3,7 +3,7 @@
    Developer Debug Mode
 ========================================================== */
 
-const DEBUG = true;
+const DEBUG = false;
 
 function debug(message, type = "info") {
 
@@ -392,6 +392,16 @@ document.getElementById("organelleModal").classList.add("show");
    debug("Modal Opened");
    
    animationState.isAnimating = true;
+if(tourState.running && tourState.auto){
+
+    tourState.timer = setTimeout(()=>{
+
+        closeModal();
+
+    },2500);
+
+           }
+
 document.getElementById("closeModal").onclick = closeModal;
 
 }
@@ -399,6 +409,13 @@ document.getElementById("closeModal").onclick = closeModal;
 function closeModal() {
 
     debug("Closing Modal");
+if(tourState.timer){
+
+    clearTimeout(tourState.timer);
+
+    tourState.timer = null;
+
+}
 
     const modal = document.getElementById("organelleModal");
 
@@ -500,6 +517,10 @@ const tourState={
 running:false,
 
 step:0,
+
+auto: true,
+
+timer: null
 
 order:[
 "nucleus",
