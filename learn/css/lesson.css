@@ -280,8 +280,8 @@ transform:translateY(60px) scale(.92);
 opacity:0;
 
 transition:
-    transform .42s cubic-bezier(.22,.8,.28,1),
-    opacity .35s ease;
+    transform .50s cubic-bezier(.22,.8,.28,1),
+    opacity .45s ease-in;
 
 }
 
@@ -349,9 +349,9 @@ opacity:0;
 
 transform:translateY(12px);
 
-transition:.45s ease;
+transition:.55s ease-in;
    
-transition-delay:.10s;
+transition-delay:.20s;
 }
 
 .modal-section h3{
@@ -376,7 +376,7 @@ opacity:0;
 
 transform:translateY(10px);
 
-transition:.35s ease;
+transition:.45s ease;
 
 }
 
@@ -386,6 +386,6 @@ opacity:1;
 
 transform:none;
 
-transition-delay:.08s;
+transition-delay:.12s;
 
 }
