@@ -682,7 +682,7 @@ document.getElementById("submitBtn").addEventListener("click", () => {
 
     let score = 0;
 
-    lessonQuestions, index) => {
+    lessonQuestions.forEach((q, index) => {
         const correctAnswer = q.correct_answer || q.answer;
 
         if (userAnswers[index] === correctAnswer) {
