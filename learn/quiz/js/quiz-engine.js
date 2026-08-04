@@ -3,19 +3,23 @@
       Quiz Engine V1.0.1A
 =====================================================*/
 
-const quizState = {
+const quizState={
 
-    lesson: null,
+lesson:null,
 
-    questions: [],
+questions:[],
 
-    selectedQuestions: [],
+selectedQuestions:[],
 
-    currentQuestion: 0,
+currentQuestion:0,
 
-    score: 0,
+score:0,
 
-    selectedOption: null
+selectedOption:null,
+
+answered:false,
+
+lastCorrect:false
 
 };
 
@@ -28,6 +32,16 @@ document.addEventListener("DOMContentLoaded", () => {
     initQuiz();
 
 });
+
+document
+.getElementById("submitBtn")
+.addEventListener(
+
+"click",
+
+checkAnswer
+
+);
 
 /*====================================================
       Main
@@ -104,6 +118,10 @@ function prepareQuiz(){
 
     quizState.score = 0;
 
+    quizState.answered=false;
+
+    quizState.lastCorrect=false;
+
 }
 
 /*====================================================
@@ -148,6 +166,41 @@ function getCurrentQuestion(){
 
 }
 
+function checkAnswer(){
+
+if(quizState.answered) return;
+
+if(!quizState.selectedOption) return;
+
+const q=getCurrentQuestion();
+
+quizState.answered=true;
+
+const correct=
+quizState.selectedOption===q.answer;
+
+quizState.lastCorrect=correct;
+
+if(correct){
+
+quizState.score++;
+
+}
+
+alert(
+
+correct ?
+
+"✅ Correct!"
+
+:
+
+"❌ Wrong!"
+
+);
+
+}
+
 /*====================================================
       Render Question
 =====================================================*/
@@ -169,6 +222,18 @@ function renderQuestion(){
     renderOptions(q);
 
     updateProgress();
+
+    quizState.answered=false;
+
+    quizState.selectedOption=null;
+
+document
+.getElementById("submitBtn")
+.disabled=true;
+
+document
+.getElementById("submitBtn")
+.textContent="Submit";
 
 }
 
@@ -210,6 +275,10 @@ function renderOptions(question){
             option.classList.add("selected");
 
             quizState.selectedOption = key;
+
+            document
+.getElementById("submitBtn")
+.disabled=false;
 
         };
 
