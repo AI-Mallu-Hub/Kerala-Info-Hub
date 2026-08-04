@@ -78,7 +78,7 @@ async function loadQuestions() {
     try {
 
         const response = await fetch(
-`../data/${currentLesson.json}`
+    `data/${currentLesson.json}`
 );
 
         if (!response.ok) {
