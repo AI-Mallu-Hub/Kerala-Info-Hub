@@ -14,7 +14,9 @@ const quizState = {
 
     selectedOption: null,
 
-    answered: false
+    answered: false,
+
+    currentButtonMode: "submit"
 
 };
 
@@ -28,8 +30,23 @@ document.addEventListener("DOMContentLoaded", () => {
     initQuiz();
 
 document
-    .getElementById("submitBtn")
-    .addEventListener("click", checkAnswer);
+.getElementById("submitBtn")
+.addEventListener("click",()=>{
+
+    if(
+        quizState.currentButtonMode ===
+        "submit"
+    ){
+
+        checkAnswer();
+
+    }
+
+    else{
+
+        nextQuestion();
+
+    }
 
 });
 
@@ -89,6 +106,13 @@ async function loadQuestions() {
 
 function renderQuestion() {
 
+    quizState.currentButtonMode = "submit";
+
+const submitBtn =
+document.getElementById("submitBtn");
+
+submitBtn.textContent = "Submit";
+
     const question = quizState.questions[quizState.currentQuestion];
 
     quizState.answered = false;
@@ -102,6 +126,26 @@ function renderQuestion() {
         question.question;
 
     renderOptions(question);
+
+}
+
+
+function nextQuestion(){
+
+    quizState.currentQuestion++;
+
+    if(
+        quizState.currentQuestion >=
+        quizState.questions.length
+    ){
+
+        alert("Quiz Finished");
+
+        return;
+
+    }
+
+    renderQuestion();
 
 }
 
@@ -193,6 +237,28 @@ function checkAnswer() {
                 button.classList.add("wrong");
 
             }
+
+
+            quizState.currentButtonMode = "next";
+
+const submitBtn =
+document.getElementById("submitBtn");
+
+if(
+    quizState.currentQuestion ===
+    quizState.questions.length-1
+){
+
+    submitBtn.textContent =
+    "View Result 📊";
+
+}
+else{
+
+    submitBtn.textContent =
+    "Next Question ➜";
+
+}
 
         });
 
