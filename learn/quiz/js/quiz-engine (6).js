@@ -1,0 +1,860 @@
+// ============================
+// Global Variables
+// ============================
+
+let quizQuestions = [];
+let currentPage = 0;
+
+const questionsPerPage = 5;
+
+let userAnswers = {};
+let reviewedPages = {};
+let lockedPages = {};
+
+
+// =========================
+// Current Exam Configuration
+// =========================
+
+let exam =
+    window.EXAM ||
+    new URLSearchParams(window.location.search).get("exam") ||
+    "psc";
+
+if (exam === "haad") {
+    exam = "doh";
+}
+
+const info = examConfig[exam] || examConfig.psc;
+
+
+// Apply exam theme
+document.documentElement.style.setProperty(
+    "--exam-color",
+    info.theme.color
+);
+
+document.documentElement.style.setProperty(
+    "--exam-accent",
+    info.theme.accent
+);
+
+document.getElementById("quizTitle").textContent = info.title;
+document.getElementById("quizDescription").textContent = info.description;
+const whyPracticeList = document.getElementById("whyPracticeList");
+
+if (whyPracticeList) {
+    whyPracticeList.innerHTML = "";
+
+    info.whyPractice.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = `✅ ${item}`;
+        whyPracticeList.appendChild(li);
+    });
+}
+
+const quizTip = document.getElementById("quizTip");
+
+if (quizTip) {
+    quizTip.textContent = `💡 ${info.tip}`;
+}
+
+// const nav = document.getElementById("quizNavLink");
+
+// if (nav) {
+//     nav.href = `${exam}.html`;
+//     nav.textContent = info.shortName;
+// }
+
+
+
+// =========================
+// Render SEO Content
+// =========================
+
+function renderSeoContent() {
+
+    const seoContainer = document.getElementById("seoContent");
+
+    if (!seoContainer || !info.seo) return;
+
+    const featuresHtml = info.seo.features
+        .map(feature => `<li>${feature}</li>`)
+        .join("");
+
+    const faqHtml = info.seo.faq
+        .map(faq => `
+            <h3>${faq.question}</h3>
+            <p>${faq.answer}</p>
+        `)
+        .join("");
+
+    seoContainer.innerHTML = `
+        <h2>${info.seo.heading}</h2>
+
+        <p>${info.seo.description}</p>
+
+        <h2>Features</h2>
+
+        <ul>
+            ${featuresHtml}
+        </ul>
+
+        <h2>Who can use this quiz?</h2>
+
+        <p>${info.seo.whoCanUse}</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        ${faqHtml}
+    `;
+}
+
+       renderSeoContent();
+
+function buildOtherExamsMenu() {
+
+    const menu = document.getElementById("otherExamsMenu");
+    const button = document.getElementById("otherExamsBtn");
+
+    if (!menu || !button) return;
+
+    menu.innerHTML = "";
+
+    Object.keys(examConfig).forEach(key => {
+
+        if (key === exam) return;
+
+        const link = document.createElement("a");
+
+        link.href = `${key}.html`;
+
+        link.textContent = examConfig[key].shortName;
+
+        menu.appendChild(link);
+
+    });
+
+    button.addEventListener("click", function (e) {
+
+        e.stopPropagation();
+
+        menu.parentElement.classList.toggle("show");
+
+    });
+
+    document.addEventListener("click", function () {
+
+        menu.parentElement.classList.remove("show");
+
+    });
+
+}
+
+buildOtherExamsMenu();
+
+// ============================
+// Load Questions
+// ============================
+
+async function loadQuestions() {
+
+    try {
+
+        const response = await fetch(`../data/${exam}/${exam}_quiz.json`);
+
+        if (!response.ok) {
+            throw new Error("Unable to load question file.");
+        }
+
+        const data = await response.json();
+
+        // Support both JSON formats
+        return Array.isArray(data) ? data : data.questions;
+
+    } catch (err) {
+
+        console.error(err);
+        alert(err.message);
+
+        return [];
+    }
+}
+
+// ============================
+// Random Shuffle
+// ============================
+
+function shuffle(array) {
+
+    const arr = [...array];
+
+    for (let i = arr.length - 1; i > 0; i--) {
+
+        const j = Math.floor(Math.random() * (i + 1));
+
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+
+    }
+
+    return arr;
+
+}
+
+// ============================
+// Daily Shuffle
+// ============================
+
+function seededRandom(seed) {
+
+    let x = Math.sin(seed) * 10000;
+
+    return x - Math.floor(x);
+
+}
+
+function seededShuffle(array, seed) {
+
+    const arr = [...array];
+
+    for (let i = arr.length - 1; i > 0; i--) {
+
+        seed++;
+
+        const j = Math.floor(seededRandom(seed) * (i + 1));
+
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+
+    }
+
+    return arr;
+
+}
+
+// ============================
+// Daily Quiz
+// ============================
+
+async function startDailyQuiz() {
+
+    const allQuestions = await loadQuestions();
+
+    const today = new Date();
+
+    const seed =
+        today.getFullYear() * 10000 +
+        (today.getMonth() + 1) * 100 +
+        today.getDate();
+
+    quizQuestions =
+        seededShuffle(allQuestions, seed).slice(0, 50);
+
+    startQuiz();
+
+}
+
+// ============================
+// Practice Quiz
+// ============================
+
+async function startPracticeQuiz() {
+
+    const allQuestions = await loadQuestions();
+
+    quizQuestions =
+        shuffle(allQuestions).slice(0, 50);
+
+    startQuiz();
+
+}
+
+// ============================
+// Start Quiz
+// ============================
+
+function startQuiz() {
+
+    currentPage = 0;
+
+    userAnswers = {};
+    reviewedPages = {};
+    lockedPages = {};
+
+    document.getElementById("quizArea").style.display = "block";
+
+    document.getElementById("resultBox").style.display = "none";
+
+    renderPage();
+
+                            }
+// ============================
+// Render Page
+// ============================
+
+function renderPage() {
+
+    const container = document.getElementById("quizContainer");
+
+    const pageInfo = document.getElementById("pageInfo");
+
+    const questionInfo = document.getElementById("questionInfo");
+
+    const pageScore = document.getElementById("pageScore");
+
+    const prevBtn = document.getElementById("prevBtn");
+
+    const nextBtn = document.getElementById("nextBtn");
+
+    const checkBtn = document.getElementById("checkBtn");
+
+    const submitBtn = document.getElementById("submitBtn");
+
+    container.innerHTML = "";
+
+    pageScore.style.display = "none";
+    pageScore.textContent = "";
+
+    const start = currentPage * questionsPerPage;
+
+    const end = Math.min(start + questionsPerPage, quizQuestions.length);
+
+    pageInfo.textContent =
+        `Page ${currentPage + 1} / ${Math.ceil(quizQuestions.length / questionsPerPage)}`;
+
+    questionInfo.textContent =
+        `Questions ${start + 1} - ${end} of ${quizQuestions.length}`;
+
+    // ----------------------------
+    // Render Questions
+    // ----------------------------
+
+    for (let i = start; i < end; i++) {
+
+        const q = quizQuestions[i];
+
+        const card = document.createElement("div");
+
+        card.className = "quiz-card";
+
+        card.innerHTML = `
+            <h3>Q${i + 1}. ${q.question}</h3>
+
+            <label>
+                <input type="radio" name="q${i}" value="A"
+                ${userAnswers[i] === "A" ? "checked" : ""}>
+                ${q.options.A}
+            </label><br><br>
+
+            <label>
+                <input type="radio" name="q${i}" value="B"
+                ${userAnswers[i] === "B" ? "checked" : ""}>
+                ${q.options.B}
+            </label><br><br>
+
+            <label>
+                <input type="radio" name="q${i}" value="C"
+                ${userAnswers[i] === "C" ? "checked" : ""}>
+                ${q.options.C}
+            </label><br><br>
+
+            <label>
+                <input type="radio" name="q${i}" value="D"
+                ${userAnswers[i] === "D" ? "checked" : ""}>
+                ${q.options.D}
+            </label>
+        `;
+
+        container.appendChild(card);
+
+    }
+
+    // ----------------------------
+    // Save Selected Answers
+    // ----------------------------
+
+    document.querySelectorAll("input[type=radio]").forEach(radio => {
+
+        radio.addEventListener("change", function () {
+
+            const index = Number(this.name.substring(1));
+
+            userAnswers[index] = this.value;
+
+        });
+
+    });
+
+    // ----------------------------
+    // Navigation Buttons
+    // ----------------------------
+
+    prevBtn.style.display =
+        currentPage === 0 ? "none" : "inline-block";
+
+    const lastPage =
+        currentPage === Math.ceil(quizQuestions.length / questionsPerPage) - 1;
+
+    nextBtn.style.display =
+        lastPage ? "none" : "inline-block";
+
+    submitBtn.style.display =
+        lastPage ? "inline-block" : "none";
+    submitBtn.disabled = !reviewedPages[currentPage];
+
+    // ----------------------------
+    // Check Button State
+    // ----------------------------
+
+if (reviewedPages[currentPage]) {
+
+    checkBtn.disabled = true;
+
+    if (lastPage) {
+
+        submitBtn.disabled = false;
+
+    } else {
+
+        nextBtn.disabled = false;
+
+    }
+
+} else {
+
+    checkBtn.disabled = false;
+
+    nextBtn.disabled = true;
+
+    if (lastPage) {
+
+        submitBtn.disabled = true;
+
+    }
+
+  }
+    restoreReviewedPage();
+    document.getElementById("quizArea").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+});
+}
+// ============================
+// Previous Button
+// ============================
+
+document.getElementById("prevBtn").addEventListener("click", () => {
+
+    if (currentPage > 0) {
+
+        currentPage--;
+
+        renderPage();
+
+    }
+
+});
+
+// ============================
+// Next Button
+// ============================
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+
+    const totalPages = Math.ceil(quizQuestions.length / questionsPerPage);
+
+    if (currentPage < totalPages - 1) {
+
+        currentPage++;
+
+        renderPage();
+
+    }
+
+});
+
+// ============================
+// Check Answers
+// ============================
+
+document.getElementById("checkBtn").addEventListener("click", () => {
+
+    const start = currentPage * questionsPerPage;
+    const end = Math.min(start + questionsPerPage, quizQuestions.length);
+    const hasAnswer = Object.keys(userAnswers)
+    .some(index => {
+        const num = Number(index);
+        return num >= start && num < end;
+    });
+
+if (!hasAnswer) {
+
+    alert("Please answer at least one question before checking.");
+
+    return;
+
+}
+    let pageScore = 0;
+
+    for (let i = start; i < end; i++) {
+
+        const q = quizQuestions[i];
+        const correctAnswer = q.correct_answer || q.answer;
+
+
+        const radios = document.querySelectorAll(`input[name="q${i}"]`);
+
+        radios.forEach(radio => {
+
+            const label = radio.parentElement;
+
+            // പഴയ classes remove ചെയ്യുക
+            label.classList.remove("correct");
+            label.classList.remove("wrong");
+
+            // answers lock ചെയ്യുക
+            radio.disabled = true;
+
+            // Correct Answer
+            if (radio.value === correctAnswer) {
+
+                label.classList.add("correct");
+
+            }
+
+            // Wrong Selected Answer
+            if (
+                userAnswers[i] === radio.value &&
+                radio.value !== correctAnswer
+            ) {
+
+                label.classList.add("wrong");
+
+            }
+
+        });
+
+        if (userAnswers[i] === correctAnswer) {
+
+            pageScore++;
+
+        }
+
+    }
+
+    reviewedPages[currentPage] = true;
+    lockedPages[currentPage] = true;
+
+    const pageScoreBox = document.getElementById("pageScore");
+
+    pageScoreBox.style.display = "block";
+
+    pageScoreBox.textContent =
+        `✅ Page Score : ${pageScore} / ${end - start}`;
+
+    document.getElementById("checkBtn").disabled = true;
+
+    const totalPages = Math.ceil(quizQuestions.length / questionsPerPage);
+
+if (currentPage === totalPages - 1) {
+
+    document.getElementById("submitBtn").disabled = false;
+
+} else {
+
+    document.getElementById("nextBtn").disabled = false;
+
+}
+
+});
+
+// ============================
+// Restore Reviewed Pages
+// ============================
+
+function restoreReviewedPage() {
+
+    if (!reviewedPages[currentPage]) return;
+
+    const start = currentPage * questionsPerPage;
+    const end = Math.min(start + questionsPerPage, quizQuestions.length);
+
+    let pageScore = 0;
+
+    for (let i = start; i < end; i++) {
+
+        const q = quizQuestions[i];
+        const correctAnswer = q.correct_answer || q.answer;
+
+        const radios = document.querySelectorAll(`input[name="q${i}"]`);
+
+        radios.forEach(radio => {
+
+            const label = radio.parentElement;
+
+            radio.disabled = true;
+
+            if (radio.value === correctAnswer) {
+
+                label.classList.add("correct");
+
+            }
+
+            if (
+                userAnswers[i] === radio.value &&
+                radio.value !== correctAnswer
+            ) {
+
+                label.classList.add("wrong");
+
+            }
+
+        });
+
+        if (userAnswers[i] === correctAnswer) {
+
+            pageScore++;
+
+        }
+
+    }
+
+    const pageScoreBox = document.getElementById("pageScore");
+
+    pageScoreBox.style.display = "block";
+
+    pageScoreBox.textContent =
+        `✅ Page Score : ${pageScore} / ${end - start}`;
+
+   }
+// ============================
+// Render Review
+// ============================
+
+function renderReview() {
+
+    const container = document.getElementById("reviewContainer");
+
+    container.innerHTML = "";
+
+    quizQuestions.forEach((q, index) => {
+        const correctAnswer = q.correct_answer || q.answer;
+
+        const userAnswer = userAnswers[index];
+
+        const correctText =
+            `${correctAnswer}. ${q.options[correctAnswer]}`;
+
+        let userAnswerHtml = "";
+
+        // ----------------------------
+        // User Answer
+        // ----------------------------
+
+        if (userAnswer === undefined) {
+
+            userAnswerHtml = `
+                <p class="review-answer">
+                    ⚪ <strong>Not Answered</strong>
+                </p>
+            `;
+
+        } else if (userAnswer === correctAnswer) {
+
+            userAnswerHtml = `
+                <p class="review-answer">
+                    ✅ <strong>Your Answer:</strong>
+                    ${userAnswer}. ${q.options[userAnswer]}
+                </p>
+            `;
+
+        } else {
+
+            userAnswerHtml = `
+                <p class="review-answer">
+                    ❌ <strong>Your Answer:</strong>
+                    ${userAnswer}. ${q.options[userAnswer]}
+                </p>
+            `;
+
+        }
+
+        // ----------------------------
+        // Create Card
+        // ----------------------------
+
+        const card = document.createElement("div");
+
+        card.className = "review-card";
+
+        card.innerHTML = `
+
+            <h3>Q${index + 1}. ${q.question}</h3>
+
+            ${userAnswerHtml}
+
+            <p class="review-answer">
+                ✅ <strong>Correct Answer:</strong>
+                ${correctText}
+            </p>
+
+            <button
+    class="explanation-btn"
+    onclick="openExplanation(${index})">
+
+    📖 Explanation
+
+</button>
+
+        `;
+
+        container.appendChild(card);
+
+    });
+
+}
+// ============================
+// Open Explanation
+// ============================
+
+function openExplanation(index) {
+
+    const modal = document.getElementById("explanationModal");
+
+    const explanationBox =
+        document.getElementById("modalExplanation");
+
+    const q = quizQuestions[index];
+
+    explanationBox.innerHTML =
+        q.explanation ||
+        "<p>Explanation not available.</p>";
+
+    modal.style.display = "block";
+
+}
+
+// ============================
+// Close Explanation
+// ============================
+
+document.getElementById("closeModal")
+.addEventListener("click", () => {
+
+    document.getElementById("explanationModal")
+    .style.display = "none";
+
+});
+
+document.getElementById("explanationModal")
+.addEventListener("click", (e) => {
+
+    if (e.target.id === "explanationModal") {
+
+        e.currentTarget.style.display = "none";
+
+    }
+
+});
+
+// ============================
+// Submit Quiz
+// ============================
+
+document.getElementById("submitBtn").addEventListener("click", () => {
+
+    let score = 0;
+
+    quizQuestions.forEach((q, index) => {
+        const correctAnswer = q.correct_answer || q.answer;
+
+        if (userAnswers[index] === correctAnswer) {
+
+            score++;
+
+        }
+
+    });
+
+    const wrong = quizQuestions.length - score;
+
+    const percentage = ((score / quizQuestions.length) * 100).toFixed(1);
+
+    let grade = "";
+
+    if (percentage >= 90) {
+
+        grade = "🏆 Excellent";
+
+    } else if (percentage >= 75) {
+
+        grade = "🥇 Very Good";
+
+    } else if (percentage >= 60) {
+
+        grade = "👍 Good";
+
+    } else if (percentage >= 40) {
+
+        grade = "🙂 Keep Practicing";
+
+    } else {
+
+        grade = "📚 Needs More Practice";
+
+    }
+
+    document.getElementById("quizArea").style.display = "none";
+
+    document.getElementById("resultBox").style.display = "block";
+
+    document.getElementById("scoreText").textContent =
+        `Score : ${score} / ${quizQuestions.length}`;
+
+    document.getElementById("correctText").textContent =
+        `✅ Correct : ${score} | ❌ Wrong : ${wrong}`;
+
+    document.getElementById("wrongText").textContent =
+        `📊 Percentage : ${percentage}% | ${grade}`;
+
+});
+
+// ============================
+// Retake Quiz
+// ============================
+
+document.getElementById("retakeBtn").addEventListener("click", () => {
+
+    if (confirm("Start a new quiz?")) {
+
+        startPracticeQuiz();
+
+    }
+
+});
+
+
+// ============================
+// Review All Answers
+// ============================
+
+    document.getElementById("reviewBtn").addEventListener("click", () => {
+
+        renderReview();
+        
+    document.getElementById("resultBox").style.display = "none";
+
+    document.getElementById("reviewSection").style.display = "block";
+
+});
+
+// ============================
+// Close Review
+// ============================
+
+document.getElementById("closeReviewBtn").addEventListener("click", () => {
+
+    document.getElementById("reviewSection").style.display = "none";
+
+    document.getElementById("resultBox").style.display = "block";
+
+});
