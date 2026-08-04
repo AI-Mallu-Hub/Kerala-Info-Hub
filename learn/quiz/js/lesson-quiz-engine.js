@@ -133,8 +133,6 @@ submitBtn.textContent = "Submit";
 
 function nextQuestion(){
 
-    quizState.currentQuestion++;
-
     if(
         quizState.currentQuestion >=
         quizState.questions.length
@@ -145,6 +143,7 @@ function nextQuestion(){
         return;
 
     }
+    quizState.currentQuestion++;
 
     renderQuestion();
 
