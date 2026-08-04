@@ -2,7 +2,7 @@
 // Global Variables
 // ============================
 
-let quizQuestions = [];
+let lessonQuestions = [];
 let currentPage = 0;
 
 const questionsPerPage = 5;
@@ -13,127 +13,43 @@ let lockedPages = {};
 
 
 // =========================
-// Current Exam Configuration
+// Current Lesson Configuration
 // =========================
 
-let exam =
-    window.EXAM ||
-    new URLSearchParams(window.location.search).get("exam") ||
-    "psc";
+const lesson =
+new URLSearchParams(window.location.search)
+.get("lesson") || "cell";
 
-if (exam === "haad") {
-    exam = "doh";
+const lessonInfo = {
+
+cell:{
+
+title:"Cell",
+
+json:"cell.json"
+
+},
+
+heart:{
+
+title:"Heart",
+
+json:"heart.json"
+
+},
+
+blood:{
+
+title:"Blood",
+
+json:"blood.json"
+
 }
 
-const info = examConfig[exam] || examConfig.psc;
+};
 
-
-// Apply exam theme
-document.documentElement.style.setProperty(
-    "--exam-color",
-    info.theme.color
-);
-
-document.documentElement.style.setProperty(
-    "--exam-accent",
-    info.theme.accent
-);
-
-document.getElementById("quizTitle").textContent = info.title;
-document.getElementById("quizDescription").textContent = info.description;
-const whyPracticeList = document.getElementById("whyPracticeList");
-
-if (whyPracticeList) {
-    whyPracticeList.innerHTML = "";
-
-    info.whyPractice.forEach(item => {
-        const li = document.createElement("li");
-        li.textContent = `✅ ${item}`;
-        whyPracticeList.appendChild(li);
-    });
-}
-
-const quizTip = document.getElementById("quizTip");
-
-if (quizTip) {
-    quizTip.textContent = `💡 ${info.tip}`;
-}
-
-// const nav = document.getElementById("quizNavLink");
-
-// if (nav) {
-//     nav.href = `${exam}.html`;
-//     nav.textContent = info.shortName;
-// }
-
-
-
-// =========================
-// Render SEO Content
-// =========================
-
-function renderSeoContent() {
-
-    const seoContainer = document.getElementById("seoContent");
-
-    if (!seoContainer || !info.seo) return;
-
-    const featuresHtml = info.seo.features
-        .map(feature => `<li>${feature}</li>`)
-        .join("");
-
-    const faqHtml = info.seo.faq
-        .map(faq => `
-            <h3>${faq.question}</h3>
-            <p>${faq.answer}</p>
-        `)
-        .join("");
-
-    seoContainer.innerHTML = `
-        <h2>${info.seo.heading}</h2>
-
-        <p>${info.seo.description}</p>
-
-        <h2>Features</h2>
-
-        <ul>
-            ${featuresHtml}
-        </ul>
-
-        <h2>Who can use this quiz?</h2>
-
-        <p>${info.seo.whoCanUse}</p>
-
-        <h2>Frequently Asked Questions</h2>
-
-        ${faqHtml}
-    `;
-}
-
-       renderSeoContent();
-
-function buildOtherExamsMenu() {
-
-    const menu = document.getElementById("otherExamsMenu");
-    const button = document.getElementById("otherExamsBtn");
-
-    if (!menu || !button) return;
-
-    menu.innerHTML = "";
-
-    Object.keys(examConfig).forEach(key => {
-
-        if (key === exam) return;
-
-        const link = document.createElement("a");
-
-        link.href = `${key}.html`;
-
-        link.textContent = examConfig[key].shortName;
-
-        menu.appendChild(link);
-
-    });
+const currentLesson =
+lessonInfo[lesson] || lessonInfo.cell;
 
     button.addEventListener("click", function (e) {
 
@@ -161,7 +77,9 @@ async function loadQuestions() {
 
     try {
 
-        const response = await fetch(`../data/${exam}/${exam}_quiz.json`);
+        const response = await fetch(
+`../data/${currentLesson.json}`
+);
 
         if (!response.ok) {
             throw new Error("Unable to load question file.");
@@ -246,7 +164,7 @@ async function startDailyQuiz() {
         (today.getMonth() + 1) * 100 +
         today.getDate();
 
-    quizQuestions =
+    lessonQuestions =
         seededShuffle(allQuestions, seed).slice(0, 50);
 
     startQuiz();
@@ -261,7 +179,7 @@ async function startPracticeQuiz() {
 
     const allQuestions = await loadQuestions();
 
-    quizQuestions =
+    lessonQuestions =
         shuffle(allQuestions).slice(0, 50);
 
     startQuiz();
@@ -316,13 +234,13 @@ function renderPage() {
 
     const start = currentPage * questionsPerPage;
 
-    const end = Math.min(start + questionsPerPage, quizQuestions.length);
+    const end = Math.min(start + questionsPerPage, lessonQuestions);
 
     pageInfo.textContent =
-        `Page ${currentPage + 1} / ${Math.ceil(quizQuestions.length / questionsPerPage)}`;
+        `Page ${currentPage + 1} / ${Math.ceil(lessonQuestions.length / questionsPerPage)}`;
 
     questionInfo.textContent =
-        `Questions ${start + 1} - ${end} of ${quizQuestions.length}`;
+        `Questions ${start + 1} - ${end} of ${lessonQuestions.length}`;
 
     // ----------------------------
     // Render Questions
@@ -330,7 +248,7 @@ function renderPage() {
 
     for (let i = start; i < end; i++) {
 
-        const q = quizQuestions[i];
+        const q = lessonQuestions[i];
 
         const card = document.createElement("div");
 
@@ -392,7 +310,7 @@ function renderPage() {
         currentPage === 0 ? "none" : "inline-block";
 
     const lastPage =
-        currentPage === Math.ceil(quizQuestions.length / questionsPerPage) - 1;
+        currentPage === Math.ceil(lessonQuestions.length / questionsPerPage) - 1;
 
     nextBtn.style.display =
         lastPage ? "none" : "inline-block";
@@ -460,7 +378,7 @@ document.getElementById("prevBtn").addEventListener("click", () => {
 
 document.getElementById("nextBtn").addEventListener("click", () => {
 
-    const totalPages = Math.ceil(quizQuestions.length / questionsPerPage);
+    const totalPages = Math.ceil(lessonQuestions.length / questionsPerPage);
 
     if (currentPage < totalPages - 1) {
 
@@ -479,7 +397,7 @@ document.getElementById("nextBtn").addEventListener("click", () => {
 document.getElementById("checkBtn").addEventListener("click", () => {
 
     const start = currentPage * questionsPerPage;
-    const end = Math.min(start + questionsPerPage, quizQuestions.length);
+    const end = Math.min(start + questionsPerPage, lessonQuestions.length);
     const hasAnswer = Object.keys(userAnswers)
     .some(index => {
         const num = Number(index);
@@ -497,7 +415,7 @@ if (!hasAnswer) {
 
     for (let i = start; i < end; i++) {
 
-        const q = quizQuestions[i];
+        const q = lessonQuestions[i];
         const correctAnswer = q.correct_answer || q.answer;
 
 
@@ -553,7 +471,7 @@ if (!hasAnswer) {
 
     document.getElementById("checkBtn").disabled = true;
 
-    const totalPages = Math.ceil(quizQuestions.length / questionsPerPage);
+    const totalPages = Math.ceil(lessonQuestions.length / questionsPerPage);
 
 if (currentPage === totalPages - 1) {
 
@@ -576,13 +494,13 @@ function restoreReviewedPage() {
     if (!reviewedPages[currentPage]) return;
 
     const start = currentPage * questionsPerPage;
-    const end = Math.min(start + questionsPerPage, quizQuestions.length);
+    const end = Math.min(start + questionsPerPage, lessonQuestions.length);
 
     let pageScore = 0;
 
     for (let i = start; i < end; i++) {
 
-        const q = quizQuestions[i];
+        const q = lessonQuestions[i];
         const correctAnswer = q.correct_answer || q.answer;
 
         const radios = document.querySelectorAll(`input[name="q${i}"]`);
@@ -636,7 +554,7 @@ function renderReview() {
 
     container.innerHTML = "";
 
-    quizQuestions.forEach((q, index) => {
+    lessonQuestions.forEach((q, index) => {
         const correctAnswer = q.correct_answer || q.answer;
 
         const userAnswer = userAnswers[index];
@@ -723,7 +641,7 @@ function openExplanation(index) {
     const explanationBox =
         document.getElementById("modalExplanation");
 
-    const q = quizQuestions[index];
+    const q = lessonQuestions[index];
 
     explanationBox.innerHTML =
         q.explanation ||
@@ -764,7 +682,7 @@ document.getElementById("submitBtn").addEventListener("click", () => {
 
     let score = 0;
 
-    quizQuestions.forEach((q, index) => {
+    lessonQuestions, index) => {
         const correctAnswer = q.correct_answer || q.answer;
 
         if (userAnswers[index] === correctAnswer) {
@@ -775,9 +693,9 @@ document.getElementById("submitBtn").addEventListener("click", () => {
 
     });
 
-    const wrong = quizQuestions.length - score;
+    const wrong = lessonQuestions.length - score;
 
-    const percentage = ((score / quizQuestions.length) * 100).toFixed(1);
+    const percentage = ((score / lessonQuestions.length) * 100).toFixed(1);
 
     let grade = "";
 
@@ -808,7 +726,7 @@ document.getElementById("submitBtn").addEventListener("click", () => {
     document.getElementById("resultBox").style.display = "block";
 
     document.getElementById("scoreText").textContent =
-        `Score : ${score} / ${quizQuestions.length}`;
+        `Score : ${score} / ${lessonQuestions.length}`;
 
     document.getElementById("correctText").textContent =
         `✅ Correct : ${score} | ❌ Wrong : ${wrong}`;
