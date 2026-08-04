@@ -775,4 +775,8 @@ document.getElementById("closeReviewBtn").addEventListener("click", () => {
 
     document.getElementById("resultBox").style.display = "block";
 
+    document.addEventListener("DOMContentLoaded", () => {
+    startPracticeQuiz();
+});
+
 });
