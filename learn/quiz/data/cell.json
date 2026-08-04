@@ -1,13 +1,702 @@
 [
-  {
-    "id":1,
-    "question":"Which organelle is known as the powerhouse of the cell?",
-    "options":{
-      "A":"Golgi apparatus",
-      "B":"Mitochondria",
-      "C":"Nucleus",
-      "D":"Ribosome"
+{
+"id":1,
+"subject":"Cell Biology",
+"topic":"What is a Cell?",
+"difficulty":"Easy",
+
+"question":"According to this lesson, a cell is best defined as:",
+
+"options":{
+"A":"The smallest organ of the human body",
+"B":"The structural and functional unit of life",
+"C":"A collection of tissues",
+"D":"A membrane-bound organ found only in plants"
+},
+
+"answer":"B",
+
+"explanation":"The lesson defines the cell as the smallest structural and functional unit of life.",
+
+"clinicalPearl":"Cell injury is the starting point of many diseases encountered in clinical practice.",
+
+"examTip":"This definition is one of the most frequently asked basic questions in Nursing entrance examinations.",
+
+"lessonSection":"What is a Cell?"
+},
+
+{
+"id":2,
+"subject":"Cell Biology",
+"topic":"What is a Cell?",
+"difficulty":"Easy",
+
+"question":"Why is the cell commonly called the building block of the human body?",
+
+"options":{
+"A":"Because every tissue and organ is composed of cells",
+"B":"Because every cell contains bone",
+"C":"Because cells produce hormones",
+"D":"Because cells are larger than tissues"
+},
+
+"answer":"A",
+
+"explanation":"Every tissue and organ in the body is made up of cells.",
+
+"clinicalPearl":"Damage to individual cells eventually affects tissues and organs.",
+
+"examTip":"Remember: Cells → Tissues → Organs → Organ Systems.",
+
+"lessonSection":"What is a Cell?"
+},
+
+{
+"id":3,
+"subject":"Cell Biology",
+"topic":"Introduction",
+"difficulty":"Medium",
+
+"question":"Which of the following is NOT listed in this lesson as a basic function performed by cells?",
+
+"options":{
+"A":"Producing energy",
+"B":"Removing waste products",
+"C":"Maintaining life",
+"D":"Producing antibodies"
+},
+
+"answer":"D",
+
+"explanation":"The lesson mentions nutrient uptake, energy production, waste removal, growth, reproduction and maintaining life, but not antibody production as a universal function of all cells.",
+
+"clinicalPearl":"Different cell types perform specialized functions beyond their common basic functions.",
+
+"examTip":"Read carefully. Questions often ask what is NOT mentioned.",
+
+"lessonSection":"Introduction"
+},
+
+{
+"id":4,
+"subject":"Cell Biology",
+"topic":"Cell Theory",
+"difficulty":"Easy",
+
+"question":"Which scientist introduced the principle that all new cells arise from pre-existing cells?",
+
+"options":{
+"A":"Robert Hooke",
+"B":"Matthias Schleiden",
+"C":"Theodor Schwann",
+"D":"Rudolf Virchow"
+},
+
+"answer":"D",
+
+"explanation":"Rudolf Virchow expanded Cell Theory by stating that every new cell arises from a pre-existing cell.",
+
+"clinicalPearl":"This principle explains tissue repair and healing.",
+
+"examTip":"Virchow = 'All new cells arise from pre-existing cells.'",
+
+"lessonSection":"Cell Theory"
+},
+
+{
+"id":5,
+"subject":"Cell Biology",
+"topic":"Cell Theory",
+"difficulty":"Medium",
+
+"question":"Which statement is NOT one of the three main principles of Cell Theory presented in this lesson?",
+
+"options":{
+"A":"All living organisms are made up of one or more cells",
+"B":"The cell is the structural and functional unit of life",
+"C":"Cells contain membrane-bound organelles",
+"D":"All new cells arise from pre-existing cells"
+},
+
+"answer":"C",
+
+"explanation":"Although true for eukaryotic cells, 'Cells contain membrane-bound organelles' is not listed as one of the three classical principles of Cell Theory.",
+
+"clinicalPearl":"Examinations frequently test the original three principles of Cell Theory.",
+
+"examTip":"Know the exact wording of the three principles.",
+
+"lessonSection":"Cell Theory"
+},
+
+{
+"id":6,
+"subject":"Cell Biology",
+"topic":"Types of Cells",
+"difficulty":"Easy",
+
+"question":"Which type of cell possesses a true nucleus?",
+
+"options":{
+"A":"Prokaryotic cell",
+"B":"Eukaryotic cell",
+"C":"Bacterial cell only",
+"D":"Both A and C"
+},
+
+"answer":"B",
+
+"explanation":"Eukaryotic cells possess a membrane-bound true nucleus.",
+
+"clinicalPearl":"Human cells are eukaryotic cells.",
+
+"examTip":"Eu = True.",
+
+"lessonSection":"Types of Cells"
+},
+
+{
+"id":7,
+"subject":"Cell Biology",
+"topic":"Types of Cells",
+"difficulty":"Medium",
+
+"question":"According to the comparison table, which feature correctly describes prokaryotic cells?",
+
+"options":{
+"A":"Linear DNA",
+"B":"True nucleus",
+"C":"Circular DNA",
+"D":"Membrane-bound organelles"
+},
+
+"answer":"C",
+
+"explanation":"The lesson states that prokaryotic cells contain circular DNA.",
+
+"clinicalPearl":"Bacteria are classic examples of prokaryotic cells.",
+
+"examTip":"Pro = Primitive → Circular DNA → No true nucleus.",
+
+"lessonSection":"Prokaryotic vs Eukaryotic"
+},
+
+{
+"id":8,
+"subject":"Cell Biology",
+"topic":"Organelles",
+"difficulty":"Easy",
+
+"question":"Which organelle stores DNA and controls all cellular activities?",
+
+"options":{
+"A":"Golgi apparatus",
+"B":"Nucleus",
+"C":"Lysosome",
+"D":"Ribosome"
+},
+
+"answer":"B",
+
+"explanation":"The nucleus controls cellular activities and stores genetic material (DNA).",
+
+"clinicalPearl":"Many inherited diseases result from abnormalities in nuclear DNA.",
+
+"examTip":"Control Centre = Nucleus.",
+
+"lessonSection":"Interactive Diagram → Nucleus"
+},
+
+{
+"id":9,
+"subject":"Cell Biology",
+"topic":"Organelles",
+"difficulty":"Medium",
+
+"question":"A patient has a disorder resulting in markedly reduced ATP production. Which organelle is most likely affected?",
+
+"options":{
+"A":"Golgi apparatus",
+"B":"Lysosome",
+"C":"Mitochondrion",
+"D":"Ribosome"
+},
+
+"answer":"C",
+
+"explanation":"Mitochondria generate ATP, the primary energy source for cellular activities.",
+
+"clinicalPearl":"Mitochondrial disorders commonly present with muscle weakness and neurological symptoms.",
+
+"examTip":"Whenever ATP is mentioned, think Mitochondria first.",
+
+"lessonSection":"Interactive Diagram → Mitochondria"
+},
+
+{
+"id":10,
+"subject":"Cell Biology",
+"topic":"Clinical Correlation",
+"difficulty":"Hard",
+
+"question":"A patient presents with progressive muscle weakness due to impaired ATP production. Which cell function described in this lesson is primarily affected?",
+
+"options":{
+"A":"Protein synthesis",
+"B":"Energy production",
+"C":"Waste removal",
+"D":"Cell division"
+},
+
+"answer":"B",
+
+"explanation":"ATP is the energy currency of the cell. Reduced ATP production directly affects cellular energy production.",
+
+"clinicalPearl":"Muscle and nerve tissues are particularly vulnerable to mitochondrial dysfunction because of their high energy demands.",
+
+"examTip":"Read the stem carefully. Sometimes the examination asks for the affected function rather than the affected organelle.",
+
+"lessonSection":"Cell Functions"
+},
+
+{
+    "id": 11,
+    "subject": "Cell Biology",
+    "topic": "Ribosomes",
+    "difficulty": "Medium",
+    "question": "Which organelle is primarily responsible for protein synthesis?",
+    "options": {
+      "A": "Golgi apparatus",
+      "B": "Ribosome",
+      "C": "Lysosome",
+      "D": "Centrosome"
     },
-    "answer":"B"
-  }
-]
+    "answer": "B",
+    "explanation": "Ribosomes synthesize proteins by translating messenger RNA into amino acid chains.",
+    "clinicalPearl": "Cells that produce large amounts of proteins contain abundant ribosomes.",
+    "examTip": "Protein Factory = Ribosome.",
+    "lessonSection": "Interactive Diagram → Ribosomes"
+  },
+  {
+    "id": 12,
+    "subject": "Cell Biology",
+    "topic": "Endoplasmic Reticulum",
+    "difficulty": "Medium",
+    "question": "According to this lesson, the primary role of the endoplasmic reticulum is:",
+    "options": {
+      "A": "Energy production",
+      "B": "Transport of proteins and lipids",
+      "C": "DNA storage",
+      "D": "Waste digestion"
+    },
+    "answer": "B",
+    "explanation": "The lesson describes the endoplasmic reticulum as responsible for transporting proteins and lipids.",
+    "clinicalPearl": "The ER plays an important role in intracellular transport.",
+    "examTip": "ER = Transport network.",
+    "lessonSection": "Cell Organelles"
+  },
+  {
+    "id": 13,
+    "subject": "Cell Biology",
+    "topic": "Golgi Apparatus",
+    "difficulty": "Medium",
+    "question": "A cell can produce proteins normally but cannot package or secrete them efficiently. Which organelle is most likely affected?",
+    "options": {
+      "A": "Golgi apparatus",
+      "B": "Ribosome",
+      "C": "Mitochondrion",
+      "D": "Nucleus"
+    },
+    "answer": "A",
+    "explanation": "The Golgi apparatus modifies, packages and prepares proteins for secretion.",
+    "clinicalPearl": "Many hormones and enzymes require Golgi processing before secretion.",
+    "examTip": "Packaging Centre = Golgi Apparatus.",
+    "lessonSection": "Interactive Diagram → Golgi Apparatus"
+  },
+  {
+    "id": 14,
+    "subject": "Cell Biology",
+    "topic": "Lysosome",
+    "difficulty": "Medium",
+    "question": "Which organelle digests worn-out cell components and waste materials?",
+    "options": {
+      "A": "Ribosome",
+      "B": "Golgi apparatus",
+      "C": "Lysosome",
+      "D": "Smooth ER"
+    },
+    "answer": "C",
+    "explanation": "Lysosomes contain digestive enzymes that break down waste materials.",
+    "clinicalPearl": "Defective lysosomal enzymes can lead to lysosomal storage disorders.",
+    "examTip": "Waste Disposal = Lysosome.",
+    "lessonSection": "Interactive Diagram → Lysosome"
+  },
+  {
+    "id": 15,
+    "subject": "Cell Biology",
+    "topic": "Cell Functions",
+    "difficulty": "Medium",
+    "question": "Which of the following is listed in this lesson as a normal function of all living cells?",
+    "options": {
+      "A": "Producing antibodies",
+      "B": "Maintaining homeostasis",
+      "C": "Producing insulin",
+      "D": "Generating nerve impulses"
+    },
+    "answer": "B",
+    "explanation": "Maintaining homeostasis is listed among the common functions of all living cells.",
+    "clinicalPearl": "Failure of cellular homeostasis contributes to disease.",
+    "examTip": "Homeostasis is a common exam keyword.",
+    "lessonSection": "Cell Functions"
+  },
+  {
+    "id": 16,
+    "subject": "Cell Biology",
+    "topic": "Cell Functions",
+    "difficulty": "Hard",
+    "question": "A patient has severe mitochondrial dysfunction. Which function listed in this lesson would be affected first?",
+    "options": {
+      "A": "Energy production",
+      "B": "DNA storage",
+      "C": "Protein packaging",
+      "D": "Waste digestion"
+    },
+    "answer": "A",
+    "explanation": "Mitochondria produce ATP, making energy production the primary function affected.",
+    "clinicalPearl": "High-energy tissues such as muscle and brain are especially vulnerable.",
+    "examTip": "ATP deficiency → Think mitochondria.",
+    "lessonSection": "Cell Functions → Clinical Correlation"
+  },
+  {
+    "id": 17,
+    "subject": "Cell Biology",
+    "topic": "Memory Trick",
+    "difficulty": "Easy",
+    "question": "According to the memory trick in this lesson, 'Eu' stands for:",
+    "options": {
+      "A": "Energy",
+      "B": "Enzyme",
+      "C": "True",
+      "D": "Primitive"
+    },
+    "answer": "C",
+    "explanation": "The lesson uses 'Eu = True' to help remember that eukaryotic cells have a true nucleus.",
+    "clinicalPearl": "Memory aids improve long-term retention for exam preparation.",
+    "examTip": "Eu = True, Pro = Primitive.",
+    "lessonSection": "Memory Trick"
+  },
+  {
+    "id": 18,
+    "subject": "Cell Biology",
+    "topic": "Quick Revision",
+    "difficulty": "Hard",
+    "question": "Which statement from the Quick Revision section is CORRECT?",
+    "options": {
+      "A": "Golgi apparatus produces ATP",
+      "B": "Lysosomes store DNA",
+      "C": "Ribosomes are protein factories",
+      "D": "Mitochondria package proteins"
+    },
+    "answer": "C",
+    "explanation": "The Quick Revision section identifies ribosomes as the protein factories of the cell.",
+    "clinicalPearl": "Rapid revision boxes often contain high-yield examination facts.",
+    "examTip": "Quick Revision facts are worth memorizing.",
+    "lessonSection": "Quick Revision"
+  },
+  {
+    "id": 19,
+    "subject": "Cell Biology",
+    "topic": "Clinical Correlation",
+    "difficulty": "Hard",
+    "question": "The lesson states that mitochondrial diseases commonly lead to muscle weakness because muscles require:",
+    "options": {
+      "A": "Large amounts of DNA",
+      "B": "Continuous ATP production",
+      "C": "Extra lysosomes",
+      "D": "Protein packaging"
+    },
+    "answer": "B",
+    "explanation": "Muscle cells have high energy demands and depend on continuous ATP production.",
+    "clinicalPearl": "Fatigue and muscle weakness are classic manifestations of mitochondrial disease.",
+    "examTip": "Muscle weakness + ATP deficiency = Mitochondria.",
+    "lessonSection": "Clinical Correlation"
+  },
+  {
+    "id": 20,
+    "subject": "Cell Biology",
+    "topic": "Integrated Review",
+    "difficulty": "Hard",
+    "question": "A cell loses its ability to synthesize proteins, package them for secretion and produce adequate ATP. Which combination of organelles is primarily affected?",
+    "options": {
+      "A": "Ribosome, Golgi apparatus and Mitochondria",
+      "B": "Nucleus, Lysosome and Vacuole",
+      "C": "Golgi apparatus, Nucleus and Centrosome",
+      "D": "Lysosome, Smooth ER and Vacuole"
+    },
+    "answer": "A",
+    "explanation": "Protein synthesis occurs in ribosomes, packaging occurs in the Golgi apparatus, and ATP is produced by mitochondria.",
+    "clinicalPearl": "Clinical questions often test the combined functions of multiple organelles rather than a single one.",
+    "examTip": "Learn organelles as a functional team, not as isolated facts.",
+    "lessonSection": "Interactive Diagram + Cell Functions"
+  },
+
+{
+"id":21,
+"subject":"Cell Biology",
+"topic":"Integrated Organelles",
+"difficulty":"Hard",
+
+"question":"A cell can produce proteins normally, but it cannot package and secrete them. Which organelle is most likely malfunctioning?",
+
+"options":{
+"A":"Golgi apparatus",
+"B":"Ribosome",
+"C":"Nucleus",
+"D":"Mitochondrion"
+},
+
+"answer":"A",
+
+"explanation":"Protein synthesis occurs in ribosomes, but packaging and secretion are functions of the Golgi apparatus.",
+
+"clinicalPearl":"Secretory cells rely heavily on a healthy Golgi apparatus.",
+
+"examTip":"Separate protein synthesis from protein packaging.",
+
+"lessonSection":"Interactive Diagram → Golgi Apparatus"
+},
+
+{
+"id":22,
+"subject":"Cell Biology",
+"topic":"Cell Functions",
+"difficulty":"Hard",
+
+"question":"Which cellular function would be directly affected first if ATP production suddenly stopped?",
+
+"options":{
+"A":"Energy production",
+"B":"DNA storage",
+"C":"Protein packaging",
+"D":"Waste digestion"
+},
+
+"answer":"A",
+
+"explanation":"ATP is the primary energy source required for almost all cellular activities.",
+
+"clinicalPearl":"ATP deficiency rapidly affects highly active tissues.",
+
+"examTip":"ATP → Energy.",
+
+"lessonSection":"Cell Functions"
+},
+
+{
+"id":23,
+"subject":"Cell Biology",
+"topic":"Organelles",
+"difficulty":"Medium",
+
+"question":"A researcher observes a cell with damaged DNA but normal protein packaging and ATP production. Which organelle is primarily affected?",
+
+"options":{
+"A":"Nucleus",
+"B":"Golgi apparatus",
+"C":"Mitochondrion",
+"D":"Lysosome"
+},
+
+"answer":"A",
+
+"explanation":"The nucleus stores DNA and regulates cellular activities.",
+
+"clinicalPearl":"Nuclear abnormalities may lead to inherited disorders.",
+
+"examTip":"DNA = Nucleus.",
+
+"lessonSection":"Interactive Diagram → Nucleus"
+},
+
+{
+"id":24,
+"subject":"Cell Biology",
+"topic":"Quick Revision",
+"difficulty":"Medium",
+
+"question":"Which organelle is correctly matched with its primary function?",
+
+"options":{
+"A":"Golgi apparatus – ATP production",
+"B":"Ribosome – Protein synthesis",
+"C":"Lysosome – DNA storage",
+"D":"Mitochondria – Protein packaging"
+},
+
+"answer":"B",
+
+"explanation":"Ribosomes are responsible for protein synthesis.",
+
+"clinicalPearl":"Correct organelle-function pairing is a common licensing exam topic.",
+
+"examTip":"Review the Quick Revision box before examinations.",
+
+"lessonSection":"Quick Revision"
+},
+
+{
+"id":25,
+"subject":"Cell Biology",
+"topic":"Clinical Correlation",
+"difficulty":"Hard",
+
+"question":"A patient reports severe exercise intolerance due to reduced ATP production. Which lesson concept best explains this finding?",
+
+"options":{
+"A":"Golgi apparatus packages proteins",
+"B":"Mitochondria produce ATP",
+"C":"Lysosomes digest waste",
+"D":"Ribosomes synthesize proteins"
+},
+
+"answer":"B",
+
+"explanation":"Reduced ATP production indicates mitochondrial dysfunction.",
+
+"clinicalPearl":"Muscles require a continuous supply of ATP.",
+
+"examTip":"Exercise intolerance often points toward impaired energy production.",
+
+"lessonSection":"Clinical Correlation"
+},
+
+{
+"id":26,
+"subject":"Cell Biology",
+"topic":"Types of Cells",
+"difficulty":"Hard",
+
+"question":"A newly discovered organism lacks a true nucleus and membrane-bound organelles. According to this lesson, it is most likely:",
+
+"options":{
+"A":"A eukaryotic cell",
+"B":"A prokaryotic cell",
+"C":"An animal cell",
+"D":"A plant cell"
+},
+
+"answer":"B",
+
+"explanation":"Prokaryotic cells lack a true nucleus and membrane-bound organelles.",
+
+"clinicalPearl":"Bacteria are classic examples of prokaryotic cells.",
+
+"examTip":"No true nucleus = Prokaryotic.",
+
+"lessonSection":"Prokaryotic vs Eukaryotic"
+},
+
+{
+"id":27,
+"subject":"Cell Biology",
+"topic":"Learning Objectives",
+"difficulty":"Medium",
+
+"question":"Which learning objective is emphasized throughout this lesson?",
+
+"options":{
+"A":"Studying human genetics in detail",
+"B":"Understanding the relationship between cell structure and function",
+"C":"Learning surgical anatomy",
+"D":"Studying blood group systems"
+},
+
+"answer":"B",
+
+"explanation":"One of the lesson objectives is to understand how cell structure relates to function.",
+
+"clinicalPearl":"Understanding function from structure is essential in healthcare education.",
+
+"examTip":"Always review the Learning Objectives before revising the chapter.",
+
+"lessonSection":"Learning Objectives"
+},
+
+{
+"id":28,
+"subject":"Cell Biology",
+"topic":"Integrated Review",
+"difficulty":"Hard",
+
+"question":"Which sequence correctly follows the lesson's concept of protein handling?",
+
+"options":{
+"A":"Golgi → Ribosome → Nucleus",
+"B":"Ribosome → Endoplasmic Reticulum → Golgi Apparatus",
+"C":"Mitochondria → Lysosome → Ribosome",
+"D":"Nucleus → Lysosome → Golgi Apparatus"
+},
+
+"answer":"B",
+
+"explanation":"The lesson identifies ribosomes as protein producers, the ER as the transport system, and the Golgi apparatus as the packaging center.",
+
+"clinicalPearl":"Remember the workflow rather than isolated organelle functions.",
+
+"examTip":"Protein journey = Ribosome → ER → Golgi.",
+
+"lessonSection":"Cell Organelles"
+},
+
+{
+"id":29,
+"subject":"Cell Biology",
+"topic":"Integrated Review",
+"difficulty":"Hard",
+
+"question":"Which combination of organelles is directly involved in energy production, protein synthesis and waste digestion, respectively?",
+
+"options":{
+"A":"Golgi – Nucleus – Lysosome",
+"B":"Mitochondria – Ribosome – Lysosome",
+"C":"Ribosome – Mitochondria – Golgi",
+"D":"Lysosome – Ribosome – Nucleus"
+},
+
+"answer":"B",
+
+"explanation":"Mitochondria produce ATP, ribosomes synthesize proteins and lysosomes digest waste.",
+
+"clinicalPearl":"Many integrated questions combine multiple organelles.",
+
+"examTip":"Know the primary function of each organelle before solving combination questions.",
+
+"lessonSection":"Interactive Diagram"
+},
+
+{
+"id":30,
+"subject":"Cell Biology",
+"topic":"Comprehensive Review",
+"difficulty":"Hard",
+
+"question":"A cell has normal DNA, normal ATP production and normal protein synthesis, but it cannot remove accumulated intracellular waste. Which organelle is most likely affected?",
+
+"options":{
+"A":"Golgi apparatus",
+"B":"Ribosome",
+"C":"Lysosome",
+"D":"Nucleus"
+},
+
+"answer":"C",
+
+"explanation":"According to the lesson, lysosomes digest waste materials and help remove intracellular debris.",
+
+"clinicalPearl":"Failure of intracellular waste removal can impair normal cell function.",
+
+"examTip":"Waste disposal = Lysosome.",
+
+"lessonSection":"Interactive Diagram → Lysosome"
+}
+  ]
