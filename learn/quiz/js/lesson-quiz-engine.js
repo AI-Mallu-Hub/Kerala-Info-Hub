@@ -11,7 +11,9 @@ const quizState = {
 
     currentQuestion: 0,
 
-    selectedOption: null
+    selectedOption: null,
+
+    answered: false
 
 };
 
@@ -23,6 +25,10 @@ const quizState = {
 document.addEventListener("DOMContentLoaded", () => {
 
     initQuiz();
+
+document
+    .getElementById("submitBtn")
+    .addEventListener("click", checkAnswer);
 
 });
 
@@ -84,6 +90,8 @@ function renderQuestion() {
 
     const question = quizState.questions[quizState.currentQuestion];
 
+    quizState.answered = false;
+
     if (!question) return;
 
     document.getElementById("questionNumber").textContent =
@@ -122,6 +130,8 @@ function renderOptions(question) {
 
         button.addEventListener("click", () => {
 
+            if (quizState.answered) return;
+
             document
                 .querySelectorAll(".quiz-option")
                 .forEach(btn =>
@@ -139,3 +149,51 @@ function renderOptions(question) {
     });
 
 }
+
+
+/*====================================================
+    Check Answer
+====================================================*/
+
+function checkAnswer() {
+
+    if (quizState.selectedOption === null) {
+
+        alert("Please select an answer.");
+
+        return;
+
+    }
+
+    quizState.answered = true;
+
+    const question =
+        quizState.questions[quizState.currentQuestion];
+
+    document
+        .querySelectorAll(".quiz-option")
+        .forEach(button => {
+
+            const option =
+                button.querySelector("strong")
+                .textContent.replace(".", "");
+
+            if (option === question.answer) {
+
+                button.classList.add("correct");
+
+            }
+
+            if (
+                option === quizState.selectedOption &&
+                option !== question.answer
+            ) {
+
+                button.classList.add("wrong");
+
+            }
+
+        });
+
+}
+
