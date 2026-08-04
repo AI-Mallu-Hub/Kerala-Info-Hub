@@ -234,7 +234,7 @@ function renderPage() {
 
     const start = currentPage * questionsPerPage;
 
-    const end = Math.min(start + questionsPerPage, lessonQuestions);
+    const end = Math.min(start + questionsPerPage, lessonQuestions.length);
 
     pageInfo.textContent =
         `Page ${currentPage + 1} / ${Math.ceil(lessonQuestions.length / questionsPerPage)}`;
