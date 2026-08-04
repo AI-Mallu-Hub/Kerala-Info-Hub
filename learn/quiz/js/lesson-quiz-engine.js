@@ -251,10 +251,10 @@ function checkAnswer() {
 
             }
 
+       });
+    
 
-            
-
-const submitBtn =
+    const submitBtn =
 document.getElementById("submitBtn");
 
 if(
@@ -275,8 +275,7 @@ else{
     "Next Question ➜";
 
 }
-
-        });
+    
 if (isCorrect) {
 
     quizState.score++;
