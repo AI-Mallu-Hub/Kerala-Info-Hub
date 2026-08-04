@@ -221,12 +221,20 @@ btn.classList.add("wrong");
 
 });
 
-document
+const btn=document.getElementById("submitBtn");
 
-.getElementById("submitBtn")
+if(
+quizState.currentQuestion ===
+quizState.selectedQuestions.length-1
+){
 
-.textContent="Next Question ➜";
+btn.textContent="📊 View Result";
 
+}else{
+
+btn.textContent="Next Question ➜";
+
+      }
 }
 
 /*====================================================
