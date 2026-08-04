@@ -67,7 +67,6 @@ lessonInfo[lesson] || lessonInfo.cell;
 
 }
 
-buildOtherExamsMenu();
 
 // ============================
 // Load Questions
