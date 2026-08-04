@@ -147,3 +147,91 @@ function getCurrentQuestion(){
     ];
 
 }
+
+/*====================================================
+      Render Question
+=====================================================*/
+
+function renderQuestion(){
+
+    const q = getCurrentQuestion();
+
+    if(!q) return;
+
+    document.getElementById("questionNumber")
+        .textContent =
+        quizState.currentQuestion + 1;
+
+    document.getElementById("questionText")
+        .textContent =
+        q.question;
+
+    renderOptions(q);
+
+    updateProgress();
+
+}
+
+/*====================================================
+      Render Options
+=====================================================*/
+
+function renderOptions(question){
+
+    const container =
+    document.getElementById(
+        "optionsContainer"
+    );
+
+    container.innerHTML = "";
+
+    quizState.selectedOption = null;
+
+    Object.entries(question.options)
+    .forEach(([key,value])=>{
+
+        const option =
+        document.createElement("button");
+
+        option.className =
+        "quiz-option";
+
+        option.innerHTML =
+        `<strong>${key}.</strong> ${value}`;
+
+        option.onclick = ()=>{
+
+            document
+            .querySelectorAll(".quiz-option")
+            .forEach(btn=>
+                btn.classList.remove("selected")
+            );
+
+            option.classList.add("selected");
+
+            quizState.selectedOption = key;
+
+        };
+
+        container.appendChild(option);
+
+    });
+
+}
+
+/*====================================================
+      Progress Bar
+=====================================================*/
+
+function updateProgress(){
+
+    const percent =
+    ((quizState.currentQuestion+1)/10)*100;
+
+    document
+    .getElementById("progressFill")
+    .style.width =
+    percent + "%";
+
+                  }
+
