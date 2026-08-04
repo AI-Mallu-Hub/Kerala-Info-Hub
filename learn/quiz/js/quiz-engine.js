@@ -168,7 +168,13 @@ function getCurrentQuestion(){
 
 function checkAnswer(){
 
-if(quizState.answered) return;
+if(quizState.answered){
+
+nextQuestion();
+
+return;
+
+}
 
 if(!quizState.selectedOption) return;
 
@@ -187,17 +193,39 @@ quizState.score++;
 
 }
 
-alert(
+const buttons=document.querySelectorAll(".quiz-option");
 
-correct ?
+buttons.forEach(btn=>{
 
-"✅ Correct!"
+btn.classList.add("locked");
 
-:
+const key=btn.dataset.option;
 
-"❌ Wrong!"
+if(key===q.answer){
 
-);
+btn.classList.add("correct");
+
+}
+
+if(
+
+key===quizState.selectedOption &&
+
+key!==q.answer
+
+){
+
+btn.classList.add("wrong");
+
+}
+
+});
+
+document
+
+.getElementById("submitBtn")
+
+.textContent="Next Question ➜";
 
 }
 
