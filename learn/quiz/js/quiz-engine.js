@@ -1,3 +1,7 @@
+/*====================================================
+      Kerala Info Hub
+      Quiz Engine V1.0.1A
+=====================================================*/
 
 const quizState = {
 
@@ -9,9 +13,49 @@ const quizState = {
 
     currentQuestion: 0,
 
-    score: 0
+    score: 0,
+
+    selectedOption: null
 
 };
+
+/*====================================================
+      Initialize
+=====================================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    initQuiz();
+
+});
+
+/*====================================================
+      Main
+=====================================================*/
+
+async function initQuiz(){
+
+    quizState.lesson = getLessonName();
+
+    if(!quizState.lesson){
+
+        alert("Lesson parameter missing.");
+
+        return;
+
+    }
+
+    await loadQuestions();
+
+    prepareQuiz();
+
+    renderQuestion();
+
+}
+
+/*====================================================
+      Read Lesson Name
+=====================================================*/
 
 function getLessonName(){
 
@@ -21,51 +65,85 @@ function getLessonName(){
 
 }
 
-async function loadQuiz(){
+/*====================================================
+      Load JSON
+=====================================================*/
 
-    quizState.lesson = getLessonName();
+async function loadQuestions(){
 
-    if(!quizState.lesson){
+    const path =
+    `data/${quizState.lesson}.json`;
 
-        alert("Lesson not specified.");
+    const response =
+    await fetch(path);
 
-        return;
+    if(!response.ok){
+
+        throw new Error("Unable to load JSON.");
 
     }
 
-    const path = `data/${quizState.lesson}.json`;
+    quizState.questions =
+    await response.json();
 
-    try{
+}
 
-        const response = await fetch(path);
+/*====================================================
+      Prepare Quiz
+=====================================================*/
 
-        if(!response.ok){
+function prepareQuiz(){
 
-            throw new Error("Quiz JSON not found.");
+    const shuffled =
+    shuffleArray([...quizState.questions]);
 
-        }
+    quizState.selectedQuestions =
+    shuffled.slice(0,10);
 
-        quizState.questions = await response.json();
-        alert("Loaded: " + quizState.questions.length + " questions");
+    quizState.currentQuestion = 0;
 
-        console.log(
-            `${quizState.questions.length} Questions Loaded`
+    quizState.score = 0;
+
+}
+
+/*====================================================
+      Shuffle
+=====================================================*/
+
+function shuffleArray(array){
+
+    for(
+
+        let i=array.length-1;
+
+        i>0;
+
+        i--
+
+    ){
+
+        const j =
+        Math.floor(
+            Math.random()*(i+1)
         );
 
-    }
-
-    catch(err){
-
-        console.error(err);
-
-        alert("Unable to load quiz.");
+        [array[i],array[j]] =
+        [array[j],array[i]];
 
     }
 
-      }
+    return array;
 
-document.addEventListener("DOMContentLoaded",()=>{
+}
 
-    loadQuiz();
+/*====================================================
+      Current Question
+=====================================================*/
 
-});
+function getCurrentQuestion(){
+
+    return quizState.selectedQuestions[
+        quizState.currentQuestion
+    ];
+
+}
