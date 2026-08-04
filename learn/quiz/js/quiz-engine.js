@@ -46,6 +46,7 @@ async function loadQuiz(){
         }
 
         quizState.questions = await response.json();
+        alert("Loaded: " + quizState.questions.length + " questions");
 
         console.log(
             `${quizState.questions.length} Questions Loaded`
