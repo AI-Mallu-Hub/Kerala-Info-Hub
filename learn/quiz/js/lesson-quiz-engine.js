@@ -15,7 +15,9 @@ const quizState = {
 
     answered: false,
 
-    currentButtonMode: "submit"
+    currentButtonMode: "submit",
+
+    score: 0
 
 };
 
@@ -58,6 +60,8 @@ document
 async function initQuiz() {
 
     quizState.lesson = getLessonName();
+
+    quizState.score = 0;
 
     await loadQuestions();
 
@@ -214,6 +218,10 @@ function checkAnswer() {
 
     const question =
         quizState.questions[quizState.currentQuestion];
+
+    const isCorrect =
+    quizState.selectedOption ===
+    question.answer;
 
     document
         .querySelectorAll(".quiz-option")
