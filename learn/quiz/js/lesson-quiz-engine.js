@@ -252,7 +252,7 @@ function checkAnswer() {
             }
 
 
-            quizState.currentButtonMode = "next";
+            
 
 const submitBtn =
 document.getElementById("submitBtn");
@@ -261,13 +261,15 @@ if(
     quizState.currentQuestion ===
     quizState.questions.length-1
 ){
-    currentButtonMode="result";
+    quizState.currentButtonMode="result";
 
     submitBtn.textContent =
     "View Result 📊";
 
 }
 else{
+
+    quizState.currentButtonMode = "next";
 
     submitBtn.textContent =
     "Next Question ➜";
