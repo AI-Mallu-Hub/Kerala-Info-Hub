@@ -1,0 +1,13 @@
+[
+  {
+    "id":1,
+    "question":"Which organelle is known as the powerhouse of the cell?",
+    "options":{
+      "A":"Golgi apparatus",
+      "B":"Mitochondria",
+      "C":"Nucleus",
+      "D":"Ribosome"
+    },
+    "answer":"B"
+  }
+]
