@@ -249,6 +249,24 @@ function renderQuestion(){
 
     renderOptions(q);
 
+      document
+
+.querySelectorAll(".quiz-option")
+
+.forEach(btn=>{
+
+btn.classList.remove(
+
+"correct",
+
+"wrong",
+
+"locked"
+
+);
+
+});
+
     updateProgress();
 
     quizState.answered=false;
@@ -331,4 +349,37 @@ function updateProgress(){
     percent + "%";
 
                   }
+
+
+function nextQuestion(){
+
+quizState.currentQuestion++;
+
+if(
+
+quizState.currentQuestion>=
+
+quizState.selectedQuestions.length
+
+){
+
+showResult();
+
+return;
+
+}
+
+renderQuestion();
+
+}
+
+function showResult(){
+
+alert(
+
+`Score : ${quizState.score}/${quizState.selectedQuestions.length}`
+
+);
+
+}
 
