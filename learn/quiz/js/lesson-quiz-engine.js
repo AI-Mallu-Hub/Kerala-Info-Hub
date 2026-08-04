@@ -95,10 +95,9 @@ async function loadQuestions() {
 
     }
 
-    quizState.questions = await response.json();
+    const allQuestions = await response.json();
 
-    quizState.questions = allQuestions.slice(0,10);
-
+    quizState.questions = allQuestions.slice(0, 10);
 }
 
 
