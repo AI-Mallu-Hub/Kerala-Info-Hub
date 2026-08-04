@@ -221,7 +221,7 @@ btn.classList.add("wrong");
 
 });
 
-      showExplanation(isCorrect);
+      showExplanation(correct);
       
 
 const btn=document.getElementById("submitBtn");
