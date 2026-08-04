@@ -315,8 +315,9 @@ function renderOptions(question){
         const option =
         document.createElement("button");
 
-        option.className =
-        "quiz-option";
+        option.className = "quiz-option";
+
+        option.dataset.option = key;
 
         option.innerHTML =
         `<strong>${key}.</strong> ${value}`;
