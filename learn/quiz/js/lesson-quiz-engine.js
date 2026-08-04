@@ -34,20 +34,25 @@ document
 .getElementById("submitBtn")
 .addEventListener("click",()=>{
 
-    if(
-        quizState.currentButtonMode ===
-        "submit"
-    ){
+    if (
+    quizState.currentButtonMode === "submit"
+) {
 
-        checkAnswer();
+    checkAnswer();
 
-    }
+}
+else if (
+    quizState.currentButtonMode === "next"
+) {
 
-    else{
+    nextQuestion();
 
-        nextQuestion();
+}
+else {
 
-    }
+    showResult();
+
+}
 
 });
 
@@ -256,6 +261,7 @@ if(
     quizState.currentQuestion ===
     quizState.questions.length-1
 ){
+    currentButtonMode="result";
 
     submitBtn.textContent =
     "View Result 📊";
@@ -269,6 +275,22 @@ else{
 }
 
         });
+if (isCorrect) {
 
+    quizState.score++;
+
+                }
 }
 
+
+function showResult(){
+
+    alert(
+
+`Quiz Completed!
+
+Score : ${quizState.score}/${quizState.questions.length}`
+
+    );
+
+    }
