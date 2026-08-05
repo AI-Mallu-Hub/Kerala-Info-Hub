@@ -389,36 +389,44 @@ function showReview() {
     document.getElementById("reviewScreen")
     .classList.remove("hidden");
 
+    const userAnswer = quizState.userAnswers[index];
+
+const isCorrect =
+    userAnswer === question.answer;
+
+const statusIcon =
+    isCorrect ? "✅" : "❌";
+
+const answerClass =
+    isCorrect ? "your-answer correct"
+              : "your-answer wrong";
+
     const container =
 document.getElementById("reviewContainer");
 
-container.innerHTML = "";
-
-    quizState.questions.forEach((question, index) => {
-
-    container.innerHTML += `
+container.innerHTML += `
 <div class="review-item">
 
-    <h3>Question ${index + 1}</h3>
+<h3>${statusIcon} Question ${index + 1}</h3>
 
-    <p class="review-question">
-        ${question.question}
-    </p>
+<p class="review-question">
+${question.question}
+</p>
 
-    <p class="your-answer">
-        <strong>Your Answer:</strong><br>
-        ${quizState.userAnswers[index] || "Not Answered"}
-    </p>
+<p class="${answerClass}">
+<strong>Your Answer:</strong><br>
+${userAnswer || "Not Answered"}
+</p>
 
-    <p class="correct-answer">
-        <strong>Correct Answer:</strong><br>
-        ${question.answer}
-    </p>
+<p class="correct-answer">
+<strong>Correct Answer:</strong><br>
+${question.answer}
+</p>
 
-    <p class="review-explanation">
-        <strong>Explanation:</strong><br>
-        ${question.explanation}
-    </p>
+<p class="review-explanation">
+<strong>Explanation:</strong><br>
+${question.explanation}
+</p>
 
 </div>
 `;
