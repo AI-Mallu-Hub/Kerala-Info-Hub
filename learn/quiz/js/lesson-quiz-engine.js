@@ -136,6 +136,10 @@ async function loadQuestions() {
 
 function renderQuestion() {
 
+document
+.getElementById("explanationCard")
+.classList.add("hidden");
+
     quizState.currentButtonMode = "submit";
 
 const submitBtn =
@@ -277,6 +281,8 @@ function checkAnswer() {
     const submitBtn =
 document.getElementById("submitBtn");
 
+    showExplanation();
+
 if(
     quizState.currentQuestion ===
     quizState.questions.length-1
@@ -358,5 +364,32 @@ else{
     "💪 Don't Give Up!";
 
 }
+
+}
+
+
+function showExplanation(){
+
+    const question =
+    quizState.questions[quizState.currentQuestion];
+
+    document
+    .getElementById("explanation")
+    .textContent =
+    question.explanation;
+
+    document
+    .getElementById("clinical")
+    .textContent =
+    question.clinical;
+
+    document
+    .getElementById("examTip")
+    .textContent =
+    question.examTip;
+
+    document
+    .getElementById("explanationCard")
+    .classList.remove("hidden");
 
 }
