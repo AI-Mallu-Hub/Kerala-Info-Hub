@@ -18,7 +18,9 @@ const quizState = {
 
     currentButtonMode: "submit",
 
-    score: 0
+    score: 0,
+
+    userAnswers: []
 
 };
 
@@ -251,6 +253,9 @@ function checkAnswer() {
     const isCorrect =
     quizState.selectedOption ===
     question.answer;
+
+    quizState.userAnswers[quizState.currentQuestion] =
+    quizState.selectedOption;
 
     document
         .querySelectorAll(".quiz-option")
