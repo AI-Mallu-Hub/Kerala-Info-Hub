@@ -389,6 +389,29 @@ function showReview() {
     document.getElementById("reviewScreen")
     .classList.remove("hidden");
 
+    const container =
+document.getElementById("reviewContainer");
+
+container.innerHTML = "";
+
+    quizState.questions.forEach((question, index) => {
+
+    container.innerHTML += `
+        <div class="review-item">
+
+            <h3>
+                Question ${index + 1}
+            </h3>
+
+            <p>
+                ${question.question}
+            </p>
+
+        </div>
+    `;
+
+});
+
 }
 
 
