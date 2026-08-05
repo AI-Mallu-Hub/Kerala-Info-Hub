@@ -315,4 +315,38 @@ function showResult(){
     document.getElementById("finalPercentage").textContent =
     percent + "%";
 
+    const message =
+document.getElementById("performanceMessage");
+
+if(percent>=90){
+
+    message.textContent =
+    "🌟 Excellent!";
+
+}
+else if(percent>=75){
+
+    message.textContent =
+    "🎉 Great Job!";
+
+}
+else if(percent>=60){
+
+    message.textContent =
+    "👍 Good Work!";
+
+}
+else if(percent>=40){
+
+    message.textContent =
+    "📚 Keep Practicing!";
+
+}
+else{
+
+    message.textContent =
+    "💪 Don't Give Up!";
+
+}
+
 }
