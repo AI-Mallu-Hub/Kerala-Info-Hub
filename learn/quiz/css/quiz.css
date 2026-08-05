@@ -48,19 +48,21 @@ body{
   box-shadow:var(--shadow);
 }
 .progress-bar{
-  margin-top:12px;
-  width:100%;
-  height:12px;
-  background:#dde5ff;
-  border-radius:999px;
-  overflow:hidden;
+    width:100%;
+    height:12px;
+    background:#e7edff;
+    border-radius:999px;
+    overflow:hidden;
+    margin-top:18px;
 }
-.progress-fill{
-  width:0%;
-  height:100%;
-  background:linear-gradient(90deg,var(--accent),#7fa0ff);
-  transition:width .35s ease;
-}
+
+#progressFill{
+    width:0%;
+    height:100%;
+    background:linear-gradient(90deg,#4f6fff,#7aa8ff);
+    border-radius:999px;
+    transition:width .4s ease;
+     }
 .question-card{
   background:var(--card);
   border-radius:var(--radius);
