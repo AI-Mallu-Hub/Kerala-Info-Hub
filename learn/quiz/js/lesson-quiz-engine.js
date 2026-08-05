@@ -483,9 +483,6 @@ function animateResult(score, total, percent){
 
 function showReview() {
 
-    .getElementById("closeReviewBtn")
-    .addEventListener("click", () => {
-
     document.getElementById("resultScreen").style.display = "none";
 
     document.getElementById("reviewScreen")
