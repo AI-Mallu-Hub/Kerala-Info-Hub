@@ -390,3 +390,14 @@ transform:none;
 
 }
 
+#performanceMessage{
+
+    margin:20px 0 35px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#4F73FF;
+
+   }
