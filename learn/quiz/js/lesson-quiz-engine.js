@@ -397,18 +397,31 @@ container.innerHTML = "";
     quizState.questions.forEach((question, index) => {
 
     container.innerHTML += `
-        <div class="review-item">
+<div class="review-item">
 
-            <h3>
-                Question ${index + 1}
-            </h3>
+    <h3>Question ${index + 1}</h3>
 
-            <p>
-                ${question.question}
-            </p>
+    <p class="review-question">
+        ${question.question}
+    </p>
 
-        </div>
-    `;
+    <p class="your-answer">
+        <strong>Your Answer:</strong><br>
+        ${quizState.userAnswers[index] || "Not Answered"}
+    </p>
+
+    <p class="correct-answer">
+        <strong>Correct Answer:</strong><br>
+        ${question.answer}
+    </p>
+
+    <p class="review-explanation">
+        <strong>Explanation:</strong><br>
+        ${question.explanation}
+    </p>
+
+</div>
+`;
 
 });
 
