@@ -90,6 +90,21 @@ document
 
 });
 
+document
+    .getElementById("closeReviewBtn")
+    .addEventListener("click", () => {
+
+        document
+            .getElementById("reviewScreen")
+            .classList.add("hidden");
+
+        document
+            .getElementById("resultScreen")
+            .style.display = "block";
+
+    });
+        
+
 /*====================================================
     Initialize Quiz
 ====================================================*/
@@ -348,11 +363,6 @@ function showResult(){
     document.getElementById("resultScreen").style.display =
     "block";
 
-    animateResult(
-    quizState.score,
-    quizState.questions.length,
-    percent
-);
 
     const percent = Math.round(
 
@@ -360,6 +370,12 @@ function showResult(){
         quizState.questions.length * 100
 
     );
+
+    animateResult(
+    quizState.score,
+    quizState.questions.length,
+    percent
+);
 
     const message =
 document.getElementById("performanceMessage");
