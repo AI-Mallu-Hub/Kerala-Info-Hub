@@ -451,3 +451,41 @@ transform:none;
     color:#4F73FF;
 
    }
+
+
+.review-item{
+    background:#fff;
+    border-radius:16px;
+    padding:18px;
+    margin-bottom:20px;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+.review-question{
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:16px;
+}
+
+.your-answer{
+    background:#ffeaea;
+    color:#b00020;
+    padding:12px;
+    border-radius:10px;
+    margin-bottom:12px;
+}
+
+.correct-answer{
+    background:#e9fff0;
+    color:#0b8a42;
+    padding:12px;
+    border-radius:10px;
+    margin-bottom:12px;
+}
+
+.review-explanation{
+    background:#eef6ff;
+    padding:12px;
+    border-radius:10px;
+}
+   
