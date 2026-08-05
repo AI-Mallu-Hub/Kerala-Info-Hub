@@ -351,7 +351,7 @@ function showResult(){
     animateResult(
     quizState.score,
     quizState.questions.length,
-    percentage
+    percent
 );
 
     const percent = Math.round(
@@ -397,22 +397,22 @@ else{
 
     let badge = "📘 Beginner";
 
-if(percentage>=90){
+if(percent>=90){
 
     badge="🏆 Master";
 
 }
-else if(percentage>=80){
+else if(percent>=80){
 
     badge="🥇 Excellent";
 
 }
-else if(percentage>=70){
+else if(percent>=70){
 
     badge="🥈 Very Good";
 
 }
-else if(percentage>=60){
+else if(percent>=60){
 
     badge="🥉 Good";
 
@@ -420,7 +420,7 @@ else if(percentage>=60){
 
 document.getElementById("performanceBadge").textContent=badge;
 
-    if(percentage>=70){
+    if(percent>=70){
 
     confetti({
 
@@ -437,13 +437,13 @@ document.getElementById("performanceBadge").textContent=badge;
 }
 
 
-function animateResult(score, total, percentage){
+function animateResult(score, total, percent){
 
     const scoreElement =
         document.getElementById("finalScore");
 
     const percentElement =
-        document.getElementById("finalPercentage");
+        document.getElementById("finalPercent");
 
     let currentScore = 0;
     let currentPercent = 0;
@@ -465,14 +465,14 @@ function animateResult(score, total, percentage){
 
     const percentInterval = setInterval(()=>{
 
-        if(currentPercent < percentage){
+        if(currentPercent < percent){
             currentPercent++;
         }
 
         percentElement.textContent =
         `${currentPercent}%`;
 
-        if(currentPercent >= percentage){
+        if(currentPercent >= percent){
             clearInterval(percentInterval);
         }
 
@@ -482,6 +482,9 @@ function animateResult(score, total, percentage){
 
 
 function showReview() {
+
+    .getElementById("closeReviewBtn")
+    .addEventListener("click", () => {
 
     document.getElementById("resultScreen").style.display = "none";
 
