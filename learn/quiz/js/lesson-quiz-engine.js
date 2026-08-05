@@ -389,6 +389,9 @@ function showReview() {
     document.getElementById("reviewScreen")
     .classList.remove("hidden");
 
+    const container =
+document.getElementById("reviewContainer");
+
     const userAnswer = quizState.userAnswers[index];
 
 const isCorrect =
@@ -400,9 +403,6 @@ const statusIcon =
 const answerClass =
     isCorrect ? "your-answer correct"
               : "your-answer wrong";
-
-    const container =
-document.getElementById("reviewContainer");
 
 container.innerHTML += `
 <div class="review-item">
