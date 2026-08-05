@@ -524,3 +524,24 @@ transform:none;
     animation:popIn .6s ease;
 
                                }
+
+
+.performance-badge{
+
+    display:inline-block;
+
+    margin:20px auto;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#fff;
+
+    background:#4f6fff;
+
+}
