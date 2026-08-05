@@ -468,11 +468,20 @@ transform:none;
 }
 
 .your-answer{
+    padding:12px;
+    border-radius:12px;
+    margin-bottom:12px;
+    font-weight:600;
+}
+
+.your-answer.correct{
+    background:#e9fff0;
+    color:#0b8a42;
+}
+
+.your-answer.wrong{
     background:#ffeaea;
     color:#b00020;
-    padding:12px;
-    border-radius:10px;
-    margin-bottom:12px;
 }
 
 .correct-answer{
