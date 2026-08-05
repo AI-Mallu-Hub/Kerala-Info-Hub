@@ -80,6 +80,15 @@ document
 
 });
 
+
+document
+.getElementById("reviewBtn")
+.addEventListener("click", () => {
+
+    showReview();
+
+});
+
 /*====================================================
     Initialize Quiz
 ====================================================*/
@@ -369,6 +378,17 @@ else{
     "💪 Don't Give Up!";
 
 }
+
+}
+
+
+function showReview() {
+
+    document.getElementById("resultScreen").style.display =
+    "none";
+
+    document.getElementById("reviewScreen")
+    .classList.remove("hidden");
 
 }
 
