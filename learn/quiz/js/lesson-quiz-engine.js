@@ -381,7 +381,7 @@ function showExplanation(){
     document
     .getElementById("clinicalPearl")
     .textContent =
-    question.clinical;
+    question.clinicalPearl;
 
     document
     .getElementById("examTip")
