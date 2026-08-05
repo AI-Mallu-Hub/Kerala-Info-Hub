@@ -174,15 +174,62 @@ body{
   background:#fff7df;
 }
 
-/* ---------- Result ---------- */
+/*==============================
+RESULT SCREEN
+==============================*/
 
-#resultScreen{
-  margin-top:24px;
-  background:#fff;
-  border-radius:22px;
-  padding:28px;
-  text-align:center;
-  box-shadow:0 12px 28px rgba(0,0,0,.08);
+.result-screen{
+
+    padding:20px;
+
+}
+
+.result-card{
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.result-card h2{
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+.result-card h3{
+
+    font-size:48px;
+
+    color:#4F73FF;
+
+    margin-bottom:10px;
+
+}
+
+.result-card p{
+
+    font-size:22px;
+
+    margin-bottom:30px;
+
+}
+
+.result-card button{
+
+    width:100%;
+
+    margin-top:15px;
+
 }
 
 #finalScore{
