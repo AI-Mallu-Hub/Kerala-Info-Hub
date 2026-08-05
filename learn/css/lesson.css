@@ -757,3 +757,91 @@ opacity:.7;
 font-weight:500;
 
 }
+
+/*====================================
+    At a Glance Card
+====================================*/
+
+.at-a-glance{
+
+margin:24px 0;
+
+padding:20px;
+
+background:#f8fbff;
+
+border:1px solid #dbeafe;
+
+border-radius:16px;
+
+}
+
+.at-a-glance h3{
+
+margin-bottom:18px;
+
+color:#2563eb;
+
+}
+
+.glance-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+gap:16px;
+
+}
+
+.glance-item{
+
+padding:18px;
+
+background:#ffffff;
+
+border-radius:12px;
+
+text-align:center;
+
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.glance-item:hover{
+
+transform:translateY(-4px);
+
+}
+
+.glance-icon{
+
+font-size:32px;
+
+display:block;
+
+margin-bottom:10px;
+
+}
+
+.glance-item h4{
+
+margin-bottom:8px;
+
+color:#1e40af;
+
+font-size:16px;
+
+}
+
+.glance-item p{
+
+font-size:14px;
+
+line-height:1.5;
+
+color:#444;
+
+}
