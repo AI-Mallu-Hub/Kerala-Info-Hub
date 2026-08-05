@@ -33,6 +33,8 @@ Test your understanding of this lesson.
 
 </header>
 
+<div id="quizArea">
+
 <section class="quiz-progress">
 
 <div>
@@ -123,37 +125,33 @@ class="hidden">
 
 </section>
 
-<section
-id="resultScreen"
+</div>
 
-class="hidden">
+<div id="resultScreen" class="result-screen" style="display:none;">
 
-<h2>
+    <div class="result-card">
 
-🏆 Quiz Completed
+        <h2>🎉 Quiz Completed</h2>
 
-</h2>
+        <h3 id="finalScore">
+            0 / 10
+        </h3>
 
-<h1
-id="finalScore">
+        <p id="finalPercentage">
+            0%
+        </p>
 
-10/10
+        <button id="retryBtn">
+            🔄 Retry Quiz
+        </button>
 
-</h1>
+        <button id="backLessonBtn">
+            📚 Back to Lesson
+        </button>
 
-<button
-id="retryQuiz">
+    </div>
 
-Retry Quiz
-
-</button>
-
-<button
-id="reviewLesson">
-
-Review Lesson
-
-</button>
+</div>
 
 </section>
 
