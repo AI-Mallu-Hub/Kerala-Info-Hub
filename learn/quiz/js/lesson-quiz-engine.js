@@ -176,6 +176,13 @@ submitBtn.textContent = "Submit";
     document.getElementById("questionNumber").textContent =
         quizState.currentQuestion + 1;
 
+    const progress =
+((quizState.currentQuestion + 1) /
+quizState.questions.length) * 100;
+
+document.getElementById("progressFill").style.width =
+`${progress}%`;
+
     document.getElementById("questionText").textContent =
         question.question;
 
