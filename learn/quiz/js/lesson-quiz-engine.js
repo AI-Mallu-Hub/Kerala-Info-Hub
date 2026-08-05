@@ -68,6 +68,15 @@ document
 
 });
 
+document
+.getElementById("backLessonBtn")
+.addEventListener("click", () => {
+
+    window.location.href =
+    `../anatomy/${quizState.lesson}/index.html`;
+
+});
+
 /*====================================================
     Initialize Quiz
 ====================================================*/
