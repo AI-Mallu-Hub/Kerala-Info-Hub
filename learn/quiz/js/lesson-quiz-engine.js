@@ -158,7 +158,7 @@ document.getElementById("submitBtn");
 submitBtn.textContent = "Submit";
 
     const question = quizState.questions[quizState.currentQuestion];
-
+alert(quizState.questions.length);
     quizState.answered = false;
 
     if (!question) return;
