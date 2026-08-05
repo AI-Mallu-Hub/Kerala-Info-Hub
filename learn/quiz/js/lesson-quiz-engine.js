@@ -392,4 +392,8 @@ function showExplanation(){
     .getElementById("explanationCard")
     .classList.remove("hidden");
 
+    document.getElementById("explanationCard").scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+});
 }
