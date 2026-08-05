@@ -94,16 +94,24 @@ document
 
 async function initQuiz() {
 
+    alert("1");
+
     quizState.lesson = getLessonName();
+
+    alert("2");
 
     quizState.score = 0;
 
+    alert("3");
+
     await loadQuestions();
+
+    alert("4");
 
     renderQuestion();
 
+    alert("5");
 }
-
 
 /*====================================================
     Get Lesson Name
