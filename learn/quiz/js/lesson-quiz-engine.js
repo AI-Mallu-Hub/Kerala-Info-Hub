@@ -72,6 +72,14 @@ document
 .getElementById("backLessonBtn")
 .addEventListener("click", () => {
 
+    alert(quizState.lesson);
+
+});
+
+document
+.getElementById("backLessonBtn")
+.addEventListener("click", () => {
+
     window.location.href =
     `../anatomy/${quizState.lesson}/index.html`;
 
