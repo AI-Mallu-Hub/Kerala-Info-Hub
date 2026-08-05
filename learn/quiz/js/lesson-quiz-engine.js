@@ -58,6 +58,15 @@ else {
 
 });
 
+
+document
+.getElementById("retryBtn")
+.addEventListener("click",()=>{
+
+    location.reload();
+
+});
+
 /*====================================================
     Initialize Quiz
 ====================================================*/
@@ -286,12 +295,23 @@ if (isCorrect) {
 
 function showResult(){
 
-    alert(
+    document.getElementById("quizArea").style.display =
+    "none";
 
-`Quiz Completed!
+    document.getElementById("resultScreen").style.display =
+    "block";
 
-Score : ${quizState.score}/${quizState.questions.length}`
+    document.getElementById("finalScore").textContent =
+    `${quizState.score}/${quizState.questions.length}`;
+
+    const percent = Math.round(
+
+        quizState.score /
+        quizState.questions.length * 100
 
     );
 
-    }
+    document.getElementById("finalPercentage").textContent =
+    percent + "%";
+
+}
