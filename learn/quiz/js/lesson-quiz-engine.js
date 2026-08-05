@@ -348,8 +348,11 @@ function showResult(){
     document.getElementById("resultScreen").style.display =
     "block";
 
-    document.getElementById("finalScore").textContent =
-    `${quizState.score}/${quizState.questions.length}`;
+    animateResult(
+    quizState.score,
+    quizState.questions.length,
+    percentage
+);
 
     const percent = Math.round(
 
@@ -357,9 +360,6 @@ function showResult(){
         quizState.questions.length * 100
 
     );
-
-    document.getElementById("finalPercentage").textContent =
-    percent + "%";
 
     const message =
 document.getElementById("performanceMessage");
@@ -396,6 +396,50 @@ else{
 }
 
 }
+
+
+function animateResult(score, total, percentage){
+
+    const scoreElement =
+        document.getElementById("finalScore");
+
+    const percentElement =
+        document.getElementById("finalPercentage");
+
+    let currentScore = 0;
+    let currentPercent = 0;
+
+    const scoreInterval = setInterval(()=>{
+
+        if(currentScore < score){
+            currentScore++;
+        }
+
+        scoreElement.textContent =
+        `${currentScore} / ${total}`;
+
+        if(currentScore >= score){
+            clearInterval(scoreInterval);
+        }
+
+    },120);
+
+    const percentInterval = setInterval(()=>{
+
+        if(currentPercent < percentage){
+            currentPercent++;
+        }
+
+        percentElement.textContent =
+        `${currentPercent}%`;
+
+        if(currentPercent >= percentage){
+            clearInterval(percentInterval);
+        }
+
+    },15);
+
+           }
 
 
 function showReview() {
