@@ -393,28 +393,31 @@ else{
 
 function showReview() {
 
-    document.getElementById("resultScreen").style.display =
-    "none";
+    document.getElementById("resultScreen").style.display = "none";
 
     document.getElementById("reviewScreen")
-    .classList.remove("hidden");
+        .classList.remove("hidden");
 
     const container =
-document.getElementById("reviewContainer");
+        document.getElementById("reviewContainer");
 
-    const userAnswer = quizState.userAnswers[index];
+    container.innerHTML = "";
 
-const isCorrect =
-    userAnswer === question.answer;
+    quizState.questions.forEach((question, index) => {
 
-const statusIcon =
-    isCorrect ? "✅" : "❌";
+        const userAnswer = quizState.userAnswers[index];
 
-const answerClass =
-    isCorrect ? "your-answer correct"
-              : "your-answer wrong";
+        const isCorrect =
+            userAnswer === question.answer;
 
-container.innerHTML += `
+        const statusIcon =
+            isCorrect ? "✅" : "❌";
+
+        const answerClass =
+            isCorrect ? "your-answer correct"
+                      : "your-answer wrong";
+
+        container.innerHTML += `
 <div class="review-item">
 
 <h3>${statusIcon} Question ${index + 1}</h3>
@@ -438,10 +441,8 @@ ${question.answer}
 ${question.explanation}
 </p>
 
-</div>
-`;
-
-});
+</div>`;
+    });
 
 }
 
