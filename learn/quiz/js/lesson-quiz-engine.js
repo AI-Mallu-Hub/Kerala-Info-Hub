@@ -395,6 +395,45 @@ else{
 
 }
 
+    let badge = "📘 Beginner";
+
+if(percentage>=90){
+
+    badge="🏆 Master";
+
+}
+else if(percentage>=80){
+
+    badge="🥇 Excellent";
+
+}
+else if(percentage>=70){
+
+    badge="🥈 Very Good";
+
+}
+else if(percentage>=60){
+
+    badge="🥉 Good";
+
+}
+
+document.getElementById("performanceBadge").textContent=badge;
+
+    if(percentage>=70){
+
+    confetti({
+
+        particleCount:180,
+
+        spread:90,
+
+        origin:{y:.6}
+
+    });
+
+    }
+
 }
 
 
