@@ -68,13 +68,6 @@ document
 
 });
 
-document
-.getElementById("backLessonBtn")
-.addEventListener("click", () => {
-
-    alert(quizState.lesson);
-
-});
 
 document
 .getElementById("backLessonBtn")
