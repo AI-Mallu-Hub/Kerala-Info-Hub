@@ -30,6 +30,7 @@ const quizState = {
 ====================================================*/
 
 document.addEventListener("DOMContentLoaded", () => {
+    alert("DOM Loaded");
 
     initQuiz();
 
