@@ -379,7 +379,7 @@ function showExplanation(){
     question.explanation;
 
     document
-    .getElementById("clinical")
+    .getElementById("clinicalPearl")
     .textContent =
     question.clinical;
 
