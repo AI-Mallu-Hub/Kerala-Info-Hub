@@ -1,1 +1,573 @@
 
+[
+  {
+    "id": 1,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Introduction",
+    "difficulty": "Easy",
+    "question": "Epithelial tissue mainly forms the body's:",
+    "options": {
+      "A": "Supporting framework",
+      "B": "Protective covering",
+      "C": "Contractile system",
+      "D": "Blood-forming tissue"
+    },
+    "answer": "B",
+    "explanation": "Epithelial tissue forms the body's protective covering and lining.",
+    "clinicalPearl": "The skin is largely made of epithelial tissue.",
+    "examTip": "Protection = Epithelium.",
+    "lessonSection": "Introduction"
+  },
+  {
+    "id": 2,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Definition",
+    "difficulty": "Easy",
+    "question": "Epithelial tissue is best defined as:",
+    "options": {
+      "A": "A collection of muscle fibers",
+      "B": "A sheet of closely packed cells covering body surfaces and lining organs",
+      "C": "Loose connective tissue",
+      "D": "A network of nerve cells"
+    },
+    "answer": "B",
+    "explanation": "Epithelial tissue consists of closely packed cells that cover surfaces and line organs.",
+    "clinicalPearl": "Almost every body surface exposed to the environment is covered by epithelium.",
+    "examTip": "Think: Cover, Line and Protect.",
+    "lessonSection": "What is Epithelial Tissue?"
+  },
+  {
+    "id": 3,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Definition",
+    "difficulty": "Easy",
+    "question": "The cells of epithelial tissue are arranged:",
+    "options": {
+      "A": "Far apart",
+      "B": "Randomly",
+      "C": "Closely packed together",
+      "D": "Inside blood vessels only"
+    },
+    "answer": "C",
+    "explanation": "Very little space exists between epithelial cells.",
+    "clinicalPearl": "This arrangement forms an effective protective barrier.",
+    "examTip": "Closely packed = Epithelium.",
+    "lessonSection": "What is Epithelial Tissue?"
+  },
+  {
+    "id": 4,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Functions",
+    "difficulty": "Easy",
+    "question": "Which of the following is NOT a major function of epithelial tissue?",
+    "options": {
+      "A": "Protection",
+      "B": "Absorption",
+      "C": "Secretion",
+      "D": "Bone formation"
+    },
+    "answer": "D",
+    "explanation": "Bone formation is a function of connective tissue, not epithelial tissue.",
+    "clinicalPearl": "Protection and secretion are classic epithelial functions.",
+    "examTip": "Bone = Connective tissue.",
+    "lessonSection": "Functions"
+  },
+  {
+    "id": 5,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Location",
+    "difficulty": "Easy",
+    "question": "Which organ is covered externally by epithelial tissue?",
+    "options": {
+      "A": "Skin",
+      "B": "Bone marrow",
+      "C": "Ligament",
+      "D": "Tendon"
+    },
+    "answer": "A",
+    "explanation": "The outer surface of the body is covered by epithelial tissue.",
+    "clinicalPearl": "The epidermis is epithelial tissue.",
+    "examTip": "Skin = Epithelium.",
+    "lessonSection": "Location"
+  },
+  {
+    "id": 6,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Location",
+    "difficulty": "Easy",
+    "question": "Epithelial tissue lines the:",
+    "options": {
+      "A": "Internal organs",
+      "B": "Only bones",
+      "C": "Only muscles",
+      "D": "Only joints"
+    },
+    "answer": "A",
+    "explanation": "It lines most internal organs and body cavities.",
+    "clinicalPearl": "The digestive tract is lined by epithelium.",
+    "examTip": "Inside organs = Epithelium.",
+    "lessonSection": "Location"
+  },
+  {
+    "id": 7,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Glands",
+    "difficulty": "Easy",
+    "question": "Many glands are formed from:",
+    "options": {
+      "A": "Muscle tissue",
+      "B": "Nervous tissue",
+      "C": "Epithelial tissue",
+      "D": "Cartilage"
+    },
+    "answer": "C",
+    "explanation": "Most glands develop from epithelial tissue.",
+    "clinicalPearl": "Sweat and salivary glands are epithelial in origin.",
+    "examTip": "Glands = Epithelium.",
+    "lessonSection": "Introduction"
+  },
+  {
+    "id": 8,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Characteristics",
+    "difficulty": "Easy",
+    "question": "Epithelial tissue rests on a:",
+    "options": {
+      "A": "Cartilage plate",
+      "B": "Basement membrane",
+      "C": "Muscle layer",
+      "D": "Blood vessel wall"
+    },
+    "answer": "B",
+    "explanation": "Every epithelial tissue is supported by a basement membrane.",
+    "clinicalPearl": "The basement membrane anchors the epithelium.",
+    "examTip": "Basement membrane is a favorite exam point.",
+    "lessonSection": "Characteristics"
+  },
+  {
+    "id": 9,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Characteristics",
+    "difficulty": "Easy",
+    "question": "Epithelial tissue contains:",
+    "options": {
+      "A": "Many blood vessels",
+      "B": "Only lymph vessels",
+      "C": "No blood vessels",
+      "D": "Large nerves only"
+    },
+    "answer": "C",
+    "explanation": "Epithelial tissue is avascular.",
+    "clinicalPearl": "It receives nutrients by diffusion.",
+    "examTip": "Avascular = No blood vessels.",
+    "lessonSection": "Characteristics"
+  },
+  {
+    "id": 10,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Characteristics",
+    "difficulty": "Easy",
+    "question": "Nutrients reach epithelial cells mainly by:",
+    "options": {
+      "A": "Direct blood supply",
+      "B": "Diffusion from connective tissue",
+      "C": "Nerve impulses",
+      "D": "Muscle contraction"
+    },
+    "answer": "B",
+    "explanation": "Because epithelial tissue has no blood vessels, nutrients diffuse from the connective tissue beneath.",
+    "clinicalPearl": "The basement membrane separates epithelium from connective tissue.",
+    "examTip": "Avascular → Diffusion.",
+    "lessonSection": "Characteristics"
+  },
+ {
+    "id": 11,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Classification",
+    "difficulty": "Easy",
+    "question": "Epithelial tissue is mainly classified based on:",
+    "options": {
+      "A": "Color",
+      "B": "Cell shape and number of layers",
+      "C": "Blood supply",
+      "D": "Body size"
+    },
+    "answer": "B",
+    "explanation": "Epithelial tissue is classified according to the shape of its cells and the number of cell layers.",
+    "clinicalPearl": "This is one of the most frequently tested concepts in anatomy.",
+    "examTip": "Shape + Layers = Classification.",
+    "lessonSection": "Classification"
+  },
+  {
+    "id": 12,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Classification",
+    "difficulty": "Easy",
+    "question": "Which epithelial tissue consists of only one layer of cells?",
+    "options": {
+      "A": "Simple epithelium",
+      "B": "Stratified epithelium",
+      "C": "Transitional epithelium",
+      "D": "Pseudostratified epithelium"
+    },
+    "answer": "A",
+    "explanation": "Simple epithelium has a single layer of cells.",
+    "clinicalPearl": "Thin tissues are ideal for diffusion and filtration.",
+    "examTip": "Simple = Single layer.",
+    "lessonSection": "Classification"
+  },
+  {
+    "id": 13,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Classification",
+    "difficulty": "Easy",
+    "question": "Which epithelial tissue has multiple layers of cells?",
+    "options": {
+      "A": "Simple epithelium",
+      "B": "Stratified epithelium",
+      "C": "Cuboidal epithelium",
+      "D": "Columnar epithelium"
+    },
+    "answer": "B",
+    "explanation": "Stratified epithelium is composed of several layers of cells.",
+    "clinicalPearl": "It provides better protection against friction.",
+    "examTip": "Stratified = Many layers.",
+    "lessonSection": "Classification"
+  },
+  {
+    "id": 14,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Classification",
+    "difficulty": "Medium",
+    "question": "Pseudostratified epithelium appears to have:",
+    "options": {
+      "A": "No layers",
+      "B": "One obvious layer",
+      "C": "Many layers although it is actually a single layer",
+      "D": "Only two layers"
+    },
+    "answer": "C",
+    "explanation": "Pseudostratified epithelium looks multilayered but every cell touches the basement membrane.",
+    "clinicalPearl": "Commonly found in the respiratory tract.",
+    "examTip": "Pseudo = False appearance.",
+    "lessonSection": "Classification"
+  },
+  {
+    "id": 15,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Classification",
+    "difficulty": "Medium",
+    "question": "Which epithelial tissue is specialized to stretch and return to its original shape?",
+    "options": {
+      "A": "Simple squamous",
+      "B": "Cuboidal",
+      "C": "Transitional",
+      "D": "Columnar"
+    },
+    "answer": "C",
+    "explanation": "Transitional epithelium allows organs such as the urinary bladder to stretch.",
+    "clinicalPearl": "Important in the urinary system.",
+    "examTip": "Transitional = Stretching.",
+    "lessonSection": "Classification"
+  },
+  {
+    "id": 16,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Functions",
+    "difficulty": "Easy",
+    "question": "The primary function of epithelial tissue covering the skin is:",
+    "options": {
+      "A": "Movement",
+      "B": "Protection",
+      "C": "Blood formation",
+      "D": "Impulse conduction"
+    },
+    "answer": "B",
+    "explanation": "The skin protects the body against injury and microorganisms.",
+    "clinicalPearl": "Skin is the body's first line of defense.",
+    "examTip": "Skin = Protection.",
+    "lessonSection": "Functions"
+  },
+  {
+    "id": 17,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Functions",
+    "difficulty": "Easy",
+    "question": "Which function is mainly performed by epithelial tissue in the small intestine?",
+    "options": {
+      "A": "Protection",
+      "B": "Absorption",
+      "C": "Movement",
+      "D": "Contraction"
+    },
+    "answer": "B",
+    "explanation": "The intestinal epithelium absorbs nutrients from digested food.",
+    "clinicalPearl": "Microvilli increase the absorptive surface area.",
+    "examTip": "Small intestine = Absorption.",
+    "lessonSection": "Functions"
+  },
+  {
+    "id": 18,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Functions",
+    "difficulty": "Easy",
+    "question": "The epithelial tissue of glands mainly performs:",
+    "options": {
+      "A": "Filtration",
+      "B": "Support",
+      "C": "Secretion",
+      "D": "Conduction"
+    },
+    "answer": "C",
+    "explanation": "Glandular epithelial cells produce and release various substances.",
+    "clinicalPearl": "Sweat and salivary glands are examples.",
+    "examTip": "Glands = Secretion.",
+    "lessonSection": "Functions"
+  },
+  {
+    "id": 19,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Functions",
+    "difficulty": "Medium",
+    "question": "Which function is associated with epithelial tissue in the kidneys?",
+    "options": {
+      "A": "Gas exchange",
+      "B": "Filtration and reabsorption",
+      "C": "Hormone production only",
+      "D": "Movement"
+    },
+    "answer": "B",
+    "explanation": "Kidney epithelium filters blood and reabsorbs useful substances.",
+    "clinicalPearl": "Healthy epithelial cells are essential for urine formation.",
+    "examTip": "Kidney = Filtration + Reabsorption.",
+    "lessonSection": "Functions"
+  },
+  {
+    "id": 20,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Functions",
+    "difficulty": "Medium",
+    "question": "Which pair is correctly matched?",
+    "options": {
+      "A": "Lungs - Gas exchange",
+      "B": "Bone - Filtration",
+      "C": "Muscle - Secretion",
+      "D": "Ligament - Absorption"
+    },
+    "answer": "A",
+    "explanation": "The epithelial lining of the lungs is specialized for gas exchange.",
+    "clinicalPearl": "Thin epithelial cells facilitate rapid diffusion of oxygen and carbon dioxide.",
+    "examTip": "Lungs = Gas exchange.",
+    "lessonSection": "Functions"
+  },
+ {
+    "id": 21,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Clinical Correlation",
+    "difficulty": "Medium",
+    "question": "A patient has severe burns involving the skin. Which tissue has been primarily damaged?",
+    "options": {
+      "A": "Connective tissue",
+      "B": "Muscle tissue",
+      "C": "Epithelial tissue",
+      "D": "Nervous tissue"
+    },
+    "answer": "C",
+    "explanation": "The outer layer of the skin is epithelial tissue, which serves as the body's protective barrier.",
+    "clinicalPearl": "Burn patients lose protection against infection and fluid loss because the epithelial barrier is damaged.",
+    "examTip": "Skin injury → Think epithelium first.",
+    "lessonSection": "Clinical Correlation"
+  },
+  {
+    "id": 22,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Clinical Correlation",
+    "difficulty": "Medium",
+    "question": "Delayed healing of the skin mainly indicates poor regeneration of:",
+    "options": {
+      "A": "Muscle tissue",
+      "B": "Bone tissue",
+      "C": "Epithelial tissue",
+      "D": "Blood tissue"
+    },
+    "answer": "C",
+    "explanation": "Epithelial tissue normally regenerates rapidly after injury.",
+    "clinicalPearl": "Good nutrition supports epithelial healing.",
+    "examTip": "Rapid regeneration is a key property of epithelium.",
+    "lessonSection": "Clinical Correlation"
+  },
+  {
+    "id": 23,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Functions",
+    "difficulty": "Medium",
+    "question": "Which epithelial function helps prevent microorganisms from entering the body?",
+    "options": {
+      "A": "Contraction",
+      "B": "Protection",
+      "C": "Support",
+      "D": "Impulse transmission"
+    },
+    "answer": "B",
+    "explanation": "Protection is one of the primary functions of epithelial tissue.",
+    "clinicalPearl": "Healthy skin greatly reduces infection risk.",
+    "examTip": "Barrier against microbes = Protection.",
+    "lessonSection": "Functions"
+  },
+  {
+    "id": 24,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Characteristics",
+    "difficulty": "Medium",
+    "question": "Why do epithelial tissues receive nutrients by diffusion?",
+    "options": {
+      "A": "They have many blood vessels.",
+      "B": "They are avascular.",
+      "C": "They produce blood cells.",
+      "D": "They contain muscle fibers."
+    },
+    "answer": "B",
+    "explanation": "Epithelial tissue lacks blood vessels, so nutrients diffuse from the underlying connective tissue.",
+    "clinicalPearl": "The basement membrane separates epithelium from connective tissue.",
+    "examTip": "Avascular → Diffusion.",
+    "lessonSection": "Characteristics"
+  },
+  {
+    "id": 25,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Quick Revision",
+    "difficulty": "Hard",
+    "question": "Which statement about epithelial tissue is CORRECT?",
+    "options": {
+      "A": "Cells are widely separated.",
+      "B": "It contains abundant blood vessels.",
+      "C": "Cells are closely packed with very little intercellular space.",
+      "D": "It mainly stores fat."
+    },
+    "answer": "C",
+    "explanation": "Closely packed cells are a characteristic feature of epithelial tissue.",
+    "clinicalPearl": "This arrangement forms an effective protective barrier.",
+    "examTip": "Closely packed = Epithelium.",
+    "lessonSection": "Quick Revision"
+  },
+  {
+    "id": 26,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Applied Anatomy",
+    "difficulty": "Hard",
+    "question": "The epithelial lining of the urinary bladder is mainly adapted for:",
+    "options": {
+      "A": "Movement",
+      "B": "Stretching",
+      "C": "Blood formation",
+      "D": "Bone repair"
+    },
+    "answer": "B",
+    "explanation": "Transitional epithelium stretches as the bladder fills with urine.",
+    "clinicalPearl": "Without this property, the bladder could not expand normally.",
+    "examTip": "Bladder = Transitional epithelium.",
+    "lessonSection": "Classification"
+  },
+  {
+    "id": 27,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Applied Anatomy",
+    "difficulty": "Hard",
+    "question": "Which epithelial type is best suited for protection against friction?",
+    "options": {
+      "A": "Simple epithelium",
+      "B": "Stratified epithelium",
+      "C": "Cuboidal epithelium",
+      "D": "Columnar epithelium"
+    },
+    "answer": "B",
+    "explanation": "Multiple layers provide better protection from mechanical stress.",
+    "clinicalPearl": "The outer skin is an example of stratified epithelium.",
+    "examTip": "Protection = Stratified.",
+    "lessonSection": "Classification"
+  },
+  {
+    "id": 28,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Memory Trick",
+    "difficulty": "Hard",
+    "question": "Which simple phrase best summarizes the main role of epithelial tissue?",
+    "options": {
+      "A": "Move and Contract",
+      "B": "Support and Bind",
+      "C": "Cover, Line and Protect",
+      "D": "Transmit Impulses"
+    },
+    "answer": "C",
+    "explanation": "Epithelial tissue mainly covers body surfaces, lines organs and protects them.",
+    "clinicalPearl": "Remembering this phrase helps answer many exam questions.",
+    "examTip": "Cover • Line • Protect.",
+    "lessonSection": "Memory Trick"
+  },
+  {
+    "id": 29,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Quick Revision",
+    "difficulty": "Hard",
+    "question": "Which of the following is NOT a characteristic of epithelial tissue?",
+    "options": {
+      "A": "Closely packed cells",
+      "B": "Basement membrane",
+      "C": "Rich blood supply within the tissue",
+      "D": "Rapid regeneration"
+    },
+    "answer": "C",
+    "explanation": "Epithelial tissue is avascular and does not contain blood vessels.",
+    "clinicalPearl": "Blood vessels are found in the connective tissue beneath the epithelium.",
+    "examTip": "Avascular = No blood vessels.",
+    "lessonSection": "Quick Revision"
+  },
+  {
+    "id": 30,
+    "lessonId": "epithelial",
+    "subject": "Human Anatomy",
+    "topic": "Overall Revision",
+    "difficulty": "Hard",
+    "question": "Which one of the following correctly matches an epithelial type with its major feature?",
+    "options": {
+      "A": "Simple epithelium - Multiple layers",
+      "B": "Stratified epithelium - Single layer",
+      "C": "Transitional epithelium - Stretching ability",
+      "D": "Pseudostratified epithelium - No basement membrane"
+    },
+    "answer": "C",
+    "explanation": "Transitional epithelium is specialized for stretching, especially in the urinary bladder.",
+    "clinicalPearl": "Matching tissue types with their functions is a common exam pattern.",
+    "examTip": "Simple = One layer | Stratified = Many layers | Transitional = Stretch.",
+    "lessonSection": "Quick Revision"
+  }
+    ]
