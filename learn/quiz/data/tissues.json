@@ -1,1 +1,573 @@
 
+[
+  {
+    "id": 1,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Definition of Tissue",
+    "difficulty": "Easy",
+    "question": "A tissue is best defined as:",
+    "options": {
+      "A": "A group of organs performing one function",
+      "B": "A group of similar cells performing a specific function",
+      "C": "A collection of different organs",
+      "D": "A single specialized cell"
+    },
+    "answer": "B",
+    "explanation": "A tissue is a group of similar cells that work together to perform a specific function.",
+    "clinicalPearl": "Damage to a tissue affects the function performed by that tissue.",
+    "examTip": "The definition of tissue is one of the most frequently asked basic anatomy questions.",
+    "lessonSection": "What is a Tissue?"
+  },
+  {
+    "id": 2,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Definition of Tissue",
+    "difficulty": "Easy",
+    "question": "Cells in the same tissue usually have:",
+    "options": {
+      "A": "Different structures and unrelated functions",
+      "B": "Similar structure and similar function",
+      "C": "Different DNA",
+      "D": "Different origins only"
+    },
+    "answer": "B",
+    "explanation": "Cells forming a tissue generally have similar structures and work together to perform the same function.",
+    "clinicalPearl": "Healthy tissue depends on the coordinated activity of similar cells.",
+    "examTip": "Remember: Similar cells → Tissue.",
+    "lessonSection": "What is a Tissue?"
+  },
+  {
+    "id": 3,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Importance of Tissues",
+    "difficulty": "Easy",
+    "question": "Why do cells form tissues?",
+    "options": {
+      "A": "To become smaller",
+      "B": "To perform specialized functions more efficiently",
+      "C": "To reduce body temperature",
+      "D": "To produce hormones only"
+    },
+    "answer": "B",
+    "explanation": "Grouping similar cells into tissues allows specialized jobs to be performed efficiently.",
+    "clinicalPearl": "Efficient tissue organization is essential for normal organ function.",
+    "examTip": "Efficiency is the key reason tissues are formed.",
+    "lessonSection": "Introduction"
+  },
+  {
+    "id": 4,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Characteristics of Tissues",
+    "difficulty": "Easy",
+    "question": "Which of the following is a characteristic of tissues?",
+    "options": {
+      "A": "Cells work independently",
+      "B": "Cells perform unrelated functions",
+      "C": "Cells work together as a unit",
+      "D": "Cells cannot communicate"
+    },
+    "answer": "C",
+    "explanation": "Cells within a tissue work together as one functional unit.",
+    "clinicalPearl": "Loss of coordination between cells can impair tissue function.",
+    "examTip": "Teamwork is the hallmark of tissues.",
+    "lessonSection": "Characteristics of Tissues"
+  },
+  {
+    "id": 5,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Organization of the Human Body",
+    "difficulty": "Easy",
+    "question": "Which sequence correctly shows the organization of the human body?",
+    "options": {
+      "A": "Cell → Organ → Tissue → Organ System",
+      "B": "Cell → Tissue → Organ → Organ System",
+      "C": "Tissue → Cell → Organ → Human Body",
+      "D": "Organ → Cell → Tissue → Human Body"
+    },
+    "answer": "B",
+    "explanation": "Cells form tissues, tissues form organs, and organs form organ systems.",
+    "clinicalPearl": "Understanding body organization helps in anatomy and pathology.",
+    "examTip": "Cell → Tissue → Organ → Organ System → Human Body.",
+    "lessonSection": "How Cells Become Tissues"
+  },
+  {
+    "id": 6,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Body Organization",
+    "difficulty": "Medium",
+    "question": "Different tissues combine to form:",
+    "options": {
+      "A": "Cells",
+      "B": "Organs",
+      "C": "Molecules",
+      "D": "Chromosomes"
+    },
+    "answer": "B",
+    "explanation": "Organs are formed when different tissue types work together.",
+    "clinicalPearl": "Every major organ contains multiple tissue types.",
+    "examTip": "Organs are made of tissues, not just one cell type.",
+    "lessonSection": "How Cells Become Tissues"
+  },
+  {
+    "id": 7,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Classification of Tissues",
+    "difficulty": "Easy",
+    "question": "How many basic tissue types are present in the human body?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "answer": "C",
+    "explanation": "The human body contains four basic tissue types.",
+    "clinicalPearl": "Each tissue has a unique structure and function.",
+    "examTip": "Remember the number four.",
+    "lessonSection": "Classification of Tissues"
+  },
+  {
+    "id": 8,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Classification of Tissues",
+    "difficulty": "Medium",
+    "question": "Which tissue primarily covers body surfaces and lines body cavities?",
+    "options": {
+      "A": "Connective tissue",
+      "B": "Muscle tissue",
+      "C": "Nervous tissue",
+      "D": "Epithelial tissue"
+    },
+    "answer": "D",
+    "explanation": "Epithelial tissue covers body surfaces and lines internal organs and cavities.",
+    "clinicalPearl": "The skin is an important epithelial barrier.",
+    "examTip": "Covering = Epithelium.",
+    "lessonSection": "Epithelial Tissue"
+  },
+  {
+    "id": 9,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Functions of Tissues",
+    "difficulty": "Medium",
+    "question": "Which tissue mainly provides support and binds body parts together?",
+    "options": {
+      "A": "Muscle tissue",
+      "B": "Connective tissue",
+      "C": "Nervous tissue",
+      "D": "Epithelial tissue"
+    },
+    "answer": "B",
+    "explanation": "Connective tissue supports, binds and protects body structures.",
+    "clinicalPearl": "Bones, tendons and ligaments are connective tissues.",
+    "examTip": "Support = Connective tissue.",
+    "lessonSection": "Connective Tissue"
+  },
+  {
+    "id": 10,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Functions of Tissues",
+    "difficulty": "Medium",
+    "question": "Which tissue receives and transmits nerve impulses?",
+    "options": {
+      "A": "Muscle tissue",
+      "B": "Connective tissue",
+      "C": "Nervous tissue",
+      "D": "Epithelial tissue"
+    },
+    "answer": "C",
+    "explanation": "Nervous tissue receives information and transmits electrical signals throughout the body.",
+    "clinicalPearl": "The brain, spinal cord and nerves are composed mainly of nervous tissue.",
+    "examTip": "Communication = Nervous tissue.",
+    "lessonSection": "Nervous Tissue"
+  },
+ {
+    "id": 11,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Epithelial Tissue",
+    "difficulty": "Medium",
+    "question": "Which of the following is NOT a primary function of epithelial tissue?",
+    "options": {
+      "A": "Protection",
+      "B": "Absorption",
+      "C": "Secretion",
+      "D": "Body movement"
+    },
+    "answer": "D",
+    "explanation": "Body movement is performed by muscle tissue, not epithelial tissue.",
+    "clinicalPearl": "Damage to epithelial tissue increases the risk of infection.",
+    "examTip": "Protection, absorption, secretion and filtration are key epithelial functions.",
+    "lessonSection": "Epithelial Tissue"
+  },
+  {
+    "id": 12,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Epithelial Tissue",
+    "difficulty": "Easy",
+    "question": "Epithelial tissue mainly lines:",
+    "options": {
+      "A": "Bones only",
+      "B": "Body cavities and internal organs",
+      "C": "Muscles only",
+      "D": "Blood vessels only"
+    },
+    "answer": "B",
+    "explanation": "Epithelial tissue covers body surfaces and lines body cavities and internal organs.",
+    "clinicalPearl": "The digestive tract is lined by epithelial tissue.",
+    "examTip": "Think 'covering and lining' whenever you see epithelial tissue.",
+    "lessonSection": "Epithelial Tissue"
+  },
+  {
+    "id": 13,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Connective Tissue",
+    "difficulty": "Medium",
+    "question": "Which tissue is the most abundant in the human body?",
+    "options": {
+      "A": "Epithelial tissue",
+      "B": "Muscle tissue",
+      "C": "Connective tissue",
+      "D": "Nervous tissue"
+    },
+    "answer": "C",
+    "explanation": "Connective tissue is the most abundant tissue in the body.",
+    "clinicalPearl": "Many injuries involve connective tissues such as ligaments and tendons.",
+    "examTip": "Most abundant = Connective tissue.",
+    "lessonSection": "Connective Tissue"
+  },
+  {
+    "id": 14,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Connective Tissue",
+    "difficulty": "Medium",
+    "question": "Which of the following is an example of connective tissue?",
+    "options": {
+      "A": "Blood",
+      "B": "Skin epidermis",
+      "C": "Neuron",
+      "D": "Cardiac muscle"
+    },
+    "answer": "A",
+    "explanation": "Blood is classified as a connective tissue.",
+    "clinicalPearl": "Blood transports oxygen, nutrients and wastes throughout the body.",
+    "examTip": "Remember: Bone, cartilage, blood, tendons and ligaments are connective tissues.",
+    "lessonSection": "Connective Tissue"
+  },
+  {
+    "id": 15,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Connective Tissue",
+    "difficulty": "Medium",
+    "question": "Which is NOT listed as a function of connective tissue?",
+    "options": {
+      "A": "Support",
+      "B": "Binding",
+      "C": "Transport",
+      "D": "Generating nerve impulses"
+    },
+    "answer": "D",
+    "explanation": "Generating nerve impulses is a function of nervous tissue.",
+    "clinicalPearl": "Connective tissue provides structural support throughout the body.",
+    "examTip": "Support + Binding + Protection + Transport = Connective tissue.",
+    "lessonSection": "Connective Tissue"
+  },
+  {
+    "id": 16,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Muscle Tissue",
+    "difficulty": "Easy",
+    "question": "The primary function of muscle tissue is:",
+    "options": {
+      "A": "Communication",
+      "B": "Movement",
+      "C": "Protection",
+      "D": "Filtration"
+    },
+    "answer": "B",
+    "explanation": "Muscle tissue contracts and relaxes to produce movement.",
+    "clinicalPearl": "Muscles are essential for posture and movement.",
+    "examTip": "Movement = Muscle tissue.",
+    "lessonSection": "Muscle Tissue"
+  },
+  {
+    "id": 17,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Muscle Tissue",
+    "difficulty": "Medium",
+    "question": "According to the lesson, muscle tissue also helps in:",
+    "options": {
+      "A": "Producing hormones",
+      "B": "Pumping blood and moving food",
+      "C": "Forming antibodies",
+      "D": "Producing bile"
+    },
+    "answer": "B",
+    "explanation": "Muscle tissue pumps blood through the heart and moves food through the digestive system.",
+    "clinicalPearl": "Smooth muscle helps move food through the gastrointestinal tract.",
+    "examTip": "Heart and digestive tract both depend on muscle tissue.",
+    "lessonSection": "Muscle Tissue"
+  },
+  {
+    "id": 18,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Nervous Tissue",
+    "difficulty": "Medium",
+    "question": "Nervous tissue is mainly responsible for:",
+    "options": {
+      "A": "Providing support",
+      "B": "Body movement only",
+      "C": "Receiving and transmitting nerve impulses",
+      "D": "Covering body surfaces"
+    },
+    "answer": "C",
+    "explanation": "Nervous tissue receives, processes and transmits electrical signals.",
+    "clinicalPearl": "Damage to nervous tissue can affect sensation and movement.",
+    "examTip": "Communication = Nervous tissue.",
+    "lessonSection": "Nervous Tissue"
+  },
+  {
+    "id": 19,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Nervous Tissue",
+    "difficulty": "Easy",
+    "question": "Which structures are mainly formed by nervous tissue?",
+    "options": {
+      "A": "Brain, spinal cord and nerves",
+      "B": "Bones and cartilage",
+      "C": "Skin and nails",
+      "D": "Heart valves"
+    },
+    "answer": "A",
+    "explanation": "The brain, spinal cord and peripheral nerves are composed of nervous tissue.",
+    "clinicalPearl": "The central nervous system includes the brain and spinal cord.",
+    "examTip": "Brain = Nervous tissue.",
+    "lessonSection": "Nervous Tissue"
+  },
+  {
+    "id": 20,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Memory Trick",
+    "difficulty": "Easy",
+    "question": "According to the memory trick 'ECMN', what does the letter 'M' represent?",
+    "options": {
+      "A": "Membrane",
+      "B": "Muscle",
+      "C": "Marrow",
+      "D": "Matrix"
+    },
+    "answer": "B",
+    "explanation": "ECMN stands for Epithelial, Connective, Muscle and Nervous tissues.",
+    "clinicalPearl": "Memory tricks help recall important exam facts quickly.",
+    "examTip": "ECMN = Epithelial, Connective, Muscle, Nervous.",
+    "lessonSection": "Memory Trick"
+  },
+ {
+    "id": 21,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Classification of Tissues",
+    "difficulty": "Medium",
+    "question": "Which tissue is primarily responsible for protecting body surfaces?",
+    "options": {
+      "A": "Connective tissue",
+      "B": "Muscle tissue",
+      "C": "Epithelial tissue",
+      "D": "Nervous tissue"
+    },
+    "answer": "C",
+    "explanation": "Epithelial tissue covers body surfaces and protects underlying structures.",
+    "clinicalPearl": "The skin acts as the body's first protective barrier.",
+    "examTip": "Protection and covering always suggest epithelial tissue.",
+    "lessonSection": "Epithelial Tissue"
+  },
+  {
+    "id": 22,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Classification of Tissues",
+    "difficulty": "Medium",
+    "question": "Which tissue provides structural support to organs and other tissues?",
+    "options": {
+      "A": "Nervous tissue",
+      "B": "Muscle tissue",
+      "C": "Connective tissue",
+      "D": "Epithelial tissue"
+    },
+    "answer": "C",
+    "explanation": "Connective tissue supports, binds and protects body structures.",
+    "clinicalPearl": "Bones and cartilage are specialized connective tissues.",
+    "examTip": "Support = Connective tissue.",
+    "lessonSection": "Connective Tissue"
+  },
+  {
+    "id": 23,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Functions of Muscle Tissue",
+    "difficulty": "Medium",
+    "question": "Which tissue contracts to produce body movement?",
+    "options": {
+      "A": "Muscle tissue",
+      "B": "Connective tissue",
+      "C": "Epithelial tissue",
+      "D": "Nervous tissue"
+    },
+    "answer": "A",
+    "explanation": "Muscle tissue contracts and relaxes to produce movement.",
+    "clinicalPearl": "Walking, breathing and heartbeat all depend on muscle contraction.",
+    "examTip": "Movement = Muscle.",
+    "lessonSection": "Muscle Tissue"
+  },
+  {
+    "id": 24,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Functions of Nervous Tissue",
+    "difficulty": "Medium",
+    "question": "Which tissue allows rapid communication between different parts of the body?",
+    "options": {
+      "A": "Epithelial tissue",
+      "B": "Muscle tissue",
+      "C": "Nervous tissue",
+      "D": "Connective tissue"
+    },
+    "answer": "C",
+    "explanation": "Nervous tissue receives, processes and transmits electrical impulses.",
+    "clinicalPearl": "Damage to nerves can affect sensation and movement.",
+    "examTip": "Communication = Nervous tissue.",
+    "lessonSection": "Nervous Tissue"
+  },
+  {
+    "id": 25,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Examples of Connective Tissue",
+    "difficulty": "Hard",
+    "question": "Which of the following is NOT a connective tissue?",
+    "options": {
+      "A": "Bone",
+      "B": "Blood",
+      "C": "Cartilage",
+      "D": "Skin epidermis"
+    },
+    "answer": "D",
+    "explanation": "The epidermis is made of epithelial tissue, not connective tissue.",
+    "clinicalPearl": "Bone, cartilage and blood are all connective tissues.",
+    "examTip": "Epidermis belongs to epithelium.",
+    "lessonSection": "Connective Tissue"
+  },
+  {
+    "id": 26,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Revision",
+    "difficulty": "Hard",
+    "question": "Which tissue type is specialized for absorption and secretion?",
+    "options": {
+      "A": "Muscle tissue",
+      "B": "Nervous tissue",
+      "C": "Epithelial tissue",
+      "D": "Connective tissue"
+    },
+    "answer": "C",
+    "explanation": "Absorption and secretion are important functions of epithelial tissue.",
+    "clinicalPearl": "The lining of the intestine absorbs nutrients through epithelial cells.",
+    "examTip": "Absorption = Epithelium.",
+    "lessonSection": "Epithelial Tissue"
+  },
+  {
+    "id": 27,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Body Organization",
+    "difficulty": "Hard",
+    "question": "Different tissue types combine to form:",
+    "options": {
+      "A": "Cells",
+      "B": "Organs",
+      "C": "Organelles",
+      "D": "Chromosomes"
+    },
+    "answer": "B",
+    "explanation": "Organs are composed of two or more tissue types working together.",
+    "clinicalPearl": "The stomach contains epithelial, connective, muscle and nervous tissues.",
+    "examTip": "Tissues build organs.",
+    "lessonSection": "How Cells Become Tissues"
+  },
+  {
+    "id": 28,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Quick Revision",
+    "difficulty": "Hard",
+    "question": "The four basic tissues of the human body are epithelial, connective, muscle and:",
+    "options": {
+      "A": "Cardiac",
+      "B": "Blood",
+      "C": "Nervous",
+      "D": "Bone"
+    },
+    "answer": "C",
+    "explanation": "The four primary tissues are epithelial, connective, muscle and nervous.",
+    "clinicalPearl": "Nearly every anatomy exam begins with these four tissue types.",
+    "examTip": "Remember ECMN = Epithelial, Connective, Muscle, Nervous.",
+    "lessonSection": "Quick Revision"
+  },
+  {
+    "id": 29,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Memory Trick",
+    "difficulty": "Hard",
+    "question": "The mnemonic 'ECMN' is mainly used to remember:",
+    "options": {
+      "A": "The layers of skin",
+      "B": "The four basic tissue types",
+      "C": "The parts of a neuron",
+      "D": "The chambers of the heart"
+    },
+    "answer": "B",
+    "explanation": "ECMN stands for Epithelial, Connective, Muscle and Nervous tissues.",
+    "clinicalPearl": "Simple mnemonics improve long-term memory for exams.",
+    "examTip": "ECMN is an easy way to recall all four tissues.",
+    "lessonSection": "Memory Trick"
+  },
+  {
+    "id": 30,
+    "lessonId": "tissues",
+    "subject": "Human Anatomy",
+    "topic": "Overall Revision",
+    "difficulty": "Hard",
+    "question": "Which one of the following statements is CORRECT?",
+    "options": {
+      "A": "Muscle tissue transmits nerve impulses.",
+      "B": "Connective tissue mainly covers body surfaces.",
+      "C": "Epithelial tissue protects and lines body surfaces.",
+      "D": "Nervous tissue mainly provides structural support."
+    },
+    "answer": "C",
+    "explanation": "Epithelial tissue covers, lines and protects body surfaces. The other statements describe different tissue types incorrectly.",
+    "clinicalPearl": "Always match each tissue with its primary function.",
+    "examTip": "Cover = Epithelium | Support = Connective | Movement = Muscle | Communication = Nervous.",
+    "lessonSection": "Quick Revision"
+  }
+    ]
