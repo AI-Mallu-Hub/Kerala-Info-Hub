@@ -845,3 +845,72 @@ line-height:1.5;
 color:#444;
 
 }
+
+/* ==========================================
+   PREMIUM LESSON TABLE
+========================================== */
+
+.lesson-table{
+width:100%;
+margin:20px 0;
+border-collapse:collapse;
+overflow:hidden;
+border-radius:14px;
+background:#fff;
+box-shadow:0 4px 12px rgba(0,0,0,.06);
+font-size:.95rem;
+}
+
+.lesson-table th{
+
+background:#2563eb;
+color:#fff;
+padding:14px;
+text-align:left;
+font-weight:700;
+
+}
+
+.lesson-table td{
+
+padding:14px;
+border-bottom:1px solid #e5e7eb;
+vertical-align:top;
+
+}
+
+.lesson-table tr:last-child td{
+
+border-bottom:none;
+
+}
+
+.lesson-table tr:nth-child(even){
+
+background:#f8fafc;
+
+}
+
+.lesson-table tr:hover{
+
+background:#eef6ff;
+transition:.2s;
+
+}
+
+@media (max-width:768px){
+
+.lesson-table{
+
+font-size:.88rem;
+
+}
+
+.lesson-table th,
+.lesson-table td{
+
+padding:10px;
+
+}
+
+}
