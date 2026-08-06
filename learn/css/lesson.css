@@ -168,26 +168,54 @@ body{
 /* Diagram */
 
 .diagram-placeholder{
+/* ==========================================
+   PREMIUM DIAGRAM PLACEHOLDER
+========================================== */
 
-    height:240px;
+.diagram-placeholder{
 
-    background:#edf3ff;
+margin:25px 0;
+padding:20px;
 
-    border:2px dashed #8db7ff;
+background:#ffffff;
 
-    border-radius:18px;
+border:2px dashed #8db7ff;
 
-    display:flex;
+border-radius:18px;
 
-    justify-content:center;
+box-shadow:0 6px 16px rgba(0,0,0,.08);
 
-    align-items:center;
+text-align:center;
 
-    color:#3b82f6;
+}
 
-    font-size:20px;
+.diagram-placeholder h3{
 
-    font-weight:bold;
+margin:0 0 15px;
+color:#2563eb;
+font-size:1.2rem;
+
+}
+
+.diagram-placeholder pre{
+
+background:#f8fafc;
+padding:15px;
+border-radius:12px;
+overflow-x:auto;
+font-size:.95rem;
+line-height:1.5;
+color:#334155;
+
+}
+
+.diagram-placeholder p{
+
+margin-top:15px;
+margin-bottom:0;
+color:#64748b;
+font-style:italic;
+
 }
 
 /* ===============================
