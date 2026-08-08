@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg
+    id="cartilageDiagram"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 900 650"
+    width="100%"
+    height="100%"
+    role="img"
+    aria-labelledby="title desc">
+
+    <title id="title">
+        Articular Cartilage Diagram
+    </title>
+
+    <desc id="desc">
+        Interactive articular cartilage diagram for Kerala Info Hub.
+    </desc>
+
+    <defs>
+
+        <!-- ===========================
+             Background Gradient
+        ============================ -->
+
+        <linearGradient id="bgGradient"
+            x1="0%"
+            y1="0%"
+            x2="0%"
+            y2="100%">
+
+            <stop
+                offset="0%"
+                stop-color="#F8FBFF"/>
+
+            <stop
+                offset="100%"
+                stop-color="#EEF5FC"/>
+
+        </linearGradient>
+
+
+        <!-- ===========================
+             Bone Gradient
+        ============================ -->
+
+        <linearGradient id="boneGradient"
+            x1="0%"
+            y1="0%"
+            x2="0%"
+            y2="100%">
+
+            <stop
+                offset="0%"
+                stop-color="#F7E8C8"/>
+
+            <stop
+                offset="100%"
+                stop-color="#DFC08F"/>
+
+        </linearGradient>
+
+
+        <!-- ===========================
+             Cartilage Gradient
+        ============================ -->
+
+        <linearGradient id="cartilageGradient"
+            x1="0%"
+            y1="0%"
+            x2="0%"
+            y2="100%">
+
+            <stop
+                offset="0%"
+                stop-color="#D9F6FF"/>
+
+            <stop
+                offset="100%"
+                stop-color="#78D3F6"/>
+
+        </linearGradient>
+
+
+        <!-- ===========================
+             Cartilage Highlight
+        ============================ -->
+
+        <linearGradient id="cartilageHighlight"
+            x1="0%"
+            y1="0%"
+            x2="0%"
+            y2="100%">
+
+            <stop
+                offset="0%"
+                stop-color="#FFFFFF"
+                stop-opacity=".95"/>
+
+            <stop
+                offset="100%"
+                stop-color="#FFFFFF"
+                stop-opacity="0"/>
+
+        </linearGradient>
+
+
+        <!-- ===========================
+             Glow Filter
+        ============================ -->
+
+        <filter id="softGlow"
+            x="-50%"
+            y="-50%"
+            width="200%"
+            height="200%">
+
+            <feGaussianBlur
+                stdDeviation="6"
+                result="blur"/>
+
+            <feMerge>
+
+                <feMergeNode in="blur"/>
+
+                <feMergeNode in="SourceGraphic"/>
+
+            </feMerge>
+
+        </filter>
+
+
+        <!-- ===========================
+             Shadow
+        ============================ -->
+
+        <filter id="shadow">
+
+            <feDropShadow
+                dx="0"
+                dy="3"
+                stdDeviation="5"
+                flood-opacity=".22"/>
+
+        </filter>
+
+    </defs>
+
+    <!-- ======================================
+            Canvas Background
+    ======================================= -->
+
+    <rect
+        id="background"
+        width="900"
+        height="650"
+        fill="url(#bgGradient)"/>
+
+    <!-- ======================================
+            Upper Bone
+    ======================================= -->
+
+    <g
+        id="upperBone"
+        filter="url(#shadow)">
+
+        <!-- Main Bone -->
+
+        <path
+
+            id="upperBoneBody"
+
+            d="
+                M180 85
+
+                C240 70 320 60 450 60
+
+                C580 60 660 70 720 85
+
+                L720 165
+
+                C660 188 580 198 450 198
+
+                C320 198 240 188 180 165
+
+                Z"
+
+            fill="url(#boneGradient)"
+
+            stroke="#C9A063"
+
+            stroke-width="3"/>
+
+
+        <!-- Bone Highlight -->
+
+        <path
+
+            id="upperBoneHighlight"
+
+            d="
+                M205 92
+
+                C280 78 355 72 450 72
+
+                C545 72 620 78 695 92"
+
+            fill="none"
+
+            stroke="#FFF8E8"
+
+            stroke-width="5"
+
+            stroke-linecap="round"
+
+            opacity=".75"/>
+
+
+        <!-- Bone Base Shadow -->
+
+        <path
+
+            id="upperBoneShadow"
+
+            d="
+                M180 165
+
+                C260 186 340 196 450 196
+
+                C560 196 640 186 720 165"
+
+            fill="none"
+
+            stroke="#C19358"
+
+            stroke-width="4"
+
+            opacity=".35"/>
+
+
+        <!-- Spongy Bone Pattern -->
+
+        <g
+
+            id="upperBoneTexture"
+
+            opacity=".18"
+
+            fill="#B58A4F">
+
+            <circle cx="255" cy="112" r="5"/>
+
+            <circle cx="305" cy="128" r="4"/>
+
+            <circle cx="360" cy="98" r="5"/>
+
+            <circle cx="430" cy="140" r="6"/>
+
+            <circle cx="495" cy="112" r="5"/>
+
+            <circle cx="565" cy="135" r="4"/>
+
+            <circle cx="620" cy="104" r="5"/>
+
+            <circle cx="280" cy="155" r="4"/>
+
+            <circle cx="370" cy="165" r="5"/>
+
+            <circle cx="520" cy="160" r="5"/>
+
+            <circle cx="615" cy="150" r="4"/>
+
+        </g>
+
+    </g>
+
+    <!-- ======================================
+            Upper Articular Cartilage
+    ======================================= -->
+
+    <g
+        id="upperCartilage">
+
+        <!-- Main Cartilage -->
+
+        <path
+
+            id="upperCartilageBody"
+
+            d="
+                M185 170
+
+                C255 192 340 205 450 205
+
+                C560 205 645 192 715 170
+
+                L715 215
+
+                C645 236 560 247 450 247
+
+                C340 247 255 236 185 215
+
+                Z"
+
+            fill="url(#cartilageGradient)"
+
+            stroke="#42B7E8"
+
+            stroke-width="2.5"/>
+
+
+        <!-- Gloss Highlight -->
+
+        <path
+
+            id="upperCartilageGloss"
+
+            d="
+                M210 178
+
+                C285 196 360 205 450 205
+
+                C540 205 615 196 690 178"
+
+            fill="none"
+
+            stroke="#FFFFFF"
+
+            stroke-width="5"
+
+            stroke-linecap="round"
+
+            opacity=".65"/>
+
+
+        <!-- Bottom Edge -->
+
+        <path
+
+            id="upperCartilageEdge"
+
+            d="
+                M190 214
+
+                C270 235 350 244 450 244
+
+                C550 244 630 235 710 214"
+
+            fill="none"
+
+            stroke="#2498CF"
+
+            stroke-width="2"
+
+            opacity=".45"/>
+
+
+        <!-- Reflection -->
+
+        <ellipse
+
+            id="upperCartilageReflection"
+
+            cx="450"
+
+            cy="192"
+
+            rx="150"
+
+            ry="18"
+
+            fill="url(#cartilageHighlight)"
+
+            opacity=".40"/>
+
+    </g>
+
+    <!-- ======================================
+            Joint Space
+    ======================================= -->
+
+    <g
+        id="jointSpace">
+
+        <!-- Joint Cavity -->
+
+        <path
+
+            id="jointSpaceBody"
+
+            d="
+                M190 248
+
+                C270 260 355 267 450 267
+
+                C545 267 630 260 710 248
+
+                L710 315
+
+                C630 304 545 297 450 297
+
+                C355 297 270 304 190 315
+
+                Z"
+
+            fill="#FFFFFF"
+
+            stroke="#C9DDEA"
+
+            stroke-width="2"
+
+            opacity=".96"/>
+
+
+        <!-- Soft Blue Glow -->
+
+        <ellipse
+
+            id="jointSpaceGlow"
+
+            cx="450"
+
+            cy="282"
+
+            rx="165"
+
+            ry="28"
+
+            fill="#DFF6FF"
+
+            opacity=".55"/>
+
+
+        <!-- Synovial Shine -->
+
+        <path
+
+            id="jointSpaceHighlight"
+
+            d="
+                M240 258
+
+                C320 270 385 276 450 276
+
+                C515 276 580 270 660 258"
+
+            fill="none"
+
+            stroke="#FFFFFF"
+
+            stroke-width="5"
+
+            stroke-linecap="round"
+
+            opacity=".80"/>
+
+
+        <!-- Decorative Sparkles -->
+
+        <circle
+            cx="330"
+            cy="286"
+            r="2.2"
+            fill="#9DDFFF"
+            opacity=".75"/>
+
+        <circle
+            cx="450"
+            cy="280"
+            r="2.8"
+            fill="#9DDFFF"
+            opacity=".80"/>
+
+        <circle
+            cx="575"
+            cy="289"
+            r="2.0"
+            fill="#9DDFFF"
+            opacity=".75"/>
+
+    </g>
+
+    <!-- ======================================
+            Lower Articular Cartilage
+    ======================================= -->
+
+    <g
+        id="lowerCartilage">
+
+        <!-- Main Cartilage -->
+
+        <path
+
+            id="lowerCartilageBody"
+
+            d="
+                M190 318
+
+                C270 306 355 299 450 299
+
+                C545 299 630 306 710 318
+
+                L710 364
+
+                C630 386 545 399 450 399
+
+                C355 399 270 386 190 364
+
+                Z"
+
+            fill="url(#cartilageGradient)"
+
+            stroke="#42B7E8"
+
+            stroke-width="2.5"/>
+
+
+        <!-- Gloss Highlight -->
+
+        <path
+
+            id="lowerCartilageGloss"
+
+            d="
+                M215 326
+
+                C295 314 370 307 450 307
+
+                C530 307 605 314 685 326"
+
+            fill="none"
+
+            stroke="#FFFFFF"
+
+            stroke-width="5"
+
+            stroke-linecap="round"
+
+            opacity=".60"/>
+
+
+        <!-- Bottom Edge -->
+
+        <path
+
+            id="lowerCartilageEdge"
+
+            d="
+                M195 362
+
+                C275 384 355 394 450 394
+
+                C545 394 625 384 705 362"
+
+            fill="none"
+
+            stroke="#2498CF"
+
+            stroke-width="2"
+
+            opacity=".45"/>
+
+
+        <!-- Reflection -->
+
+        <ellipse
+
+            id="lowerCartilageReflection"
+
+            cx="450"
+
+            cy="336"
+
+            rx="145"
+
+            ry="18"
+
+            fill="url(#cartilageHighlight)"
+
+            opacity=".35"/>
+
+    </g>
