@@ -85,3 +85,33 @@ font-size:18px;
 color:#666;
 
 }
+
+/* ==========================================================
+   Cartilage Interactive Diagram - Responsive Size
+   ========================================================== */
+
+#cartilage-diagram-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cartilage-diagram-container svg {
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    height: auto !important;
+    margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+
+    #cartilage-diagram-container svg {
+        width: 100%;
+        max-width: 340px;
+    }
+
+}
