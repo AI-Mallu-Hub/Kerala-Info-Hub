@@ -63,6 +63,10 @@ function debug(message, type = "info") {
 
 async function initDiagramEngine(containerId, svgPath, config) {
 
+currentConfig = config;
+activeContainerId = containerId;
+hotspots = config.hotspots || {};
+
    debug("Initializing Diagram...");
 
     const container =
@@ -71,7 +75,11 @@ document.getElementById(containerId);
     if (!container) {
         console.error("Diagram container not found.");
         return;
+
     }
+currentConfig = config;
+hotspots = config.hotspots;
+
 
     try {
        debug("Loading SVG...");
@@ -128,7 +136,10 @@ document.getElementById(containerId);
    Hotspot Configuration
    ========================================================== */
 
-const hotspots = CellConfig.hotspots;
+let hotspots = {};
+let currentConfig = null;
+let activeContainerId = null;
+let activeTourButton = null;
 
 /* ==========================================================
    Animation State
@@ -146,6 +157,22 @@ const animationState = {
 
 };
 
+const tourState = {
+
+    running: false,
+
+    current: 0,
+
+    step: 0,
+
+    order: [],
+
+    timer: null,
+
+    auto: true
+
+};
+
 
 /* ==========================================================
    Register Click Events
@@ -156,7 +183,9 @@ function registerHotspots(svg) {
 
     Object.keys(hotspots).forEach(id => {
 
-        const part = svg.getElementById(id);
+        const part = svg.getElementById(
+    hotspots[id].svgId || id
+);
 
         if (!part) {
             debug(id + " NOT FOUND", "warn");
@@ -168,6 +197,8 @@ function registerHotspots(svg) {
         part.classList.add("hotspots");
 
         part.addEventListener("click", () => {
+
+debug("CLICKED : " + id, "success");
 
             if (animationState.isAnimating) return;
 
@@ -200,7 +231,9 @@ function highlightHotspot(svg,selectedId){
 
     Object.keys(hotspots).forEach(id=>{
 
-        const item=svg.getElementById(id);
+        const item = svg.getElementById(
+    hotspots[id].svgId || id
+);
 
         if(!item) return;
 
@@ -226,9 +259,11 @@ hotspots[id].glow
 
     });
 
-   const wrapper = document.getElementById("cell-diagram");
+   const wrapper = document.getElementById(activeContainerId);
 
-wrapper.classList.add("focus-mode");
+if (wrapper) {
+    wrapper.classList.add("focus-mode");
+}
 
 }
 
@@ -250,17 +285,23 @@ function resetZoom(){
 
 function showTooltip(title){
 
-const tip=document.getElementById("hotspotsTooltip");
+    const tip = document.getElementById("hotspotsTooltip");
+    const titleEl = document.getElementById("tooltipTitle");
 
-document.getElementById("tooltipTitle").textContent=title;
+    // Tooltip is optional.
+    // If this page does not have tooltip UI, continue normally.
+    if(!tip || !titleEl){
+        debug("Tooltip UI not found - continuing");
+        return;
+    }
 
-tip.classList.add("show");
+    titleEl.textContent = title;
 
-setTimeout(()=>{
+    tip.classList.add("show");
 
-tip.classList.remove("show");
-
-},700);
+    setTimeout(() => {
+        tip.classList.remove("show");
+    }, 700);
 
 }
 
@@ -271,47 +312,82 @@ function showInfo(data){
 }
 
 function showModal(data){
-   debug("Opening Modal : " + data.title);
 
-document.getElementById("modalTitle").textContent=data.title;
+    debug("Opening Modal : " + data.title);
 
-document.getElementById("modalFunction").textContent=data.function;
+    const titleEl = document.getElementById("modalTitle");
+    const functionEl = document.getElementById("modalFunction");
+    const clinicalEl = document.getElementById("modalClinical");
+    const examEl = document.getElementById("modalExam");
 
-document.getElementById("modalClinical").textContent=data.clinical;
+    if(titleEl) {
+        titleEl.textContent = data.title || "";
+    }
 
-document.getElementById("modalExam").textContent=data.exam;
+    if(functionEl) {
+        functionEl.textContent = data.function || "";
+    }
 
-   const modalCard=document.querySelector(".modal-card");
+    if(clinicalEl) {
+        clinicalEl.textContent = data.clinical || "";
+    }
 
-const r=animationState.clickedRect;
+    if(examEl) {
+        examEl.textContent = data.exam || "";
+    }
 
-if(r){
+   const modalCard = document.querySelector(".modal-card");
 
-const cx=r.left+r.width/2;
+const r = animationState.clickedRect;
 
-const cy=r.top+r.height/2;
+if (modalCard && r) {
 
-modalCard.style.transformOrigin=
-`${cx}px ${cy}px`;
+    const cx = r.left + r.width / 2;
+    const cy = r.top + r.height / 2;
 
+    modalCard.style.transformOrigin =
+        `${cx}px ${cy}px`;
 }
+
+
+// Optional flash effect
 const flash = document.getElementById("microscope-flash");
 
-flash.classList.add("active");
+if (flash) {
 
-setTimeout(() => {
+    flash.classList.add("active");
 
-    flash.classList.remove("active");
+    setTimeout(() => {
+        flash.classList.remove("active");
+    }, 220);
 
-},220);
-
-   zoomDiagram();
+}
 
 
-document.getElementById("hotspotsModal").classList.add("show");
-   debug("Modal Opened");
-   
-   animationState.isAnimating = true;
+// Zoom only if the diagram exists
+const diagram = document.getElementById(activeContainerId);
+
+if (diagram) {
+    diagram.classList.add("zoom");
+}
+
+
+// Open modal only if modal UI exists
+const modal = document.getElementById("hotspotsModal");
+
+if (modal) {
+
+    modal.classList.add("show");
+
+    debug("Modal Opened");
+
+} else {
+
+    debug("Modal UI not found - continuing", "warn");
+
+}
+
+animationState.isAnimating = true;
 if(tourState.running && tourState.auto){
 
     tourState.timer = setTimeout(()=>{
@@ -329,15 +405,35 @@ document.getElementById("closeModal").onclick = closeModal;
 function closeModal() {
 
     debug("Closing Modal");
-if(tourState.timer){
 
-    clearTimeout(tourState.timer);
+    if(tourState.timer){
 
-    tourState.timer = null;
+        clearTimeout(tourState.timer);
 
-}
+        tourState.timer = null;
+
+    }
 
     const modal = document.getElementById("hotspotsModal");
+
+    // Modal UI is optional on pages that don't provide it.
+    if(!modal){
+
+        debug("Modal UI not found - closing skipped", "warn");
+
+        animationState.isAnimating = false;
+        animationState.activeHotspot = null;
+
+        if(tourState.running){
+
+            setTimeout(() => {
+                startTourStep(tourState.step + 1);
+            }, 350);
+
+        }
+
+        return;
+    }
 
     modal.classList.add("closing");
 
@@ -373,89 +469,75 @@ startTourStep(tourState.step+1);
 
 function setupGuidedTour(){
 
-const btn=document.getElementById("startTour");
+    const btn =
+        document.getElementById("startTour") ||
+        document.getElementById("exploreCartilageBtn");
 
-if(!btn) return;
+    if(!btn) return;
 
-btn.addEventListener("click",()=>{
+    activeTourButton = btn;
 
-if(tourState.running) return;
+        tourState.order = Object.keys(hotspots);
 
-tourState.running=true;
+    btn.addEventListener("click",()=>{
 
-debug("🧬 Guided Tour Started");
+        if(tourState.running) return;
 
-btn.textContent="⏸ Touring...";
+        tourState.running = true;
 
-   startTourStep(0);
+        debug("🧬 Guided Tour Started");
 
-});
+        btn.textContent = "⏸ Touring...";
 
-   }
+        startTourStep(0);
+
+    });
+
+}
 
 function startTourStep(index){
 
-if(index>=tourState.order.length){
+    if(index >= tourState.order.length){
+        finishTour();
+        return;
+    }
 
-finishTour();
+    tourState.step = index;
 
-return;
+    const id = tourState.order[index];
+
+    const svg = document.querySelector(
+        `#${activeContainerId} svg`
+    );
+
+    if(!svg) return;
+
+    const part = svg.getElementById(
+        hotspots[id].svgId || id
+    );
+
+    if(!part) return;
+
+    animationState.activeHotspot = part;
+
+    animationState.clickedRect =
+        part.getBoundingClientRect();
+
+    highlightHotspot(svg, id);
+
+    showTooltip(
+        hotspots[id].title
+    );
+
+    setTimeout(() => {
+
+        showInfo(
+            hotspots[id]
+        );
+
+    }, 550);
 
 }
-
-tourState.step=index;
-
-const id=tourState.order[index];
-
-const svg=document.querySelector("#cell-diagram svg");
-
-if(!svg) return;
-
-const part=svg.getElementById(id);
-
-if(!part) return;
-
-animationState.activeHotspot=part;
-
-animationState.clickedRect=
-part.getBoundingClientRect();
-
-highlightHotspot(svg,id);
-
-showTooltip(hotspots[id].title);
-
-setTimeout(()=>{
-
-showInfo(hotspots[id]);
-
-},550);
-
-}
-
-const tourState={
-
-running:false,
-
-step:0,
-
-auto: true,
-
-timer: null,
-
-order:[
-"nucleus",
-"mitochondria",
-"golgi",
-"rough-er",
-"smooth-er",
-"ribosomes",
-"lysosome",
-"vacuole",
-"centrosome",
-"nucleolus"
-]
-
-};
    
 function finishTour(){
 
@@ -471,17 +553,20 @@ el.classList.remove("active","dim");
 
 });
 
-const btn=document.getElementById("startTour");
-
-btn.textContent="▶ Explore Again";
+if(activeTourButton){
+    activeTourButton.textContent="▶ Explore Again";
+}
 
 debug("🏁 Guided Tour Finished");
 
    resetZoom();
 
-document
-.getElementById("cell-diagram")
-.classList.remove("focus-mode");
+const wrapper =
+    document.getElementById(activeContainerId);
+
+if(wrapper){
+    wrapper.classList.remove("focus-mode");
+}
 
    animationState.isAnimating=false;
 animationState.activeHotspot=null;
