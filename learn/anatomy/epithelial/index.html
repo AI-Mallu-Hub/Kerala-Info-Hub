@@ -23,24 +23,24 @@ href="../../css/lesson.css">
 <link rel="stylesheet"
 href="../../css/diagram.css">
 
+
 </head>
 
 <body>
 
 <header class="lesson-header">
 
-<a href="../tissues/" class="back-btn">
-
-⬅ Back to Tissues
-
+<a href="../tissues/index.html" class="back-btn">
+👈🏼 Tissues
 </a>
 
-<h1>
+<a href="../connective/index.html" class="next-lesson-btn">
+            Lesson 2.2 👉🏼
+        </a>
 
-🩹 Epithelial
-     Tissue
+    </div>
 
-</h1>
+<h1>🩹 Epithelial Tissue</h1>
 
 <p class="lesson-subtitle">
 
@@ -48,9 +48,64 @@ href="../../css/diagram.css">
 
 </p>
 
+<div class="lesson-meta">
+
+<span class="badge beginner">
+
+🟢 Beginner
+
+</span>
+
+<span>
+
+⏱️ 10-20 mins
+
+</span>
+
+<span>
+
+📖 Lesson 3 / 120
+
+</span>
+
+<span>
+
+🧠 Nursing
+
+</span>
+
+</div>
+
+<div class="progress-wrapper">
+
+<div class="progress-bar">
+
+<div class="progress-fill" style="width:8%;"></div>
+
+</div>
+
+</div>
+
+</div>
+
+        
+
 </header>
 
 <main class="lesson-container">
+
+<!-- =========================================
+     PAGE DOWN BUTTON
+========================================= -->
+
+<button
+    type="button"
+    class="page-scroll-btn page-down-btn"
+    aria-label="Go to bottom of lesson"
+    onclick="document.getElementById('lesson-bottom').scrollIntoView({ behavior: 'smooth' });"
+>
+    ↓
+</button>
 
     
 <!-- ========================================= -->
@@ -70,38 +125,64 @@ href="../../css/diagram.css">
         easy, visual way.
     </p>
 
-    <div class="lesson-meta">
-
-        <span>⏱️ 15-20 min</span>
-
-        <span>📖 Beginner</span>
-
-        <span>🧠 Nursing</span>
-
-    </div>
-
 </section>
 
+    
 <section class="lesson-card">
 
-<h2>📚 Course Progress</h2>
+<h2>📑 Table of Contents</h2>
 
-<div class="progress-info">
+<ol>
 
-<span>Lesson 3 / 120</span>
+<li><a href="#learning-objectives">
+🎯 Learning Objectives
+</a></li>
 
-<span>2% Complete</span>
+<li><a href="#introduction">
+📖 Introduction
+</a></li>
 
-</div>
+<li><a href="#what-is-epithelium">
+🩹 What is Epithelial Tissue?
+</a></li>
 
-<div class="progress-bar">
+<li><a href="#characteristics">
+⭐ Characteristics
+</a></li>
 
-<div class="progress-fill"
-style="width:2%;"></div>
+<li><a href="#location">
+📍 Location in Human Body
+</a></li>
 
-</div>
+<li><a href="#classification">
+🔬 Classification
+</a></li>
 
-</section>
+<li><a href="#functions">
+⚙️ Functions
+</a></li>
+
+<li><a href="#clinical-correlation">
+🏥 Clinical Correlation
+</a></li>
+
+<li><a href="#memory-trick">
+🧠 Memory Trick
+</a></li>
+
+<li><a href="#quick-revision">
+📌 Quick Revision
+</a></li>
+
+<li><a href="#practice-quiz">
+❓ Practice Quiz
+</a></li>
+
+</ol>
+
+  </section>
+
+
 
 <section class="lesson-card">
 
@@ -161,59 +242,7 @@ MOHAP & DOH.
 
 </section>
 
-<section class="lesson-card">
 
-<h2>📑 Table of Contents</h2>
-
-<ol>
-
-<li><a href="#learning-objectives">
-🎯 Learning Objectives
-</a></li>
-
-<li><a href="#introduction">
-📖 Introduction
-</a></li>
-
-<li><a href="#what-is-epithelium">
-🩹 What is Epithelial Tissue?
-</a></li>
-
-<li><a href="#characteristics">
-⭐ Characteristics
-</a></li>
-
-<li><a href="#location">
-📍 Location in Human Body
-</a></li>
-
-<li><a href="#classification">
-🔬 Classification
-</a></li>
-
-<li><a href="#functions">
-⚙️ Functions
-</a></li>
-
-<li><a href="#clinical-correlation">
-🏥 Clinical Correlation
-</a></li>
-
-<li><a href="#memory-trick">
-🧠 Memory Trick
-</a></li>
-
-<li><a href="#quick-revision">
-📌 Quick Revision
-</a></li>
-
-<li><a href="#practice-quiz">
-❓ Practice Quiz
-</a></li>
-
-</ol>
-
-  </section>
 
   <hr class="lesson-divider">
 
@@ -291,39 +320,245 @@ working to protect and support your body.
 
 </p>
 
-<div class="diagram-placeholder">
+<section class="lesson-card">
 
-🖼️ Diagram Placeholder
+    <h2>🖼️ Human Body Distribution</h2>
 
-<br><br>
+    <!-- =========================================================
+     HUMAN BODY DISTRIBUTION DIAGRAM
+     ========================================================= -->
 
-Human body highlighting:
+<div id="diagram-body" class="human-body-diagram">
 
-• Skin
+    <div class="human-body-stage">
 
-• Mouth
+        <svg
+            class="human-body-svg"
+            viewBox="0 0 360 600"
+            role="img"
+            aria-label="Human body showing locations of epithelial tissue"
+        >
 
-• Nose
+            <!-- =========================
+                 HUMAN BODY
+                 ========================= -->
 
-• Lungs
+            <!-- Head -->
+            <circle
+                class="body-head"
+                cx="180"
+                cy="62"
+                r="38"
+            />
 
-• Stomach
+            <!-- Neck -->
+            <rect
+                class="body-neck"
+                x="165"
+                y="94"
+                width="30"
+                height="34"
+                rx="12"
+            />
 
-• Intestine
+            <!-- Torso -->
+            <path
+                class="body-torso"
+                d="
+                    M135 120
+                    Q180 105 225 120
+                    L245 250
+                    Q245 275 220 285
+                    L140 285
+                    Q115 275 115 250
+                    Z
+                "
+            />
 
-• Kidney
+            <!-- Left arm -->
+            <path
+                class="body-left-arm"
+                d="
+                    M135 125
+                    Q115 130 105 150
+                    L75 245
+                    Q70 265 84 275
+                    Q98 283 106 264
+                    L135 195
+                    Z
+                "
+            />
 
-• Blood vessels
+            <!-- Right arm -->
+            <path
+                class="body-right-arm"
+                d="
+                    M225 125
+                    Q245 130 255 150
+                    L285 245
+                    Q290 265 276 275
+                    Q262 283 254 264
+                    L225 195
+                    Z
+                "
+            />
+
+            <!-- Left leg -->
+            <path
+                class="body-left-leg"
+                d="
+                    M140 280
+                    L172 280
+                    L165 505
+                    Q164 525 148 525
+                    Q132 525 132 505
+                    Z
+                "
+            />
+
+            <!-- Right leg -->
+            <path
+                class="body-right-leg"
+                d="
+                    M188 280
+                    L220 280
+                    L228 505
+                    Q228 525 212 525
+                    Q196 525 195 505
+                    Z
+                "
+            />
+
+
+            <!-- =========================
+                 LOCATION MARKERS
+                 ========================= -->
+
+            <!-- Skin -->
+            <circle
+                class="body-marker"
+                data-location="skin"
+                cx="88"
+                cy="215"
+                r="10"
+            >
+                <title>Skin</title>
+            </circle>
+
+            <!-- Mouth -->
+            <circle
+                class="body-marker"
+                data-location="mouth"
+                cx="180"
+                cy="73"
+                r="9"
+            >
+                <title>Mouth</title>
+            </circle>
+
+            <!-- Nose -->
+            <circle
+                class="body-marker"
+                data-location="nose"
+                cx="180"
+                cy="61"
+                r="9"
+            >
+                <title>Nose</title>
+            </circle>
+
+            <!-- Lungs -->
+            <circle
+                class="body-marker"
+                data-location="lungs"
+                cx="160"
+                cy="165"
+                r="10"
+            >
+                <title>Lungs</title>
+            </circle>
+
+            <!-- Stomach -->
+            <circle
+                class="body-marker"
+                data-location="stomach"
+                cx="205"
+                cy="215"
+                r="10"
+            >
+                <title>Stomach</title>
+            </circle>
+
+            <!-- Intestine -->
+            <circle
+                class="body-marker"
+                data-location="intestine"
+                cx="180"
+                cy="245"
+                r="10"
+            >
+                <title>Intestine</title>
+            </circle>
+
+            <!-- Kidney -->
+            <circle
+                class="body-marker"
+                data-location="kidney"
+                cx="160"
+                cy="225"
+                r="10"
+            >
+                <title>Kidney</title>
+            </circle>
+
+            <!-- Blood vessels -->
+            <circle
+                class="body-marker"
+                data-location="blood-vessels"
+                cx="180"
+                cy="145"
+                r="10"
+            >
+                <title>Blood vessels</title>
+            </circle>
+
+        </svg>
+
+
+        <!-- =========================
+             LOCATION INFORMATION
+             ========================= -->
+
+        <div class="body-location-info">
+
+            <div class="body-info-icon">
+                📍
+            </div>
+
+            <div class="body-info-content">
+
+                <strong>Select a location</strong>
+
+                <span>
+                    Tap a marker to explore epithelial tissue.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
 
-<div class="info-card">
+        </div>
 
-💡 Think of epithelial tissue as the
-<strong>"protective covering and lining"</strong>
-of the human body.
+    </div>
 
-</div>
+    <p>
+        Tap different parts of the body to explore where
+        epithelial tissue is found and what it does.
+    </p>
 
 </section>
 
@@ -386,25 +621,112 @@ be absorbed or secreted whenever needed.
 
 </ul>
 
-<div class="diagram-placeholder">
+<!-- ========================================= -->
+<!-- EPITHELIAL TISSUE STRUCTURE DIAGRAM -->
+<!-- ========================================= -->
 
-🖼️ Diagram Placeholder
+<div class="epithelium-diagram" id="epithelium-diagram">
 
-Cross-section of epithelial tissue
+    <div class="epithelium-diagram-title">
+        🔬 Epithelial Tissue Structure
+    </div>
 
-──────────────
+    <div class="epithelium-diagram-subtitle">
+        Cross-section of epithelial tissue
+    </div>
 
-Epithelial Cells
+    <div class="epithelium-visual">
 
-──────────────
+        <!-- Apical Surface -->
+        <div class="epithelium-label label-apical">
+            <span class="label-dot"></span>
+            <span>Apical Surface</span>
+        </div>
 
-Basement Membrane
+        <!-- Epithelial Cells -->
+        <div class="epithelial-cell-layer">
 
-──────────────
+            <div class="epithelial-cell">
+                <span class="cell-nucleus"></span>
+            </div>
 
-Connective Tissue
+            <div class="epithelial-cell">
+                <span class="cell-nucleus"></span>
+            </div>
+
+            <div class="epithelial-cell">
+                <span class="cell-nucleus"></span>
+            </div>
+
+            <div class="epithelial-cell">
+                <span class="cell-nucleus"></span>
+            </div>
+
+            <div class="epithelial-cell">
+                <span class="cell-nucleus"></span>
+            </div>
+
+            <div class="epithelial-cell">
+                <span class="cell-nucleus"></span>
+            </div>
+
+        </div>
+
+        <!-- Epithelial Cells Label -->
+        <div class="epithelium-label label-epithelial">
+            <span class="label-line"></span>
+            <span>Epithelial Cells</span>
+        </div>
+
+        <!-- Basement Membrane -->
+        <div class="basement-membrane">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Basement Membrane Label -->
+        <div class="epithelium-label label-basement">
+            <span class="label-line"></span>
+            <span>Basement Membrane</span>
+        </div>
+
+        <!-- Connective Tissue -->
+        <div class="connective-tissue">
+
+            <div class="connective-fiber fiber-1"></div>
+            <div class="connective-fiber fiber-2"></div>
+            <div class="connective-fiber fiber-3"></div>
+            <div class="connective-fiber fiber-4"></div>
+
+            <div class="connective-dot dot-1"></div>
+            <div class="connective-dot dot-2"></div>
+            <div class="connective-dot dot-3"></div>
+            <div class="connective-dot dot-4"></div>
+            <div class="connective-dot dot-5"></div>
+
+        </div>
+
+        <!-- Connective Tissue Label -->
+        <div class="epithelium-label label-connective">
+            <span class="label-line"></span>
+            <span>Connective Tissue</span>
+        </div>
+
+    </div>
+
+    <!-- Diagram Hint -->
+    <div class="epithelium-diagram-hint">
+        💡 Epithelial cells are closely packed and rest on a basement membrane.
+    </div>
 
 </div>
+
 
 <div class="info-card warning">
 
@@ -628,45 +950,6 @@ Epithelial tissue is found almost everywhere in the human body. It covers the ou
 
 </section>
 
-<section class="lesson-card">
-
-<h2>🖼️ Human Body Distribution</h2>
-
-<div id="diagram-body" class="diagram-placeholder">
-
-📍 Interactive Diagram Placeholder
-
-Human Body
-
-↓
-
-Tap Skin
-
-↓
-
-Tap Mouth
-
-↓
-
-Tap Lungs
-
-↓
-
-Tap Stomach
-
-↓
-
-Tap Kidney
-
-</div>
-
-<p>
-
-Later this section will become an interactive SVG diagram where users can tap different organs to see the type and function of epithelial tissue.
-
-</p>
-
-</section>
 
 <section class="lesson-card">
 
@@ -717,42 +1000,352 @@ These are among the most frequently asked concepts in Nursing, PSC, NEET, AIIMS,
 <h2>🧬 Classification of Epithelial Tissue</h2>
 
 <p>
-Epithelial tissue is classified according to <strong>two important features</strong>:
+Epithelial tissue is classified mainly according to
+<strong>two important features</strong>:
 </p>
 
 <ul>
-<li><strong>Number of cell layers</strong> (one layer or many layers)</li>
-<li><strong>Shape of the cells</strong> (flat, cube-shaped, or column-shaped)</li>
+    <li>
+        <strong>Number of cell layers</strong>
+        (one layer or multiple layers)
+    </li>
+
+    <li>
+        <strong>Shape of the cells</strong>
+        (squamous, cuboidal, or columnar)
+    </li>
 </ul>
 
 <p>
-Using these two features, epithelial tissue is divided into four major groups.
-Learning this classification makes it much easier to understand where each tissue is found and what function it performs.
+The number of cell layers helps distinguish
+<strong>simple epithelium</strong> from
+<strong>stratified epithelium</strong>, while the shape of the
+cells helps identify specific epithelial types.
 </p>
-
-<div class="diagram-placeholder">
-
-<h3>🖼️ Diagram Placeholder</h3>
-
-<pre>
-
-              EPITHELIAL TISSUE
-                     │
-     ┌───────────────┼───────────────┐
-     │               │               │
-  Simple         Stratified   Pseudostratified
-     │
-     ├── Squamous
-     ├── Cuboidal
-     └── Columnar
-
-           Transitional
-
-</pre>
 
 <p>
-📌 Interactive classification diagram will be added here.
+There are also specialized patterns such as
+<strong>pseudostratified epithelium</strong>, which is a single
+layer that appears multilayered, and
+<strong>transitional epithelium</strong>, a specialized form of
+stratified epithelium found in the urinary tract.
 </p>
+
+<!-- =========================================================
+     EPITHELIAL TISSUE CLASSIFICATION DIAGRAM
+     FINAL INTERACTIVE TREE
+     ========================================================= -->
+
+<div class="classification-diagram" id="classification-diagram">
+
+    <!-- Diagram Header -->
+    <div class="classification-diagram-header">
+
+        <span class="classification-diagram-icon">🧬</span>
+
+        <div>
+            <h3>Epithelial Tissue Classification</h3>
+
+            <p>
+                Based on number of cell layers and cell shape
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CLASSIFICATION TREE
+         ===================================================== -->
+
+    <div class="classification-tree">
+
+        <!-- ROOT -->
+        <div class="classification-node root-node"
+             data-class="root">
+
+            <span class="node-icon">🧬</span>
+
+            <div class="node-content">
+                <strong>Epithelial Tissue</strong>
+                <span>Classification</span>
+            </div>
+
+        </div>
+
+
+        <!-- MAIN CONNECTOR -->
+        <div class="tree-connector main-connector"></div>
+
+
+        <!-- =================================================
+             FOUR MAJOR BRANCHES
+             ================================================= -->
+
+        <div class="major-classification-grid">
+
+
+            <!-- =============================================
+                 SIMPLE
+                 ============================================= -->
+
+            <div class="major-branch">
+
+                <button
+                    class="classification-node type-node expandable-node simple-node"
+                    type="button"
+                    data-class="simple"
+                    aria-expanded="false"
+                    aria-controls="simple-subtypes">
+
+                    <span class="node-icon">1️⃣</span>
+
+                    <span class="node-content">
+                        <strong>Simple</strong>
+                        <span>One layer of cells</span>
+                    </span>
+
+                    <span class="expand-icon"
+                          aria-hidden="true">+</span>
+
+                </button>
+
+
+                <!-- SIMPLE SUBTYPES -->
+
+                <div
+                    class="classification-subtree"
+                    id="simple-subtypes"
+                    data-parent="simple"
+                    hidden>
+
+                    <div class="subtree-connector"></div>
+
+                    <div class="subtype-grid">
+
+                        <button
+                            class="classification-node subtype-node"
+                            type="button"
+                            data-type="simple-squamous">
+
+                            <span class="subtype-icon squamous-icon">
+                                ▭
+                            </span>
+
+                            <span class="node-content">
+                                <strong>Squamous</strong>
+                                <span>Simple squamous</span>
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            class="classification-node subtype-node"
+                            type="button"
+                            data-type="simple-cuboidal">
+
+                            <span class="subtype-icon cuboidal-icon">
+                                □
+                            </span>
+
+                            <span class="node-content">
+                                <strong>Cuboidal</strong>
+                                <span>Simple cuboidal</span>
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            class="classification-node subtype-node"
+                            type="button"
+                            data-type="simple-columnar">
+
+                            <span class="subtype-icon columnar-icon">
+                                ▯
+                            </span>
+
+                            <span class="node-content">
+                                <strong>Columnar</strong>
+                                <span>Simple columnar</span>
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 STRATIFIED
+                 ============================================= -->
+
+            <div class="major-branch">
+
+                <button
+                    class="classification-node type-node expandable-node stratified-node"
+                    type="button"
+                    data-class="stratified"
+                    aria-expanded="false"
+                    aria-controls="stratified-subtypes">
+
+                    <span class="node-icon">🧱</span>
+
+                    <span class="node-content">
+                        <strong>Stratified</strong>
+                        <span>Two or more layers</span>
+                    </span>
+
+                    <span class="expand-icon"
+                          aria-hidden="true">+</span>
+
+                </button>
+
+
+                <!-- STRATIFIED SUBTYPES -->
+
+                <div
+                    class="classification-subtree"
+                    id="stratified-subtypes"
+                    data-parent="stratified"
+                    hidden>
+
+                    <div class="subtree-connector"></div>
+
+                    <div class="subtype-grid">
+
+                        <button
+                            class="classification-node subtype-node"
+                            type="button"
+                            data-type="stratified-squamous">
+
+                            <span class="subtype-icon squamous-icon">
+                                ▭
+                            </span>
+
+                            <span class="node-content">
+                                <strong>Squamous</strong>
+                                <span>Stratified squamous</span>
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            class="classification-node subtype-node"
+                            type="button"
+                            data-type="stratified-cuboidal">
+
+                            <span class="subtype-icon cuboidal-icon">
+                                □
+                            </span>
+
+                            <span class="node-content">
+                                <strong>Cuboidal</strong>
+                                <span>Stratified cuboidal</span>
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            class="classification-node subtype-node"
+                            type="button"
+                            data-type="stratified-columnar">
+
+                            <span class="subtype-icon columnar-icon">
+                                ▯
+                            </span>
+
+                            <span class="node-content">
+                                <strong>Columnar</strong>
+                                <span>Stratified columnar</span>
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 PSEUDOSTRATIFIED
+                 ============================================= -->
+
+            <div class="major-branch">
+
+                <button
+                    class="classification-node type-node special-node"
+                    type="button"
+                    data-class="pseudostratified">
+
+                    <span class="node-icon">🟫</span>
+
+                    <span class="node-content">
+                        <strong>Pseudostratified</strong>
+                        <span>Single layer that appears multilayered</span>
+                    </span>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 TRANSITIONAL
+                 ============================================= -->
+
+            <div class="major-branch">
+
+                <button
+                    class="classification-node type-node special-node"
+                    type="button"
+                    data-class="transitional">
+
+                    <span class="node-icon">🔵</span>
+
+                    <span class="node-content">
+                        <strong>Transitional</strong>
+                        <span>Specialized stretchable epithelium</span>
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             DIAGRAM NOTE
+             ================================================= -->
+
+        <div class="classification-note">
+
+            <span class="note-icon">💡</span>
+
+            <div>
+                <strong>How to read this diagram</strong>
+
+                <span>
+                    Tap <b>Simple</b> or <b>Stratified</b>
+                    to reveal their major subtypes.
+                </span>
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
 
@@ -786,25 +1379,490 @@ This tissue is mainly involved in <strong>diffusion, filtration, absorption, and
 
 </div>
 
-<div class="diagram-placeholder">
+<!--
+========================================================
+SIMPLE EPITHELIUM DIAGRAM
+Interactive structure:
+Simple Epithelium
+ ├── Simple Squamous
+ ├── Simple Cuboidal
+ └── Simple Columnar
+========================================================
+-->
 
-<h3>🖼️ Diagram Placeholder</h3>
+<div class="simple-epithelium-diagram" id="simpleEpitheliumDiagram">
 
-<pre>
+  <!-- Diagram Header -->
+  <div class="simple-epi-header">
+    <div class="simple-epi-title">
+      🔬 Simple Epithelium
+    </div>
 
-══════════════════════
- □ □ □ □ □ □ □ □
-══════════════════════
+    <div class="simple-epi-subtitle">
+      One layer of epithelial cells
+    </div>
+  </div>
 
-Single layer of cells
 
-</pre>
+  <!-- Main Tissue Diagram -->
+  <div class="simple-epi-structure">
 
-<p>
-📌 Simple epithelium diagram will be inserted here.
-</p>
+    <!-- Apical / Surface -->
+    <div class="simple-epi-label simple-epi-apical-label">
+      <span class="label-dot"></span>
+      Apical Surface
+    </div>
+
+
+    <!-- Epithelial Cell Layer -->
+    <div class="simple-epi-cell-layer">
+
+      <!-- Squamous cells -->
+      <div class="simple-epi-cell squamous-cell">
+        <span class="cell-nucleus"></span>
+      </div>
+
+      <div class="simple-epi-cell squamous-cell">
+        <span class="cell-nucleus"></span>
+      </div>
+
+      <div class="simple-epi-cell squamous-cell">
+        <span class="cell-nucleus"></span>
+      </div>
+
+      <div class="simple-epi-cell squamous-cell">
+        <span class="cell-nucleus"></span>
+      </div>
+
+      <div class="simple-epi-cell squamous-cell">
+        <span class="cell-nucleus"></span>
+      </div>
+
+      <div class="simple-epi-cell squamous-cell">
+        <span class="cell-nucleus"></span>
+      </div>
+
+    </div>
+
+
+    <!-- Basement Membrane -->
+    <div class="simple-epi-basement-membrane">
+      Basement Membrane
+    </div>
+
+
+    <!-- Connective Tissue -->
+    <div class="simple-epi-connective-tissue">
+
+      <span class="connective-fiber fiber-1"></span>
+      <span class="connective-fiber fiber-2"></span>
+      <span class="connective-fiber fiber-3"></span>
+
+      <span class="connective-dot dot-1"></span>
+      <span class="connective-dot dot-2"></span>
+      <span class="connective-dot dot-3"></span>
+
+      <div class="simple-epi-connective-label">
+        Connective Tissue
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Diagram Explanation -->
+  <div class="simple-epi-note">
+    💡
+    <span>
+      Simple epithelium consists of a single layer of cells
+      attached to a basement membrane.
+    </span>
+  </div>
+
+
+  <!-- ====================================================
+       TYPE 1 : SIMPLE SQUAMOUS
+       ==================================================== -->
+
+  <div
+    class="simple-epi-type-card"
+    data-simple-epi-toggle="squamous"
+  >
+
+    <div class="simple-epi-type-header">
+
+      <div class="simple-epi-type-icon">
+        ▭
+      </div>
+
+      <div class="simple-epi-type-text">
+        <strong>Simple Squamous</strong>
+        <span>Flat and thin cells</span>
+      </div>
+
+      <button
+        type="button"
+        class="simple-epi-expand-btn"
+        aria-expanded="false"
+        aria-controls="simple-epi-squamous-content"
+      >
+        +
+      </button>
+
+    </div>
+
+
+    <div
+      class="simple-epi-type-content"
+      id="simple-epi-squamous-content"
+      hidden
+    >
+
+        <!-- Mini Interactive Diagram -->
+<div
+  class="simple-epi-mini-diagram"
+  data-mini-diagram="squamous"
+  role="button"
+  tabindex="0"
+  aria-label="Tap to focus on simple squamous cell shape"
+>
+
+  <div class="mini-diagram-title">
+    Cell Shape
+  </div>
+
+  <div class="mini-diagram-stage">
+
+    <div class="mini-apical-label">
+      Apical surface
+    </div>
+
+    <div class="mini-cell-layer squamous-layer">
+
+      <div class="mini-cell squamous-mini-cell">
+        <span class="mini-nucleus"></span>
+      </div>
+
+      <div class="mini-cell squamous-mini-cell">
+        <span class="mini-nucleus"></span>
+      </div>
+
+      <div class="mini-cell squamous-mini-cell">
+        <span class="mini-nucleus"></span>
+      </div>
+
+      <div class="mini-cell squamous-mini-cell">
+        <span class="mini-nucleus"></span>
+      </div>
+
+      <div class="mini-cell squamous-mini-cell">
+        <span class="mini-nucleus"></span>
+      </div>
+
+    </div>
+
+    <div class="mini-basement-membrane"></div>
+
+    <div class="mini-connective-tissue">
+      Connective tissue
+    </div>
+
+  </div>
+
+  <div class="mini-diagram-hint">
+    👆 Tap diagram to focus on cell shape
+  </div>
 
 </div>
+
+      <div class="simple-epi-detail-row">
+        <strong>🔬 Cell shape</strong>
+        <span>Very thin, flat cells</span>
+      </div>
+
+      <div class="simple-epi-detail-row">
+        <strong>📍 Examples</strong>
+        <span>
+          Alveoli, blood-vessel lining (endothelium),
+          and serous membranes (mesothelium)
+        </span>
+      </div>
+
+      <div class="simple-epi-detail-row">
+        <strong>⚙️ Main functions</strong>
+        <span>
+          Diffusion and filtration
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ====================================================
+       TYPE 2 : SIMPLE CUBOIDAL
+       ==================================================== -->
+
+  <div
+    class="simple-epi-type-card"
+    data-simple-epi-toggle="cuboidal"
+  >
+
+    <div class="simple-epi-type-header">
+
+      <div class="simple-epi-type-icon">
+        □
+      </div>
+
+      <div class="simple-epi-type-text">
+        <strong>Simple Cuboidal</strong>
+        <span>Cube-shaped cells</span>
+      </div>
+
+      <button
+        type="button"
+        class="simple-epi-expand-btn"
+        aria-expanded="false"
+        aria-controls="simple-epi-cuboidal-content"
+      >
+        +
+      </button>
+
+    </div>
+
+
+    <div
+      class="simple-epi-type-content"
+      id="simple-epi-cuboidal-content"
+      hidden
+    >
+
+         <!-- Mini Interactive Diagram -->
+<div
+  class="simple-epi-mini-diagram"
+  data-mini-diagram="cuboidal"
+  role="button"
+  tabindex="0"
+  aria-label="Tap to focus on simple cuboidal cell shape"
+>
+
+  <div class="mini-diagram-title">
+    Cell Shape
+  </div>
+
+  <div class="mini-diagram-stage">
+
+    <div class="mini-apical-label">
+      Apical surface
+    </div>
+
+    <div class="mini-cell-layer cuboidal-layer">
+
+      <div class="mini-cell cuboidal-mini-cell">
+        <span class="mini-nucleus"></span>
+      </div>
+
+      <div class="mini-cell cuboidal-mini-cell">
+        <span class="mini-nucleus"></span>
+      </div>
+
+      <div class="mini-cell cuboidal-mini-cell">
+        <span class="mini-nucleus"></span>
+      </div>
+
+      <div class="mini-cell cuboidal-mini-cell">
+        <span class="mini-nucleus"></span>
+      </div>
+
+      <div class="mini-cell cuboidal-mini-cell">
+        <span class="mini-nucleus"></span>
+      </div>
+
+    </div>
+
+    <div class="mini-basement-membrane"></div>
+
+    <div class="mini-connective-tissue">
+      Connective tissue
+    </div>
+
+  </div>
+
+  <div class="mini-diagram-hint">
+    👆 Tap diagram to focus on cell shape
+  </div>
+
+</div>
+
+      <div class="simple-epi-detail-row">
+        <strong>🔬 Cell shape</strong>
+        <span>
+          Cube-shaped cells with a round nucleus
+        </span>
+      </div>
+
+      <div class="simple-epi-detail-row">
+        <strong>📍 Examples</strong>
+        <span>
+          Kidney tubules and gland ducts
+        </span>
+      </div>
+
+      <div class="simple-epi-detail-row">
+        <strong>⚙️ Main functions</strong>
+        <span>
+          Secretion and absorption
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ====================================================
+       TYPE 3 : SIMPLE COLUMNAR
+       ==================================================== -->
+
+  <div
+    class="simple-epi-type-card"
+    data-simple-epi-toggle="columnar"
+  >
+
+    <div class="simple-epi-type-header">
+
+      <div class="simple-epi-type-icon">
+        ▯
+      </div>
+
+      <div class="simple-epi-type-text">
+        <strong>Simple Columnar</strong>
+        <span>Tall column-shaped cells</span>
+      </div>
+
+      <button
+        type="button"
+        class="simple-epi-expand-btn"
+        aria-expanded="false"
+        aria-controls="simple-epi-columnar-content"
+      >
+        +
+      </button>
+
+    </div>
+
+
+    <div
+      class="simple-epi-type-content"
+      id="simple-epi-columnar-content"
+      hidden
+    >
+
+        <!-- Mini Interactive Diagram -->
+<div
+  class="simple-epi-mini-diagram"
+  data-mini-diagram="columnar"
+  role="button"
+  tabindex="0"
+  aria-label="Tap to focus on simple columnar cell shape"
+>
+
+  <div class="mini-diagram-title">
+    Cell Shape
+  </div>
+
+  <div class="mini-diagram-stage">
+
+    <div class="mini-apical-label">
+      Apical surface
+    </div>
+
+    <div class="mini-cell-layer columnar-layer">
+
+      <div class="mini-cell columnar-mini-cell">
+        <span class="mini-nucleus"></span>
+      </div>
+
+      <div class="mini-cell columnar-mini-cell">
+        <span class="mini-nucleus"></span>
+      </div>
+
+      <div class="mini-cell columnar-mini-cell">
+        <span class="mini-nucleus"></span>
+      </div>
+
+      <div class="mini-cell columnar-mini-cell">
+        <span class="mini-nucleus"></span>
+      </div>
+
+      <div class="mini-cell columnar-mini-cell">
+        <span class="mini-nucleus"></span>
+      </div>
+
+    </div>
+
+    <div class="mini-basement-membrane"></div>
+
+    <div class="mini-connective-tissue">
+      Connective tissue
+    </div>
+
+  </div>
+
+  <div class="mini-diagram-hint">
+    👆 Tap diagram to focus on cell shape
+  </div>
+
+</div>
+
+      <div class="simple-epi-detail-row">
+        <strong>🔬 Cell shape</strong>
+        <span>
+          Tall cells that are higher than they are wide
+        </span>
+      </div>
+
+      <div class="simple-epi-detail-row">
+        <strong>📍 Examples</strong>
+        <span>
+          Digestive tract and female reproductive tract
+        </span>
+      </div>
+
+      <div class="simple-epi-detail-row">
+        <strong>⚙️ Main functions</strong>
+        <span>
+          Absorption and secretion
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Reading Guide -->
+  <div class="simple-epi-reading-guide">
+    💡
+    <div>
+      <strong>Explore the three types</strong>
+      <span>
+        Tap a type to reveal its cell shape,
+        examples, and main functions.
+      </span>
+    </div>
+  </div>
+
+</div>
+
+
+<!--
+========================================================
+END: SIMPLE EPITHELIUM DIAGRAM
+========================================================
+-->
 
 </section>
 
@@ -920,23 +1978,6 @@ Because the cells are extremely thin, substances such as oxygen, carbon dioxide,
 <li>✅ Reduces friction</li>
 </ul>
 
-<div class="diagram-placeholder">
-
-<h3>🖼️ Diagram Placeholder</h3>
-
-<pre>
-
-──────────────
-▭ ▭ ▭ ▭ ▭ ▭
-──────────────
-
-Very thin flat cells
-
-</pre>
-
-<p>📌 Simple Squamous diagram will be added here.</p>
-
-</div>
 
 <div class="clinical-box">
 
@@ -991,7 +2032,7 @@ Think:
 These cells contain a centrally placed nucleus and are specialized for secretion and absorption.
 </p>
 
-<h3>📍 Location</h3>
+<h3>���� Location</h3>
 
 <ul>
 
@@ -1017,21 +2058,6 @@ These cells contain a centrally placed nucleus and are specialized for secretion
 
 </ul>
 
-<div class="diagram-placeholder">
-
-<h3>🖼️ Diagram Placeholder</h3>
-
-<pre>
-
-□□□□□□□□□□□□
-
-Cube-shaped cells
-
-</pre>
-
-<p>📌 Simple Cuboidal diagram will be inserted here.</p>
-
-</div>
 
 <div class="clinical-box">
 
@@ -1119,23 +2145,6 @@ Goblet cells present among them produce mucus.
 
 </ul>
 
-<div class="diagram-placeholder">
-
-<h3>🖼️ Diagram Placeholder</h3>
-
-<pre>
-
-││││││││││
-││││││││││
-──────────
-
-Tall column-shaped cells
-
-</pre>
-
-<p>📌 Simple Columnar diagram will be added here.</p>
-
-</div>
 
 <div class="clinical-box">
 
@@ -1185,52 +2194,968 @@ Cilia = Movement
 
     </section>
 
+
+<!-- =========================================================
+     STRATIFIED EPITHELIUM
+     Interactive Section
+     ========================================================= -->
+
 <section id="stratified-epithelium" class="lesson-card">
 
-<h2>🟪 2. Stratified Epithelium</h2>
+    <h2>🟪 2. Stratified Epithelium</h2>
 
-<p>
-<b>Stratified epithelium</b> consists of <strong>two or more layers of cells.</strong>
-Unlike simple epithelium, its main role is <strong>protection</strong> rather than absorption or diffusion.
-It is found in body parts exposed to friction, pressure, and injury.
-</p>
+    <p>
+        <b>Stratified epithelium</b> consists of
+        <strong>two or more layers of cells</strong>.
+        Its main function is protection, especially in areas exposed
+        to friction, pressure, and mechanical stress.
+    </p>
 
-<h3>📍 Location</h3>
+    <p>
+        Stratified epithelium is classified according to the
+        <strong>shape of the cells at the apical (free) surface</strong>.
+        The major forms are
+        <strong>stratified squamous, stratified cuboidal,
+        and stratified columnar epithelium</strong>.
+    </p>
 
-<ul>
-<li>🖐️ Skin (Epidermis)</li>
-<li>👄 Mouth cavity</li>
-<li>🍽️ Esophagus</li>
-<li>👁️ Part of the eye</li>
-<li>👩 Female vagina</li>
-</ul>
+    <p>
+        <strong>Transitional epithelium (urothelium)</strong> is a
+        specialized stratified epithelium whose surface cells change
+        shape as the tissue stretches.
+    </p>
 
-<h3>⚙️ Main Functions</h3>
 
-<ul>
-<li>✅ Protects underlying tissues</li>
-<li>✅ Prevents dehydration</li>
-<li>✅ Resists friction and wear</li>
-<li>✅ Acts as a barrier against microorganisms</li>
-</ul>
+    <!-- =====================================================
+         STRATIFIED EPITHELIUM INTERACTIVE DIAGRAM
+         ===================================================== -->
 
-<div class="diagram-placeholder">
+    <div
+        class="stratified-epithelium-diagram"
+        id="stratifiedEpitheliumDiagram"
+    >
 
-<h3>🖼️ Diagram Placeholder</h3>
+        <!-- Diagram Header -->
 
-<pre>
+        <div class="stratified-epi-header">
 
-□□□□□□□□□□□□
-□□□□□□□□□□□□
-□□□□□□□□□□□□
+            <div class="stratified-epi-title">
+                🔬 Stratified Epithelium
+            </div>
 
-Many layers of cells
+            <div class="stratified-epi-subtitle">
+                Multiple layers of epithelial cells
+            </div>
 
-</pre>
+        </div>
 
-<p>📌 Stratified epithelium diagram will be inserted here.</p>
 
-</div>
+        <!-- =================================================
+             TYPE 1 : STRATIFIED SQUAMOUS
+             ================================================= -->
+
+        <div
+            class="stratified-epi-type-card"
+            data-stratified-epi-toggle="squamous"
+        >
+
+            <div class="stratified-epi-type-header">
+
+                <div class="stratified-epi-type-icon">
+                    ▱
+                </div>
+
+                <div class="stratified-epi-type-text">
+
+                    <strong>
+                        Stratified Squamous
+                    </strong>
+
+                    <span>
+                        Multiple layers with flattened surface cells
+                    </span>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="stratified-epi-expand-btn"
+                    aria-expanded="false"
+                    aria-controls="stratified-epi-squamous-content"
+                >
+                    +
+                </button>
+
+            </div>
+
+
+            <div
+                class="stratified-epi-type-content"
+                id="stratified-epi-squamous-content"
+                hidden
+            >
+
+                <!-- Mini Diagram -->
+
+                <div
+                    class="stratified-epi-mini-diagram"
+                    data-stratified-mini-diagram="squamous"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Tap to focus on stratified squamous epithelium"
+                >
+
+                    <div class="stratified-mini-diagram-title">
+                        Cell Layers
+                    </div>
+
+                    <div class="stratified-mini-stage">
+
+                        <div class="stratified-mini-apical-label">
+                            Apical surface
+                        </div>
+
+
+                        <!-- Surface Layer -->
+
+                        <div class="stratified-mini-layer squamous-surface-layer">
+
+                            <div class="stratified-mini-cell squamous-surface-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell squamous-surface-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell squamous-surface-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell squamous-surface-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell squamous-surface-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Middle Layer -->
+
+                        <div class="stratified-mini-layer squamous-middle-layer">
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Basal Layer -->
+
+                        <div class="stratified-mini-layer squamous-basal-layer">
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Basement Membrane -->
+
+                        <div class="stratified-mini-basement-membrane">
+                            Basement Membrane
+                        </div>
+
+
+                        <!-- Connective Tissue -->
+
+                        <div class="stratified-mini-connective-tissue">
+                            Connective tissue
+                        </div>
+
+                    </div>
+
+
+                    <div class="stratified-mini-diagram-hint">
+                        👆 Tap diagram to focus on the multiple cell layers
+                    </div>
+
+                </div>
+
+
+                <!-- Details -->
+
+                <div class="stratified-epi-detail-row">
+
+                    <strong>🔬 Structure</strong>
+
+                    <span>
+                        Multiple layers with flattened cells at the surface
+                    </span>
+
+                </div>
+
+
+                <div class="stratified-epi-detail-row">
+
+                    <strong>⚙️ Main function</strong>
+
+                    <span>
+                        Protection
+                    </span>
+
+                </div>
+
+
+                <div class="stratified-epi-detail-row">
+
+                    <strong>📌 Key point</strong>
+
+                    <span>
+                        Surface cells are flattened
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             TYPE 2 : STRATIFIED CUBOIDAL
+             ================================================= -->
+
+        <div
+            class="stratified-epi-type-card"
+            data-stratified-epi-toggle="cuboidal"
+        >
+
+            <div class="stratified-epi-type-header">
+
+                <div class="stratified-epi-type-icon">
+                    ▦
+                </div>
+
+                <div class="stratified-epi-type-text">
+
+                    <strong>
+                        Stratified Cuboidal
+                    </strong>
+
+                    <span>
+                        Multiple layers with cuboidal surface cells
+                    </span>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="stratified-epi-expand-btn"
+                    aria-expanded="false"
+                    aria-controls="stratified-epi-cuboidal-content"
+                >
+                    +
+                </button>
+
+            </div>
+
+
+            <div
+                class="stratified-epi-type-content"
+                id="stratified-epi-cuboidal-content"
+                hidden
+            >
+
+                <!-- Mini Diagram -->
+
+                <div
+                    class="stratified-epi-mini-diagram"
+                    data-stratified-mini-diagram="cuboidal"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Tap to focus on stratified cuboidal epithelium"
+                >
+
+                    <div class="stratified-mini-diagram-title">
+                        Cell Layers
+                    </div>
+
+                    <div class="stratified-mini-stage">
+
+                        <div class="stratified-mini-apical-label">
+                            Apical surface
+                        </div>
+
+
+                        <!-- Surface Layer -->
+
+                        <div class="stratified-mini-layer cuboidal-surface-layer">
+
+                            <div class="stratified-mini-cell cuboidal-surface-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell cuboidal-surface-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell cuboidal-surface-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell cuboidal-surface-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell cuboidal-surface-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Middle Layer -->
+
+                        <div class="stratified-mini-layer cuboidal-middle-layer">
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Basal Layer -->
+
+                        <div class="stratified-mini-layer cuboidal-basal-layer">
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="stratified-mini-basement-membrane">
+                            Basement Membrane
+                        </div>
+
+
+                        <div class="stratified-mini-connective-tissue">
+                            Connective tissue
+                        </div>
+
+                    </div>
+
+
+                    <div class="stratified-mini-diagram-hint">
+                        👆 Tap diagram to focus on the surface cell shape
+                    </div>
+
+                </div>
+
+
+                <div class="stratified-epi-detail-row">
+
+                    <strong>🔬 Structure</strong>
+
+                    <span>
+                        Multiple layers with cuboidal cells at the surface
+                    </span>
+
+                </div>
+
+
+                <div class="stratified-epi-detail-row">
+
+                    <strong>📍 Location</strong>
+
+                    <span>
+                        Ducts of certain glands
+                    </span>
+
+                </div>
+
+
+                <div class="stratified-epi-detail-row">
+
+                    <strong>⚙️ Main function</strong>
+
+                    <span>
+                        Protection
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             TYPE 3 : STRATIFIED COLUMNAR
+             ================================================= -->
+
+        <div
+            class="stratified-epi-type-card"
+            data-stratified-epi-toggle="columnar"
+        >
+
+            <div class="stratified-epi-type-header">
+
+                <div class="stratified-epi-type-icon">
+                    ▥
+                </div>
+
+                <div class="stratified-epi-type-text">
+
+                    <strong>
+                        Stratified Columnar
+                    </strong>
+
+                    <span>
+                        Multiple layers with column-shaped surface cells
+                    </span>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="stratified-epi-expand-btn"
+                    aria-expanded="false"
+                    aria-controls="stratified-epi-columnar-content"
+                >
+                    +
+                </button>
+
+            </div>
+
+
+            <div
+                class="stratified-epi-type-content"
+                id="stratified-epi-columnar-content"
+                hidden
+            >
+
+                <!-- Mini Diagram -->
+
+                <div
+                    class="stratified-epi-mini-diagram"
+                    data-stratified-mini-diagram="columnar"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Tap to focus on stratified columnar epithelium"
+                >
+
+                    <div class="stratified-mini-diagram-title">
+                        Cell Layers
+                    </div>
+
+                    <div class="stratified-mini-stage">
+
+                        <div class="stratified-mini-apical-label">
+                            Apical surface
+                        </div>
+
+
+                        <!-- Surface Layer -->
+
+                        <div class="stratified-mini-layer columnar-surface-layer">
+
+                            <div class="stratified-mini-cell columnar-surface-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell columnar-surface-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell columnar-surface-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell columnar-surface-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell columnar-surface-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Middle Layer -->
+
+                        <div class="stratified-mini-layer columnar-middle-layer">
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Basal Layer -->
+
+                        <div class="stratified-mini-layer columnar-basal-layer">
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                            <div class="stratified-mini-cell">
+                                <span class="stratified-mini-nucleus"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="stratified-mini-basement-membrane">
+                            Basement Membrane
+                        </div>
+
+
+                        <div class="stratified-mini-connective-tissue">
+                            Connective tissue
+                        </div>
+
+                    </div>
+
+
+                    <div class="stratified-mini-diagram-hint">
+                        👆 Tap diagram to focus on the surface cell shape
+                    </div>
+
+                </div>
+
+
+                <div class="stratified-epi-detail-row">
+
+                    <strong>🔬 Structure</strong>
+
+                    <span>
+                        Multiple layers with column-shaped surface cells
+                    </span>
+
+                </div>
+
+
+                <div class="stratified-epi-detail-row">
+
+                    <strong>📍 Location</strong>
+
+                    <span>
+                        Some larger ducts and specialized epithelial regions
+                    </span>
+
+                </div>
+
+
+                <div class="stratified-epi-detail-row">
+
+                    <strong>📌 Key point</strong>
+
+                    <span>
+                        Uncommon type of stratified epithelium
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             TYPE 4 : TRANSITIONAL / UROTHELIUM
+             ================================================= -->
+
+        <div
+            class="stratified-epi-type-card"
+            data-stratified-epi-toggle="transitional"
+        >
+
+            <div class="stratified-epi-type-header">
+
+                <div class="stratified-epi-type-icon">
+                    ◯
+                </div>
+
+                <div class="stratified-epi-type-text">
+
+                    <strong>
+                        Transitional Epithelium
+                    </strong>
+
+                    <span>
+                        Surface cells change shape during stretching
+                    </span>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="stratified-epi-expand-btn"
+                    aria-expanded="false"
+                    aria-controls="stratified-epi-transitional-content"
+                >
+                    +
+                </button>
+
+            </div>
+
+
+            <div
+                class="stratified-epi-type-content"
+                id="stratified-epi-transitional-content"
+                hidden
+            >
+
+                <!-- Stretching Diagram -->
+
+                <div
+                    class="stratified-epi-mini-diagram transitional-mini-diagram"
+                    data-stratified-mini-diagram="transitional"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Tap to show transitional epithelium stretching"
+                >
+
+                    <div class="stratified-mini-diagram-title">
+                        Stretching Ability
+                    </div>
+
+
+                    <div class="transitional-mini-stage">
+
+
+                        <!-- Relaxed State -->
+
+                        <div class="transitional-state transitional-relaxed">
+
+                            <div class="transitional-state-label">
+                                Before Stretch
+                            </div>
+
+                            <div class="transitional-cell-layer">
+
+                                <div class="transitional-cell dome-cell">
+                                    <span class="transitional-nucleus"></span>
+                                </div>
+
+                                <div class="transitional-cell dome-cell">
+                                    <span class="transitional-nucleus"></span>
+                                </div>
+
+                                <div class="transitional-cell dome-cell">
+                                    <span class="transitional-nucleus"></span>
+                                </div>
+
+                                <div class="transitional-cell dome-cell">
+                                    <span class="transitional-nucleus"></span>
+                                </div>
+
+                                <div class="transitional-cell dome-cell">
+                                    <span class="transitional-nucleus"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Arrow -->
+
+                        <div class="transitional-stretch-arrow">
+                            ↕
+                        </div>
+
+
+                        <!-- Stretched State -->
+
+                        <div class="transitional-state transitional-stretched">
+
+                            <div class="transitional-state-label">
+                                After Stretch
+                            </div>
+
+                            <div class="transitional-cell-layer">
+
+                                <div class="transitional-cell stretched-cell">
+                                    <span class="transitional-nucleus"></span>
+                                </div>
+
+                                <div class="transitional-cell stretched-cell">
+                                    <span class="transitional-nucleus"></span>
+                                </div>
+
+                                <div class="transitional-cell stretched-cell">
+                                    <span class="transitional-nucleus"></span>
+                                </div>
+
+                                <div class="transitional-cell stretched-cell">
+                                    <span class="transitional-nucleus"></span>
+                                </div>
+
+                                <div class="transitional-cell stretched-cell">
+                                    <span class="transitional-nucleus"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stratified-mini-diagram-hint">
+                        👆 Tap diagram to visualize stretching
+                    </div>
+
+                </div>
+
+
+                <div class="stratified-epi-detail-row">
+
+                    <strong>🔬 Special feature</strong>
+
+                    <span>
+                        Can stretch and return to its original shape
+                    </span>
+
+                </div>
+
+
+                <div class="stratified-epi-detail-row">
+
+                    <strong>📍 Location</strong>
+
+                    <span>
+                        Urinary bladder, ureters, part of the urethra,
+                        and renal pelvis
+                    </span>
+
+                </div>
+
+
+                <div class="stratified-epi-detail-row">
+
+                    <strong>⚙️ Main functions</strong>
+
+                    <span>
+                        Stretching, protection, and prevention of urine leakage
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         LOCATION
+         ===================================================== -->
+
+    <h3>📍 Location</h3>
+
+    <ul class="lesson-list">
+
+        <li>🖐️ Skin (Epidermis)</li>
+
+        <li>👄 Mouth cavity</li>
+
+        <li>🍽️ Esophagus</li>
+
+        <li>👁️ Part of the eye</li>
+
+        <li>👩 Female vagina</li>
+
+    </ul>
+
+
+    <!-- =====================================================
+         MAIN FUNCTIONS
+         ===================================================== -->
+
+    <h3>⚙️ Main Functions</h3>
+
+    <ul class="lesson-list">
+
+        <li>✅ Protects underlying tissues</li>
+
+        <li>✅ Prevents dehydration</li>
+
+        <li>✅ Resists friction and wear</li>
+
+        <li>✅ Acts as a barrier against microorganisms</li>
+
+    </ul>
+
+
+    <!-- =====================================================
+         CLINICAL CORRELATION
+         ===================================================== -->
+
+    <div class="clinical-box">
+
+        <h3>🏥 Clinical Correlation</h3>
+
+        <p>
+            The outer layer of the skin is stratified squamous
+            epithelium, protecting the body from injury, infection,
+            and water loss.
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         EXAM TIP
+         ===================================================== -->
+
+    <div class="exam-tip">
+
+        <h3>💡 Exam Tip</h3>
+
+        <p>
+            <strong>
+                Stratified = Several Layers = Protection
+            </strong>
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         SUMMARY
+         ===================================================== -->
+
+    <div class="summary-box">
+
+        <h3>📌 At a Glance</h3>
+
+        <ul>
+
+            <li>
+                Layers → Many
+            </li>
+
+            <li>
+                Main Function → Protection
+            </li>
+
+            <li>
+                Best Example → Skin
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
 
 <div class="clinical-box">
 
@@ -1296,22 +3221,435 @@ Many cells contain <b>cilia</b> and <b>goblet cells</b>.
 <li>✅ Cilia move mucus toward the throat</li>
 </ul>
 
-<div class="diagram-placeholder">
+<!-- =========================================================
+     PSEUDOSTRATIFIED EPITHELIUM
+     INTERACTIVE DIAGRAM
+     ========================================================= -->
 
-<h3>🖼️ Diagram Placeholder</h3>
+<div
+    class="pseudostratified-diagram"
+    id="pseudostratifiedDiagram"
+>
 
-<pre>
+    <!-- Diagram Header -->
 
-│││││││││
-● ● ● ● ●
-──────────
+    <div class="pseudo-diagram-header">
 
-Appears multilayered
-Actually one layer
+        <div class="pseudo-diagram-title">
+            🔬 Pseudostratified Columnar Epithelium
+        </div>
 
-</pre>
+        <div class="pseudo-diagram-subtitle">
+            One layer • Nuclei at different levels • Appears multilayered
+        </div>
 
-<p>📌 Pseudostratified epithelium diagram will be inserted here.</p>
+    </div>
+
+
+    <!-- =====================================================
+         MAIN DIAGRAM
+         ===================================================== -->
+
+    <div
+        class="pseudo-interactive-diagram"
+        data-pseudo-diagram
+        role="button"
+        tabindex="0"
+        aria-label="Interactive pseudostratified epithelium diagram"
+    >
+
+        <div class="pseudo-stage">
+
+
+            <!-- Lumen -->
+
+            <div class="pseudo-lumen">
+
+                <span class="pseudo-lumen-label">
+                    Lumen
+                </span>
+
+            </div>
+
+
+            <!-- Mucus -->
+
+            <div
+                class="pseudo-mucus-layer"
+                data-pseudo-feature="mucus"
+            >
+                Mucus
+            </div>
+
+
+            <!-- =================================================
+                 CILIA
+                 ================================================= -->
+
+            <div
+                class="pseudo-cilia"
+                data-pseudo-feature="cilia"
+                aria-label="Cilia"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+
+            <!-- =================================================
+                 EPITHELIAL CELL LAYER
+                 ================================================= -->
+
+            <div class="pseudo-cell-layer">
+
+
+                <!-- Ciliated Columnar Cell 1 -->
+
+                <div
+                    class="pseudo-cell pseudo-columnar-cell"
+                    data-pseudo-feature="ciliated-cell"
+                >
+
+                    <span class="pseudo-cell-nucleus nucleus-high"></span>
+
+                </div>
+
+
+                <!-- Ciliated Columnar Cell 2 -->
+
+                <div
+                    class="pseudo-cell pseudo-columnar-cell"
+                    data-pseudo-feature="ciliated-cell"
+                >
+
+                    <span class="pseudo-cell-nucleus nucleus-low"></span>
+
+                </div>
+
+
+                <!-- Goblet Cell -->
+
+                <div
+                    class="pseudo-cell pseudo-goblet-cell"
+                    data-pseudo-feature="goblet-cell"
+                >
+
+                    <span class="pseudo-goblet-opening"></span>
+
+                    <span class="pseudo-cell-nucleus nucleus-low"></span>
+
+                </div>
+
+
+                <!-- Ciliated Columnar Cell 3 -->
+
+                <div
+                    class="pseudo-cell pseudo-columnar-cell"
+                    data-pseudo-feature="ciliated-cell"
+                >
+
+                    <span class="pseudo-cell-nucleus nucleus-middle"></span>
+
+                </div>
+
+
+                <!-- Ciliated Columnar Cell 4 -->
+
+                <div
+                    class="pseudo-cell pseudo-columnar-cell"
+                    data-pseudo-feature="ciliated-cell"
+                >
+
+                    <span class="pseudo-cell-nucleus nucleus-high"></span>
+
+                </div>
+
+
+                <!-- Goblet Cell 2 -->
+
+                <div
+                    class="pseudo-cell pseudo-goblet-cell"
+                    data-pseudo-feature="goblet-cell"
+                >
+
+                    <span class="pseudo-goblet-opening"></span>
+
+                    <span class="pseudo-cell-nucleus nucleus-middle"></span>
+
+                </div>
+
+
+                <!-- Ciliated Columnar Cell 5 -->
+
+                <div
+                    class="pseudo-cell pseudo-columnar-cell"
+                    data-pseudo-feature="ciliated-cell"
+                >
+
+                    <span class="pseudo-cell-nucleus nucleus-low"></span>
+
+                </div>
+
+
+                <!-- Ciliated Columnar Cell 6 -->
+
+                <div
+                    class="pseudo-cell pseudo-columnar-cell"
+                    data-pseudo-feature="ciliated-cell"
+                >
+
+                    <span class="pseudo-cell-nucleus nucleus-middle"></span>
+
+                </div>
+
+
+                <!-- Basal Cell 1 -->
+
+                <div
+                    class="pseudo-cell pseudo-basal-cell"
+                    data-pseudo-feature="basal-cell"
+                >
+
+                    <span class="pseudo-cell-nucleus nucleus-basal"></span>
+
+                </div>
+
+
+                <!-- Basal Cell 2 -->
+
+                <div
+                    class="pseudo-cell pseudo-basal-cell"
+                    data-pseudo-feature="basal-cell"
+                >
+
+                    <span class="pseudo-cell-nucleus nucleus-basal"></span>
+
+                </div>
+
+
+                <!-- Basal Cell 3 -->
+
+                <div
+                    class="pseudo-cell pseudo-basal-cell"
+                    data-pseudo-feature="basal-cell"
+                >
+
+                    <span class="pseudo-cell-nucleus nucleus-basal"></span>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 BASEMENT MEMBRANE
+                 ================================================= -->
+
+            <div
+                class="pseudo-basement-membrane"
+                data-pseudo-feature="basement-membrane"
+            >
+                Basement Membrane
+            </div>
+
+
+            <!-- =================================================
+                 CONNECTIVE TISSUE
+                 ================================================= -->
+
+            <div class="pseudo-connective-tissue">
+
+                <span>
+                    Connective Tissue
+                </span>
+
+            </div>
+
+
+            <!-- =================================================
+                 BASEMENT CONTACT GUIDE
+                 ================================================= -->
+
+            <div
+                class="pseudo-contact-guide"
+                aria-hidden="true"
+            >
+            </div>
+
+
+            <!-- =================================================
+                 FEATURE LABELS
+                 ================================================= -->
+
+            <div class="pseudo-label pseudo-label-cilia">
+                Cilia
+            </div>
+
+            <div class="pseudo-label pseudo-label-nuclei">
+                Nuclei at different levels
+            </div>
+
+            <div class="pseudo-label pseudo-label-goblet">
+                Goblet cell
+            </div>
+
+            <div class="pseudo-label pseudo-label-basal">
+                Basal cells
+            </div>
+
+            <div class="pseudo-label pseudo-label-basement">
+                Basement membrane
+            </div>
+
+
+        </div>
+
+
+        <!-- =================================================
+             INTERACTION HINT
+             ================================================= -->
+
+        <div class="pseudo-diagram-hint">
+            👆 Tap the diagram to explore the cell features
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         KEY CONCEPT
+         ===================================================== -->
+
+    <div class="pseudo-key-concept">
+
+        <strong>
+            💡 Why "Pseudostratified"?
+        </strong>
+
+        <span>
+            All cells contact the basement membrane, but their nuclei
+            lie at different levels, making the tissue appear
+            multilayered.
+        </span>
+
+    </div>
+
+
+    <!-- =====================================================
+         FEATURE BUTTONS
+         ===================================================== -->
+
+    <div class="pseudo-feature-controls">
+
+        <button
+            type="button"
+            class="pseudo-feature-btn"
+            data-pseudo-focus="cilia"
+        >
+            🪶 Cilia
+        </button>
+
+        <button
+            type="button"
+            class="pseudo-feature-btn"
+            data-pseudo-focus="goblet-cell"
+        >
+            🫧 Goblet Cell
+        </button>
+
+        <button
+            type="button"
+            class="pseudo-feature-btn"
+            data-pseudo-focus="basal-cell"
+        >
+            🔹 Basal Cells
+        </button>
+
+        <button
+            type="button"
+            class="pseudo-feature-btn"
+            data-pseudo-focus="nuclei"
+        >
+            🟣 Nuclei
+        </button>
+
+        <button
+            type="button"
+            class="pseudo-feature-btn"
+            data-pseudo-focus="basement-membrane"
+        >
+            🟨 Basement Membrane
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         STRUCTURE
+         ===================================================== -->
+
+    <div class="pseudo-detail-row">
+
+        <strong>🔬 Structure</strong>
+
+        <span>
+            A single layer of cells with nuclei positioned at
+            different heights.
+        </span>
+
+    </div>
+
+
+    <div class="pseudo-detail-row">
+
+        <strong>🧠 Key identifying feature</strong>
+
+        <span>
+            All epithelial cells contact the basement membrane,
+            even though the tissue appears multilayered.
+        </span>
+
+    </div>
+
+
+    <div class="pseudo-detail-row">
+
+        <strong>🪶 Specialization</strong>
+
+        <span>
+            The respiratory form commonly has cilia and goblet cells.
+        </span>
+
+    </div>
+
+
+    <div class="pseudo-detail-row">
+
+        <strong>⚙️ Main function</strong>
+
+        <span>
+            Mucus secretion and mucociliary clearance of inhaled
+            particles.
+        </span>
+
+    </div>
 
 </div>
 
@@ -1367,7 +3705,7 @@ This allows organs of the urinary system to expand when filled with urine.
 <h3>📍 Location</h3>
 
 <ul>
-<li>💧 Urinary bladder</li>
+<li>���������� Urinary bladder</li>
 <li>🟡 Ureters</li>
 <li>🚰 Part of the urethra</li>
 <li>🩺 Renal pelvis</li>
@@ -1381,23 +3719,449 @@ This allows organs of the urinary system to expand when filled with urine.
 <li>✅ Prevents leakage of urine</li>
 </ul>
 
-<div class="diagram-placeholder">
+<!-- =========================================================
+     TRANSITIONAL EPITHELIUM
+     RICH INTERACTIVE DIAGRAM
+     ========================================================= -->
 
-<h3>🖼️ Diagram Placeholder</h3>
+<div
+    class="transitional-rich-diagram"
+    id="transitionalRichDiagram"
+>
 
-<pre>
+    <!-- Header -->
 
-Before Stretch
+    <div class="transitional-rich-header">
 
-◯◯◯◯◯
+        <div class="transitional-rich-title">
+            🔬 Transitional Epithelium
+        </div>
 
-After Stretch
+        <div class="transitional-rich-subtitle">
+            Urothelium • Shape changes with stretching
+        </div>
 
-▭▭▭▭▭
+    </div>
 
-</pre>
 
-<p>📌 Transitional epithelium diagram will be inserted here.</p>
+    <!-- Main simulator -->
+
+    <div
+        class="transitional-rich-simulator"
+        data-transitional-simulator
+        role="button"
+        tabindex="0"
+        aria-label="Tap to switch between relaxed and stretched transitional epithelium"
+        aria-pressed="false"
+    >
+
+        <!-- State labels -->
+
+        <div class="transitional-rich-state-label relaxed-label">
+            RELAXED
+        </div>
+
+        <div class="transitional-rich-state-label stretched-label">
+            STRETCHED
+        </div>
+
+
+        <!-- Tissue stage -->
+
+        <div class="transitional-rich-stage">
+
+
+            <!-- =================================================
+                 RELAXED TISSUE
+                 ================================================= -->
+
+            <div
+                class="transitional-rich-tissue transitional-rich-relaxed"
+            >
+
+                <!-- Surface / umbrella cells -->
+
+                <div class="transitional-rich-layer surface-layer">
+
+                    <div
+                        class="tr-cell umbrella-cell"
+                        data-tr-feature="surface"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell umbrella-cell"
+                        data-tr-feature="surface"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell umbrella-cell"
+                        data-tr-feature="surface"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell umbrella-cell"
+                        data-tr-feature="surface"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell umbrella-cell"
+                        data-tr-feature="surface"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                </div>
+
+
+                <!-- Intermediate cells -->
+
+                <div class="transitional-rich-layer intermediate-layer">
+
+                    <div
+                        class="tr-cell intermediate-cell"
+                        data-tr-feature="intermediate"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell intermediate-cell"
+                        data-tr-feature="intermediate"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell intermediate-cell"
+                        data-tr-feature="intermediate"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell intermediate-cell"
+                        data-tr-feature="intermediate"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell intermediate-cell"
+                        data-tr-feature="intermediate"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                </div>
+
+
+                <!-- Basal cells -->
+
+                <div class="transitional-rich-layer basal-layer">
+
+                    <div
+                        class="tr-cell basal-cell"
+                        data-tr-feature="basal"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell basal-cell"
+                        data-tr-feature="basal"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell basal-cell"
+                        data-tr-feature="basal"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell basal-cell"
+                        data-tr-feature="basal"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell basal-cell"
+                        data-tr-feature="basal"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                </div>
+
+
+                <!-- Basement membrane -->
+
+                <div
+                    class="transitional-rich-basement"
+                    data-tr-feature="basement"
+                >
+                    Basement membrane
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 STRETCHED TISSUE
+                 ================================================= -->
+
+            <div
+                class="transitional-rich-tissue transitional-rich-stretched"
+            >
+
+                <!-- Surface / umbrella cells -->
+
+                <div class="transitional-rich-layer surface-layer">
+
+                    <div
+                        class="tr-cell umbrella-cell"
+                        data-tr-feature="surface"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell umbrella-cell"
+                        data-tr-feature="surface"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell umbrella-cell"
+                        data-tr-feature="surface"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell umbrella-cell"
+                        data-tr-feature="surface"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell umbrella-cell"
+                        data-tr-feature="surface"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                </div>
+
+
+                <!-- Intermediate cells -->
+
+                <div class="transitional-rich-layer intermediate-layer">
+
+                    <div
+                        class="tr-cell intermediate-cell"
+                        data-tr-feature="intermediate"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell intermediate-cell"
+                        data-tr-feature="intermediate"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell intermediate-cell"
+                        data-tr-feature="intermediate"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell intermediate-cell"
+                        data-tr-feature="intermediate"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell intermediate-cell"
+                        data-tr-feature="intermediate"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                </div>
+
+
+                <!-- Basal cells -->
+
+                <div class="transitional-rich-layer basal-layer">
+
+                    <div
+                        class="tr-cell basal-cell"
+                        data-tr-feature="basal"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell basal-cell"
+                        data-tr-feature="basal"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell basal-cell"
+                        data-tr-feature="basal"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell basal-cell"
+                        data-tr-feature="basal"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                    <div
+                        class="tr-cell basal-cell"
+                        data-tr-feature="basal"
+                    >
+                        <span class="tr-nucleus"></span>
+                    </div>
+
+                </div>
+
+
+                <!-- Basement membrane -->
+
+                <div
+                    class="transitional-rich-basement"
+                    data-tr-feature="basement"
+                >
+                    Basement membrane
+                </div>
+
+            </div>
+
+
+            <!-- Stretch indicator -->
+
+            <div class="transitional-rich-stretch-indicator">
+
+                <span class="stretch-arrow">↕</span>
+
+                <span class="stretch-text">
+                    Tissue stretches
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Diagram hint -->
+
+        <div class="transitional-rich-hint">
+            👆 Tap the diagram to simulate bladder filling
+        </div>
+
+    </div>
+
+
+    <!-- Feature controls -->
+
+    <div class="transitional-rich-controls">
+
+        <button
+            type="button"
+            class="transitional-rich-btn is-active"
+            data-tr-focus="surface"
+            aria-pressed="false"
+        >
+            🟣 Surface Cells
+        </button>
+
+        <button
+            type="button"
+            class="transitional-rich-btn"
+            data-tr-focus="intermediate"
+            aria-pressed="false"
+        >
+            🔵 Intermediate
+        </button>
+
+        <button
+            type="button"
+            class="transitional-rich-btn"
+            data-tr-focus="basal"
+            aria-pressed="false"
+        >
+            🟤 Basal Cells
+        </button>
+
+        <button
+            type="button"
+            class="transitional-rich-btn"
+            data-tr-focus="basement"
+            aria-pressed="false"
+        >
+            🟨 Basement Membrane
+        </button>
+
+    </div>
+
+
+    <!-- State explanation -->
+
+    <div class="transitional-rich-explanation">
+
+        <div class="tr-explanation-relaxed">
+            <strong>Relaxed bladder</strong>
+            <span>
+                Surface cells are rounded and dome-shaped.
+            </span>
+        </div>
+
+        <div class="tr-explanation-stretched">
+            <strong>Filled bladder</strong>
+            <span>
+                Surface cells flatten as the tissue expands.
+            </span>
+        </div>
+
+    </div>
+
+
+    <!-- Key concept -->
+
+    <div class="transitional-rich-key">
+
+        💡 <strong>Key idea:</strong>
+
+        Transitional epithelium changes the shape of its
+        surface cells while maintaining a protective lining.
+
+    </div>
 
 </div>
 
@@ -1895,21 +4659,22 @@ class="btn">
 
     </section>                                                    </section>
 
-<nav class="lesson-navigation">
 
-<a href="../tissues/">
 
-⬅ Previous Lesson
+<!-- =========================================
+     PAGE UP BUTTON
+========================================= -->
 
-</a>
+<button
+    type="button"
+    class="page-scroll-btn page-up-btn"
+    aria-label="Go to top of lesson"
+    onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+>
+    ↑
+</button>
 
-<a href="../connective/">
-
-Next Lesson ➡
-
-</a>
-
-</nav>
+<div id="lesson-bottom"></div>
 
 </main>
 
@@ -1917,6 +4682,987 @@ Next Lesson ➡
 
 <script src="../../js/diagram-engine.js"></script>
 
+<script>
+/* =========================================================
+   HUMAN BODY DISTRIBUTION
+   Interactive Markers + Scroll Reveal
+   ========================================================= */
+
+(() => {
+
+    const bodyDiagram =
+        document.getElementById("diagram-body");
+
+    if (!bodyDiagram) return;
+
+
+    /* =====================================================
+       LOCATION DATA
+       ===================================================== */
+
+    const bodyLocations = {
+
+        skin: {
+            title: "Skin",
+            icon: "🧍",
+            description:
+                "Epithelial tissue protects the outer surface of the body.",
+            function:
+                "Protection"
+        },
+
+        mouth: {
+            title: "Mouth",
+            icon: "👄",
+            description:
+                "Epithelial tissue lines the inside of the mouth.",
+            function:
+                "Protection"
+        },
+
+        nose: {
+            title: "Nose",
+            icon: "👃",
+            description:
+                "Epithelial tissue helps line and protect the nasal passages.",
+            function:
+                "Protection & Filtration"
+        },
+
+        lungs: {
+            title: "Lungs",
+            icon: "🫁",
+            description:
+                "Epithelial tissue lines the respiratory surfaces.",
+            function:
+                "Gas Exchange"
+        },
+
+        stomach: {
+            title: "Stomach",
+            icon: "����️",
+            description:
+                "Epithelial tissue protects the stomach lining and supports secretion.",
+            function:
+                "Protection & Secretion"
+        },
+
+        intestine: {
+            title: "Intestine",
+            icon: "🧬",
+            description:
+                "Epithelial tissue lines the intestine and supports absorption.",
+            function:
+                "Absorption"
+        },
+
+        kidney: {
+            title: "Kidney",
+            icon: "🫘",
+            description:
+                "Epithelial tissue lines parts of the kidney and supports filtration.",
+            function:
+                "Filtration & Reabsorption"
+        },
+
+        "blood-vessels": {
+            title: "Blood Vessels",
+            icon: "🩸",
+            description:
+                "Epithelial tissue forms the inner lining of blood vessels.",
+            function:
+                "Lining"
+        }
+
+    };
+
+
+    /* =====================================================
+       ELEMENTS
+       ===================================================== */
+
+    const markers =
+        bodyDiagram.querySelectorAll(".body-marker");
+
+    const infoTitle =
+        bodyDiagram.querySelector(".body-info-content strong");
+
+    const infoText =
+        bodyDiagram.querySelector(".body-info-content span");
+
+    const infoIcon =
+        bodyDiagram.querySelector(".body-info-icon");
+
+
+    /* =====================================================
+       UPDATE INFORMATION CARD
+       ===================================================== */
+
+    function showLocation(locationKey) {
+
+        const data =
+            bodyLocations[locationKey];
+
+        if (!data) return;
+
+
+        /* Update information */
+
+        if (infoTitle) {
+            infoTitle.textContent =
+                data.title;
+        }
+
+        if (infoText) {
+            infoText.innerHTML =
+                `${data.description}<br><strong>${data.function}</strong>`;
+        }
+
+        if (infoIcon) {
+            infoIcon.textContent =
+                data.icon;
+        }
+
+
+        /* Selected marker */
+
+        markers.forEach(marker => {
+
+            marker.classList.remove("selected");
+
+            if (
+                marker.dataset.location ===
+                locationKey
+            ) {
+                marker.classList.add("selected");
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       MARKER CLICK EVENTS
+       ===================================================== */
+
+    markers.forEach(marker => {
+
+        const locationKey =
+            marker.dataset.location;
+
+        if (!bodyLocations[locationKey]) {
+            return;
+        }
+
+
+        marker.addEventListener("click", () => {
+
+            showLocation(locationKey);
+
+        });
+
+
+        /* Keyboard accessibility */
+
+        marker.setAttribute(
+            "tabindex",
+            "0"
+        );
+
+        marker.setAttribute(
+            "role",
+            "button"
+        );
+
+
+        marker.addEventListener(
+            "keydown",
+            event => {
+
+                if (
+                    event.key === "Enter" ||
+                    event.key === " "
+                ) {
+
+                    event.preventDefault();
+
+                    showLocation(locationKey);
+
+                }
+
+            }
+        );
+
+    });
+
+</script>
+
+
+<script>
+   
+/* =========================================================
+   HUMAN BODY DISTRIBUTION
+   CLEAN INTERACTION + SCROLL ANIMATION PATCH
+   ========================================================= */
+
+(() => {
+
+    const bodyDiagram =
+        document.getElementById("diagram-body");
+
+    if (!bodyDiagram) return;
+
+
+    /* =====================================================
+       1. ANIMATION CSS
+       ===================================================== */
+
+    if (!document.getElementById("human-body-animation-css")) {
+
+        const style = document.createElement("style");
+
+        style.id = "human-body-animation-css";
+
+        style.textContent = `
+
+        /* -----------------------------------------------
+           Initial state
+           ----------------------------------------------- */
+
+        #diagram-body .human-body-stage {
+            opacity: 0;
+            transform:
+                translateY(28px)
+                scale(0.96);
+            transform-origin: center center;
+
+            transition:
+                opacity 0.7s ease,
+                transform 0.8s cubic-bezier(.22,.61,.36,1);
+        }
+
+
+        /* -----------------------------------------------
+           Visible state
+           ----------------------------------------------- */
+
+        #diagram-body.is-visible .human-body-stage {
+            opacity: 1;
+
+            transform:
+                translateY(0)
+                scale(1);
+        }
+
+
+        /* -----------------------------------------------
+           Body parts
+           ----------------------------------------------- */
+
+        #diagram-body .body-head,
+        #diagram-body .body-neck,
+        #diagram-body .body-torso,
+        #diagram-body .body-left-arm,
+        #diagram-body .body-right-arm,
+        #diagram-body .body-left-leg,
+        #diagram-body .body-right-leg {
+
+            opacity: 0;
+
+            transform-box: fill-box;
+            transform-origin: center;
+
+            transform:
+                translateY(18px)
+                scale(0.96);
+
+            transition:
+                opacity 0.45s ease,
+                transform 0.55s cubic-bezier(.22,.61,.36,1);
+        }
+
+
+        #diagram-body.is-visible .body-head {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            transition-delay: 0.10s;
+        }
+
+
+        #diagram-body.is-visible .body-neck {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            transition-delay: 0.16s;
+        }
+
+
+        #diagram-body.is-visible .body-torso {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            transition-delay: 0.22s;
+        }
+
+
+        #diagram-body.is-visible .body-left-arm,
+        #diagram-body.is-visible .body-right-arm {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            transition-delay: 0.30s;
+        }
+
+
+        #diagram-body.is-visible .body-left-leg,
+        #diagram-body.is-visible .body-right-leg {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            transition-delay: 0.38s;
+        }
+
+
+        /* -----------------------------------------------
+           Markers
+           ----------------------------------------------- */
+
+        #diagram-body .body-marker {
+
+            opacity: 0;
+
+            transform-box: fill-box;
+            transform-origin: center;
+
+            transform:
+                scale(0.25);
+
+            transition:
+                opacity 0.35s ease,
+                transform 0.45s cubic-bezier(.34,1.56,.64,1);
+        }
+
+
+        #diagram-body.is-visible .body-marker {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+
+        #diagram-body.is-visible
+        .body-marker:nth-of-type(1) {
+            transition-delay: 0.50s;
+        }
+
+
+        #diagram-body.is-visible
+        .body-marker:nth-of-type(2) {
+            transition-delay: 0.56s;
+        }
+
+
+        #diagram-body.is-visible
+        .body-marker:nth-of-type(3) {
+            transition-delay: 0.62s;
+        }
+
+
+        #diagram-body.is-visible
+        .body-marker:nth-of-type(4) {
+            transition-delay: 0.68s;
+        }
+
+
+        #diagram-body.is-visible
+        .body-marker:nth-of-type(5) {
+            transition-delay: 0.74s;
+        }
+
+
+        #diagram-body.is-visible
+        .body-marker:nth-of-type(6) {
+            transition-delay: 0.80s;
+        }
+
+
+        #diagram-body.is-visible
+        .body-marker:nth-of-type(7) {
+            transition-delay: 0.86s;
+        }
+
+
+        #diagram-body.is-visible
+        .body-marker:nth-of-type(8) {
+            transition-delay: 0.92s;
+        }
+
+
+        /* -----------------------------------------------
+           Selected marker
+           ----------------------------------------------- */
+
+        #diagram-body .body-marker.selected {
+
+            filter:
+                drop-shadow(
+                    0 0 7px rgba(139, 70, 220, 0.65)
+                );
+
+            transform: scale(1.25);
+
+            transition:
+                transform 0.2s ease,
+                filter 0.2s ease;
+        }
+
+
+        /* -----------------------------------------------
+           Information card
+           ----------------------------------------------- */
+
+        #diagram-body .body-location-info {
+
+            opacity: 0;
+
+            transform:
+                translateY(22px);
+
+            transition:
+                opacity 0.6s ease,
+                transform 0.65s ease;
+
+            transition-delay: 0.25s;
+        }
+
+
+        #diagram-body.is-visible
+        .body-location-info {
+
+            opacity: 1;
+
+            transform:
+                translateY(0);
+        }
+
+
+        /* -----------------------------------------------
+           Accessibility
+           ----------------------------------------------- */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            #diagram-body .human-body-stage,
+            #diagram-body .body-head,
+            #diagram-body .body-neck,
+            #diagram-body .body-torso,
+            #diagram-body .body-left-arm,
+            #diagram-body .body-right-arm,
+            #diagram-body .body-left-leg,
+            #diagram-body .body-right-leg,
+            #diagram-body .body-marker,
+            #diagram-body .body-location-info {
+
+                transition: none !important;
+
+                opacity: 1 !important;
+
+                transform:
+                    none !important;
+            }
+        }
+
+        `;
+
+        document.head.appendChild(style);
+    }
+
+
+    /* =====================================================
+       2. LOCATION DATA
+       ===================================================== */
+
+    const locations = {
+
+        skin: {
+            title: "Skin",
+            icon: "🧍",
+            description:
+                "Epithelial tissue protects the outer surface of the body.",
+            function:
+                "Protection"
+        },
+
+        mouth: {
+            title: "Mouth",
+            icon: "👄",
+            description:
+                "Epithelial tissue lines the inside of the mouth.",
+            function:
+                "Protection"
+        },
+
+        nose: {
+            title: "Nose",
+            icon: "👃",
+            description:
+                "Epithelial tissue helps line and protect the nasal passages.",
+            function:
+                "Protection & Filtration"
+        },
+
+        lungs: {
+            title: "Lungs",
+            icon: "🫁",
+            description:
+                "Epithelial tissue lines the respiratory surfaces.",
+            function:
+                "Gas Exchange"
+        },
+
+        stomach: {
+            title: "Stomach",
+            icon: "🍽️",
+            description:
+                "Epithelial tissue protects the stomach lining and supports secretion.",
+            function:
+                "Protection & Secretion"
+        },
+
+        intestine: {
+            title: "Intestine",
+            icon: "🧬",
+            description:
+                "Epithelial tissue lines the intestine and supports absorption.",
+            function:
+                "Absorption"
+        },
+
+        kidney: {
+            title: "Kidney",
+            icon: "🫘",
+            description:
+                "Epithelial tissue lines parts of the kidney and supports filtration.",
+            function:
+                "Filtration & Reabsorption"
+        },
+
+        "blood-vessels": {
+            title: "Blood Vessels",
+            icon: "🩸",
+            description:
+                "Epithelial tissue forms the inner lining of blood vessels.",
+            function:
+                "Lining"
+        }
+
+    };
+
+
+    /* =====================================================
+       3. ELEMENTS
+       ===================================================== */
+
+    const markers =
+        bodyDiagram.querySelectorAll(
+            ".body-marker"
+        );
+
+    const infoTitle =
+        bodyDiagram.querySelector(
+            ".body-info-content strong"
+        );
+
+    const infoText =
+        bodyDiagram.querySelector(
+            ".body-info-content span"
+        );
+
+    const infoIcon =
+        bodyDiagram.querySelector(
+            ".body-info-icon"
+        );
+
+
+    /* =====================================================
+       4. MARKER INFORMATION
+       ===================================================== */
+
+    function showLocation(key) {
+
+        const data = locations[key];
+
+        if (!data) return;
+
+
+        if (infoTitle) {
+            infoTitle.textContent =
+                data.title;
+        }
+
+
+        if (infoText) {
+
+            infoText.innerHTML =
+                `${data.description}
+                <br>
+                <strong>${data.function}</strong>`;
+        }
+
+
+        if (infoIcon) {
+            infoIcon.textContent =
+                data.icon;
+        }
+
+
+        markers.forEach(marker => {
+
+            marker.classList.toggle(
+                "selected",
+                marker.dataset.location === key
+            );
+
+        });
+
+    }
+
+
+    /* =====================================================
+       5. MARKER EVENTS
+       ===================================================== */
+
+    markers.forEach(marker => {
+
+        const key =
+            marker.dataset.location;
+
+        if (!locations[key]) return;
+
+
+        marker.addEventListener(
+            "click",
+            () => showLocation(key)
+        );
+
+
+        marker.setAttribute(
+            "tabindex",
+            "0"
+        );
+
+        marker.setAttribute(
+            "role",
+            "button"
+        );
+
+
+        marker.addEventListener(
+            "keydown",
+            event => {
+
+                if (
+                    event.key === "Enter" ||
+                    event.key === " "
+                ) {
+
+                    event.preventDefault();
+
+                    showLocation(key);
+                }
+
+            }
+        );
+
+    });
+
+
+    /* =====================================================
+       6. SCROLL ANIMATION
+       ===================================================== */
+
+    let animationTimer = null;
+
+
+    const observer =
+        new IntersectionObserver(
+            entries => {
+
+                entries.forEach(entry => {
+
+                    clearTimeout(
+                        animationTimer
+                    );
+
+
+                    if (entry.isIntersecting) {
+
+                        animationTimer =
+                            setTimeout(() => {
+
+                                bodyDiagram.classList.add(
+                                    "is-visible"
+                                );
+
+                            }, 120);
+
+
+                    } else {
+
+                        bodyDiagram.classList.remove(
+                            "is-visible"
+                        );
+
+
+                        markers.forEach(marker => {
+
+                            marker.classList.remove(
+                                "selected"
+                            );
+
+                        });
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.20
+            }
+        );
+
+
+    observer.observe(
+        bodyDiagram
+    );
+
+
+})();
+</script>
+
+<script>
+/* =========================================================
+   EPITHELIAL TISSUE STRUCTURE
+   Scroll Reveal Animation
+   Replays every time it enters the viewport
+   ========================================================= */
+
+(() => {
+
+    const diagram =
+        document.getElementById("epithelium-diagram");
+
+    if (!diagram) return;
+
+
+    let revealTimer = null;
+
+
+    const observer =
+        new IntersectionObserver(
+            entries => {
+
+                entries.forEach(entry => {
+
+                    clearTimeout(revealTimer);
+
+
+                    if (entry.isIntersecting) {
+
+                        /*
+                         * Small delay before animation starts
+                         */
+
+                        revealTimer = setTimeout(() => {
+
+                            diagram.classList.add(
+                                "is-visible"
+                            );
+
+                        }, 180);
+
+
+                    } else {
+
+                        /*
+                         * Remove class when diagram
+                         * leaves the viewport.
+                         *
+                         * This allows the animation
+                         * to replay on the next scroll.
+                         */
+
+                        diagram.classList.remove(
+                            "is-visible"
+                        );
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.20
+            }
+        );
+
+
+    observer.observe(diagram);
+
+})();
+</script>
+
+<script>
+/* =========================================================
+   EPITHELIAL TISSUE CLASSIFICATION
+   Scroll Reveal Animation
+   Replays every time it enters the viewport
+   ========================================================= */
+
+(() => {
+
+    const classificationDiagram =
+        document.getElementById("classification-diagram");
+
+    if (!classificationDiagram) return;
+
+    let classificationTimer = null;
+
+
+    const classificationObserver =
+        new IntersectionObserver(
+
+            entries => {
+
+                entries.forEach(entry => {
+
+                    clearTimeout(classificationTimer);
+
+
+                    if (entry.isIntersecting) {
+
+                        /*
+                         * Small delay before animation starts
+                         */
+                        classificationTimer = setTimeout(() => {
+
+                            classificationDiagram.classList.add(
+                                "is-visible"
+                            );
+
+                        }, 180);
+
+
+                    } else {
+
+                        /*
+                         * Remove the class when the diagram
+                         * leaves the viewport.
+                         *
+                         * This allows the animation to
+                         * replay on the next scroll.
+                         */
+
+                        classificationDiagram.classList.remove(
+                            "is-visible"
+                        );
+
+                    }
+
+                });
+
+            },
+
+            {
+                threshold: 0.20
+            }
+
+        );
+
+
+    classificationObserver.observe(
+        classificationDiagram
+    );
+
+})();
+</script>
+
+
 </body>
+<!-- =========================================
+     LESSON FOOTER
+========================================= -->
+
+<footer class="lesson-footer">
+
+    <div class="footer-content">
+
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                🧬
+            </div>
+
+            <div>
+
+                <h3>
+                    Anatomy Learning Hub
+                </h3>
+
+                <p>
+                    Interactive Anatomy Lessons
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <nav class="footer-navigation"
+             aria-label="Lesson navigation">
+
+            <a href="../tissues/">
+                📚 All Tissue Lessons
+            </a>
+
+            <a href="#table-of-contents">
+                📑 Table of Contents
+            </a>
+
+            <a href="#quick-revision">
+                📌 Quick Revision
+            </a>
+
+        </nav>
+
+
+        <div class="footer-lesson-info">
+
+            <p>
+                <strong>Lesson 2.1  -  Epithelial Tissue
+            </p>
+
+        </div>
+
+
+        <div class="footer-bottom">
+        <footer class="lesson-footer">
+
+    <div class="lesson-footer-nav">
+
+    </div>
+
+            <p>
+                © 2026 Kerala Info Hub - AmC
+            </p>
+
+            <p>
+                For educational purposes.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
 
 </html>
