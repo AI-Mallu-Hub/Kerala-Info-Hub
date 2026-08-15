@@ -1,0 +1,4004 @@
+/* =========================================================
+   CONNECTIVE TISSUE LESSON
+   Visual System: MASTER LESSON / EPITHELIAL STYLE
+   Version 2.0
+
+   IMPORTANT:
+   - lesson.css remains the master stylesheet.
+   - This file only handles Connective Tissue specific behavior.
+   - Do NOT redesign the common lesson system here.
+   ========================================================= */
+
+
+/* =========================================================
+   01. CONNECTIVE LESSON ROOT
+   ========================================================= */
+
+.ct-lesson {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   02. LESSON HEADER
+   ---------------------------------------------------------
+   Match the existing Epithelial lesson header.
+   ========================================================= */
+
+.ct-lesson .lesson-header {
+    background: #1565d8;
+    color: #ffffff;
+
+    padding: 60px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER LESSON NAVIGATION
+   BACK + NEXT = SAME SIZE / SAME LEVEL
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .lesson-header-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 10px;
+        width: 100%;
+    }
+
+    .lesson-header-nav .back-btn,
+    .lesson-header-nav .next-lesson-btn {
+
+        box-sizing: border-box;
+
+        flex: 1 1 0;
+        width: auto;
+        min-width: 0;
+
+        height: 52px;
+
+        padding: 0 10px;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0;
+
+        font-size: 16px;
+        line-height: 1;
+
+        white-space: nowrap;
+    }
+
+}
+
+
+/* Header title */
+
+.ct-lesson .lesson-header h1 {
+    color: #ffffff;
+
+    margin: 20px 0 8px;
+
+    font-size: 28px;
+    font-weight: 800;
+
+    line-height: 1.25;
+}
+
+
+/* Header subtitle */
+
+.ct-lesson .lesson-header .lesson-subtitle {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    opacity: 0.95;
+
+    margin: 0 0 12px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   03. MAIN LESSON CONTAINER
+   ---------------------------------------------------------
+   Keep the same width and spacing as the master lesson.
+   ========================================================= */
+
+.ct-lesson .lesson-container {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 24px 16px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   04. LESSON HERO
+   ---------------------------------------------------------
+   Same visual language as Epithelial Tissue.
+   ========================================================= */
+
+.ct-lesson .lesson-hero {
+    position: relative;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    margin-bottom: 22px;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+
+    text-align: left;
+}
+
+
+/* Decorative background shapes */
+
+.ct-lesson .lesson-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: -80px;
+    right: -70px;
+
+    border-radius: 50%;
+
+    background: rgba(66, 165, 245, 0.08);
+
+    pointer-events: none;
+}
+
+
+.ct-lesson .lesson-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    bottom: -80px;
+    left: -70px;
+
+    border-radius: 50%;
+
+    background: rgba(123, 97, 255, 0.06);
+
+    pointer-events: none;
+}
+
+
+/* Hero title */
+
+.ct-lesson .lesson-hero h1 {
+    position: relative;
+    z-index: 1;
+
+    color: #111827;
+
+    margin: 0 0 15px;
+
+    font-size: 28px;
+    font-weight: 800;
+
+    line-height: 1.3;
+}
+
+
+/* Hero description */
+
+.ct-lesson .lesson-hero .lesson-subtitle {
+    position: relative;
+    z-index: 1;
+
+    color: #334155;
+
+    max-width: 760px;
+
+    margin: 0 0 20px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   05. HERO META / BADGES
+   ========================================================= */
+
+.ct-lesson .lesson-meta {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 0;
+}
+
+
+.ct-lesson .lesson-meta span {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #f8fafc;
+
+    color: #334155;
+
+    border: 1px solid #e2e8f0;
+
+    padding: 8px 14px;
+
+    min-height: 36px;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    box-sizing: border-box;
+}
+
+
+/* Beginner badge */
+
+.ct-lesson .lesson-meta .badge.beginner {
+    background: #16a34a;
+    color: #ffffff;
+
+    border-color: #16a34a;
+}
+
+
+/* =========================================================
+   06. STANDARD LESSON CARDS
+   ---------------------------------------------------------
+   Match Epithelial lesson cards.
+   ========================================================= */
+
+.ct-lesson .lesson-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    margin-bottom: 22px;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+
+/* Section headings */
+
+.ct-lesson .lesson-card h2 {
+    margin-bottom: 15px;
+
+    color: #111827;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+}
+
+
+/* Subheadings */
+
+.ct-lesson .lesson-card h3 {
+    color: #1e293b;
+
+    line-height: 1.35;
+}
+
+
+/* Body text */
+
+.ct-lesson .lesson-card p {
+    color: #334155;
+
+    font-size: 18px;
+
+    line-height: 1.75;
+
+    margin-bottom: 14px;
+}
+
+
+/* Lists */
+
+.ct-lesson .lesson-card ul,
+.ct-lesson .lesson-card ol {
+    margin-left: 24px;
+}
+
+
+.ct-lesson .lesson-card li {
+    margin-bottom: 10px;
+
+    color: #334155;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   07. TABLE OF CONTENTS
+   ========================================================= */
+
+.ct-lesson .toc-card,
+.ct-lesson #table-of-contents {
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    margin-bottom: 22px;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+.ct-lesson .toc-card h2,
+.ct-lesson #table-of-contents h2 {
+    margin-bottom: 15px;
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+
+.ct-lesson .lesson-toc {
+    margin-left: 24px;
+}
+
+
+.ct-lesson .lesson-toc li {
+    margin-bottom: 12px;
+}
+
+
+.ct-lesson .lesson-toc a {
+    color: #0000aa;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    text-decoration: underline;
+}
+
+
+.ct-lesson .lesson-toc a:hover {
+    color: #1565d8;
+}
+
+
+/* =========================================================
+   08. HIGHLIGHT GRID
+   ---------------------------------------------------------
+   Used by In This Lesson and content blocks.
+   ========================================================= */
+
+.ct-lesson .highlight-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 16px;
+
+    margin-top: 18px;
+}
+
+
+.ct-lesson .highlight-item {
+    background: #f8fafc;
+
+    border-radius: 16px;
+
+    padding: 18px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #e2e8f0;
+}
+
+
+.ct-lesson .highlight-item h3 {
+    margin-bottom: 8px;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    color: #172033;
+}
+
+
+.ct-lesson .highlight-item p {
+    margin-bottom: 0;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    color: #475569;
+}
+
+
+/* =========================================================
+   09. MAIN COLLAPSIBLE SECTIONS
+   ---------------------------------------------------------
+   Closed:
+       Card header + arrow
+
+   Open:
+       Same card expands naturally.
+
+   This is the main Connective Tissue structure.
+   ========================================================= */
+
+.ct-lesson .lesson-card.collapsible {
+    padding: 0;
+
+    overflow: hidden;
+}
+
+
+/* Collapse button */
+
+.ct-lesson .collapse-header {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 16px;
+
+    padding: 22px;
+
+    margin: 0;
+
+    background: #ffffff;
+
+    border: none;
+
+    color: #111827;
+
+    font: inherit;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background 0.2s ease;
+}
+
+
+.ct-lesson .collapse-header:hover {
+    background: #f8fafc;
+}
+
+
+.ct-lesson .collapse-header:focus-visible {
+    outline: 3px solid rgba(21, 101, 216, 0.3);
+
+    outline-offset: -3px;
+}
+
+
+/* Collapse title */
+
+.ct-lesson .collapse-title {
+    font-size: 28px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+
+    color: #111827;
+}
+
+
+/* =========================================================
+   10. COLLAPSE ICON
+   ========================================================= */
+
+.ct-lesson .collapse-icon {
+
+    flex: 0 0 auto;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    font-size: 15px;
+
+    transition:
+        transform 0.38s cubic-bezier(0.4, 0, 0.2, 1),
+        background 0.25s ease;
+
+    transform: rotate(0deg);
+}
+
+
+/* Open state */
+
+.ct-lesson .lesson-card.collapsible.is-open
+.collapse-icon {
+
+    transform: rotate(90deg);
+
+    background: #dbeafe;
+}
+
+
+/* =========================================================
+   11. COLLAPSIBLE CONTENT
+   ========================================================= */
+
+.ct-lesson .collapse-content {
+
+    padding: 0 22px 22px;
+
+    box-sizing: border-box;
+
+    /*
+     * Animated by connective.js
+     */
+    max-height: 0;
+
+    opacity: 0;
+
+    overflow: hidden;
+
+    transition:
+        max-height 0.38s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.22s ease 0.04s;
+}
+
+
+/* Open state */
+
+.ct-lesson .lesson-card.collapsible.is-open
+.collapse-content {
+
+    opacity: 1;
+}
+
+
+/* Text inside collapsible content */
+
+.ct-lesson .collapse-content p {
+    color: #334155;
+
+    font-size: 18px;
+
+    line-height: 1.75;
+
+    margin-bottom: 14px;
+}
+
+
+.ct-lesson .collapse-content ul,
+.ct-lesson .collapse-content ol {
+    margin-left: 24px;
+}
+
+
+.ct-lesson .collapse-content li {
+    color: #334155;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   12. NESTED COLLAPSIBLE SECTIONS
+   ---------------------------------------------------------
+   For tissue types such as:
+   Areolar
+   Adipose
+   Reticular
+   Dense CT
+   etc.
+   ========================================================= */
+
+.ct-lesson .nested-collapsible {
+    margin: 18px 0;
+
+    background: #ffffff;
+
+    border: 1px solid #dbe3ec;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+}
+
+
+/* Nested heading */
+
+.ct-lesson .nested-collapsible > summary {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 14px;
+
+    padding: 18px;
+
+    background: #ffffff;
+
+    color: #172033;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    line-height: 1.35;
+
+    cursor: pointer;
+
+    list-style: none;
+
+    box-sizing: border-box;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+/* Remove browser marker */
+
+.ct-lesson .nested-collapsible > summary::-webkit-details-marker {
+    display: none;
+}
+
+
+.ct-lesson .nested-collapsible > summary::after {
+    content: "▶";
+
+    flex: 0 0 auto;
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    transition:
+        transform 0.25s ease,
+        color 0.2s ease;
+}
+
+
+/* Open nested section */
+
+.ct-lesson .nested-collapsible[open] > summary {
+    background: #f8fbff;
+
+    color: #1565d8;
+}
+
+
+.ct-lesson .nested-collapsible[open] > summary::after {
+    transform: rotate(90deg);
+
+    color: #1565d8;
+}
+
+
+/* Nested content */
+
+.ct-lesson .nested-content {
+    padding: 20px;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e5e7eb;
+
+    box-sizing: border-box;
+}
+
+
+.ct-lesson .nested-content p {
+    color: #334155;
+
+    font-size: 18px;
+
+    line-height: 1.75;
+
+    margin-bottom: 14px;
+}
+
+
+/* =========================================================
+   13. FEATURE CARDS
+   ---------------------------------------------------------
+   Used inside sections.
+   ========================================================= */
+
+.ct-lesson .feature-card {
+    margin: 20px 0;
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.05);
+
+    box-sizing: border-box;
+}
+
+
+.ct-lesson .feature-card h3 {
+    margin-bottom: 10px;
+
+    color: #172033;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    line-height: 1.4;
+}
+
+
+.ct-lesson .feature-card p {
+    color: #334155;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   14. DIAGRAM CONTAINERS
+   ---------------------------------------------------------
+   Keep diagrams visually consistent with Epithelial page.
+   Animation CSS can be added later without redesigning cards.
+   ========================================================= */
+
+.ct-lesson .diagram-placeholder,
+.ct-lesson .diagram-card,
+.ct-lesson .diagram-wrapper {
+    width: 100%;
+
+    margin: 24px auto;
+
+    box-sizing: border-box;
+}
+
+
+/* Existing placeholder */
+
+.ct-lesson .diagram-placeholder {
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 2px dashed #8db7ff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 6px 16px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+
+.ct-lesson .diagram-placeholder h3 {
+    margin: 0 0 15px;
+
+    color: #2563eb;
+
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+
+.ct-lesson .diagram-placeholder p {
+    color: #64748b;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    font-style: italic;
+}
+
+
+/* =========================================================
+   15. EXAM TIP
+   ---------------------------------------------------------
+   Same colored-left-border language as Epithelial.
+   ========================================================= */
+
+.ct-lesson .exam-tip {
+    background: #ffffff;
+
+    border-left: 7px solid #f59e0b;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    margin-bottom: 22px;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+
+.ct-lesson .exam-tip h2,
+.ct-lesson .exam-tip h3 {
+    margin-bottom: 15px;
+
+    color: #111827;
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+
+.ct-lesson .exam-tip p {
+    color: #334155;
+
+    font-size: 18px;
+
+    line-height: 1.75;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   16. CLINICAL CORRELATION
+   ========================================================= */
+
+.ct-lesson .clinical-box,
+.ct-lesson .clinical-correlation {
+    background: #ffffff;
+
+    border-left: 7px solid #0ea5e9;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    margin-bottom: 22px;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+
+.ct-lesson .clinical-box h2,
+.ct-lesson .clinical-box h3,
+.ct-lesson .clinical-correlation h2,
+.ct-lesson .clinical-correlation h3 {
+    margin-bottom: 15px;
+
+    color: #111827;
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+
+.ct-lesson .clinical-box p,
+.ct-lesson .clinical-correlation p {
+    color: #334155;
+
+    font-size: 18px;
+
+    line-height: 1.75;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   17. MEMORY BOX
+   ========================================================= */
+
+.ct-lesson .memory-box {
+    background: #ffffff;
+
+    border-left: 7px solid #8b5cf6;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    margin-bottom: 22px;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+
+.ct-lesson .memory-box h2,
+.ct-lesson .memory-box h3 {
+    margin-bottom: 15px;
+
+    color: #111827;
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+
+.ct-lesson .memory-box p {
+    color: #334155;
+
+    font-size: 18px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   18. QUICK REVISION / SUMMARY
+   ========================================================= */
+
+.ct-lesson .summary-box {
+    background: #ffffff;
+
+    border-left: 7px solid #16a34a;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    margin-bottom: 22px;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+
+.ct-lesson .summary-box h2,
+.ct-lesson .summary-box h3 {
+    margin-bottom: 15px;
+
+    color: #111827;
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+
+.ct-lesson .summary-box p,
+.ct-lesson .summary-box li {
+    color: #334155;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   19. QUIZ
+   ========================================================= */
+
+.ct-lesson .quiz-box {
+    background: #ffffff;
+
+    border-left: 7px solid #ef4444;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    margin-bottom: 22px;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+
+.ct-lesson .quiz-box h2,
+.ct-lesson .quiz-box h3 {
+    margin-bottom: 15px;
+
+    color: #111827;
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   20. LESSON TABLE
+   ========================================================= */
+
+.ct-lesson .lesson-table-wrap {
+    width: 100%;
+
+    overflow-x: auto;
+
+    margin: 20px 0;
+
+    border-radius: 14px;
+}
+
+
+.ct-lesson .lesson-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: #ffffff;
+
+    font-size: 16px;
+}
+
+
+.ct-lesson .lesson-table th {
+    background: #1565d8;
+
+    color: #ffffff;
+
+    padding: 14px;
+
+    text-align: left;
+
+    font-weight: 700;
+}
+
+
+.ct-lesson .lesson-table td {
+    padding: 14px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    vertical-align: top;
+}
+
+
+.ct-lesson .lesson-table tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+
+.ct-lesson .lesson-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   21. AT A GLANCE
+   ========================================================= */
+
+.ct-lesson .at-a-glance {
+    background: #ffffff;
+
+    border-left: 7px solid #16a34a;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    margin-bottom: 22px;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+
+.ct-lesson .at-a-glance h3 {
+    margin-bottom: 15px;
+
+    color: #111827;
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+
+.ct-lesson .glance-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 14px;
+}
+
+
+.ct-lesson .glance-item {
+    background: #f8fafc;
+
+    padding: 16px;
+
+    border-radius: 14px;
+
+    border: 1px solid #e2e8f0;
+}
+
+
+.ct-lesson .glance-item h4 {
+    margin-bottom: 8px;
+
+    color: #1e40af;
+
+    font-size: 17px;
+}
+
+
+.ct-lesson .glance-item p {
+    margin: 0;
+
+    color: #475569;
+
+    font-size: 15px;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   22. STRONG / EMPHASIS
+   ========================================================= */
+
+.ct-lesson strong {
+    color: #172033;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   23. MOBILE
+   ---------------------------------------------------------
+   Mobile-only responsive adjustments.
+   IMPORTANT:
+   Diagram 1 CSS is intentionally kept OUTSIDE this block.
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .ct-lesson .lesson-header {
+        padding: 20px;
+    }
+
+
+    .ct-lesson .lesson-header h1 {
+        font-size: 28px;
+    }
+
+
+    .ct-lesson .lesson-header .lesson-subtitle {
+        font-size: 20px;
+    }
+
+
+    .ct-lesson .lesson-container {
+        padding: 20px 14px 40px;
+    }
+
+
+    .ct-lesson .lesson-hero {
+        padding: 22px;
+        border-radius: 20px;
+    }
+
+
+    .ct-lesson .lesson-hero h1 {
+        font-size: 28px;
+    }
+
+
+    .ct-lesson .lesson-hero .lesson-subtitle {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+
+    .ct-lesson .lesson-card,
+    .ct-lesson .toc-card,
+    .ct-lesson .exam-tip,
+    .ct-lesson .clinical-box,
+    .ct-lesson .clinical-correlation,
+    .ct-lesson .memory-box,
+    .ct-lesson .summary-box,
+    .ct-lesson .quiz-box,
+    .ct-lesson .at-a-glance {
+        padding: 22px;
+        border-radius: 20px;
+    }
+
+
+    .ct-lesson .lesson-card h2,
+    .ct-lesson .toc-card h2,
+    .ct-lesson .exam-tip h2,
+    .ct-lesson .exam-tip h3,
+    .ct-lesson .clinical-box h2,
+    .ct-lesson .clinical-box h3,
+    .ct-lesson .clinical-correlation h2,
+    .ct-lesson .clinical-correlation h3,
+    .ct-lesson .memory-box h2,
+    .ct-lesson .memory-box h3,
+    .ct-lesson .summary-box h2,
+    .ct-lesson .summary-box h3,
+    .ct-lesson .quiz-box h2,
+    .ct-lesson .quiz-box h3 {
+        font-size: 24px;
+    }
+
+
+    .ct-lesson .collapse-header {
+        padding: 20px;
+    }
+
+
+    .ct-lesson .collapse-title {
+        font-size: 22px;
+    }
+
+
+    .ct-lesson .collapse-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+
+    .ct-lesson .lesson-card p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+
+    .ct-lesson .lesson-card li {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+
+    .ct-lesson .highlight-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ct-lesson .glance-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ct-lesson .lesson-table {
+        font-size: 15px;
+    }
+
+
+    .ct-lesson .lesson-table th,
+    .ct-lesson .lesson-table td {
+        padding: 12px;
+    }
+}
+
+
+/* =========================================================
+   DIAGRAM 1 - CONNECTIVE TISSUE SVG
+   ---------------------------------------------------------
+   IMPORTANT:
+   This section MUST remain outside the mobile @media block.
+   Therefore it works on both desktop and mobile.
+   ========================================================= */
+
+.ct-diagram-svg {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+
+/* =========================================================
+   DIAGRAM TEXT
+   ========================================================= */
+
+.ct-diagram-svg .diagram-title {
+    font-size: 20px;
+    font-weight: 800;
+    fill: #172033;
+    letter-spacing: 1px;
+}
+
+
+.ct-diagram-svg .diagram-label {
+    font-size: 17px;
+    font-weight: 800;
+    fill: #172033;
+}
+
+
+.ct-diagram-svg .diagram-small {
+    font-size: 12px;
+    fill: #526174;
+}
+
+
+.ct-diagram-svg .diagram-mini {
+    font-size: 11px;
+    fill: #526174;
+}
+
+
+.ct-diagram-svg .diagram-symbol {
+    font-size: 30px;
+    font-weight: 800;
+    fill: #334155;
+}
+
+
+.ct-diagram-svg .diagram-footer {
+    font-size: 12px;
+    font-weight: 700;
+    fill: #526174;
+}
+
+
+/* =========================================================
+   CELLS
+   ========================================================= */
+
+.ct-diagram-svg .cell {
+    fill: #dbeafe;
+    stroke: #2563eb;
+    stroke-width: 3;
+}
+
+
+.ct-diagram-svg .cell-nucleus {
+    fill: #2563eb;
+}
+
+
+/* =========================================================
+   ECM FIELD
+   ========================================================= */
+
+.ct-diagram-svg .ecm-field {
+    fill: #eef2ff;
+    stroke: #6366f1;
+    stroke-width: 3;
+}
+
+
+/* =========================================================
+   GROUND SUBSTANCE
+   ========================================================= */
+
+.ct-diagram-svg .ground-substance {
+    fill: none;
+    stroke: #a5b4fc;
+    stroke-width: 7;
+    stroke-linecap: round;
+    opacity: 0.65;
+}
+
+
+/* =========================================================
+   COLLAGEN
+   ========================================================= */
+
+.ct-diagram-svg .collagen-fiber {
+    fill: none;
+    stroke: #d97706;
+    stroke-width: 5;
+    stroke-linecap: round;
+}
+
+
+/* =========================================================
+   ELASTIC
+   ========================================================= */
+
+.ct-diagram-svg .elastic-fiber {
+    fill: none;
+    stroke: #059669;
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+
+/* =========================================================
+   RETICULAR NETWORK
+   ========================================================= */
+
+.ct-diagram-svg .reticular-network path {
+    fill: none;
+    stroke: #7c3aed;
+    stroke-width: 2;
+    stroke-linecap: round;
+    opacity: 0.8;
+}
+
+
+/* =========================================================
+   RESULT
+   ========================================================= */
+
+.ct-diagram-svg .result-box {
+    fill: #172033;
+}
+
+
+.ct-diagram-svg .result-text {
+    font-size: 17px;
+    font-weight: 800;
+    fill: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   DIAGRAM 1 - SCROLL REVEAL ANIMATION
+   ---------------------------------------------------------
+   Controlled by connective.js
+   Initial state = hidden
+   ========================================================= */
+
+.ct-diagram-svg .diagram-animate {
+    opacity: 0;
+
+    transition:
+        opacity 0.55s ease,
+        transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+
+    transform: translateY(10px);
+}
+
+
+/* Element becomes visible */
+
+.ct-diagram-svg .diagram-animate.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .ct-diagram-svg .diagram-animate {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 2
+   ANATOMICAL MICROSTRUCTURE
+   ---------------------------------------------------------
+   Visual styling only.
+   SVG structure remains independent from Diagram 1.
+   ========================================================= */
+
+
+/* =========================================================
+   MAIN DIAGRAM CONTAINER
+========================================================= */
+
+.ct-microstructure-diagram {
+
+    width: 100%;
+    max-width: 900px;
+
+    margin: 24px auto 0;
+
+    padding: 18px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d9e2ec;
+
+    border-radius: 24px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 24px rgba(15, 23, 42, 0.06);
+
+}
+
+
+/* =========================================================
+   SVG
+========================================================= */
+
+.ct-microstructure-svg {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    max-width: 100%;
+
+    overflow: visible;
+
+}
+
+
+/* =========================================================
+   SVG BACKGROUND
+========================================================= */
+
+.ct-microstructure-svg .micro-bg {
+
+    fill: #f8fafc;
+
+    stroke: #e2e8f0;
+
+    stroke-width: 2;
+}
+
+
+/* =========================================================
+   TITLES
+========================================================= */
+
+.ct-microstructure-svg .micro-title {
+
+    fill: #0f172a;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.ct-microstructure-svg .micro-subtitle {
+
+    fill: #64748b;
+
+    font-size: 12px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   GROUND SUBSTANCE
+========================================================= */
+
+.ct-microstructure-svg .ground-field {
+
+    fill: #eef2f7;
+
+    stroke: #cbd5e1;
+
+    stroke-width: 2;
+}
+
+
+/* =========================================================
+   COLLAGEN FIBERS
+========================================================= */
+
+.ct-microstructure-svg .micro-collagen path {
+
+    fill: none;
+
+    stroke: #b7791f;
+
+    stroke-width: 8;
+
+    stroke-linecap: round;
+
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   ELASTIC FIBERS
+========================================================= */
+
+.ct-microstructure-svg .micro-elastic path {
+
+    fill: none;
+
+    stroke: #159957;
+
+    stroke-width: 4;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   RETICULAR NETWORK
+========================================================= */
+
+.ct-microstructure-svg .micro-reticular path {
+
+    fill: none;
+
+    stroke: #7c3aed;
+
+    stroke-width: 2.5;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+    opacity: 0.72;
+}
+
+
+/* =========================================================
+   CELLS
+========================================================= */
+
+.ct-microstructure-svg .micro-cell ellipse {
+
+    fill: #e0edff;
+
+    stroke: #2563eb;
+
+    stroke-width: 3;
+}
+
+
+.ct-microstructure-svg .micro-nucleus {
+
+    fill: #2563eb;
+
+    opacity: 0.95;
+}
+
+
+/* =========================================================
+   LABELS
+========================================================= */
+
+.ct-microstructure-svg .micro-label {
+
+    fill: #334155;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.ct-microstructure-svg .micro-small {
+
+    fill: #64748b;
+
+    font-size: 11px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   LEGEND
+========================================================= */
+
+.microstructure-legend {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 14px 24px;
+
+    margin-top: 12px;
+
+    padding: 8px 12px;
+
+    color: #475569;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+
+.microstructure-legend .legend-item {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    white-space: nowrap;
+}
+
+
+.microstructure-legend .legend-symbol {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 18px;
+
+    font-weight: 800;
+}
+
+
+.microstructure-legend .legend-cell {
+
+    color: #2563eb;
+
+    font-size: 20px;
+}
+
+
+.microstructure-legend .legend-fiber {
+
+    color: #b7791f;
+
+    font-size: 20px;
+}
+
+
+.microstructure-legend .legend-ground {
+
+    color: #94a3b8;
+
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   KEY STRUCTURAL IDEA
+========================================================= */
+
+.ct-microstructure-diagram .highlight-box {
+
+    margin-top: 16px;
+
+    padding: 16px 18px;
+
+    border-left: 4px solid #f59e0b;
+
+    border-radius: 14px;
+
+    background: #fffaf0;
+
+    box-sizing: border-box;
+}
+
+
+.ct-microstructure-diagram .highlight-box h3 {
+
+    margin: 0 0 8px;
+
+    color: #0f172a;
+
+    font-size: 18px;
+
+    font-weight: 800;
+}
+
+
+.ct-microstructure-diagram .highlight-box p {
+
+    margin: 0;
+
+    color: #475569;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .ct-microstructure-diagram {
+
+        padding: 12px;
+
+        margin-top: 18px;
+
+        border-radius: 20px;
+    }
+
+
+    .ct-microstructure-svg .micro-title {
+
+        font-size: 18px;
+
+        letter-spacing: 0.8px;
+    }
+
+
+    .ct-microstructure-svg .micro-subtitle {
+
+        font-size: 10px;
+    }
+
+
+    .ct-microstructure-svg .micro-label {
+
+        font-size: 12px;
+    }
+
+
+    .ct-microstructure-svg .micro-small {
+
+        font-size: 10px;
+    }
+
+
+    .microstructure-legend {
+
+        gap: 8px 16px;
+
+        font-size: 12px;
+    }
+
+
+    .ct-microstructure-diagram .highlight-box {
+
+        padding: 14px;
+
+        margin-top: 12px;
+    }
+
+
+    .ct-microstructure-diagram .highlight-box h3 {
+
+        font-size: 16px;
+    }
+
+
+    .ct-microstructure-diagram .highlight-box p {
+
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 2
+   MICROSTRUCTURE ANIMATION STATES
+========================================================= */
+
+.ct-microstructure-diagram
+.micro-animation-hidden {
+
+    opacity: 0;
+
+    transform: translateY(12px);
+
+}
+
+
+.ct-microstructure-diagram
+.micro-reveal {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition:
+        opacity 650ms ease,
+        transform 650ms ease;
+
+}
+
+
+/* -----------------------------------------
+   Ground substance
+----------------------------------------- */
+
+.ct-microstructure-svg
+.micro-ground-substance {
+
+    transition:
+        opacity 700ms ease,
+        transform 700ms ease;
+}
+
+
+/* -----------------------------------------
+   Fiber groups
+----------------------------------------- */
+
+.ct-microstructure-svg
+.micro-collagen,
+.ct-microstructure-svg
+.micro-elastic,
+.ct-microstructure-svg
+.micro-reticular {
+
+    transform-origin: center;
+
+    transition:
+        opacity 650ms ease,
+        transform 650ms ease;
+}
+
+
+/* -----------------------------------------
+   Cells
+----------------------------------------- */
+
+.ct-microstructure-svg
+.micro-cells {
+
+    transform-origin: center;
+
+    transition:
+        opacity 650ms ease,
+        transform 650ms ease;
+}
+
+
+/* -----------------------------------------
+   Labels
+----------------------------------------- */
+
+.ct-microstructure-svg
+.micro-labels {
+
+    transition:
+        opacity 500ms ease,
+        transform 500ms ease;
+}
+
+
+/* -----------------------------------------
+   Key idea
+----------------------------------------- */
+
+.ct-microstructure-diagram
+.highlight-box {
+
+    transition:
+        opacity 650ms ease,
+        transform 650ms ease;
+}
+
+/* =========================================================
+   DIAGRAM 2 — STROKE DRAW ANIMATION
+   ---------------------------------------------------------
+   Protein fibers + ground substance + reticular network
+   are drawn progressively when the diagram enters viewport.
+   ========================================================= */
+
+/* All drawable SVG paths start hidden */
+.ct-anatomical-diagram
+.collagen-fiber,
+.ct-anatomical-diagram
+.elastic-fiber,
+.ct-anatomical-diagram
+.ground-substance,
+.ct-anatomical-diagram
+.reticular-network path {
+
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+
+    transition: none;
+}
+
+
+/* Draw state */
+.ct-anatomical-diagram.is-drawing
+.collagen-fiber,
+.ct-anatomical-diagram.is-drawing
+.elastic-fiber,
+.ct-anatomical-diagram.is-drawing
+.ground-substance,
+.ct-anatomical-diagram.is-drawing
+.reticular-network path {
+
+    stroke-dashoffset: 0;
+
+    transition:
+        stroke-dashoffset 1.8s
+        cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+
+/* Slightly stagger different fiber groups */
+
+.ct-anatomical-diagram.is-drawing
+.ground-substance {
+
+    transition-delay: 0.05s;
+}
+
+
+.ct-anatomical-diagram.is-drawing
+.collagen-fiber {
+
+    transition-delay: 0.25s;
+}
+
+
+.ct-anatomical-diagram.is-drawing
+.elastic-fiber {
+
+    transition-delay: 0.65s;
+}
+
+
+.ct-anatomical-diagram.is-drawing
+.reticular-network path {
+
+    transition-delay: 0.9s;
+}
+
+
+/* Reticular network gets a small progressive stagger */
+
+.ct-anatomical-diagram.is-drawing
+.reticular-network path:nth-child(2) {
+
+    transition-delay: 1.05s;
+}
+
+
+.ct-anatomical-diagram.is-drawing
+.reticular-network path:nth-child(3) {
+
+    transition-delay: 1.2s;
+}
+
+
+.ct-anatomical-diagram.is-drawing
+.reticular-network path:nth-child(4) {
+
+    transition-delay: 1.35s;
+}
+
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+    .ct-anatomical-diagram
+    .collagen-fiber,
+    .ct-anatomical-diagram
+    .elastic-fiber,
+    .ct-anatomical-diagram
+    .ground-substance,
+    .ct-anatomical-diagram
+    .reticular-network path {
+
+        stroke-dasharray: none;
+        stroke-dashoffset: 0;
+        transition: none;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 3 • THREE MAJOR PROTEIN FIBERS
+   CSS POLISH + VISIBILITY FIX
+   ========================================================= */
+
+.ct-fiber-diagram {
+    width: 100%;
+    max-width: 980px;
+    margin: 24px auto;
+    padding: 16px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   SVG
+   ========================================================= */
+
+.ct-fiber-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    overflow: visible;
+}
+
+
+/* =========================================================
+   SVG BACKGROUND
+   IMPORTANT: fixes the black diagram
+   ========================================================= */
+
+.ct-fiber-svg .fiber-bg {
+    fill: #f8fafc;
+    stroke: #e2e8f0;
+    stroke-width: 2;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+   ========================================================= */
+
+.ct-fiber-svg .fiber-title {
+    fill: #0f172a;
+
+    font-size: 24px;
+    font-weight: 850;
+
+    letter-spacing: 1px;
+}
+
+
+.ct-fiber-svg .fiber-subtitle {
+    fill: #64748b;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   PANEL CARDS
+   ========================================================= */
+
+.ct-fiber-svg .fiber-card {
+    fill: #ffffff;
+
+    stroke: #dbe3ec;
+    stroke-width: 2;
+}
+
+
+/* Individual panel accents */
+
+.ct-fiber-svg .fiber-collagen .fiber-card {
+    stroke: #e7c98d;
+}
+
+.ct-fiber-svg .fiber-elastic .fiber-card {
+    stroke: #a8dfc2;
+}
+
+.ct-fiber-svg .fiber-reticular .fiber-card {
+    stroke: #d5c2f5;
+}
+
+
+/* =========================================================
+   PANEL HEADINGS
+   ========================================================= */
+
+.ct-fiber-svg .fiber-heading {
+    fill: #0f172a;
+
+    font-size: 20px;
+    font-weight: 850;
+
+    letter-spacing: 0.7px;
+}
+
+
+.ct-fiber-svg .fiber-description {
+    fill: #64748b;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   STRUCTURE NOTES
+   ========================================================= */
+
+.ct-fiber-svg .fiber-note {
+    fill: #475569;
+
+    font-size: 13px;
+    font-weight: 650;
+}
+
+
+/* =========================================================
+   COLLAGEN
+   ========================================================= */
+
+.ct-fiber-svg .collagen-stroke {
+    fill: none;
+
+    stroke: #b7791f;
+    stroke-width: 8;
+
+    stroke-linecap: round;
+}
+
+
+/* =========================================================
+   ELASTIC
+   ========================================================= */
+
+.ct-fiber-svg .elastic-stroke {
+    fill: none;
+
+    stroke: #159957;
+    stroke-width: 5;
+
+    stroke-linecap: round;
+}
+
+
+/* =========================================================
+   RETICULAR
+   ========================================================= */
+
+.ct-fiber-svg .reticular-stroke {
+    fill: none;
+
+    stroke: #7c3aed;
+    stroke-width: 5;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* =========================================================
+   FUNCTION DIVIDERS
+   ========================================================= */
+
+.ct-fiber-svg .fiber-divider {
+    stroke: #e2e8f0;
+    stroke-width: 2;
+}
+
+
+/* =========================================================
+   FUNCTION ICON
+   ========================================================= */
+
+.ct-fiber-svg .fiber-function-icon {
+    font-size: 22px;
+}
+
+
+/* =========================================================
+   FUNCTION TITLE
+   ========================================================= */
+
+.ct-fiber-svg .fiber-function {
+    font-size: 13px;
+    font-weight: 850;
+
+    letter-spacing: 0.8px;
+}
+
+
+/* Individual function colors */
+
+.ct-fiber-svg .fiber-collagen .fiber-function {
+    fill: #9a670f;
+}
+
+.ct-fiber-svg .fiber-elastic .fiber-function {
+    fill: #117a45;
+}
+
+.ct-fiber-svg .fiber-reticular .fiber-function {
+    fill: #6d28d9;
+}
+
+
+/* =========================================================
+   FUNCTION DESCRIPTION
+   ========================================================= */
+
+.ct-fiber-svg .fiber-function-note {
+    fill: #64748b;
+
+    font-size: 11px;
+    font-weight: 550;
+}
+
+
+/* =========================================================
+   QUICK COMPARISON
+   ========================================================= */
+
+.ct-fiber-svg .comparison-box {
+    fill: #ffffff;
+
+    stroke: #e2e8f0;
+    stroke-width: 2;
+}
+
+
+.ct-fiber-svg .comparison-title {
+    fill: #0f172a;
+
+    font-size: 14px;
+    font-weight: 850;
+
+    letter-spacing: 0.7px;
+}
+
+
+.ct-fiber-svg .comparison-label,
+.ct-fiber-svg .comparison-value {
+    font-size: 12px;
+    font-weight: 650;
+}
+
+
+.ct-fiber-svg .comparison-arrow {
+    fill: #94a3b8;
+
+    font-size: 13px;
+}
+
+
+.ct-fiber-svg .collagen-text {
+    fill: #9a670f;
+}
+
+.ct-fiber-svg .elastic-text {
+    fill: #117a45;
+}
+
+.ct-fiber-svg .reticular-text {
+    fill: #6d28d9;
+}
+
+.ct-fiber-svg .comparison-value {
+    fill: #475569;
+}
+
+
+/* =========================================================
+   HTML LEGEND
+   ========================================================= */
+
+.ct-fiber-diagram .fiber-legend {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px 24px;
+
+    margin: 10px 4px 0;
+
+    color: #475569;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.ct-fiber-diagram .fiber-legend-item {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    white-space: nowrap;
+}
+
+
+.ct-fiber-diagram .fiber-legend-item .legend-symbol {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 22px;
+
+    font-size: 19px;
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+
+/* Legend colors */
+
+.ct-fiber-diagram .fiber-legend-item:nth-child(1)
+.legend-symbol {
+    color: #b7791f;
+}
+
+.ct-fiber-diagram .fiber-legend-item:nth-child(2)
+.legend-symbol {
+    color: #159957;
+}
+
+.ct-fiber-diagram .fiber-legend-item:nth-child(3)
+.legend-symbol {
+    color: #7c3aed;
+}
+
+
+/* =========================================================
+   KEY LEARNING BOX
+   ========================================================= */
+
+.ct-fiber-diagram > .highlight-box {
+    margin-top: 14px;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .ct-fiber-diagram {
+        margin: 18px auto;
+        padding: 8px;
+
+        border-radius: 18px;
+    }
+
+
+    .ct-fiber-svg {
+        width: 100%;
+    }
+
+
+    .ct-fiber-svg .fiber-title {
+        font-size: 24px;
+    }
+
+
+    .ct-fiber-svg .fiber-heading {
+        font-size: 19px;
+    }
+
+
+    .ct-fiber-svg .fiber-description {
+        font-size: 12px;
+    }
+
+
+    .ct-fiber-svg .fiber-note {
+        font-size: 13px;
+    }
+
+
+    .ct-fiber-svg .fiber-function {
+        font-size: 13px;
+    }
+
+
+    .ct-fiber-svg .fiber-function-note {
+        font-size: 11px;
+    }
+
+
+    .ct-fiber-diagram .fiber-legend {
+        gap: 8px 16px;
+
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 430px) {
+
+    .ct-fiber-diagram {
+        padding: 5px;
+
+        border-radius: 16px;
+    }
+
+
+    .ct-fiber-svg .fiber-title {
+        font-size: 22px;
+    }
+
+
+    .ct-fiber-svg .fiber-heading {
+        font-size: 18px;
+    }
+
+
+    .ct-fiber-svg .fiber-description,
+    .ct-fiber-svg .fiber-note,
+    .ct-fiber-svg .fiber-function-note {
+        font-size: 11px;
+    }
+
+
+    .ct-fiber-diagram .fiber-legend {
+        justify-content: flex-start;
+
+        padding: 0 4px;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 3 — STROKE DRAW ANIMATION
+   ---------------------------------------------------------
+   Safe version:
+   - Never hides the SVG with opacity
+   - Draw effect uses stroke-dashoffset
+   - Replays whenever Diagram 3 re-enters viewport
+   ========================================================= */
+
+.ct-fiber-diagram .fiber3-collagen path,
+.ct-fiber-diagram .fiber3-elastic path,
+.ct-fiber-diagram .fiber3-reticular path {
+    transition: none;
+}
+
+
+/* Draw animation */
+
+.ct-fiber-diagram.fiber3-drawing
+.fiber3-collagen path,
+.ct-fiber-diagram.fiber3-drawing
+.fiber3-elastic path,
+.ct-fiber-diagram.fiber3-drawing
+.fiber3-reticular path {
+    transition:
+        stroke-dashoffset 1.2s ease-out;
+}
+
+
+/* Slightly slower individual groups */
+
+.ct-fiber-diagram.fiber3-drawing
+.fiber3-elastic path {
+    transition-duration: 1.35s;
+}
+
+.ct-fiber-diagram.fiber3-drawing
+.fiber3-reticular path {
+    transition-duration: 1.5s;
+}
+
+/* =========================================================
+   DIAGRAM 4
+   COMPLETE CONTENT REVEAL
+   ========================================================= */
+
+.diagram4-content {
+    opacity: 0;
+    transform: scale(0.96);
+    transform-origin: center;
+    transform-box: fill-box;
+
+    transition:
+        opacity 700ms ease,
+        transform 700ms ease;
+}
+
+.diagram4-content.is-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* =========================================================
+   DIAGRAM 4 — SEQUENTIAL STROKE DRAW + REVEAL
+   ---------------------------------------------------------
+   Sequence:
+   1. Main diagram fades in
+   2. Collagen fibers draw
+   3. Elastic fibers draw
+   4. Cells appear
+   5. Labels / relationship text appear
+
+   Scoped ONLY to Diagram 4
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   MAIN CONTENT
+   --------------------------------------------------------- */
+
+.ct-ground-diagram .diagram4-content {
+    opacity: 0;
+    transform: scale(0.97);
+    transform-origin: center;
+    transform-box: fill-box;
+
+    transition:
+        opacity 650ms ease,
+        transform 650ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ct-ground-diagram .diagram4-content.is-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* ---------------------------------------------------------
+   COLLAGEN FIBERS
+   --------------------------------------------------------- */
+
+.ct-ground-diagram .fiber4-collagen path {
+    fill: none;
+
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+
+    opacity: 0;
+
+    transition:
+        stroke-dashoffset 1.15s
+        cubic-bezier(0.65, 0, 0.35, 1),
+        opacity 250ms ease;
+}
+
+.ct-ground-diagram .diagram4-content.is-collagen-drawing
+.fiber4-collagen path {
+    opacity: 1;
+    stroke-dashoffset: 0;
+}
+
+
+/* ---------------------------------------------------------
+   ELASTIC FIBERS
+   --------------------------------------------------------- */
+
+.ct-ground-diagram .fiber4-elastic path {
+    fill: none;
+
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+
+    opacity: 0;
+
+    transition:
+        stroke-dashoffset 1.25s
+        cubic-bezier(0.65, 0, 0.35, 1),
+        opacity 250ms ease;
+}
+
+.ct-ground-diagram .diagram4-content.is-elastic-drawing
+.fiber4-elastic path {
+    opacity: 1;
+    stroke-dashoffset: 0;
+}
+
+
+/* ---------------------------------------------------------
+   CELLS
+   --------------------------------------------------------- */
+
+.ct-ground-diagram .fiber4-cells {
+    opacity: 0;
+    transform: scale(0.88);
+    transform-origin: center;
+
+    transition:
+        opacity 550ms ease,
+        transform 550ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ct-ground-diagram .diagram4-content.is-cells-visible
+.fiber4-cells {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* ---------------------------------------------------------
+   LABELS
+   --------------------------------------------------------- */
+
+.ct-ground-diagram .fiber4-cell-label,
+.ct-ground-diagram .diagram4-relationship {
+    opacity: 0;
+    transform: translateY(8px);
+
+    transition:
+        opacity 500ms ease,
+        transform 500ms ease;
+}
+
+.ct-ground-diagram .diagram4-content.is-labels-visible
+.fiber4-cell-label,
+
+.ct-ground-diagram .diagram4-content.is-labels-visible
+.diagram4-relationship {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ---------------------------------------------------------
+   GROUND SUBSTANCE LABEL
+   --------------------------------------------------------- */
+
+.ct-ground-diagram .diagram4-ground-label,
+.ct-ground-diagram .diagram4-ground-label-small {
+    opacity: 0;
+
+    transition:
+        opacity 500ms ease;
+}
+
+.ct-ground-diagram .diagram4-content.is-labels-visible
+.diagram4-ground-label,
+
+.ct-ground-diagram .diagram4-content.is-labels-visible
+.diagram4-ground-label-small {
+    opacity: 1;
+}
+
+
+/* ---------------------------------------------------------
+   REDUCED MOTION
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .ct-ground-diagram .diagram4-content,
+    .ct-ground-diagram .fiber4-collagen path,
+    .ct-ground-diagram .fiber4-elastic path,
+    .ct-ground-diagram .fiber4-cells,
+    .ct-ground-diagram .fiber4-cell-label,
+    .ct-ground-diagram .diagram4-relationship,
+    .ct-ground-diagram .diagram4-ground-label,
+    .ct-ground-diagram .diagram4-ground-label-small {
+        opacity: 1 !important;
+        transform: none !important;
+        stroke-dashoffset: 0 !important;
+        transition: none !important;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 4 - GROUND BACKGROUND FIX
+   ========================================================= */
+
+.ct-ground-svg-wrap {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.ct-ground-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* SVG background itself */
+.ct-ground-svg .ground-bg {
+    fill: #f8fafc;
+    stroke: #e2e8f0;
+    stroke-width: 2;
+}
+
+/* =========================================================
+   DIAGRAM 5
+   CONNECTIVE TISSUE CLASSIFICATION
+   FINAL COLOR + VISUAL POLISH + ANIMATION
+   Independent namespace
+   ========================================================= */
+
+
+/* =========================================================
+   NODE COLORS
+   ========================================================= */
+
+/* ---------- ROOT ---------- */
+
+.diagram5-svg .diagram5-root-box {
+    fill: #eef5ff !important;
+    stroke: #4f83d1 !important;
+    stroke-width: 2.5 !important;
+}
+
+
+/* ---------- THREE MAJOR GROUPS ---------- */
+
+.diagram5-svg .diagram5-proper-box {
+    fill: #f0f8e9 !important;
+    stroke: #73a83d !important;
+    stroke-width: 2.5 !important;
+}
+
+.diagram5-svg .diagram5-supportive-box {
+    fill: #fff5e8 !important;
+    stroke: #d99a3d !important;
+    stroke-width: 2.5 !important;
+}
+
+.diagram5-svg .diagram5-fluid-box {
+    fill: #fff0f2 !important;
+    stroke: #d96a76 !important;
+    stroke-width: 2.5 !important;
+}
+
+
+/* ---------- LEAF NODES ---------- */
+
+.diagram5-svg .diagram5-leaf-box {
+    fill: #ffffff !important;
+    stroke: #cbd5e1 !important;
+    stroke-width: 2 !important;
+}
+
+
+/* ---------- CATEGORY ACCENTS ---------- */
+
+.diagram5-svg .diagram5-loose-node .diagram5-leaf-box,
+.diagram5-svg .diagram5-dense-node .diagram5-leaf-box {
+    stroke: #8dbb63 !important;
+}
+
+.diagram5-svg .diagram5-cartilage-node .diagram5-leaf-box,
+.diagram5-svg .diagram5-bone-node .diagram5-leaf-box {
+    stroke: #dfad63 !important;
+}
+
+.diagram5-svg .diagram5-blood-node .diagram5-leaf-box,
+.diagram5-svg .diagram5-lymph-node .diagram5-leaf-box {
+    stroke: #dd7c86 !important;
+}
+
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+.diagram5-svg .diagram5-root-label {
+    fill: #1f4f91 !important;
+    font-weight: 800 !important;
+}
+
+.diagram5-svg .diagram5-node-title {
+    fill: #172033 !important;
+    font-weight: 800 !important;
+}
+
+.diagram5-svg .diagram5-node-subtitle {
+    fill: #475569 !important;
+    font-weight: 600 !important;
+}
+
+.diagram5-svg .diagram5-leaf-label {
+    fill: #334155 !important;
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   CONNECTOR LINES
+   Existing stroke-drawing animation preserved
+   ========================================================= */
+
+.diagram5-svg .diagram5-connector {
+    fill: none !important;
+    stroke: #9aa8b8 !important;
+    stroke-width: 3 !important;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+
+    transition:
+        stroke-dashoffset 850ms cubic-bezier(.4,0,.2,1);
+}
+
+.diagram5-svg .diagram5-connector.diagram5-draw {
+    stroke-dashoffset: 0;
+}
+
+
+/* =========================================================
+   MAIN SVG REVEAL
+   ========================================================= */
+
+.diagram5-svg {
+    opacity: 0;
+    transform: scale(.97);
+    transform-origin: center;
+
+    transition:
+        opacity 600ms ease,
+        transform 700ms cubic-bezier(.2,.75,.25,1);
+}
+
+.diagram5-svg.diagram5-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* ---------- SVG text ---------- */
+
+.diagram5-svg text {
+    font-family: inherit;
+    dominant-baseline: middle;
+}
+
+
+/* =========================================================
+   ROOT BOX FADE-IN
+   ========================================================= */
+
+.diagram5-svg .diagram5-root {
+    opacity: 0;
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    transform: translateY(-7px) scale(.96);
+
+    transition:
+        opacity 450ms ease,
+        transform 500ms cubic-bezier(.2,.75,.25,1);
+}
+
+.diagram5-svg .diagram5-root.diagram5-show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+
+/* =========================================================
+   THREE MAIN GROUP BOXES
+   ========================================================= */
+
+.diagram5-svg .diagram5-major {
+    opacity: 0;
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    transform: translateY(7px) scale(.96);
+
+    transition:
+        opacity 420ms ease,
+        transform 480ms cubic-bezier(.2,.75,.25,1);
+}
+
+.diagram5-svg .diagram5-major.diagram5-show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+
+/* =========================================================
+   SIX CHILD BOXES
+   ========================================================= */
+
+.diagram5-svg .diagram5-child {
+    opacity: 0;
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    transform: translateY(6px) scale(.97);
+
+    transition:
+        opacity 380ms ease,
+        transform 420ms cubic-bezier(.2,.75,.25,1);
+}
+
+.diagram5-svg .diagram5-child.diagram5-show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+
+/* =========================================================
+   SUMMARY BOX
+   ========================================================= */
+
+.diagram5-svg .diagram5-summary {
+    opacity: 0;
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    transform: translateY(6px);
+
+    transition:
+        opacity 550ms ease,
+        transform 550ms ease;
+}
+
+.diagram5-svg .diagram5-summary.diagram5-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   SUMMARY COLORS
+   ========================================================= */
+
+.diagram5-svg .diagram5-summary-box {
+    fill: #f5f8fc !important;
+    stroke: #d6dee8 !important;
+    stroke-width: 2 !important;
+}
+
+.diagram5-svg .diagram5-summary-title {
+    fill: #64748b !important;
+    font-weight: 700 !important;
+}
+
+.diagram5-svg .diagram5-summary-text {
+    fill: #475569 !important;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.diagram5-svg .diagram5-footer {
+    fill: #7b8794 !important;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .diagram5-svg,
+    .diagram5-svg .diagram5-root,
+    .diagram5-svg .diagram5-connector,
+    .diagram5-svg .diagram5-major,
+    .diagram5-svg .diagram5-child,
+    .diagram5-svg .diagram5-summary {
+        transition: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+    .diagram5-svg .diagram5-connector {
+        stroke-dashoffset: 0 !important;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 6
+   FUNCTIONS OF CONNECTIVE TISSUE
+   ISOLATED VISUAL BASE
+   NO ANIMATION
+   ========================================================= */
+
+/* ---------- SVG CONTAINER ---------- */
+
+.diagram6-svg {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+
+    background: transparent !important;
+    background-color: transparent !important;
+
+    overflow: visible !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ---------- FORCE SVG ROOT TRANSPARENCY ---------- */
+
+.diagram6-svg,
+.diagram6-svg > g {
+    background: transparent !important;
+}
+
+
+/* ---------- ALL SVG RECTANGLES ---------- */
+
+.diagram6-svg rect {
+    box-sizing: border-box;
+}
+
+
+/* ---------- CENTER HUB ---------- */
+
+.diagram6-svg .diagram6-center-box {
+    fill: #eef5ff !important;
+    stroke: #4f83d1 !important;
+    stroke-width: 2.5 !important;
+}
+
+
+/* ---------- FUNCTION NODES ---------- */
+
+.diagram6-svg .diagram6-support-box {
+    fill: #f0f8e9 !important;
+    stroke: #73a83d !important;
+    stroke-width: 2.5 !important;
+}
+
+.diagram6-svg .diagram6-connect-box {
+    fill: #eef7fb !important;
+    stroke: #5b9bb5 !important;
+    stroke-width: 2.5 !important;
+}
+
+.diagram6-svg .diagram6-protect-box {
+    fill: #fff0f2 !important;
+    stroke: #d96a76 !important;
+    stroke-width: 2.5 !important;
+}
+
+.diagram6-svg .diagram6-store-box {
+    fill: #fff6e8 !important;
+    stroke: #d99a3d !important;
+    stroke-width: 2.5 !important;
+}
+
+.diagram6-svg .diagram6-transport-box {
+    fill: #f2effb !important;
+    stroke: #8872b8 !important;
+    stroke-width: 2.5 !important;
+}
+
+
+/* ---------- SPOKES / CONNECTORS ---------- */
+
+.diagram6-svg .diagram6-spoke {
+    fill: none !important;
+
+    stroke: #9aa8b8 !important;
+    stroke-width: 3 !important;
+
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+}
+
+
+/* ---------- CENTER TEXT ---------- */
+
+.diagram6-svg .diagram6-center-title {
+    fill: #1f4f91 !important;
+    font-weight: 800 !important;
+}
+
+.diagram6-svg .diagram6-center-subtitle {
+    fill: #475569 !important;
+    font-weight: 600 !important;
+}
+
+
+/* ---------- FUNCTION TEXT ---------- */
+
+.diagram6-svg .diagram6-function-title {
+    fill: #172033 !important;
+    font-weight: 800 !important;
+}
+
+.diagram6-svg .diagram6-function-subtitle {
+    fill: #475569 !important;
+    font-weight: 600 !important;
+}
+
+
+/* ---------- ICONS ---------- */
+
+.diagram6-svg .diagram6-icon {
+    opacity: 1 !important;
+}
+
+
+/* ---------- REMOVE UNWANTED BLACK FILLS ---------- */
+
+/*
+   Important:
+   If the SVG contains generic rect elements without a
+   Diagram-6 class, do NOT allow them to become black.
+*/
+
+.diagram6-svg rect:not(
+    .diagram6-center-box,
+    .diagram6-support-box,
+    .diagram6-connect-box,
+    .diagram6-protect-box,
+    .diagram6-store-box,
+    .diagram6-transport-box
+) {
+    fill: transparent;
+}
+
+
+/* ---------- SVG TEXT ---------- */
+
+.diagram6-svg text {
+    font-family: inherit !important;
+    dominant-baseline: middle;
+}
+
+
+/* ---------- OUTER VISUAL SAFETY ---------- */
+
+.diagram6-visual {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+    .diagram6-svg {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 6
+   CONNECTOR LINE DRAW ANIMATION
+   ========================================================= */
+
+.diagram6-svg .diagram6-connector {
+    fill: none !important;
+
+    stroke: #9aa8b8 !important;
+    stroke-width: 3 !important;
+
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+
+    /*
+       Initial hidden state.
+       JavaScript will calculate the exact
+       path length and draw each line.
+    */
+    stroke-dasharray: var(--diagram6-path-length);
+    stroke-dashoffset: var(--diagram6-path-length);
+
+    opacity: 1 !important;
+
+    transition:
+        stroke-dashoffset 750ms
+        cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+
+/* ---------------------------------------------------------
+   DRAWING STATE
+   --------------------------------------------------------- */
+
+.diagram6-svg .diagram6-connector.diagram6-line-draw {
+    stroke-dashoffset: 0;
+}
+
+
+/* ---------------------------------------------------------
+   ACCESSIBILITY
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .diagram6-svg .diagram6-connector {
+        stroke-dasharray: none !important;
+        stroke-dashoffset: 0 !important;
+        transition: none !important;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 6
+   FIVE CORE FUNCTIONS
+   VISUAL POLISH
+   ISOLATED BLOCK
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   SVG FRAME
+   --------------------------------------------------------- */
+
+.diagram6-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    overflow: visible;
+
+    font-family: inherit;
+}
+
+
+/* ---------------------------------------------------------
+   BACKGROUND
+   --------------------------------------------------------- */
+
+.diagram6-svg .diagram6-background {
+    fill: #ffffff;
+    stroke: none;
+}
+
+
+/* ---------------------------------------------------------
+   CONNECTOR LINES
+   IMPORTANT:
+   Do NOT interfere with the existing draw animation.
+   --------------------------------------------------------- */
+
+.diagram6-svg .diagram6-connector {
+    fill: none;
+    stroke: #9aa8b8;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* ---------------------------------------------------------
+   CENTER HUB
+   --------------------------------------------------------- */
+
+.diagram6-svg .diagram6-hub-box {
+    fill: #eef5ff;
+    stroke: #4f83d1;
+    stroke-width: 2.5;
+}
+
+
+.diagram6-svg .diagram6-hub-icon {
+    font-size: 22px;
+}
+
+
+.diagram6-svg .diagram6-hub-title {
+    fill: #1f4f91;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+}
+
+
+.diagram6-svg .diagram6-hub-subtitle {
+    fill: #475569;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+
+/* ---------------------------------------------------------
+   FUNCTION NODE BOXES
+   --------------------------------------------------------- */
+
+.diagram6-svg .diagram6-function-box {
+    fill: #ffffff;
+    stroke-width: 2.5;
+}
+
+
+/* ---------------------------------------------------------
+   FUNCTION COLOUR ACCENTS
+   --------------------------------------------------------- */
+
+.diagram6-svg .diagram6-support
+.diagram6-function-box {
+    stroke: #d9a04a;
+}
+
+.diagram6-svg .diagram6-connect
+.diagram6-function-box {
+    stroke: #7faebc;
+}
+
+.diagram6-svg .diagram6-protect
+.diagram6-function-box {
+    stroke: #8da9c8;
+}
+
+.diagram6-svg .diagram6-store
+.diagram6-function-box {
+    stroke: #c49a5a;
+}
+
+.diagram6-svg .diagram6-transport
+.diagram6-function-box {
+    stroke: #d29a62;
+}
+
+
+/* ---------------------------------------------------------
+   FUNCTION ICONS
+   --------------------------------------------------------- */
+
+.diagram6-svg .diagram6-function-icon {
+    font-size: 22px;
+}
+
+
+/* ---------------------------------------------------------
+   FUNCTION TITLES
+   --------------------------------------------------------- */
+
+.diagram6-svg .diagram6-function-title {
+    fill: #172033;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+}
+
+
+/* ---------------------------------------------------------
+   FUNCTION DESCRIPTIONS
+   --------------------------------------------------------- */
+
+.diagram6-svg .diagram6-function-description {
+    fill: #475569;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* ---------------------------------------------------------
+   MEMORY STRIP
+   --------------------------------------------------------- */
+
+.diagram6-svg .diagram6-memory-box {
+    fill: #f5f8fc;
+    stroke: #d6dee8;
+    stroke-width: 2;
+}
+
+
+.diagram6-svg .diagram6-memory-text {
+    fill: #64748b;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+}
+
+
+/* ---------------------------------------------------------
+   SUBTLE NODE DEPTH
+   --------------------------------------------------------- */
+
+.diagram6-svg .diagram6-hub-box,
+.diagram6-svg .diagram6-function-box,
+.diagram6-svg .diagram6-memory-box {
+    filter: drop-shadow(0 2px 3px rgba(30, 50, 80, 0.08));
+}
+
+
+/* ---------------------------------------------------------
+   VERY SUBTLE FUNCTION NODE HOVER
+   --------------------------------------------------------- */
+
+.diagram6-svg .diagram6-function {
+    transition:
+        transform 220ms ease,
+        filter 220ms ease;
+}
+
+.diagram6-svg .diagram6-function:hover {
+    filter: drop-shadow(0 4px 7px rgba(30, 50, 80, 0.14));
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE SCALE
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .diagram6-svg .diagram6-hub-title {
+        font-size: 18px;
+    }
+
+    .diagram6-svg .diagram6-hub-subtitle {
+        font-size: 13px;
+    }
+
+    .diagram6-svg .diagram6-function-title {
+        font-size: 16px;
+    }
+
+    .diagram6-svg .diagram6-function-description {
+        font-size: 12px;
+    }
+
+    .diagram6-svg .diagram6-memory-text {
+        font-size: 10px;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   REDUCED MOTION
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .diagram6-svg .diagram6-function {
+        transition: none !important;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 6
+   STEP 3 — ANIMATION TIMING POLISH
+
+   Center → Connectors → Function Nodes → Memory Strip
+
+   IMPORTANT:
+   Existing connector drawing animation is untouched.
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   BASE NODE REVEAL
+   --------------------------------------------------------- */
+
+.diagram6-svg .diagram6-node-reveal {
+    opacity: 0;
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    transform:
+        translateY(8px)
+        scale(0.96);
+
+    transition:
+        opacity 420ms ease,
+        transform 520ms cubic-bezier(.2,.75,.25,1);
+
+    /*
+     * Timing is controlled per node below.
+     */
+    transition-delay: 0ms;
+}
+
+
+/* ---------------------------------------------------------
+   VISIBLE STATE
+   --------------------------------------------------------- */
+
+.diagram6-svg
+.diagram6-node-reveal.diagram6-node-visible {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================================================
+   1. CENTER HUB
+   ========================================================= */
+
+.diagram6-svg
+.diagram6-hub.diagram6-node-reveal {
+
+    transform:
+        translateY(6px)
+        scale(.97);
+
+    transition-delay: 0ms;
+}
+
+
+.diagram6-svg
+.diagram6-hub.diagram6-node-reveal.diagram6-node-visible {
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================================================
+   2. FUNCTION NODES
+   ========================================================= */
+
+/*
+   Connector animation starts first.
+
+   Each function node appears shortly after
+   its corresponding connector has been drawn.
+*/
+
+
+.diagram6-svg
+.diagram6-function.diagram6-node-reveal {
+
+    transform:
+        translateY(9px)
+        scale(.95);
+
+    transition:
+        opacity 420ms ease,
+        transform 520ms cubic-bezier(.2,.75,.25,1);
+
+}
+
+
+/* ---------------------------------------------------------
+   SUPPORT
+   Connector #1
+   --------------------------------------------------------- */
+
+.diagram6-svg
+.diagram6-support.diagram6-node-reveal {
+
+    transition-delay: 650ms;
+}
+
+
+/* ---------------------------------------------------------
+   CONNECT
+   Connector #2
+   --------------------------------------------------------- */
+
+.diagram6-svg
+.diagram6-connect.diagram6-node-reveal {
+
+    transition-delay: 830ms;
+}
+
+
+/* ---------------------------------------------------------
+   PROTECT
+   Connector #3
+   --------------------------------------------------------- */
+
+.diagram6-svg
+.diagram6-protect.diagram6-node-reveal {
+
+    transition-delay: 1010ms;
+}
+
+
+/* ---------------------------------------------------------
+   STORE
+   Connector #4
+   --------------------------------------------------------- */
+
+.diagram6-svg
+.diagram6-store.diagram6-node-reveal {
+
+    transition-delay: 1190ms;
+}
+
+
+/* ---------------------------------------------------------
+   TRANSPORT
+   Connector #5
+   --------------------------------------------------------- */
+
+.diagram6-svg
+.diagram6-transport.diagram6-node-reveal {
+
+    transition-delay: 1370ms;
+}
+
+
+/* ---------------------------------------------------------
+   FUNCTION NODE VISIBLE STATE
+   --------------------------------------------------------- */
+
+.diagram6-svg
+.diagram6-function.diagram6-node-reveal.diagram6-node-visible {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================================================
+   3. MEMORY STRIP
+   ========================================================= */
+
+.diagram6-svg
+.diagram6-memory.diagram6-node-reveal {
+
+    transform:
+        translateY(6px)
+        scale(.97);
+
+    transition:
+        opacity 500ms ease,
+        transform 520ms cubic-bezier(.2,.75,.25,1);
+
+    /*
+     * Appears after all five functions.
+     */
+
+    transition-delay: 1700ms;
+}
+
+
+.diagram6-svg
+.diagram6-memory.diagram6-node-reveal.diagram6-node-visible {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================================================
+   4. REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .diagram6-svg .diagram6-node-reveal,
+    .diagram6-svg .diagram6-node-reveal.diagram6-node-visible {
+
+        opacity: 1 !important;
+
+        transform: none !important;
+
+        transition: none !important;
+
+        transition-delay: 0ms !important;
+    }
+
+}
+
+/* =========================================================
+   LESSON PAGE NAVIGATION BUTTONS
+   ========================================================= */
+
+
+/* =========================================================
+   FLOATING PAGE SCROLL BUTTONS
+   ========================================================= */
+
+.page-scroll-btn {
+    position: fixed;
+
+    right: 18px;
+
+    width: 44px;
+    height: 44px;
+
+    border: none;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    z-index: 9999;
+
+    font-size: 24px;
+    font-weight: 800;
+
+    color: #ffffff;
+
+    background: #1f5fbf;
+
+    box-shadow:
+        0 5px 16px rgba(20, 50, 90, 0.22);
+
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        opacity 180ms ease;
+}
+
+
+/* ---------- HOVER ---------- */
+
+.page-scroll-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 20px rgba(20, 50, 90, 0.28);
+}
+
+
+/* ---------- ACTIVE ---------- */
+
+.page-scroll-btn:active {
+    transform: scale(0.92);
+}
+
+
+/* =========================================================
+   DOWN BUTTON
+   Right side / upper part
+   ========================================================= */
+
+.page-down-btn {
+    top: 20px;
+
+    opacity: 0.5;
+}
+
+
+/* =========================================================
+   UP BUTTON
+   Right side / lower part
+   ========================================================= */
+
+.page-up-btn {
+    bottom: 22px;
+
+    opacity: 0.5;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .page-scroll-btn {
+        right: 12px;
+
+        width: 30px;
+        height: 30px;
+
+        font-size: 18px;
+    }
+
+    .page-down-btn {
+        top: 20px;
+        opacity: 0.5;
+    }
+
+    .page-up-btn {
+        bottom: 20px;
+        opacity: 0.5;
+    }
+
+}

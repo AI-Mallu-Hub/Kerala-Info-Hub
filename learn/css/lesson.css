@@ -15,6 +15,7 @@
     box-sizing:border-box;
 }
 
+
 body{
     font-family:Arial,Helvetica,sans-serif;
     background:#eef3fb;
@@ -27,7 +28,7 @@ body{
 .lesson-header{
     background:#1565d8;
     color:#fff;
-    padding:20px;
+    padding:40px;
 }
 
 .back-btn{
@@ -35,7 +36,27 @@ body{
     text-decoration:none;
     font-size:15px;
     display:inline-block;
-    margin-bottom:18px;
+}
+
+.lesson-header{
+    position:relative;
+}
+
+.back-btn{
+    position:absolute;
+    left:20px;
+    top:20px;
+    margin:0;
+}
+
+.next-lesson-btn{
+    position:absolute;
+    right:20px;
+    top:20px;
+
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
 }
 
 .lesson-hero h1{
@@ -1016,4 +1037,8185 @@ color:#2563eb;
 }
 
 
+/* =========================================================
+   HUMAN BODY DISTRIBUTION DIAGRAM
+   ========================================================= */
 
+#diagram-body.human-body-diagram {
+    width: 100%;
+    margin: 28px auto 10px;
+    padding: 8px 0 4px;
+    box-sizing: border-box;
+}
+
+#diagram-body .human-body-stage {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#diagram-body .human-body-svg {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+/* Human body */
+#diagram-body .body-head,
+#diagram-body .body-neck,
+#diagram-body .body-torso,
+#diagram-body .body-left-arm,
+#diagram-body .body-right-arm,
+#diagram-body .body-left-leg,
+#diagram-body .body-right-leg {
+    fill: #eaf4fb;
+    stroke: #72a9d8;
+    stroke-width: 3;
+    stroke-linejoin: round;
+}
+
+/* Location markers */
+#diagram-body .body-marker {
+    fill: #8b4de8;
+    stroke: #ffffff;
+    stroke-width: 5;
+    cursor: pointer;
+
+    transition:
+        transform 180ms ease,
+        fill 180ms ease,
+        stroke-width 180ms ease,
+        filter 180ms ease;
+}
+
+#diagram-body .body-marker:hover {
+    fill: #6f35c9;
+    stroke-width: 4;
+    filter: drop-shadow(0 3px 5px rgba(100, 55, 180, 0.28));
+}
+
+#diagram-body .body-marker.active {
+    fill: #f0a928;
+    stroke: #ffffff;
+    stroke-width: 5;
+    filter: drop-shadow(0 3px 6px rgba(220, 150, 30, 0.3));
+}
+
+/* Information panel */
+#diagram-body .body-location-info {
+    width: calc(100% - 34px);
+    max-width: 390px;
+    margin: 18px auto 0;
+    padding: 16px 18px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    background: #f8fbff;
+    border: 2px solid #a8c9eb;
+    border-radius: 18px;
+
+    text-align: left;
+
+    box-shadow:
+        0 6px 18px rgba(50, 100, 150, 0.08);
+}
+
+#diagram-body .body-info-icon {
+    flex: 0 0 auto;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #eaf4fb;
+
+    font-size: 22px;
+}
+
+#diagram-body .body-info-content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#diagram-body .body-info-content strong {
+    font-size: 17px;
+    line-height: 1.25;
+    color: #1f2937;
+}
+
+#diagram-body .body-info-content span {
+    font-size: 14px;
+    line-height: 1.45;
+    color: #667085;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    #diagram-body.human-body-diagram {
+        margin-top: 22px;
+    }
+
+    #diagram-body .human-body-svg {
+        max-width: 330px;
+    }
+
+    #diagram-body .body-location-info {
+        width: calc(100% - 24px);
+        padding: 14px 15px;
+        border-radius: 16px;
+    }
+
+    #diagram-body .body-info-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+    }
+
+    #diagram-body .body-info-content strong {
+        font-size: 16px;
+    }
+
+    #diagram-body .body-info-content span {
+        font-size: 13px;
+    }
+}
+
+/* =========================================================
+   EPITHELIAL TISSUE STRUCTURE DIAGRAM
+   Clean Visual Patch
+   ========================================================= */
+
+.epithelium-diagram {
+    width: 100%;
+    margin: 38px auto 30px;
+    padding: 26px 16px 24px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* ---------- Title ---------- */
+
+.epithelium-diagram-title {
+    font-size: 1.55rem;
+    font-weight: 800;
+    line-height: 1.25;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+.epithelium-diagram-subtitle {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 28px;
+}
+
+
+/* ---------- Main Visual ---------- */
+
+.epithelium-visual {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 18px 0 24px;
+    box-sizing: border-box;
+}
+
+
+/* ---------- Epithelial Cell Layer ---------- */
+
+.epithelial-cell-layer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3px;
+
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+
+    position: relative;
+    z-index: 3;
+}
+
+
+/* ---------- Individual Cell ---------- */
+
+.epithelial-cell {
+    position: relative;
+
+    width: 52px;
+    height: 58px;
+
+    flex: 0 0 52px;
+
+    background: #eaf4fb;
+    border: 4px solid #72add6;
+
+    border-radius: 48% 48% 42% 42%;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        0 2px 5px rgba(83, 142, 190, 0.10);
+}
+
+
+/* ---------- Cell Nucleus ---------- */
+
+.cell-nucleus {
+    width: 16px;
+    height: 16px;
+
+    background: #8b4de8;
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 5px rgba(255, 255, 255, 0.65);
+}
+
+
+/* ---------- Basement Membrane ---------- */
+
+.basement-membrane {
+    position: relative;
+    z-index: 4;
+
+    width: calc(100% - 30px);
+    max-width: 440px;
+
+    height: 13px;
+
+    margin: -2px auto 0;
+
+    background: #e8b84f;
+
+    border-radius: 999px;
+
+    box-shadow:
+        0 2px 5px rgba(180, 130, 30, 0.12);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* Small membrane texture */
+
+.basement-membrane span {
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.55);
+}
+
+
+/* ---------- Connective Tissue ---------- */
+
+.connective-tissue {
+    position: relative;
+
+    width: calc(100% - 30px);
+    max-width: 440px;
+
+    height: 105px;
+
+    margin: 0 auto;
+
+    background: #f1f6fa;
+
+    border: 2px solid #c9ddea;
+
+    border-top: none;
+
+    border-radius: 0 0 28px 28px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* ---------- Connective Fibers ---------- */
+
+.connective-fiber {
+    position: absolute;
+
+    height: 3px;
+
+    background: #9bb9ca;
+
+    border-radius: 999px;
+
+    opacity: 0.75;
+}
+
+.fiber-1 {
+    width: 70%;
+    left: 10%;
+    top: 28px;
+    transform: rotate(8deg);
+}
+
+.fiber-2 {
+    width: 62%;
+    left: 20%;
+    top: 52px;
+    transform: rotate(-12deg);
+}
+
+.fiber-3 {
+    width: 55%;
+    left: 5%;
+    top: 76px;
+    transform: rotate(5deg);
+}
+
+.fiber-4 {
+    width: 48%;
+    right: 3%;
+    top: 40px;
+    transform: rotate(16deg);
+}
+
+
+/* ---------- Connective Dots ---------- */
+
+.connective-dot {
+    position: absolute;
+
+    width: 9px;
+    height: 9px;
+
+    background: #8b4de8;
+
+    border-radius: 50%;
+
+    opacity: 0.75;
+}
+
+.dot-1 {
+    left: 18%;
+    top: 22px;
+}
+
+.dot-2 {
+    left: 42%;
+    top: 65px;
+}
+
+.dot-3 {
+    left: 66%;
+    top: 31px;
+}
+
+.dot-4 {
+    right: 16%;
+    top: 72px;
+}
+
+.dot-5 {
+    right: 30%;
+    top: 48px;
+}
+
+
+/* =========================================================
+   LABELS
+   ========================================================= */
+
+.epithelium-label {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    color: #374151;
+
+    white-space: nowrap;
+
+    z-index: 8;
+}
+
+
+/* Small blue marker dot */
+
+.label-dot {
+    width: 8px;
+    height: 8px;
+
+    background: #72add6;
+
+    border-radius: 50%;
+
+    flex: 0 0 auto;
+}
+
+
+/* Label connector line */
+
+.label-line {
+    display: block;
+
+    width: 28px;
+    height: 2px;
+
+    background: #9fc4df;
+
+    border-radius: 999px;
+
+    flex: 0 0 auto;
+}
+
+
+/* ---------- Label Positions ---------- */
+
+.label-apical {
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.label-epithelial {
+    top: 76px;
+    right: 0;
+}
+
+.label-basement {
+    top: 122px;
+    left: 0;
+}
+
+.label-connective {
+    bottom: 12px;
+    right: 0;
+}
+
+
+/* ---------- Diagram Hint ---------- */
+
+.epithelium-diagram-hint {
+    width: 100%;
+    max-width: 470px;
+
+    margin: 20px auto 0;
+    padding: 14px 18px;
+
+    box-sizing: border-box;
+
+    background: #f5f9fd;
+
+    border: 2px solid #a9c9e5;
+    border-radius: 18px;
+
+    color: #5f6b78;
+
+    font-size: 0.92rem;
+    line-height: 1.5;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   INITIAL ANIMATION STATE
+   JS will add .is-visible later
+   ========================================================= */
+
+.epithelium-diagram .epithelial-cell,
+.epithelium-diagram .basement-membrane,
+.epithelium-diagram .connective-tissue,
+.epithelium-diagram .epithelium-label,
+.epithelium-diagram .epithelium-diagram-hint {
+    opacity: 0;
+    transform: translateY(18px);
+}
+
+
+/* Visible state */
+
+.epithelium-diagram.is-visible .epithelial-cell {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition:
+        opacity 0.55s ease,
+        transform 0.55s ease;
+}
+
+.epithelium-diagram.is-visible .basement-membrane {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition:
+        opacity 0.6s ease 0.25s,
+        transform 0.6s ease 0.25s;
+}
+
+.epithelium-diagram.is-visible .connective-tissue {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition:
+        opacity 0.65s ease 0.4s,
+        transform 0.65s ease 0.4s;
+}
+
+.epithelium-diagram.is-visible .epithelium-label {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition:
+        opacity 0.55s ease 0.65s,
+        transform 0.55s ease 0.65s;
+}
+
+.epithelium-diagram.is-visible .epithelium-diagram-hint {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition:
+        opacity 0.55s ease 0.85s,
+        transform 0.55s ease 0.85s;
+}
+
+
+/* =========================================================
+   STAGGER CELLS
+   ========================================================= */
+
+.epithelium-diagram.is-visible .epithelial-cell:nth-child(1) {
+    transition-delay: 0.05s;
+}
+
+.epithelium-diagram.is-visible .epithelial-cell:nth-child(2) {
+    transition-delay: 0.10s;
+}
+
+.epithelium-diagram.is-visible .epithelial-cell:nth-child(3) {
+    transition-delay: 0.15s;
+}
+
+.epithelium-diagram.is-visible .epithelial-cell:nth-child(4) {
+    transition-delay: 0.20s;
+}
+
+.epithelium-diagram.is-visible .epithelial-cell:nth-child(5) {
+    transition-delay: 0.25s;
+}
+
+.epithelium-diagram.is-visible .epithelial-cell:nth-child(6) {
+    transition-delay: 0.30s;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .epithelium-diagram {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .epithelium-diagram-title {
+        font-size: 1.35rem;
+    }
+
+    .epithelium-diagram-subtitle {
+        font-size: 0.92rem;
+    }
+
+    .epithelial-cell-layer {
+        gap: 2px;
+        max-width: 350px;
+    }
+
+    .epithelial-cell {
+        width: 47px;
+        height: 53px;
+
+        flex-basis: 47px;
+
+        border-width: 3px;
+    }
+
+    .cell-nucleus {
+        width: 14px;
+        height: 14px;
+    }
+
+    .basement-membrane,
+    .connective-tissue {
+        width: calc(100% - 20px);
+    }
+
+    .epithelium-label {
+        font-size: 0.72rem;
+    }
+
+    .label-epithelial {
+        right: 2px;
+    }
+
+    .label-basement {
+        left: 2px;
+    }
+
+    .label-connective {
+        right: 2px;
+    }
+
+    .label-line {
+        width: 20px;
+    }
+
+    .epithelium-diagram-hint {
+        font-size: 0.86rem;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+    .epithelial-cell-layer {
+        max-width: 320px;
+    }
+
+    .epithelial-cell {
+        width: 43px;
+        height: 49px;
+        flex-basis: 43px;
+    }
+
+    .epithelium-label {
+        font-size: 0.68rem;
+    }
+
+    .label-line {
+        width: 15px;
+    }
+}
+
+/* =========================================================
+   EPITHELIAL TISSUE CLASSIFICATION
+   CLEAN INTERACTIVE TREE
+   ========================================================= */
+
+/* ---------- Main Diagram ---------- */
+
+.classification-diagram {
+    width: 100%;
+    max-width: 560px;
+    margin: 38px auto 32px;
+    padding: 28px 18px 26px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 2px solid #c9dff0;
+    border-radius: 24px;
+
+    overflow: hidden;
+    text-align: left;
+
+    box-shadow:
+        0 8px 24px rgba(60, 100, 140, 0.08);
+}
+
+
+/* ---------- Diagram Header ---------- */
+
+.classification-diagram-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    margin: 0 auto 28px;
+    max-width: 460px;
+}
+
+.classification-diagram-icon {
+    flex: 0 0 auto;
+    font-size: 42px;
+    line-height: 1;
+}
+
+.classification-diagram-header h3 {
+    margin: 0;
+
+    font-size: 1.45rem;
+    line-height: 1.2;
+    font-weight: 800;
+
+    color: #111827;
+}
+
+.classification-diagram-header p {
+    margin: 7px 0 0;
+
+    font-size: 0.95rem;
+    line-height: 1.45;
+
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   CLASSIFICATION TREE
+   ========================================================= */
+
+.classification-tree {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+
+/* ---------- Root Node ---------- */
+
+.classification-tree .root-node {
+    width: min(100%, 360px);
+    min-height: 86px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 16px 20px;
+    box-sizing: border-box;
+
+    background: #f3f8fc;
+    border: 2px solid #72add6;
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 14px rgba(80, 130, 170, 0.08);
+}
+
+
+/* ---------- Root Connector ---------- */
+
+.classification-tree .main-connector {
+    width: 2px;
+    height: 34px;
+
+    margin: 0 auto;
+
+    background: #9fc4df;
+}
+
+
+/* ---------- Node Icon ---------- */
+
+.classification-tree .node-icon {
+    flex: 0 0 auto;
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+}
+
+
+/* ---------- Node Content ---------- */
+
+.classification-tree .node-content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.classification-tree .node-content strong {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 800;
+
+    color: #172033;
+}
+
+.classification-tree .node-content span {
+    font-size: 0.86rem;
+    line-height: 1.4;
+
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   FOUR MAJOR BRANCHES
+   ========================================================= */
+
+.major-classification-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+
+    margin: 0 auto;
+}
+
+
+/* ---------- Individual Major Branch ---------- */
+
+.major-classification-grid .major-branch {
+    width: 100%;
+}
+
+
+/* =========================================================
+   MAIN TYPE NODES
+   ========================================================= */
+
+.classification-tree .type-node {
+    width: 100%;
+    min-height: 82px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px 16px;
+
+    border-radius: 18px;
+
+    transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease,
+        border-color 0.22s ease;
+}
+
+
+/* ---------- Expandable Buttons ---------- */
+
+.classification-tree button.type-node {
+    appearance: none;
+    -webkit-appearance: none;
+
+    font: inherit;
+    text-align: left;
+
+    cursor: pointer;
+
+    background: #f8fbfe;
+}
+
+
+/* ---------- Simple ---------- */
+
+.classification-tree .simple-node {
+    border: 2px solid #72add6;
+
+    background: #f3f8fc;
+}
+
+
+/* ---------- Stratified ---------- */
+
+.classification-tree .stratified-node {
+    border: 2px solid #b59add;
+
+    background: #f7f2fc;
+}
+
+
+/* ---------- Special Branches ---------- */
+
+.classification-tree .special-node {
+    border: 2px solid #d6b66a;
+
+    background: #fcf8ee;
+}
+
+
+/* Transitional */
+
+.classification-tree
+.major-branch:last-child
+.special-node {
+    border-color: #9fc4df;
+    background: #f2f8fc;
+}
+
+
+/* ---------- Tap Feedback ---------- */
+
+.classification-tree .type-node:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 14px rgba(70, 110, 145, 0.10);
+}
+
+.classification-tree .type-node:active {
+    transform: scale(0.985);
+}
+
+
+/* =========================================================
+   EXPAND ICON
+   ========================================================= */
+
+.expand-icon {
+    flex: 0 0 auto;
+
+    width: 30px;
+    height: 30px;
+
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(114, 173, 214, 0.12);
+
+    color: #3979a9;
+
+    font-size: 1.35rem;
+    font-weight: 500;
+    line-height: 1;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+
+/* Open state */
+
+.expandable-node[aria-expanded="true"] .expand-icon {
+    transform: rotate(45deg);
+
+    background: rgba(114, 173, 214, 0.20);
+}
+
+
+/* =========================================================
+   SUBTREE
+   ========================================================= */
+
+/*
+   JS will remove [hidden] and add .is-open.
+   This gives us a smooth height + opacity animation.
+*/
+
+.classification-subtree {
+    width: 100%;
+
+    max-height: 0;
+
+    opacity: 0;
+    overflow: hidden;
+
+    transform: translateY(-6px);
+
+    transition:
+        max-height 0.55s ease,
+        opacity 0.35s ease,
+        transform 0.45s ease;
+
+    pointer-events: none;
+}
+
+
+/* IMPORTANT:
+   hidden must remain truly hidden before JS opens it.
+*/
+
+.classification-subtree[hidden] {
+    display: none !important;
+}
+
+
+/* Open */
+
+.classification-subtree.is-open {
+    max-height: 420px;
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    pointer-events: auto;
+}
+
+
+/* =========================================================
+   SUBTREE CONNECTOR
+   ========================================================= */
+
+.subtree-connector {
+    width: 2px;
+    height: 24px;
+
+    margin: 0 auto;
+
+    background: #9fc4df;
+}
+
+
+/* =========================================================
+   SUBTYPE GRID
+   ========================================================= */
+
+.subtype-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 8px;
+
+    width: 100%;
+}
+
+
+/* ---------- Subtype Node ---------- */
+
+.classification-tree .subtype-node {
+    min-width: 0;
+    min-height: 105px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 12px 7px;
+
+    box-sizing: border-box;
+
+    border: 2px solid #d5e4ef;
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.classification-tree .subtype-node:hover {
+    transform: translateY(-2px);
+
+    border-color: #8bb9da;
+
+    box-shadow:
+        0 5px 12px rgba(70, 110, 145, 0.10);
+}
+
+
+/* ---------- Subtype Icon ---------- */
+
+.subtype-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #72add6;
+    border-radius: 10px;
+
+    background: #eef7fc;
+
+    color: #7b43d4;
+
+    font-size: 23px;
+    font-weight: 700;
+}
+
+
+/* ---------- Subtype Text ---------- */
+
+.classification-tree .subtype-node .node-content {
+    width: 100%;
+
+    text-align: center;
+    align-items: center;
+}
+
+.classification-tree .subtype-node .node-content strong {
+    font-size: 0.82rem;
+}
+
+.classification-tree .subtype-node .node-content span {
+    font-size: 0.68rem;
+}
+
+
+/* =========================================================
+   DIAGRAM NOTE
+   ========================================================= */
+
+.classification-note {
+    width: 100%;
+
+    margin: 24px auto 0;
+    padding: 15px 16px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    background: #f5f9fd;
+
+    border: 2px solid #d6e6f2;
+    border-radius: 16px;
+
+    color: #667085;
+}
+
+
+.classification-note .note-icon {
+    flex: 0 0 auto;
+
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+
+.classification-note > div {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.classification-note strong {
+    font-size: 0.95rem;
+    line-height: 1.3;
+
+    color: #263244;
+}
+
+
+.classification-note span {
+    font-size: 0.82rem;
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   DIAGRAM REVEAL ANIMATION
+   ========================================================= */
+
+/*
+   Keeps the same visual language as the other diagrams.
+   JS adds .is-visible to the diagram.
+*/
+
+.classification-diagram .classification-diagram-header,
+.classification-diagram .root-node,
+.classification-diagram .main-connector,
+.classification-diagram .major-branch,
+.classification-diagram .classification-note {
+    opacity: 0;
+    transform: translateY(18px);
+}
+
+
+.classification-diagram.is-visible
+.classification-diagram-header {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition:
+        opacity 0.55s ease,
+        transform 0.55s ease;
+}
+
+
+.classification-diagram.is-visible
+.root-node {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition:
+        opacity 0.55s ease 0.12s,
+        transform 0.55s ease 0.12s;
+}
+
+
+.classification-diagram.is-visible
+.main-connector {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition:
+        opacity 0.45s ease 0.28s,
+        transform 0.45s ease 0.28s;
+}
+
+
+.classification-diagram.is-visible
+.major-branch {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition:
+        opacity 0.50s ease,
+        transform 0.50s ease;
+}
+
+
+.classification-diagram.is-visible
+.major-branch:nth-child(1) {
+    transition-delay: 0.34s;
+}
+
+.classification-diagram.is-visible
+.major-branch:nth-child(2) {
+    transition-delay: 0.42s;
+}
+
+.classification-diagram.is-visible
+.major-branch:nth-child(3) {
+    transition-delay: 0.50s;
+}
+
+.classification-diagram.is-visible
+.major-branch:nth-child(4) {
+    transition-delay: 0.58s;
+}
+
+
+.classification-diagram.is-visible
+.classification-note {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition:
+        opacity 0.55s ease 0.68s,
+        transform 0.55s ease 0.68s;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .classification-diagram {
+        margin-top: 30px;
+        padding: 24px 14px 22px;
+
+        border-radius: 22px;
+    }
+
+
+    .classification-diagram-header {
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+
+
+    .classification-diagram-icon {
+        font-size: 36px;
+    }
+
+
+    .classification-diagram-header h3 {
+        font-size: 1.28rem;
+    }
+
+
+    .classification-diagram-header p {
+        font-size: 0.88rem;
+    }
+
+
+    .classification-tree .root-node {
+        min-height: 78px;
+
+        padding: 13px 15px;
+    }
+
+
+    .classification-tree .root-node .node-icon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 24px;
+    }
+
+
+    .classification-tree .type-node {
+        min-height: 76px;
+
+        padding: 12px 14px;
+    }
+
+
+    .classification-tree .type-node .node-icon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 23px;
+    }
+
+
+    .classification-tree .node-content strong {
+        font-size: 0.95rem;
+    }
+
+
+    .classification-tree .node-content span {
+        font-size: 0.78rem;
+    }
+
+
+    .expand-icon {
+        width: 28px;
+        height: 28px;
+
+        font-size: 1.25rem;
+    }
+
+
+    .subtype-grid {
+        gap: 7px;
+    }
+
+
+    .classification-tree .subtype-node {
+        min-height: 96px;
+
+        padding: 9px 5px;
+
+        border-radius: 14px;
+    }
+
+
+    .subtype-icon {
+        width: 34px;
+        height: 34px;
+
+        font-size: 20px;
+    }
+
+
+    .classification-tree .subtype-node .node-content strong {
+        font-size: 0.76rem;
+    }
+
+
+    .classification-tree .subtype-node .node-content span {
+        font-size: 0.62rem;
+    }
+
+
+    .classification-note {
+        margin-top: 20px;
+        padding: 13px 14px;
+    }
+
+
+    .classification-note strong {
+        font-size: 0.88rem;
+    }
+
+
+    .classification-note span {
+        font-size: 0.76rem;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+    .classification-diagram {
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+
+    .classification-diagram-header h3 {
+        font-size: 1.18rem;
+    }
+
+
+    .classification-diagram-header p {
+        font-size: 0.82rem;
+    }
+
+
+    .classification-tree .type-node {
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+
+    .subtype-grid {
+        gap: 5px;
+    }
+
+
+    .classification-tree .subtype-node {
+        min-height: 90px;
+
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+
+    .classification-tree .subtype-node .node-content strong {
+        font-size: 0.70rem;
+    }
+
+
+    .classification-tree .subtype-node .node-content span {
+        font-size: 0.58rem;
+    }
+}
+
+/* =========================================================
+   SIMPLE EPITHELIUM DIAGRAM
+   Clean visual layer for the current HTML structure
+   ========================================================= */
+
+.simple-epithelium-diagram {
+  width: min(100%, 560px);
+  margin: 28px auto;
+  padding: 28px 20px 24px;
+  box-sizing: border-box;
+
+  background: #ffffff;
+  border: 2px solid #d7e5f1;
+  border-radius: 22px;
+
+  box-shadow: 0 8px 24px rgba(40, 70, 100, 0.08);
+  overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   HEADER
+   --------------------------------------------------------- */
+
+.simple-epi-header {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.simple-epi-title {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #172033;
+}
+
+.simple-epi-subtitle {
+  margin-top: 7px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: #697586;
+}
+
+
+/* ---------------------------------------------------------
+   MAIN TISSUE DIAGRAM
+   --------------------------------------------------------- */
+
+.simple-epi-structure {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+
+  margin: 10px auto 24px;
+  padding: 34px 10px 0;
+
+  box-sizing: border-box;
+}
+
+
+/* Apical surface label */
+
+.simple-epi-apical-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.label-dot {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background: #6fa7d2;
+
+  flex: 0 0 auto;
+}
+
+
+/* ---------------------------------------------------------
+   EPITHELIAL CELL LAYER
+   --------------------------------------------------------- */
+
+.simple-epi-cell-layer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 4px;
+
+  width: 100%;
+  height: 58px;
+
+  position: relative;
+  z-index: 2;
+
+  margin-bottom: 7px;
+}
+
+
+/* Individual cell */
+
+.simple-epi-cell {
+  position: relative;
+
+  width: 52px;
+  height: 52px;
+
+  box-sizing: border-box;
+
+  border: 3px solid #76a9d1;
+  background: #eaf4fb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    inset 0 0 0 5px rgba(255, 255, 255, 0.55);
+}
+
+
+/* Rounded cells used in this cross-section */
+
+.squamous-cell {
+  border-radius: 50%;
+}
+
+
+/* Cell nucleus */
+
+.cell-nucleus {
+  width: 14px;
+  height: 14px;
+
+  border-radius: 50%;
+  background: #7b3fd1;
+
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.72);
+}
+
+
+/* ---------------------------------------------------------
+   BASEMENT MEMBRANE
+   --------------------------------------------------------- */
+
+.simple-epi-basement-membrane {
+  position: relative;
+  z-index: 3;
+
+  width: 82%;
+  height: 15px;
+
+  margin: 0 auto;
+
+  border-radius: 999px;
+
+  background: #c69a3a;
+
+  color: transparent;
+
+  box-shadow:
+    0 2px 5px rgba(120, 85, 20, 0.16);
+}
+
+
+/* ---------------------------------------------------------
+   CONNECTIVE TISSUE
+   --------------------------------------------------------- */
+
+.simple-epi-connective-tissue {
+  position: relative;
+
+  width: 82%;
+  height: 125px;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+
+  background: #edf5f9;
+
+  border-left: 3px solid #9bb8c9;
+  border-right: 3px solid #9bb8c9;
+  border-bottom: 3px solid #9bb8c9;
+
+  border-radius: 0 0 24px 24px;
+
+  overflow: hidden;
+}
+
+
+/* Connective tissue fibers */
+
+.connective-fiber {
+  position: absolute;
+
+  height: 5px;
+
+  border-radius: 999px;
+
+  background: #8fa5b2;
+
+  opacity: 0.72;
+
+  transform-origin: left center;
+}
+
+.fiber-1 {
+  width: 62%;
+  top: 35px;
+  left: 12%;
+  transform: rotate(8deg);
+}
+
+.fiber-2 {
+  width: 55%;
+  top: 68px;
+  left: 28%;
+  transform: rotate(-10deg);
+}
+
+.fiber-3 {
+  width: 48%;
+  top: 94px;
+  left: 10%;
+  transform: rotate(5deg);
+}
+
+
+/* Connective tissue dots */
+
+.connective-dot {
+  position: absolute;
+
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+
+  background: #7b3fd1;
+}
+
+.dot-1 {
+  top: 38px;
+  left: 25%;
+}
+
+.dot-2 {
+  top: 65px;
+  left: 62%;
+}
+
+.dot-3 {
+  top: 92px;
+  left: 44%;
+}
+
+
+/* Label inside connective tissue */
+
+.simple-epi-connective-label {
+  position: absolute;
+
+  right: 12px;
+  bottom: 10px;
+
+  padding: 4px 8px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  color: #425466;
+
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 8px;
+}
+
+
+/* ---------------------------------------------------------
+   DIAGRAM NOTE
+   --------------------------------------------------------- */
+
+.simple-epi-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  margin: 20px 0 22px;
+  padding: 15px 16px;
+
+  background: #f4f9fd;
+  border: 2px solid #b9d4e8;
+  border-radius: 16px;
+
+  color: #536273;
+
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.simple-epi-note:first-letter {
+  font-size: 18px;
+}
+
+
+/* ---------------------------------------------------------
+   TYPE CARDS
+   --------------------------------------------------------- */
+
+.simple-epi-type-card {
+  width: 100%;
+  margin: 12px 0;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 2px solid #b8d2e6;
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+/* Different accent colors */
+
+.simple-epi-type-card[data-simple-epi-toggle="squamous"] {
+  border-color: #83b4d7;
+}
+
+.simple-epi-type-card[data-simple-epi-toggle="cuboidal"] {
+  border-color: #8bb8d8;
+}
+
+.simple-epi-type-card[data-simple-epi-toggle="columnar"] {
+  border-color: #9b86cf;
+}
+
+
+/* ---------------------------------------------------------
+   TYPE HEADER
+   --------------------------------------------------------- */
+
+.simple-epi-type-header {
+  min-height: 82px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 14px 14px 14px 16px;
+
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+
+/* Icon */
+
+.simple-epi-type-icon {
+  width: 52px;
+  height: 52px;
+
+  flex: 0 0 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 14px;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  color: #3977a8;
+}
+
+
+/* Text */
+
+.simple-epi-type-text {
+  min-width: 0;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.simple-epi-type-text strong {
+  font-size: 17px;
+  line-height: 1.3;
+
+  color: #172033;
+}
+
+.simple-epi-type-text span {
+  margin-top: 4px;
+
+  font-size: 14px;
+  line-height: 1.45;
+
+  color: #697586;
+}
+
+
+/* ---------------------------------------------------------
+   EXPAND BUTTON
+   --------------------------------------------------------- */
+
+.simple-epi-expand-btn {
+  width: 42px;
+  height: 42px;
+
+  flex: 0 0 42px;
+
+  margin-left: 10px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #eaf3f9;
+
+  color: #286895;
+
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.simple-epi-expand-btn:hover {
+  background: #dcecf7;
+}
+
+.simple-epi-expand-btn:focus-visible {
+  outline: 3px solid rgba(74, 144, 196, 0.35);
+  outline-offset: 2px;
+}
+
+
+/* ---------------------------------------------------------
+   EXPANDED STATE
+   --------------------------------------------------------- */
+
+.simple-epi-type-card.is-open {
+  box-shadow: 0 8px 20px rgba(60, 100, 130, 0.10);
+}
+
+.simple-epi-type-card.is-open
+.simple-epi-expand-btn {
+  background: #dcecf7;
+  transform: rotate(180deg);
+}
+
+
+/* ---------------------------------------------------------
+   EXPANDABLE CONTENT
+   --------------------------------------------------------- */
+
+.simple-epi-type-content {
+  box-sizing: border-box;
+
+  padding: 0 18px 18px;
+
+  border-top: 1px solid #e4ebf0;
+
+  background: #f8fbfd;
+
+  font-size: 14px;
+  line-height: 1.55;
+
+  color: #536273;
+
+  /*
+     JS will control height/animation.
+     Do NOT use display:none here.
+  */
+}
+
+
+/* Individual information rows */
+
+.simple-epi-detail-row {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid #e4ebf0;
+}
+
+.simple-epi-detail-row:last-child {
+  border-bottom: none;
+}
+
+.simple-epi-detail-row strong {
+  color: #263548;
+  font-size: 14px;
+}
+
+.simple-epi-detail-row span {
+  color: #687789;
+}
+
+
+/* ---------------------------------------------------------
+   READING GUIDE
+   --------------------------------------------------------- */
+
+.simple-epi-reading-guide {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  margin-top: 18px;
+  padding: 16px;
+
+  box-sizing: border-box;
+
+  background: #f4f9fd;
+
+  border: 2px solid #c5dbe9;
+  border-radius: 16px;
+
+  color: #536273;
+}
+
+.simple-epi-reading-guide > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.simple-epi-reading-guide strong {
+  color: #27364a;
+  font-size: 15px;
+}
+
+.simple-epi-reading-guide span {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  .simple-epithelium-diagram {
+    width: 100%;
+    padding: 22px 14px 20px;
+    border-radius: 20px;
+  }
+
+  .simple-epi-title {
+    font-size: 22px;
+  }
+
+  .simple-epi-subtitle {
+    font-size: 14px;
+  }
+
+  .simple-epi-structure {
+    min-height: 285px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .simple-epi-cell-layer {
+    gap: 2px;
+  }
+
+  .simple-epi-cell {
+    width: 45px;
+    height: 45px;
+  }
+
+  .cell-nucleus {
+    width: 12px;
+    height: 12px;
+  }
+
+  .simple-epi-basement-membrane,
+  .simple-epi-connective-tissue {
+    width: 88%;
+  }
+
+  .simple-epi-type-header {
+    min-height: 76px;
+    padding: 12px;
+  }
+
+  .simple-epi-type-icon {
+    width: 44px;
+    height: 44px;
+    flex-basis: 44px;
+    margin-right: 10px;
+  }
+
+  .simple-epi-type-text strong {
+    font-size: 16px;
+  }
+
+  .simple-epi-type-text span {
+    font-size: 13px;
+  }
+
+  .simple-epi-expand-btn {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+    font-size: 22px;
+  }
+}
+
+/* =========================================================
+   MINI INTERACTIVE DIAGRAM
+   Simple Squamous / Cuboidal / Columnar
+   ========================================================= */
+
+.simple-epi-mini-diagram {
+    margin: 18px 0 22px;
+    border: 1px solid rgba(80, 140, 180, 0.28);
+    border-radius: 16px;
+    background: rgba(245, 249, 252, 0.92);
+    overflow: hidden;
+    cursor: pointer;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.simple-epi-mini-diagram:hover {
+    border-color: rgba(80, 140, 180, 0.55);
+    box-shadow: 0 8px 22px rgba(40, 90, 130, 0.10);
+}
+
+.simple-epi-mini-diagram:focus-visible {
+    outline: 3px solid rgba(80, 140, 180, 0.35);
+    outline-offset: 2px;
+}
+
+
+/* -------------------------
+   Title
+   ------------------------- */
+
+.mini-diagram-title {
+    padding: 10px 14px 6px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #304b5d;
+}
+
+.mini-diagram-stage {
+    position: relative;
+    height: 190px;
+    margin: 0 12px;
+    border-radius: 12px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+
+/* -------------------------
+   Apical surface
+   ------------------------- */
+
+.mini-apical-label {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+
+    font-size: 0.72rem;
+    color: #687b86;
+
+    background: rgba(255,255,255,0.92);
+    padding: 3px 7px;
+    border-radius: 7px;
+    z-index: 5;
+}
+
+
+/* -------------------------
+   Cell layer
+   ------------------------- */
+
+.mini-cell-layer {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 72px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    gap: 3px;
+
+    z-index: 3;
+}
+
+
+/* -------------------------
+   Common cell
+   ------------------------- */
+
+.mini-cell {
+    position: relative;
+
+    background: #e7edf2;
+
+    border: 2px solid #6f94aa;
+
+    box-sizing: border-box;
+
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* -------------------------
+   Nucleus
+   ------------------------- */
+
+.mini-nucleus {
+    position: absolute;
+
+    width: 10px;
+    height: 10px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background: #7042b8;
+
+    box-shadow:
+        0 0 0 3px rgba(112, 66, 184, 0.10);
+}
+
+
+/* =========================================================
+   SIMPLE SQUAMOUS
+   ========================================================= */
+
+.squamous-layer {
+    height: 60px;
+    align-items: flex-end;
+}
+
+.squamous-mini-cell {
+    width: 52px;
+    height: 28px;
+
+    border-radius: 8px 8px 3px 3px;
+}
+
+.squamous-mini-cell .mini-nucleus {
+    width: 8px;
+    height: 8px;
+}
+
+
+/* =========================================================
+   SIMPLE CUBOIDAL
+   ========================================================= */
+
+.cuboidal-layer {
+    height: 72px;
+    align-items: flex-end;
+}
+
+.cuboidal-mini-cell {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   SIMPLE COLUMNAR
+   ========================================================= */
+
+.columnar-layer {
+    height: 105px;
+    align-items: flex-end;
+}
+
+.columnar-mini-cell {
+    width: 38px;
+    height: 94px;
+
+    border-radius: 5px 5px 2px 2px;
+}
+
+.columnar-mini-cell .mini-nucleus {
+    top: 72%;
+}
+
+
+/* =========================================================
+   Basement membrane
+   ========================================================= */
+
+.mini-basement-membrane {
+    position: absolute;
+
+    left: 7%;
+    right: 7%;
+    bottom: 57px;
+
+    height: 9px;
+
+    border-radius: 8px;
+
+    background: #c49a2e;
+
+    box-shadow:
+        0 2px 4px rgba(120, 90, 20, 0.15);
+
+    z-index: 4;
+}
+
+
+/* =========================================================
+   Connective tissue
+   ========================================================= */
+
+.mini-connective-tissue {
+    position: absolute;
+
+    left: 7%;
+    right: 7%;
+    bottom: 8px;
+
+    height: 48px;
+
+    border: 2px solid #8ba6b5;
+    border-top: none;
+
+    border-radius: 0 0 18px 18px;
+
+    background:
+        radial-gradient(
+            circle at 20% 45%,
+            #7042b8 0 3px,
+            transparent 4px
+        ),
+        radial-gradient(
+            circle at 50% 65%,
+            #7042b8 0 3px,
+            transparent 4px
+        ),
+        radial-gradient(
+            circle at 78% 40%,
+            #7042b8 0 3px,
+            transparent 4px
+        ),
+        #edf2f5;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    padding: 0 10px 6px;
+
+    box-sizing: border-box;
+
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: #60737e;
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   Hint
+   ========================================================= */
+
+.mini-diagram-hint {
+    padding: 8px 14px 11px;
+
+    font-size: 0.72rem;
+    color: #687b86;
+
+    background: rgba(235, 242, 246, 0.65);
+}
+
+
+/* =========================================================
+   INTERACTION STATE
+   JS will toggle .is-focused later
+   ========================================================= */
+
+.simple-epi-mini-diagram.is-focused {
+    border-color: #7042b8;
+
+    box-shadow:
+        0 10px 28px rgba(112, 66, 184, 0.15);
+}
+
+.simple-epi-mini-diagram.is-focused .mini-cell {
+    filter: brightness(1.04);
+
+    box-shadow:
+        0 0 0 3px rgba(112, 66, 184, 0.08);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .simple-epi-mini-diagram {
+        margin: 16px 0 20px;
+        border-radius: 14px;
+    }
+
+    .mini-diagram-stage {
+        height: 175px;
+        margin: 0 9px;
+    }
+
+    .mini-cell-layer {
+        left: 6%;
+        right: 6%;
+    }
+
+    .squamous-mini-cell {
+        width: 48px;
+        height: 25px;
+    }
+
+    .cuboidal-mini-cell {
+        width: 42px;
+        height: 42px;
+    }
+
+    .columnar-mini-cell {
+        width: 33px;
+        height: 88px;
+    }
+
+    .mini-basement-membrane {
+        left: 5%;
+        right: 5%;
+    }
+
+    .mini-connective-tissue {
+        left: 5%;
+        right: 5%;
+    }
+
+}
+
+/* =========================================================
+   SIMPLE EPITHELIUM
+   SCROLL REVEAL ANIMATION
+   ========================================================= */
+
+#simpleEpitheliumDiagram {
+    opacity: 0;
+    transform: translateY(32px) scale(0.97);
+
+    transition:
+        opacity 0.65s ease,
+        transform 0.75s cubic-bezier(.22,.61,.36,1);
+}
+
+#simpleEpitheliumDiagram.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* =========================================================
+   STRATIFIED EPITHELIUM
+   Interactive Diagram + Accordion
+   ========================================================= */
+
+.stratified-epithelium-diagram {
+    width: min(100%, 560px);
+    margin: 28px auto;
+    padding: 24px 18px 20px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 2px solid #d8e4ec;
+    border-radius: 22px;
+
+    box-shadow:
+        0 8px 24px rgba(40, 70, 100, 0.08);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.stratified-epi-header {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.stratified-epi-title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #172033;
+}
+
+.stratified-epi-subtitle {
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 1.45;
+    color: #6a7785;
+}
+
+
+/* =========================================================
+   TYPE CARDS
+   ========================================================= */
+
+.stratified-epi-type-card {
+    width: 100%;
+    margin: 12px 0;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 2px solid #c8dbe8;
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Individual accent borders */
+
+.stratified-epi-type-card[data-stratified-epi-toggle="squamous"] {
+    border-color: #83b4d7;
+}
+
+.stratified-epi-type-card[data-stratified-epi-toggle="cuboidal"] {
+    border-color: #8bb8d8;
+}
+
+.stratified-epi-type-card[data-stratified-epi-toggle="columnar"] {
+    border-color: #9b86cf;
+}
+
+.stratified-epi-type-card[data-stratified-epi-toggle="transitional"] {
+    border-color: #6da9a5;
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.stratified-epi-type-header {
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 13px 14px 13px 16px;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/* Icon */
+
+.stratified-epi-type-icon {
+    width: 52px;
+    height: 52px;
+
+    flex: 0 0 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 13px;
+
+    font-size: 26px;
+    font-weight: 700;
+
+    color: #3977a8;
+}
+
+
+/* Transitional icon */
+
+.stratified-epi-type-card[data-stratified-epi-toggle="transitional"]
+.stratified-epi-type-icon {
+    color: #3c8b85;
+}
+
+
+/* Text */
+
+.stratified-epi-type-text {
+    min-width: 0;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.stratified-epi-type-text strong {
+    font-size: 16px;
+    line-height: 1.35;
+    color: #172033;
+}
+
+.stratified-epi-type-text span {
+    margin-top: 4px;
+
+    font-size: 13px;
+    line-height: 1.45;
+
+    color: #6b7785;
+}
+
+
+/* =========================================================
+   EXPAND BUTTON
+   ========================================================= */
+
+.stratified-epi-expand-btn {
+    width: 42px;
+    height: 42px;
+
+    flex: 0 0 42px;
+
+    margin-left: 9px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #eaf3f9;
+
+    color: #286895;
+
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.stratified-epi-expand-btn:hover {
+    background: #dcecf7;
+}
+
+.stratified-epi-expand-btn:focus-visible {
+    outline: 3px solid rgba(74, 144, 196, 0.30);
+    outline-offset: 2px;
+}
+
+
+/* Transitional button */
+
+.stratified-epi-type-card[data-stratified-epi-toggle="transitional"]
+.stratified-epi-expand-btn {
+    background: #e7f4f2;
+    color: #317b76;
+}
+
+
+/* =========================================================
+   OPEN STATE
+   ========================================================= */
+
+.stratified-epi-type-card.is-open {
+    box-shadow:
+        0 8px 22px rgba(55, 90, 115, 0.10);
+}
+
+.stratified-epi-type-card.is-open
+.stratified-epi-expand-btn {
+    background: #dcecf7;
+    transform: rotate(180deg);
+}
+
+.stratified-epi-type-card[data-stratified-epi-toggle="transitional"].is-open
+.stratified-epi-expand-btn {
+    background: #d8eeeb;
+}
+
+
+/* =========================================================
+   EXPANDABLE CONTENT
+   JS controls height
+   ========================================================= */
+
+.stratified-epi-type-content {
+    box-sizing: border-box;
+
+    padding: 0 16px 18px;
+
+    border-top: 1px solid #e4ebf0;
+
+    background: #f8fbfd;
+
+    font-size: 14px;
+    line-height: 1.55;
+
+    color: #536273;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   DETAIL ROWS
+   ========================================================= */
+
+.stratified-epi-detail-row {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    padding: 12px 2px;
+
+    border-bottom: 1px solid #e4ebf0;
+}
+
+.stratified-epi-detail-row:last-child {
+    border-bottom: none;
+}
+
+.stratified-epi-detail-row strong {
+    color: #263548;
+    font-size: 14px;
+}
+
+.stratified-epi-detail-row span {
+    color: #687789;
+}
+
+
+/* =========================================================
+   MINI DIAGRAM COMMON
+   ========================================================= */
+
+.stratified-epi-mini-diagram {
+    margin: 17px 0 20px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(80, 140, 180, 0.28);
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.stratified-epi-mini-diagram:hover {
+    border-color: rgba(80, 140, 180, 0.55);
+
+    box-shadow:
+        0 8px 22px rgba(40, 90, 130, 0.10);
+}
+
+.stratified-epi-mini-diagram:focus-visible {
+    outline: 3px solid rgba(80, 140, 180, 0.30);
+    outline-offset: 2px;
+}
+
+
+/* Mini title */
+
+.stratified-mini-diagram-title {
+    padding: 10px 14px 7px;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    color: #304b5d;
+}
+
+
+/* =========================================================
+   STRATIFIED CELL STAGE
+   ========================================================= */
+
+.stratified-mini-stage {
+    position: relative;
+
+    height: 250px;
+
+    margin: 0 10px;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* Apical label */
+
+.stratified-mini-apical-label {
+    position: absolute;
+
+    top: 7px;
+    left: 10px;
+
+    z-index: 10;
+
+    padding: 3px 7px;
+
+    font-size: 0.70rem;
+    color: #687b86;
+
+    background: rgba(255,255,255,0.92);
+
+    border-radius: 7px;
+}
+
+
+/* =========================================================
+   CELL LAYERS
+   ========================================================= */
+
+.stratified-mini-layer {
+    position: absolute;
+
+    left: 10%;
+    right: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    gap: 3px;
+
+    z-index: 3;
+}
+
+
+/* Surface */
+
+.stratified-mini-layer.squamous-surface-layer,
+.stratified-mini-layer.cuboidal-surface-layer,
+.stratified-mini-layer.columnar-surface-layer {
+    top: 43px;
+}
+
+
+/* Middle */
+
+.stratified-mini-layer.squamous-middle-layer,
+.stratified-mini-layer.cuboidal-middle-layer,
+.stratified-mini-layer.columnar-middle-layer {
+    top: 91px;
+}
+
+
+/* Basal */
+
+.stratified-mini-layer.squamous-basal-layer,
+.stratified-mini-layer.cuboidal-basal-layer,
+.stratified-mini-layer.columnar-basal-layer {
+    top: 139px;
+}
+
+
+/* =========================================================
+   COMMON CELL
+   ========================================================= */
+
+.stratified-mini-cell {
+    position: relative;
+
+    width: 40px;
+    height: 38px;
+
+    box-sizing: border-box;
+
+    background: #e7edf2;
+
+    border: 2px solid #6f94aa;
+
+    border-radius: 5px;
+
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =========================================================
+   SQUAMOUS
+   ========================================================= */
+
+.squamous-surface-cell {
+    width: 49px;
+    height: 20px;
+
+    border-radius: 7px 7px 3px 3px;
+}
+
+.squamous-middle-layer .stratified-mini-cell {
+    width: 43px;
+    height: 29px;
+
+    border-radius: 6px 6px 3px 3px;
+}
+
+.squamous-basal-layer .stratified-mini-cell {
+    width: 40px;
+    height: 36px;
+
+    border-radius: 6px;
+}
+
+
+/* =========================================================
+   CUBOIDAL
+   ========================================================= */
+
+.cuboidal-surface-cell {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 5px;
+}
+
+.cuboidal-middle-layer .stratified-mini-cell {
+    width: 42px;
+    height: 39px;
+}
+
+.cuboidal-basal-layer .stratified-mini-cell {
+    width: 43px;
+    height: 40px;
+}
+
+
+/* =========================================================
+   COLUMNAR
+   ========================================================= */
+
+.columnar-surface-cell {
+    width: 34px;
+    height: 60px;
+
+    border-radius: 5px 5px 2px 2px;
+}
+
+.columnar-middle-layer .stratified-mini-cell {
+    width: 40px;
+    height: 42px;
+}
+
+.columnar-basal-layer .stratified-mini-cell {
+    width: 43px;
+    height: 39px;
+}
+
+
+/* =========================================================
+   NUCLEUS
+   ========================================================= */
+
+.stratified-mini-nucleus {
+    position: absolute;
+
+    width: 9px;
+    height: 9px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background: #7042b8;
+
+    box-shadow:
+        0 0 0 3px rgba(112, 66, 184, 0.10);
+}
+
+
+/* Surface nucleus position */
+
+.squamous-surface-cell .stratified-mini-nucleus {
+    width: 7px;
+    height: 7px;
+}
+
+.columnar-surface-cell .stratified-mini-nucleus {
+    top: 72%;
+}
+
+
+/* =========================================================
+   BASEMENT MEMBRANE
+   ========================================================= */
+
+.stratified-mini-basement-membrane {
+    position: absolute;
+
+    left: 7%;
+    right: 7%;
+    bottom: 54px;
+
+    height: 9px;
+
+    border-radius: 8px;
+
+    background: #c49a2e;
+
+    box-shadow:
+        0 2px 4px rgba(120, 90, 20, 0.15);
+
+    z-index: 6;
+
+    text-align: center;
+
+    color: transparent;
+}
+
+
+/* =========================================================
+   CONNECTIVE TISSUE
+   ========================================================= */
+
+.stratified-mini-connective-tissue {
+    position: absolute;
+
+    left: 7%;
+    right: 7%;
+    bottom: 7px;
+
+    height: 44px;
+
+    box-sizing: border-box;
+
+    border: 2px solid #8ba6b5;
+    border-top: none;
+
+    border-radius: 0 0 18px 18px;
+
+    background:
+        radial-gradient(
+            circle at 20% 45%,
+            #7042b8 0 3px,
+            transparent 4px
+        ),
+        radial-gradient(
+            circle at 50% 65%,
+            #7042b8 0 3px,
+            transparent 4px
+        ),
+        radial-gradient(
+            circle at 78% 40%,
+            #7042b8 0 3px,
+            transparent 4px
+        ),
+        #edf2f5;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    padding: 0 9px 5px;
+
+    font-size: 0.66rem;
+    font-weight: 600;
+
+    color: #60737e;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   MINI DIAGRAM HINT
+   ========================================================= */
+
+.stratified-mini-diagram-hint {
+    padding: 8px 14px 11px;
+
+    font-size: 0.72rem;
+
+    color: #687b86;
+
+    background: rgba(235, 242, 246, 0.65);
+}
+
+
+/* =========================================================
+   FOCUS STATE
+   JS will add .is-focused
+   ========================================================= */
+
+.stratified-epi-mini-diagram.is-focused {
+    border-color: #7042b8;
+
+    box-shadow:
+        0 10px 28px rgba(112, 66, 184, 0.15);
+}
+
+.stratified-epi-mini-diagram.is-focused
+.stratified-mini-cell {
+    filter: brightness(0.92);
+}
+
+.stratified-epi-mini-diagram.is-focused
+.stratified-mini-cell.is-focus-cell {
+    transform: translateY(-6px) scale(1.13);
+
+    filter: brightness(1.08);
+
+    box-shadow:
+        0 0 0 3px rgba(112, 66, 184, 0.10);
+
+    z-index: 20;
+}
+
+
+/* =========================================================
+   TRANSITIONAL EPITHELIUM
+   ========================================================= */
+
+.transitional-mini-stage {
+    position: relative;
+
+    min-height: 250px;
+
+    margin: 0 10px;
+
+    padding: 12px 10px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+
+/* State */
+
+.transitional-state {
+    width: 44%;
+
+    text-align: center;
+}
+
+.transitional-state-label {
+    margin-bottom: 10px;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    color: #60737e;
+}
+
+
+/* Cell row */
+
+.transitional-cell-layer {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: center;
+
+    gap: 3px;
+
+    min-height: 90px;
+}
+
+
+/* Dome cells */
+
+.transitional-cell {
+    position: relative;
+
+    box-sizing: border-box;
+
+    background: #e7edf2;
+
+    border: 2px solid #6f94aa;
+
+    transition:
+        transform 0.4s ease,
+        height 0.4s ease,
+        border-radius 0.4s ease;
+}
+
+.dome-cell {
+    width: 28px;
+    height: 54px;
+
+    border-radius: 14px 14px 5px 5px;
+}
+
+.stretched-cell {
+    width: 28px;
+    height: 42px;
+
+    border-radius: 6px;
+}
+
+
+/* Transitional nucleus */
+
+.transitional-nucleus {
+    position: absolute;
+
+    width: 8px;
+    height: 8px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background: #7042b8;
+}
+
+
+/* Arrow */
+
+.transitional-stretch-arrow {
+    flex: 0 0 auto;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    color: #3c8b85;
+}
+
+
+/* Transitional focus */
+
+.transitional-mini-diagram.is-stretched
+.dome-cell {
+    height: 42px;
+    border-radius: 6px;
+}
+
+.transitional-mini-diagram.is-stretched
+.stretched-cell {
+    height: 54px;
+    border-radius: 14px 14px 5px 5px;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .stratified-epithelium-diagram {
+        width: 100%;
+        padding: 21px 13px 18px;
+        border-radius: 20px;
+    }
+
+    .stratified-epi-title {
+        font-size: 22px;
+    }
+
+    .stratified-epi-subtitle {
+        font-size: 13px;
+    }
+
+    .stratified-epi-type-header {
+        min-height: 76px;
+        padding: 12px;
+    }
+
+    .stratified-epi-type-icon {
+        width: 44px;
+        height: 44px;
+        flex-basis: 44px;
+        margin-right: 10px;
+    }
+
+    .stratified-epi-type-text strong {
+        font-size: 15px;
+    }
+
+    .stratified-epi-type-text span {
+        font-size: 12px;
+    }
+
+    .stratified-epi-expand-btn {
+        width: 38px;
+        height: 38px;
+        flex-basis: 38px;
+        font-size: 22px;
+    }
+
+    .stratified-mini-stage {
+        height: 235px;
+        margin: 0 6px;
+    }
+
+    .stratified-mini-layer {
+        left: 5%;
+        right: 5%;
+    }
+
+    .stratified-mini-cell {
+        width: 34px;
+    }
+
+    .squamous-surface-cell {
+        width: 43px;
+    }
+
+    .cuboidal-surface-cell {
+        width: 36px;
+        height: 36px;
+    }
+
+    .columnar-surface-cell {
+        width: 30px;
+        height: 55px;
+    }
+
+    .stratified-mini-basement-membrane {
+        left: 4%;
+        right: 4%;
+    }
+
+    .stratified-mini-connective-tissue {
+        left: 4%;
+        right: 4%;
+    }
+
+    .transitional-mini-stage {
+        min-height: 230px;
+        padding: 10px 5px;
+        gap: 5px;
+    }
+
+    .transitional-cell-layer {
+        gap: 2px;
+    }
+
+    .dome-cell,
+    .stretched-cell {
+        width: 23px;
+    }
+
+    .transitional-state {
+        width: 46%;
+    }
+
+    .transitional-stretch-arrow {
+        font-size: 20px;
+    }
+}
+
+/* =========================================================
+   STRATIFIED EPITHELIUM
+   ANIMATION + SCROLL REVEAL PATCH
+   ========================================================= */
+
+
+/* =========================================================
+   1. SCROLL REVEAL
+   ========================================================= */
+
+/*
+ * Initial state:
+ * The whole Stratified diagram starts slightly lower,
+ * smaller and transparent.
+ */
+
+#stratifiedEpitheliumDiagram {
+    opacity: 0;
+    transform:
+        translateY(32px)
+        scale(0.97);
+
+    transition:
+        opacity 0.65s ease,
+        transform 0.75s cubic-bezier(.22,.61,.36,1);
+}
+
+
+/*
+ * JS will add .is-visible when the diagram
+ * enters the viewport.
+ */
+
+#stratifiedEpitheliumDiagram.is-visible {
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================================================
+   2. TYPE CARDS
+   ========================================================= */
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-type-card {
+    opacity: 0;
+
+    transform:
+        translateY(18px);
+
+    transition:
+        opacity 0.45s ease,
+        transform 0.55s cubic-bezier(.22,.61,.36,1);
+}
+
+
+/*
+ * Cards appear one after another.
+ */
+
+#stratifiedEpitheliumDiagram.is-visible
+.stratified-epi-type-card:nth-of-type(2) {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition-delay: 0.12s;
+}
+
+
+#stratifiedEpitheliumDiagram.is-visible
+.stratified-epi-type-card:nth-of-type(3) {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition-delay: 0.22s;
+}
+
+
+#stratifiedEpitheliumDiagram.is-visible
+.stratified-epi-type-card:nth-of-type(4) {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition-delay: 0.32s;
+}
+
+
+#stratifiedEpitheliumDiagram.is-visible
+.stratified-epi-type-card:nth-of-type(5) {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition-delay: 0.42s;
+}
+
+
+/* =========================================================
+   3. MINI DIAGRAM INITIAL STATE
+   ========================================================= */
+
+/*
+ * The mini diagram itself waits slightly before
+ * beginning its internal animation.
+ */
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram {
+    opacity: 0;
+
+    transform:
+        translateY(14px)
+        scale(0.98);
+
+    transition:
+        opacity 0.45s ease,
+        transform 0.55s cubic-bezier(.22,.61,.36,1);
+}
+
+
+/*
+ * JS will add .diagram-animated when the card
+ * is opened.
+ */
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.diagram-animated {
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================================================
+   4. LAYER-BY-LAYER FORMATION
+   ========================================================= */
+
+/*
+ * Initial state for all epithelial layers.
+ */
+
+#stratifiedEpitheliumDiagram
+.stratified-mini-layer {
+    opacity: 0;
+
+    transform:
+        translateY(18px)
+        scaleY(0.82);
+
+    transform-origin: bottom center;
+
+    transition:
+        opacity 0.45s ease,
+        transform 0.55s cubic-bezier(.22,.61,.36,1);
+}
+
+
+/*
+ * Once JS adds .layers-animated,
+ * the three layers appear sequentially.
+ */
+
+
+/* Basal layer first */
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.layers-animated
+.squamous-basal-layer,
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.layers-animated
+.cuboidal-basal-layer,
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.layers-animated
+.columnar-basal-layer {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scaleY(1);
+
+    transition-delay: 0.05s;
+}
+
+
+/* Middle layer second */
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.layers-animated
+.squamous-middle-layer,
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.layers-animated
+.cuboidal-middle-layer,
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.layers-animated
+.columnar-middle-layer {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scaleY(1);
+
+    transition-delay: 0.25s;
+}
+
+
+/* Surface layer last */
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.layers-animated
+.squamous-surface-layer,
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.layers-animated
+.cuboidal-surface-layer,
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.layers-animated
+.columnar-surface-layer {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scaleY(1);
+
+    transition-delay: 0.45s;
+}
+
+
+/* =========================================================
+   5. BASEMENT MEMBRANE REVEAL
+   ========================================================= */
+
+#stratifiedEpitheliumDiagram
+.stratified-mini-basement-membrane {
+
+    opacity: 0;
+
+    transform:
+        scaleX(0.35);
+
+    transform-origin: center;
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.5s cubic-bezier(.34,1.56,.64,1);
+}
+
+
+/*
+ * JS adds .layers-animated
+ */
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.layers-animated
+.stratified-mini-basement-membrane {
+
+    opacity: 1;
+
+    transform:
+        scaleX(1);
+
+    transition-delay: 0.62s;
+}
+
+
+/* =========================================================
+   6. CONNECTIVE TISSUE REVEAL
+   ========================================================= */
+
+#stratifiedEpitheliumDiagram
+.stratified-mini-connective-tissue {
+
+    opacity: 0;
+
+    transform:
+        translateY(12px);
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.45s ease;
+}
+
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.layers-animated
+.stratified-mini-connective-tissue {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition-delay: 0.72s;
+}
+
+
+/* =========================================================
+   7. APICAL LABEL
+   ========================================================= */
+
+#stratifiedEpitheliumDiagram
+.stratified-mini-apical-label {
+
+    opacity: 0;
+
+    transform:
+        translateY(-5px);
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.layers-animated
+.stratified-mini-apical-label {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition-delay: 0.78s;
+}
+
+
+/* =========================================================
+   8. DIAGRAM HINT
+   ========================================================= */
+
+#stratifiedEpitheliumDiagram
+.stratified-mini-diagram-hint {
+
+    opacity: 0;
+
+    transition:
+        opacity 0.45s ease;
+}
+
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.layers-animated
+.stratified-mini-diagram-hint {
+
+    opacity: 1;
+
+    transition-delay: 0.86s;
+}
+
+
+/* =========================================================
+   9. SURFACE CELL FOCUS
+   ========================================================= */
+
+/*
+ * Normal state.
+ */
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram
+.stratified-mini-cell {
+
+    transition:
+        transform 0.35s ease,
+        filter 0.35s ease,
+        opacity 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/*
+ * When JS adds .is-focused,
+ * non-surface cells become slightly subdued.
+ */
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.is-focused
+.stratified-mini-layer
+:not(.squamous-surface-layer)
+.stratified-mini-cell,
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.is-focused
+.stratified-mini-layer
+:not(.cuboidal-surface-layer)
+.stratified-mini-cell,
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.is-focused
+.stratified-mini-layer
+:not(.columnar-surface-layer)
+.stratified-mini-cell {
+
+    filter: brightness(0.92);
+}
+
+
+/*
+ * Surface layer receives the visual emphasis.
+ */
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.is-focused
+.squamous-surface-cell,
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.is-focused
+.cuboidal-surface-cell,
+
+#stratifiedEpitheliumDiagram
+.stratified-epi-mini-diagram.is-focused
+.columnar-surface-cell {
+
+    transform:
+        translateY(-5px)
+        scale(1.10);
+
+    filter:
+        brightness(1.08);
+
+    box-shadow:
+        0 0 0 3px rgba(112, 66, 184, 0.12);
+
+    z-index: 20;
+}
+
+
+/* =========================================================
+   10. TRANSITIONAL EPITHELIUM
+   STRETCH ANIMATION
+   ========================================================= */
+
+.transitional-mini-diagram
+.transitional-state {
+
+    transition:
+        opacity 0.45s ease,
+        transform 0.5s ease;
+}
+
+
+/*
+ * Before animation:
+ * relaxed state is visible,
+ * stretched state is slightly subdued.
+ */
+
+.transitional-mini-diagram
+.transitional-stretched {
+
+    opacity: 0.42;
+
+    transform:
+        translateY(8px)
+        scale(0.96);
+}
+
+
+/*
+ * JS adds .is-stretched when the user taps.
+ */
+
+.transitional-mini-diagram.is-stretched
+.transitional-relaxed {
+
+    opacity: 0.45;
+
+    transform:
+        translateY(-4px)
+        scale(0.96);
+}
+
+
+.transitional-mini-diagram.is-stretched
+.transitional-stretched {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+    transition-delay: 0.18s;
+}
+
+
+/* Individual transitional cells */
+
+.transitional-mini-diagram
+.transitional-cell {
+
+    transition:
+        height 0.55s cubic-bezier(.22,.61,.36,1),
+        border-radius 0.55s ease,
+        transform 0.55s ease;
+}
+
+
+/*
+ * Add a subtle emphasis during stretch.
+ */
+
+.transitional-mini-diagram.is-stretched
+.stretched-cell {
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* Stretch arrow animation */
+
+.transitional-stretch-arrow {
+
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease;
+}
+
+
+.transitional-mini-diagram.is-stretched
+.transitional-stretch-arrow {
+
+    transform:
+        scaleY(1.25);
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   11. REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    #stratifiedEpitheliumDiagram,
+    #stratifiedEpitheliumDiagram .stratified-epi-type-card,
+    #stratifiedEpitheliumDiagram .stratified-epi-mini-diagram,
+    #stratifiedEpitheliumDiagram .stratified-mini-layer,
+    #stratifiedEpitheliumDiagram .stratified-mini-cell,
+    #stratifiedEpitheliumDiagram .stratified-mini-basement-membrane,
+    #stratifiedEpitheliumDiagram .stratified-mini-connective-tissue,
+    #stratifiedEpitheliumDiagram .stratified-mini-apical-label,
+    #stratifiedEpitheliumDiagram .stratified-mini-diagram-hint,
+    .transitional-mini-diagram,
+    .transitional-mini-diagram .transitional-cell,
+    .transitional-stretch-arrow {
+
+        transition: none !important;
+        animation: none !important;
+    }
+
+    #stratifiedEpitheliumDiagram,
+    #stratifiedEpitheliumDiagram
+    .stratified-epi-type-card {
+
+        opacity: 1 !important;
+
+        transform: none !important;
+    }
+
+    #stratifiedEpitheliumDiagram
+    .stratified-epi-mini-diagram {
+
+        opacity: 1 !important;
+
+        transform: none !important;
+    }
+
+    #stratifiedEpitheliumDiagram
+    .stratified-mini-layer {
+
+        opacity: 1 !important;
+
+        transform: none !important;
+    }
+
+    #stratifiedEpitheliumDiagram
+    .stratified-mini-basement-membrane,
+    #stratifiedEpitheliumDiagram
+    .stratified-mini-connective-tissue,
+    #stratifiedEpitheliumDiagram
+    .stratified-mini-apical-label,
+    #stratifiedEpitheliumDiagram
+    .stratified-mini-diagram-hint {
+
+        opacity: 1 !important;
+
+        transform: none !important;
+    }
+
+}
+
+/* =========================================================
+   PSEUDOSTRATIFIED EPITHELIUM
+   INTERACTIVE DIAGRAM
+   ---------------------------------------------------------
+   CSS FOUNDATION
+   Add this block at the END of lesson.css
+   ========================================================= */
+
+
+/* =========================================================
+   1. MAIN DIAGRAM CARD
+   ========================================================= */
+
+.pseudostratified-diagram {
+    width: min(100%, 620px);
+    margin: 30px auto;
+    padding: 22px 18px 24px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 2px solid #d7e3ea;
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 28px rgba(40, 70, 100, 0.08);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   2. HEADER
+   ========================================================= */
+
+.pseudo-diagram-header {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.pseudo-diagram-title {
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #172033;
+}
+
+.pseudo-diagram-subtitle {
+    margin-top: 6px;
+
+    font-size: 13px;
+    line-height: 1.45;
+
+    color: #6d7a87;
+}
+
+
+/* =========================================================
+   3. INTERACTIVE DIAGRAM CONTAINER
+   ========================================================= */
+
+.pseudo-interactive-diagram {
+    position: relative;
+
+    width: 100%;
+
+    padding: 8px 4px 0;
+
+    box-sizing: border-box;
+
+    outline: none;
+
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================================
+   4. MAIN STAGE
+   ========================================================= */
+
+.pseudo-stage {
+    position: relative;
+
+    width: 100%;
+    height: 360px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #f8fbfd 0%,
+            #f3f8fa 42%,
+            #edf3f5 100%
+        );
+
+    border: 1px solid #d9e5eb;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+
+/* =========================================================
+   5. LUMEN
+   ========================================================= */
+
+.pseudo-lumen {
+    position: absolute;
+
+    left: 5%;
+    right: 5%;
+    top: 10px;
+
+    height: 66px;
+
+    box-sizing: border-box;
+
+    border-radius: 14px 14px 8px 8px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #ffffff,
+            #f7fbfd
+        );
+
+    border: 1px solid #e3edf1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #8b99a5;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+}
+
+.pseudo-lumen-label {
+    opacity: 0.85;
+}
+
+
+/* =========================================================
+   6. MUCUS
+   ========================================================= */
+
+.pseudo-mucus-layer {
+    position: absolute;
+
+    left: 8%;
+    right: 8%;
+    top: 68px;
+
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #dff4f2,
+            #bfe7e2
+        );
+
+    border: 1px solid #9fd3ce;
+
+    color: #47847d;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    z-index: 5;
+
+    transition:
+        transform 0.35s ease,
+        filter 0.35s ease,
+        box-shadow 0.35s ease,
+        opacity 0.35s ease;
+}
+
+
+/* =========================================================
+   7. CILIA CONTAINER
+   ========================================================= */
+
+.pseudo-cilia {
+    position: absolute;
+
+    left: 8%;
+    right: 8%;
+    top: 82px;
+
+    height: 35px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    gap: 4px;
+
+    z-index: 8;
+
+    pointer-events: none;
+}
+
+
+/* Individual cilium */
+
+.pseudo-cilia span {
+    display: block;
+
+    width: 3px;
+    height: 25px;
+
+    flex: 0 0 3px;
+
+    border-radius: 4px;
+
+    background:
+        linear-gradient(
+            to top,
+            #69aeb0,
+            #9bd4d0
+        );
+
+    transform-origin: bottom center;
+
+    transition:
+        transform 0.35s ease,
+        opacity 0.35s ease;
+}
+
+
+/* Slight natural variation */
+
+.pseudo-cilia span:nth-child(2n) {
+    height: 22px;
+}
+
+.pseudo-cilia span:nth-child(3n) {
+    height: 28px;
+}
+
+.pseudo-cilia span:nth-child(4n) {
+    height: 24px;
+}
+
+
+/* =========================================================
+   8. EPITHELIAL CELL LAYER
+   ========================================================= */
+
+.pseudo-cell-layer {
+    position: absolute;
+
+    left: 7%;
+    right: 7%;
+    bottom: 63px;
+
+    height: 235px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+
+    gap: 3px;
+
+    box-sizing: border-box;
+
+    z-index: 4;
+}
+
+
+/* =========================================================
+   9. COMMON CELL
+   ========================================================= */
+
+.pseudo-cell {
+    position: relative;
+
+    box-sizing: border-box;
+
+    flex: 1 1 0;
+
+    min-width: 25px;
+    max-width: 48px;
+
+    background:
+        linear-gradient(
+            to right,
+            #e8f0f3,
+            #dbe7ec
+        );
+
+    border: 2px solid #6f96a8;
+
+    box-shadow:
+        inset 2px 0 0 rgba(255,255,255,0.55),
+        inset -2px 0 0 rgba(120,150,165,0.08);
+
+    transition:
+        transform 0.35s ease,
+        filter 0.35s ease,
+        opacity 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/* =========================================================
+   10. COLUMNAR CELLS
+   ========================================================= */
+
+.pseudo-columnar-cell {
+    height: 205px;
+
+    border-radius:
+        13px 13px 7px 7px;
+}
+
+
+/* Slight variation between cells */
+
+.pseudo-columnar-cell:nth-child(1) {
+    height: 198px;
+}
+
+.pseudo-columnar-cell:nth-child(2) {
+    height: 214px;
+}
+
+.pseudo-columnar-cell:nth-child(4) {
+    height: 207px;
+}
+
+.pseudo-columnar-cell:nth-child(6) {
+    height: 201px;
+}
+
+
+/* =========================================================
+   11. GOBLET CELLS
+   ========================================================= */
+
+.pseudo-goblet-cell {
+    height: 184px;
+
+    border-radius:
+        18px 18px 11px 11px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #e5f0f1 0%,
+            #d7e7ea 100%
+        );
+
+    border-color: #6896a1;
+
+    transform-origin: bottom center;
+}
+
+
+/*
+ * Goblet opening / apical cup
+ */
+
+.pseudo-goblet-opening {
+    position: absolute;
+
+    left: 50%;
+    top: -2px;
+
+    width: 72%;
+    height: 27px;
+
+    transform:
+        translateX(-50%);
+
+    border-radius:
+        50% 50% 42% 42%;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            #c5e8e3 0%,
+            #a7d8d2 65%,
+            #91c8c2 100%
+        );
+
+    border: 1px solid #72ada8;
+
+    box-shadow:
+        inset 0 -3px 5px rgba(60,120,115,0.12);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/* =========================================================
+   12. BASAL CELLS
+   ========================================================= */
+
+.pseudo-basal-cell {
+    position: absolute;
+
+    bottom: -1px;
+
+    height: 42px;
+
+    min-width: 31px;
+
+    max-width: 42px;
+
+    border-radius:
+        8px 8px 5px 5px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #edf3f5,
+            #dce8ec
+        );
+
+    border-color: #668c9d;
+
+    z-index: 7;
+}
+
+
+/*
+ * Basal cells are positioned along
+ * the basement membrane.
+ */
+
+.pseudo-basal-cell:nth-last-child(3) {
+    left: 4%;
+}
+
+.pseudo-basal-cell:nth-last-child(2) {
+    left: 43%;
+}
+
+.pseudo-basal-cell:nth-last-child(1) {
+    right: 4%;
+}
+
+
+/* =========================================================
+   13. NUCLEI
+   ========================================================= */
+
+.pseudo-cell-nucleus {
+    position: absolute;
+
+    left: 50%;
+
+    width: 15px;
+    height: 24px;
+
+    transform:
+        translateX(-50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            #8f65c5,
+            #663aa5 70%,
+            #54328c 100%
+        );
+
+    border: 1px solid #4d2c82;
+
+    box-shadow:
+        0 0 0 3px rgba(105, 62, 166, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        opacity 0.35s ease,
+        filter 0.35s ease;
+}
+
+
+/* Nucleus positions */
+
+.nucleus-high {
+    top: 31%;
+}
+
+.nucleus-middle {
+    top: 48%;
+}
+
+.nucleus-low {
+    top: 66%;
+}
+
+.nucleus-basal {
+    top: 50%;
+}
+
+
+/* Basal nuclei slightly smaller */
+
+.pseudo-basal-cell .pseudo-cell-nucleus {
+    width: 13px;
+    height: 17px;
+}
+
+
+/* =========================================================
+   14. BASEMENT MEMBRANE
+   ========================================================= */
+
+.pseudo-basement-membrane {
+    position: absolute;
+
+    left: 6%;
+    right: 6%;
+    bottom: 54px;
+
+    height: 10px;
+
+    box-sizing: border-box;
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #d6b85d,
+            #b58a28
+        );
+
+    border: 1px solid #a77d1d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #6f5519;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    z-index: 9;
+
+    box-shadow:
+        0 2px 4px rgba(120,90,20,0.15);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        opacity 0.35s ease;
+}
+
+
+/* =========================================================
+   15. CONNECTIVE TISSUE
+   ========================================================= */
+
+.pseudo-connective-tissue {
+    position: absolute;
+
+    left: 6%;
+    right: 6%;
+    bottom: 0;
+
+    height: 52px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius:
+        0 0 15px 15px;
+
+    background:
+        radial-gradient(
+            circle at 20% 30%,
+            rgba(190,150,110,0.14) 0 2px,
+            transparent 3px
+        ),
+        radial-gradient(
+            circle at 70% 60%,
+            rgba(190,150,110,0.12) 0 2px,
+            transparent 3px
+        ),
+        #f2e9df;
+
+    color: #91755c;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   16. BASEMENT CONTACT GUIDE
+   ========================================================= */
+
+.pseudo-contact-guide {
+    position: absolute;
+
+    left: 10%;
+    right: 10%;
+    bottom: 65px;
+
+    height: 1px;
+
+    border-top:
+        1px dashed rgba(181, 138, 40, 0.42);
+
+    z-index: 10;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   17. FEATURE LABELS
+   ========================================================= */
+
+.pseudo-label {
+    position: absolute;
+
+    z-index: 20;
+
+    padding: 5px 8px;
+
+    box-sizing: border-box;
+
+    border-radius: 8px;
+
+    background: rgba(255,255,255,0.94);
+
+    border: 1px solid #d5e1e7;
+
+    box-shadow:
+        0 3px 10px rgba(50,80,100,0.08);
+
+    color: #435462;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+
+
+/* Label positions */
+
+.pseudo-label-cilia {
+    left: 5%;
+    top: 113px;
+}
+
+.pseudo-label-nuclei {
+    right: 4%;
+    top: 168px;
+}
+
+.pseudo-label-goblet {
+    left: 4%;
+    top: 238px;
+}
+
+.pseudo-label-basal {
+    right: 4%;
+    bottom: 93px;
+}
+
+.pseudo-label-basement {
+    left: 50%;
+    bottom: 68px;
+
+    transform:
+        translateX(-50%);
+}
+
+
+/* =========================================================
+   18. DIAGRAM HINT
+   ========================================================= */
+
+.pseudo-diagram-hint {
+    margin-top: 10px;
+
+    text-align: center;
+
+    color: #7b8994;
+
+    font-size: 11px;
+    line-height: 1.4;
+
+    transition:
+        opacity 0.3s ease;
+}
+
+
+/* =========================================================
+   19. KEY CONCEPT
+   ========================================================= */
+
+.pseudo-key-concept {
+    margin-top: 16px;
+
+    padding: 13px 14px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    box-sizing: border-box;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7fbfd,
+            #eef6f8
+        );
+
+    border: 1px solid #d5e5eb;
+
+    color: #465763;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+.pseudo-key-concept strong {
+    color: #284b5a;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   20. FEATURE CONTROL BUTTONS
+   ========================================================= */
+
+.pseudo-feature-controls {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 16px;
+}
+
+.pseudo-feature-btn {
+    appearance: none;
+
+    border: 1px solid #cbdde5;
+
+    background: #f8fbfc;
+
+    color: #415563;
+
+    padding: 8px 11px;
+
+    border-radius: 10px;
+
+    font: inherit;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        color 0.2s ease;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+.pseudo-feature-btn:hover {
+    transform: translateY(-1px);
+
+    border-color: #9dbbc8;
+
+    box-shadow:
+        0 4px 10px rgba(50,80,100,0.08);
+}
+
+.pseudo-feature-btn:active {
+    transform: translateY(0);
+}
+
+.pseudo-feature-btn:focus-visible {
+    outline: 3px solid rgba(92,145,165,0.22);
+    outline-offset: 2px;
+}
+
+
+/* =========================================================
+   21. DETAIL ROWS
+   ========================================================= */
+
+.pseudo-detail-row {
+    display: grid;
+
+    grid-template-columns:
+        minmax(125px, 0.75fr)
+        minmax(0, 1.25fr);
+
+    gap: 10px;
+
+    padding: 11px 0;
+
+    border-bottom:
+        1px solid #e7eef2;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    color: #586874;
+}
+
+.pseudo-detail-row:first-of-type {
+    margin-top: 16px;
+}
+
+.pseudo-detail-row:last-child {
+    border-bottom: none;
+}
+
+.pseudo-detail-row strong {
+    color: #314b59;
+}
+
+
+/* =========================================================
+   22. INITIAL SCROLL REVEAL
+   ========================================================= */
+
+#pseudostratifiedDiagram {
+    opacity: 0;
+
+    transform:
+        translateY(30px)
+        scale(0.97);
+
+    transition:
+        opacity 0.65s ease,
+        transform 0.75s cubic-bezier(.22,.61,.36,1);
+}
+
+#pseudostratifiedDiagram.is-visible {
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================================================
+   23. INTERNAL DIAGRAM ENTRANCE
+   ========================================================= */
+
+#pseudostratifiedDiagram
+.pseudo-stage {
+    opacity: 0;
+
+    transform:
+        translateY(12px)
+        scale(0.985);
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.65s cubic-bezier(.22,.61,.36,1);
+}
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-stage {
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================================================
+   24. CELLS ENTER SLIGHTLY AFTER STAGE
+   ========================================================= */
+
+#pseudostratifiedDiagram
+.pseudo-cell {
+    opacity: 0;
+
+    transform:
+        translateY(12px)
+        scaleY(0.96);
+
+    transform-origin: bottom center;
+
+    transition:
+        opacity 0.45s ease,
+        transform 0.55s cubic-bezier(.22,.61,.36,1);
+}
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell {
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scaleY(1);
+}
+
+
+/* Stagger the cells */
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell:nth-child(1) {
+    transition-delay: 0.08s;
+}
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell:nth-child(2) {
+    transition-delay: 0.14s;
+}
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell:nth-child(3) {
+    transition-delay: 0.20s;
+}
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell:nth-child(4) {
+    transition-delay: 0.26s;
+}
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell:nth-child(5) {
+    transition-delay: 0.32s;
+}
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell:nth-child(6) {
+    transition-delay: 0.38s;
+}
+
+
+/* =========================================================
+   25. NUCLEI REVEAL
+   ========================================================= */
+
+#pseudostratifiedDiagram
+.pseudo-cell-nucleus {
+    opacity: 0;
+
+    transform:
+        translateX(-50%)
+        scale(0.65);
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.4s cubic-bezier(.34,1.56,.64,1);
+}
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell-nucleus {
+    opacity: 1;
+
+    transform:
+        translateX(-50%)
+        scale(1);
+}
+
+
+/* =========================================================
+   26. BASEMENT MEMBRANE REVEAL
+   ========================================================= */
+
+#pseudostratifiedDiagram
+.pseudo-basement-membrane {
+    opacity: 0;
+
+    transform:
+        scaleX(0.45);
+
+    transform-origin: center;
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.55s cubic-bezier(.34,1.56,.64,1);
+}
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-basement-membrane {
+    opacity: 1;
+
+    transform:
+        scaleX(1);
+
+    transition-delay: 0.48s;
+}
+
+
+/* =========================================================
+   27. CONNECTIVE TISSUE REVEAL
+   ========================================================= */
+
+#pseudostratifiedDiagram
+.pseudo-connective-tissue {
+    opacity: 0;
+
+    transform:
+        translateY(10px);
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.45s ease;
+}
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-connective-tissue {
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition-delay: 0.56s;
+}
+
+
+/* =========================================================
+   28. CILIA REVEAL
+   ========================================================= */
+
+#pseudostratifiedDiagram
+.pseudo-cilia {
+    opacity: 0;
+
+    transform:
+        translateY(7px);
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.4s ease;
+}
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cilia {
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition-delay: 0.68s;
+}
+
+
+/* =========================================================
+   29. LABEL REVEAL
+   ========================================================= */
+
+#pseudostratifiedDiagram
+.pseudo-label {
+    opacity: 0;
+
+    transform:
+        translateY(5px);
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.4s ease;
+}
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-label {
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition-delay: 0.75s;
+}
+
+
+/* Basement label keeps horizontal centering */
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-label-basement {
+    transform:
+        translateX(-50%)
+        translateY(0);
+}
+
+
+/* =========================================================
+   30. FEATURE FOCUS STATES
+   ---------------------------------------------------------
+   JS will add:
+   .pseudo-focus-cilia
+   .pseudo-focus-goblet
+   .pseudo-focus-basal
+   .pseudo-focus-nuclei
+   .pseudo-focus-basement
+   ========================================================= */
+
+
+/* Default dimming */
+
+#pseudostratifiedDiagram
+.pseudo-interactive-diagram.is-focused
+.pseudo-cell {
+    filter: saturate(0.55);
+    opacity: 0.35;
+}
+
+#pseudostratifiedDiagram
+.pseudo-interactive-diagram.is-focused
+.pseudo-label {
+    opacity: 0.28;
+}
+
+
+/* CILIA */
+
+#pseudostratifiedDiagram
+.pseudo-interactive-diagram.pseudo-focus-cilia
+.pseudo-cilia {
+    opacity: 1;
+
+    filter:
+        drop-shadow(0 0 5px rgba(80,165,165,0.42));
+
+    transform:
+        translateY(-2px)
+        scale(1.04);
+}
+
+#pseudostratifiedDiagram
+.pseudo-interactive-diagram.pseudo-focus-cilia
+.pseudo-label-cilia {
+    opacity: 1;
+
+    transform:
+        translateY(-2px)
+        scale(1.05);
+}
+
+
+/* GOBLET CELL */
+
+#pseudostratifiedDiagram
+.pseudo-interactive-diagram.pseudo-focus-goblet
+.pseudo-goblet-cell {
+    opacity: 1;
+
+    filter:
+        saturate(1.2)
+        drop-shadow(0 0 7px rgba(80,160,150,0.32));
+
+    transform:
+        translateY(-4px)
+        scale(1.035);
+}
+
+#pseudostratifiedDiagram
+.pseudo-interactive-diagram.pseudo-focus-goblet
+.pseudo-label-goblet {
+    opacity: 1;
+
+    transform:
+        translateY(-2px)
+        scale(1.05);
+}
+
+
+/* BASAL CELLS */
+
+#pseudostratifiedDiagram
+.pseudo-interactive-diagram.pseudo-focus-basal
+.pseudo-basal-cell {
+    opacity: 1;
+
+    filter:
+        saturate(1.15)
+        drop-shadow(0 0 6px rgba(90,135,155,0.32));
+
+    transform:
+        translateY(-3px)
+        scale(1.04);
+}
+
+#pseudostratifiedDiagram
+.pseudo-interactive-diagram.pseudo-focus-basal
+.pseudo-label-basal {
+    opacity: 1;
+
+    transform:
+        translateY(-2px)
+        scale(1.05);
+}
+
+
+/* NUCLEI */
+
+#pseudostratifiedDiagram
+.pseudo-interactive-diagram.pseudo-focus-nuclei
+.pseudo-cell-nucleus {
+    opacity: 1;
+
+    filter:
+        drop-shadow(0 0 7px rgba(112,66,184,0.58));
+
+    transform:
+        translateX(-50%)
+        scale(1.18);
+}
+
+#pseudostratifiedDiagram
+.pseudo-interactive-diagram.pseudo-focus-nuclei
+.pseudo-label-nuclei {
+    opacity: 1;
+
+    transform:
+        translateY(-2px)
+        scale(1.05);
+}
+
+
+/* BASEMENT MEMBRANE */
+
+#pseudostratifiedDiagram
+.pseudo-interactive-diagram.pseudo-focus-basement
+.pseudo-basement-membrane {
+    opacity: 1;
+
+    filter:
+        drop-shadow(0 0 7px rgba(190,145,35,0.5));
+
+    transform:
+        scaleX(1.025)
+        scaleY(1.35);
+}
+
+#pseudostratifiedDiagram
+.pseudo-interactive-diagram.pseudo-focus-basement
+.pseudo-label-basement {
+    opacity: 1;
+
+    transform:
+        translateX(-50%)
+        translateY(-2px)
+        scale(1.05);
+}
+
+
+/* =========================================================
+   31. ACTIVE FEATURE BUTTON
+   ========================================================= */
+
+.pseudo-feature-btn.is-active {
+    background: #edf7f7;
+
+    border-color: #86b9b6;
+
+    color: #356d6a;
+
+    box-shadow:
+        0 4px 12px rgba(70,135,130,0.12);
+}
+
+
+/* =========================================================
+   32. MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .pseudostratified-diagram {
+        margin: 24px auto;
+
+        padding:
+            18px 10px 20px;
+
+        border-radius: 18px;
+    }
+
+    .pseudo-diagram-title {
+        font-size: 19px;
+    }
+
+    .pseudo-diagram-subtitle {
+        font-size: 12px;
+    }
+
+    .pseudo-stage {
+        height: 315px;
+
+        border-radius: 15px;
+    }
+
+    .pseudo-lumen {
+        left: 4%;
+        right: 4%;
+
+        height: 58px;
+
+        top: 8px;
+    }
+
+    .pseudo-mucus-layer {
+        left: 7%;
+        right: 7%;
+
+        top: 59px;
+    }
+
+    .pseudo-cilia {
+        left: 7%;
+        right: 7%;
+
+        top: 74px;
+
+        height: 30px;
+    }
+
+    .pseudo-cilia span {
+        height: 22px;
+        width: 2px;
+        flex-basis: 2px;
+    }
+
+    .pseudo-cell-layer {
+        left: 5%;
+        right: 5%;
+
+        bottom: 57px;
+
+        height: 210px;
+
+        gap: 2px;
+    }
+
+    .pseudo-columnar-cell {
+        height: 185px;
+    }
+
+    .pseudo-goblet-cell {
+        height: 168px;
+    }
+
+    .pseudo-basal-cell {
+        height: 37px;
+    }
+
+    .pseudo-basement-membrane {
+        left: 5%;
+        right: 5%;
+
+        bottom: 48px;
+
+        height: 9px;
+    }
+
+    .pseudo-connective-tissue {
+        left: 5%;
+        right: 5%;
+
+        height: 47px;
+
+        bottom: 0;
+    }
+
+    .pseudo-label {
+        font-size: 8px;
+
+        padding:
+            4px 6px;
+    }
+
+    .pseudo-label-cilia {
+        left: 3%;
+        top: 104px;
+    }
+
+    .pseudo-label-nuclei {
+        right: 2%;
+        top: 148px;
+    }
+
+    .pseudo-label-goblet {
+        left: 2%;
+        top: 210px;
+    }
+
+    .pseudo-label-basal {
+        right: 2%;
+        bottom: 82px;
+    }
+
+    .pseudo-label-basement {
+        bottom: 60px;
+    }
+
+    .pseudo-key-concept {
+        font-size: 11px;
+    }
+
+    .pseudo-detail-row {
+        grid-template-columns: 1fr;
+
+        gap: 3px;
+    }
+
+    .pseudo-feature-controls {
+        gap: 6px;
+    }
+
+    .pseudo-feature-btn {
+        padding:
+            7px 9px;
+
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================================
+   33. VERY SMALL SCREENS
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+    .pseudo-stage {
+        height: 295px;
+    }
+
+    .pseudo-cell-layer {
+        height: 195px;
+    }
+
+    .pseudo-columnar-cell {
+        height: 172px;
+    }
+
+    .pseudo-goblet-cell {
+        height: 157px;
+    }
+
+    .pseudo-cell-nucleus {
+        width: 12px;
+        height: 20px;
+    }
+
+    .pseudo-label-nuclei {
+        display: none;
+    }
+
+    .pseudo-label-cilia {
+        left: 2%;
+    }
+
+    .pseudo-label-goblet {
+        left: 2%;
+    }
+}
+
+
+/* =========================================================
+   34. REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    #pseudostratifiedDiagram,
+    #pseudostratifiedDiagram .pseudo-stage,
+    #pseudostratifiedDiagram .pseudo-cell,
+    #pseudostratifiedDiagram .pseudo-cell-nucleus,
+    #pseudostratifiedDiagram .pseudo-basement-membrane,
+    #pseudostratifiedDiagram .pseudo-connective-tissue,
+    #pseudostratifiedDiagram .pseudo-cilia,
+    #pseudostratifiedDiagram .pseudo-label,
+    #pseudostratifiedDiagram .pseudo-feature-btn,
+    #pseudostratifiedDiagram .pseudo-mucus-layer {
+        transition: none !important;
+        animation: none !important;
+    }
+
+    #pseudostratifiedDiagram,
+    #pseudostratifiedDiagram.is-visible,
+    #pseudostratifiedDiagram .pseudo-stage,
+    #pseudostratifiedDiagram .pseudo-cell,
+    #pseudostratifiedDiagram .pseudo-cell-nucleus,
+    #pseudostratifiedDiagram .pseudo-basement-membrane,
+    #pseudostratifiedDiagram .pseudo-connective-tissue,
+    #pseudostratifiedDiagram .pseudo-cilia,
+    #pseudostratifiedDiagram .pseudo-label {
+        opacity: 1 !important;
+
+        transform: none !important;
+    }
+}
+
+/* =========================================================
+   PSEUDOSTRATIFIED EPITHELIUM
+   SCROLL REVEAL ANIMATION
+   ---------------------------------------------------------
+   JS adds .is-visible to #pseudostratifiedDiagram
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. INITIAL STATE
+   --------------------------------------------------------- */
+
+#pseudostratifiedDiagram
+.pseudo-diagram-header,
+#pseudostratifiedDiagram
+.pseudo-interactive-diagram,
+#pseudostratifiedDiagram
+.pseudo-key-concept,
+#pseudostratifiedDiagram
+.pseudo-feature-controls,
+#pseudostratifiedDiagram
+.pseudo-detail-row {
+
+    opacity: 0;
+
+    transform:
+        translateY(22px);
+
+}
+
+
+/* ---------------------------------------------------------
+   2. HEADER REVEAL
+   --------------------------------------------------------- */
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-diagram-header {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition:
+        opacity 0.55s ease,
+        transform 0.55s cubic-bezier(.22,.61,.36,1);
+
+}
+
+
+/* ---------------------------------------------------------
+   3. MAIN DIAGRAM
+   --------------------------------------------------------- */
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-interactive-diagram {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition:
+        opacity 0.65s ease 0.12s,
+        transform 0.70s cubic-bezier(.22,.61,.36,1) 0.12s;
+
+}
+
+
+/* ---------------------------------------------------------
+   4. KEY CONCEPT
+   --------------------------------------------------------- */
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-key-concept {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition:
+        opacity 0.55s ease 0.48s,
+        transform 0.55s cubic-bezier(.22,.61,.36,1) 0.48s;
+
+}
+
+
+/* ---------------------------------------------------------
+   5. FEATURE BUTTONS
+   --------------------------------------------------------- */
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-feature-controls {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition:
+        opacity 0.55s ease 0.62s,
+        transform 0.55s cubic-bezier(.22,.61,.36,1) 0.62s;
+
+}
+
+
+/* ---------------------------------------------------------
+   6. DETAIL ROWS
+   --------------------------------------------------------- */
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-detail-row {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition:
+        opacity 0.55s ease 0.76s,
+        transform 0.55s cubic-bezier(.22,.61,.36,1) 0.76s;
+
+}
+
+
+/* ---------------------------------------------------------
+   7. INTERNAL DIAGRAM REVEAL
+   --------------------------------------------------------- */
+
+#pseudostratifiedDiagram
+.pseudo-stage {
+
+    opacity: 0;
+
+    transform:
+        translateY(18px)
+        scale(0.98);
+
+    transition:
+        opacity 0.60s ease,
+        transform 0.70s cubic-bezier(.22,.61,.36,1);
+
+}
+
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-stage {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+    transition-delay: 0.22s;
+
+}
+
+
+/* ---------------------------------------------------------
+   8. STAGGER EPITHELIAL CELLS
+   --------------------------------------------------------- */
+
+#pseudostratifiedDiagram
+.pseudo-cell {
+
+    transition:
+        opacity 0.45s ease,
+        transform 0.55s cubic-bezier(.22,.61,.36,1);
+
+}
+
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell {
+
+    transition-delay: 0.28s;
+
+}
+
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell:nth-child(1) {
+
+    transition-delay: 0.30s;
+
+}
+
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell:nth-child(2) {
+
+    transition-delay: 0.36s;
+
+}
+
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell:nth-child(3) {
+
+    transition-delay: 0.42s;
+
+}
+
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell:nth-child(4) {
+
+    transition-delay: 0.48s;
+
+}
+
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell:nth-child(5) {
+
+    transition-delay: 0.54s;
+
+}
+
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell:nth-child(6) {
+
+    transition-delay: 0.60s;
+
+}
+
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell:nth-child(7) {
+
+    transition-delay: 0.66s;
+
+}
+
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell:nth-child(8) {
+
+    transition-delay: 0.72s;
+
+}
+
+
+#pseudostratifiedDiagram.is-visible
+.pseudo-cell:nth-child(9) {
+
+    transition-delay: 0.78s;
+
+}
+
+
+/* ---------------------------------------------------------
+   9. ACCESSIBILITY
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    #pseudostratifiedDiagram
+    .pseudo-diagram-header,
+
+    #pseudostratifiedDiagram
+    .pseudo-interactive-diagram,
+
+    #pseudostratifiedDiagram
+    .pseudo-key-concept,
+
+    #pseudostratifiedDiagram
+    .pseudo-feature-controls,
+
+    #pseudostratifiedDiagram
+    .pseudo-detail-row,
+
+    #pseudostratifiedDiagram
+    .pseudo-stage {
+
+        opacity: 1 !important;
+
+        transform:
+            none !important;
+
+        transition:
+            none !important;
+
+    }
+
+}
+
+/* =========================================================
+   TRANSITIONAL EPITHELIUM
+   RICH INTERACTIVE DIAGRAM
+   ---------------------------------------------------------
+   Dedicated CSS
+   Does NOT affect the Stratified mini diagram
+   ========================================================= */
+
+
+/* =========================================================
+   1. MAIN CARD
+   ========================================================= */
+
+.transitional-rich-diagram {
+
+    width: min(100%, 640px);
+
+    margin: 30px auto;
+
+    padding: 22px 18px 24px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 2px solid #d7e3ea;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 30px rgba(40, 70, 100, 0.09);
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   2. HEADER
+   ========================================================= */
+
+.transitional-rich-header {
+
+    text-align: center;
+
+    margin-bottom: 18px;
+
+}
+
+
+.transitional-rich-title {
+
+    font-size: 23px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+
+    color: #172033;
+
+}
+
+
+.transitional-rich-subtitle {
+
+    margin-top: 6px;
+
+    font-size: 13px;
+
+    line-height: 1.45;
+
+    color: #72818c;
+
+}
+
+
+/* =========================================================
+   3. SIMULATOR
+   ========================================================= */
+
+.transitional-rich-simulator {
+
+    position: relative;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 10px 8px 14px;
+
+    border-radius: 17px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #f8fbfd 0%,
+            #f2f7f9 100%
+        );
+
+    border: 1px solid #d7e5eb;
+
+    cursor: pointer;
+
+    outline: none;
+
+    -webkit-tap-highlight-color: transparent;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.transitional-rich-simulator:hover {
+
+    border-color: #b9d0da;
+
+    box-shadow:
+        0 5px 16px rgba(50, 90, 110, 0.07);
+
+}
+
+
+.transitional-rich-simulator:focus-visible {
+
+    outline:
+        3px solid rgba(67, 139, 133, 0.20);
+
+    outline-offset: 2px;
+
+}
+
+
+/* =========================================================
+   4. STATE LABELS
+   ========================================================= */
+
+.transitional-rich-state-label {
+
+    position: absolute;
+
+    top: 14px;
+
+    z-index: 20;
+
+    padding: 5px 10px;
+
+    border-radius: 9px;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+    white-space: nowrap;
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease,
+        background 0.4s ease,
+        color 0.4s ease;
+
+}
+
+
+.relaxed-label {
+
+    left: 14%;
+
+    color: #496879;
+
+    background: #eaf2f5;
+
+    border: 1px solid #cfdee5;
+
+}
+
+
+.stretched-label {
+
+    right: 14%;
+
+    color: #3f7773;
+
+    background: #e8f5f3;
+
+    border: 1px solid #c8e2de;
+
+    opacity: 0.42;
+
+    transform:
+        translateY(4px)
+        scale(0.94);
+
+}
+
+
+/* =========================================================
+   5. MAIN STAGE
+   ========================================================= */
+
+.transitional-rich-stage {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 350px;
+
+    margin-top: 22px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #f9fbfc 70%,
+            #f3f6f7 100%
+        );
+
+    border: 1px solid #e1eaee;
+
+}
+
+
+/* =========================================================
+   6. TISSUE STATES
+   ========================================================= */
+
+.transitional-rich-tissue {
+
+    position: absolute;
+
+    left: 6%;
+
+    right: 6%;
+
+    top: 42px;
+
+    bottom: 38px;
+
+    box-sizing: border-box;
+
+    transition:
+        opacity 0.65s ease,
+        transform 0.65s cubic-bezier(.22,.61,.36,1);
+
+}
+
+
+/* Relaxed is default */
+
+.transitional-rich-relaxed {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+}
+
+
+/* Stretched starts subdued */
+
+.transitional-rich-stretched {
+
+    opacity: 0;
+
+    transform:
+        translateY(12px)
+        scale(0.96);
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   7. LAYERS
+   ========================================================= */
+
+.transitional-rich-layer {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    box-sizing: border-box;
+
+}
+
+
+/* Surface layer */
+
+.surface-layer {
+
+    bottom: 178px;
+
+    height: 92px;
+
+    z-index: 8;
+
+}
+
+
+/* Intermediate layer */
+
+.intermediate-layer {
+
+    bottom: 82px;
+
+    height: 110px;
+
+    z-index: 6;
+
+}
+
+
+/* Basal layer */
+
+.basal-layer {
+
+    bottom: 0;
+
+    height: 78px;
+
+    z-index: 4;
+
+}
+
+
+/* =========================================================
+   8. COMMON CELLS
+   ========================================================= */
+
+.tr-cell {
+
+    position: relative;
+
+    flex: 1 1 0;
+
+    max-width: 54px;
+
+    min-width: 30px;
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            to right,
+            #edf3f5,
+            #dce8ec
+        );
+
+    border: 2px solid #7699a9;
+
+    box-shadow:
+        inset 2px 0 0 rgba(255,255,255,0.62),
+        inset -2px 0 0 rgba(80,120,135,0.05);
+
+    transition:
+        height 0.65s cubic-bezier(.22,.61,.36,1),
+        width 0.65s cubic-bezier(.22,.61,.36,1),
+        border-radius 0.65s ease,
+        transform 0.35s ease,
+        filter 0.35s ease,
+        opacity 0.35s ease,
+        box-shadow 0.35s ease;
+
+}
+
+
+/* =========================================================
+   9. RELAXED SURFACE / UMBRELLA CELLS
+   ========================================================= */
+
+.transitional-rich-relaxed
+.umbrella-cell {
+
+    height: 92px;
+
+    border-radius:
+        18px 18px 8px 8px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #dfecef 0%,
+            #d5e4e9 100%
+        );
+
+}
+
+
+/* Dome cap */
+
+.transitional-rich-relaxed
+.umbrella-cell::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    top: -7px;
+
+    width: 78%;
+
+    height: 25px;
+
+    transform:
+        translateX(-50%);
+
+    border-radius:
+        50% 50% 38% 38%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #eaf4f5,
+            #cddfe5
+        );
+
+    border:
+        2px solid #7699a9;
+
+    border-bottom: none;
+
+}
+
+
+/* =========================================================
+   10. RELAXED INTERMEDIATE CELLS
+   ========================================================= */
+
+.transitional-rich-relaxed
+.intermediate-cell {
+
+    height: 110px;
+
+    border-radius:
+        11px 11px 6px 6px;
+
+    background:
+        linear-gradient(
+            to right,
+            #e8f0f3,
+            #d9e6eb
+        );
+
+}
+
+
+/* =========================================================
+   11. RELAXED BASAL CELLS
+   ========================================================= */
+
+.transitional-rich-relaxed
+.basal-cell {
+
+    height: 58px;
+
+    border-radius:
+        9px 9px 5px 5px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #eef3f5,
+            #dde8ec
+        );
+
+}
+
+
+/* =========================================================
+   12. STRETCHED SURFACE CELLS
+   ========================================================= */
+
+.transitional-rich-stretched
+.umbrella-cell {
+
+    height: 48px;
+
+    border-radius:
+        7px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #e5f0f1,
+            #d6e6e9
+        );
+
+}
+
+
+/* Remove dome cap after stretching */
+
+.transitional-rich-stretched
+.umbrella-cell::before {
+
+    opacity: 0;
+
+    transform:
+        translateX(-50%)
+        scaleY(0.25);
+
+}
+
+
+/* =========================================================
+   13. STRETCHED INTERMEDIATE CELLS
+   ========================================================= */
+
+.transitional-rich-stretched
+.intermediate-cell {
+
+    height: 74px;
+
+    border-radius:
+        8px;
+
+}
+
+
+/* =========================================================
+   14. STRETCHED BASAL CELLS
+   ========================================================= */
+
+.transitional-rich-stretched
+.basal-cell {
+
+    height: 48px;
+
+    border-radius:
+        7px;
+
+}
+
+
+/* =========================================================
+   15. NUCLEI
+   ========================================================= */
+
+.tr-nucleus {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    width: 13px;
+
+    height: 19px;
+
+    transform:
+        translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            #986fd0,
+            #7042b8 65%,
+            #583596 100%
+        );
+
+    border:
+        1px solid #59358f;
+
+    box-shadow:
+        0 0 0 3px rgba(112,66,184,0.07);
+
+    transition:
+        transform 0.45s ease,
+        box-shadow 0.35s ease,
+        opacity 0.35s ease;
+
+}
+
+
+/* Surface nuclei slightly smaller */
+
+.umbrella-cell
+.tr-nucleus {
+
+    width: 12px;
+
+    height: 17px;
+
+}
+
+
+/* =========================================================
+   16. BASEMENT MEMBRANE
+   ========================================================= */
+
+.transitional-rich-basement {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: -2px;
+
+    height: 13px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #d8bc62,
+            #b98d29
+        );
+
+    border:
+        1px solid #a67d1e;
+
+    color: #6f5419;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 2px 5px rgba(120,90,20,0.16);
+
+    z-index: 12;
+
+    transition:
+        transform 0.35s ease,
+        filter 0.35s ease,
+        box-shadow 0.35s ease;
+
+}
+
+
+/* =========================================================
+   17. STRETCH INDICATOR
+   ========================================================= */
+
+.transitional-rich-stretch-indicator {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    z-index: 25;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 2px;
+
+    transform:
+        translate(-50%, -50%);
+
+    color: #438d87;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.4s ease;
+
+}
+
+
+.stretch-arrow {
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    text-shadow:
+        0 2px 5px rgba(55,120,115,0.14);
+
+}
+
+
+.stretch-text {
+
+    padding: 3px 7px;
+
+    border-radius: 7px;
+
+    background: rgba(255,255,255,0.92);
+
+    border:
+        1px solid #d4e8e5;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================================
+   18. DEFAULT STATE
+   ========================================================= */
+
+.transitional-rich-simulator:not(.is-stretched)
+.transitional-rich-stretch-indicator {
+
+    opacity: 0.62;
+
+}
+
+
+/* =========================================================
+   19. STRETCHED STATE
+   ---------------------------------------------------------
+   JS will add .is-stretched to the simulator
+   ========================================================= */
+
+.transitional-rich-simulator.is-stretched
+.transitional-rich-relaxed {
+
+    opacity: 0;
+
+    transform:
+        translateY(-12px)
+        scale(0.96);
+
+    pointer-events: none;
+
+}
+
+
+.transitional-rich-simulator.is-stretched
+.transitional-rich-stretched {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+    pointer-events: auto;
+
+}
+
+
+.transitional-rich-simulator.is-stretched
+.relaxed-label {
+
+    opacity: 0.38;
+
+    transform:
+        translateY(-4px)
+        scale(0.94);
+
+}
+
+
+.transitional-rich-simulator.is-stretched
+.stretched-label {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+}
+
+
+/* =========================================================
+   20. STRETCH INDICATOR ANIMATION
+   ========================================================= */
+
+.transitional-rich-simulator.is-stretched
+.transitional-rich-stretch-indicator {
+
+    opacity: 1;
+
+    transform:
+        translate(-50%, -50%)
+        scale(1.08);
+
+}
+
+
+.transitional-rich-simulator.is-stretched
+.stretch-arrow {
+
+    animation:
+        transitionalStretchPulse 1.4s ease-in-out infinite;
+
+}
+
+
+@keyframes transitionalStretchPulse {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(5px);
+
+    }
+
+}
+
+
+/* =========================================================
+   21. DIAGRAM HINT
+   ========================================================= */
+
+.transitional-rich-hint {
+
+    margin-top: 10px;
+
+    text-align: center;
+
+    color: #74858f;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+
+    transition:
+        opacity 0.3s ease;
+
+}
+
+
+.transitional-rich-simulator.is-stretched
+.transitional-rich-hint {
+
+    color: #43827e;
+
+}
+
+
+/* =========================================================
+   22. FEATURE CONTROLS
+   ========================================================= */
+
+.transitional-rich-controls {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 15px;
+
+}
+
+
+.transitional-rich-btn {
+
+    appearance: none;
+
+    border:
+        1px solid #cfdee5;
+
+    background:
+        #f8fbfc;
+
+    color: #435663;
+
+    padding:
+        8px 11px;
+
+    border-radius: 10px;
+
+    font:
+        inherit;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+.transitional-rich-btn:hover {
+
+    transform:
+        translateY(-1px);
+
+    border-color:
+        #9dbcc8;
+
+    box-shadow:
+        0 4px 10px rgba(50,80,100,0.08);
+
+}
+
+
+.transitional-rich-btn:active {
+
+    transform:
+        translateY(0);
+
+}
+
+
+.transitional-rich-btn:focus-visible {
+
+    outline:
+        3px solid rgba(67,139,133,0.20);
+
+    outline-offset: 2px;
+
+}
+
+
+/* =========================================================
+   23. FEATURE FOCUS
+   ========================================================= */
+
+/*
+ * JS will add:
+ *
+ * .tr-focus-surface
+ * .tr-focus-intermediate
+ * .tr-focus-basal
+ * .tr-focus-basement
+ */
+
+
+/* General focused state */
+
+.transitional-rich-simulator.is-feature-focused
+.tr-cell {
+
+    filter:
+        saturate(0.55)
+        brightness(0.94);
+
+    opacity: 0.42;
+
+}
+
+
+/* Surface */
+
+.transitional-rich-simulator.tr-focus-surface
+.transitional-rich-tissue
+[data-tr-feature="surface"] {
+
+    opacity: 1;
+
+    filter:
+        saturate(1.15)
+        brightness(1.05)
+        drop-shadow(
+            0 0 7px rgba(70,145,140,0.32)
+        );
+
+}
+
+
+.transitional-rich-simulator.tr-focus-surface
+[data-tr-feature="surface"] {
+
+    transform:
+        translateY(-4px)
+        scale(1.04);
+
+    z-index: 30;
+
+}
+
+
+/* Intermediate */
+
+.transitional-rich-simulator.tr-focus-intermediate
+.transitional-rich-tissue
+[data-tr-feature="intermediate"] {
+
+    opacity: 1;
+
+    filter:
+        saturate(1.12)
+        brightness(1.05)
+        drop-shadow(
+            0 0 7px rgba(82,137,160,0.30)
+        );
+
+}
+
+
+.transitional-rich-simulator.tr-focus-intermediate
+[data-tr-feature="intermediate"] {
+
+    transform:
+        translateY(-4px)
+        scale(1.035);
+
+    z-index: 30;
+
+}
+
+
+/* Basal */
+
+.transitional-rich-simulator.tr-focus-basal
+.transitional-rich-tissue
+[data-tr-feature="basal"] {
+
+    opacity: 1;
+
+    filter:
+        saturate(1.12)
+        brightness(1.05)
+        drop-shadow(
+            0 0 7px rgba(130,105,75,0.28)
+        );
+
+}
+
+
+.transitional-rich-simulator.tr-focus-basal
+[data-tr-feature="basal"] {
+
+    transform:
+        translateY(-3px)
+        scale(1.04);
+
+    z-index: 30;
+
+}
+
+
+/* Basement */
+
+.transitional-rich-simulator.tr-focus-basement
+.transitional-rich-basement {
+
+    filter:
+        brightness(1.15)
+        drop-shadow(
+            0 0 8px rgba(195,150,40,0.55)
+        );
+
+    transform:
+        scaleY(1.45);
+
+}
+
+
+/* =========================================================
+   24. ACTIVE FEATURE BUTTON
+   ========================================================= */
+
+.transitional-rich-btn.is-active {
+
+    background:
+        #edf7f6;
+
+    border-color:
+        #8ebdb8;
+
+    color:
+        #356f6a;
+
+    box-shadow:
+        0 4px 12px rgba(65,135,130,0.12);
+
+}
+
+
+/* =========================================================
+   25. STATE EXPLANATION
+   ========================================================= */
+
+.transitional-rich-explanation {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 15px;
+
+}
+
+
+.tr-explanation-relaxed,
+.tr-explanation-stretched {
+
+    padding:
+        11px 12px;
+
+    box-sizing: border-box;
+
+    border-radius: 12px;
+
+    background:
+        #f7fafb;
+
+    border:
+        1px solid #dce8ed;
+
+    color: #596b76;
+
+    font-size: 10px;
+
+    line-height: 1.45;
+
+}
+
+
+.tr-explanation-relaxed strong,
+.tr-explanation-stretched strong {
+
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #385563;
+
+    font-size: 11px;
+
+}
+
+
+/* Stretched explanation gets subtle emphasis */
+
+.tr-explanation-stretched {
+
+    background:
+        #f0f8f7;
+
+    border-color:
+        #d1e7e3;
+
+}
+
+
+/* =========================================================
+   26. STATE-BASED EXPLANATION EMPHASIS
+   ========================================================= */
+
+.transitional-rich-explanation
+.tr-explanation-stretched {
+
+    opacity: 0.55;
+
+    transform:
+        translateY(2px);
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease;
+
+}
+
+
+.transitional-rich-explanation
+.tr-explanation-relaxed {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease;
+
+}
+
+
+.transitional-rich-simulator.is-stretched
+~ .transitional-rich-explanation
+.tr-explanation-relaxed {
+
+    opacity: 0.55;
+
+    transform:
+        translateY(2px);
+
+}
+
+
+.transitional-rich-simulator.is-stretched
+~ .transitional-rich-explanation
+.tr-explanation-stretched {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+}
+
+
+/* =========================================================
+   27. KEY CONCEPT
+   ========================================================= */
+
+.transitional-rich-key {
+
+    margin-top: 13px;
+
+    padding:
+        12px 13px;
+
+    box-sizing: border-box;
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5fafb,
+            #edf7f6
+        );
+
+    border:
+        1px solid #d5e6e9;
+
+    color: #52646f;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+}
+
+
+.transitional-rich-key strong {
+
+    color:
+        #345c63;
+
+}
+
+
+/* =========================================================
+   28. SCROLL REVEAL
+   ---------------------------------------------------------
+   JS can add .is-visible to the main card.
+   ========================================================= */
+
+.transitional-rich-diagram
+.transitional-rich-header,
+.transitional-rich-diagram
+.transitional-rich-simulator,
+.transitional-rich-diagram
+.transitional-rich-controls,
+.transitional-rich-diagram
+.transitional-rich-explanation,
+.transitional-rich-diagram
+.transitional-rich-key {
+
+    opacity: 0;
+
+    transform:
+        translateY(18px);
+
+}
+
+
+.transitional-rich-diagram.is-visible
+.transitional-rich-header {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.55s cubic-bezier(.22,.61,.36,1);
+
+}
+
+
+.transitional-rich-diagram.is-visible
+.transitional-rich-simulator {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition:
+        opacity 0.6s ease 0.12s,
+        transform 0.65s cubic-bezier(.22,.61,.36,1) 0.12s;
+
+}
+
+
+.transitional-rich-diagram.is-visible
+.transitional-rich-controls {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition:
+        opacity 0.5s ease 0.40s,
+        transform 0.5s cubic-bezier(.22,.61,.36,1) 0.40s;
+
+}
+
+
+.transitional-rich-diagram.is-visible
+.transitional-rich-explanation {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition:
+        opacity 0.5s ease 0.52s,
+        transform 0.5s cubic-bezier(.22,.61,.36,1) 0.52s;
+
+}
+
+
+.transitional-rich-diagram.is-visible
+.transitional-rich-key {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition:
+        opacity 0.5s ease 0.64s,
+        transform 0.5s cubic-bezier(.22,.61,.36,1) 0.64s;
+
+}
+
+
+/* =========================================================
+   29. MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .transitional-rich-diagram {
+
+        margin:
+            24px auto;
+
+        padding:
+            18px 10px 20px;
+
+        border-radius:
+            18px;
+
+    }
+
+
+    .transitional-rich-title {
+
+        font-size:
+            19px;
+
+    }
+
+
+    .transitional-rich-subtitle {
+
+        font-size:
+            11px;
+
+    }
+
+
+    .transitional-rich-simulator {
+
+        padding:
+            8px 5px 12px;
+
+    }
+
+
+    .transitional-rich-stage {
+
+        height:
+            315px;
+
+    }
+
+
+    .transitional-rich-tissue {
+
+        left:
+            5%;
+
+        right:
+            5%;
+
+        top:
+            42px;
+
+        bottom:
+            34px;
+
+    }
+
+
+    .transitional-rich-layer {
+
+        gap:
+            2px;
+
+    }
+
+
+    .surface-layer {
+
+        bottom:
+            160px;
+
+        height:
+            78px;
+
+    }
+
+
+    .intermediate-layer {
+
+        bottom:
+            72px;
+
+        height:
+            96px;
+
+    }
+
+
+    .basal-layer {
+
+        height:
+            65px;
+
+    }
+
+
+    .transitional-rich-relaxed
+    .umbrella-cell {
+
+        height:
+            78px;
+
+    }
+
+
+    .transitional-rich-relaxed
+    .intermediate-cell {
+
+        height:
+            96px;
+
+    }
+
+
+    .transitional-rich-relaxed
+    .basal-cell {
+
+        height:
+            48px;
+
+    }
+
+
+    .transitional-rich-stretched
+    .umbrella-cell {
+
+        height:
+            42px;
+
+    }
+
+
+    .transitional-rich-stretched
+    .intermediate-cell {
+
+        height:
+            65px;
+
+    }
+
+
+    .transitional-rich-stretched
+    .basal-cell {
+
+        height:
+            42px;
+
+    }
+
+
+    .tr-cell {
+
+        min-width:
+            25px;
+
+        max-width:
+            45px;
+
+    }
+
+
+    .tr-nucleus {
+
+        width:
+            11px;
+
+        height:
+            16px;
+
+    }
+
+
+    .relaxed-label {
+
+        left:
+            8%;
+
+    }
+
+
+    .stretched-label {
+
+        right:
+            8%;
+
+    }
+
+
+    .stretch-text {
+
+        font-size:
+            7px;
+
+    }
+
+
+    .transitional-rich-controls {
+
+        gap:
+            6px;
+
+    }
+
+
+    .transitional-rich-btn {
+
+        padding:
+            7px 8px;
+
+        font-size:
+            9px;
+
+    }
+
+
+    .transitional-rich-explanation {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .tr-explanation-relaxed,
+    .tr-explanation-stretched {
+
+        font-size:
+            10px;
+
+    }
+
+}
+
+
+/* =========================================================
+   30. VERY SMALL SCREENS
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+    .transitional-rich-stage {
+
+        height:
+            295px;
+
+    }
+
+
+    .transitional-rich-tissue {
+
+        left:
+            3%;
+
+        right:
+            3%;
+
+    }
+
+
+    .tr-cell {
+
+        min-width:
+            22px;
+
+        max-width:
+            39px;
+
+    }
+
+
+    .transitional-rich-state-label {
+
+        font-size:
+            8px;
+
+        padding:
+            4px 7px;
+
+    }
+
+
+    .relaxed-label {
+
+        left:
+            5%;
+
+    }
+
+
+    .stretched-label {
+
+        right:
+            5%;
+
+    }
+
+}
+
+
+/* =========================================================
+   31. REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .transitional-rich-diagram *,
+    .transitional-rich-diagram {
+
+        transition:
+            none !important;
+
+        animation:
+            none !important;
+
+    }
+
+
+    .transitional-rich-diagram
+    .transitional-rich-header,
+
+    .transitional-rich-diagram
+    .transitional-rich-simulator,
+
+    .transitional-rich-diagram
+    .transitional-rich-controls,
+
+    .transitional-rich-diagram
+    .transitional-rich-explanation,
+
+    .transitional-rich-diagram
+    .transitional-rich-key {
+
+        opacity:
+            1 !important;
+
+        transform:
+            none !important;
+
+    }
+
+}
+
+/* =========================================================
+   TRANSITIONAL EPITHELIUM
+   BIOLOGY-FEEL ANIMATION POLISH
+   ---------------------------------------------------------
+   Add AFTER the existing transitional-rich CSS
+   ========================================================= */
+
+
+/* =========================================================
+   1. TISSUE EXPANSION
+   ---------------------------------------------------------
+   The stretched epithelium appears wider and thinner.
+   ========================================================= */
+
+.transitional-rich-stretched {
+
+    transform:
+        translateY(10px)
+        scaleX(1.055)
+        scaleY(0.92);
+
+    transform-origin:
+        center bottom;
+
+}
+
+
+/* When stretched, the relaxed tissue compresses slightly
+   before disappearing. */
+
+.transitional-rich-simulator.is-stretched
+.transitional-rich-relaxed {
+
+    transform:
+        translateY(-3px)
+        scaleX(0.985)
+        scaleY(0.94);
+
+}
+
+
+/* =========================================================
+   2. SURFACE / UMBRELLA CELLS
+   ---------------------------------------------------------
+   Most important visual change:
+   dome → flatter surface
+   ========================================================= */
+
+.transitional-rich-stretched
+.surface-layer {
+
+    transform:
+        translateY(16px);
+
+    transition:
+        transform 0.72s
+        cubic-bezier(.22,.61,.36,1);
+
+}
+
+
+.transitional-rich-relaxed
+.surface-layer {
+
+    transform:
+        translateY(0);
+
+    transition:
+        transform 0.72s
+        cubic-bezier(.22,.61,.36,1);
+
+}
+
+
+/* Surface cells become flatter */
+
+.transitional-rich-stretched
+.umbrella-cell {
+
+    height: 43px;
+
+    border-radius:
+        9px 9px 7px 7px;
+
+}
+
+
+/* Flatten the dome smoothly */
+
+.transitional-rich-stretched
+.umbrella-cell::before {
+
+    height: 9px;
+
+    top: -3px;
+
+    opacity: 0.25;
+
+    transform:
+        translateX(-50%)
+        scaleY(0.45);
+
+}
+
+
+/* =========================================================
+   3. SURFACE CELL LATERAL SPREAD
+   ---------------------------------------------------------
+   Staggering gives a subtle wave instead of a robotic
+   simultaneous movement.
+   ========================================================= */
+
+.transitional-rich-stretched
+.surface-layer
+.tr-cell:nth-child(1) {
+
+    transition-delay:
+        0.04s;
+
+}
+
+
+.transitional-rich-stretched
+.surface-layer
+.tr-cell:nth-child(2) {
+
+    transition-delay:
+        0.08s;
+
+}
+
+
+.transitional-rich-stretched
+.surface-layer
+.tr-cell:nth-child(3) {
+
+    transition-delay:
+        0.12s;
+
+}
+
+
+.transitional-rich-stretched
+.surface-layer
+.tr-cell:nth-child(4) {
+
+    transition-delay:
+        0.08s;
+
+}
+
+
+.transitional-rich-stretched
+.surface-layer
+.tr-cell:nth-child(5) {
+
+    transition-delay:
+        0.04s;
+
+}
+
+
+/* =========================================================
+   4. INTERMEDIATE LAYER
+   ---------------------------------------------------------
+   It becomes shorter as the epithelium thins.
+   ========================================================= */
+
+.transitional-rich-stretched
+.intermediate-layer {
+
+    transform:
+        translateY(10px);
+
+    transition:
+        transform 0.68s
+        cubic-bezier(.22,.61,.36,1);
+
+}
+
+
+.transitional-rich-stretched
+.intermediate-cell {
+
+    height: 72px;
+
+    border-radius:
+        8px 8px 6px 6px;
+
+}
+
+
+/* =========================================================
+   5. BASAL LAYER
+   ---------------------------------------------------------
+   Basal cells remain attached to the basement membrane.
+   They should move much less than the surface layer.
+   ========================================================= */
+
+.transitional-rich-stretched
+.basal-layer {
+
+    transform:
+        translateY(2px);
+
+    transition:
+        transform 0.58s
+        cubic-bezier(.22,.61,.36,1);
+
+}
+
+
+.transitional-rich-stretched
+.basal-cell {
+
+    height: 43px;
+
+    border-radius:
+        7px 7px 5px 5px;
+
+}
+
+
+/* =========================================================
+   6. BASEMENT MEMBRANE
+   ---------------------------------------------------------
+   Keep it visually stable.
+   This is the anchor of the tissue.
+   ========================================================= */
+
+.transitional-rich-stretched
+.transitional-rich-basement {
+
+    transform:
+        translateY(0)
+        scaleX(1.015);
+
+    transition:
+        transform 0.65s ease;
+
+}
+
+
+/* =========================================================
+   7. NUCLEI
+   ---------------------------------------------------------
+   Slight positional change rather than dramatic movement.
+   ========================================================= */
+
+.transitional-rich-stretched
+.tr-nucleus {
+
+    transform:
+        translate(-50%, -47%)
+        scaleY(0.90);
+
+    transition:
+        transform 0.55s ease;
+
+}
+
+
+/* =========================================================
+   8. RELAXED STATE RETURN
+   ========================================================= */
+
+.transitional-rich-relaxed
+.tr-nucleus {
+
+    transform:
+        translate(-50%, -50%)
+        scaleY(1);
+
+}
+
+
+/* =========================================================
+   9. STRETCH INDICATOR
+   ---------------------------------------------------------
+   Delay slightly so the cells start moving first.
+   ========================================================= */
+
+.transitional-rich-simulator.is-stretched
+.transitional-rich-stretch-indicator {
+
+    opacity: 0.88;
+
+    transform:
+        translate(-50%, -50%)
+        scale(1.02);
+
+    transition:
+        opacity 0.35s ease 0.18s,
+        transform 0.45s ease 0.18s;
+
+}
+
+
+/* =========================================================
+   10. STRETCH ARROW
+   ---------------------------------------------------------
+   Less aggressive than the current continuous animation.
+   ========================================================= */
+
+.transitional-rich-simulator.is-stretched
+.stretch-arrow {
+
+    animation:
+        transitionalBiologyStretchPulse
+        1.8s
+        ease-in-out
+        infinite;
+
+}
+
+
+@keyframes transitionalBiologyStretchPulse {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(-2px);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(4px);
+
+    }
+
+}
+
+
+/* =========================================================
+   11. CELL EDGE SOFTENING
+   ---------------------------------------------------------
+   Stretched cells should feel less tall and more spread.
+   ========================================================= */
+
+.transitional-rich-stretched
+.tr-cell {
+
+    box-shadow:
+        inset 2px 0 0 rgba(255,255,255,0.58),
+        inset -1px 0 0 rgba(80,120,135,0.035);
+
+}
+
+
+/* =========================================================
+   12. OVERALL STRETCH TIMING
+   ========================================================= */
+
+.transitional-rich-simulator.is-stretched
+.transitional-rich-stretched {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scaleX(1.055)
+        scaleY(0.92);
+
+    transition:
+        opacity 0.48s ease 0.08s,
+        transform 0.82s
+        cubic-bezier(.22,.61,.36,1);
+
+}
+
+
+/* =========================================================
+   13. RELAXED RETURN
+   ---------------------------------------------------------
+   When the user taps again, the tissue returns smoothly.
+   ========================================================= */
+
+.transitional-rich-simulator:not(.is-stretched)
+.transitional-rich-relaxed {
+
+    transform:
+        translateY(0)
+        scaleX(1)
+        scaleY(1);
+
+    transition:
+        opacity 0.48s ease 0.08s,
+        transform 0.78s
+        cubic-bezier(.22,.61,.36,1);
+
+}
+
+
+/* =========================================================
+   14. MOBILE ADJUSTMENT
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .transitional-rich-simulator.is-stretched
+    .transitional-rich-stretched {
+
+        transform:
+            translateY(0)
+            scaleX(1.035)
+            scaleY(0.94);
+
+    }
+
+
+    .transitional-rich-stretched
+    .surface-layer {
+
+        transform:
+            translateY(13px);
+
+    }
+
+
+    .transitional-rich-stretched
+    .intermediate-layer {
+
+        transform:
+            translateY(8px);
+
+    }
+
+}
+
+/* =========================================================
+   LESSON PAGE NAVIGATION BUTTONS
+   ========================================================= */
+
+.footer-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+}
+
+/* =========================================================
+   FLOATING PAGE SCROLL BUTTONS
+   ========================================================= */
+
+.page-scroll-btn {
+    position: fixed;
+
+    right: 18px;
+
+    width: 44px;
+    height: 44px;
+
+    border: none;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    z-index: 9999;
+
+    font-size: 24px;
+    font-weight: 800;
+
+    color: #ffffff;
+
+    background: #1f5fbf;
+
+    box-shadow:
+        0 5px 16px rgba(20, 50, 90, 0.22);
+
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        opacity 180ms ease;
+}
+
+
+/* ---------- HOVER ---------- */
+
+.page-scroll-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 20px rgba(20, 50, 90, 0.28);
+}
+
+
+/* ---------- ACTIVE ---------- */
+
+.page-scroll-btn:active {
+    transform: scale(0.92);
+}
+
+
+/* =========================================================
+   DOWN BUTTON
+   Right side / upper part
+   ========================================================= */
+
+.page-down-btn {
+    top: 20px;
+
+    opacity: 0.5;
+}
+
+
+/* =========================================================
+   UP BUTTON
+   Right side / lower part
+   ========================================================= */
+
+.page-up-btn {
+    bottom: 22px;
+
+    opacity: 0.5;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .page-scroll-btn {
+        right: 12px;
+
+        width: 30px;
+        height: 30px;
+
+        font-size: 18px;
+    }
+
+    .page-down-btn {
+        top: 35px;
+        opacity: 0.5;
+    }
+
+    .page-up-btn {
+        bottom: 20px;
+        opacity: 0.5;
+    }
+
+}

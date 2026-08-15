@@ -115,3 +115,108 @@ color:#666;
     }
 
 }
+
+.tissue-formation-diagram {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tissue-stage {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  height: 280px;
+  margin: 25px auto 10px;
+  overflow: hidden;
+}
+
+.cell-group {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.demo-cell {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #dff4ff;
+  border: 3px solid #4aa3df;
+  box-sizing: border-box;
+  transition:
+    left 1.4s ease,
+    top 1.4s ease,
+    transform 1.4s ease;
+}
+
+.cell-nucleus {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.cell-1 { left: 8%;  top: 15%; }
+.cell-2 { left: 38%; top: 8%; }
+.cell-3 { left: 70%; top: 18%; }
+.cell-4 { left: 20%; top: 45%; }
+.cell-5 { left: 52%; top: 38%; }
+.cell-6 { left: 78%; top: 48%; }
+.cell-7 { left: 10%; top: 72%; }
+.cell-8 { left: 62%; top: 73%; }
+.tissue-formation-diagram.formed .cell-1 {
+  left: 28%;
+  top: 32%;
+}
+
+.tissue-formation-diagram.formed .cell-2 {
+  left: 39%;
+  top: 27%;
+}
+
+.tissue-formation-diagram.formed .cell-3 {
+  left: 50%;
+  top: 32%;
+}
+
+.tissue-formation-diagram.formed .cell-4 {
+  left: 25%;
+  top: 45%;
+}
+
+.tissue-formation-diagram.formed .cell-5 {
+  left: 37%;
+  top: 43%;
+}
+
+.tissue-formation-diagram.formed .cell-6 {
+  left: 49%;
+  top: 45%;
+}
+
+.tissue-formation-diagram.formed .cell-7 {
+  left: 34%;
+  top: 57%;
+}
+
+.tissue-formation-diagram.formed .cell-8 {
+  left: 46%;
+  top: 58%;
+}
+
+.tissue-label {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.8s ease;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.tissue-formation-diagram.formed .tissue-label {
+  opacity: 1;
+  transform: translateY(0);
+}
