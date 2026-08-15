@@ -10,31 +10,1256 @@
 
 <link rel="stylesheet" href="../../css/lesson.css">
 
+<style>
+.tissue-formation-diagram {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tissue-stage {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  height: 280px;
+  margin: 25px auto 10px;
+  overflow: hidden;
+}
+
+.cell-group {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.demo-cell {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #dff4ff;
+  border: 3px solid #4aa3df;
+  box-sizing: border-box;
+  transition:
+    left 1.4s ease,
+    top 1.4s ease,
+    transform 1.4s ease;
+}
+
+.cell-nucleus {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Initial cell positions */
+
+.cell-1 { left: 8%;  top: 15%; }
+.cell-2 { left: 38%; top: 8%; }
+.cell-3 { left: 70%; top: 18%; }
+.cell-4 { left: 20%; top: 45%; }
+.cell-5 { left: 52%; top: 38%; }
+.cell-6 { left: 78%; top: 48%; }
+.cell-7 { left: 10%; top: 72%; }
+.cell-8 { left: 62%; top: 73%; }
+
+/* Formed tissue positions */
+
+.tissue-formation-diagram.formed .cell-1 {
+  left: 28%;
+  top: 32%;
+}
+
+.tissue-formation-diagram.formed .cell-2 {
+  left: 39%;
+  top: 27%;
+}
+
+.tissue-formation-diagram.formed .cell-3 {
+  left: 50%;
+  top: 32%;
+}
+
+.tissue-formation-diagram.formed .cell-4 {
+  left: 25%;
+  top: 45%;
+}
+
+.tissue-formation-diagram.formed .cell-5 {
+  left: 37%;
+  top: 43%;
+}
+
+.tissue-formation-diagram.formed .cell-6 {
+  left: 49%;
+  top: 45%;
+}
+
+.tissue-formation-diagram.formed .cell-7 {
+  left: 34%;
+  top: 57%;
+}
+
+.tissue-formation-diagram.formed .cell-8 {
+  left: 46%;
+  top: 58%;
+}
+
+/* Tissue label */
+
+.tissue-label {
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  transform: translate(-50%, 10px);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+
+  font-size: 22px;
+  font-weight: 700;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.tissue-formation-diagram.formed .tissue-label {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+/* /* =========================================
+   EPITHELIAL TISSUE DIAGRAM
+   CLEAN FINAL VERSION
+   ========================================= */
+
+.epithelium-diagram {
+    margin-top: 25px;
+    padding: 10px 0 35px;
+    text-align: center;
+}
+
+.epithelium-explore-btn {
+    padding: 9px 14px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   ANIMATION AREA
+   ========================================= */
+
+.epithelium-animation-area {
+    position: relative;
+    width: 100%;
+    height: 390px;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   CELL GROUP
+   ========================================= */
+
+.epithelium-cells {
+    position: absolute;
+
+    left: 50%;
+    top: 55px;
+
+    transform: translateX(-50%);
+
+    width: 280px;
+    height: 150px;
+}
+
+
+/* =========================================
+   INDIVIDUAL CELLS
+   ========================================= */
+
+.epi-cell {
+    position: absolute;
+
+    width: 48px;
+    height: 48px;
+
+    box-sizing: border-box;
+
+    border: 4px solid #4fa7d8;
+    border-radius: 50%;
+
+    background: #e8f6ff;
+
+    transition:
+        left 1s ease,
+        bottom 1s ease,
+        transform 1s ease;
+}
+
+
+/* Nucleus */
+
+.epi-cell::after {
+    content: "";
+
+    position: absolute;
+
+    width: 14px;
+    height: 14px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: #8b4de8;
+
+    border-radius: 50%;
+}
+
+
+/* =========================================
+   INITIAL SCATTERED POSITIONS
+   ========================================= */
+
+.epi-cell:nth-child(1) {
+    left: 5px;
+    bottom: 45px;
+}
+
+.epi-cell:nth-child(2) {
+    left: 75px;
+    bottom: 70px;
+}
+
+.epi-cell:nth-child(3) {
+    left: 150px;
+    bottom: 35px;
+}
+
+.epi-cell:nth-child(4) {
+    left: 220px;
+    bottom: 75px;
+}
+
+.epi-cell:nth-child(5) {
+    left: 40px;
+    bottom: 0;
+}
+
+.epi-cell:nth-child(6) {
+    left: 125px;
+    bottom: 5px;
+}
+
+.epi-cell:nth-child(7) {
+    left: 205px;
+    bottom: 5px;
+}
+
+
+/* =========================================
+   BASEMENT MEMBRANE
+   ========================================= */
+
+.basement-membrane {
+    position: absolute;
+
+    left: 50%;
+    bottom: 125px;
+
+    transform: translateX(-50%);
+
+    width: 280px;
+    height: 8px;
+
+    background: #e6b85c;
+
+    border-radius: 10px;
+
+    opacity: 0;
+
+    transition: opacity 0.8s ease;
+}
+
+
+/* =========================================
+   LABEL
+   ========================================= */
+
+.epithelium-label {
+    position: absolute;
+
+    left: 50%;
+    bottom: 35px;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 6px;
+
+    opacity: 0;
+
+    transition: opacity 0.8s ease;
+
+    font-size: 17px;
+}
+
+
+.epithelium-label strong {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+
+.epithelium-label span {
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+
+/* =========================================
+   FORMED STATE
+   ========================================= */
+
+/* Move cells into one epithelial layer */
+
+.epithelium-animation-area.formed
+.epi-cell:nth-child(1) {
+    left: 0;
+    bottom: 65px;
+}
+
+.epithelium-animation-area.formed
+.epi-cell:nth-child(2) {
+    left: 40px;
+    bottom: 65px;
+}
+
+.epithelium-animation-area.formed
+.epi-cell:nth-child(3) {
+    left: 80px;
+    bottom: 65px;
+}
+
+.epithelium-animation-area.formed
+.epi-cell:nth-child(4) {
+    left: 120px;
+    bottom: 65px;
+}
+
+.epithelium-animation-area.formed
+.epi-cell:nth-child(5) {
+    left: 160px;
+    bottom: 65px;
+}
+
+.epithelium-animation-area.formed
+.epi-cell:nth-child(6) {
+    left: 200px;
+    bottom: 65px;
+}
+
+.epithelium-animation-area.formed
+.epi-cell:nth-child(7) {
+    left: 240px;
+    bottom: 65px;
+}
+
+.epithelium-animation-area.formed .epi-cell {
+    bottom: 65px;
+}
+
+.epithelium-animation-area.formed .basement-membrane {
+    bottom: 195px;
+}
+
+/* Show basement membrane */
+
+.epithelium-animation-area.formed
+.basement-membrane {
+    opacity: 1;
+}
+
+
+/* Show label */
+
+.epithelium-animation-area.formed
+.epithelium-label {
+    opacity: 1;
+}
+
+
+/* =========================================
+   MOBILE SAFETY
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .epithelium-animation-area {
+        height: 390px;
+    }
+
+    .epithelium-cells {
+        width: 280px;
+    }
+
+    .basement-membrane {
+        width: 280px;
+    }
+
+    .epithelium-label strong {
+        font-size: 23px;
+    }
+
+    .epithelium-label span {
+        font-size: 16px;
+    }
+}
+
+/* Bring epithelial cells closer to the basement membrane */
+.epithelium-cells {
+    transform: translate(-50%,35px);
+}
+
+/* =========================================
+   STRATIFIED EPITHELIUM
+   Second cell layer
+   ========================================= */
+
+.epithelium-animation-area.stratified
+.epithelium-cells::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 113px;
+
+    width: 280px;
+    height: 48px;
+
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            #8b4de8 0 7px,
+            transparent 7.5px
+        ),
+        radial-gradient(
+            circle at 50% 50%,
+            #e8f6ff 0 20px,
+            #4fa7d8 20px 24px,
+            transparent 24.5px
+        );
+
+    background-size: 40px 48px;
+    background-repeat: repeat-x;
+
+    opacity: 0;
+
+    transform: translateY(-18px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+
+    z-index: 1;
+}
+
+
+/* Reveal second layer */
+
+.epithelium-animation-area.stratified
+.epithelium-cells::before {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================================
+   STRATIFIED LABEL
+   ========================================= */
+
+.epithelium-animation-area.stratified
+.epithelium-label strong {
+    font-size: 24px;
+}
+
+.epithelium-animation-area.stratified
+.epithelium-label span {
+    font-size: 16px;
+}
+
+.epithelium-animation-area.stratified
+.epithelium-label span {
+    font-size: 0;
+}
+
+.epithelium-animation-area.stratified
+.epithelium-label span::after {
+    content: "Multiple layers of cells";
+    font-size: 16px;
+}
+
+/ /* =========================================
+   CONNECTIVE TISSUE DIAGRAM
+   CLEAN VERSION
+   ========================================= */
+
+.connective-diagram {
+    width: 100%;
+    max-width: 560px;
+    margin: 42px auto 25px;
+    text-align: center;
+
+    /* Initial state */
+    opacity: 0;
+    transform: translateY(28px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+/* =========================================
+   VISIBLE STATE
+   ========================================= */
+
+.connective-diagram.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   TITLE
+   ========================================= */
+
+.connective-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+
+/* =========================================
+   CONNECTIVE TISSUE ITEMS
+   ========================================= */
+
+.connective-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 12px;
+}
+
+
+/* =========================================
+   INDIVIDUAL ITEM
+   ========================================= */
+
+.connective-item {
+    background: #ffffff;
+    border: 2px solid #d9e5f2;
+    border-radius: 18px;
+
+    min-height: 105px;
+    padding: 18px 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transform: translateY(14px);
+}
+
+
+/* =========================================
+   ICON
+   ========================================= */
+
+.connective-icon {
+    font-size: 38px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   ITEM TITLE
+   ========================================= */
+
+.connective-item strong {
+    font-size: 18px;
+    color: #222;
+}
+
+
+/* =========================================
+   RESULT
+   ========================================= */
+
+.connective-result {
+    width: fit-content;
+    max-width: 90%;
+
+    margin: 28px auto 0;
+    padding: 16px 22px;
+
+    border-radius: 16px;
+    background: #f4f8ff;
+    border: 2px solid #8bb8e8;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    opacity: 0;
+    transform: translateY(14px);
+}
+
+
+/* =========================================
+   RESULT ICON
+   ========================================= */
+
+.connective-result span {
+    font-size: 25px;
+}
+
+
+/* =========================================
+   RESULT TITLE
+   ========================================= */
+
+.connective-result strong {
+    font-size: 20px;
+}
+
+
+/* =========================================
+   ITEM REVEAL ANIMATION
+   ========================================= */
+
+.connective-diagram.is-visible .connective-item {
+    animation:
+        connectiveItemIn 0.55s ease forwards;
+}
+
+
+/* Staggered reveal */
+
+.connective-diagram.is-visible
+.connective-item:nth-child(1) {
+    animation-delay: 0.15s;
+}
+
+.connective-diagram.is-visible
+.connective-item:nth-child(2) {
+    animation-delay: 0.35s;
+}
+
+.connective-diagram.is-visible
+.connective-item:nth-child(3) {
+    animation-delay: 0.55s;
+}
+
+.connective-diagram.is-visible
+.connective-item:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+
+/* =========================================
+   RESULT REVEAL
+   ========================================= */
+
+.connective-diagram.is-visible
+.connective-result {
+    animation:
+        connectiveItemIn 0.55s ease forwards;
+
+    animation-delay: 1.05s;
+}
+
+
+/* =========================================
+   KEYFRAME
+   ========================================= */
+
+@keyframes connectiveItemIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+   MUSCLE TISSUE DIAGRAM
+   CLEAN VERSION
+   ========================================= */
+
+.muscle-diagram {
+    width: 100%;
+    max-width: 560px;
+    margin: 42px auto 25px;
+    text-align: center;
+
+    /* Initial hidden state */
+    opacity: 0;
+    transform: translateY(28px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+/* Visible when diagram enters viewport */
+.muscle-diagram.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.muscle-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.muscle-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 0 8px;
+}
+
+.muscle-item {
+    background: #ffffff;
+    border: 2px solid #d9e5f2;
+    border-radius: 18px;
+
+    min-height: 125px;
+    padding: 16px 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.muscle-icon {
+    font-size: 34px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.muscle-item strong {
+    font-size: 17px;
+    color: #222;
+}
+
+.muscle-item span {
+    margin-top: 7px;
+    font-size: 13px;
+    color: #666;
+}
+
+.muscle-result {
+    width: fit-content;
+    max-width: 90%;
+
+    margin: 28px auto 0;
+    padding: 16px 22px;
+
+    border-radius: 16px;
+    background: #f4f8ff;
+    border: 2px solid #8bb8e8;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    animation: muscleCardIn 0.55s ease both;
+    animation-delay: 0.70s;
+}
+
+.muscle-result span {
+    font-size: 25px;
+}
+
+.muscle-result strong {
+    font-size: 20px;
+}
+
+@keyframes muscleCardIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .muscle-title {
+        font-size: 20px;
+    }
+
+    .muscle-items {
+        gap: 8px;
+        padding: 0 4px;
+    }
+
+    .muscle-item {
+        min-height: 115px;
+        padding: 14px 5px;
+    }
+
+    .muscle-icon {
+        font-size: 30px;
+    }
+
+    .muscle-item strong {
+        font-size: 15px;
+    }
+
+    .muscle-item span {
+        font-size: 12px;
+    }
+
+    .muscle-result strong {
+        font-size: 18px;
+    }
+
+}
+
+/* =========================================
+   NERVOUS TISSUE DIAGRAM
+   SIGNAL FLOW
+   ========================================= */
+
+.nervous-diagram {
+    margin-top: 28px;
+    padding: 18px 10px 28px;
+    text-align: center;
+
+    opacity: 0;
+    transform: translateY(28px);
+
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s ease;
+}
+
+.nervous-diagram.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   TITLE
+   ========================================= */
+
+.nervous-diagram-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+
+/* =========================================
+   FLOW
+   ========================================= */
+
+.nervous-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   STEP
+   ========================================= */
+
+.nerve-step {
+    width: 92px;
+
+    opacity: 0;
+    transform: translateY(18px);
+
+    transition:
+        opacity 0.65s ease,
+        transform 0.65s ease;
+}
+
+.nervous-diagram.is-visible .nerve-step {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nervous-diagram.is-visible .receive-step {
+    transition-delay: 0.25s;
+}
+
+.nervous-diagram.is-visible .process-step {
+    transition-delay: 0.65s;
+}
+
+.nervous-diagram.is-visible .send-step {
+    transition-delay: 1.05s;
+}
+
+
+/* =========================================
+   NODE
+   ========================================= */
+
+.nerve-node {
+    width: 58px;
+    height: 58px;
+
+    margin: 0 auto 10px;
+
+    border: 3px solid #8bb8e8;
+    border-radius: 50%;
+
+    background: #f1f8ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.nerve-icon {
+    font-size: 27px;
+}
+
+
+/* =========================================
+   TEXT
+   ========================================= */
+
+.nerve-step strong {
+    display: block;
+
+    font-size: 13px;
+    line-height: 1.25;
+
+    margin-bottom: 5px;
+}
+
+.nerve-step span:not(.nerve-icon) {
+    display: block;
+
+    font-size: 11px;
+    color: #666;
+}
+
+
+/* =========================================
+   ARROWS
+   ========================================= */
+
+.nerve-arrow {
+    font-size: 25px;
+    font-weight: 700;
+
+    color: #8bb8e8;
+
+    opacity: 0;
+    transform: translateX(-8px);
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease;
+}
+
+.nervous-diagram.is-visible .arrow-1 {
+    transition-delay: 0.55s;
+}
+
+.nervous-diagram.is-visible .arrow-2 {
+    transition-delay: 0.95s;
+}
+
+.nervous-diagram.is-visible .nerve-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* =========================================
+   SIGNAL TRACK
+   ========================================= */
+
+.nerve-signal-track {
+    position: relative;
+
+    width: 82%;
+    height: 4px;
+
+    margin: 28px auto 24px;
+
+    background: #dbeaf7;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.nerve-signal {
+    position: absolute;
+
+    top: 0;
+    left: -20px;
+
+    width: 20px;
+    height: 4px;
+
+    border-radius: 10px;
+
+    background: #8b4de8;
+
+    opacity: 0;
+}
+
+
+/* Signal animation */
+
+.nervous-diagram.is-visible .nerve-signal {
+    opacity: 1;
+
+    animation:
+        nerveSignalMove 1.6s ease-in-out 1.35s
+        forwards;
+}
+
+@keyframes nerveSignalMove {
+
+    0% {
+        left: -20px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+
+/* =========================================
+   COORDINATION RESULT
+   ========================================= */
+
+.nerve-coordinate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    max-width: 310px;
+
+    margin: 0 auto;
+
+    padding: 13px 16px;
+
+    border: 2px solid #a9c9ed;
+    border-radius: 14px;
+
+    background: #f4f9ff;
+
+    opacity: 0;
+    transform: translateY(15px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.nervous-diagram.is-visible .nerve-coordinate {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition-delay: 2.25s;
+}
+
+.coordinate-icon {
+    font-size: 25px;
+}
+
+.nerve-coordinate strong {
+    display: block;
+
+    font-size: 14px;
+}
+
+.nerve-coordinate span:not(.coordinate-icon) {
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 11px;
+    color: #666;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .nervous-flow {
+        gap: 3px;
+    }
+
+    .nerve-step {
+        width: 82px;
+    }
+
+    .nerve-node {
+        width: 54px;
+        height: 54px;
+    }
+
+    .nerve-icon {
+        font-size: 25px;
+    }
+
+    .nerve-step strong {
+        font-size: 12px;
+    }
+
+    .nerve-step span:not(.nerve-icon) {
+        font-size: 10px;
+    }
+
+    .nerve-arrow {
+        font-size: 21px;
+    }
+
+    .nervous-diagram-title {
+        font-size: 20px;
+    }
+}
+
+
+</style>
 </head>
 
 <body>
 
 <header class="lesson-header">
 
-<a href="../index.html" class="back-btn">
-⬅ Back
+<a href="../cell/index.html" class="back-btn">
+👈🏼 Cell
 </a>
+
+<a href="../epithelial/index.html" class="next-lesson-btn">
+            Lesson 2.1 👉🏼
+        </a>
+
+<section class="hero-card">
+
 
 <h1>🧫 Tissues</h1>
 
 <p class="lesson-subtitle">
-Anatomy & Physiology • Lesson 2
+Anatomy • Lesson 2
 </p>
+
+</section>
+
+<div class="lesson-meta">
+
+<span class="badge beginner">
+
+🟢 Beginner
+
+</span>
+
+<span>
+
+⏱️ 10 min
+
+</span>
+
+<span>
+
+📖 Lesson 2 / 120
+
+</span>
+
+</div>
+
+<div class="progress-wrapper">
+
+<div class="progress-bar">
+
+<div class="progress-fill" style="width:8%;"></div>
+
+</div>
+
+</div>
+
+</div>
 
 </header>
 
 <main class="lesson-container">
 
-  <section class="hero-card">
+<!-- =========================================
+     PAGE DOWN BUTTON
+========================================= -->
 
-<div class="hero-icon">
-🧫
-</div>
+<button
+    type="button"
+    class="page-scroll-btn page-down-btn"
+    aria-label="Go to bottom of lesson"
+    onclick="document.getElementById('lesson-bottom').scrollIntoView({ behavior: 'smooth' });"
+>
+    ↓
+</button>
+
+  
 
 <h1>Tissues</h1>
 
@@ -44,24 +1269,7 @@ Cells that work together to perform a specific function are called tissues.
 
 </p>
 
-<div class="lesson-meta">
-
-<span>⏱️ 10 min</span>
-
-<span>📚 Lesson 2 / 120</span>
-
-</div>
-
-<div class="progress">
-
-<div class="progress-bar"
-style="width:8%">
-
-</div>
-
-</div>
-
-  </section>
+  
 
   <section class="lesson-card">
 
@@ -230,57 +1438,63 @@ Diagram Placeholder
 ========================= -->
 
 <section class="lesson-card">
+  <h2>🧫 Formation of a Tissue</h2>
 
-<h2>🖼️ How Cells Become Tissues</h2>
+  <div class="tissue-formation-diagram">
 
-<div class="diagram-placeholder">
+    <button id="tissueFormationBtn" class="diagram-explore-btn">
+      ▶ Explore Tissue Formation
+    </button>
 
-<p style="text-align:center;font-size:20px;">
+    <div id="tissueFormationStage" class="tissue-stage">
 
-🧬 Cell
+      <div id="cellGroup" class="cell-group">
 
-<br><br>
+        <div class="demo-cell cell-1">
+          <span class="cell-nucleus"></span>
+        </div>
 
-⬇️
+        <div class="demo-cell cell-2">
+          <span class="cell-nucleus"></span>
+        </div>
 
-<br><br>
+        <div class="demo-cell cell-3">
+          <span class="cell-nucleus"></span>
+        </div>
 
-🧫 Tissue
+        <div class="demo-cell cell-4">
+          <span class="cell-nucleus"></span>
+        </div>
 
-<br><br>
+        <div class="demo-cell cell-5">
+          <span class="cell-nucleus"></span>
+        </div>
 
-⬇️
+        <div class="demo-cell cell-6">
+          <span class="cell-nucleus"></span>
+        </div>
 
-<br><br>
+        <div class="demo-cell cell-7">
+          <span class="cell-nucleus"></span>
+        </div>
 
-🫀 Organ
+        <div class="demo-cell cell-8">
+          <span class="cell-nucleus"></span>
+        </div>
 
-<br><br>
+      </div>
 
-⬇️
+      <div id="tissueLabel" class="tissue-label">
+        🧫 Tissue
+      </div>
 
-<br><br>
+    </div>
 
-🧍 Organ System
+    <p id="tissueFormationText" class="diagram-description">
+      Similar cells work together as a functional unit.
+    </p>
 
-<br><br>
-
-⬇️
-
-<br><br>
-
-👨 Human Body
-
-</p>
-
-</div>
-
-<p>
-
-This diagram shows how the human body is organized. Cells join together to form tissues. Different tissues combine to form organs. Organs work together to form organ systems, which together make up the human body.
-
-</p>
-
+  </div>
 </section>
 
 
@@ -397,11 +1611,34 @@ Epithelial tissue forms the outer covering of the body and lines the internal or
 
 </div>
 
-<div class="diagram-placeholder">
+<div class="epithelium-diagram">
 
-🖼️ Diagram Placeholder
+    <button id="epitheliumFormationBtn" class="epithelium-explore-btn">
+        ▶ Explore Epithelium
+    </button>
 
-Simple Epithelium & Stratified Epithelium
+    <div class="epithelium-animation-area" id="epitheliumDiagram">
+
+        <div class="epithelium-cells">
+
+            <span class="epi-cell"></span>
+            <span class="epi-cell"></span>
+            <span class="epi-cell"></span>
+            <span class="epi-cell"></span>
+            <span class="epi-cell"></span>
+            <span class="epi-cell"></span>
+            <span class="epi-cell"></span>
+
+        </div>
+
+        <div class="basement-membrane"></div>
+
+        <div class="epithelium-label">
+            <strong>Simple Epithelium</strong>
+            <span>One layer of cells</span>
+        </div>
+
+    </div>
 
 </div>
 
@@ -456,11 +1693,40 @@ Connective tissue supports, binds, and protects different parts of the body. It 
 
 </div>
 
-<div class="diagram-placeholder">
+<div id="connective-diagram" class="connective-diagram">
 
-🖼️ Diagram Placeholder
+    <div class="connective-title">
+        🧩 Types of Connective Tissue
+    </div>
 
-Bone • Cartilage • Blood • Tendon
+    <div class="connective-items">
+
+        <div class="connective-item">
+            <div class="connective-icon">🦴</div>
+            <strong>Bone</strong>
+        </div>
+
+        <div class="connective-item">
+            <div class="connective-icon">🧊</div>
+            <strong>Cartilage</strong>
+        </div>
+
+        <div class="connective-item">
+            <div class="connective-icon">🩸</div>
+            <strong>Blood</strong>
+        </div>
+
+        <div class="connective-item">
+            <div class="connective-icon">🪢</div>
+            <strong>Tendon</strong>
+        </div>
+
+    </div>
+
+    <div class="connective-result">
+        <span>🧬</span>
+        <strong>Connective Tissue</strong>
+    </div>
 
 </div>
 
@@ -500,11 +1766,38 @@ Muscle tissue produces movement by contracting and relaxing. It helps us move, m
 
 </div>
 
-<div class="diagram-placeholder">
+<div id="muscle-diagram" class="muscle-diagram">
 
-🖼️ Diagram Placeholder
+    <div class="muscle-title">
+        💪 Types of Muscle Tissue
+    </div>
 
-Skeletal • Cardiac • Smooth
+    <div class="muscle-items">
+
+        <div class="muscle-item">
+            <div class="muscle-icon">💪</div>
+            <strong>Skeletal</strong>
+            <span>Voluntary</span>
+        </div>
+
+        <div class="muscle-item">
+            <div class="muscle-icon">❤️</div>
+            <strong>Cardiac</strong>
+            <span>Involuntary</span>
+        </div>
+
+        <div class="muscle-item">
+            <div class="muscle-icon">〰️</div>
+            <strong>Smooth</strong>
+            <span>Involuntary</span>
+        </div>
+
+    </div>
+
+    <div class="muscle-result">
+        <span>💪</span>
+        <strong>Muscle Tissue</strong>
+    </div>
 
 </div>
 
@@ -544,11 +1837,60 @@ Nervous tissue receives information, processes it, and sends electrical signals 
 
 </div>
 
-<div class="diagram-placeholder">
+<div id="nervous-diagram" class="nervous-diagram">
 
-🖼️ Diagram Placeholder
+    <div class="nervous-diagram-title">
+        🧠 Nervous Tissue — Signal Flow
+    </div>
 
-Neuron Structure
+    <div class="nervous-flow">
+
+        <!-- RECEIVE -->
+        <div class="nerve-step receive-step">
+            <div class="nerve-node">
+                <span class="nerve-icon">📡</span>
+            </div>
+            <strong>Receive signals</strong>
+            <span>Dendrites</span>
+        </div>
+
+        <div class="nerve-arrow arrow-1">→</div>
+
+        <!-- PROCESS -->
+        <div class="nerve-step process-step">
+            <div class="nerve-node">
+                <span class="nerve-icon">🧠</span>
+            </div>
+            <strong>Process information</strong>
+            <span>Cell body</span>
+        </div>
+
+        <div class="nerve-arrow arrow-2">→</div>
+
+        <!-- SEND -->
+        <div class="nerve-step send-step">
+            <div class="nerve-node">
+                <span class="nerve-icon">⚡</span>
+            </div>
+            <strong>Send nerve impulses</strong>
+            <span>Axon</span>
+        </div>
+
+    </div>
+
+    <!-- SIGNAL -->
+    <div class="nerve-signal-track">
+        <div class="nerve-signal"></div>
+    </div>
+
+    <!-- COORDINATE -->
+    <div class="nerve-coordinate">
+        <span class="coordinate-icon">🤸</span>
+        <div>
+            <strong>Coordinate body activities</strong>
+            <span>Brain • Spinal cord • Nerves</span>
+        </div>
+    </div>
 
 </div>
 
@@ -743,31 +2085,418 @@ class="btn">
 </section>
 
 
+<!-- =========================================
+     PAGE UP BUTTON
+========================================= -->
 
-<!-- ==========================================
-LESSON NAVIGATION
-========================================== -->
-
-<nav class="lesson-navigation">
-
-<a href="../cell/">
-
-⬅ Previous Lesson
-
-</a>
-
-<a href="../epithelial/">
-
-Next Lesson ➡
-
-</a>
-
-</nav>
+<button
+    type="button"
+    class="page-scroll-btn page-up-btn"
+    aria-label="Go to top of lesson"
+    onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+>
+    ↑
+</button>
+<div id="lesson-bottom"></div>
 
 </main>
 
 <script src="../../js/lesson.js"></script>
+<script>
+const tissueFormationBtn =
+    document.getElementById("tissueFormationBtn");
+
+const tissueFormationDiagram =
+    document.querySelector(".tissue-formation-diagram");
+
+let tissueFormationFinished = false;
+
+if (tissueFormationBtn && tissueFormationDiagram) {
+
+    tissueFormationBtn.addEventListener("click", () => {
+
+        if (!tissueFormationFinished) {
+
+            tissueFormationDiagram.classList.add("formed");
+
+            tissueFormationBtn.textContent =
+                "▶ Explore Again";
+
+            tissueFormationFinished = true;
+
+        } else {
+
+            tissueFormationDiagram.classList.remove("formed");
+
+            tissueFormationBtn.textContent =
+                "▶ Explore Tissue Formation";
+
+            tissueFormationFinished = false;
+        }
+
+    });
+
+}
+</script>
+
+<script>
+const epitheliumFormationBtn =
+    document.getElementById("epitheliumFormationBtn");
+
+const epitheliumDiagram =
+    document.getElementById("epitheliumDiagram");
+
+const epitheliumLabel =
+    epitheliumDiagram?.querySelector(".epithelium-label");
+
+let epitheliumStage = 0;
+let epitheliumTimer = null;
+
+if (
+    epitheliumFormationBtn &&
+    epitheliumDiagram &&
+    epitheliumLabel
+) {
+
+    epitheliumFormationBtn.addEventListener("click", () => {
+
+        /* =========================
+           RESET
+           ========================= */
+
+        if (epitheliumStage === 3) {
+
+            clearTimeout(epitheliumTimer);
+
+            epitheliumDiagram.classList.remove(
+                "formed",
+                "stratified"
+            );
+
+            epitheliumLabel.querySelector("strong").textContent =
+                "Simple Epithelium";
+
+            epitheliumLabel.querySelector("span").textContent =
+                "One layer of cells";
+
+            epitheliumFormationBtn.textContent =
+                "▶ Explore Epithelium";
+
+            epitheliumStage = 0;
+
+            return;
+        }
+
+
+        /* =========================
+           START FORMATION
+           ========================= */
+
+        if (epitheliumStage === 0) {
+
+            epitheliumFormationBtn.textContent =
+                "▶ Exploring...";
+
+            epitheliumDiagram.classList.add("formed");
+
+            epitheliumStage = 1;
+
+
+            /* =========================
+               SECOND LAYER
+               ========================= */
+
+            epitheliumTimer = setTimeout(() => {
+
+                epitheliumDiagram.classList.add("stratified");
+
+                epitheliumLabel.querySelector("strong").textContent =
+                    "Stratified Epithelium";
+
+                epitheliumLabel.querySelector("span").textContent =
+                    "Multiple layers of cells";
+
+                epitheliumFormationBtn.textContent =
+                    "▶ Explore Again";
+
+                epitheliumStage = 3;
+
+            }, 1800);
+        }
+
+    });
+
+}
+
+/* =========================================
+   CONNECTIVE TISSUE DIAGRAM
+   SCROLL REVEAL
+   ========================================= */
+
+const connectiveDiagram =
+    document.getElementById("connective-diagram");
+
+
+if (connectiveDiagram) {
+
+    let connectiveRevealTimer = null;
+
+
+    const connectiveObserver =
+        new IntersectionObserver(
+            (entries) => {
+
+                entries.forEach((entry) => {
+
+                    if (entry.isIntersecting) {
+
+                        /*
+                         * Small delay before starting
+                         * the reveal animation.
+                         */
+                        clearTimeout(
+                            connectiveRevealTimer
+                        );
+
+                        connectiveRevealTimer =
+                            setTimeout(() => {
+
+                                connectiveDiagram
+                                    .classList
+                                    .add("is-visible");
+
+                            }, 250);
+
+                    } else {
+
+                        /*
+                         * Reset when the diagram
+                         * leaves the viewport.
+                         *
+                         * This allows the animation
+                         * to play again when the user
+                         * scrolls back.
+                         */
+                        clearTimeout(
+                            connectiveRevealTimer
+                        );
+
+                        connectiveDiagram
+                            .classList
+                            .remove("is-visible");
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.25
+            }
+        );
+
+
+    connectiveObserver.observe(
+        connectiveDiagram
+    );
+
+}
+
+/* =========================================
+   MUSCLE DIAGRAM SCROLL ANIMATION
+   ========================================= */
+
+const muscleDiagram =
+    document.getElementById("muscle-diagram");
+
+if (muscleDiagram) {
+
+    let muscleAnimationTimer = null;
+
+    const muscleObserver = new IntersectionObserver(
+        (entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+
+                    clearTimeout(muscleAnimationTimer);
+
+                    muscleAnimationTimer = setTimeout(() => {
+
+                        muscleDiagram.classList.add("is-visible");
+
+                    }, 300);
+
+                } else {
+
+                    clearTimeout(muscleAnimationTimer);
+
+                    muscleDiagram.classList.remove("is-visible");
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.25
+        }
+    );
+
+    muscleObserver.observe(muscleDiagram);
+}
+
+/* =========================================
+   NERVOUS TISSUE DIAGRAM
+   SCROLL REVEAL
+   ========================================= */
+
+const nervousDiagram =
+    document.getElementById("nervous-diagram");
+
+if (nervousDiagram) {
+
+    let nervousRevealTimer = null;
+
+    const nervousObserver =
+        new IntersectionObserver(
+            (entries) => {
+
+                entries.forEach((entry) => {
+
+                    if (entry.isIntersecting) {
+
+                        clearTimeout(
+                            nervousRevealTimer
+                        );
+
+                        /*
+                         * Small delay before
+                         * starting the animation.
+                         */
+
+                        nervousRevealTimer =
+                            setTimeout(() => {
+
+                                nervousDiagram
+                                    .classList
+                                    .add("is-visible");
+
+                            }, 450);
+
+                    } else {
+
+                        /*
+                         * Reset when the diagram
+                         * leaves the viewport.
+                         *
+                         * This allows the full
+                         * animation to replay.
+                         */
+
+                        clearTimeout(
+                            nervousRevealTimer
+                        );
+
+                        nervousDiagram
+                            .classList
+                            .remove("is-visible");
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.25
+            }
+        );
+
+
+    nervousObserver.observe(
+        nervousDiagram
+    );
+
+}
+
+</script>
 
 </body>
 
-  </html>
+
+<!-- =========================================
+     LESSON FOOTER
+========================================= -->
+
+<footer class="lesson-footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                🧬
+            </div>
+
+            <div>
+
+                <h3>
+                    Anatomy Learning Hub
+                </h3>
+
+                <p>
+                    Interactive Anatomy Lessons
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <nav class="footer-navigation"
+             aria-label="Lesson navigation">
+
+            <a href="../index.html">📚 Anatomy Lessons
+            </a>
+
+            <a href="#table-of-contents">
+                📑 Table of Contents
+            </a>
+
+            <a href="#quick-revision">
+                📌 Quick Revision
+            </a>
+
+        </nav>
+
+
+        <div class="footer-lesson-info">
+
+            <p>
+                <strong>Lesson 2  -  Tissues 
+            </p>
+
+        </div>
+
+
+        <div class="footer-bottom">
+        <footer class="lesson-footer">
+
+            <p>
+                © 2026 Kerala Info Hub - AmC
+            </p>
+
+            <p>
+                For educational purposes.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</html>
+
+
+
