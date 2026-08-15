@@ -20,18 +20,18 @@ content="Learn the structure and function of the cell with simple explanations, 
 <header class="lesson-header">
 
 <a href="../index.html" class="back-btn">
-← Anatomy
+👈🏼 Anatomy
 </a>
+
+<a href="../tissues/index.html" class="next-lesson-btn">
+            Lesson 2 👉🏼
+        </a>
 
 <div class="lesson-hero">
 
-<h1>🧫 Cell</h1>
+<h1>🔬 Cell</h1>
 
-<p class="lesson-subtitle">
-
-The Structural and Functional Unit of Life
-
-</p>
+<p class="lesson-subtitle"> Anatomy • Lesson 1</p>
 
 <div class="lesson-meta">
 
@@ -73,7 +73,26 @@ The Structural and Functional Unit of Life
 
 <main class="lesson-container">
 
+<!-- =========================================
+     PAGE DOWN BUTTON
+========================================= -->
 
+<button
+    type="button"
+    class="page-scroll-btn page-down-btn"
+    aria-label="Go to bottom of lesson"
+    onclick="document.getElementById('lesson-bottom').scrollIntoView({ behavior: 'smooth' });"
+>
+    ↓
+</button>
+
+<h1>🔬 Cell</h1>
+
+<p>
+
+The Structural and Functional Unit of Life
+
+</p>
 
 <section class="lesson-card">
 
@@ -371,6 +390,11 @@ Loading Interactive Diagram...
 </div>
 
 </section>
+
+<div id="hotspotsTooltip">
+    <div id="tooltipTitle"></div>
+    <small>Tap to Learn</small>
+  </div>
   
 
 <section class="lesson-card" id="cell-organelles">
@@ -588,26 +612,7 @@ Certificate Progress
 
 </section>
 
-
-
-<nav class="lesson-navigation">
-
-<a href="../index.html">
-
-⬅ Anatomy
-
-</a>
-
-<a href="../tissues/">
-➡ Tissues
-</a>
-
-</nav>
-
-  <div id="hotspotsTooltip">
-    <div id="tooltipTitle"></div>
-    <small>Tap to Learn</small>
-  </div>
+  
 
 
 <!-- Organelle Info Modal -->
@@ -644,13 +649,102 @@ Certificate Progress
 
 </div>
   <div id="debugBox"></div>
+
+<!-- =========================================
+     PAGE UP BUTTON
+========================================= -->
+
+<button
+    type="button"
+    class="page-scroll-btn page-up-btn"
+    aria-label="Go to top of lesson"
+    onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+>
+    ↑
+</button>
+
+<div id="lesson-bottom"></div>
+
 </main>
 
 <script src="cell-config.js"></script>
 <script src="../../js/diagram-engine.js"></script>
 <script src="cell.js"></script>
+<script src="../../js/lesson-template.js"></script>
 
 
 </body>
+
+<!-- =========================================
+     LESSON FOOTER
+========================================= -->
+
+<footer class="lesson-footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                🧬
+            </div>
+
+            <div>
+
+                <h3>
+                    Anatomy Learning Hub
+                </h3>
+
+                <p>
+                    Interactive Anatomy Lessons
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <nav class="footer-navigation"
+             aria-label="Lesson navigation">
+
+            <a href="../index.html">📚 Anatomy Lessons
+            </a>
+
+            <a href="#table-of-contents">
+                📑 Table of Contents
+            </a>
+
+            <a href="#quick-revision">
+                📌 Quick Revision
+            </a>
+
+        </nav>
+
+
+        <div class="footer-lesson-info">
+
+            <p>
+                <strong>Lesson 1  -  Cell
+            </p>
+
+        </div>
+
+
+        <div class="footer-bottom">
+        <footer class="lesson-footer">
+
+            <p>
+                © 2026 Kerala Info Hub - AmC
+            </p>
+
+            <p>
+                For educational purposes.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
 
 </html>
