@@ -9219,3 +9219,4889 @@ color:#2563eb;
     }
 
 }
+
+/* =========================================================
+   MUSCLE COMPARISON TABLE
+   Responsive • Mobile + Desktop
+   ========================================================= */
+
+.comparison-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin: 25px 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.muscle-comparison-table {
+    width: 100%;
+    min-width: 560px;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    font-size: 16px;
+    line-height: 1.45;
+    background: #fff;
+    border: 1px solid #dfe3e8;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* Column widths */
+
+.muscle-comparison-table th:first-child {
+    width: 23%;
+}
+
+.muscle-comparison-table th:not(:first-child),
+.muscle-comparison-table td {
+    width: 25.66%;
+}
+
+
+/* Header */
+
+.muscle-comparison-table thead th {
+    background: #f1f5f9;
+    color: #111827;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px 8px;
+    border-bottom: 2px solid #d9dee5;
+    vertical-align: middle;
+}
+
+
+/* First column */
+
+.muscle-comparison-table tbody th {
+    background: #f8fafc;
+    color: #111827;
+    font-weight: 700;
+    text-align: left;
+    padding: 14px 10px;
+    border-right: 1px solid #e1e5ea;
+    border-bottom: 1px solid #e1e5ea;
+    vertical-align: middle;
+}
+
+
+/* Data cells */
+
+.muscle-comparison-table td {
+    color: #222;
+    text-align: center;
+    padding: 14px 8px;
+    border-bottom: 1px solid #e1e5ea;
+    border-right: 1px solid #e1e5ea;
+    vertical-align: middle;
+
+    /* Prevent ugly word breaking */
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+
+/* Remove last borders */
+
+.muscle-comparison-table tr:last-child th,
+.muscle-comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.muscle-comparison-table th:last-child,
+.muscle-comparison-table td:last-child {
+    border-right: none;
+}
+
+
+/* Slight row separation */
+
+.muscle-comparison-table tbody tr:nth-child(even) td {
+    background: #fafafa;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .muscle-comparison-table {
+        min-width: 520px;
+        font-size: 14px;
+    }
+
+    .muscle-comparison-table thead th {
+        padding: 12px 6px;
+        font-size: 14px;
+    }
+
+    .muscle-comparison-table tbody th {
+        padding: 12px 7px;
+        font-size: 14px;
+    }
+
+    .muscle-comparison-table td {
+        padding: 12px 6px;
+        font-size: 14px;
+        line-height: 1.35;
+    }
+
+}
+
+/* =========================================================
+   LESSON DIAGRAM
+   ========================================================= */
+
+.lesson-diagram {
+    margin: 28px 0;
+    text-align: center;
+}
+
+.lesson-diagram img {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 18px;
+}
+
+.lesson-diagram figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   SKELETAL MUSCLE VISUAL DIAGRAM
+   STEP 1 — SVG SKELETON
+   ========================================================= */
+
+.skeletal-muscle-diagram {
+    width: min(100%, 700px);
+    margin: 30px auto;
+    padding: 22px 16px 24px;
+
+    background: #ffffff;
+    border: 2px solid #d7e3ea;
+    border-radius: 24px;
+
+    box-shadow:
+        0 10px 28px rgba(40, 70, 100, 0.08);
+
+    overflow: hidden;
+}
+
+
+/* -------------------------
+   HEADER
+   ------------------------- */
+
+.skeletal-diagram-header {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.skeletal-diagram-header h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 800;
+    color: #172033;
+}
+
+.skeletal-diagram-header p {
+    margin: 6px 0 0;
+    font-size: 13px;
+    line-height: 1.45;
+    color: #6d7a87;
+}
+
+
+/* -------------------------
+   SVG STAGE
+   ------------------------- */
+
+.skeletal-diagram-stage {
+    width: 100%;
+    position: relative;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f8fbfd 0%,
+            #f2f7fa 55%,
+            #edf3f6 100%
+        );
+
+    border: 1px solid #d9e5eb;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.9);
+}
+
+
+/* -------------------------
+   SVG
+   ------------------------- */
+
+.skeletal-muscle-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    overflow: visible;
+}
+
+
+/* -------------------------
+   SVG BACKGROUND
+   ------------------------- */
+
+.skeletal-muscle-svg .svg-background {
+    fill: transparent;
+}
+
+
+/* -------------------------
+   WHOLE MUSCLE
+   ------------------------- */
+
+.skeletal-muscle-svg .muscle-structure {
+    transform-origin: center;
+}
+
+.skeletal-muscle-svg .muscle-belly {
+    stroke: #a94150;
+    stroke-width: 4;
+}
+
+.skeletal-muscle-svg .muscle-tendon {
+    stroke: #c8ad83;
+    stroke-width: 3;
+}
+
+.skeletal-muscle-svg .muscle-fiber-lines path {
+    fill: none;
+    stroke: #8f3949;
+    stroke-width: 4;
+    stroke-linecap: round;
+}
+
+
+/* -------------------------
+   LABELS
+   ------------------------- */
+
+.skeletal-muscle-svg .structure-label rect {
+    fill: rgba(255,255,255,.92);
+    stroke: rgba(150,55,70,.25);
+    stroke-width: 2;
+}
+
+.skeletal-muscle-svg .structure-label text {
+    fill: #7d2637;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: .8px;
+}
+
+.skeletal-muscle-svg .structure-label .label-sub {
+    fill: #66717d;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+
+/* -------------------------
+   FASCICLE
+   ------------------------- */
+
+.skeletal-muscle-svg #fascicle {
+    cursor: pointer;
+}
+
+.skeletal-muscle-svg .fascicle-fibers ellipse {
+    stroke: #a94150;
+    stroke-width: 2;
+}
+
+.skeletal-muscle-svg .secondary-label {
+    fill: #7d2637;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* =========================================================
+   STEP 4 — MUSCLE FIBER INTERACTION
+   ========================================================= */
+
+.skeletal-muscle-svg .muscle-fiber-target {
+    cursor: pointer;
+
+    transition:
+        transform .25s ease,
+        opacity .25s ease,
+        filter .25s ease;
+}
+
+.skeletal-muscle-svg .muscle-fiber-target:hover {
+    filter: brightness(1.08);
+}
+
+
+/* =========================================================
+   STEP 4 — MUSCLE FIBER DETAIL VIEW
+   ========================================================= */
+
+.skeletal-muscle-svg .muscle-fiber-view {
+    opacity: 0;
+    visibility: hidden;
+
+    /*
+       IMPORTANT:
+       The view itself must not block the SVG,
+       but the selected fiber inside it will be
+       explicitly made clickable.
+    */
+    pointer-events: none;
+
+    transform-origin: center;
+
+    transform:
+        translateY(8px)
+        scale(.94);
+
+    transition:
+        opacity .45s ease,
+        transform .55s cubic-bezier(.22,.8,.28,1),
+        visibility 0s linear .45s;
+}
+
+
+/* Background */
+
+.skeletal-muscle-svg .fiber-view-background {
+    fill: #f8fbfd;
+    stroke: #d9e5eb;
+    stroke-width: 2;
+}
+
+
+/* Main fiber */
+
+.skeletal-muscle-svg .fiber-body {
+    fill: url(#fiberGradient);
+
+    stroke: #a94150;
+    stroke-width: 4;
+
+    filter:
+        drop-shadow(
+            0 8px 10px
+            rgba(120,50,60,.18)
+        );
+}
+
+
+/* Highlight */
+
+.skeletal-muscle-svg .fiber-highlight {
+    fill: #ffffff;
+    opacity: .35;
+}
+
+
+/* Striations */
+
+.skeletal-muscle-svg .fiber-striations line {
+    stroke: #8f3949;
+    stroke-width: 5;
+    stroke-linecap: round;
+    opacity: .45;
+}
+
+
+/* Multiple nuclei */
+
+.skeletal-muscle-svg .fiber-nuclei ellipse {
+    fill: #7d3f91;
+    opacity: .9;
+
+    stroke: #ffffff;
+    stroke-width: 2;
+}
+
+
+/* Label */
+
+.skeletal-muscle-svg .fiber-view-label rect {
+    fill: rgba(255,255,255,.95);
+    stroke: rgba(169,65,80,.28);
+    stroke-width: 2;
+}
+
+.skeletal-muscle-svg .fiber-view-label text {
+    fill: #7d2637;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: .8px;
+}
+
+.skeletal-muscle-svg .fiber-view-label .fiber-label-sub {
+    fill: #66717d;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+
+/* Hint */
+
+.skeletal-muscle-svg .fiber-view-hint {
+    fill: #66717d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* -------------------------
+   CONNECTOR
+   ------------------------- */
+
+.skeletal-muscle-svg .diagram-connector path {
+    fill: none;
+    stroke: #9aa8b4;
+    stroke-width: 2.5;
+    stroke-dasharray: 6 6;
+}
+
+.skeletal-muscle-svg .diagram-connector circle {
+    fill: #ffffff;
+    stroke: #9aa8b4;
+    stroke-width: 2;
+}
+
+
+/* -------------------------
+   GUIDE TEXT
+   ------------------------- */
+
+.skeletal-muscle-svg .guide-title {
+    fill: #344454;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.skeletal-muscle-svg .guide-subtitle {
+    fill: #7b8792;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .skeletal-muscle-diagram {
+        margin: 24px auto;
+        padding: 18px 10px 20px;
+        border-radius: 20px;
+    }
+
+    .skeletal-diagram-header h3 {
+        font-size: 19px;
+    }
+
+    .skeletal-diagram-header p {
+        font-size: 12px;
+    }
+
+    .skeletal-muscle-svg .structure-label text {
+        font-size: 14px;
+    }
+
+    .skeletal-muscle-svg .structure-label .label-sub {
+        font-size: 10px;
+    }
+
+    .skeletal-muscle-svg .guide-title {
+        font-size: 13px;
+    }
+
+    .skeletal-muscle-svg .guide-subtitle {
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+    .skeletal-muscle-diagram {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .skeletal-diagram-header h3 {
+        font-size: 18px;
+    }
+
+    .skeletal-muscle-svg .structure-label text {
+        font-size: 12px;
+    }
+
+}
+
+/* =========================================================
+   STEP 4 — HARD INITIAL HIDDEN STATE
+   ========================================================= */
+
+.skeletal-muscle-svg #muscle-fiber-view {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: scale(.82);
+    transform-origin: 400px 310px;
+
+    transition:
+        opacity .45s ease,
+        transform .55s cubic-bezier(.22,.8,.28,1),
+        visibility 0s linear .45s;
+}
+
+
+/* =========================================================
+   MUSCLE FIBER — VISIBLE STATE
+   ========================================================= */
+
+.skeletal-muscle-svg #muscle-fiber-view.is-visible {
+
+    opacity: 1;
+    visibility: visible;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+    pointer-events: none;
+
+    transition:
+        opacity .45s ease,
+        transform .55s cubic-bezier(.22,.8,.28,1),
+        visibility 0s linear 0s;
+}
+
+/* =========================================================
+   SKELETAL MUSCLE DIAGRAM
+   STEP 2 - INTERACTION
+   ========================================================= */
+
+.muscle-layer {
+  cursor: pointer;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease,
+    filter 0.35s ease;
+}
+
+/* Small feedback when tapped */
+.muscle-layer:active {
+  transform: scale(0.98);
+}
+
+/* Keyboard accessibility */
+.muscle-layer:focus,
+.muscle-layer:focus-visible {
+  outline: none;
+}
+
+/* Fascicle before exploration */
+.fascicle-layer {
+  opacity: 0.72;
+  transition:
+    opacity 0.5s ease,
+    transform 0.55s ease,
+    filter 0.4s ease;
+}
+
+/* Fascicle after whole muscle is selected */
+.skeletal-muscle-svg.show-fascicle .fascicle-layer {
+  opacity: 1;
+  transform: scale(1.08);
+  filter: url(#structureGlow);
+}
+
+/* Whole muscle becomes slightly quieter */
+.skeletal-muscle-svg.show-fascicle #whole-muscle {
+  opacity: 0.62;
+  transform: scale(0.97);
+}
+
+/* Status message */
+
+.muscle-diagram-status {
+  margin: 16px auto 4px;
+  padding: 10px 14px;
+  width: fit-content;
+  max-width: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(140, 45, 55, 0.16);
+
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.status-icon {
+  font-size: 16px;
+}
+
+
+
+/* =========================================================
+   STEP 4 — FIBER SELECTION STATES
+   ========================================================= */
+
+.skeletal-muscle-svg
+.fiber-selection-active
+.fascicle-fibers
+.muscle-fiber-target {
+    transition:
+        opacity .35s ease,
+        filter .35s ease,
+        transform .35s ease;
+}
+
+
+/* Non-selected fibers */
+
+.skeletal-muscle-svg
+.fiber-selection-active
+.muscle-fiber-target.fiber-dimmed {
+
+    opacity: .25;
+}
+
+
+/* Selected fiber */
+
+.skeletal-muscle-svg
+.muscle-fiber-target.fiber-selected {
+
+    filter:
+        drop-shadow(
+            0 0 8px
+            rgba(190,70,90,.55)
+        );
+
+    transform:
+        scale(1.12);
+
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+
+/* Detailed view */
+
+.skeletal-muscle-svg
+.muscle-fiber-view.is-visible {
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none;
+}
+
+
+.skeletal-muscle-svg
+.muscle-fiber-view.is-active {
+
+    transform:
+        scale(1);
+}
+
+
+
+/* =========================================================
+   STEP 4 — CLEAN FIBER DETAIL STATE
+   ========================================================= */
+
+.skeletal-muscle-svg.show-fiber-view
+.fascicle-layer {
+
+    opacity: 0 !important;
+
+    transform:
+        scale(.88);
+
+    filter: none !important;
+
+    pointer-events: none !important;
+}
+
+
+.skeletal-muscle-svg.show-fiber-view
+#whole-muscle {
+
+    opacity: 0 !important;
+
+    pointer-events: none !important;
+}
+
+
+.skeletal-muscle-svg.show-fiber-view
+.muscle-fiber-target {
+
+    opacity: 0 !important;
+
+    pointer-events: none !important;
+}
+
+
+.skeletal-muscle-svg.show-fiber-view
+.diagram-connector {
+
+    opacity: 0 !important;
+
+    pointer-events: none !important;
+}
+
+/* =========================================================
+   STEP 5 — SELECTED MUSCLE FIBER
+   CLICK / TAP TARGET
+   ========================================================= */
+
+.skeletal-muscle-svg
+#selected-muscle-fiber {
+
+    pointer-events: auto;
+
+    cursor: pointer;
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    transition:
+        filter .25s ease,
+        transform .35s cubic-bezier(.22,.8,.28,1);
+}
+
+
+/* Subtle interaction feedback */
+
+.skeletal-muscle-svg
+#selected-muscle-fiber:hover {
+
+    filter:
+        drop-shadow(
+            0 5px 9px
+            rgba(120,50,60,.22)
+        );
+}
+
+
+/* Keyboard focus */
+
+.skeletal-muscle-svg
+#selected-muscle-fiber:focus {
+
+    outline: none;
+
+    filter:
+        drop-shadow(
+            0 0 0 4px
+            rgba(190,70,90,.20)
+        );
+}
+
+/* =========================================================
+   STEP 5 — MYOFIBRIL VIEW
+   Muscle Fiber → Myofibril
+   ========================================================= */
+
+.skeletal-muscle-svg
+#myofibril-view {
+
+    display: none;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform:
+        translateY(12px)
+        scale(.94);
+
+    transform-origin: center;
+
+    transition:
+        opacity .45s ease,
+        transform .55s cubic-bezier(.22,.8,.28,1),
+        visibility 0s linear .45s;
+}
+
+
+/* ---------------------------------------------------------
+   MYOFIBRIL ACTIVE STATE
+   --------------------------------------------------------- */
+
+.skeletal-muscle-svg
+#myofibril-view.myofibril-visible {
+
+    display: block;
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+    pointer-events: auto;
+
+    transition:
+        opacity .45s ease,
+        transform .55s cubic-bezier(.22,.8,.28,1),
+        visibility 0s linear 0s;
+}
+
+
+/* ---------------------------------------------------------
+   Selected Myofibril
+   --------------------------------------------------------- */
+
+.skeletal-muscle-svg
+#selected-myofibril {
+
+    cursor: pointer;
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    transition:
+        filter .25s ease,
+        transform .3s ease;
+}
+
+
+.skeletal-muscle-svg
+#selected-myofibril:hover {
+
+    filter:
+        drop-shadow(
+            0 5px 9px
+            rgba(120,50,60,.22)
+        );
+}
+
+/* =========================================================
+   STEP 6 — SARCOMERE VIEW
+   Myofibril → Sarcomere
+   ========================================================= */
+
+.skeletal-muscle-svg
+#sarcomere-view {
+
+    display: none;
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform:
+        translateY(12px)
+        scale(.94);
+
+    transform-origin: center;
+
+    transition:
+        opacity .45s ease,
+        transform .55s cubic-bezier(.22,.8,.28,1),
+        visibility 0s linear .45s;
+}
+
+
+/* ---------------------------------------------------------
+   SARCOMERE ACTIVE STATE
+   --------------------------------------------------------- */
+
+.skeletal-muscle-svg
+#sarcomere-view.sarcomere-visible {
+
+    display: block;
+
+    opacity: 1;
+    visibility: visible;
+
+    pointer-events: auto;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+    transition:
+        opacity .45s ease,
+        transform .55s cubic-bezier(.22,.8,.28,1),
+        visibility 0s linear 0s;
+}
+
+
+/* ---------------------------------------------------------
+   SELECTED SARCOMERE
+   --------------------------------------------------------- */
+
+.skeletal-muscle-svg
+#selected-sarcomere {
+
+    cursor: pointer;
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    transition:
+        filter .25s ease,
+        transform .3s ease;
+}
+
+
+.skeletal-muscle-svg
+#selected-sarcomere:hover {
+
+    filter:
+        drop-shadow(
+            0 5px 9px
+            rgba(120,50,60,.22)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   KEYBOARD FOCUS
+   --------------------------------------------------------- */
+
+.skeletal-muscle-svg
+#selected-sarcomere:focus {
+
+    outline: none;
+
+    filter:
+        drop-shadow(
+            0 0 0 4px
+            rgba(190,70,90,.20)
+        );
+}
+
+/* =========================================================
+   STEP 7 — SARCOMERE CONTRACTION
+   Sliding Filament Interaction
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   Z LINES
+   --------------------------------------------------------- */
+
+.skeletal-muscle-svg
+.step7-z-left,
+.skeletal-muscle-svg
+.step7-z-right {
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    transition:
+        transform .9s cubic-bezier(.22,.8,.28,1);
+}
+
+
+/* ---------------------------------------------------------
+   ACTIN / THIN FILAMENTS
+   --------------------------------------------------------- */
+
+.skeletal-muscle-svg
+.step7-actin-left,
+.skeletal-muscle-svg
+.step7-actin-right {
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    transition:
+        transform .9s cubic-bezier(.22,.8,.28,1);
+}
+
+
+/* ---------------------------------------------------------
+   H ZONE
+   --------------------------------------------------------- */
+
+.skeletal-muscle-svg
+.step7-h-zone {
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    transition:
+        transform .9s cubic-bezier(.22,.8,.28,1);
+}
+
+
+/* =========================================================
+   CONTRACTED STATE
+   ========================================================= */
+
+/*
+   IMPORTANT:
+   .step7-contracted is applied directly to the SVG.
+   Therefore there must NOT be a space between
+   .skeletal-muscle-svg and .step7-contracted.
+*/
+
+
+/* Z lines move toward the M line */
+
+.skeletal-muscle-svg.step7-contracted
+.step7-z-left {
+
+    transform:
+        translateX(70px);
+}
+
+
+.skeletal-muscle-svg.step7-contracted
+.step7-z-right {
+
+    transform:
+        translateX(-70px);
+}
+
+
+/* Actin slides toward the center */
+
+.skeletal-muscle-svg.step7-contracted
+.step7-actin-left {
+
+    transform:
+        translateX(70px);
+}
+
+
+.skeletal-muscle-svg.step7-contracted
+.step7-actin-right {
+
+    transform:
+        translateX(-70px);
+}
+
+
+/* H zone becomes smaller */
+
+.skeletal-muscle-svg.step7-contracted
+.step7-h-zone {
+
+    transform:
+        scaleX(.30);
+}
+
+
+/* ---------------------------------------------------------
+   ACCESSIBILITY
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .skeletal-muscle-svg
+    .step7-z-left,
+    .skeletal-muscle-svg
+    .step7-z-right,
+    .skeletal-muscle-svg
+    .step7-actin-left,
+    .skeletal-muscle-svg
+    .step7-actin-right,
+    .skeletal-muscle-svg
+    .step7-h-zone {
+
+        transition: none;
+    }
+}
+
+/* =========================================================
+   SKELETAL MUSCLE DIAGRAM
+   SCROLL REVEAL + FADE-IN
+   ---------------------------------------------------------
+   Additive animation only. Existing SVG/interactions are untouched.
+   The animation is applied to the outer diagram card, not the SVG.
+   ========================================================= */
+
+.skeletal-muscle-diagram.skeletal-scroll-reveal {
+    opacity: 0;
+    transform: translateY(42px);
+    transition:
+        opacity 0.75s ease,
+        transform 0.75s cubic-bezier(.22,.8,.28,1);
+    will-change: opacity, transform;
+}
+
+.skeletal-muscle-diagram.skeletal-scroll-reveal.skeletal-scroll-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .skeletal-muscle-diagram.skeletal-scroll-reveal,
+    .skeletal-muscle-diagram.skeletal-scroll-reveal.skeletal-scroll-visible {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* =========================================================
+   SKELETAL MUSCLE — REPEATING SCROLL REVEAL
+   Fade In + Upward Scroll
+   Does NOT modify internal SVG animations
+   ========================================================= */
+
+#skeletalMuscleDiagram.skeletal-scroll-reveal {
+    opacity: 0;
+    transform: translateY(42px);
+}
+
+
+/* Animation trigger */
+#skeletalMuscleDiagram.skeletal-scroll-reveal.is-scroll-visible {
+    animation:
+        skeletalMuscleScrollReveal
+        0.75s
+        cubic-bezier(.22, .8, .28, 1)
+        both;
+}
+
+
+/* ---------------------------------------------------------
+   KEYFRAMES
+   --------------------------------------------------------- */
+
+@keyframes skeletalMuscleScrollReveal {
+
+    0% {
+        opacity: 0;
+        transform: translateY(42px);
+    }
+
+    60% {
+        opacity: 0.85;
+        transform: translateY(8px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   REDUCED MOTION
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    #skeletalMuscleDiagram.skeletal-scroll-reveal {
+        opacity: 1;
+        transform: none;
+        animation: none !important;
+    }
+
+}
+
+/* =========================================================
+   CARDIAC MUSCLE
+   REALISTIC INTERACTIVE DIAGRAM
+   VISUAL CSS — STEP 1
+
+   IMPORTANT:
+   All selectors are scoped to .cardiac-muscle-diagram
+   so existing skeletal muscle styles remain untouched.
+   ========================================================= */
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.cardiac-muscle-diagram {
+    width: 100%;
+    max-width: 900px;
+    margin: 35px auto 45px;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.cardiac-diagram-header {
+    text-align: left;
+    margin-bottom: 22px;
+    padding: 0 4px;
+}
+
+.cardiac-diagram-header h3 {
+    margin: 0 0 10px;
+    font-size: clamp(1.45rem, 4vw, 2rem);
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.cardiac-diagram-header p {
+    margin: 0;
+    font-size: clamp(1rem, 3vw, 1.18rem);
+    line-height: 1.75;
+    color: #4b5563;
+}
+
+
+/* =========================================================
+   SVG STAGE
+   ========================================================= */
+
+.cardiac-diagram-stage {
+    width: 100%;
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff 0%,
+            #f8fafc 45%,
+            #eef3f6 100%
+        );
+
+    border: 1px solid rgba(148, 163, 184, .22);
+
+    box-shadow:
+        0 18px 45px rgba(15, 23, 42, .12),
+        0 4px 12px rgba(15, 23, 42, .06);
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.cardiac-muscle-svg {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    min-height: 300px;
+
+    overflow: visible;
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+}
+
+
+/* =========================================================
+   SVG BACKGROUND
+   ========================================================= */
+
+.cardiac-muscle-svg .cardiac-svg-background {
+    fill:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f4f7f9
+        );
+
+    fill: #f7fafc;
+
+    stroke: #d9e2e8;
+    stroke-width: 2;
+}
+
+
+/* =========================================================
+   SVG LEVEL SYSTEM
+   ========================================================= */
+
+/*
+   IMPORTANT:
+
+   Only Level 1 is visible initially.
+
+   Level 2 and Level 3 are hidden until JS
+   activates them later.
+*/
+
+.cardiac-muscle-svg .cardiac-tissue-view,
+.cardiac-muscle-svg .cardiac-cell-view {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform-origin: 400px 300px;
+}
+
+
+/* Level 1 */
+
+.cardiac-muscle-svg .cardiac-heart-context {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* =========================================================
+   HEART
+   ========================================================= */
+
+.cardiac-heart-shape {
+    stroke: #8f3042;
+    stroke-width: 3;
+
+    vector-effect: non-scaling-stroke;
+
+    transition:
+        transform .45s cubic-bezier(.22,.8,.28,1),
+        filter .35s ease,
+        opacity .35s ease;
+}
+
+
+/* subtle heart depth */
+
+.cardiac-heart-context::after {
+    content: "";
+}
+
+
+/* Heart highlight */
+
+.cardiac-heart-highlight {
+    pointer-events: none;
+    opacity: .65;
+}
+
+
+/* =========================================================
+   CARDIAC MUSCLE REGION
+   ========================================================= */
+
+.cardiac-muscle-region {
+    fill: rgba(255, 230, 235, .18);
+
+    stroke: rgba(255, 255, 255, .9);
+    stroke-width: 4;
+
+    stroke-dasharray: 8 7;
+
+    opacity: .9;
+
+    cursor: pointer;
+
+    transition:
+        fill .3s ease,
+        stroke .3s ease,
+        transform .3s ease,
+        filter .3s ease;
+}
+
+
+.cardiac-muscle-region:hover,
+.cardiac-muscle-region:focus {
+    fill: rgba(255, 255, 255, .28);
+
+    stroke: #ffffff;
+
+    filter:
+        drop-shadow(
+            0 0 10px rgba(255,255,255,.65)
+        );
+}
+
+
+/* =========================================================
+   REGION FOCUS RING
+   ========================================================= */
+
+.cardiac-region-focus {
+    fill: none;
+
+    stroke: rgba(255,255,255,.8);
+    stroke-width: 3;
+
+    stroke-dasharray: 6 8;
+
+    pointer-events: none;
+
+    animation:
+        cardiacRegionPulse
+        2.4s
+        ease-in-out
+        infinite;
+}
+
+
+@keyframes cardiacRegionPulse {
+
+    0%,
+    100% {
+        opacity: .35;
+        r: 52;
+    }
+
+    50% {
+        opacity: 1;
+        r: 64;
+    }
+
+}
+
+
+/* =========================================================
+   CONTEXT LABEL
+   ========================================================= */
+
+.cardiac-context-label rect {
+    fill: rgba(255,255,255,.94);
+
+    stroke: rgba(143,48,66,.28);
+    stroke-width: 2;
+
+    filter:
+        drop-shadow(
+            0 5px 12px rgba(15,23,42,.10)
+        );
+}
+
+.cardiac-context-label text {
+    fill: #7f2636;
+
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: .08em;
+}
+
+.cardiac-context-label .cardiac-label-sub {
+    fill: #6b7280;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    letter-spacing: .02em;
+}
+
+
+/* =========================================================
+   ZOOM CONNECTOR
+   ========================================================= */
+
+.cardiac-zoom-connector {
+    opacity: .35;
+
+    pointer-events: none;
+}
+
+.cardiac-zoom-connector path {
+    fill: none;
+
+    stroke: #9f3448;
+    stroke-width: 2;
+
+    stroke-dasharray: 6 7;
+}
+
+.cardiac-zoom-connector circle {
+    fill: #9f3448;
+}
+
+
+/* =========================================================
+   CARDIAC TISSUE VIEW
+   ========================================================= */
+
+.cardiac-tissue-background {
+    stroke: #d7e0e8;
+    stroke-width: 2;
+
+    filter:
+        drop-shadow(
+            0 10px 20px rgba(15,23,42,.08)
+        );
+}
+
+
+/* =========================================================
+   CARDIAC CELLS
+   ========================================================= */
+
+.cardiac-cell {
+    fill: url("#cardiacCellGradient");
+
+    stroke: #a63f50;
+    stroke-width: 2.5;
+
+    filter:
+        drop-shadow(
+            0 6px 7px rgba(110,30,50,.14)
+        );
+
+    transition:
+        transform .35s ease,
+        filter .35s ease,
+        opacity .35s ease;
+}
+
+
+/*
+   Add a small visual depth on the cells.
+*/
+
+.cardiac-cell:nth-child(odd) {
+    opacity: .94;
+}
+
+.cardiac-cell:nth-child(even) {
+    opacity: .88;
+}
+
+
+/* =========================================================
+   CARDIAC NUCLEI
+   ========================================================= */
+
+.cardiac-nucleus {
+    fill: #71366e;
+
+    stroke: #4d2350;
+    stroke-width: 2;
+
+    opacity: .95;
+
+    filter:
+        drop-shadow(
+            0 2px 4px rgba(60,20,60,.20)
+        );
+}
+
+
+/* =========================================================
+   STRIATIONS
+   ========================================================= */
+
+.cardiac-striations {
+    fill: none;
+
+    stroke: rgba(255,255,255,.58);
+
+    stroke-width: 3;
+
+    stroke-linecap: round;
+
+    opacity: .75;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   INTERCALATED DISCS
+   ========================================================= */
+
+.cardiac-intercalated-discs {
+    pointer-events: none;
+}
+
+
+.intercalated-disc {
+    fill: none;
+
+    stroke: #5e2638;
+
+    stroke-width: 7;
+
+    stroke-linecap: round;
+
+    opacity: .95;
+
+    filter:
+        drop-shadow(
+            0 1px 3px rgba(80,20,40,.25)
+        );
+}
+
+
+/* =========================================================
+   TISSUE LABEL
+   ========================================================= */
+
+.cardiac-tissue-label rect {
+    fill: rgba(255,255,255,.96);
+
+    stroke: rgba(143,48,66,.28);
+
+    stroke-width: 2;
+
+    filter:
+        drop-shadow(
+            0 5px 12px rgba(15,23,42,.10)
+        );
+}
+
+
+.cardiac-tissue-label text {
+    fill: #652b38;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    letter-spacing: .08em;
+}
+
+
+.cardiac-tissue-label .cardiac-label-sub {
+    fill: #6b7280;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    letter-spacing: .02em;
+}
+
+
+/* =========================================================
+   INDIVIDUAL CARDIAC CELL VIEW
+   ========================================================= */
+
+.cardiac-cell-view-background {
+    fill:
+        radial-gradient(
+            circle at center,
+            #fffafa,
+            #edf3f6
+        );
+
+    fill: #f8fafc;
+
+    stroke: #d7e0e8;
+    stroke-width: 2;
+}
+
+
+.cardiac-cell-body {
+    stroke: #9f3448;
+    stroke-width: 3;
+
+    filter:
+        drop-shadow(
+            0 10px 15px rgba(100,30,50,.18)
+        );
+
+    transition:
+        transform .35s ease,
+        filter .35s ease;
+}
+
+
+/* =========================================================
+   INDIVIDUAL CELL HIGHLIGHT
+   ========================================================= */
+
+.cardiac-cell-highlight {
+    pointer-events: none;
+
+    opacity: .65;
+}
+
+
+/* =========================================================
+   CELL STRIATIONS
+   ========================================================= */
+
+.cardiac-cell-striations {
+    fill: none;
+
+    stroke: rgba(255,255,255,.55);
+
+    stroke-width: 4;
+
+    stroke-linecap: round;
+
+    opacity: .72;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CENTRAL NUCLEUS
+   ========================================================= */
+
+.cardiac-cell-nucleus {
+    fill: #71366e;
+
+    stroke: #482147;
+
+    stroke-width: 3;
+
+    filter:
+        drop-shadow(
+            0 3px 6px rgba(70,20,70,.25)
+        );
+}
+
+
+/* =========================================================
+   INDIVIDUAL CELL INTERCALATED DISCS
+   ========================================================= */
+
+.cardiac-cell-intercalated-disc {
+    fill: none;
+
+    stroke: #632337;
+
+    stroke-width: 9;
+
+    stroke-linecap: round;
+
+    filter:
+        drop-shadow(
+            0 2px 4px rgba(80,20,40,.25)
+        );
+}
+
+
+/* =========================================================
+   CELL BRANCHES
+   ========================================================= */
+
+.cardiac-cell-branch {
+    fill: none;
+
+    stroke: #b74659;
+
+    stroke-width: 18;
+
+    stroke-linecap: round;
+
+    opacity: .9;
+
+    filter:
+        drop-shadow(
+            0 5px 7px rgba(100,30,50,.12)
+        );
+}
+
+
+/* =========================================================
+   FEATURE LABELS
+   ========================================================= */
+
+.cardiac-feature-label line {
+    stroke: #8f3042;
+
+    stroke-width: 2;
+
+    stroke-dasharray: 4 4;
+
+    opacity: .8;
+}
+
+
+.cardiac-feature-label circle {
+    fill: #8f3042;
+
+    stroke: #ffffff;
+
+    stroke-width: 2;
+}
+
+
+.cardiac-feature-label rect {
+    fill: rgba(255,255,255,.96);
+
+    stroke: rgba(143,48,66,.30);
+
+    stroke-width: 2;
+
+    filter:
+        drop-shadow(
+            0 5px 10px rgba(15,23,42,.10)
+        );
+}
+
+
+.cardiac-feature-label text {
+    fill: #652b38;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: .05em;
+}
+
+
+.cardiac-feature-label .cardiac-feature-sub {
+    fill: #6b7280;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   CELL MAIN LABEL
+   ========================================================= */
+
+.cardiac-cell-main-label rect {
+    fill: rgba(255,255,255,.96);
+
+    stroke: rgba(143,48,66,.30);
+
+    stroke-width: 2;
+
+    filter:
+        drop-shadow(
+            0 5px 12px rgba(15,23,42,.10)
+        );
+}
+
+
+.cardiac-cell-main-label text {
+    fill: #652b38;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    letter-spacing: .08em;
+}
+
+
+.cardiac-cell-main-label .cardiac-label-sub {
+    fill: #6b7280;
+
+    font-size: 10px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   HEARTBEAT INDICATOR
+   ========================================================= */
+
+.cardiac-heartbeat-indicator {
+    opacity: .55;
+
+    pointer-events: none;
+}
+
+
+.cardiac-heartbeat-indicator circle {
+    fill: #d95b68;
+
+    animation:
+        cardiacHeartbeatDot
+        1.2s
+        ease-in-out
+        infinite;
+}
+
+
+.cardiac-heartbeat-indicator path {
+    fill: none;
+
+    stroke: #9f3448;
+
+    stroke-width: 3;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+}
+
+
+@keyframes cardiacHeartbeatDot {
+
+    0%,
+    100% {
+        transform: scale(1);
+        transform-origin: 400px 535px;
+        opacity: .55;
+    }
+
+    18% {
+        transform: scale(1.35);
+        opacity: 1;
+    }
+
+    35% {
+        transform: scale(.95);
+        opacity: .7;
+    }
+
+    52% {
+        transform: scale(1.2);
+        opacity: .9;
+    }
+
+}
+
+
+/* =========================================================
+   HIERARCHY GUIDE
+   ========================================================= */
+
+.cardiac-hierarchy-guide text {
+    fill: #652b38;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.cardiac-hierarchy-guide .cardiac-guide-sub {
+    fill: #6b7280;
+
+    font-size: 10px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   STATUS AREA
+   ========================================================= */
+
+.cardiac-diagram-status {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-top: 18px;
+
+    padding: 0 4px;
+
+    font-size: clamp(1rem, 3vw, 1.15rem);
+
+    line-height: 1.6;
+
+    color: #374151;
+}
+
+
+.cardiac-status-icon {
+    flex: 0 0 auto;
+
+    font-size: 1.25em;
+}
+
+
+/* =========================================================
+   FEATURE SUMMARY
+   ========================================================= */
+
+.cardiac-feature-summary {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-top: 22px;
+}
+
+
+.cardiac-feature-item {
+    display: grid;
+
+    grid-template-columns:
+        auto 1fr;
+
+    column-gap: 9px;
+
+    row-gap: 2px;
+
+    align-items: start;
+
+    padding: 14px 15px;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8fafc
+        );
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 5px 14px rgba(15,23,42,.05);
+
+    line-height: 1.45;
+}
+
+
+.cardiac-feature-icon {
+    grid-row: span 2;
+
+    font-size: 1.25rem;
+
+    line-height: 1.2;
+}
+
+
+.cardiac-feature-item strong {
+    font-size: .98rem;
+
+    color: #374151;
+}
+
+
+.cardiac-feature-item > span:last-child {
+    font-size: .88rem;
+
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   INTERACTION HINT
+   ========================================================= */
+
+.cardiac-diagram-hint {
+    margin-top: 18px;
+
+    padding: 13px 15px;
+
+    border-radius: 14px;
+
+    background: #fff7f8;
+
+    border: 1px solid #f2cbd1;
+
+    color: #7f2636;
+
+    font-size: .92rem;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   DESKTOP HOVER
+   ========================================================= */
+
+@media (hover: hover) {
+
+    .cardiac-cell:hover {
+        filter:
+            drop-shadow(
+                0 9px 12px rgba(100,30,50,.22)
+            );
+    }
+
+    .cardiac-cell-body:hover {
+        filter:
+            drop-shadow(
+                0 12px 18px rgba(100,30,50,.24)
+            );
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .cardiac-muscle-diagram {
+        margin-top: 28px;
+        margin-bottom: 35px;
+    }
+
+
+    .cardiac-diagram-header {
+        padding: 0;
+        margin-bottom: 17px;
+    }
+
+
+    .cardiac-diagram-header h3 {
+        font-size: 1.42rem;
+    }
+
+
+    .cardiac-diagram-header p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+
+    .cardiac-diagram-stage {
+        border-radius: 23px;
+
+        box-shadow:
+            0 12px 28px rgba(15,23,42,.10);
+    }
+
+
+    .cardiac-muscle-svg {
+        min-height: 0;
+    }
+
+
+    .cardiac-feature-summary {
+        grid-template-columns: 1fr;
+
+        gap: 9px;
+    }
+
+
+    .cardiac-feature-item {
+        padding: 12px 13px;
+    }
+
+
+    .cardiac-diagram-status {
+        font-size: 1rem;
+    }
+
+
+    .cardiac-diagram-hint {
+        font-size: .88rem;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .cardiac-diagram-header h3 {
+        font-size: 1.3rem;
+    }
+
+
+    .cardiac-diagram-header p {
+        font-size: .95rem;
+    }
+
+
+    .cardiac-feature-item strong {
+        font-size: .92rem;
+    }
+
+
+    .cardiac-feature-item > span:last-child {
+        font-size: .82rem;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.cardiac-muscle-diagram
+.cardiac-heart-context:focus-visible,
+
+.cardiac-muscle-diagram
+.cardiac-muscle-region:focus-visible,
+
+.cardiac-muscle-diagram
+.selected-cardiac-cell:focus-visible {
+
+    outline: 3px solid #7c3aed;
+
+    outline-offset: 5px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .cardiac-region-focus,
+    .cardiac-heartbeat-indicator circle {
+
+        animation: none !important;
+    }
+
+
+    .cardiac-cell,
+    .cardiac-cell-body,
+    .cardiac-heart-shape {
+
+        transition: none !important;
+    }
+
+}
+
+/* =========================================================
+   CARDIAC MUSCLE — REALISTIC HEART VISUAL STYLING
+   Fix: black vessels / black focus circle
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   MAJOR HEART VESSELS
+   --------------------------------------------------------- */
+
+.cardiac-aorta {
+    fill: #b83f50;
+    stroke: #762536;
+    stroke-width: 4;
+    stroke-linejoin: round;
+}
+
+.cardiac-pulmonary-trunk {
+    fill: #c64d5c;
+    stroke: #7c2939;
+    stroke-width: 4;
+    stroke-linejoin: round;
+}
+
+.cardiac-superior-vena-cava {
+    fill: #8f4352;
+    stroke: #682534;
+    stroke-width: 4;
+    stroke-linejoin: round;
+}
+
+.cardiac-pulmonary-vein {
+    fill: #a84a58;
+    stroke: #702637;
+    stroke-width: 3;
+    stroke-linejoin: round;
+}
+
+
+/* ---------------------------------------------------------
+   HEART SURFACE REGIONS
+   --------------------------------------------------------- */
+
+.cardiac-right-surface {
+    fill: #a9364a;
+    opacity: .55;
+}
+
+.cardiac-left-surface {
+    fill: #c95161;
+    opacity: .52;
+}
+
+.cardiac-atrial-region {
+    fill: #d96b77;
+    opacity: .58;
+}
+
+.cardiac-heart-highlight {
+    fill: url(#cardiacHeartHighlight);
+    opacity: .58;
+}
+
+
+/* ---------------------------------------------------------
+   HEART GROOVES
+   --------------------------------------------------------- */
+
+.cardiac-interventricular-groove {
+    fill: none;
+    stroke: #76263a;
+    stroke-width: 9;
+    stroke-linecap: round;
+    opacity: .42;
+}
+
+.cardiac-coronary-groove {
+    fill: none;
+    stroke: #7d263a;
+    stroke-width: 7;
+    stroke-linecap: round;
+    opacity: .42;
+}
+
+
+/* ---------------------------------------------------------
+   CORONARY VESSELS
+   --------------------------------------------------------- */
+
+.cardiac-coronary-vessel {
+    fill: none;
+    stroke: #8e2338;
+    stroke-width: 4;
+    stroke-linecap: round;
+    opacity: .82;
+}
+
+.cardiac-vessel-branches {
+    fill: none;
+    stroke: #8d2940;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    opacity: .62;
+}
+
+
+/* ---------------------------------------------------------
+   APEX SHADOW
+   --------------------------------------------------------- */
+
+.cardiac-apex-shadow {
+    fill: #76283a;
+    opacity: .20;
+}
+
+
+/* ---------------------------------------------------------
+   INTERACTIVE CARDIAC MUSCLE REGION
+   --------------------------------------------------------- */
+
+.cardiac-muscle-region {
+    fill: rgba(255, 255, 255, 0.035);
+    stroke: rgba(255, 255, 255, 0.0);
+    stroke-width: 2;
+    cursor: pointer;
+    transition:
+        fill .25s ease,
+        stroke .25s ease,
+        filter .25s ease;
+}
+
+.cardiac-muscle-region:hover {
+    fill: rgba(255, 255, 255, 0.08);
+    stroke: rgba(255, 255, 255, 0.28);
+}
+
+
+/* ---------------------------------------------------------
+   MICROSCOPIC FOCUS RING
+   --------------------------------------------------------- */
+
+.cardiac-region-focus {
+    fill: rgba(255, 255, 255, 0.045);
+    stroke: rgba(255, 255, 255, 0.82);
+    stroke-width: 3;
+    stroke-dasharray: 6 5;
+}
+
+
+/* ---------------------------------------------------------
+   INNER MICROSCOPIC GLOW
+   IMPORTANT: prevents black circle
+   --------------------------------------------------------- */
+
+.cardiac-region-inner-glow {
+    fill: url(#cardiacRegionGlow);
+    stroke: none;
+    pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   HEART SURFACE MICRO DETAILS
+   --------------------------------------------------------- */
+
+.cardiac-surface-details {
+    fill: none;
+    stroke: #f2a1a8;
+    stroke-width: 2;
+    stroke-linecap: round;
+    opacity: .25;
+}
+
+
+/* ---------------------------------------------------------
+   HEART CONTEXT LABEL
+   --------------------------------------------------------- */
+
+.cardiac-context-label rect {
+    fill: rgba(255, 250, 250, 0.92);
+    stroke: #c9a7ad;
+    stroke-width: 2;
+}
+
+.cardiac-context-label text {
+    fill: #6b2937;
+    font-weight: 700;
+}
+
+.cardiac-context-label .cardiac-label-sub {
+    fill: #80656b;
+    font-weight: 500;
+}
+
+
+/* ---------------------------------------------------------
+   SOFT HEART VISUAL POLISH
+   --------------------------------------------------------- */
+
+.cardiac-heart-context {
+    cursor: pointer;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.cardiac-heart-context:focus {
+    outline: none;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE TOUCH FEEDBACK
+   --------------------------------------------------------- */
+
+.cardiac-heart-context:active .cardiac-heart-shape {
+    filter:
+        url(#cardiacSoftShadow)
+        brightness(1.04);
+}
+
+/* =========================================================
+   STEP 3 — CORONARY SURFACE INTEGRATION
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   NETWORK
+   --------------------------------------------------------- */
+
+.cardiac-coronary-network {
+    pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   CORONARY GROOVE
+   --------------------------------------------------------- */
+
+.cardiac-coronary-groove {
+    filter:
+        drop-shadow(
+            0 1px 2px rgba(70, 20, 32, .10)
+        );
+}
+
+
+.cardiac-coronary-groove-highlight {
+    pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   CORONARY VESSEL BED
+   Gives the vessel shallow surface depth
+   --------------------------------------------------------- */
+
+.cardiac-coronary-vessel-bed {
+    filter:
+        drop-shadow(
+            0 2px 2px rgba(70, 20, 32, .12)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   CORONARY VESSEL
+   --------------------------------------------------------- */
+
+.cardiac-coronary-vessel {
+    filter:
+        drop-shadow(
+            0 1px 1px rgba(70, 20, 32, .16)
+        );
+
+    transition:
+        opacity .35s ease,
+        stroke-width .35s ease;
+}
+
+
+/* ---------------------------------------------------------
+   VESSEL HIGHLIGHT
+   --------------------------------------------------------- */
+
+.cardiac-coronary-vessel-highlight {
+    pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   SMALL BRANCHES
+   --------------------------------------------------------- */
+
+.cardiac-vessel-branches {
+    opacity: .48;
+}
+
+
+/* ---------------------------------------------------------
+   IMPORTANT
+   Remove old flat line-art appearance
+   --------------------------------------------------------- */
+
+.cardiac-coronary-network path {
+    vector-effect: non-scaling-stroke;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .cardiac-coronary-vessel-bed {
+        stroke-width: 7;
+    }
+
+    .cardiac-coronary-vessel {
+        stroke-width: 3.5;
+    }
+
+}
+
+/* =========================================================
+   STEP 3A — CORONARY VESSEL VISUAL CORRECTION
+   ========================================================= */
+
+.cardiac-coronary-network {
+    opacity: .78;
+}
+
+
+/* Groove should read as a shallow anatomical depression,
+   not as a thick painted line */
+
+.cardiac-coronary-groove {
+    opacity: .14 !important;
+    stroke-width: 11 !important;
+}
+
+
+/* Main vessels become softer and slightly embedded */
+
+.cardiac-coronary-vessel-bed {
+    opacity: .28 !important;
+    stroke-width: 7 !important;
+}
+
+.cardiac-coronary-vessel {
+    opacity: .68 !important;
+    stroke-width: 3.2 !important;
+
+    filter:
+        drop-shadow(
+            0 1px 1px rgba(70, 20, 32, .10)
+        );
+}
+
+
+/* Very subtle vessel highlight */
+
+.cardiac-coronary-vessel-highlight {
+    opacity: .28 !important;
+    stroke-width: 1.4 !important;
+}
+
+
+/* Branches should stay in the background */
+
+.cardiac-vessel-branches {
+    opacity: .30 !important;
+    stroke-width: 1.8 !important;
+}
+
+
+/* Mobile refinement */
+
+@media (max-width: 600px) {
+
+    .cardiac-coronary-network {
+        opacity: .76;
+    }
+
+    .cardiac-coronary-vessel-bed {
+        stroke-width: 6.5 !important;
+    }
+
+    .cardiac-coronary-vessel {
+        stroke-width: 3 !important;
+    }
+
+}
+
+/* =========================================================
+   STEP 3B — MOBILE CORONARY READABILITY
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .cardiac-coronary-network {
+        opacity: .84;
+    }
+
+    .cardiac-coronary-vessel {
+        opacity: .78 !important;
+        stroke-width: 3.4px !important;
+    }
+
+    .cardiac-coronary-vessel-highlight {
+        opacity: .32 !important;
+    }
+
+    .cardiac-vessel-branches {
+        opacity: .38 !important;
+    }
+
+}
+
+/* =========================================================
+   STEP 3C
+   CORONARY VESSEL DEPTH & SURFACE INTEGRATION
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   CORONARY NETWORK BASE
+   --------------------------------------------------------- */
+
+.cardiac-coronary-network {
+    opacity: .88;
+    pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   1. SHALLOW CORONARY GROOVE
+   Soft depression underneath the vessel
+   --------------------------------------------------------- */
+
+.cardiac-coronary-groove {
+    stroke: #702638 !important;
+    stroke-width: 12px !important;
+
+    opacity: .16 !important;
+
+    stroke-linecap: round;
+
+    filter:
+        drop-shadow(
+            0 2px 2px rgba(68, 18, 31, .10)
+        );
+}
+
+
+/* Very soft upper edge of the groove */
+
+.cardiac-coronary-groove-highlight {
+    stroke: #e58a93 !important;
+    stroke-width: 2.2px !important;
+
+    opacity: .22 !important;
+
+    stroke-linecap: round;
+}
+
+
+/* ---------------------------------------------------------
+   2. VESSEL BED
+   Darker, wider layer underneath the actual vessel
+   --------------------------------------------------------- */
+
+.cardiac-coronary-vessel-bed {
+    stroke: #682336 !important;
+    stroke-width: 8px !important;
+
+    opacity: .34 !important;
+
+    stroke-linecap: round;
+
+    filter:
+        drop-shadow(
+            0 2px 2px rgba(63, 17, 28, .15)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   3. ACTUAL CORONARY VESSEL
+   Narrower and brighter than the vessel bed
+   --------------------------------------------------------- */
+
+.cardiac-coronary-vessel {
+    stroke: #963347 !important;
+    stroke-width: 3.5px !important;
+
+    opacity: .76 !important;
+
+    stroke-linecap: round;
+
+    filter:
+        drop-shadow(
+            0 1px 1px rgba(66, 18, 30, .20)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   4. VESSEL SPECULAR HIGHLIGHT
+   Tiny light edge gives the vessel a rounded surface
+   --------------------------------------------------------- */
+
+.cardiac-coronary-vessel-highlight {
+    stroke: #f0a0a8 !important;
+    stroke-width: 1.35px !important;
+
+    opacity: .34 !important;
+
+    stroke-linecap: round;
+}
+
+
+/* ---------------------------------------------------------
+   5. SMALL CORONARY BRANCHES
+   Keep them subordinate to the main vessels
+   --------------------------------------------------------- */
+
+.cardiac-vessel-branches {
+    stroke: #852b3f !important;
+    stroke-width: 1.8px !important;
+
+    opacity: .34 !important;
+
+    stroke-linecap: round;
+}
+
+
+/* ---------------------------------------------------------
+   6. SOFT TRANSITION WHERE VESSEL ENTERS THE GROOVE
+   --------------------------------------------------------- */
+
+.cardiac-coronary-network
+.cardiac-coronary-vessel-bed {
+    filter:
+        drop-shadow(
+            0 2px 2px rgba(66, 18, 30, .13)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   7. PREVENT FLAT SVG LINE-ART LOOK
+   --------------------------------------------------------- */
+
+.cardiac-coronary-network path {
+    vector-effect: non-scaling-stroke;
+}
+
+
+/* ---------------------------------------------------------
+   8. MOBILE TUNING
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .cardiac-coronary-network {
+        opacity: .90;
+    }
+
+    .cardiac-coronary-groove {
+        stroke-width: 11px !important;
+        opacity: .15 !important;
+    }
+
+    .cardiac-coronary-vessel-bed {
+        stroke-width: 7px !important;
+        opacity: .32 !important;
+    }
+
+    .cardiac-coronary-vessel {
+        stroke-width: 3.3px !important;
+        opacity: .78 !important;
+    }
+
+    .cardiac-coronary-vessel-highlight {
+        stroke-width: 1.2px !important;
+        opacity: .30 !important;
+    }
+
+    .cardiac-vessel-branches {
+        stroke-width: 1.6px !important;
+        opacity: .30 !important;
+    }
+}
+
+/* =========================================================
+   STEP 4A
+   VENTRICULAR DEPTH BASE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   CARDIAC TISSUE DEPTH SYSTEM
+   --------------------------------------------------------- */
+
+.cardiac-heart-shape {
+    filter:
+        url(#cardiacSoftShadow)
+        drop-shadow(
+            0 6px 8px rgba(78, 24, 37, .14)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   RIGHT VENTRICULAR / ATRIAL SIDE
+   Slightly deeper and darker tissue plane
+   --------------------------------------------------------- */
+
+.cardiac-right-surface {
+    fill: #a83d50 !important;
+
+    opacity: .68 !important;
+
+    filter:
+        drop-shadow(
+            inset 0 2px 3px rgba(72, 18, 32, .12)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   LEFT VENTRICULAR SIDE
+   Fuller and slightly brighter tissue mass
+   --------------------------------------------------------- */
+
+.cardiac-left-surface {
+    fill: #c84f61 !important;
+
+    opacity: .76 !important;
+
+    filter:
+        drop-shadow(
+            0 2px 3px rgba(76, 20, 33, .12)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   ATRIAL REGION
+   Keep upper tissue softer than ventricles
+   --------------------------------------------------------- */
+
+.cardiac-atrial-region {
+    fill: #d06471 !important;
+
+    opacity: .70 !important;
+}
+
+
+/* ---------------------------------------------------------
+   EXISTING VENTRICULAR HIGHLIGHT
+   Reduce flat "painted patch" appearance
+   --------------------------------------------------------- */
+
+.cardiac-heart-highlight {
+    opacity: .46 !important;
+
+    filter:
+        drop-shadow(
+            0 1px 2px rgba(255, 170, 180, .10)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   INTERVENTRICULAR GROOVE
+   Turn the line into a deeper anatomical separation
+   --------------------------------------------------------- */
+
+.cardiac-interventricular-groove {
+    stroke: #72263a !important;
+
+    stroke-width: 13px !important;
+
+    opacity: .38 !important;
+
+    filter:
+        drop-shadow(
+            2px 2px 2px rgba(67, 17, 29, .16)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   SOFT GROOVE EDGE
+   Gives the ventricular wall a slight raised edge
+   --------------------------------------------------------- */
+
+.cardiac-interventricular-groove::after {
+    content: none;
+}
+
+
+/* ---------------------------------------------------------
+   APEX DEPTH
+   Existing apex shadow becomes slightly deeper
+   --------------------------------------------------------- */
+
+.cardiac-apex-shadow {
+    fill: #76273a !important;
+
+    opacity: .34 !important;
+
+    filter:
+        drop-shadow(
+            0 2px 3px rgba(63, 17, 29, .14)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   LEFT VENTRICULAR VOLUME
+   Soft visual lift toward the upper-left surface
+   --------------------------------------------------------- */
+
+.cardiac-left-surface {
+    transform-origin: center;
+}
+
+
+/* ---------------------------------------------------------
+   RIGHT SIDE VOLUME
+   Slightly subdued to create depth contrast
+   --------------------------------------------------------- */
+
+.cardiac-right-surface {
+    transform-origin: center;
+}
+
+
+/* ---------------------------------------------------------
+   OVERALL CARDIAC TISSUE POLISH
+   --------------------------------------------------------- */
+
+.cardiac-heart-context {
+    filter:
+        drop-shadow(
+            0 5px 7px rgba(68, 20, 32, .10)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE TUNING
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .cardiac-right-surface {
+        opacity: .64 !important;
+    }
+
+    .cardiac-left-surface {
+        opacity: .73 !important;
+    }
+
+    .cardiac-atrial-region {
+        opacity: .68 !important;
+    }
+
+    .cardiac-heart-highlight {
+        opacity: .43 !important;
+    }
+
+    .cardiac-interventricular-groove {
+        stroke-width: 12px !important;
+        opacity: .36 !important;
+    }
+
+    .cardiac-apex-shadow {
+        opacity: .32 !important;
+    }
+
+}
+
+/* =========================================================
+   STEP 4B
+   INTERVENTRICULAR GROOVE + APEX VOLUME
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. INTERVENTRICULAR GROOVE
+   Convert the existing line into a recessed tissue valley
+   --------------------------------------------------------- */
+
+.cardiac-interventricular-groove {
+    stroke: #7b3042 !important;
+    stroke-width: 7px !important;
+    opacity: .22 !important;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    filter:
+        drop-shadow(
+            1px 2px 2px rgba(55, 14, 26, .18)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   2. SOFT GROOVE CORE
+   A subtle darker center creates the actual depression
+   --------------------------------------------------------- */
+
+.cardiac-interventricular-groove {
+    paint-order: stroke;
+}
+
+
+/* ---------------------------------------------------------
+   3. LEFT GROOVE EDGE
+   Tiny warm edge on the brighter ventricular side
+   --------------------------------------------------------- */
+
+.cardiac-left-surface {
+    filter:
+        drop-shadow(
+            2px 1px 2px rgba(89, 25, 39, .10)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   4. RIGHT GROOVE EDGE
+   Slightly deeper shadow on the darker side
+   --------------------------------------------------------- */
+
+.cardiac-right-surface {
+    filter:
+        drop-shadow(
+            -2px 1px 2px rgba(65, 16, 29, .12)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   5. APEX BASE SHADOW
+   Existing apex shadow becomes a soft volume transition
+   --------------------------------------------------------- */
+
+.cardiac-apex-shadow {
+    fill: #702538 !important;
+
+    opacity: .27 !important;
+
+    filter:
+        blur(.35px)
+        drop-shadow(
+            0 3px 3px rgba(60, 16, 28, .16)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   6. APEX TISSUE TRANSITION
+   Uses the existing heart highlight as a soft volume cue
+   --------------------------------------------------------- */
+
+.cardiac-heart-highlight {
+    filter:
+        drop-shadow(
+            0 1px 2px rgba(255, 180, 190, .10)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   7. PRESERVE THE APEX SILHOUETTE
+   No transform, scale or position changes
+   --------------------------------------------------------- */
+
+.cardiac-heart-shape {
+    transform: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   8. PRESERVE CORONARY NETWORK
+   Groove refinement must not overpower vessels
+   --------------------------------------------------------- */
+
+.cardiac-coronary-network {
+    z-index: 2;
+}
+
+
+/* ---------------------------------------------------------
+   9. MOBILE TUNING
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+   .cardiac-interventricular-groove {
+    stroke-width: 6px !important;
+    opacity: .20 !important;
+
+        filter:
+            drop-shadow(
+                1px 2px 2px rgba(55, 14, 26, .16)
+            );
+    }
+
+    .cardiac-apex-shadow {
+        opacity: .25 !important;
+
+        filter:
+            blur(.3px)
+            drop-shadow(
+                0 2px 3px rgba(60, 16, 28, .14)
+            );
+    }
+
+    .cardiac-left-surface {
+        filter:
+            drop-shadow(
+                2px 1px 2px rgba(89, 25, 39, .08)
+            );
+    }
+
+    .cardiac-right-surface {
+        filter:
+            drop-shadow(
+                -2px 1px 2px rgba(65, 16, 29, .10)
+            );
+    }
+
+}
+
+/* =========================================================
+   CARDIAC REGION FOCUS
+   SOFT ANATOMICAL FOCUS RING
+   ========================================================= */
+
+.cardiac-region-focus {
+    fill: rgba(255, 255, 255, 0.025) !important;
+
+    stroke: rgba(255, 255, 255, 0.42) !important;
+    stroke-width: 1.7px !important;
+
+    stroke-dasharray: 4 7 !important;
+    stroke-linecap: round;
+
+    pointer-events: none;
+
+    animation:
+        cardiacRegionPulseSoft
+        3.2s
+        ease-in-out
+        infinite !important;
+}
+
+
+/* ---------------------------------------------------------
+   SOFTER PULSE
+   Small breathing movement instead of target-like pulsing
+   --------------------------------------------------------- */
+
+@keyframes cardiacRegionPulseSoft {
+
+    0%,
+    100% {
+        opacity: .38;
+        r: 55;
+    }
+
+    50% {
+        opacity: .72;
+        r: 59;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   Keep the focus ring quieter on small screens
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .cardiac-region-focus {
+        stroke-width: 1.8px !important;
+        stroke-dasharray: 4 7 !important;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   ACCESSIBILITY
+   Respect reduced-motion preference
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .cardiac-region-focus {
+        animation: none !important;
+        opacity: .55 !important;
+        r: 57;
+    }
+}
+
+/* =========================================================
+   STEP 5 — INNER FOCUS GLOW
+   Soft illuminated microscopic focus
+   ========================================================= */
+
+.cardiac-region-inner-glow {
+
+    fill: url(#cardiacRegionGlow);
+
+    opacity: .68;
+
+    pointer-events: none;
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    filter:
+        blur(.7px)
+        drop-shadow(
+            0 0 5px rgba(255,255,255,.22)
+        );
+
+    animation:
+        cardiacInnerFocusPulse
+        3.2s
+        ease-in-out
+        infinite;
+}
+
+
+/* ---------------------------------------------------------
+   Microscopic breathing glow
+   --------------------------------------------------------- */
+
+@keyframes cardiacInnerFocusPulse {
+
+    0%,
+    100% {
+
+        opacity: .62;
+
+        transform:
+            scale(.94);
+
+        filter:
+            blur(.7px)
+            drop-shadow(
+                0 0 3px rgba(255,255,255,.16)
+            );
+    }
+
+    50% {
+
+        opacity: .88;
+
+        transform:
+            scale(1.02);
+
+        filter:
+            blur(.8px)
+            drop-shadow(
+                0 0 8px rgba(255,255,255,.32)
+            );
+    }
+}
+
+
+/* ---------------------------------------------------------
+   Mobile tuning
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+    .cardiac-region-inner-glow {
+        opacity: .78;
+        filter:
+            blur(.7px)
+            drop-shadow(
+                0 0 6px rgba(255,255,255,.24)
+            );
+    }
+}
+
+
+/* ---------------------------------------------------------
+   Reduced motion
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .cardiac-region-inner-glow {
+
+        animation: none;
+
+        opacity: .68;
+
+        transform: none;
+
+        filter:
+            blur(.7px)
+            drop-shadow(
+                0 0 5px rgba(255,255,255,.22)
+            );
+    }
+}
+
+
+/* =========================================================
+   STEP 6A — HEART → TISSUE TRANSITION
+   VISUAL POLISH — CARDIAC MUSCLE TISSUE FIELD
+   ========================================================= */
+
+
+/* ---------- Transition ---------- */
+
+.cardiac-muscle-svg .cardiac-tissue-view {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: scale(.72);
+    transform-origin: 400px 300px;
+
+    transition:
+        opacity .55s ease,
+        transform .70s cubic-bezier(.22,.8,.28,1),
+        visibility 0s linear .70s;
+}
+
+
+.cardiac-muscle-svg.cardiac-tissue-active
+.cardiac-tissue-view {
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: scale(1);
+
+    transition:
+        opacity .55s ease .18s,
+        transform .70s cubic-bezier(.22,.8,.28,1) .05s,
+        visibility 0s linear 0s;
+}
+
+
+/* ---------- Heart disappears into microscope view ---------- */
+
+.cardiac-muscle-svg .cardiac-heart-context {
+
+    transition:
+        opacity .45s ease,
+        transform .65s cubic-bezier(.22,.8,.28,1),
+        filter .45s ease;
+}
+
+
+.cardiac-muscle-svg.cardiac-tissue-active
+.cardiac-heart-context {
+
+    opacity: 0;
+
+    transform: scale(1.55);
+
+    transform-origin: 400px 300px;
+
+    filter: blur(1.5px);
+
+    pointer-events: none;
+}
+
+
+/* ---------- Hide previous focus layers ---------- */
+
+.cardiac-muscle-svg.cardiac-tissue-active
+.cardiac-muscle-region,
+
+.cardiac-muscle-svg.cardiac-tissue-active
+.cardiac-region-focus,
+
+.cardiac-muscle-svg.cardiac-tissue-active
+.cardiac-region-inner-glow {
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TISSUE VIEW BACKDROP
+   ========================================================= */
+
+.cardiac-tissue-backdrop {
+
+    fill: #f8fafc;
+
+    stroke: rgba(143, 48, 66, .16);
+
+    stroke-width: 2;
+
+    filter:
+        drop-shadow(
+            0 12px 28px
+            rgba(15, 23, 42, .10)
+        );
+}
+
+
+/* =========================================================
+   SOFT MICROSCOPIC FIELD
+   ========================================================= */
+
+.cardiac-tissue-focus {
+
+    fill: rgba(255, 229, 235, .62);
+
+    stroke: rgba(143, 48, 66, .16);
+
+    stroke-width: 2;
+
+    filter:
+        drop-shadow(
+            0 0 24px
+            rgba(217, 91, 104, .14)
+        );
+}
+
+
+/* =========================================================
+   FOCUS RING
+   ========================================================= */
+
+.cardiac-tissue-focus-ring {
+
+    fill: none;
+
+    stroke: rgba(198, 91, 106, .18);
+
+    stroke-width: 2;
+
+    stroke-dasharray: 5 8;
+
+    opacity: .75;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TISSUE FIBERS
+   ========================================================= */
+
+.cardiac-tissue-fibers {
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CARDIAC MUSCLE CELLS
+   ========================================================= */
+
+.cardiac-tissue-cell {
+
+    opacity: 0;
+
+    transform-box: fill-box;
+
+    transform-origin: center;
+
+    animation:
+        cardiacTissueCellIn
+        .55s
+        ease
+        forwards;
+}
+
+
+/* Staggered entry */
+
+.cardiac-tissue-cell:nth-child(1) {
+    animation-delay: .18s;
+}
+
+.cardiac-tissue-cell:nth-child(2) {
+    animation-delay: .23s;
+}
+
+.cardiac-tissue-cell:nth-child(3) {
+    animation-delay: .28s;
+}
+
+.cardiac-tissue-cell:nth-child(4) {
+    animation-delay: .33s;
+}
+
+.cardiac-tissue-cell:nth-child(5) {
+    animation-delay: .38s;
+}
+
+.cardiac-tissue-cell:nth-child(6) {
+    animation-delay: .43s;
+}
+
+
+/* =========================================================
+   CELL BODY
+   ========================================================= */
+
+.cardiac-tissue-cell-body {
+
+    fill: #d96878;
+
+    stroke: #a63f50;
+
+    stroke-width: 2.5;
+
+    filter:
+        drop-shadow(
+            0 4px 6px
+            rgba(110, 30, 50, .12)
+        );
+}
+
+
+/* Alternate cell tone */
+
+.cardiac-tissue-cell:nth-child(even)
+.cardiac-tissue-cell-body {
+
+    fill: #df7884;
+}
+
+
+/* =========================================================
+   STRIATIONS
+   ========================================================= */
+
+.cardiac-tissue-striation {
+
+    fill: none;
+
+    stroke: rgba(255, 245, 247, .72);
+
+    stroke-width: 2.4;
+
+    stroke-linecap: round;
+
+    opacity: .78;
+}
+
+
+/* =========================================================
+   CENTRAL NUCLEUS
+   ========================================================= */
+
+.cardiac-tissue-nucleus {
+
+    fill: #74406f;
+
+    stroke: #4d2350;
+
+    stroke-width: 1.8;
+
+    filter:
+        drop-shadow(
+            0 2px 3px
+            rgba(60, 20, 60, .18)
+        );
+}
+
+
+/* =========================================================
+   INTERCALATED DISC HINT
+   ========================================================= */
+
+.cardiac-tissue-disc {
+
+    fill: none;
+
+    stroke: #692b3c;
+
+    stroke-width: 5;
+
+    stroke-linecap: round;
+
+    opacity: .9;
+}
+
+
+/* =========================================================
+   BRANCHING CONNECTIONS
+   ========================================================= */
+
+.cardiac-tissue-branch {
+
+    fill: none;
+
+    stroke: #a94a5b;
+
+    stroke-width: 5;
+
+    stroke-linecap: round;
+
+    opacity: .45;
+}
+
+
+/* =========================================================
+   TISSUE LABEL
+   ========================================================= */
+
+.cardiac-tissue-label rect {
+
+    fill: rgba(255,255,255,.97);
+
+    stroke: rgba(143,48,66,.28);
+
+    stroke-width: 2;
+
+    filter:
+        drop-shadow(
+            0 5px 12px
+            rgba(15,23,42,.10)
+        );
+}
+
+
+.cardiac-tissue-label text {
+
+    fill: #652b38;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    letter-spacing: .06em;
+}
+
+
+.cardiac-tissue-label .cardiac-tissue-label-sub {
+
+    fill: #6b7280;
+
+    font-size: 9.5px;
+
+    font-weight: 500;
+
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   CELL ENTRY ANIMATION
+   ========================================================= */
+
+@keyframes cardiacTissueCellIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(.92);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: scale(1);
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .cardiac-muscle-svg .cardiac-heart-context,
+
+    .cardiac-muscle-svg .cardiac-tissue-view,
+
+    .cardiac-tissue-cell {
+
+        transition: none;
+
+        animation: none;
+    }
+
+    .cardiac-tissue-cell {
+
+        opacity: 1;
+    }
+}
+
+/* =========================================================
+   STEP 6B — CARDIAC CELL SELECTION & ISOLATION
+   FIXED INTERACTION VERSION
+
+   Tissue View
+       ↓
+   Tap one cardiac cell
+       ↓
+   Selected cell highlighted
+       ↓
+   Other cells dimmed
+       ↓
+   Tissue view isolates
+       ↓
+   Individual cardiac cell appears
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. IMPORTANT INTERACTION FIX
+   --------------------------------------------------------- */
+
+/*
+   .cardiac-tissue-fibers has pointer-events:none
+   in the existing CSS.
+
+   Therefore the child cells MUST explicitly restore
+   pointer events.
+*/
+
+.cardiac-muscle-svg
+.cardiac-tissue-fibers
+.cardiac-tissue-cell {
+
+    pointer-events: auto;
+
+    cursor: pointer;
+
+    touch-action: manipulation;
+
+    transform-box: fill-box;
+
+    transform-origin: center;
+
+    transition:
+        opacity .35s ease,
+        transform .45s cubic-bezier(.22,.8,.28,1),
+        filter .35s ease;
+}
+
+
+/* ---------------------------------------------------------
+   2. CELL HOVER
+   --------------------------------------------------------- */
+
+@media (hover: hover) {
+
+    .cardiac-muscle-svg
+    .cardiac-tissue-cell:hover {
+
+        filter:
+            drop-shadow(
+                0 7px 12px
+                rgba(110,30,50,.22)
+            );
+
+        transform:
+            scale(1.035);
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   3. SELECTED CELL
+   --------------------------------------------------------- */
+
+.cardiac-muscle-svg
+.cardiac-tissue-cell.is-selected {
+
+    opacity: 1;
+
+    transform:
+        scale(1.07);
+
+    filter:
+        drop-shadow(
+            0 0 8px
+            rgba(217,91,104,.42)
+        )
+        drop-shadow(
+            0 8px 14px
+            rgba(110,30,50,.24)
+        );
+
+    pointer-events: none;
+}
+
+
+/* Selected cell body */
+
+.cardiac-muscle-svg
+.cardiac-tissue-cell.is-selected
+.cardiac-tissue-cell-body {
+
+    stroke: #8f3042;
+
+    stroke-width: 3.5;
+}
+
+
+/* Selected cell details */
+
+.cardiac-muscle-svg
+.cardiac-tissue-cell.is-selected
+.cardiac-tissue-striation {
+
+    opacity: .92;
+}
+
+
+.cardiac-muscle-svg
+.cardiac-tissue-cell.is-selected
+.cardiac-tissue-nucleus {
+
+    opacity: 1;
+}
+
+
+/* ---------------------------------------------------------
+   4. OTHER CELLS DIM
+   --------------------------------------------------------- */
+
+.cardiac-muscle-svg
+.cardiac-tissue-cell.is-dimmed {
+
+    opacity: .20;
+
+    transform:
+        scale(.96);
+
+    filter:
+        saturate(.45)
+        brightness(.82)
+        blur(.35px);
+
+    pointer-events: none;
+}
+
+
+/* Dim internal details */
+
+.cardiac-muscle-svg
+.cardiac-tissue-cell.is-dimmed
+.cardiac-tissue-striation,
+
+.cardiac-muscle-svg
+.cardiac-tissue-cell.is-dimmed
+.cardiac-tissue-nucleus,
+
+.cardiac-muscle-svg
+.cardiac-tissue-cell.is-dimmed
+.cardiac-tissue-disc {
+
+    opacity: .28;
+}
+
+
+/* ---------------------------------------------------------
+   5. TISSUE VIEW ISOLATION
+   --------------------------------------------------------- */
+
+.cardiac-muscle-svg.cardiac-cell-isolation-active
+.cardiac-tissue-view {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform:
+        scale(.90);
+
+    filter:
+        blur(1.5px);
+
+    transition:
+        opacity .55s ease,
+        transform .65s cubic-bezier(.22,.8,.28,1),
+        filter .45s ease,
+        visibility 0s linear .65s;
+}
+
+
+/* ---------------------------------------------------------
+   6. INDIVIDUAL CELL VIEW
+   INITIAL STATE
+   --------------------------------------------------------- */
+
+.cardiac-muscle-svg
+.cardiac-cell-view {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform:
+        scale(.72);
+
+    transform-origin:
+        400px 300px;
+
+    transition:
+        opacity .55s ease,
+        transform .70s cubic-bezier(.22,.8,.28,1),
+        visibility 0s linear .70s;
+}
+
+
+/* ---------------------------------------------------------
+   7. INDIVIDUAL CELL VIEW
+   ACTIVE STATE
+   --------------------------------------------------------- */
+
+.cardiac-muscle-svg.cardiac-cell-view-active
+.cardiac-cell-view {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    transform:
+        scale(1);
+
+    transition:
+        opacity .55s ease,
+        transform .70s cubic-bezier(.22,.8,.28,1),
+        visibility 0s linear 0s;
+}
+
+
+/* ---------------------------------------------------------
+   8. ISOLATED CELL ENTRY
+   --------------------------------------------------------- */
+
+.cardiac-muscle-svg.cardiac-cell-view-active
+.selected-cardiac-cell {
+
+    pointer-events: auto;
+
+    cursor: pointer;
+
+    transform-box: fill-box;
+
+    transform-origin: center;
+
+    animation:
+        cardiacSelectedCellIn
+        .65s
+        cubic-bezier(.22,.8,.28,1)
+        both;
+}
+
+
+/* ---------------------------------------------------------
+   9. ISOLATED CELL ENTRY ANIMATION
+   --------------------------------------------------------- */
+
+@keyframes cardiacSelectedCellIn {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            scale(.82);
+    }
+
+    60% {
+
+        opacity: 1;
+
+        transform:
+            scale(1.025);
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            scale(1);
+    }
+}
+
+
+/* ---------------------------------------------------------
+   10. INDIVIDUAL CELL HOVER
+   --------------------------------------------------------- */
+
+@media (hover: hover) {
+
+    .cardiac-muscle-svg.cardiac-cell-view-active
+    .selected-cardiac-cell:hover {
+
+        filter:
+            drop-shadow(
+                0 13px 20px
+                rgba(100,30,50,.24)
+            );
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   11. KEYBOARD FOCUS
+   --------------------------------------------------------- */
+
+.cardiac-muscle-svg
+.cardiac-tissue-cell:focus-visible,
+
+.cardiac-muscle-svg
+.selected-cardiac-cell:focus-visible {
+
+    outline: none;
+
+    filter:
+        drop-shadow(
+            0 0 8px
+            rgba(124,58,237,.65)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   12. REDUCED MOTION
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .cardiac-muscle-svg
+    .cardiac-tissue-cell,
+
+    .cardiac-muscle-svg
+    .cardiac-cell-view,
+
+    .cardiac-muscle-svg
+    .selected-cardiac-cell {
+
+        transition: none !important;
+
+        animation: none !important;
+    }
+
+}
+
+/* =========================================================
+   CARDIAC CELL — REMOVE MOBILE FOCUS RECTANGLE
+   ========================================================= */
+
+.cardiac-muscle-svg
+.cardiac-tissue-cell:focus,
+.cardiac-muscle-svg
+.cardiac-tissue-cell:focus-visible,
+
+.cardiac-muscle-svg
+.selected-cardiac-cell:focus,
+.cardiac-muscle-svg
+.selected-cardiac-cell:focus-visible {
+
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* =========================================================
+   SMOOTH MUSCLE DIAGRAM
+   STEP 2 — VISUAL CSS
+   ---------------------------------------------------------
+   Scope: .smooth-muscle-explorer ONLY
+   No dependency on skeletal/cardic diagram CSS
+   ========================================================= */
+
+
+/* =========================================================
+   1. MAIN EXPLORER CONTAINER
+   ========================================================= */
+
+.smooth-muscle-explorer {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* =========================================================
+   2. HEADING
+   ========================================================= */
+
+.smooth-muscle-explorer .muscle-explorer-heading {
+    margin-bottom: 24px;
+}
+
+.smooth-muscle-explorer .muscle-explorer-heading h2 {
+    margin: 0 0 12px;
+    font-size: clamp(1.7rem, 5vw, 2.35rem);
+    line-height: 1.2;
+    font-weight: 800;
+    color: #111827;
+}
+
+.smooth-muscle-explorer .muscle-explorer-heading p {
+    margin: 0;
+    max-width: 680px;
+    font-size: clamp(1rem, 3.5vw, 1.2rem);
+    line-height: 1.75;
+    color: #5f6872;
+}
+
+
+/* =========================================================
+   3. DIAGRAM CARD
+   ========================================================= */
+
+.smooth-muscle-explorer .smooth-diagram-card {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 18px;
+
+    border: 1px solid #dfe5ea;
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff 0%,
+            #f9fbfc 55%,
+            #f2f6f8 100%
+        );
+
+    box-shadow:
+        0 12px 30px rgba(31, 41, 55, 0.08),
+        0 3px 8px rgba(31, 41, 55, 0.05);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   4. SVG STAGE
+   ========================================================= */
+
+.smooth-muscle-explorer .smooth-diagram-stage {
+    width: 100%;
+    position: relative;
+
+    border-radius: 24px;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            #ffffff 0%,
+            #f8fafc 58%,
+            #eef3f6 100%
+        );
+}
+
+
+/* =========================================================
+   5. SVG BASE
+   ========================================================= */
+
+.smooth-muscle-explorer .smooth-muscle-svg {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    min-height: 300px;
+
+    overflow: visible;
+
+    touch-action: manipulation;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================================
+   6. SVG BACKGROUND / CONTEXT
+   ========================================================= */
+
+.smooth-muscle-explorer .smooth-vessel-wall {
+    fill: #e7b7a4;
+
+    stroke: #a86657;
+    stroke-width: 5;
+
+    filter:
+        drop-shadow(
+            0 8px 12px rgba(105, 67, 56, 0.18)
+        );
+}
+
+
+/* Inner vessel/lumen */
+
+.smooth-muscle-explorer .smooth-vessel-lumen,
+.smooth-muscle-explorer .smooth-lumen-cutout {
+    fill: #f8e9e4;
+
+    stroke: #c98e7e;
+    stroke-width: 4;
+}
+
+
+/* =========================================================
+   7. SMOOTH MUSCLE WALL
+   ========================================================= */
+
+.smooth-muscle-explorer .smooth-muscle-layer {
+    fill: #d98b91;
+
+    stroke: #a94f5c;
+    stroke-width: 5;
+
+    filter:
+        drop-shadow(
+            0 7px 10px rgba(120, 47, 61, 0.16)
+        );
+}
+
+
+/* Tissue field */
+
+.smooth-muscle-explorer .smooth-tissue-field {
+    fill: #f7dfe2;
+
+    stroke: #c87984;
+    stroke-width: 4;
+
+    opacity: 0.98;
+}
+
+
+/* =========================================================
+   8. CELL GROUP
+   ========================================================= */
+
+.smooth-muscle-explorer .smooth-cell-group {
+    isolation: isolate;
+}
+
+
+/* =========================================================
+   9. SMOOTH MUSCLE CELLS
+   ========================================================= */
+
+.smooth-muscle-explorer .smooth-cell {
+    cursor: pointer;
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    transition:
+        transform 180ms ease,
+        filter 180ms ease,
+        opacity 180ms ease;
+}
+
+
+/* Spindle-shaped cell body */
+
+.smooth-muscle-explorer .smooth-cell-body {
+    fill: #d96c7a;
+
+    stroke: #9d3f50;
+    stroke-width: 3;
+
+    filter:
+        drop-shadow(
+            0 4px 5px rgba(113, 42, 55, 0.16)
+        );
+
+    transition:
+        fill 180ms ease,
+        stroke 180ms ease,
+        filter 180ms ease;
+}
+
+
+/* Central nucleus */
+
+.smooth-muscle-explorer .smooth-cell-nucleus {
+    fill: #6f365f;
+
+    stroke: #4f2446;
+    stroke-width: 2;
+
+    opacity: 0.96;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   10. CELL INTERACTION STATES
+   ========================================================= */
+
+.smooth-muscle-explorer .smooth-cell:hover {
+    transform: scale(1.045);
+}
+
+.smooth-muscle-explorer .smooth-cell:hover .smooth-cell-body {
+    fill: #e27683;
+
+    stroke: #8d3044;
+
+    filter:
+        drop-shadow(
+            0 6px 9px rgba(113, 42, 55, 0.25)
+        );
+}
+
+
+/* Keyboard focus */
+
+.smooth-muscle-explorer .smooth-cell:focus {
+    outline: none;
+}
+
+.smooth-muscle-explorer .smooth-cell:focus-visible {
+    filter:
+        drop-shadow(
+            0 0 0.25rem rgba(37, 99, 235, 0.55)
+        );
+}
+
+
+/* =========================================================
+   11. CALLOUT LINES
+   ========================================================= */
+
+.smooth-muscle-explorer .smooth-callout-line {
+    stroke: #8b5962;
+
+    stroke-width: 2.5;
+
+    stroke-linecap: round;
+
+    stroke-dasharray: 5 5;
+
+    opacity: 0.78;
+}
+
+
+/* =========================================================
+   12. CALLOUT LABEL
+   ========================================================= */
+
+.smooth-muscle-explorer .smooth-callout-label {
+    fill: rgba(255, 255, 255, 0.96);
+
+    stroke: #d6b8bd;
+    stroke-width: 2;
+
+    filter:
+        drop-shadow(
+            0 4px 7px rgba(70, 35, 43, 0.12)
+        );
+}
+
+
+/* Callout text */
+
+.smooth-muscle-explorer .smooth-callout-text {
+    fill: #6c303d;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   13. DIAGRAM TITLE PILL
+   ========================================================= */
+
+.smooth-muscle-explorer .smooth-title-pill {
+    fill: rgba(255, 250, 250, 0.97);
+
+    stroke: #d5b5bb;
+
+    stroke-width: 2;
+
+    filter:
+        drop-shadow(
+            0 4px 7px rgba(70, 35, 43, 0.12)
+        );
+}
+
+
+.smooth-muscle-explorer .smooth-title-text {
+    fill: #65303b;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+
+    pointer-events: none;
+}
+
+
+.smooth-muscle-explorer .smooth-subtitle-text {
+    fill: #765961;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   14. DESCRIPTION BELOW DIAGRAM
+   ========================================================= */
+
+.smooth-muscle-explorer .smooth-diagram-description {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    margin-top: 18px;
+    padding: 0 8px;
+
+    font-size: clamp(1rem, 3.8vw, 1.2rem);
+    line-height: 1.65;
+
+    color: #4b5563;
+}
+
+
+.smooth-muscle-explorer .smooth-description-icon {
+    flex: 0 0 auto;
+
+    font-size: 1.45em;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   15. ACTIVE / SELECTED CELL
+   ---------------------------------------------------------
+   JS can later add .is-selected
+   ========================================================= */
+
+.smooth-muscle-explorer .smooth-cell.is-selected {
+    transform: scale(1.06);
+}
+
+
+.smooth-muscle-explorer
+.smooth-cell.is-selected
+.smooth-cell-body {
+    fill: #e77a88;
+
+    stroke: #842c42;
+
+    stroke-width: 4;
+
+    filter:
+        drop-shadow(
+            0 7px 12px rgba(108, 34, 50, 0.30)
+        );
+}
+
+
+/* =========================================================
+   16. ACTIVE CONTEXT LAYER
+   ========================================================= */
+
+.smooth-muscle-explorer
+.smooth-context-layer,
+.smooth-muscle-explorer
+.smooth-tissue-layer {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+
+/* =========================================================
+   17. MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .smooth-muscle-explorer
+    .smooth-diagram-card {
+        padding: 10px;
+
+        border-radius: 24px;
+    }
+
+    .smooth-muscle-explorer
+    .smooth-diagram-stage {
+        border-radius: 19px;
+    }
+
+    .smooth-muscle-explorer
+    .smooth-muscle-svg {
+        min-height: 260px;
+    }
+
+    .smooth-muscle-explorer
+    .smooth-callout-text {
+        font-size: 11px;
+    }
+
+    .smooth-muscle-explorer
+    .smooth-title-text {
+        font-size: 15px;
+    }
+
+    .smooth-muscle-explorer
+    .smooth-subtitle-text {
+        font-size: 9px;
+    }
+}
+
+
+/* =========================================================
+   18. REDUCE MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .smooth-muscle-explorer
+    .smooth-cell {
+
+        transition: none;
+    }
+}
+
+/* =========================================================
+   SMOOTH MUSCLE
+   STEP 2 PATCH — ISOLATED CELL VISIBILITY
+   ========================================================= */
+
+.smooth-muscle-explorer .smooth-isolated-cell-layer {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.smooth-muscle-explorer .smooth-isolated-cell-layer.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none;
+}
+
+/* =========================================================
+   SMOOTH MUSCLE
+   STEP 3 PATCH — ISOLATED CELL VISUAL
+   ========================================================= */
+
+/* =========================================================
+   SMOOTH MUSCLE
+   STEP 4 — TRUE CELL-TO-CENTER ZOOM
+   ========================================================= */
+
+.smooth-muscle-explorer .smooth-isolated-cell {
+    will-change: transform;
+}
+
+.smooth-muscle-explorer .smooth-isolated-cell-body {
+    fill: #d96c7a;
+    stroke: #9d3f50;
+    stroke-width: 4;
+
+    filter:
+        drop-shadow(
+            0 7px 12px
+            rgba(113, 42, 55, 0.22)
+        );
+
+    transition:
+        fill 220ms ease,
+        stroke 220ms ease,
+        filter 220ms ease;
+}
+
+
+/* Central nucleus */
+
+.smooth-muscle-explorer .smooth-isolated-nucleus {
+    fill: #6f365f;
+    stroke: #4f2446;
+    stroke-width: 3;
+
+    opacity: 0.96;
+
+    pointer-events: none;
+
+    filter:
+        drop-shadow(
+            0 3px 5px
+            rgba(60, 20, 60, 0.20)
+        );
+}
+
+
+/* Isolated cell emphasis */
+
+.smooth-muscle-explorer
+.smooth-isolated-cell-layer.is-visible
+.smooth-isolated-cell-body {
+    fill: #e27683;
+    stroke: #842c42;
+    stroke-width: 4;
+}
+
+
+/* Smooth reveal */
+
+.smooth-muscle-explorer
+.smooth-isolated-cell-layer {
+    transition:
+        opacity 320ms ease,
+        visibility 320ms ease;
+}
+
+/* =========================================================
+   SMOOTH MUSCLE — STEP 5A REPAIR
+   ---------------------------------------------------------
+   Fixes:
+   1. Hide feature callouts during normal tissue view
+   2. Show callouts only after isolated-cell mode
+   3. Prevent SVG highlight paths from becoming black
+   4. Correct callout label styling
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. CALLOUT LAYER
+   --------------------------------------------------------- */
+
+.smooth-muscle-explorer .smooth-callout-layer {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 280ms ease,
+        visibility 280ms ease;
+}
+
+
+/* Show callouts only when isolated cell is visible */
+
+.smooth-muscle-explorer
+.smooth-isolated-cell-layer.is-visible
+~ .smooth-callout-layer {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   2. FEATURE GROUPS
+   --------------------------------------------------------- */
+
+.smooth-muscle-explorer .smooth-callout-feature {
+    pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   3. FEATURE HIGHLIGHTS
+   --------------------------------------------------------- */
+
+/*
+   IMPORTANT:
+   SVG <path> defaults to black fill.
+   These elements are outlines/focus markers,
+   therefore fill must be removed.
+*/
+
+.smooth-muscle-explorer .smooth-callout-highlight,
+.smooth-muscle-explorer .smooth-callout-highlight-nucleus,
+.smooth-muscle-explorer .smooth-callout-striation-region {
+    fill: none;
+    stroke: #b85b6a;
+    stroke-width: 3;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+
+/* Cell membrane highlight */
+
+.smooth-muscle-explorer .smooth-callout-highlight {
+    stroke-linecap: round;
+}
+
+
+/* Central nucleus highlight */
+
+.smooth-muscle-explorer .smooth-callout-highlight-nucleus {
+    fill: rgba(255, 255, 255, 0.10);
+    stroke: #7f3b68;
+    stroke-width: 3;
+}
+
+
+/* No-visible-striations inspection region */
+
+.smooth-muscle-explorer .smooth-callout-striation-region {
+    stroke: #b85b6a;
+    stroke-width: 2.5;
+    stroke-dasharray: 5 4;
+    opacity: 0.72;
+}
+
+
+/* ---------------------------------------------------------
+   4. CALLOUT ENDPOINT DOTS
+   --------------------------------------------------------- */
+
+.smooth-muscle-explorer .smooth-callout-dot {
+    fill: #8b5962;
+    stroke: #ffffff;
+    stroke-width: 2;
+    pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   5. CALLOUT LABELS
+   --------------------------------------------------------- */
+
+/*
+   These are SVG <text> elements.
+   They must not receive shape-style borders.
+*/
+
+.smooth-muscle-explorer .smooth-callout-label {
+    fill: #6c303d;
+    stroke: none;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+
+    paint-order: normal;
+    pointer-events: none;
+}
+
+
+/* Centered label */
+
+.smooth-muscle-explorer .smooth-callout-label-center {
+    text-anchor: middle;
+}
+
+
+/* ---------------------------------------------------------
+   6. MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .smooth-muscle-explorer .smooth-callout-label {
+        font-size: 11px;
+    }
+
+}
