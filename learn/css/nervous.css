@@ -1,0 +1,2339 @@
+
+/* =========================================================
+   NERVOUS TISSUE
+   DIAGRAM 01 — NERVOUS TISSUE OVERVIEW
+   Neuron + Glial Cells
+
+   Scope:
+   Only Diagram 01
+   Does not modify global lesson.css styles
+   ========================================================= */
+
+
+/* =========================================================
+   SVG CONTAINER
+   ========================================================= */
+
+#nervous-tissue-overview-diagram
+.nervous-overview-svg {
+
+    display: block;
+
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+
+    margin: 24px auto 10px;
+
+    overflow: visible;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+}
+
+
+/* =========================================================
+   MAIN DIAGRAM
+   ========================================================= */
+
+#nervous-overview-diagram
+.nervous-overview-main {
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+}
+
+
+/* =========================================================
+   GLIAL CELLS
+   ========================================================= */
+
+#nervous-tissue-overview-diagram
+.overview-glial-cell {
+
+    cursor: default;
+
+}
+
+
+/* Glial cell body */
+
+#nervous-tissue-overview-diagram
+.glial-body {
+
+    fill: url(#nervous-glia-gradient);
+
+    stroke: #1976d2;
+
+    stroke-width: 3;
+
+}
+
+
+/* Glial cell processes */
+
+#nervous-tissue-overview-diagram
+.glial-process {
+
+    fill: none;
+
+    stroke: #42a5f5;
+
+    stroke-width: 4.5;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+}
+
+
+/* Glial nucleus */
+
+#nervous-tissue-overview-diagram
+.glial-nucleus {
+
+    fill: #1565c0;
+
+    stroke: #0d47a1;
+
+    stroke-width: 2;
+
+}
+
+
+/* =========================================================
+   NEURON
+   ========================================================= */
+
+#nervous-tissue-overview-diagram
+.nervous-overview-neuron {
+
+    cursor: default;
+
+}
+
+
+/* Dendrites */
+
+#nervous-tissue-overview-diagram
+.neuron-dendrite {
+
+    fill: none;
+
+    stroke: #8e2450;
+
+    stroke-width: 5.5;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+}
+
+
+/* Soma / cell body */
+
+#nervous-tissue-overview-diagram
+.neuron-soma-body {
+
+    fill: url(#nervous-neuron-gradient);
+
+    stroke: #8e2450;
+
+    stroke-width: 4;
+
+}
+
+
+/* Nucleus */
+
+#nervous-tissue-overview-diagram
+.neuron-nucleus {
+
+    fill: #6a1b9a;
+
+    stroke: #4a148c;
+
+    stroke-width: 3;
+
+}
+
+
+/* Axon */
+
+#nervous-tissue-overview-diagram
+.neuron-axon {
+
+    fill: none;
+
+    stroke: #8e2450;
+
+    stroke-width: 7;
+
+    stroke-linecap: round;
+
+}
+
+
+/* Axon terminals */
+
+#nervous-tissue-overview-diagram
+.neuron-terminal {
+
+    fill: none;
+
+    stroke: #8e2450;
+
+    stroke-width: 5.5;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+}
+
+
+/* Terminal endings */
+
+#nervous-tissue-overview-diagram
+.terminal-end {
+
+    fill: #c2185b;
+
+    stroke: #8e2450;
+
+    stroke-width: 2;
+
+}
+
+
+/* =========================================================
+   LABELS
+   ========================================================= */
+
+#nervous-tissue-overview-diagram
+.nervous-overview-labels {
+
+    pointer-events: none;
+
+}
+
+
+#nervous-tissue-overview-diagram
+.overview-label {
+
+    fill: #263238;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+#nervous-tissue-overview-diagram
+.neuron-label {
+
+    fill: #8e2450;
+
+}
+
+
+#nervous-tissue-overview-diagram
+.glia-label {
+
+    fill: #1976d2;
+
+}
+
+
+/* =========================================================
+   MOBILE SCALING
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    #nervous-tissue-overview-diagram
+    .nervous-overview-svg {
+
+        width: 100%;
+
+        margin-top: 18px;
+        margin-bottom: 6px;
+
+    }
+
+
+    #nervous-tissue-overview-diagram
+    .overview-label {
+
+        font-size: 15px;
+
+    }
+
+
+    #nervous-tissue-overview-diagram
+.neuron-dendrite {
+
+    stroke-width: 5;
+
+}
+
+
+    #nervous-tissue-overview-diagram
+    .neuron-axon {
+
+        stroke-width: 6.5;
+
+    }
+
+
+    #nervous-tissue-overview-diagram
+    .neuron-terminal {
+
+        stroke-width: 5;
+
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 01 — NERVOUS TISSUE OVERVIEW
+   Smooth Scroll Replay Animation
+   ========================================================= */
+
+
+/* =========================================================
+   01. INITIAL / RESET STATE
+   ========================================================= */
+
+#nervous-tissue-overview-diagram
+.nervous-overview-neuron-soma,
+#nervous-tissue-overview-diagram
+.overview-neuron-dendrites,
+#nervous-tissue-overview-diagram
+.overview-neuron-axon,
+#nervous-tissue-overview-diagram
+.overview-neuron-terminals,
+#nervous-tissue-overview-diagram
+.nervous-overview-glia,
+#nervous-tissue-overview-diagram
+.nervous-overview-labels {
+
+    opacity: 0;
+
+}
+
+
+/* =========================================================
+   02. SOMA
+   ========================================================= */
+
+#nervous-tissue-overview-diagram.diagram01-animate
+.nervous-overview-neuron-soma {
+
+    opacity: 1;
+
+    animation:
+        diagram01-soma-in
+        0.70s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        0s
+        both;
+
+}
+
+
+#nervous-tissue-overview-diagram.diagram01-animate
+.neuron-soma-body {
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    animation:
+        diagram01-soma-body
+        0.85s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        0s
+        both;
+
+}
+
+
+/* Nucleus enters slightly after soma */
+
+#nervous-tissue-overview-diagram.diagram01-animate
+.neuron-nucleus {
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    animation:
+        diagram01-nucleus-in
+        0.60s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        0.22s
+        both;
+
+}
+
+
+/* =========================================================
+   03. DENDRITES
+   ========================================================= */
+
+#nervous-tissue-overview-diagram
+.overview-neuron-dendrites {
+
+    transform-origin: center;
+
+}
+
+
+#nervous-tissue-overview-diagram.diagram01-animate
+.overview-neuron-dendrites {
+
+    opacity: 1;
+
+    animation:
+        diagram01-dendrites-in
+        0.95s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        0.42s
+        both;
+
+}
+
+
+/* Draw dendrites gradually */
+
+#nervous-tissue-overview-diagram.diagram01-animate
+.overview-neuron-dendrites
+.neuron-dendrite {
+
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+
+    animation:
+        diagram01-draw-dendrites
+        1.05s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        0.42s
+        both;
+
+}
+
+
+/* =========================================================
+   04. AXON
+   ========================================================= */
+
+#nervous-tissue-overview-diagram.diagram01-animate
+.overview-neuron-axon {
+
+    opacity: 1;
+
+    animation:
+        diagram01-axon-in
+        0.85s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        0.98s
+        both;
+
+}
+
+
+#nervous-tissue-overview-diagram.diagram01-animate
+.overview-neuron-axon
+.neuron-axon {
+
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+
+    animation:
+        diagram01-draw-axon
+        0.90s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        0.98s
+        both;
+
+}
+
+
+/* =========================================================
+   05. GLIAL CELLS
+   ========================================================= */
+
+#nervous-tissue-overview-diagram.diagram01-animate
+.nervous-overview-glia {
+
+    opacity: 1;
+
+}
+
+
+/* Each glial cell appears gently and sequentially */
+
+#nervous-tissue-overview-diagram.diagram01-animate
+.overview-glial-cell {
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    animation:
+        diagram01-glia-in
+        0.65s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        both;
+
+}
+
+
+/* Sequential delays */
+
+#nervous-tissue-overview-diagram.diagram01-animate
+#overview-glia-01 {
+
+    animation-delay: 1.30s;
+
+}
+
+
+#nervous-tissue-overview-diagram.diagram01-animate
+#overview-glia-02 {
+
+    animation-delay: 1.48s;
+
+}
+
+
+#nervous-tissue-overview-diagram.diagram01-animate
+#overview-glia-03 {
+
+    animation-delay: 1.66s;
+
+}
+
+
+#nervous-tissue-overview-diagram.diagram01-animate
+#overview-glia-04 {
+
+    animation-delay: 1.84s;
+
+}
+
+
+/* =========================================================
+   06. AXON TERMINAL ARBOR
+   ========================================================= */
+
+#nervous-tissue-overview-diagram.diagram01-animate
+.overview-neuron-terminals {
+
+    opacity: 1;
+
+    animation:
+        diagram01-terminals-in
+        0.70s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        1.78s
+        both;
+
+}
+
+
+/* Draw terminal branches */
+
+#nervous-tissue-overview-diagram.diagram01-animate
+.overview-neuron-terminals
+.neuron-terminal {
+
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+
+    animation:
+        diagram01-draw-terminals
+        0.90s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        1.78s
+        both;
+
+}
+
+
+/* Terminal boutons appear after branches */
+
+#nervous-tissue-overview-diagram.diagram01-animate
+.overview-neuron-terminals
+.terminal-end {
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    animation:
+        diagram01-terminal-bouton
+        0.55s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        2.35s
+        both;
+
+}
+
+
+/* =========================================================
+   07. LABELS
+   ========================================================= */
+
+#nervous-tissue-overview-diagram.diagram01-animate
+.nervous-overview-labels {
+
+    opacity: 1;
+
+    animation:
+        diagram01-labels-in
+        0.65s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        2.55s
+        both;
+
+}
+
+
+/* =========================================================
+   08. KEYFRAMES
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   Soma
+   --------------------------------------------------------- */
+
+@keyframes diagram01-soma-in {
+
+    0% {
+
+        opacity: 0;
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   Soma body
+   --------------------------------------------------------- */
+
+@keyframes diagram01-soma-body {
+
+    0% {
+
+        opacity: 0;
+
+        transform: scale(0.72);
+
+    }
+
+    65% {
+
+        opacity: 1;
+
+        transform: scale(1.035);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   Nucleus
+   --------------------------------------------------------- */
+
+@keyframes diagram01-nucleus-in {
+
+    0% {
+
+        opacity: 0;
+
+        transform: scale(0.45);
+
+    }
+
+    65% {
+
+        opacity: 1;
+
+        transform: scale(1.045);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   Dendrite group
+   --------------------------------------------------------- */
+
+@keyframes diagram01-dendrites-in {
+
+    0% {
+
+        opacity: 0;
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   Dendrite drawing
+   --------------------------------------------------------- */
+
+@keyframes diagram01-draw-dendrites {
+
+    0% {
+
+        stroke-dashoffset: 1000;
+
+    }
+
+    100% {
+
+        stroke-dashoffset: 0;
+
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   Axon
+   --------------------------------------------------------- */
+
+@keyframes diagram01-axon-in {
+
+    0% {
+
+        opacity: 0;
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   Axon drawing
+   --------------------------------------------------------- */
+
+@keyframes diagram01-draw-axon {
+
+    0% {
+
+        stroke-dashoffset: 1000;
+
+    }
+
+    100% {
+
+        stroke-dashoffset: 0;
+
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   Glial cells
+   --------------------------------------------------------- */
+
+@keyframes diagram01-glia-in {
+
+    0% {
+
+        opacity: 0;
+
+        transform: scale(0.72);
+
+    }
+
+    70% {
+
+        opacity: 1;
+
+        transform: scale(1.025);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   Terminal group
+   --------------------------------------------------------- */
+
+@keyframes diagram01-terminals-in {
+
+    0% {
+
+        opacity: 0;
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   Terminal branches
+   --------------------------------------------------------- */
+
+@keyframes diagram01-draw-terminals {
+
+    0% {
+
+        stroke-dashoffset: 1000;
+
+    }
+
+    100% {
+
+        stroke-dashoffset: 0;
+
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   Terminal boutons
+   --------------------------------------------------------- */
+
+@keyframes diagram01-terminal-bouton {
+
+    0% {
+
+        opacity: 0;
+
+        transform: scale(0.45);
+
+    }
+
+    65% {
+
+        opacity: 1;
+
+        transform: scale(1.035);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   Labels
+   --------------------------------------------------------- */
+
+@keyframes diagram01-labels-in {
+
+    0% {
+
+        opacity: 0;
+
+        transform: translateY(6px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* =========================================================
+   09. ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    #nervous-tissue-overview-diagram *,
+    #nervous-tissue-overview-diagram *::before,
+    #nervous-tissue-overview-diagram *::after {
+
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+
+        scroll-behavior: auto !important;
+
+    }
+
+}
+
+
+/* =========================================================
+   NERVOUS TISSUE
+   DIAGRAM 02 — NEURON + GLIAL CELLS
+   Visual Base Styling Only
+
+   Scope:
+   Only Diagram 02
+   Does not modify global lesson.css
+   Does not modify Diagram 01
+   No animation in this block
+   ========================================================= */
+
+
+/* =========================================================
+   01. SVG CONTAINER
+   ========================================================= */
+
+#neuron-and-glia-diagram
+.neuron-and-glia-svg {
+
+    display: block;
+
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+
+    margin: 24px auto 10px;
+
+    overflow: visible;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* =========================================================
+   02. MAIN DIAGRAM GROUP
+   ========================================================= */
+
+#neuron-and-glia-diagram
+.neuron-and-glia-main {
+
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+
+/* =========================================================
+   03. CENTRAL NEURON
+   ========================================================= */
+
+#neuron-and-glia-diagram
+.neuron-glia-neuron {
+
+    cursor: default;
+}
+
+
+/* ---------------------------------------------------------
+   Dendrites
+   --------------------------------------------------------- */
+
+#neuron-and-glia-diagram
+.neuron-glia-dendrite {
+
+    fill: none;
+
+    stroke: #8e2450;
+
+    stroke-width: 5;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* ---------------------------------------------------------
+   Soma / Cell body
+   --------------------------------------------------------- */
+
+#neuron-and-glia-diagram
+.neuron-glia-soma-body {
+
+    fill: url(#neuron-glia-neuron-gradient);
+
+    stroke: #8e2450;
+
+    stroke-width: 4;
+}
+
+
+/* ---------------------------------------------------------
+   Nucleus
+   --------------------------------------------------------- */
+
+#neuron-and-glia-diagram
+.neuron-glia-nucleus {
+
+    fill: #6a1b9a;
+
+    stroke: #4a148c;
+
+    stroke-width: 3;
+}
+
+
+/* ---------------------------------------------------------
+   Nucleolus
+   --------------------------------------------------------- */
+
+#neuron-and-glia-diagram
+.neuron-glia-nucleolus {
+
+    fill: #34495e;
+
+    opacity: 0.78;
+}
+
+
+/* =========================================================
+   04. AXON
+   ========================================================= */
+
+#neuron-and-glia-diagram
+.neuron-glia-axon-path {
+
+    fill: none;
+
+    stroke: #8e2450;
+
+    stroke-width: 6.5;
+
+    stroke-linecap: round;
+}
+
+
+/* =========================================================
+   05. AXON TERMINALS
+   ========================================================= */
+
+#neuron-and-glia-diagram
+.neuron-glia-terminal {
+
+    fill: none;
+
+    stroke: #8e2450;
+
+    stroke-width: 5;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* ---------------------------------------------------------
+   Terminal endings
+   --------------------------------------------------------- */
+
+#neuron-and-glia-diagram
+.neuron-glia-terminal-end {
+
+    fill: #c2185b;
+
+    stroke: #8e2450;
+
+    stroke-width: 2;
+}
+
+
+/* =========================================================
+   06. GLIAL CELLS
+   ========================================================= */
+
+#neuron-and-glia-diagram
+.neuron-glia-supporting-cells {
+
+    cursor: default;
+}
+
+
+/* ---------------------------------------------------------
+   Glial cell body
+   --------------------------------------------------------- */
+
+#neuron-and-glia-diagram
+.neuron-glia-cell-body {
+
+    fill: url(#neuron-glia-glia-gradient);
+
+    stroke: #1976d2;
+
+    stroke-width: 3;
+}
+
+
+/* ---------------------------------------------------------
+   Glial cell processes
+   --------------------------------------------------------- */
+
+#neuron-and-glia-diagram
+.neuron-glia-cell-process {
+
+    fill: none;
+
+    stroke: #42a5f5;
+
+    stroke-width: 4.2;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* ---------------------------------------------------------
+   Glial nucleus
+   --------------------------------------------------------- */
+
+#neuron-and-glia-diagram
+.neuron-glia-cell-nucleus {
+
+    fill: #1565c0;
+
+    stroke: #0d47a1;
+
+    stroke-width: 2;
+}
+
+
+/* =========================================================
+   07. RELATIONSHIP / SUPPORT AREA
+   ========================================================= */
+
+#neuron-and-glia-diagram
+.neuron-glia-relationship {
+
+    pointer-events: none;
+}
+
+
+#neuron-and-glia-diagram
+.neuron-glia-center-glow {
+
+    pointer-events: none;
+
+    opacity: 0.45;
+}
+
+
+/* =========================================================
+   08. LABELS
+   ========================================================= */
+
+#neuron-and-glia-diagram
+.neuron-glia-labels {
+
+    pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   Main labels
+   --------------------------------------------------------- */
+
+#neuron-and-glia-diagram
+.neuron-glia-label {
+
+    fill: #263238;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+}
+
+
+/* ---------------------------------------------------------
+   Neuron label
+   --------------------------------------------------------- */
+
+#neuron-and-glia-diagram
+.neuron-glia-neuron-label {
+
+    fill: #8e2450;
+}
+
+
+/* ---------------------------------------------------------
+   Glial cells label
+   --------------------------------------------------------- */
+
+#neuron-and-glia-diagram
+.neuron-glia-glia-label {
+
+    fill: #1976d2;
+}
+
+
+/* ---------------------------------------------------------
+   Relationship label
+   --------------------------------------------------------- */
+
+#neuron-and-glia-diagram
+.neuron-glia-role-label {
+
+    fill: #607d8b;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================================================
+   09. MOBILE SCALING
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    #neuron-and-glia-diagram
+    .neuron-and-glia-svg {
+
+        width: 100%;
+
+        margin-top: 18px;
+        margin-bottom: 6px;
+    }
+
+
+    #neuron-and-glia-diagram
+    .neuron-glia-label {
+
+        font-size: 14px;
+    }
+
+
+    #neuron-and-glia-diagram
+    .neuron-glia-role-label {
+
+        font-size: 12px;
+    }
+
+
+    #neuron-and-glia-diagram
+    .neuron-glia-dendrite {
+
+        stroke-width: 4.6;
+    }
+
+
+    #neuron-and-glia-diagram
+    .neuron-glia-axon-path {
+
+        stroke-width: 6;
+    }
+
+
+    #neuron-and-glia-diagram
+    .neuron-glia-terminal {
+
+        stroke-width: 4.6;
+    }
+
+
+    #neuron-and-glia-diagram
+    .neuron-glia-cell-process {
+
+        stroke-width: 4;
+    }
+}
+
+
+/* =========================================================
+   10. ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    #neuron-and-glia-diagram *,
+    #neuron-and-glia-diagram *::before,
+    #neuron-and-glia-diagram *::after {
+
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* =========================================================
+   NERVOUS TISSUE
+   DIAGRAM 02 — NEURON + GLIAL CELLS
+   Smooth Scroll Replay Animation
+
+   Sequence:
+   Soma + nucleus
+        ↓
+   Dendrites
+        ↓
+   Axon
+        ↓
+   Glial cells
+        ↓
+   Axon terminals
+        ↓
+   Labels
+
+   Scope:
+   Only Diagram 02
+   Does not modify Diagram 01
+   ========================================================= */
+
+
+/* =========================================================
+   01. INITIAL / RESET STATE
+   ========================================================= */
+
+#neuron-and-glia-diagram
+.neuron-glia-soma,
+#neuron-and-glia-diagram
+.neuron-glia-dendrites,
+#neuron-and-glia-diagram
+.neuron-glia-axon,
+#neuron-and-glia-diagram
+.neuron-glia-terminals,
+#neuron-and-glia-diagram
+.neuron-glia-supporting-cells,
+#neuron-and-glia-diagram
+.neuron-glia-labels {
+
+    opacity: 0;
+}
+
+
+/* =========================================================
+   02. SOMA
+   ========================================================= */
+
+#neuron-and-glia-diagram.diagram02-animate
+.neuron-glia-soma {
+
+    opacity: 1;
+
+    animation:
+        diagram02-soma-in
+        0.70s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        0s
+        both;
+}
+
+
+/* Soma body */
+
+#neuron-and-glia-diagram.diagram02-animate
+.neuron-glia-soma-body {
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    animation:
+        diagram02-soma-body
+        0.85s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        0s
+        both;
+}
+
+
+/* Nucleus */
+
+#neuron-and-glia-diagram.diagram02-animate
+.neuron-glia-nucleus {
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    animation:
+        diagram02-nucleus-in
+        0.60s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        0.20s
+        both;
+}
+
+
+/* Nucleolus */
+
+#neuron-and-glia-diagram.diagram02-animate
+.neuron-glia-nucleolus {
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    animation:
+        diagram02-nucleolus-in
+        0.60s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        0.30s
+        both;
+}
+
+
+/* =========================================================
+   03. DENDRITES
+   ========================================================= */
+
+#neuron-and-glia-diagram.diagram02-animate
+.neuron-glia-dendrites {
+
+    opacity: 1;
+
+    animation:
+        diagram02-dendrites-in
+        0.90s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        0.42s
+        both;
+}
+
+
+/* Draw the branched dendritic arbor */
+
+#neuron-and-glia-diagram.diagram02-animate
+.neuron-glia-dendrites
+.neuron-glia-dendrite {
+
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+
+    animation:
+        diagram02-draw-dendrites
+        1.10s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        0.42s
+        both;
+}
+
+
+/* =========================================================
+   04. AXON
+   ========================================================= */
+
+#neuron-and-glia-diagram.diagram02-animate
+.neuron-glia-axon {
+
+    opacity: 1;
+
+    animation:
+        diagram02-axon-in
+        0.75s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        1.15s
+        both;
+}
+
+
+/* Draw axon */
+
+#neuron-and-glia-diagram.diagram02-animate
+.neuron-glia-axon
+.neuron-glia-axon-path {
+
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+
+    animation:
+        diagram02-draw-axon
+        0.85s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        1.15s
+        both;
+}
+
+
+/* =========================================================
+   05. GLIAL CELLS
+   ========================================================= */
+
+#neuron-and-glia-diagram.diagram02-animate
+.neuron-glia-supporting-cells {
+
+    opacity: 1;
+}
+
+
+/* Individual glial cells */
+
+#neuron-and-glia-diagram.diagram02-animate
+.neuron-glia-cell {
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    animation:
+        diagram02-glia-in
+        0.65s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        both;
+}
+
+
+/* Sequential appearance */
+
+#neuron-and-glia-diagram.diagram02-animate
+#neuron-glia-cell-01 {
+
+    animation-delay: 1.55s;
+}
+
+
+#neuron-and-glia-diagram.diagram02-animate
+#neuron-glia-cell-02 {
+
+    animation-delay: 1.72s;
+}
+
+
+#neuron-and-glia-diagram.diagram02-animate
+#neuron-glia-cell-03 {
+
+    animation-delay: 1.89s;
+}
+
+
+#neuron-and-glia-diagram.diagram02-animate
+#neuron-glia-cell-04 {
+
+    animation-delay: 2.06s;
+}
+
+
+/* =========================================================
+   06. AXON TERMINALS
+   ========================================================= */
+
+#neuron-and-glia-diagram.diagram02-animate
+.neuron-glia-terminals {
+
+    opacity: 1;
+
+    animation:
+        diagram02-terminals-in
+        0.70s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        2.00s
+        both;
+}
+
+
+/* Draw terminal branches */
+
+#neuron-and-glia-diagram.diagram02-animate
+.neuron-glia-terminals
+.neuron-glia-terminal {
+
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+
+    animation:
+        diagram02-draw-terminals
+        0.85s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        2.00s
+        both;
+}
+
+
+/* Terminal boutons */
+
+#neuron-and-glia-diagram.diagram02-animate
+.neuron-glia-terminals
+.neuron-glia-terminal-end {
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    animation:
+        diagram02-terminal-bouton
+        0.55s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        2.55s
+        both;
+}
+
+
+/* =========================================================
+   07. RELATIONSHIP / SUPPORT GLOW
+   ========================================================= */
+
+#neuron-and-glia-diagram.diagram02-animate
+.neuron-glia-relationship {
+
+    opacity: 1;
+
+    animation:
+        diagram02-relationship-in
+        0.90s
+        ease-out
+        2.30s
+        both;
+}
+
+
+/* =========================================================
+   08. LABELS
+   ========================================================= */
+
+#neuron-and-glia-diagram.diagram02-animate
+.neuron-glia-labels {
+
+    opacity: 1;
+
+    animation:
+        diagram02-labels-in
+        0.70s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        2.75s
+        both;
+}
+
+
+/* =========================================================
+   09. KEYFRAMES
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   Soma
+   --------------------------------------------------------- */
+
+@keyframes diagram02-soma-in {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   Soma body
+   --------------------------------------------------------- */
+
+@keyframes diagram02-soma-body {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.72);
+    }
+
+    65% {
+        opacity: 1;
+        transform: scale(1.035);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* ---------------------------------------------------------
+   Nucleus
+   --------------------------------------------------------- */
+
+@keyframes diagram02-nucleus-in {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.45);
+    }
+
+    65% {
+        opacity: 1;
+        transform: scale(1.045);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* ---------------------------------------------------------
+   Nucleolus
+   --------------------------------------------------------- */
+
+@keyframes diagram02-nucleolus-in {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.40);
+    }
+
+    65% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* ---------------------------------------------------------
+   Dendrite group
+   --------------------------------------------------------- */
+
+@keyframes diagram02-dendrites-in {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   Dendrite drawing
+   --------------------------------------------------------- */
+
+@keyframes diagram02-draw-dendrites {
+
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   Axon
+   --------------------------------------------------------- */
+
+@keyframes diagram02-axon-in {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   Axon drawing
+   --------------------------------------------------------- */
+
+@keyframes diagram02-draw-axon {
+
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   Glial cells
+   --------------------------------------------------------- */
+
+@keyframes diagram02-glia-in {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.72);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.025);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* ---------------------------------------------------------
+   Terminal group
+   --------------------------------------------------------- */
+
+@keyframes diagram02-terminals-in {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   Terminal branches
+   --------------------------------------------------------- */
+
+@keyframes diagram02-draw-terminals {
+
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   Terminal boutons
+   --------------------------------------------------------- */
+
+@keyframes diagram02-terminal-bouton {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.45);
+    }
+
+    65% {
+        opacity: 1;
+        transform: scale(1.035);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* ---------------------------------------------------------
+   Relationship glow
+   --------------------------------------------------------- */
+
+@keyframes diagram02-relationship-in {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   Labels
+   --------------------------------------------------------- */
+
+@keyframes diagram02-labels-in {
+
+    0% {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   10. ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    #neuron-and-glia-diagram *,
+    #neuron-and-glia-diagram *::before,
+    #neuron-and-glia-diagram *::after {
+
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+    }
+}
+
+
+
+/* =========================================================
+   DIAGRAM 03 — MOBILE VISUAL REFINEMENT
+   FINAL PRESENTATION PASS
+   ========================================================= */
+
+#neuron-structure-diagram .neuron03-v3-svg {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 18px auto 4px;
+    overflow: visible;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* =========================================================
+   MAIN NEURON
+   ========================================================= */
+
+#neuron-structure-diagram .neuron03-v3-main {
+    transform-box: view-box;
+    transform-origin: 500px 285px;
+}
+
+
+/* =========================================================
+   DENDRITES
+   ========================================================= */
+
+#neuron-structure-diagram .neuron03-v3-dendrites {
+    transform-box: view-box;
+    transform-origin: 350px 280px;
+}
+
+
+/* Primary dendritic branches */
+#neuron-structure-diagram .neuron03-v3-dendrite-primary {
+    opacity: 1;
+
+    stroke-width: 5.2;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    vector-effect: non-scaling-stroke;
+}
+
+
+/* Secondary branches */
+#neuron-structure-diagram .neuron03-v3-dendrite-secondary {
+    opacity: 0.94;
+
+    stroke-width: 3.7;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    vector-effect: non-scaling-stroke;
+}
+
+
+/* Fine terminal branches */
+#neuron-structure-diagram .neuron03-v3-dendrite-tertiary {
+    opacity: 0.88;
+
+    stroke-width: 2.5;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    vector-effect: non-scaling-stroke;
+}
+
+
+/* =========================================================
+   SOMA
+   ========================================================= */
+
+#neuron-structure-diagram .neuron03-v3-soma-body {
+    stroke: #8f1d51;
+    stroke-width: 2.2;
+
+    stroke-linejoin: round;
+
+    vector-effect: non-scaling-stroke;
+}
+
+
+#neuron-structure-diagram .neuron03-v3-soma-glow {
+    pointer-events: none;
+}
+
+
+#neuron-structure-diagram .neuron03-v3-soma-texture {
+    opacity: 0.62;
+}
+
+
+/* =========================================================
+   NUCLEUS
+   ========================================================= */
+
+#neuron-structure-diagram .neuron03-v3-nucleus {
+    filter: none;
+}
+
+
+#neuron-structure-diagram .neuron03-v3-nuclear-membrane {
+    stroke: rgba(255,255,255,0.28);
+    stroke-width: 1.5;
+}
+
+
+#neuron-structure-diagram .neuron03-v3-nucleolus {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   AXON HILLOCK
+   ========================================================= */
+
+#neuron-structure-diagram .neuron03-v3-hillock {
+    fill: url(#neuron03-v3-dendrite-gradient);
+}
+
+
+/* =========================================================
+   AXON
+   ========================================================= */
+
+#neuron-structure-diagram .neuron03-v3-axon {
+    opacity: 1;
+}
+
+
+#neuron-structure-diagram .neuron03-v3-axon-path {
+    fill: none;
+
+    stroke: url(#neuron03-v3-axon-gradient);
+    stroke-width: 7;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    vector-effect: non-scaling-stroke;
+}
+
+
+#neuron-structure-diagram .neuron03-v3-axon-highlight {
+    stroke: rgba(255,255,255,0.28);
+    stroke-width: 1.4;
+
+    stroke-linecap: round;
+
+    vector-effect: non-scaling-stroke;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   AXON TERMINALS
+   ========================================================= */
+
+#neuron-structure-diagram .neuron03-v3-terminals {
+    opacity: 1;
+}
+
+
+/* Main branches */
+#neuron-structure-diagram .neuron03-v3-terminal-primary {
+    fill: none;
+
+    stroke: #a8235e;
+    stroke-width: 5;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    vector-effect: non-scaling-stroke;
+}
+
+
+/* Secondary branches */
+#neuron-structure-diagram .neuron03-v3-terminal-secondary {
+    fill: none;
+
+    stroke: #b32c67;
+    stroke-width: 3.5;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    vector-effect: non-scaling-stroke;
+}
+
+
+/* Fine branches */
+#neuron-structure-diagram .neuron03-v3-terminal-tertiary {
+    fill: none;
+
+    stroke: #bd3a73;
+    stroke-width: 2.4;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    vector-effect: non-scaling-stroke;
+}
+
+
+/* Terminal boutons */
+#neuron-structure-diagram .neuron03-v3-terminal-bouton {
+    fill: #a8235e;
+    stroke: #ffffff;
+    stroke-width: 1;
+}
+
+
+/* =========================================================
+   LABELS
+   ========================================================= */
+
+#neuron-structure-diagram .neuron03-v3-labels {
+    pointer-events: none;
+}
+
+
+#neuron-structure-diagram .neuron03-v3-label {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    letter-spacing: 0.7px;
+
+    fill: #514b52;
+
+    paint-order: stroke fill;
+
+    stroke: rgba(255,255,255,0.96);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+
+    vector-effect: non-scaling-stroke;
+}
+
+
+#neuron-structure-diagram .neuron03-v3-label-dendrites {
+    fill: #713552;
+}
+
+
+#neuron-structure-diagram .neuron03-v3-label-soma {
+    fill: #692541;
+    font-weight: 800;
+}
+
+
+#neuron-structure-diagram .neuron03-v3-label-nucleus {
+    fill: #4d2b72;
+    font-weight: 800;
+}
+
+
+#neuron-structure-diagram .neuron03-v3-label-hillock {
+    fill: #654858;
+}
+
+
+#neuron-structure-diagram .neuron03-v3-label-axon {
+    fill: #70495c;
+}
+
+
+#neuron-structure-diagram .neuron03-v3-label-terminals {
+    fill: #70495c;
+}
+
+
+/* =========================================================
+   CALLOUT LINES
+   ========================================================= */
+
+#neuron-structure-diagram .neuron03-v3-callouts {
+    pointer-events: none;
+}
+
+
+#neuron-structure-diagram .neuron03-v3-callout-line {
+    stroke: rgba(85,72,80,0.58);
+    stroke-width: 1.8;
+
+    stroke-linecap: round;
+
+    vector-effect: non-scaling-stroke;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    #neuron-structure-diagram .neuron03-v3-svg {
+        width: 100%;
+        margin-top: 14px;
+        margin-bottom: 2px;
+    }
+
+
+    /* Keep labels readable on phone */
+    #neuron-structure-diagram .neuron03-v3-label {
+        font-size: 15px;
+        letter-spacing: 0.5px;
+
+        stroke-width: 2.8px;
+    }
+
+
+    #neuron-structure-diagram .neuron03-v3-dendrite-primary {
+        stroke-width: 5;
+    }
+
+
+    #neuron-structure-diagram .neuron03-v3-dendrite-secondary {
+        stroke-width: 3.5;
+    }
+
+
+    #neuron-structure-diagram .neuron03-v3-dendrite-tertiary {
+        stroke-width: 2.3;
+    }
+
+
+    #neuron-structure-diagram .neuron03-v3-axon-path {
+        stroke-width: 6.5;
+    }
+
+
+    #neuron-structure-diagram .neuron03-v3-terminal-primary {
+        stroke-width: 4.7;
+    }
+
+
+    #neuron-structure-diagram .neuron03-v3-terminal-secondary {
+        stroke-width: 3.2;
+    }
+
+
+    #neuron-structure-diagram .neuron03-v3-terminal-tertiary {
+        stroke-width: 2.2;
+    }
+
+
+    #neuron-structure-diagram .neuron03-v3-callout-line {
+        stroke-width: 1.7;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY / RENDERING
+   ========================================================= */
+
+#neuron-structure-diagram .neuron03-v3-svg *,
+#neuron-structure-diagram .neuron03-v3-svg path,
+#neuron-structure-diagram .neuron03-v3-svg circle,
+#neuron-structure-diagram .neuron03-v3-svg ellipse,
+#neuron-structure-diagram .neuron03-v3-svg line {
+    shape-rendering: geometricPrecision;
+}
+
+
+#neuron-structure-diagram .neuron03-v3-svg text {
+    text-rendering: geometricPrecision;
+}
