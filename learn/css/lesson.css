@@ -14105,3 +14105,145 @@ color:#2563eb;
     }
 
 }
+
+/* =========================================================
+   LESSON FOOTER
+   ========================================================= */
+
+.lesson-footer {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 48px;
+    padding: 42px 24px 30px;
+    text-align: center;
+    background: #eef3fb;
+    border-top: 1px solid #d8e0ec;
+    color: #5f6f82;
+}
+
+/* Lesson identification */
+.footer-lesson {
+    margin: 0 auto 26px;
+}
+
+.footer-meta {
+    margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #718095;
+}
+
+.footer-title {
+    margin: 0;
+    font-size: 26px;
+    line-height: 1.3;
+    font-weight: 800;
+    color: #18212d;
+}
+
+/* Footer links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin: 0 auto;
+}
+
+.footer-links a {
+    color: #2767a9;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-links span {
+    color: #a5b0bd;
+    font-size: 15px;
+}
+
+/* Copyright area */
+.footer-bottom {
+    margin-top: 28px;
+    padding-top: 22px;
+    border-top: 1px solid #d2dbe7;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #68788b;
+}
+
+.footer-bottom div:first-child {
+    font-weight: 600;
+}
+
+.footer-bottom div:last-child {
+    margin-top: 2px;
+    color: #8290a0;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .lesson-footer {
+        margin-top: 40px;
+        padding: 34px 20px 26px;
+    }
+
+    .footer-lesson {
+        margin-bottom: 22px;
+    }
+
+    .footer-meta {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .footer-title {
+        font-size: 24px;
+    }
+
+    .footer-links {
+        gap: 12px;
+    }
+
+    .footer-links a {
+        font-size: 15px;
+    }
+
+    .footer-bottom {
+        margin-top: 24px;
+        padding-top: 19px;
+        font-size: 12.5px;
+    }
+
+    .footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-size: 26px;
+    line-height: 1.3;
+    font-weight: 800;
+    color: #18212d;
+}
+
+.footer-title-icon {
+    font-size: 23px;
+    line-height: 1;
+}
+
+}
+
