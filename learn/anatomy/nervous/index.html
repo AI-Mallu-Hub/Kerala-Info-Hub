@@ -50,10 +50,10 @@
 
 
     <a
-        href="../next-lesson/index.html"
+        href="../skeletal/index.html"
         class="next-lesson-btn"
     >
-        Lesson 2.5 👉🏼
+        Lesson 3 👉🏼
     </a>
 
 
@@ -1846,1433 +1846,22 @@
         <!-- =========================================================
      DIAGRAM 03
      STRUCTURE OF A NEURON
-     V3 - ORGANIC / FLAME-LIKE DENDRITIC STRUCTURE
+     PNG VERSION
      ========================================================= -->
 
 <div
-    class="diagram-placeholder nervous-diagram-placeholder"
+    class="diagram-placeholder nervous-diagram-placeholder diagram03-png-container"
     id="neuron-structure-diagram"
     data-diagram="neuron-structure"
 >
 
-    <h3>
-        🔬 Structure of a Neuron
-    </h3>
-
-    <p>
-        Soma, nucleus, dendrites, axon and axon terminals
-    </p>
-
-
-    <!-- =====================================================
-         DIAGRAM 03 SVG
-         ===================================================== -->
-
-    <svg
-        id="neuron03-v3-svg"
-        class="neuron03-v3-svg"
-        viewBox="0 0 900 560"
-        role="img"
-        aria-labelledby="neuron03-v3-title neuron03-v3-desc"
+    <img
+        src="images/diagram-03-neuron.png"
+        class="diagram03-png"
+        alt="Structure of a neuron showing soma, nucleus, dendrites, axon hillock, axon and axon terminals"
     >
-
-        <title id="neuron03-v3-title">
-            Structure of a Neuron
-        </title>
-
-        <desc id="neuron03-v3-desc">
-            Detailed anatomical neuron showing smooth tapering
-            dendritic branches, a filled soma with nucleus,
-            axon hillock, axon and branched axon terminals.
-        </desc>
-
-
-        <!-- =================================================
-             DEFINITIONS
-             ================================================= -->
-
-        <defs>
-
-            <!-- SOMA GRADIENT -->
-
-            <radialGradient
-                id="neuron03-v3-soma-gradient"
-                cx="34%"
-                cy="30%"
-                r="75%"
-            >
-
-                <stop
-                    offset="0%"
-                    stop-color="#f8a5bd"
-                />
-
-                <stop
-                    offset="45%"
-                    stop-color="#ed709d"
-                />
-
-                <stop
-                    offset="78%"
-                    stop-color="#d04478"
-                />
-
-                <stop
-                    offset="100%"
-                    stop-color="#a9275d"
-                />
-
-            </radialGradient>
-
-
-            <!-- SOMA INNER GLOW -->
-
-            <radialGradient
-                id="neuron03-v3-soma-glow"
-                cx="32%"
-                cy="24%"
-                r="70%"
-            >
-
-                <stop
-                    offset="0%"
-                    stop-color="#ffffff"
-                    stop-opacity="0.38"
-                />
-
-                <stop
-                    offset="55%"
-                    stop-color="#ffffff"
-                    stop-opacity="0.08"
-                />
-
-                <stop
-                    offset="100%"
-                    stop-color="#ffffff"
-                    stop-opacity="0"
-                />
-
-            </radialGradient>
-
-
-            <!-- NUCLEUS -->
-
-            <radialGradient
-                id="neuron03-v3-nucleus-gradient"
-                cx="32%"
-                cy="27%"
-                r="76%"
-            >
-
-                <stop
-                    offset="0%"
-                    stop-color="#8b5bc0"
-                />
-
-                <stop
-                    offset="52%"
-                    stop-color="#63359a"
-                />
-
-                <stop
-                    offset="100%"
-                    stop-color="#3c1d6b"
-                />
-
-            </radialGradient>
-
-
-            <!-- NUCLEOLUS -->
-
-            <radialGradient
-                id="neuron03-v3-nucleolus-gradient"
-                cx="30%"
-                cy="25%"
-                r="75%"
-            >
-
-                <stop
-                    offset="0%"
-                    stop-color="#c084da"
-                />
-
-                <stop
-                    offset="100%"
-                    stop-color="#6e3297"
-                />
-
-            </radialGradient>
-
-
-            <!-- DENDRITE GRADIENT -->
-
-            <linearGradient
-                id="neuron03-v3-dendrite-gradient"
-                x1="0%"
-                y1="50%"
-                x2="100%"
-                y2="50%"
-            >
-
-                <stop
-                    offset="0%"
-                    stop-color="#8e174f"
-                />
-
-                <stop
-                    offset="48%"
-                    stop-color="#a92360"
-                />
-
-                <stop
-                    offset="100%"
-                    stop-color="#d24d82"
-                />
-
-            </linearGradient>
-
-
-            <!-- AXON GRADIENT -->
-
-            <linearGradient
-                id="neuron03-v3-axon-gradient"
-                x1="0%"
-                y1="50%"
-                x2="100%"
-                y2="50%"
-            >
-
-                <stop
-                    offset="0%"
-                    stop-color="#9d2058"
-                />
-
-                <stop
-                    offset="50%"
-                    stop-color="#bd3a73"
-                />
-
-                <stop
-                    offset="100%"
-                    stop-color="#a8235e"
-                />
-
-            </linearGradient>
-
-
-            <!-- SOFT SOMA SHADOW -->
-
-            <filter
-                id="neuron03-v3-soma-shadow"
-                x="-30%"
-                y="-30%"
-                width="160%"
-                height="160%"
-            >
-
-                <feDropShadow
-                    dx="0"
-                    dy="5"
-                    stdDeviation="5"
-                    flood-color="#65183f"
-                    flood-opacity="0.22"
-                />
-
-            </filter>
-
-        </defs>
-
-
-        <!-- =================================================
-             MAIN NEURON
-             ================================================= -->
-
-        <g
-            id="neuron03-v3-main"
-            class="neuron03-v3-main"
-        >
-
-
-            <!-- =================================================
-                 DENDRITIC ARBOR
-                 ================================================= -->
-
-            <!-- =================================================
-     DIAGRAM 03 — DENDRITIC ARBOR
-     V4 ORGANIC / FLAME-LIKE FILLED DENDRITES
-     
-     Broad at soma
-        ↓
-     Smooth organic taper
-        ↓
-     Branching
-        ↓
-     Fine rounded tips
-     <!-- =========================================================
-     DIAGRAM 03 — DENDRITIC ARBOR
-     V6 FINAL — ORGANIC TAPERED FILLED DENDRITES
-
-     Design:
-     SOMA
-       ↓
-     broad organic root
-       ↓
-     smooth taper
-       ↓
-     natural branching
-       ↓
-     fine tapered terminal tips
-
-     IMPORTANT:
-     Replace the COMPLETE existing
-     #neuron03-v3-dendrites group with this block.
-     ========================================================= -->
-
-<g
-    id="neuron03-v3-dendrites"
-    class="neuron03-v3-dendrites"
-    aria-label="Dendrites"
->
-
-    <!-- =====================================================
-         PRIMARY DENDRITES
-         Broad roots with continuous organic taper
-         ===================================================== -->
-
-    <!-- UPPER LEFT PRIMARY -->
-    <path
-        class="neuron03-v3-dendrite-primary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M305 260
-
-            C278 247 252 229 228 207
-            C205 186 186 161 170 135
-            C157 114 148 92 142 70
-
-            C153 91 168 111 185 130
-            C204 151 225 170 249 187
-            C270 202 291 213 316 221
-
-            C326 232 321 249 305 260
-
-            Z
-        "
-    />
-
-    <!-- UPPER CENTRAL PRIMARY -->
-    <path
-        class="neuron03-v3-dendrite-primary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M335 239
-
-            C328 216 327 191 330 166
-            C334 138 342 111 353 88
-            C363 67 375 49 389 35
-
-            C381 54 377 74 376 95
-            C375 119 378 143 384 166
-            C390 190 389 211 379 231
-
-            C368 244 350 247 335 239
-
-            Z
-        "
-    />
-
-    <!-- UPPER RIGHT PRIMARY -->
-    <path
-        class="neuron03-v3-dendrite-primary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M370 242
-
-            C385 220 402 199 422 181
-            C443 162 466 147 491 136
-            C513 126 534 121 552 122
-
-            C532 128 513 139 496 153
-            C475 170 456 190 440 212
-            C423 235 404 252 386 261
-
-            C378 260 372 252 370 242
-
-            Z
-        "
-    />
-
-    <!-- LOWER LEFT PRIMARY -->
-    <path
-        class="neuron03-v3-dendrite-primary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M302 304
-
-            C277 315 252 331 230 350
-            C208 370 189 394 175 419
-            C163 440 157 462 156 484
-
-            C153 463 155 441 161 419
-            C170 390 186 364 208 341
-            C229 318 253 299 279 284
-
-            C290 281 301 291 302 304
-
-            Z
-        "
-    />
-
-    <!-- LOWER CENTRAL PRIMARY -->
-    <path
-        class="neuron03-v3-dendrite-primary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M338 335
-
-            C339 358 345 381 356 402
-            C368 424 384 444 403 458
-            C419 470 437 477 454 479
-
-            C436 481 418 477 401 469
-            C378 458 359 440 346 418
-            C334 397 328 374 328 351
-
-            C329 343 333 338 338 335
-
-            Z
-        "
-    />
-
-    <!-- LOWER RIGHT PRIMARY -->
-    <path
-        class="neuron03-v3-dendrite-primary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M375 326
-
-            C392 340 412 350 434 354
-            C456 358 478 356 497 350
-
-            C481 362 463 368 444 369
-            C420 370 398 365 381 355
-
-            C375 347 372 336 375 326
-
-            Z
-        "
-    />
-
-
-    <!-- =====================================================
-         SECONDARY DENDRITES
-         Still substantial, but clearly narrower
-         ===================================================== -->
-
-    <!-- Upper-left branch A -->
-    <path
-        class="neuron03-v3-dendrite-secondary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M228 207
-            C208 207 188 201 171 190
-            C153 179 139 164 129 147
-            C136 164 147 180 162 192
-            C180 207 201 217 222 220
-            Z
-        "
-    />
-
-    <!-- Upper-left branch B -->
-    <path
-        class="neuron03-v3-dendrite-secondary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M170 135
-            C164 117 164 99 169 82
-            C173 69 180 58 189 48
-
-            C181 63 178 78 178 93
-            C178 108 182 122 188 134
-
-            C184 141 176 142 170 135
-            Z
-        "
-    />
-
-    <!-- Upper-left branch C -->
-    <path
-        class="neuron03-v3-dendrite-secondary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M205 186
-            C191 169 184 151 184 132
-            C184 117 188 103 195 91
-
-            C191 107 192 122 197 137
-            C202 151 210 163 220 174
-
-            C220 181 214 187 205 186
-            Z
-        "
-    />
-
-    <!-- Upper-central branch A -->
-    <path
-        class="neuron03-v3-dendrite-secondary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M330 166
-            C316 151 307 134 304 116
-            C302 101 305 86 311 73
-
-            C308 88 311 103 318 116
-            C325 130 334 141 344 151
-
-            C345 158 339 164 330 166
-            Z
-        "
-    />
-
-    <!-- Upper-central branch B -->
-    <path
-        class="neuron03-v3-dendrite-secondary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M353 88
-            C344 71 341 55 344 40
-            C347 27 353 17 362 8
-
-            C356 20 354 33 356 45
-            C358 58 364 69 372 79
-
-            C370 86 362 90 353 88
-            Z
-        "
-    />
-
-    <!-- Upper-central branch C -->
-    <path
-        class="neuron03-v3-dendrite-secondary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M376 95
-            C389 81 399 66 404 51
-            C408 40 409 29 407 18
-
-            C414 32 414 46 409 60
-            C404 77 395 91 383 104
-
-            C379 104 376 100 376 95
-            Z
-        "
-    />
-
-    <!-- Upper-right branch A -->
-    <path
-        class="neuron03-v3-dendrite-secondary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M422 181
-            C421 162 426 145 436 131
-            C445 118 457 108 470 102
-
-            C458 113 451 125 447 138
-            C443 152 445 165 450 176
-
-            C443 184 432 187 422 181
-            Z
-        "
-    />
-
-    <!-- Upper-right branch B -->
-    <path
-        class="neuron03-v3-dendrite-secondary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M491 136
-            C508 141 525 138 540 130
-            C552 124 562 115 569 105
-
-            C564 119 554 131 542 139
-            C526 149 508 153 492 150
-
-            C487 146 487 140 491 136
-            Z
-        "
-    />
-
-    <!-- Lower-left branch A -->
-    <path
-        class="neuron03-v3-dendrite-secondary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M230 350
-            C211 347 193 351 177 361
-            C163 370 152 383 145 397
-
-            C156 382 168 371 183 365
-            C198 359 214 359 229 364
-
-            C235 360 236 354 230 350
-            Z
-        "
-    />
-
-    <!-- Lower-left branch B -->
-    <path
-        class="neuron03-v3-dendrite-secondary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M208 341
-            C194 327 188 312 188 296
-            C188 284 192 273 199 263
-
-            C195 277 197 290 203 302
-            C209 314 218 324 229 332
-
-            C228 338 219 344 208 341
-            Z
-        "
-    />
-
-    <!-- Lower-left branch C -->
-    <path
-        class="neuron03-v3-dendrite-secondary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M175 419
-            C159 422 145 429 134 439
-            C124 448 117 459 113 471
-
-            C121 458 131 448 143 442
-            C155 436 168 434 181 435
-
-            C185 429 182 422 175 419
-            Z
-        "
-    />
-
-    <!-- Lower-central branch A -->
-    <path
-        class="neuron03-v3-dendrite-secondary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M356 402
-            C345 416 341 432 343 447
-            C345 461 351 474 361 484
-
-            C354 477 349 466 347 454
-            C345 438 350 423 362 411
-
-            C363 407 360 403 356 402
-            Z
-        "
-    />
-
-    <!-- Lower-central branch B -->
-    <path
-        class="neuron03-v3-dendrite-secondary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M403 458
-            C417 452 431 453 443 459
-            C455 465 464 474 470 485
-
-            C462 476 452 470 441 467
-            C428 464 415 467 405 472
-
-            C400 468 399 462 403 458
-            Z
-        "
-    />
-
-    <!-- Lower-right branch -->
-    <path
-        class="neuron03-v3-dendrite-secondary"
-        fill="url(#neuron03-v3-dendrite-gradient)"
-        stroke="none"
-        d="
-            M434 354
-            C448 344 464 337 480 337
-            C494 337 507 341 518 348
-
-            C505 345 493 345 482 348
-            C467 351 455 357 445 366
-
-            C439 365 435 360 434 354
-            Z
-        "
-    />
-
-
-    <!-- =====================================================
-         TERTIARY DENDRITES
-         Fine tapered organic branches
-         ===================================================== -->
-
-    <!-- UL fine 1 -->
-    <path
-        class="neuron03-v3-dendrite-tertiary"
-        fill="#b9366d"
-        stroke="none"
-        d="
-            M171 190
-            C156 188 142 182 131 173
-            C121 165 114 155 110 144
-            C118 156 128 165 139 170
-            C151 176 162 178 174 178
-            Z
-        "
-    />
-
-    <!-- UL fine 2 -->
-    <path
-        class="neuron03-v3-dendrite-tertiary"
-        fill="#b9366d"
-        stroke="none"
-        d="
-            M129 147
-            C117 138 108 127 104 114
-            C101 103 101 92 104 82
-            C103 95 107 106 113 116
-            C119 126 127 133 136 138
-            Z
-        "
-    />
-
-    <!-- UL fine 3 -->
-    <path
-        class="neuron03-v3-dendrite-tertiary"
-        fill="#b9366d"
-        stroke="none"
-        d="
-            M189 48
-            C181 39 178 29 180 19
-            C181 11 185 4 191 -2
-            C187 7 187 15 189 22
-            C191 30 195 37 200 43
-            Z
-        "
-    />
-
-    <!-- UC fine 1 -->
-    <path
-        class="neuron03-v3-dendrite-tertiary"
-        fill="#b9366d"
-        stroke="none"
-        d="
-            M304 116
-            C293 108 285 98 282 86
-            C279 76 280 66 284 57
-            C282 69 285 79 291 88
-            C296 96 303 102 311 107
-            Z
-        "
-    />
-
-    <!-- UC fine 2 -->
-    <path
-        class="neuron03-v3-dendrite-tertiary"
-        fill="#b9366d"
-        stroke="none"
-        d="
-            M344 40
-            C337 31 335 21 337 12
-            C339 5 343 -1 349 -6
-            C345 2 344 9 346 16
-            C348 24 352 30 357 35
-            Z
-        "
-    />
-
-    <!-- UC fine 3 -->
-    <path
-        class="neuron03-v3-dendrite-tertiary"
-        fill="#b9366d"
-        stroke="none"
-        d="
-            M404 51
-            C415 44 423 35 427 25
-            C430 17 430 9 428 2
-            C434 12 435 22 431 32
-            C427 44 419 54 408 61
-            Z
-        "
-    />
-
-    <!-- UR fine 1 -->
-    <path
-        class="neuron03-v3-dendrite-tertiary"
-        fill="#b9366d"
-        stroke="none"
-        d="
-            M436 131
-            C437 118 442 107 450 98
-            C457 90 466 85 475 82
-            C466 88 459 95 455 104
-            C451 114 451 124 454 132
-            Z
-        "
-    />
-
-    <!-- UR fine 2 -->
-    <path
-        class="neuron03-v3-dendrite-tertiary"
-        fill="#b9366d"
-        stroke="none"
-        d="
-            M540 130
-            C550 131 560 128 568 122
-            C576 116 582 108 585 99
-            C583 111 578 121 570 129
-            C562 137 552 141 541 141
-            Z
-        "
-    />
-
-    <!-- LL fine 1 -->
-    <path
-        class="neuron03-v3-dendrite-tertiary"
-        fill="#b9366d"
-        stroke="none"
-        d="
-            M177 361
-            C163 358 150 360 138 366
-            C128 371 120 379 114 389
-            C121 377 130 368 141 363
-            C153 357 165 356 178 358
-            Z
-        "
-    />
-
-    <!-- LL fine 2 -->
-    <path
-        class="neuron03-v3-dendrite-tertiary"
-        fill="#b9366d"
-        stroke="none"
-        d="
-            M188 296
-            C177 287 170 276 168 264
-            C166 254 168 244 173 236
-            C169 247 171 257 176 266
-            C181 275 188 282 197 288
-            Z
-        "
-    />
-
-    <!-- LL fine 3 -->
-    <path
-        class="neuron03-v3-dendrite-tertiary"
-        fill="#b9366d"
-        stroke="none"
-        d="
-            M134 439
-            C123 441 113 447 106 455
-            C100 462 96 471 95 480
-            C97 469 102 460 110 453
-            C118 446 127 442 137 441
-            Z
-        "
-    />
-
-    <!-- LC fine 1 -->
-    <path
-        class="neuron03-v3-dendrite-tertiary"
-        fill="#b9366d"
-        stroke="none"
-        d="
-            M343 447
-            C334 455 329 465 328 475
-            C327 484 330 493 335 500
-            C331 492 331 484 334 476
-            C337 466 342 459 350 453
-            Z
-        "
-    />
-
-    <!-- LC fine 2 -->
-    <path
-        class="neuron03-v3-dendrite-tertiary"
-        fill="#b9366d"
-        stroke="none"
-        d="
-            M443 459
-            C454 459 464 463 471 470
-            C478 477 482 486 484 495
-            C481 486 476 479 469 475
-            C461 470 452 468 443 469
-            Z
-        "
-    />
-
-    <!-- LR fine -->
-    <path
-        class="neuron03-v3-dendrite-tertiary"
-        fill="#b9366d"
-        stroke="none"
-        d="
-            M480 337
-            C490 329 501 326 512 328
-            C522 329 531 334 538 341
-            C529 335 520 333 511 333
-            C501 333 492 337 484 343
-            Z
-        "
-    />
-
-
-    <!-- =====================================================
-         SMALL ROUNDED TERMINAL TIPS
-         ===================================================== -->
-
-    <g
-        class="neuron03-v3-dendrite-tips"
-        fill="#b9366d"
-        stroke="none"
-    >
-
-        <!-- Upper-left -->
-        <circle cx="110" cy="144" r="3.2"/>
-        <circle cx="104" cy="82" r="3.2"/>
-        <circle cx="191" cy="-2" r="3.2"/>
-
-        <!-- Upper-central -->
-        <circle cx="284" cy="57" r="3.2"/>
-        <circle cx="349" cy="-6" r="3.2"/>
-        <circle cx="428" cy="2" r="3.2"/>
-
-        <!-- Upper-right -->
-        <circle cx="475" cy="82" r="3.2"/>
-        <circle cx="585" cy="99" r="3.2"/>
-
-        <!-- Lower-left -->
-        <circle cx="114" cy="389" r="3.2"/>
-        <circle cx="173" cy="236" r="3.2"/>
-        <circle cx="95" cy="480" r="3.2"/>
-
-        <!-- Lower-central -->
-        <circle cx="335" cy="500" r="3.2"/>
-        <circle cx="484" cy="495" r="3.2"/>
-
-        <!-- Lower-right -->
-        <circle cx="538" cy="341" r="3.2"/>
-
-    </g>
-
-</g>
-
-
-            <!-- =================================================
-                 SOMA
-                 Filled organic cell body
-                 ================================================= -->
-
-            <g
-                id="neuron03-v3-soma"
-                class="neuron03-v3-soma"
-                aria-label="Soma"
-            >
-
-                <!-- Main filled soma -->
-
-                <path
-                    class="neuron03-v3-soma-body"
-                    d="
-                        M290 255
-
-                        C295 230 312 211 337 201
-
-                        C362 191 390 194 412 207
-
-                        C432 219 445 239 449 261
-
-                        C454 284 448 307 433 325
-
-                        C418 343 395 353 369 355
-
-                        C343 357 318 349 300 333
-
-                        C284 318 276 296 280 275
-
-                        C282 268 286 261 290 255
-
-                        Z
-                    "
-                    fill="url(#neuron03-v3-soma-gradient)"
-                    filter="url(#neuron03-v3-soma-shadow)"
-                />
-
-
-                <!-- Inner soma glow -->
-
-                <path
-                    class="neuron03-v3-soma-glow"
-                    d="
-                        M302 256
-                        C307 232 327 213 351 207
-                        C376 201 400 207 417 223
-                        C398 214 376 211 355 217
-                        C330 224 312 238 302 256
-                        Z
-                    "
-                    fill="url(#neuron03-v3-soma-glow)"
-                />
-
-
-                <!-- Organic soma texture -->
-
-                <g
-                    class="neuron03-v3-soma-texture"
-                >
-
-                    <ellipse cx="313" cy="235" rx="7" ry="4" />
-                    <ellipse cx="326" cy="221" rx="6" ry="3.5" />
-                    <ellipse cx="345" cy="213" rx="7" ry="4" />
-                    <ellipse cx="380" cy="211" rx="7" ry="4" />
-                    <ellipse cx="405" cy="224" rx="6" ry="3.5" />
-
-                    <ellipse cx="302" cy="278" rx="6" ry="4" />
-                    <ellipse cx="310" cy="304" rx="7" ry="4" />
-                    <ellipse cx="326" cy="329" rx="6" ry="3.5" />
-
-                    <ellipse cx="405" cy="324" rx="7" ry="4" />
-                    <ellipse cx="421" cy="299" rx="6" ry="3.5" />
-                    <ellipse cx="426" cy="268" rx="7" ry="4" />
-
-                </g>
-
-
-                <!-- =================================================
-                     NUCLEUS
-                     ================================================= -->
-
-                <ellipse
-                    id="neuron03-v3-nucleus"
-                    class="neuron03-v3-nucleus"
-                    cx="360"
-                    cy="276"
-                    rx="39"
-                    ry="36"
-                    fill="url(#neuron03-v3-nucleus-gradient)"
-                />
-
-
-                <!-- Nuclear membrane -->
-
-                <ellipse
-                    class="neuron03-v3-nuclear-membrane"
-                    cx="360"
-                    cy="276"
-                    rx="33"
-                    ry="30"
-                    fill="none"
-                />
-
-
-                <!-- Nucleolus -->
-
-                <ellipse
-                    class="neuron03-v3-nucleolus"
-                    cx="364"
-                    cy="275"
-                    rx="11"
-                    ry="10"
-                    fill="url(#neuron03-v3-nucleolus-gradient)"
-                />
-
-            </g>
-
-
-            <!-- =================================================
-                 AXON HILLOCK
-                 Smooth continuous transition from soma
-                 ================================================= -->
-
-            <g
-                id="neuron03-v3-axon-hillock"
-                class="neuron03-v3-axon-hillock"
-                aria-label="Axon hillock"
-            >
-
-                <path
-                    class="neuron03-v3-hillock"
-                    d="
-                        M421 251
-
-                        C438 258 452 269 468 278
-
-                        C453 288 438 299 421 306
-
-                        C429 289 430 269 421 251
-
-                        Z
-                    "
-                />
-
-            </g>
-
-
-            <!-- =================================================
-                 AXON
-                 ================================================= -->
-
-            <g
-                id="neuron03-v3-axon"
-                class="neuron03-v3-axon"
-                aria-label="Axon"
-            >
-
-                <path
-                    class="neuron03-v3-axon-path"
-                    d="
-                        M461 282
-
-                        C520 283
-                        580 284
-                        638 283
-
-                        C697 282
-                        747 279
-                        784 273
-                    "
-                    fill="none"
-                />
-
-
-                <!-- Subtle axon highlight -->
-
-                <path
-                    class="neuron03-v3-axon-highlight"
-                    d="
-                        M468 279
-                        C526 280
-                        583 281
-                        640 280
-                        C695 279
-                        744 276
-                        780 271
-                    "
-                    fill="none"
-                />
-
-            </g>
-
-
-            <!-- =================================================
-                 AXON TERMINAL ARBOR
-                 ================================================= -->
-
-            <g
-                id="neuron03-v3-terminals"
-                class="neuron03-v3-terminals"
-                aria-label="Axon terminals"
-            >
-
-                <!-- Primary terminal branches -->
-
-                <path
-                    class="neuron03-v3-terminal-primary"
-                    d="
-                        M784 273
-                        C808 258 829 238 843 214
-                    "
-                />
-
-                <path
-                    class="neuron03-v3-terminal-primary"
-                    d="
-                        M784 273
-                        C813 273 839 266 860 252
-                    "
-                />
-
-                <path
-                    class="neuron03-v3-terminal-primary"
-                    d="
-                        M784 273
-                        C809 289 828 310 841 336
-                    "
-                />
-
-
-                <!-- Upper terminal branches -->
-
-                <path
-                    class="neuron03-v3-terminal-secondary"
-                    d="
-                        M843 214
-                        C853 197 858 179 856 161
-                    "
-                />
-
-                <path
-                    class="neuron03-v3-terminal-secondary"
-                    d="
-                        M843 214
-                        C860 211 876 202 888 188
-                    "
-                />
-
-                <path
-                    class="neuron03-v3-terminal-tertiary"
-                    d="
-                        M860 252
-                        C874 241 883 228 886 213
-                    "
-                />
-
-                <path
-                    class="neuron03-v3-terminal-tertiary"
-                    d="
-                        M860 252
-                        C875 257 889 255 901 247
-                    "
-                />
-
-
-                <!-- Lower terminal branches -->
-
-                <path
-                    class="neuron03-v3-terminal-secondary"
-                    d="
-                        M841 336
-                        C851 352 854 370 850 388
-                    "
-                />
-
-                <path
-                    class="neuron03-v3-terminal-secondary"
-                    d="
-                        M841 336
-                        C858 341 872 352 883 366
-                    "
-                />
-
-                <path
-                    class="neuron03-v3-terminal-tertiary"
-                    d="
-                        M883 366
-                        C895 376 905 388 910 402
-                    "
-                />
-
-
-                <!-- Terminal boutons -->
-
-                <g
-                    class="neuron03-v3-terminal-boutons"
-                >
-
-                    <circle
-                        class="neuron03-v3-terminal-bouton"
-                        cx="856"
-                        cy="161"
-                        r="6"
-                    />
-
-                    <circle
-                        class="neuron03-v3-terminal-bouton"
-                        cx="888"
-                        cy="188"
-                        r="6"
-                    />
-
-                    <circle
-                        class="neuron03-v3-terminal-bouton"
-                        cx="886"
-                        cy="213"
-                        r="6"
-                    />
-
-                    <circle
-                        class="neuron03-v3-terminal-bouton"
-                        cx="901"
-                        cy="247"
-                        r="6"
-                    />
-
-                    <circle
-                        class="neuron03-v3-terminal-bouton"
-                        cx="850"
-                        cy="388"
-                        r="6"
-                    />
-
-                    <circle
-                        class="neuron03-v3-terminal-bouton"
-                        cx="883"
-                        cy="366"
-                        r="6"
-                    />
-
-                    <circle
-                        class="neuron03-v3-terminal-bouton"
-                        cx="910"
-                        cy="402"
-                        r="6"
-                    />
-
-                </g>
-
-            </g>
-
-
-            <!-- =================================================
-                 LABELS
-                 ================================================= -->
-
-            <g
-                id="neuron03-v3-labels"
-                class="neuron03-v3-labels"
-            >
-
-                <text
-                    class="neuron03-v3-label neuron03-v3-label-dendrites"
-                    x="72"
-                    y="300"
-                >
-                    DENDRITES
-                </text>
-
-
-                <text
-                    class="neuron03-v3-label neuron03-v3-label-soma"
-                    x="355"
-                    y="380"
-                    text-anchor="middle"
-                >
-                    SOMA
-                </text>
-
-
-                <text
-                    class="neuron03-v3-label neuron03-v3-label-nucleus"
-                    x="360"
-                    y="326"
-                    text-anchor="middle"
-                >
-                    NUCLEUS
-                </text>
-
-
-                <text
-                    class="neuron03-v3-label neuron03-v3-label-hillock"
-                    x="447"
-                    y="238"
-                >
-                    AXON HILLOCK
-                </text>
-
-
-                <text
-                    class="neuron03-v3-label neuron03-v3-label-axon"
-                    x="635"
-                    y="239"
-                    text-anchor="middle"
-                >
-                    AXON
-                </text>
-
-
-                <text
-                    class="neuron03-v3-label neuron03-v3-label-terminals"
-                    x="820"
-                    y="435"
-                    text-anchor="middle"
-                >
-                    AXON TERMINALS
-                </text>
-
-            </g>
-
-
-            <!-- =================================================
-                 CALLOUT LINES
-                 ================================================= -->
-
-            <g
-                id="neuron03-v3-callouts"
-                class="neuron03-v3-callouts"
-            >
-
-                <line
-                    class="neuron03-v3-callout-line"
-                    x1="150"
-                    y1="295"
-                    x2="205"
-                    y2="280"
-                />
-
-                <line
-                    class="neuron03-v3-callout-line"
-                    x1="355"
-                    y1="373"
-                    x2="357"
-                    y2="348"
-                />
-
-                <line
-                    class="neuron03-v3-callout-line"
-                    x1="360"
-                    y1="320"
-                    x2="360"
-                    y2="307"
-                />
-
-                <line
-                    class="neuron03-v3-callout-line"
-                    x1="450"
-                    y1="241"
-                    x2="447"
-                    y2="274"
-                />
-
-                <line
-                    class="neuron03-v3-callout-line"
-                    x1="635"
-                    y1="242"
-                    x2="635"
-                    y2="282"
-                />
-
-                <line
-                    class="neuron03-v3-callout-line"
-                    x1="820"
-                    y1="428"
-                    x2="850"
-                    y2="385"
-                />
-
-            </g>
-
-
-        </g>
-
-    </svg>
 
 </div>
-
-    </section>
 
 
 
@@ -3301,24 +1890,21 @@
         </p>
 
 
-        <!-- DIAGRAM PLACEHOLDER 04 -->
+        <!-- =====================================================
+     DIAGRAM 04 — INFORMATION FLOW PNG
+     ===================================================== -->
 
-        <div
-            class="diagram-placeholder nervous-diagram-placeholder"
-            id="neuron-information-flow-diagram"
-            data-diagram="neuron-information-flow"
-        >
-
-            <h3>
-                ➡️ Neuron Information Flow Diagram
-            </h3>
-
-            <p>
-                Planned visual:
-                Dendrites → Soma → Axon → Target
-            </p>
-
-        </div>
+<div
+    class="neuron04-diagram"
+    id="neuron-information-flow-diagram"
+    data-diagram="neuron-information-flow"
+>
+    <img
+        src="images/diagram-04-information-flow.png"
+        alt="Direction of information flow through a neuron: dendrites, soma, axon and target"
+        class="neuron04-diagram-image"
+    >
+</div>
 
 
         <div class="summary-box">
@@ -3378,24 +1964,92 @@
         </p>
 
 
-        <!-- DIAGRAM PLACEHOLDER 05 -->
+        <!-- =====================================================
+     DIAGRAM 05 — NEURON POLARITY
+     PNG + COMPARISON TABLE
+     ===================================================== -->
 
-        <div
-            class="diagram-placeholder nervous-diagram-placeholder"
-            id="neuron-polarity-types-diagram"
-            data-diagram="neuron-polarity-types"
+<div
+    class="neuron-polarity-diagram"
+    id="neuron-polarity-types-diagram"
+    data-diagram="neuron-polarity-types"
+>
+
+    <div class="neuron-polarity-title">
+        <h3>🧩 Neuron Polarity</h3>
+
+        <p>
+            Unipolar, bipolar and multipolar neurons
+        </p>
+    </div>
+
+
+    <!-- PNG DIAGRAM -->
+
+    <div class="neuron-polarity-image-wrap">
+
+        <img
+            class="neuron-polarity-image"
+            src="images/neuron-polarity-diagram.png"
+            alt="Diagram showing unipolar, bipolar and multipolar neurons"
+            loading="lazy"
         >
 
-            <h3>
-                🧩 Neuron Polarity Diagram
-            </h3>
+    </div>
 
-            <p>
-                Planned visual:
-                Unipolar, bipolar and multipolar neurons
-            </p>
 
-        </div>
+    <!-- COMPARISON TABLE -->
+
+    <div class="neuron-polarity-table-wrap">
+
+        <table class="neuron-polarity-table">
+
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Processes associated with the cell body</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>
+                        <strong>Unipolar</strong>
+                    </td>
+
+                    <td>
+                        Single process
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <strong>Bipolar</strong>
+                    </td>
+
+                    <td>
+                        Two processes
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <strong>Multipolar</strong>
+                    </td>
+
+                    <td>
+                        Multiple processes
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
 
     </section>
 
@@ -3425,24 +2079,69 @@
         </p>
 
 
-        <!-- DIAGRAM PLACEHOLDER 06 -->
+        <!-- DIAGRAM 06 — GLIAL CELL OVERVIEW -->
 
-        <div
-            class="diagram-placeholder nervous-diagram-placeholder"
-            id="glial-cell-overview-diagram"
-            data-diagram="glial-cell-overview"
-        >
+<div
+    class="glial-overview-diagram"
+    id="glial-cell-overview-diagram"
+    data-diagram="glial-cell-overview"
+>
 
-            <h3>
-                🛡️ Glial Cell Overview
-            </h3>
+    <div class="glial-overview-title">
 
-            <p>
-                Planned visual:
-                Major CNS and PNS glial cells
-            </p>
+        <h3>🛡️ Glial Cell Overview</h3>
 
-        </div>
+        <p>
+            Major glial cells of the CNS and PNS
+        </p>
+
+    </div>
+
+
+    <div class="glial-overview-table-wrap">
+
+        <table class="glial-overview-table">
+
+            <thead>
+                <tr>
+                    <th>Division</th>
+                    <th>Major Glial Cells</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>
+                        <strong>🧠 CNS</strong>
+                    </td>
+
+                    <td>
+                        Astrocytes,
+                        Oligodendrocytes,
+                        Microglia,
+                        Ependymal cells
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <strong>🔗 PNS</strong>
+                    </td>
+
+                    <td>
+                        Schwann cells,
+                        Satellite cells
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
 
 
         <div class="summary-box">
@@ -3505,25 +2204,102 @@
         </ul>
 
 
-        <!-- DIAGRAM PLACEHOLDER 07 -->
+        <!-- =========================================================
+     DIAGRAM 07 — CNS GLIAL CELLS
+     ========================================================= -->
 
-        <div
-            class="diagram-placeholder nervous-diagram-placeholder"
-            id="cns-glia-diagram"
-            data-diagram="cns-glia"
+<div
+    class="cns-glia-diagram"
+    id="cns-glia-diagram"
+    data-diagram="cns-glia"
+>
+
+    <div class="cns-glia-diagram-title">
+
+        <h3>🧠 CNS Glial Cells</h3>
+
+        <p>
+            The four major types of glial cells in the
+            Central Nervous System
+        </p>
+
+    </div>
+
+
+    <div class="cns-glia-image-wrap">
+
+        <img
+            src="images/cns-glial-cells.png"
+            alt="CNS glial cells: astrocytes, oligodendrocytes, microglia and ependymal cells"
+            class="cns-glia-image"
         >
 
-            <h3>
-                🧠 CNS Glial Cells Diagram
-            </h3>
+    </div>
 
-            <p>
-                Planned visual:
-                Astrocyte, oligodendrocyte, microglia
-                and ependymal cell
-            </p>
 
-        </div>
+    <div class="cns-glia-function-table-wrap">
+
+        <table class="cns-glia-function-table">
+
+            <thead>
+                <tr>
+                    <th>Glial Cell</th>
+                    <th>Key Function</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>
+                        <strong>Astrocytes</strong>
+                    </td>
+
+                    <td>
+                        Support neurons and help maintain
+                        the extracellular environment.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <strong>Oligodendrocytes</strong>
+                    </td>
+
+                    <td>
+                        Form myelin around axons in the CNS.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <strong>Microglia</strong>
+                    </td>
+
+                    <td>
+                        Provide immune surveillance and
+                        phagocytic functions.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <strong>Ependymal cells</strong>
+                    </td>
+
+                    <td>
+                        Line the ventricles and are involved
+                        in cerebrospinal fluid production.
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
 
     </section>
 
@@ -3561,24 +2337,92 @@
         </ul>
 
 
-        <!-- DIAGRAM PLACEHOLDER 08 -->
+        <!-- =====================================================
+     DIAGRAM 08
+     PNS GLIAL CELLS
+     PNG + SMALL COMPARISON TABLE
+     ===================================================== -->
 
-        <div
-            class="diagram-placeholder nervous-diagram-placeholder"
-            id="pns-glia-diagram"
-            data-diagram="pns-glia"
+<div
+    class="pns-glia-diagram"
+    id="pns-glia-diagram"
+>
+
+    <div class="pns-glia-diagram-header">
+
+        <h3>
+            🔗 PNS Glial Cells
+        </h3>
+
+        <p>
+            The two major types of glial cells in the
+            Peripheral Nervous System
+        </p>
+
+    </div>
+
+
+    <!-- =================================================
+         PNG VISUAL
+         ================================================= -->
+
+    <div class="pns-glia-image-wrap">
+
+        <img
+            src="images/a_clean_educational_infographic_diagram_image_on_a.png"
+            alt="PNS glial cells showing Schwann cells and satellite cells"
+            class="pns-glia-image"
         >
 
-            <h3>
-                🔗 PNS Glial Cells Diagram
-            </h3>
+    </div>
 
-            <p>
-                Planned visual:
-                Schwann cell and satellite cell
-            </p>
 
-        </div>
+    <!-- =================================================
+         SMALL COMPARISON TABLE
+         ================================================= -->
+
+    <div class="pns-glia-table-wrap">
+
+        <table class="pns-glia-table">
+
+            <thead>
+                <tr>
+                    <th>Glial Cell</th>
+                    <th>Key Function</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>
+                        <strong>Schwann cells</strong>
+                    </td>
+
+                    <td>
+                        Form myelin around peripheral axons
+                        and support axonal regeneration.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <strong>Satellite cells</strong>
+                    </td>
+
+                    <td>
+                        Surround and support neuron cell
+                        bodies in peripheral ganglia.
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
 
     </section>
 
@@ -3620,24 +2464,173 @@
         </p>
 
 
-        <!-- DIAGRAM PLACEHOLDER 09 -->
+       <!-- =====================================================
+     DIAGRAM 09
+     MYELIN COMPARISON
+     PNG + COMPARISON TABLE
+     ===================================================== -->
 
-        <div
-            class="diagram-placeholder nervous-diagram-placeholder"
-            id="myelin-comparison-diagram"
-            data-diagram="myelin-comparison"
+<div
+    class="myelin-comparison-diagram"
+    id="myelin-comparison-diagram"
+    data-diagram="myelin-comparison"
+>
+
+    <!-- =================================================
+         DIAGRAM HEADER
+         ================================================= -->
+
+    <div class="myelin-comparison-title">
+
+        <h3>
+            ⚡ Myelin Comparison
+        </h3>
+
+        <p>
+            Oligodendrocyte vs Schwann cell
+        </p>
+
+    </div>
+
+
+    <!-- =================================================
+         PNG DIAGRAM
+         ================================================= -->
+
+    <div class="myelin-comparison-image-wrap">
+
+        <img
+            src="images/myelin-comparison-diagram.png"
+            alt="Comparison of oligodendrocyte myelination in the CNS and Schwann cell myelination in the PNS"
+            class="myelin-comparison-image"
+            loading="lazy"
         >
 
-            <h3>
-                ⚡ Myelin Comparison Diagram
-            </h3>
+    </div>
 
-            <p>
-                Planned visual:
-                Oligodendrocyte vs Schwann cell
-            </p>
 
-        </div>
+    <!-- =================================================
+         COMPARISON TABLE
+         ================================================= -->
+
+    <div class="myelin-comparison-table-wrap">
+
+        <table class="myelin-comparison-table">
+
+            <thead>
+
+                <tr>
+                    <th>Feature</th>
+
+                    <th>
+                        CNS<br>
+                        <span>Oligodendrocyte</span>
+                    </th>
+
+                    <th>
+                        PNS<br>
+                        <span>Schwann cell</span>
+                    </th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        <strong>Myelin-forming cell</strong>
+                    </td>
+
+                    <td>
+                        Oligodendrocyte
+                    </td>
+
+                    <td>
+                        Schwann cell
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <strong>Location</strong>
+                    </td>
+
+                    <td>
+                        Central Nervous System
+                    </td>
+
+                    <td>
+                        Peripheral Nervous System
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <strong>Axons myelinated</strong>
+                    </td>
+
+                    <td>
+                        One oligodendrocyte can
+                        myelinate segments of
+                        multiple axons.
+                    </td>
+
+                    <td>
+                        One Schwann cell
+                        myelinates one segment
+                        of one axon.
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <strong>Key distinction</strong>
+                    </td>
+
+                    <td>
+                        One cell → many axons
+                    </td>
+
+                    <td>
+                        One cell → one axon segment
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <!-- =================================================
+         KEY IDEA
+         ================================================= -->
+
+    <div class="myelin-comparison-note">
+
+        💡
+        <strong>
+            Both oligodendrocytes and Schwann cells form
+            myelin sheaths that insulate axons and increase
+            the speed of nerve impulse conduction.
+        </strong>
+
+    </div>
+
+</div>
 
 
         <div class="summary-box">
