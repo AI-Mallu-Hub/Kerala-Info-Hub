@@ -2337,3 +2337,1477 @@
 #neuron-structure-diagram .neuron03-v3-svg text {
     text-rendering: geometricPrecision;
 }
+
+/* =========================================================
+   DIAGRAM 03
+   PNG VERSION
+   Structure of a Neuron
+   ========================================================= */
+
+#neuron-structure-diagram.diagram03-png-container {
+
+    width: 100%;
+    max-width: 760px;
+
+    margin: 28px auto 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: none;
+
+    border-radius: 0;
+
+    box-shadow: none;
+}
+
+
+/* ---------------------------------------------------------
+   DIAGRAM 03 PNG
+   --------------------------------------------------------- */
+
+#neuron-structure-diagram .diagram03-png {
+
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+
+    border: none;
+
+    outline: none;
+
+    box-shadow: none;
+
+    object-fit: contain;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    #neuron-structure-diagram.diagram03-png-container {
+
+        width: 100%;
+
+        margin-top: 22px;
+
+    }
+
+    #neuron-structure-diagram .diagram03-png {
+
+        width: 100%;
+
+        height: auto;
+
+    }
+}
+
+/* =====================================================
+   DIAGRAM 04 — INFORMATION FLOW PNG
+   ===================================================== */
+
+.neuron04-diagram {
+    width: 100%;
+    margin: 24px auto 28px;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.neuron04-diagram-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+
+    .neuron04-diagram {
+        margin: 20px auto 24px;
+    }
+
+    .neuron04-diagram-image {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 05 — NEURON POLARITY
+   PNG + COMPARISON TABLE
+   ========================================================= */
+
+.neuron-polarity-diagram {
+    width: 100%;
+    margin: 28px auto 0;
+    padding: 18px 16px 20px;
+
+    box-sizing: border-box;
+
+    border: 1.5px dashed #8db8ef;
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   TITLE
+   --------------------------------------------------------- */
+
+.neuron-polarity-title {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.neuron-polarity-title h3 {
+    margin: 0;
+
+    color: #145dcc;
+
+    font-size: clamp(20px, 5vw, 28px);
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.neuron-polarity-title p {
+    margin: 8px 0 0;
+
+    color: #687789;
+
+    font-size: clamp(14px, 3.8vw, 17px);
+    line-height: 1.5;
+
+    font-style: italic;
+}
+
+
+/* ---------------------------------------------------------
+   PNG IMAGE
+   --------------------------------------------------------- */
+
+.neuron-polarity-image-wrap {
+    width: 100%;
+    margin: 8px auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.neuron-polarity-image {
+    display: block;
+
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   TABLE WRAPPER
+   --------------------------------------------------------- */
+
+.neuron-polarity-table-wrap {
+    width: 100%;
+
+    margin: 4px auto 0;
+
+    overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/* ---------------------------------------------------------
+   COMPARISON TABLE
+   --------------------------------------------------------- */
+
+.neuron-polarity-table {
+    width: 100%;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    table-layout: fixed;
+
+    font-size: 14px;
+
+    overflow: hidden;
+
+    border: 1px solid #d9e4f2;
+    border-radius: 12px;
+}
+
+
+/* Header */
+
+.neuron-polarity-table thead th {
+    padding: 11px 10px;
+
+    background: #eef5ff;
+
+    color: #145dcc;
+
+    font-weight: 700;
+
+    text-align: left;
+
+    border-bottom: 1px solid #d9e4f2;
+}
+
+
+/* Body cells */
+
+.neuron-polarity-table tbody td {
+    padding: 10px;
+
+    color: #263238;
+
+    line-height: 1.45;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5ebf2;
+}
+
+
+/* First column */
+
+.neuron-polarity-table th:first-child,
+.neuron-polarity-table td:first-child {
+    width: 34%;
+}
+
+
+/* Last row */
+
+.neuron-polarity-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* Slight row separation */
+
+.neuron-polarity-table tbody tr:nth-child(even) td {
+    background: #fafcff;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE REFINEMENT
+   --------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+    .neuron-polarity-diagram {
+        margin-top: 24px;
+        padding: 15px 11px 16px;
+
+        border-radius: 16px;
+    }
+
+    .neuron-polarity-title {
+        margin-bottom: 13px;
+    }
+
+    .neuron-polarity-image-wrap {
+        margin-bottom: 16px;
+    }
+
+    .neuron-polarity-table {
+        font-size: 13px;
+    }
+
+    .neuron-polarity-table thead th,
+    .neuron-polarity-table tbody td {
+        padding: 9px 8px;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   VERY SMALL SCREENS
+   --------------------------------------------------------- */
+
+@media (max-width: 360px) {
+
+    .neuron-polarity-diagram {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .neuron-polarity-table {
+        font-size: 12px;
+    }
+
+    .neuron-polarity-table th:first-child,
+    .neuron-polarity-table td:first-child {
+        width: 32%;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 06 — GLIAL CELL OVERVIEW
+   CNS vs PNS TABLE
+   ========================================================= */
+
+.glial-overview-diagram {
+
+    width: 100%;
+    max-width: 760px;
+
+    margin: 28px auto 0;
+    padding: 18px 16px 20px;
+
+    box-sizing: border-box;
+
+    border: 1.5px dashed #8db8ef;
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   TITLE
+   --------------------------------------------------------- */
+
+.glial-overview-title {
+
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+
+.glial-overview-title h3 {
+
+    margin: 0;
+
+    color: #145dcc;
+
+    font-size: clamp(20px, 5vw, 28px);
+    line-height: 1.25;
+
+    font-weight: 700;
+}
+
+
+.glial-overview-title p {
+
+    margin: 8px 0 0;
+
+    color: #687789;
+
+    font-size: clamp(14px, 3.8vw, 17px);
+    line-height: 1.5;
+
+    font-style: italic;
+}
+
+
+/* ---------------------------------------------------------
+   TABLE WRAPPER
+   --------------------------------------------------------- */
+
+.glial-overview-table-wrap {
+
+    width: 100%;
+
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/* ---------------------------------------------------------
+   MAIN TABLE
+   --------------------------------------------------------- */
+
+.glial-overview-table {
+
+    width: 100%;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    table-layout: fixed;
+
+    font-size: 14px;
+
+    border: 1px solid #d9e4f2;
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   HEADER
+   --------------------------------------------------------- */
+
+.glial-overview-table thead th {
+
+    padding: 12px 11px;
+
+    background: #eef5ff;
+
+    color: #145dcc;
+
+    font-weight: 700;
+
+    text-align: left;
+
+    line-height: 1.35;
+
+    border-bottom: 1px solid #d9e4f2;
+}
+
+
+/* ---------------------------------------------------------
+   BODY CELLS
+   --------------------------------------------------------- */
+
+.glial-overview-table tbody td {
+
+    padding: 13px 11px;
+
+    color: #263238;
+
+    background: #ffffff;
+
+    line-height: 1.55;
+
+    vertical-align: top;
+
+    border-bottom: 1px solid #e5ebf2;
+}
+
+
+/* ---------------------------------------------------------
+   FIRST COLUMN
+   --------------------------------------------------------- */
+
+.glial-overview-table th:first-child,
+.glial-overview-table td:first-child {
+
+    width: 28%;
+
+}
+
+
+/* ---------------------------------------------------------
+   ALTERNATING ROW
+   --------------------------------------------------------- */
+
+.glial-overview-table tbody tr:nth-child(even) td {
+
+    background: #fafcff;
+
+}
+
+
+/* ---------------------------------------------------------
+   LAST ROW
+   --------------------------------------------------------- */
+
+.glial-overview-table tbody tr:last-child td {
+
+    border-bottom: none;
+
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+    .glial-overview-diagram {
+
+        margin-top: 24px;
+
+        padding: 15px 11px 16px;
+
+        border-radius: 16px;
+
+    }
+
+
+    .glial-overview-title {
+
+        margin-bottom: 14px;
+
+    }
+
+
+    .glial-overview-table {
+
+        font-size: 13px;
+
+    }
+
+
+    .glial-overview-table thead th,
+    .glial-overview-table tbody td {
+
+        padding: 10px 8px;
+
+    }
+
+
+    .glial-overview-table th:first-child,
+    .glial-overview-table td:first-child {
+
+        width: 30%;
+
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   VERY SMALL SCREENS
+   --------------------------------------------------------- */
+
+@media (max-width: 360px) {
+
+    .glial-overview-diagram {
+
+        padding-left: 9px;
+        padding-right: 9px;
+
+    }
+
+
+    .glial-overview-table {
+
+        font-size: 12px;
+
+    }
+
+
+    .glial-overview-table th:first-child,
+    .glial-overview-table td:first-child {
+
+        width: 32%;
+
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 07 — CNS GLIAL CELLS
+   PNG + FUNCTION TABLE
+   ========================================================= */
+
+.cns-glia-diagram {
+
+    width: 100%;
+    max-width: 760px;
+
+    margin: 28px auto 0;
+    padding: 18px 16px 20px;
+
+    box-sizing: border-box;
+
+    border: 1.5px dashed #8db8ef;
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   TITLE
+   --------------------------------------------------------- */
+
+.cns-glia-diagram-title {
+
+    text-align: center;
+
+    margin-bottom: 18px;
+}
+
+
+.cns-glia-diagram-title h3 {
+
+    margin: 0;
+
+    color: #145dcc;
+
+    font-size: clamp(20px, 5vw, 28px);
+
+    line-height: 1.25;
+
+    font-weight: 700;
+}
+
+
+.cns-glia-diagram-title p {
+
+    margin: 8px auto 0;
+
+    max-width: 620px;
+
+    color: #687789;
+
+    font-size: clamp(14px, 3.8vw, 17px);
+
+    line-height: 1.5;
+
+    font-style: italic;
+}
+
+
+/* ---------------------------------------------------------
+   PNG IMAGE
+   --------------------------------------------------------- */
+
+.cns-glia-image-wrap {
+
+    width: 100%;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+}
+
+
+.cns-glia-image {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    border-radius: 10px;
+
+    object-fit: contain;
+}
+
+
+/* ---------------------------------------------------------
+   FUNCTION TABLE WRAPPER
+   --------------------------------------------------------- */
+
+.cns-glia-function-table-wrap {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/* ---------------------------------------------------------
+   FUNCTION TABLE
+   --------------------------------------------------------- */
+
+.cns-glia-function-table {
+
+    width: 100%;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    table-layout: fixed;
+
+    font-size: 14px;
+
+    border: 1px solid #d9e4f2;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   TABLE HEADER
+   --------------------------------------------------------- */
+
+.cns-glia-function-table thead th {
+
+    padding: 11px 10px;
+
+    background: #eef5ff;
+
+    color: #145dcc;
+
+    font-weight: 700;
+
+    text-align: left;
+
+    line-height: 1.35;
+
+    border-bottom: 1px solid #d9e4f2;
+}
+
+
+/* ---------------------------------------------------------
+   TABLE BODY
+   --------------------------------------------------------- */
+
+.cns-glia-function-table tbody td {
+
+    padding: 10px;
+
+    color: #263238;
+
+    background: #ffffff;
+
+    line-height: 1.45;
+
+    vertical-align: top;
+
+    border-bottom: 1px solid #e5ebf2;
+}
+
+
+/* ---------------------------------------------------------
+   FIRST COLUMN
+   --------------------------------------------------------- */
+
+.cns-glia-function-table th:first-child,
+.cns-glia-function-table td:first-child {
+
+    width: 34%;
+}
+
+
+/* ---------------------------------------------------------
+   ALTERNATING ROW
+   --------------------------------------------------------- */
+
+.cns-glia-function-table tbody tr:nth-child(even) td {
+
+    background: #fafcff;
+}
+
+
+/* ---------------------------------------------------------
+   LAST ROW
+   --------------------------------------------------------- */
+
+.cns-glia-function-table tbody tr:last-child td {
+
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   MOBILE REFINEMENT
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .cns-glia-diagram {
+
+        margin-top: 24px;
+
+        padding: 15px 11px 16px;
+
+        border-radius: 16px;
+    }
+
+
+    .cns-glia-diagram-title {
+
+        margin-bottom: 14px;
+    }
+
+
+    .cns-glia-image-wrap {
+
+        margin-bottom: 15px;
+
+        border-radius: 10px;
+    }
+
+
+    .cns-glia-image {
+
+        width: 100%;
+
+        height: auto;
+    }
+
+
+    .cns-glia-function-table {
+
+        font-size: 13px;
+
+        table-layout: fixed;
+    }
+
+
+    .cns-glia-function-table thead th,
+    .cns-glia-function-table tbody td {
+
+        padding: 9px 8px;
+
+        vertical-align: top;
+    }
+
+
+    /* Give the cell-name column enough room
+       for long names such as Oligodendrocytes */
+
+    .cns-glia-function-table th:first-child,
+    .cns-glia-function-table td:first-child {
+
+        width: 38%;
+
+        overflow-wrap: break-word;
+
+        word-break: normal;
+    }
+
+
+    /* Prevent long text from visually crossing
+       into the second column */
+
+    .cns-glia-function-table td {
+
+        overflow-wrap: break-word;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .cns-glia-diagram {
+
+        padding-left: 9px;
+
+        padding-right: 9px;
+    }
+
+
+    .cns-glia-function-table {
+
+        font-size: 12px;
+
+        table-layout: fixed;
+    }
+
+
+    .cns-glia-function-table th:first-child,
+    .cns-glia-function-table td:first-child {
+
+        width: 38%;
+
+        overflow-wrap: break-word;
+
+        word-break: normal;
+    }
+
+
+    .cns-glia-function-table td {
+
+        overflow-wrap: break-word;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 08
+   PNS GLIAL CELLS
+   PNG + SMALL COMPARISON TABLE
+   ========================================================= */
+
+.pns-glia-diagram {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 26px 0 8px;
+
+    padding: 18px 14px 16px;
+
+    border: 2px dashed #8fb9ec;
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   HEADER
+   --------------------------------------------------------- */
+
+.pns-glia-diagram-header h3 {
+    margin: 0;
+
+    color: #1764c0;
+
+    font-size: 1.28rem;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+.pns-glia-diagram-header p {
+    margin: 8px auto 16px;
+
+    max-width: 620px;
+
+    color: #718096;
+
+    font-size: 0.95rem;
+    font-style: italic;
+
+    line-height: 1.55;
+}
+
+
+/* ---------------------------------------------------------
+   PNG
+   --------------------------------------------------------- */
+
+.pns-glia-image-wrap {
+    width: 100%;
+
+    margin: 0 auto 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pns-glia-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    border: 1px solid #d7e1ed;
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    object-fit: contain;
+}
+
+
+/* ---------------------------------------------------------
+   COMPARISON TABLE
+   --------------------------------------------------------- */
+
+.pns-glia-table-wrap {
+    width: 100%;
+
+    overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+.pns-glia-table {
+    width: 100%;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    overflow: hidden;
+
+    border: 1px solid #d6e1ef;
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    text-align: left;
+
+    font-size: 0.92rem;
+
+    box-shadow: 0 2px 8px rgba(40, 80, 120, 0.05);
+}
+
+.pns-glia-table th {
+    padding: 12px 13px;
+
+    background: #edf5ff;
+
+    color: #1764c0;
+
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    border-bottom: 1px solid #d6e1ef;
+}
+
+.pns-glia-table td {
+    padding: 13px;
+
+    color: #333;
+
+    line-height: 1.55;
+
+    vertical-align: top;
+
+    border-bottom: 1px solid #e3e9f1;
+}
+
+.pns-glia-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.pns-glia-table td:first-child {
+    width: 32%;
+
+    color: #222;
+
+    font-weight: 600;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE REFINEMENT
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .pns-glia-diagram {
+        margin-top: 22px;
+
+        padding: 16px 10px 14px;
+
+        border-radius: 17px;
+    }
+
+    .pns-glia-diagram-header h3 {
+        font-size: 1.15rem;
+    }
+
+    .pns-glia-diagram-header p {
+        margin-top: 7px;
+        margin-bottom: 13px;
+
+        font-size: 0.88rem;
+    }
+
+    .pns-glia-image {
+        border-radius: 10px;
+    }
+
+    .pns-glia-table {
+        font-size: 0.84rem;
+    }
+
+    .pns-glia-table th,
+    .pns-glia-table td {
+        padding: 10px 9px;
+    }
+
+    .pns-glia-table td:first-child {
+        width: 34%;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 09
+   MYELIN COMPARISON
+   PNG + COMPARISON TABLE
+   ========================================================= */
+
+.myelin-comparison-diagram {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 26px 0 8px;
+    padding: 18px 14px 16px;
+
+    border: 2px dashed #8fb9ec;
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.myelin-comparison-title h3 {
+    margin: 0;
+
+    color: #1764c0;
+
+    font-size: 1.28rem;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+.myelin-comparison-title p {
+    margin: 7px auto 16px;
+
+    color: #718096;
+
+    font-size: 0.95rem;
+    font-style: italic;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   PNG IMAGE
+   ========================================================= */
+
+.myelin-comparison-image-wrap {
+    width: 100%;
+
+    margin: 0 auto 17px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myelin-comparison-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    border: 1px solid #d7e1ed;
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   COMPARISON TABLE
+   ========================================================= */
+
+.myelin-comparison-table-wrap {
+    width: 100%;
+    max-width: 100%;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+.myelin-comparison-table {
+    width: 100%;
+    max-width: 100%;
+
+    table-layout: fixed;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d6e1ef;
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    text-align: left;
+
+    font-size: 0.88rem;
+
+    box-shadow:
+        0 2px 8px rgba(40, 80, 120, 0.05);
+}
+
+
+/* ---------------------------------------------------------
+   TABLE HEADER
+   --------------------------------------------------------- */
+
+.myelin-comparison-table th {
+    padding: 11px 10px;
+
+    background: #edf5ff;
+
+    color: #1764c0;
+
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    text-align: center;
+
+    border-bottom: 1px solid #d6e1ef;
+}
+
+.myelin-comparison-table th span {
+    font-weight: 600;
+    font-size: 0.82rem;
+}
+
+
+/* ---------------------------------------------------------
+   TABLE CELLS
+   --------------------------------------------------------- */
+
+.myelin-comparison-table td {
+    padding: 11px 10px;
+
+    color: #333;
+
+    line-height: 1.5;
+
+    vertical-align: top;
+
+    border-bottom: 1px solid #e3e9f1;
+}
+
+.myelin-comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ---------------------------------------------------------
+   FIRST COLUMN
+   --------------------------------------------------------- */
+
+.myelin-comparison-table td:first-child {
+    width: 27%;
+
+    color: #222;
+
+    font-weight: 600;
+}
+
+
+/* ---------------------------------------------------------
+   CNS COLUMN
+   --------------------------------------------------------- */
+
+.myelin-comparison-table th:nth-child(2) {
+    color: #245ca8;
+}
+
+
+/* ---------------------------------------------------------
+   PNS COLUMN
+   --------------------------------------------------------- */
+
+.myelin-comparison-table th:nth-child(3) {
+    color: #27753a;
+}
+
+
+/* =========================================================
+   KEY IDEA NOTE
+   ========================================================= */
+
+.myelin-comparison-note {
+    margin-top: 14px;
+
+    padding: 12px 13px;
+
+    border: 1px solid #f0d37a;
+    border-radius: 12px;
+
+    background: #fff9e8;
+
+    color: #333;
+
+    font-size: 0.88rem;
+
+    line-height: 1.5;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   MOBILE REFINEMENT
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .myelin-comparison-table {
+    width: 100%;
+    table-layout: fixed;
+
+    font-size: 0.78rem;
+}
+
+.myelin-comparison-table th,
+.myelin-comparison-table td {
+    padding: 9px 7px;
+
+    overflow-wrap: anywhere;
+    word-break: normal;
+
+    line-height: 1.45;
+}
+
+.myelin-comparison-table th:first-child,
+.myelin-comparison-table td:first-child {
+    width: 25%;
+}
+
+.myelin-comparison-table th:nth-child(2),
+.myelin-comparison-table td:nth-child(2),
+.myelin-comparison-table th:nth-child(3),
+.myelin-comparison-table td:nth-child(3) {
+    width: 37.5%;
+}
+
+    .myelin-comparison-diagram {
+        margin-top: 22px;
+
+        padding: 16px 10px 14px;
+
+        border-radius: 17px;
+    }
+
+
+    .myelin-comparison-title h3 {
+        font-size: 1.15rem;
+    }
+
+
+    .myelin-comparison-title p {
+        margin-top: 6px;
+        margin-bottom: 13px;
+
+        font-size: 0.88rem;
+    }
+
+
+    .myelin-comparison-image {
+        border-radius: 10px;
+    }
+
+
+    .myelin-comparison-table {
+        font-size: 0.79rem;
+    }
+
+
+    .myelin-comparison-table th,
+    .myelin-comparison-table td {
+        padding: 9px 7px;
+    }
+
+
+    .myelin-comparison-table th span {
+        font-size: 0.72rem;
+    }
+
+
+    .myelin-comparison-table td:first-child {
+        width: 28%;
+    }
+
+
+    .myelin-comparison-note {
+        padding: 10px 11px;
+
+        font-size: 0.8rem;
+    }
+
+}
+
+/* =========================================================
+   MOBILE-SAFE TABLE COLUMNS
+   ========================================================= */
+
+.myelin-comparison-table th,
+.myelin-comparison-table td {
+    min-width: 0;
+
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+
+/* Feature column */
+
+.myelin-comparison-table th:first-child,
+.myelin-comparison-table td:first-child {
+    width: 25%;
+}
+
+
+/* CNS column */
+
+.myelin-comparison-table th:nth-child(2),
+.myelin-comparison-table td:nth-child(2) {
+    width: 37.5%;
+}
+
+
+/* PNS column */
+
+.myelin-comparison-table th:nth-child(3),
+.myelin-comparison-table td:nth-child(3) {
+    width: 37.5%;
+}
+

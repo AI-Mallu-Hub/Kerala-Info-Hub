@@ -1,0 +1,1371 @@
+/* =========================================================
+   SKELETAL SYSTEM
+   LESSON 3
+   SKELETAL-SPECIFIC STYLES
+   ========================================================= */
+
+
+/* =========================================================
+   MAIN INTRO
+   ========================================================= */
+
+.skeletal-intro {
+    max-width: 760px;
+
+    margin: 0 auto 24px;
+
+    text-align: center;
+
+    color: #4b5563;
+
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SIMPLE EXPLANATION BOX
+   ========================================================= */
+
+.skeletal-simple-note {
+
+    margin-top: 20px;
+
+    padding: 16px 18px;
+
+    background: #f8fbff;
+
+    border-left: 5px solid #2563eb;
+
+    border-radius: 12px;
+}
+
+.skeletal-simple-note strong {
+    color: #1d4ed8;
+}
+
+.skeletal-simple-note p {
+
+    margin-top: 8px;
+
+    color: #374151;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   FUNCTION GRID
+   ========================================================= */
+
+.skeletal-function-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+
+    margin: 20px 0 24px;
+}
+
+
+.skeletal-function-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+    padding: 16px;
+
+    background: #f8fbff;
+
+    border: 1px solid #dbeafe;
+
+    border-radius: 14px;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+
+.skeletal-function-item:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 14px rgba(37, 99, 235, .10);
+}
+
+
+.skeletal-function-icon {
+
+    flex: 0 0 auto;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eaf3ff;
+
+    font-size: 20px;
+}
+
+
+.skeletal-function-item h3 {
+
+    margin: 0 0 5px;
+
+    color: #1e40af;
+
+    font-size: 16px;
+}
+
+
+.skeletal-function-item p {
+
+    margin: 0;
+
+    color: #4b5563;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   SKELETAL TABLE
+   ========================================================= */
+
+.skeletal-table-wrap {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch;
+
+    margin-top: 18px;
+}
+
+
+.skeletal-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, .06);
+
+    font-size: .92rem;
+}
+
+
+.skeletal-table th {
+
+    padding: 13px 12px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    text-align: left;
+
+    font-weight: 700;
+}
+
+
+.skeletal-table td {
+
+    padding: 12px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    vertical-align: top;
+
+    line-height: 1.5;
+}
+
+
+.skeletal-table tr:last-child td {
+
+    border-bottom: none;
+}
+
+
+.skeletal-table tbody tr:nth-child(even) {
+
+    background: #f8fafc;
+}
+
+
+.skeletal-table strong {
+
+    color: #1d4ed8;
+}
+
+
+/* =========================================================
+   SKELETAL DIAGRAM CONTAINER
+   ========================================================= */
+
+.skeletal-diagram {
+
+    width: 100%;
+
+    margin: 24px 0 8px;
+
+    padding: 18px 14px 15px;
+
+    background: #ffffff;
+
+    border: 2px dashed #8db7ff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 6px 16px rgba(0, 0, 0, .08);
+
+    text-align: center;
+}
+
+
+.skeletal-diagram h3 {
+
+    margin: 0 0 15px;
+
+    color: #2563eb;
+
+    font-size: 1.2rem;
+}
+
+
+.skeletal-overview-image {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 760px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    border-radius: 12px;
+}
+
+
+.skeletal-comparison-image {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 760px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    border-radius: 12px;
+}
+
+
+.diagram-caption {
+
+    margin: 12px 0 0;
+
+    color: #64748b;
+
+    font-size: .88rem;
+
+    font-style: italic;
+}
+
+
+/* =========================================================
+   AXIAL / APPENDICULAR DIVISION CARDS
+   ========================================================= */
+
+.skeletal-division-card {
+
+    padding: 20px 22px;
+}
+
+
+.skeletal-division-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 14px;
+}
+
+
+.skeletal-division-icon {
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eef5ff;
+
+    font-size: 22px;
+}
+
+
+.skeletal-division-header h2 {
+
+    margin: 0 0 3px;
+
+    font-size: 24px;
+
+    color: #1f2937;
+}
+
+
+.skeletal-division-header p {
+
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: .9rem;
+}
+
+
+.skeletal-division-card ul {
+
+    margin-top: 8px;
+}
+
+
+/* =========================================================
+   AXIAL VS APPENDICULAR TABLE
+   ========================================================= */
+
+.skeletal-comparison-table {
+
+    table-layout: fixed;
+}
+
+
+.skeletal-comparison-table th:first-child,
+.skeletal-comparison-table td:first-child {
+
+    width: 24%;
+}
+
+
+.skeletal-comparison-table th:nth-child(2),
+.skeletal-comparison-table td:nth-child(2),
+
+.skeletal-comparison-table th:nth-child(3),
+.skeletal-comparison-table td:nth-child(3) {
+
+    width: 38%;
+}
+
+
+/* =========================================================
+   MEMORY BOX
+   ========================================================= */
+
+.skeletal-memory-box {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 8px 14px;
+
+    margin-top: 18px;
+
+    padding: 14px 16px;
+
+    background: #fff9e8;
+
+    border: 1px solid #f0d37a;
+
+    border-radius: 13px;
+
+    color: #374151;
+
+    line-height: 1.5;
+}
+
+
+.skeletal-memory-box strong {
+
+    color: #92400e;
+}
+
+
+.skeletal-memory-box span {
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TABLE OF CONTENTS
+   ========================================================= */
+
+.skeletal-toc-card {
+
+    margin-top: 26px;
+}
+
+
+.skeletal-toc-card > p {
+
+    margin-bottom: 18px;
+
+    color: #64748b;
+}
+
+
+.skeletal-toc-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.skeletal-toc-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 14px 15px;
+
+    background: #f8fbff;
+
+    border: 1px solid #dbeafe;
+
+    border-radius: 14px;
+
+    color: inherit;
+
+    text-decoration: none;
+
+    transition:
+        transform .2s ease,
+        background .2s ease,
+        box-shadow .2s ease;
+}
+
+
+.skeletal-toc-item:hover {
+
+    transform: translateX(3px);
+
+    background: #f0f7ff;
+
+    box-shadow:
+        0 4px 12px rgba(37, 99, 235, .10);
+}
+
+
+.skeletal-toc-number {
+
+    flex: 0 0 auto;
+
+    width: 46px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #e7f0ff;
+
+    border-radius: 10px;
+
+    color: #1d4ed8;
+
+    font-weight: 800;
+
+    font-size: .9rem;
+}
+
+
+.skeletal-toc-content {
+
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.skeletal-toc-content strong {
+
+    color: #1f2937;
+
+    font-size: .97rem;
+}
+
+
+.skeletal-toc-content small {
+
+    color: #64748b;
+
+    font-size: .82rem;
+
+    line-height: 1.4;
+}
+
+
+.skeletal-toc-arrow {
+
+    flex: 0 0 auto;
+
+    color: #2563eb;
+
+    font-size: 21px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+
+    .skeletal-intro {
+
+        font-size: .94rem;
+
+        line-height: 1.6;
+
+        padding: 0 5px;
+    }
+
+
+    .skeletal-function-list {
+
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+
+    .skeletal-function-item {
+
+        padding: 13px;
+    }
+
+
+    .skeletal-function-icon {
+
+        width: 34px;
+        height: 34px;
+
+        font-size: 18px;
+    }
+
+
+    .skeletal-function-item h3 {
+
+        font-size: 15px;
+    }
+
+
+    .skeletal-function-item p {
+
+        font-size: 13px;
+    }
+
+
+    .skeletal-table {
+
+        font-size: .80rem;
+
+        table-layout: fixed;
+    }
+
+
+    .skeletal-table th,
+    .skeletal-table td {
+
+        padding: 9px 7px;
+
+        overflow-wrap: break-word;
+
+        word-break: normal;
+    }
+
+
+    .skeletal-comparison-table th:first-child,
+    .skeletal-comparison-table td:first-child {
+
+        width: 25%;
+    }
+
+
+    .skeletal-comparison-table th:nth-child(2),
+    .skeletal-comparison-table td:nth-child(2),
+
+    .skeletal-comparison-table th:nth-child(3),
+    .skeletal-comparison-table td:nth-child(3) {
+
+        width: 37.5%;
+    }
+
+
+    .skeletal-diagram {
+
+        margin-top: 20px;
+
+        padding: 14px 9px 12px;
+
+        border-radius: 16px;
+    }
+
+
+    .skeletal-diagram h3 {
+
+        font-size: 1.05rem;
+
+        margin-bottom: 12px;
+    }
+
+
+    .skeletal-overview-image,
+    .skeletal-comparison-image {
+
+        width: 100%;
+
+        border-radius: 10px;
+    }
+
+
+    .diagram-caption {
+
+        font-size: .78rem;
+    }
+
+
+    .skeletal-division-card {
+
+        padding: 16px;
+    }
+
+
+    .skeletal-division-header {
+
+        gap: 10px;
+    }
+
+
+    .skeletal-division-icon {
+
+        width: 38px;
+        height: 38px;
+
+        font-size: 19px;
+    }
+
+
+    .skeletal-division-header h2 {
+
+        font-size: 20px;
+    }
+
+
+    .skeletal-division-header p {
+
+        font-size: .82rem;
+    }
+
+
+    .skeletal-memory-box {
+
+        font-size: .82rem;
+
+        gap: 6px 10px;
+    }
+
+
+    .skeletal-toc-item {
+
+        padding: 12px;
+
+        gap: 10px;
+    }
+
+
+    .skeletal-toc-number {
+
+        width: 42px;
+        height: 35px;
+
+        font-size: .82rem;
+    }
+
+
+    .skeletal-toc-content strong {
+
+        font-size: .88rem;
+    }
+
+
+    .skeletal-toc-content small {
+
+        font-size: .74rem;
+    }
+
+
+    .skeletal-toc-arrow {
+
+        font-size: 18px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+    .skeletal-function-item {
+
+        gap: 9px;
+
+        padding: 11px;
+    }
+
+
+    .skeletal-table {
+
+        font-size: .76rem;
+    }
+
+
+    .skeletal-table th,
+    .skeletal-table td {
+
+        padding: 8px 6px;
+    }
+
+
+    .skeletal-toc-item {
+
+        gap: 8px;
+
+        padding: 10px;
+    }
+
+
+    .skeletal-toc-number {
+
+        width: 39px;
+
+        font-size: .78rem;
+    }
+
+}
+
+/* =========================================
+   Skeletal System - Diagram 01
+   ========================================= */
+
+.skeletal-diagram-card {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 28px 0 8px;
+    padding: 24px 18px 20px;
+    background: #ffffff;
+    border: 3px dashed #8db5ea;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.skeletal-diagram-title {
+    margin-bottom: 18px;
+    color: #2864c7;
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.skeletal-diagram-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.skeletal-diagram-image {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.skeletal-diagram-caption {
+    margin: 18px 8px 0;
+    color: #68758a;
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .skeletal-diagram-card {
+        margin-top: 24px;
+        padding: 20px 12px 18px;
+        border-radius: 20px;
+    }
+
+    .skeletal-diagram-title {
+        font-size: 1.25rem;
+        margin-bottom: 14px;
+    }
+
+    .skeletal-diagram-image {
+        width: 100%;
+    }
+
+    .skeletal-diagram-caption {
+        margin-top: 14px;
+        font-size: 0.95rem;
+    }
+}
+
+/* =========================================
+   DIAGRAM 02
+   AXIAL VS APPENDICULAR SKELETON
+   ========================================= */
+
+.skeletal-diagram-box {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 28px auto 34px;
+    padding: 24px 18px 22px;
+
+    background: #ffffff;
+    border: 4px dashed #91b9e9;
+    border-radius: 28px;
+
+    text-align: center;
+    overflow: hidden;
+}
+
+.diagram-title {
+    margin-bottom: 18px;
+
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.4;
+
+    color: #2864c7;
+}
+
+.skeletal-diagram {
+    display: block;
+
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+
+    margin: 0 auto;
+
+    border-radius: 10px;
+}
+
+.diagram-caption {
+    margin: 18px 8px 0;
+
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.6;
+
+    color: #718096;
+}
+
+
+/* =========================================
+   AXIAL VS APPENDICULAR COMPARISON TABLE
+   ========================================= */
+
+.skeletal-comparison-table {
+    width: 100%;
+    margin: 28px 0 24px;
+
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    border-radius: 18px;
+}
+
+.skeletal-comparison-table table {
+    width: 100%;
+    min-width: 620px;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    background: #ffffff;
+
+    font-size: 1rem;
+    line-height: 1.55;
+}
+
+.skeletal-comparison-table th {
+    padding: 16px 14px;
+
+    background: #2864df;
+    color: #ffffff;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+
+    text-align: left;
+}
+
+.skeletal-comparison-table th:first-child {
+    border-top-left-radius: 14px;
+}
+
+.skeletal-comparison-table th:last-child {
+    border-top-right-radius: 14px;
+}
+
+.skeletal-comparison-table td {
+    padding: 15px 14px;
+
+    color: #303846;
+
+    border-bottom: 1px solid #e1e7ef;
+
+    vertical-align: top;
+}
+
+.skeletal-comparison-table tbody tr:nth-child(even) td {
+    background: #f7f9fc;
+}
+
+.skeletal-comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.skeletal-comparison-table td:first-child {
+    font-weight: 600;
+}
+
+.skeletal-comparison-table td strong {
+    color: #2864c7;
+    font-size: 1.1rem;
+}
+
+
+/* =========================================
+   REMEMBER BOX
+   ========================================= */
+
+.skeletal-remember-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+
+    margin: 24px 0 4px;
+    padding: 16px 18px;
+
+    background: #fffbea;
+    border: 1px solid #ead58a;
+    border-radius: 18px;
+
+    color: #303846;
+
+    font-size: 1rem;
+    line-height: 1.6;
+
+    text-align: center;
+}
+
+.skeletal-remember-box strong {
+    color: #a65316;
+}
+
+.skeletal-remember-box span {
+    font-weight: 600;
+}
+
+.remember-divider {
+    color: #b7a85e;
+    font-weight: 400 !important;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .skeletal-diagram-box {
+        margin-top: 22px;
+        padding: 18px 10px 18px;
+
+        border-width: 3px;
+        border-radius: 24px;
+    }
+
+    .diagram-title {
+        margin-bottom: 14px;
+
+        font-size: 1.2rem;
+    }
+
+    .skeletal-diagram {
+        width: 100%;
+    }
+
+    .diagram-caption {
+        margin-top: 14px;
+
+        font-size: 0.95rem;
+    }
+
+    .skeletal-comparison-table {
+        margin-top: 22px;
+        border-radius: 14px;
+    }
+
+    .skeletal-comparison-table table {
+        min-width: 560px;
+        font-size: 0.9rem;
+    }
+
+    .skeletal-comparison-table th {
+        padding: 12px 10px;
+        font-size: 0.92rem;
+    }
+
+    .skeletal-comparison-table td {
+        padding: 12px 10px;
+    }
+
+    .skeletal-remember-box {
+        padding: 14px 12px;
+
+        font-size: 0.92rem;
+    }
+
+    .remember-divider {
+        display: none;
+    }
+}
+
+/* =========================================
+   DIAGRAM 02
+   AXIAL VS APPENDICULAR SKELETON
+   ========================================= */
+
+.skeletal-diagram-box {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 28px auto 34px;
+    padding: 24px 18px 22px;
+
+    background: #ffffff;
+    border: 4px dashed #91b9e9;
+    border-radius: 28px;
+
+    text-align: center;
+    overflow: hidden;
+}
+
+.diagram-title {
+    margin-bottom: 18px;
+
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.4;
+
+    color: #2864c7;
+}
+
+.skeletal-diagram {
+    display: block;
+
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+
+    margin: 0 auto;
+
+    border-radius: 10px;
+}
+
+.diagram-caption {
+    margin: 18px 8px 0;
+
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.6;
+
+    color: #718096;
+}
+
+
+/* =========================================
+   AXIAL VS APPENDICULAR COMPARISON TABLE
+   ========================================= */
+
+.skeletal-comparison-table {
+    width: 100%;
+    margin: 28px 0 24px;
+
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    border-radius: 18px;
+}
+
+.skeletal-comparison-table table {
+    width: 100%;
+    min-width: 620px;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    background: #ffffff;
+
+    font-size: 1rem;
+    line-height: 1.55;
+}
+
+.skeletal-comparison-table th {
+    padding: 16px 14px;
+
+    background: #2864df;
+    color: #ffffff;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+
+    text-align: left;
+}
+
+.skeletal-comparison-table th:first-child {
+    border-top-left-radius: 14px;
+}
+
+.skeletal-comparison-table th:last-child {
+    border-top-right-radius: 14px;
+}
+
+.skeletal-comparison-table td {
+    padding: 15px 14px;
+
+    color: #303846;
+
+    border-bottom: 1px solid #e1e7ef;
+
+    vertical-align: top;
+}
+
+.skeletal-comparison-table tbody tr:nth-child(even) td {
+    background: #f7f9fc;
+}
+
+.skeletal-comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.skeletal-comparison-table td:first-child {
+    font-weight: 600;
+}
+
+.skeletal-comparison-table td strong {
+    color: #2864c7;
+    font-size: 1.1rem;
+}
+
+
+/* =========================================
+   REMEMBER BOX
+   ========================================= */
+
+.skeletal-remember-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+
+    margin: 24px 0 4px;
+    padding: 16px 18px;
+
+    background: #fffbea;
+    border: 1px solid #ead58a;
+    border-radius: 18px;
+
+    color: #303846;
+
+    font-size: 1rem;
+    line-height: 1.6;
+
+    text-align: center;
+}
+
+.skeletal-remember-box strong {
+    color: #a65316;
+}
+
+.skeletal-remember-box span {
+    font-weight: 600;
+}
+
+.remember-divider {
+    color: #b7a85e;
+    font-weight: 400 !important;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .skeletal-diagram-box {
+        margin-top: 22px;
+        padding: 18px 10px 18px;
+
+        border-width: 3px;
+        border-radius: 24px;
+    }
+
+    .diagram-title {
+        margin-bottom: 14px;
+
+        font-size: 1.2rem;
+    }
+
+    .skeletal-diagram {
+        width: 100%;
+    }
+
+    .diagram-caption {
+        margin-top: 14px;
+
+        font-size: 0.95rem;
+    }
+
+    .skeletal-comparison-table {
+        margin-top: 22px;
+        border-radius: 14px;
+    }
+
+    .skeletal-comparison-table table {
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+    font-size: 0.82rem;
+    line-height: 1.35;
+}
+
+.skeletal-comparison-table th {
+    padding: 10px 7px;
+    font-size: 0.82rem;
+    line-height: 1.3;
+}
+
+.skeletal-comparison-table td {
+    padding: 10px 7px;
+    font-size: 0.82rem;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+.skeletal-comparison-table th:first-child,
+.skeletal-comparison-table td:first-child {
+    width: 23%;
+}
+
+.skeletal-comparison-table th:nth-child(2),
+.skeletal-comparison-table td:nth-child(2) {
+    width: 32%;
+}
+
+.skeletal-comparison-table th:nth-child(3),
+.skeletal-comparison-table td:nth-child(3) {
+    width: 45%;
+}
+
+.skeletal-comparison-table td strong {
+    font-size: 1rem;
+}
+
+    .skeletal-remember-box {
+        padding: 14px 12px;
+
+        font-size: 0.92rem;
+    }
+
+    .remember-divider {
+        display: none;
+    }
+}
