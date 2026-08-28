@@ -1,0 +1,1083 @@
+/* =========================================================
+   LESSON 3.4
+   CLASSIFICATION OF BONES
+   ========================================================= */
+
+
+/* =========================================================
+   SECTION BASE
+   ========================================================= */
+
+.s34-section {
+    margin-top: 28px;
+}
+
+
+/* =========================================================
+   DIAGRAM CARD
+   ========================================================= */
+
+.s34-diagram-card {
+    margin: 28px 0 8px;
+    padding: 16px 16px 20px;
+
+    border: 2px solid #e2e8f0;
+    border-radius: 22px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* Diagram */
+
+.s34-diagram {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    border-radius: 12px;
+}
+
+
+/* Caption */
+
+.s34-diagram-card figcaption {
+    margin-top: 18px;
+
+    padding: 0 8px;
+
+    font-size: 18px;
+    line-height: 1.55;
+
+    font-style: italic;
+
+    color: #64748b;
+}
+
+
+/* =========================================================
+   INFORMATION CARD
+   ========================================================= */
+
+.s34-info-card {
+    margin-top: 22px;
+
+    padding: 18px 20px;
+
+    border-radius: 18px;
+
+    background: #f7faff;
+
+    border: 1px solid #dbe7f5;
+
+    box-sizing: border-box;
+}
+
+
+.s34-info-title {
+    margin-bottom: 8px;
+
+    font-size: 21px;
+    font-weight: 800;
+
+    color: #2563a8;
+}
+
+
+.s34-info-card p {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.55;
+
+    color: #374151;
+}
+
+
+/* =========================================================
+   KEY POINT
+   ========================================================= */
+
+.s34-key-point {
+    margin-top: 22px;
+
+    padding: 18px 20px;
+
+    border-left: 6px solid #70a9dc;
+
+    border-radius: 0 18px 18px 0;
+
+    background: #eef6ff;
+
+    box-sizing: border-box;
+
+    font-size: 18px;
+    line-height: 1.55;
+
+    color: #334155;
+}
+
+
+.s34-key-point strong {
+    color: #2563a8;
+}
+
+
+/* =========================================================
+   EXAMPLE GRID
+   ========================================================= */
+
+.s34-example-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+
+    margin-top: 22px;
+}
+
+
+.s34-example-card {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    min-height: 88px;
+
+    padding: 16px 18px;
+
+    border: 1px solid #dbe4ef;
+
+    border-radius: 17px;
+
+    background: #f8fafc;
+
+    box-sizing: border-box;
+}
+
+
+.s34-example-card strong {
+    font-size: 19px;
+
+    color: #2563a8;
+}
+
+
+.s34-example-card span {
+    margin-top: 5px;
+
+    font-size: 16px;
+    line-height: 1.4;
+
+    color: #64748b;
+}
+
+
+/* =========================================================
+   EXAMPLE LIST
+   ========================================================= */
+
+.s34-example-list {
+    margin-top: 22px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.s34-example-row {
+    display: grid;
+
+    grid-template-columns:
+        minmax(115px, 0.7fr)
+        minmax(0, 1.3fr);
+
+    gap: 16px;
+
+    align-items: center;
+
+    padding: 15px 18px;
+
+    border: 1px solid #dfe7f0;
+
+    border-radius: 15px;
+
+    background: #f8fafc;
+
+    box-sizing: border-box;
+}
+
+
+.s34-example-row strong {
+    font-size: 18px;
+
+    color: #2563a8;
+}
+
+
+.s34-example-row span {
+    font-size: 16px;
+    line-height: 1.4;
+
+    color: #64748b;
+}
+
+
+/* =========================================================
+   HIGHLIGHT CARD
+   ========================================================= */
+
+.s34-highlight-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 16px;
+
+    margin-top: 22px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background: #f5f9ff;
+
+    border: 1px solid #d7e5f5;
+
+    box-sizing: border-box;
+}
+
+
+.s34-highlight-icon {
+    flex: 0 0 auto;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #e5efff;
+
+    font-size: 27px;
+}
+
+
+.s34-highlight-card strong {
+    display: block;
+
+    font-size: 21px;
+
+    color: #2563a8;
+}
+
+
+.s34-highlight-card p {
+    margin: 6px 0 0;
+
+    font-size: 17px;
+    line-height: 1.5;
+
+    color: #475569;
+}
+
+
+/* =========================================================
+   COMPARISON TABLE
+   ========================================================= */
+
+.s34-table-wrap {
+    width: 100%;
+
+    margin-top: 22px;
+
+    overflow: hidden;
+
+    border: 1px solid #dbe3ed;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+.s34-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+
+    font-size: 16px;
+}
+
+
+/* Header */
+
+.s34-table thead th {
+    padding: 15px 12px;
+
+    background: #eaf2ff;
+
+    color: #245b91;
+
+    font-size: 17px;
+    font-weight: 800;
+
+    text-align: left;
+
+    border-bottom: 1px solid #d8e2ef;
+}
+
+
+/* Body cells */
+
+.s34-table tbody th,
+.s34-table tbody td {
+    padding: 13px 12px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    vertical-align: middle;
+
+    line-height: 1.4;
+
+    color: #374151;
+
+    text-align: left;
+}
+
+
+/* Row label */
+
+.s34-table tbody th {
+    color: #2563a8;
+
+    font-weight: 800;
+}
+
+
+/* Last row */
+
+.s34-table tbody tr:last-child th,
+.s34-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   REVIEW GRID
+   ========================================================= */
+
+.s34-review-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-top: 22px;
+}
+
+
+.s34-review-item {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding: 15px 17px;
+
+    border: 1px solid #dce5ef;
+
+    border-radius: 15px;
+
+    background: #f8fafc;
+
+    box-sizing: border-box;
+}
+
+
+.s34-review-item strong {
+    color: #2563a8;
+
+    font-size: 17px;
+}
+
+
+.s34-review-item span {
+    color: #64748b;
+
+    font-size: 16px;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   REMEMBER BOX
+   ========================================================= */
+
+.s34-remember-box {
+    margin-top: 22px;
+
+    padding: 19px 20px;
+
+    border-radius: 18px;
+
+    background: #eef6ff;
+
+    border-left: 6px solid #70a9dc;
+
+    color: #334155;
+
+    font-size: 18px;
+
+    line-height: 1.55;
+
+    box-sizing: border-box;
+}
+
+
+.s34-remember-box strong {
+    color: #2563a8;
+}
+
+
+/* =========================================================
+   BOTTOM SPACE
+   ========================================================= */
+
+.s34-section:last-of-type {
+    margin-bottom: 25px;
+}
+
+
+.lesson-bottom {
+    height: 40px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .s34-diagram-card {
+        padding: 12px 12px 18px;
+
+        border-radius: 19px;
+    }
+
+
+    .s34-diagram-card figcaption {
+        margin-top: 14px;
+
+        font-size: 16px;
+    }
+
+
+    .s34-example-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .s34-review-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .s34-table {
+        font-size: 15px;
+    }
+
+
+    .s34-table thead th {
+        padding: 12px 9px;
+
+        font-size: 15px;
+    }
+
+
+    .s34-table tbody th,
+    .s34-table tbody td {
+        padding: 11px 9px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 520px) {
+
+
+    .s34-section {
+        margin-top: 23px;
+    }
+
+
+    /* Diagram */
+
+    .s34-diagram-card {
+        margin-top: 22px;
+
+        padding: 9px 9px 15px;
+
+        border-radius: 17px;
+    }
+
+
+    .s34-diagram {
+        border-radius: 9px;
+    }
+
+
+    .s34-diagram-card figcaption {
+        padding: 0 5px;
+
+        font-size: 15px;
+
+        line-height: 1.45;
+    }
+
+
+    /* Info */
+
+    .s34-info-card {
+        padding: 15px 16px;
+
+        border-radius: 15px;
+    }
+
+
+    .s34-info-title {
+        font-size: 19px;
+    }
+
+
+    .s34-info-card p {
+        font-size: 16px;
+    }
+
+
+    /* Key point */
+
+    .s34-key-point {
+        padding: 15px 16px;
+
+        font-size: 16px;
+
+        border-left-width: 5px;
+    }
+
+
+    /* Example rows */
+
+    .s34-example-row {
+        grid-template-columns:
+            1fr;
+
+        gap: 4px;
+
+        padding: 13px 15px;
+    }
+
+
+    .s34-example-row strong {
+        font-size: 17px;
+    }
+
+
+    .s34-example-row span {
+        font-size: 15px;
+    }
+
+
+    /* Highlight */
+
+    .s34-highlight-card {
+        gap: 12px;
+
+        padding: 16px;
+
+        border-radius: 17px;
+    }
+
+
+    .s34-highlight-icon {
+        width: 42px;
+        height: 42px;
+
+        font-size: 23px;
+    }
+
+
+    .s34-highlight-card strong {
+        font-size: 19px;
+    }
+
+
+    .s34-highlight-card p {
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       COMPACT MOBILE TABLE
+       ===================================================== */
+
+    .s34-table-wrap {
+        border-radius: 16px;
+
+        overflow-x: hidden;
+    }
+
+
+    .s34-table {
+        width: 100%;
+
+        table-layout: fixed;
+
+        font-size: 13px;
+    }
+
+
+    .s34-table thead th {
+        padding: 10px 6px;
+
+        font-size: 13px;
+
+        line-height: 1.25;
+    }
+
+
+    .s34-table tbody th,
+    .s34-table tbody td {
+        padding: 9px 6px;
+
+        font-size: 13px;
+
+        line-height: 1.3;
+
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+
+    /* Column proportions */
+
+    .s34-table th:nth-child(1),
+    .s34-table td:nth-child(1) {
+        width: 18%;
+    }
+
+
+    .s34-table th:nth-child(2),
+    .s34-table td:nth-child(2) {
+        width: 25%;
+    }
+
+
+    .s34-table th:nth-child(3),
+    .s34-table td:nth-child(3) {
+        width: 27%;
+    }
+
+
+    .s34-table th:nth-child(4),
+    .s34-table td:nth-child(4) {
+        width: 30%;
+    }
+
+
+    /* Review */
+
+    .s34-review-item {
+        padding: 13px 14px;
+    }
+
+
+    .s34-review-item strong {
+        font-size: 16px;
+    }
+
+
+    .s34-review-item span {
+        font-size: 15px;
+    }
+
+
+    /* Remember */
+
+    .s34-remember-box {
+        padding: 15px 16px;
+
+        font-size: 16px;
+
+        border-left-width: 5px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+
+    .s34-table {
+        font-size: 12px;
+    }
+
+
+    .s34-table thead th {
+        padding: 9px 5px;
+
+        font-size: 12px;
+    }
+
+
+    .s34-table tbody th,
+    .s34-table tbody td {
+        padding: 8px 5px;
+
+        font-size: 12px;
+    }
+
+
+    .s34-table th:nth-child(1),
+    .s34-table td:nth-child(1) {
+        width: 17%;
+    }
+
+
+    .s34-table th:nth-child(2),
+    .s34-table td:nth-child(2) {
+        width: 25%;
+    }
+
+
+    .s34-table th:nth-child(3),
+    .s34-table td:nth-child(3) {
+        width: 27%;
+    }
+
+
+    .s34-table th:nth-child(4),
+    .s34-table td:nth-child(4) {
+        width: 31%;
+    }
+
+}
+
+/* =========================================================
+   FOOTER
+   Lesson 3.4 - Mobile Friendly Footer
+   ========================================================= */
+
+.lesson-footer {
+    width: 100%;
+    margin-top: 40px;
+    padding: 28px 16px 24px;
+    box-sizing: border-box;
+    background: #f4f7fc;
+    border-top: 1px solid #dce5f0;
+}
+
+.lesson-footer .footer-content {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ---------- Footer title ---------- */
+
+.lesson-footer .footer-title {
+    margin: 0;
+    color: #202124;
+    font-size: 22px;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+.lesson-footer .footer-subtitle {
+    margin-top: 6px;
+    color: #68778a;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* ---------- Divider ---------- */
+
+.lesson-footer .footer-divider {
+    width: 100%;
+    max-width: 520px;
+    height: 1px;
+    margin: 18px auto;
+    background: #d6e0eb;
+}
+
+/* ---------- Navigation ---------- */
+
+.lesson-footer .footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.lesson-footer .footer-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 42px;
+    padding: 9px 16px;
+    box-sizing: border-box;
+
+    color: #245fa8;
+    background: #ffffff;
+
+    border: 1px solid #d6e2ef;
+    border-radius: 12px;
+
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.lesson-footer .footer-nav-btn:hover {
+    background: #f1f6fd;
+    border-color: #a9c5e5;
+}
+
+.lesson-footer .footer-nav-btn:active {
+    transform: translateY(1px);
+}
+
+/* ---------- Footer copyright ---------- */
+
+.lesson-footer .footer-copy {
+    margin: 18px 0 0;
+    color: #7a8796;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   MOBILE FOOTER
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .lesson-footer {
+        margin-top: 32px;
+        padding: 24px 14px 22px;
+    }
+
+    .lesson-footer .footer-title {
+        font-size: 20px;
+    }
+
+    .lesson-footer .footer-subtitle {
+        font-size: 14px;
+    }
+
+    .lesson-footer .footer-divider {
+        margin: 15px auto;
+    }
+
+    .lesson-footer .footer-nav {
+        gap: 8px;
+    }
+
+    .lesson-footer .footer-nav-btn {
+        flex: 1 1 0;
+        min-width: 0;
+
+        padding: 10px 8px;
+
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .lesson-footer .footer-copy {
+        margin-top: 15px;
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .lesson-footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .lesson-footer .footer-title {
+        font-size: 19px;
+    }
+
+    .lesson-footer .footer-nav {
+        gap: 6px;
+    }
+
+    .lesson-footer .footer-nav-btn {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 13px;
+    }
+}
+
+/* =========================================================
+   LESSON 3.4
+   DIAGRAM 01 - CLASSIFICATION OF BONES
+   ========================================================= */
+
+.s34-classification-diagram {
+    width: 100%;
+    margin: 28px 0 8px;
+    padding: 12px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 24px;
+
+    overflow: hidden;
+}
+
+/* Image container */
+
+.s34-diagram-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+/* Actual PNG */
+
+.s34-classification-diagram .s34-diagram {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: contain;
+}
+
+/* Caption */
+
+.s34-classification-diagram figcaption {
+    margin: 14px 8px 4px;
+
+    color: #718096;
+    font-size: 0.95rem;
+    line-height: 1.65;
+
+    text-align: center;
+    font-style: italic;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .s34-classification-diagram {
+        margin: 22px 0 6px;
+        padding: 8px;
+
+        border-radius: 20px;
+    }
+
+    .s34-diagram-image-wrap {
+        border-radius: 14px;
+    }
+
+    .s34-classification-diagram figcaption {
+        margin: 12px 6px 3px;
+
+        font-size: 0.9rem;
+        line-height: 1.55;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .s34-classification-diagram {
+        padding: 6px;
+        border-radius: 17px;
+    }
+
+    .s34-classification-diagram figcaption {
+        font-size: 0.84rem;
+        line-height: 1.5;
+    }
+}

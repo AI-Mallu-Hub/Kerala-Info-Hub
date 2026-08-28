@@ -1,0 +1,1578 @@
+/* =========================================================
+   LESSON 3.3
+   APPENDICULAR SKELETON
+   ========================================================= */
+
+
+/* =========================================================
+   SECTION BASE
+   ========================================================= */
+
+.s33-section {
+    margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   DIAGRAMS
+   ========================================================= */
+
+.s33-diagram {
+    width: 100%;
+    margin: 28px 0 8px;
+}
+
+
+.s33-diagram-card {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e7f0;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 24px rgba(48, 76, 120, 0.07);
+}
+
+
+.s33-diagram-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 16px;
+}
+
+
+/* =========================================================
+   COMPONENT GRID
+   ========================================================= */
+
+.s33-component-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 14px;
+
+    margin-top: 24px;
+}
+
+
+.s33-component-card {
+    min-height: 145px;
+
+    padding: 18px 14px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background: #f7faff;
+
+    border: 1px solid #e0e7f1;
+
+    border-radius: 20px;
+
+    box-sizing: border-box;
+}
+
+
+.s33-component-icon {
+    margin-bottom: 8px;
+
+    font-size: 32px;
+
+    line-height: 1;
+}
+
+
+.s33-component-card strong {
+    color: #2866bd;
+
+    font-size: 18px;
+
+    line-height: 1.35;
+}
+
+
+.s33-component-card span:last-child {
+    margin-top: 6px;
+
+    color: #68788d;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   NOTE BOX
+   ========================================================= */
+
+.s33-note-box {
+    margin-top: 20px;
+
+    padding: 17px 18px;
+
+    background: #f1f7ff;
+
+    border-left: 5px solid #72a6df;
+
+    border-radius: 14px;
+
+    color: #34465c;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    box-sizing: border-box;
+}
+
+
+.s33-note-box strong {
+    color: #205aa9;
+}
+
+
+/* =========================================================
+   BONE PAIR / BONE DETAIL CARDS
+   ========================================================= */
+
+.s33-bone-pair {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px;
+
+    margin-top: 22px;
+}
+
+
+.s33-bone-item {
+    padding: 15px 14px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    background: #f8faff;
+
+    border: 1px solid #e1e7f0;
+
+    border-radius: 16px;
+
+    box-sizing: border-box;
+}
+
+
+.s33-bone-item strong {
+    color: #2866bd;
+
+    font-size: 18px;
+
+    line-height: 1.3;
+}
+
+
+.s33-bone-item span {
+    color: #65758b;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+.s33-table-wrapper {
+    width: 100%;
+
+    margin: 26px 0 20px;
+
+    overflow-x: auto;
+
+    border-radius: 18px;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.s33-table {
+    width: 100%;
+
+    min-width: 420px;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe6ef;
+
+    border-radius: 18px;
+
+    font-size: 16px;
+}
+
+
+.s33-table th {
+    padding: 13px 12px;
+
+    background: #eaf2ff;
+
+    color: #205aa9;
+
+    text-align: left;
+
+    font-weight: 800;
+
+    border-bottom: 1px solid #d8e2ef;
+}
+
+
+.s33-table td {
+    padding: 12px;
+
+    color: #303b4b;
+
+    line-height: 1.45;
+
+    border-bottom: 1px solid #e7ebf1;
+
+    vertical-align: middle;
+}
+
+
+.s33-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+.s33-table td strong {
+    color: #205aa9;
+}
+
+
+/* ---------- Count column ---------- */
+
+.s33-table th:last-child,
+.s33-table td:last-child {
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* ---------- Total row ---------- */
+
+.s33-total-row td {
+    background: #f1f6ff;
+
+    font-weight: 700;
+}
+
+
+.s33-total-row td strong {
+    font-size: 18px;
+
+    color: #174f99;
+}
+
+
+/* =========================================================
+   COUNT GRID
+   ========================================================= */
+
+.s33-count-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-top: 24px;
+}
+
+
+.s33-count-card {
+    min-height: 125px;
+
+    padding: 16px 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background: #f7faff;
+
+    border: 1px solid #e0e7f1;
+
+    border-radius: 18px;
+
+    box-sizing: border-box;
+}
+
+
+.s33-count-card strong {
+    color: #2866bd;
+
+    font-size: 29px;
+
+    line-height: 1.1;
+}
+
+
+.s33-count-card span {
+    margin-top: 7px;
+
+    color: #68788d;
+
+    font-size: 13px;
+
+    line-height: 1.35;
+}
+
+
+/* =========================================================
+   TOTAL BOX
+   ========================================================= */
+
+.s33-total-box {
+    margin-top: 18px;
+
+    padding: 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    background: #eef5ff;
+
+    border-radius: 18px;
+
+    box-sizing: border-box;
+}
+
+
+.s33-total-box strong {
+    color: #205aa9;
+
+    font-size: 29px;
+
+    line-height: 1.25;
+}
+
+
+.s33-total-box span {
+    margin-top: 5px;
+
+    color: #61748d;
+
+    font-size: 15px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   REMEMBER
+   ========================================================= */
+
+.s33-remember-card {
+    margin-bottom: 28px;
+}
+
+
+.s33-memory-box {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+
+.s33-memory-box > div {
+    padding: 15px 17px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: baseline;
+
+    gap: 7px;
+
+    background: #f8faff;
+
+    border: 1px solid #e1e7f0;
+
+    border-radius: 15px;
+
+    box-sizing: border-box;
+}
+
+
+.s33-memory-box strong {
+    color: #2866bd;
+
+    font-size: 18px;
+}
+
+
+.s33-memory-box span {
+    color: #53657b;
+
+    font-size: 17px;
+}
+
+
+/* ---------- Main count ---------- */
+
+.s33-memory-count {
+    margin-top: 5px;
+
+    flex-direction: column;
+
+    align-items: center !important;
+
+    text-align: center;
+
+    background: #eef5ff !important;
+
+    border-color: #cfe0f5 !important;
+}
+
+
+.s33-memory-count strong {
+    font-size: 29px;
+}
+
+
+.s33-memory-count span {
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   QUICK REVISION
+   ========================================================= */
+
+.s33-revision-box {
+    margin-top: 24px;
+
+    padding: 20px;
+
+    background: #f8faff;
+
+    border-radius: 20px;
+
+    border: 1px solid #e1e7f0;
+
+    box-sizing: border-box;
+}
+
+
+.s33-revision-box h3 {
+    margin: 0 0 10px;
+
+    color: #2866bd;
+
+    font-size: 22px;
+}
+
+
+.s33-revision-box p {
+    margin: 0;
+
+    padding: 12px 0;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    border-bottom: 1px solid #e4e9f0;
+}
+
+
+.s33-revision-box p:first-of-type {
+    padding-top: 4px;
+}
+
+
+.s33-revision-box p:last-child {
+    padding-bottom: 0;
+
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   QUIZ
+   ========================================================= */
+
+.s33-quiz-card {
+    margin-top: 28px;
+
+    text-align: center;
+}
+
+
+.s33-quiz-card p {
+    line-height: 1.6;
+}
+
+
+.s33-quiz-card .quiz-preview {
+    margin: 24px 0;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.s33-quiz-card .quiz-preview span {
+    padding: 10px 13px;
+
+    background: #f2f6fb;
+
+    border-radius: 12px;
+
+    color: #53657a;
+
+    font-size: 14px;
+}
+
+
+.s33-quiz-coming {
+    margin: 20px auto 4px;
+
+    max-width: 420px;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 7px;
+
+    background: #f4f8ff;
+
+    border: 1px dashed #9bbce3;
+
+    border-radius: 18px;
+
+    color: #4d6681;
+
+    box-sizing: border-box;
+}
+
+
+.s33-quiz-coming strong {
+    color: #2866bd;
+
+    font-size: 19px;
+}
+
+
+.s33-quiz-coming span {
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+
+    /* ---------- Sections ---------- */
+
+    .s33-section {
+        margin-bottom: 22px;
+    }
+
+
+    /* ---------- Diagrams ---------- */
+
+    .s33-diagram {
+        margin-top: 22px;
+    }
+
+
+    .s33-diagram-card {
+        padding: 7px;
+
+        border-radius: 20px;
+    }
+
+
+    .s33-diagram-image {
+        border-radius: 15px;
+    }
+
+
+    /* ---------- Component grid ---------- */
+
+    .s33-component-grid {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        margin-top: 20px;
+    }
+
+
+    .s33-component-card {
+        min-height: 90px;
+
+        padding: 14px;
+
+        flex-direction: row;
+
+        justify-content: flex-start;
+
+        text-align: left;
+
+        gap: 12px;
+    }
+
+
+    .s33-component-icon {
+        margin: 0;
+
+        font-size: 29px;
+
+        flex-shrink: 0;
+    }
+
+
+    .s33-component-card strong {
+        font-size: 17px;
+    }
+
+
+    .s33-component-card span:last-child {
+        margin-top: 2px;
+
+        margin-left: auto;
+
+        font-size: 13px;
+
+        text-align: right;
+    }
+
+
+    /* ---------- Note ---------- */
+
+    .s33-note-box {
+        padding: 14px;
+
+        font-size: 15px;
+
+        line-height: 1.55;
+    }
+
+
+    /* ---------- Bone cards ---------- */
+
+    .s33-bone-pair {
+        grid-template-columns: 1fr;
+
+        gap: 9px;
+
+        margin-top: 18px;
+    }
+
+
+    .s33-bone-item {
+        padding: 13px 14px;
+
+        flex-direction: row;
+
+        align-items: baseline;
+
+        gap: 8px;
+    }
+
+
+    .s33-bone-item strong {
+        font-size: 17px;
+    }
+
+
+    .s33-bone-item span {
+        margin-left: auto;
+
+        font-size: 13px;
+
+        text-align: right;
+    }
+
+
+    /* ---------- Tables ---------- */
+
+    .s33-table-wrapper {
+        margin-top: 21px;
+
+        margin-bottom: 17px;
+    }
+
+
+    .s33-table {
+        min-width: 360px;
+
+        font-size: 14px;
+    }
+
+
+    .s33-table th,
+    .s33-table td {
+        padding: 10px 9px;
+    }
+
+
+    .s33-total-row td strong {
+        font-size: 17px;
+    }
+
+
+    /* ---------- Count grid ---------- */
+
+    .s33-count-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 10px;
+
+        margin-top: 20px;
+    }
+
+
+    .s33-count-card {
+        min-height: 105px;
+
+        padding: 13px 8px;
+    }
+
+
+    .s33-count-card strong {
+        font-size: 26px;
+    }
+
+
+    .s33-count-card span {
+        font-size: 12px;
+    }
+
+
+    /* ---------- Total ---------- */
+
+    .s33-total-box {
+        padding: 16px;
+    }
+
+
+    .s33-total-box strong {
+        font-size: 25px;
+    }
+
+
+    .s33-total-box span {
+        font-size: 14px;
+    }
+
+
+    /* ---------- Remember ---------- */
+
+    .s33-memory-box > div {
+        padding: 13px 14px;
+    }
+
+
+    .s33-memory-box strong {
+        font-size: 16px;
+    }
+
+
+    .s33-memory-box span {
+        font-size: 14px;
+    }
+
+
+    .s33-memory-count strong {
+        font-size: 26px;
+    }
+
+
+    /* ---------- Quick revision ---------- */
+
+    .s33-revision-box {
+        padding: 16px;
+    }
+
+
+    .s33-revision-box h3 {
+        font-size: 20px;
+    }
+
+
+    .s33-revision-box p {
+        font-size: 15px;
+
+        line-height: 1.55;
+    }
+
+
+    /* ---------- Quiz ---------- */
+
+    .s33-quiz-card .quiz-preview {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .s33-quiz-card .quiz-preview span {
+        text-align: center;
+    }
+
+
+    .s33-quiz-coming {
+        padding: 17px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+
+    .s33-diagram-card {
+        padding: 5px;
+
+        border-radius: 18px;
+    }
+
+
+    .s33-diagram-image {
+        border-radius: 14px;
+    }
+
+
+    .s33-table {
+        min-width: 340px;
+
+        font-size: 13px;
+    }
+
+
+    .s33-table th,
+    .s33-table td {
+        padding: 9px 8px;
+    }
+
+
+    .s33-count-card strong {
+        font-size: 24px;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 01
+   THE APPENDICULAR SKELETON
+   ========================================================= */
+
+.s33-diagram-01 {
+    width: 100%;
+    margin: 24px 0 28px;
+}
+
+.s33-diagram-01 .s33-diagram-card {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #dbe5f0;
+    border-radius: 22px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.s33-diagram-01 .s33-diagram-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px 16px 12px;
+}
+
+.s33-diagram-01 .s33-diagram-icon {
+    font-size: 28px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.s33-diagram-01 .s33-diagram-heading h3 {
+    margin: 0;
+    font-size: 1.35rem;
+    line-height: 1.25;
+    font-weight: 700;
+    color: #2468b5;
+    text-align: center;
+}
+
+.s33-diagram-01 .s33-diagram-image-wrap {
+    width: 100%;
+    padding: 4px 10px 8px;
+    box-sizing: border-box;
+}
+
+.s33-diagram-01 .s33-diagram-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.s33-diagram-01 .s33-diagram-caption {
+    margin: 4px 18px 18px;
+    text-align: center;
+    color: #718096;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .s33-diagram-01 {
+        margin: 20px 0 24px;
+    }
+
+    .s33-diagram-01 .s33-diagram-card {
+        border-radius: 18px;
+    }
+
+    .s33-diagram-01 .s33-diagram-heading {
+        gap: 8px;
+        padding: 15px 12px 10px;
+    }
+
+    .s33-diagram-01 .s33-diagram-icon {
+        font-size: 24px;
+    }
+
+    .s33-diagram-01 .s33-diagram-heading h3 {
+        font-size: 1.15rem;
+    }
+
+    .s33-diagram-01 .s33-diagram-image-wrap {
+        padding: 3px 6px 6px;
+    }
+
+    .s33-diagram-01 .s33-diagram-image {
+        border-radius: 10px;
+    }
+
+    .s33-diagram-01 .s33-diagram-caption {
+        margin: 4px 14px 15px;
+        font-size: 0.88rem;
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .s33-diagram-01 .s33-diagram-heading h3 {
+        font-size: 1.05rem;
+    }
+
+    .s33-diagram-01 .s33-diagram-icon {
+        font-size: 22px;
+    }
+
+    .s33-diagram-01 .s33-diagram-caption {
+        font-size: 0.84rem;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 02 - PECTORAL GIRDLE
+   ========================================================= */
+
+.s33-diagram-02 {
+    width: 100%;
+    margin: 24px 0;
+}
+
+.s33-diagram-02 .s33-diagram-card {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #dce5ef;
+    border-radius: 22px;
+    background: #ffffff;
+    padding: 12px;
+}
+
+.s33-diagram-02 .s33-diagram-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.s33-diagram-02 .s33-diagram-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.s33-diagram-02 .s33-diagram-caption {
+    margin: 12px 8px 4px;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #667085;
+    font-style: italic;
+}
+
+
+/* ---------------------------------------------------------
+   Mobile
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .s33-diagram-02 {
+        margin: 20px 0;
+    }
+
+    .s33-diagram-02 .s33-diagram-card {
+        padding: 8px;
+        border-radius: 18px;
+    }
+
+    .s33-diagram-02 .s33-diagram-image-wrap {
+        border-radius: 12px;
+    }
+
+    .s33-diagram-02 .s33-diagram-caption {
+        margin: 10px 6px 3px;
+        font-size: 0.88rem;
+        line-height: 1.5;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 03
+   BONES OF THE UPPER LIMB
+   ========================================================= */
+
+.s33-diagram-03 {
+    width: 100%;
+    margin: 28px 0 24px;
+}
+
+.s33-diagram-03 .s33-diagram-card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 2px solid #e3eaf3;
+    border-radius: 22px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.s33-diagram-03 .s33-diagram-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.s33-diagram-03 .s33-diagram-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.s33-diagram-03 .s33-diagram-caption {
+    margin: 16px 8px 4px;
+    text-align: center;
+    font-size: 0.98rem;
+    line-height: 1.65;
+    font-style: italic;
+    color: #68788b;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .s33-diagram-03 {
+        margin: 22px 0 20px;
+    }
+
+    .s33-diagram-03 .s33-diagram-card {
+        padding: 8px;
+        border-radius: 18px;
+    }
+
+    .s33-diagram-03 .s33-diagram-image-wrap {
+        border-radius: 12px;
+    }
+
+    .s33-diagram-03 .s33-diagram-caption {
+        margin: 13px 6px 3px;
+        font-size: 0.88rem;
+        line-height: 1.55;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .s33-diagram-03 .s33-diagram-card {
+        padding: 6px;
+        border-radius: 16px;
+    }
+
+    .s33-diagram-03 .s33-diagram-caption {
+        font-size: 0.82rem;
+        line-height: 1.5;
+    }
+}
+
+/* =========================================
+   Upper Limb Table - Compact Mobile Layout
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .upper-limb-table {
+    width: 100%;
+    margin: 16px 0 0;
+    border-radius: 22px;
+    overflow: hidden;
+    font-size: 16px;
+  }
+
+  .upper-limb-table th,
+  .upper-limb-table td {
+    padding: 12px 16px;
+    line-height: 1.35;
+  }
+
+  .upper-limb-table th {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .upper-limb-table td:first-child {
+    width: 40%;
+  }
+
+  .upper-limb-table td:last-child {
+    width: 50%;
+  }
+
+  .upper-limb-table tr:last-child td {
+    font-weight: 700;
+  }
+}
+
+
+/* Smaller phones */
+@media (max-width: 400px) {
+
+  .upper-limb-table {
+    font-size: 15px;
+    border-radius: 18px;
+  }
+
+  .upper-limb-table th,
+  .upper-limb-table td {
+    padding: 10px 13px;
+  }
+
+  .upper-limb-table th {
+    font-size: 15px;
+  }
+
+  .upper-limb-table td:first-child {
+    width: 39%;
+  }
+
+  .upper-limb-table td:last-child {
+    width: 49%;
+  }
+}
+
+/* =========================================
+   Upper Limb 3-Column Table
+   Mobile Width Fix
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .upper-limb-table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .upper-limb-table th,
+  .upper-limb-table td {
+    padding: 11px 10px;
+    font-size: 15px;
+    line-height: 1.3;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  /* Region */
+  .upper-limb-table th:nth-child(1),
+  .upper-limb-table td:nth-child(1) {
+    width: 30%;
+  }
+
+  /* Bones */
+  .upper-limb-table th:nth-child(2),
+  .upper-limb-table td:nth-child(2) {
+    width: 45%;
+  }
+
+  /* Count */
+  .upper-limb-table th:nth-child(3),
+  .upper-limb-table td:nth-child(3) {
+    width: 18%;
+    text-align: center;
+  }
+}
+
+
+/* Smaller screens */
+@media (max-width: 400px) {
+
+  .upper-limb-table th,
+  .upper-limb-table td {
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+
+  .upper-limb-table th:nth-child(1),
+  .upper-limb-table td:nth-child(1) {
+    width: 30%;
+  }
+
+  .upper-limb-table th:nth-child(2),
+  .upper-limb-table td:nth-child(2) {
+    width: 42%;
+  }
+
+  .upper-limb-table th:nth-child(3),
+  .upper-limb-table td:nth-child(3) {
+    width: 16%;
+  }
+}
+
+/* =========================================================
+   DIAGRAM 04 - PELVIC GIRDLE AND HIP BONE
+   ========================================================= */
+
+.s33-diagram-04 {
+    width: 100%;
+    margin: 24px 0 28px;
+}
+
+.s33-diagram-04 .s33-diagram-card {
+    width: 100%;
+    overflow: hidden;
+
+    border: 1px solid #dce5ef;
+    border-radius: 22px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+.s33-diagram-04 .s33-diagram-image-wrap {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px;
+
+    box-sizing: border-box;
+}
+
+.s33-diagram-04 .s33-diagram-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    object-fit: contain;
+
+    margin: 0 auto;
+
+    border-radius: 14px;
+}
+
+.s33-diagram-04 .s33-diagram-caption {
+    margin: 6px 18px 18px;
+
+    text-align: center;
+
+    color: #718096;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    font-style: italic;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .s33-diagram-04 {
+        margin: 20px 0 24px;
+    }
+
+    .s33-diagram-04 .s33-diagram-card {
+        border-radius: 18px;
+    }
+
+    .s33-diagram-04 .s33-diagram-image-wrap {
+        padding: 5px;
+    }
+
+    .s33-diagram-04 .s33-diagram-image {
+        border-radius: 11px;
+    }
+
+    .s33-diagram-04 .s33-diagram-caption {
+        margin: 5px 14px 15px;
+
+        font-size: 0.88rem;
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .s33-diagram-04 .s33-diagram-image-wrap {
+        padding: 4px;
+    }
+
+    .s33-diagram-04 .s33-diagram-caption {
+        font-size: 0.84rem;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 05
+   BONES OF THE LOWER LIMB
+   ========================================================= */
+
+.s33-diagram-05 {
+    width: 100%;
+    margin: 28px 0 30px;
+}
+
+.s33-diagram-05 .s33-diagram-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    background: #ffffff;
+    border: 2px solid #e1e8f0;
+    border-radius: 24px;
+
+    padding: 14px 14px 18px;
+
+    box-shadow:
+        0 6px 18px rgba(30, 70, 110, 0.06);
+}
+
+.s33-diagram-05 .s33-diagram-image-wrap {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.s33-diagram-05 .s33-diagram-image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-width: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    margin: 0 auto;
+}
+
+.s33-diagram-05 .s33-diagram-caption {
+    margin: 16px 8px 0;
+
+    text-align: center;
+
+    font-size: 1rem;
+    line-height: 1.65;
+
+    color: #6f7f91;
+    font-style: italic;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .s33-diagram-05 {
+        margin: 22px 0 26px;
+    }
+
+    .s33-diagram-05 .s33-diagram-card {
+        padding: 10px 10px 15px;
+        border-radius: 20px;
+    }
+
+    .s33-diagram-05 .s33-diagram-image-wrap {
+        border-radius: 13px;
+    }
+
+    .s33-diagram-05 .s33-diagram-caption {
+        margin: 13px 6px 0;
+
+        font-size: 0.95rem;
+        line-height: 1.55;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .s33-diagram-05 .s33-diagram-card {
+        padding: 8px 8px 13px;
+        border-radius: 18px;
+    }
+
+    .s33-diagram-05 .s33-diagram-caption {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
+

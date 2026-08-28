@@ -1,0 +1,1073 @@
+/* =========================================================
+   LESSON 3.5 — STRUCTURE OF A BONE
+   Global shell remains in lesson.css + skeletal.css
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   SECTION SPACING
+   --------------------------------------------------------- */
+
+.s35-section {
+    margin-bottom: 24px;
+}
+
+.s35-section > p {
+    margin-bottom: 20px;
+}
+
+
+
+/* ---------------------------------------------------------
+   DIAGRAM CARDS
+   --------------------------------------------------------- */
+
+.s35-diagram-card {
+    width: 100%;
+    margin: 22px 0 24px;
+    padding: 14px 14px 16px;
+
+    border: 2px solid #e1e8f0;
+    border-radius: 24px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.s35-diagram {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    border-radius: 14px;
+
+    object-fit: contain;
+}
+
+
+.s35-diagram-card figcaption {
+    margin-top: 14px;
+    padding: 0 8px;
+
+    text-align: center;
+
+    color: #718096;
+
+    font-size: 15px;
+    line-height: 1.65;
+
+    font-style: italic;
+}
+
+
+.s35-diagram-card-secondary {
+    margin-top: 24px;
+}
+
+
+.s35-diagram-card-small {
+    max-width: 720px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* ---------------------------------------------------------
+   BASIC DEFINITIONS
+   --------------------------------------------------------- */
+
+.s35-definition-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 14px;
+
+    margin: 20px 0;
+}
+
+
+.s35-definition-card {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    padding: 18px;
+
+    border: 1px solid #dfe7f0;
+
+    border-radius: 18px;
+
+    background: #f8faff;
+
+    box-sizing: border-box;
+}
+
+
+.s35-definition-card strong {
+    color: #2468ad;
+
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+
+.s35-definition-card span {
+    color: #5f6f82;
+
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+
+
+/* ---------------------------------------------------------
+   KEY POINT / REMEMBER BOX
+   --------------------------------------------------------- */
+
+.s35-key-point,
+.s35-remember-box {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    margin-top: 20px;
+
+    padding: 18px 20px;
+
+    border-left: 6px solid #72aede;
+
+    border-radius: 0 18px 18px 0;
+
+    background: #eef7ff;
+
+    color: #334155;
+
+    font-size: 16px;
+    line-height: 1.65;
+
+    box-sizing: border-box;
+}
+
+
+.s35-key-point strong,
+.s35-remember-box strong {
+    color: #2468ad;
+}
+
+
+
+/* ---------------------------------------------------------
+   INTERNAL LAYER LIST
+   --------------------------------------------------------- */
+
+.s35-layer-list {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-top: 20px;
+
+    border: 1px solid #dfe7f0;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+}
+
+
+.s35-layer-row {
+    display: grid;
+
+    grid-template-columns:
+        minmax(125px, 0.8fr)
+        minmax(0, 1.5fr);
+
+    gap: 18px;
+
+    padding: 15px 18px;
+
+    border-bottom: 1px solid #e4e9ef;
+
+    box-sizing: border-box;
+}
+
+
+.s35-layer-row:last-child {
+    border-bottom: none;
+}
+
+
+.s35-layer-row strong {
+    color: #2468ad;
+
+    font-size: 16px;
+}
+
+
+.s35-layer-row span {
+    color: #536274;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+
+/* ---------------------------------------------------------
+   COVERINGS / FEATURES
+   --------------------------------------------------------- */
+
+.s35-feature-list {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 14px;
+
+    margin-top: 18px;
+}
+
+
+.s35-feature-card {
+    padding: 20px;
+
+    border: 1px solid #dfe7f0;
+
+    border-radius: 20px;
+
+    background: #f8faff;
+
+    box-sizing: border-box;
+}
+
+
+.s35-feature-card strong {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #2468ad;
+
+    font-size: 18px;
+}
+
+
+.s35-feature-card p {
+    margin: 0;
+
+    color: #536274;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+}
+
+
+
+/* ---------------------------------------------------------
+   EPIPHYSEAL PLATE COMPARISON
+   --------------------------------------------------------- */
+
+.s35-growth-compare {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr);
+
+    align-items: stretch;
+
+    gap: 14px;
+
+    margin-top: 20px;
+}
+
+
+.s35-growth-card {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    min-height: 125px;
+
+    padding: 18px;
+
+    border: 1px solid #dfe7f0;
+
+    border-radius: 20px;
+
+    background: #f8faff;
+
+    box-sizing: border-box;
+}
+
+
+.s35-growth-card strong {
+    margin: 5px 0;
+
+    color: #2468ad;
+
+    font-size: 18px;
+}
+
+
+.s35-growth-card span:last-child {
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.45;
+}
+
+
+.s35-growth-label {
+    color: #7a8797;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.04em;
+}
+
+
+.s35-growth-arrow {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0 3px;
+
+    color: #2468ad;
+
+    font-size: 25px;
+
+    font-weight: 800;
+}
+
+
+
+/* ---------------------------------------------------------
+   BLOOD SUPPLY FLOW
+   --------------------------------------------------------- */
+
+.s35-blood-card {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border: 1px solid #dfe7f0;
+
+    border-radius: 20px;
+
+    background: #f8faff;
+
+    box-sizing: border-box;
+}
+
+
+.s35-blood-step {
+    padding: 10px 14px;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    color: #2468ad;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 1px 4px rgba(30, 60, 90, 0.08);
+}
+
+
+.s35-blood-arrow {
+    color: #6d7d8f;
+
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+
+
+/* ---------------------------------------------------------
+   MAIN PARTS TABLE
+   --------------------------------------------------------- */
+
+.s35-table-wrap {
+    width: 100%;
+
+    margin-top: 18px;
+
+    border: 1px solid #dfe7f0;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+}
+
+
+.s35-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+}
+
+
+.s35-table th,
+.s35-table td {
+    padding: 14px 16px;
+
+    border-bottom: 1px solid #e3e8ef;
+
+    text-align: left;
+
+    vertical-align: middle;
+
+    box-sizing: border-box;
+
+    font-size: 15px;
+
+    line-height: 1.45;
+
+    overflow-wrap: anywhere;
+}
+
+
+.s35-table thead th {
+    background: #eaf3ff;
+
+    color: #2468ad;
+
+    font-size: 16px;
+
+    font-weight: 800;
+}
+
+
+.s35-table thead th:first-child {
+    width: 38%;
+}
+
+
+.s35-table tbody th {
+    color: #344256;
+
+    font-weight: 700;
+}
+
+
+.s35-table tbody td {
+    color: #536274;
+}
+
+
+.s35-table tbody tr:last-child th,
+.s35-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+
+/* ---------------------------------------------------------
+   QUICK REVIEW
+   --------------------------------------------------------- */
+
+.s35-review-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+
+.s35-review-item {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    min-width: 0;
+
+    padding: 16px 18px;
+
+    border: 1px solid #dfe7f0;
+
+    border-radius: 16px;
+
+    background: #f8faff;
+
+    box-sizing: border-box;
+}
+
+
+.s35-review-item strong {
+    min-width: 0;
+
+    color: #2468ad;
+
+    font-size: 16px;
+
+    overflow-wrap: anywhere;
+}
+
+
+.s35-review-item span {
+    flex: 0 0 auto;
+
+    color: #718096;
+
+    font-size: 15px;
+
+    white-space: nowrap;
+}
+
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+
+    /* DEFINITION CARDS */
+
+    .s35-definition-grid,
+    .s35-feature-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    .s35-definition-card,
+    .s35-feature-card {
+        padding: 17px;
+    }
+
+
+
+    /* GROWTH COMPARISON */
+
+    .s35-growth-compare {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+
+    .s35-growth-arrow {
+        min-height: 18px;
+
+        transform: rotate(90deg);
+    }
+
+
+
+    /* BLOOD FLOW */
+
+    .s35-blood-card {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+
+    .s35-blood-step {
+        text-align: center;
+    }
+
+
+    .s35-blood-arrow {
+        text-align: center;
+
+        transform: rotate(90deg);
+    }
+
+
+
+    /* QUICK REVIEW */
+
+    .s35-review-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    /* TABLE */
+
+    .s35-table th,
+    .s35-table td {
+        padding: 12px 11px;
+
+        font-size: 14px;
+    }
+
+
+    .s35-table thead th {
+        font-size: 15px;
+    }
+
+
+    .s35-table thead th:first-child {
+        width: 36%;
+    }
+
+
+
+    /* DIAGRAM */
+
+    .s35-diagram-card {
+        padding: 10px 10px 13px;
+
+        border-radius: 20px;
+    }
+
+
+    .s35-diagram-card figcaption {
+        padding: 0 4px;
+
+        font-size: 14px;
+
+        line-height: 1.55;
+    }
+
+
+
+    /* KEY POINT */
+
+    .s35-key-point,
+    .s35-remember-box {
+        padding: 16px;
+
+        font-size: 15px;
+    }
+
+
+
+    /* INTERNAL LAYERS */
+
+    .s35-layer-row {
+        grid-template-columns: 1fr;
+
+        gap: 5px;
+
+        padding: 14px 16px;
+    }
+
+
+
+    /* REVIEW ITEMS */
+
+    .s35-review-item {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+
+    .s35-review-item span {
+        white-space: normal;
+    }
+
+}
+
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .s35-table th,
+    .s35-table td {
+        padding: 11px 9px;
+
+        font-size: 13px;
+    }
+
+
+    .s35-table thead th {
+        font-size: 14px;
+    }
+
+
+    .s35-definition-card strong,
+    .s35-feature-card strong,
+    .s35-growth-card strong {
+        font-size: 17px;
+    }
+
+}
+
+/* =========================================================
+   LESSON 3.5
+   DIAGRAM 01 - GROSS ANATOMY OF A LONG BONE
+   ========================================================= */
+
+.s35-diagram-01 {
+    width: 100%;
+    margin: 28px 0 24px;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   Diagram Card
+   --------------------------------------------------------- */
+
+.s35-diagram-01-card {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 2px solid #e3eaf3;
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 14px rgba(31, 64, 104, 0.07);
+}
+
+
+/* ---------------------------------------------------------
+   Diagram Image
+   --------------------------------------------------------- */
+
+.s35-diagram-01-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+    padding: 0;
+
+    object-fit: contain;
+
+    border: 0;
+}
+
+
+/* ---------------------------------------------------------
+   Caption
+   --------------------------------------------------------- */
+
+.s35-diagram-01-caption {
+    margin: 14px 8px 4px;
+
+    text-align: center;
+
+    color: #68788b;
+
+    font-size: 0.98rem;
+    line-height: 1.6;
+
+    font-style: italic;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .s35-diagram-01 {
+        margin: 22px 0 20px;
+    }
+
+    .s35-diagram-01-card {
+        padding: 8px;
+        border-radius: 18px;
+    }
+
+    .s35-diagram-01-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .s35-diagram-01-caption {
+        margin: 12px 6px 3px;
+
+        font-size: 0.88rem;
+        line-height: 1.55;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .s35-diagram-01-card {
+        padding: 6px;
+        border-radius: 16px;
+    }
+
+    .s35-diagram-01-caption {
+        font-size: 0.82rem;
+        line-height: 1.5;
+    }
+}
+
+/* =========================================================
+   LESSON 3.5
+   DIAGRAM 02
+   INTERNAL STRUCTURE OF A LONG BONE
+   ========================================================= */
+
+.s35-diagram-02 {
+    width: 100%;
+    margin: 28px 0 26px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   Diagram outer card
+   --------------------------------------------------------- */
+
+.s35-diagram-02-card {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 8px;
+
+    background: #ffffff;
+
+    border: 2px solid #e2e9f2;
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 14px rgba(31, 64, 104, 0.07);
+}
+
+
+/* ---------------------------------------------------------
+   PNG
+   --------------------------------------------------------- */
+
+.s35-diagram-02-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+    padding: 0;
+
+    object-fit: contain;
+
+    border: 0;
+}
+
+
+/* ---------------------------------------------------------
+   Caption
+   --------------------------------------------------------- */
+
+.s35-diagram-02-caption {
+    margin: 14px 8px 4px;
+
+    text-align: center;
+
+    color: #68788b;
+
+    font-size: 0.98rem;
+    line-height: 1.6;
+
+    font-style: italic;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .s35-diagram-02 {
+        margin: 22px 0 22px;
+    }
+
+    .s35-diagram-02-card {
+        padding: 6px;
+        border-radius: 18px;
+    }
+
+    .s35-diagram-02-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .s35-diagram-02-caption {
+        margin: 12px 6px 3px;
+
+        font-size: 0.88rem;
+        line-height: 1.55;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE SCREENS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .s35-diagram-02-card {
+        padding: 5px;
+        border-radius: 16px;
+    }
+
+    .s35-diagram-02-caption {
+        font-size: 0.82rem;
+        line-height: 1.5;
+    }
+}
+
+/* =========================================================
+   LESSON 3.5 - DIAGRAM 03
+   EPIPHYSEAL PLATE → EPIPHYSEAL LINE
+   ========================================================= */
+
+.s35-diagram-03 {
+    width: 100%;
+    margin: 26px 0 24px;
+    box-sizing: border-box;
+}
+
+.s35-diagram-03-card {
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+    border: 2px solid #e3eaf3;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(31, 64, 104, 0.07);
+}
+
+.s35-diagram-03-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.s35-diagram-03-caption {
+    margin: 14px 8px 4px;
+    text-align: center;
+    color: #68788b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .s35-diagram-03 {
+        margin: 22px 0 20px;
+    }
+
+    .s35-diagram-03-card {
+        padding: 8px;
+        border-radius: 18px;
+    }
+
+    .s35-diagram-03-caption {
+        margin: 12px 6px 3px;
+        font-size: 0.88rem;
+        line-height: 1.55;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .s35-diagram-03-card {
+        padding: 6px;
+        border-radius: 16px;
+    }
+
+    .s35-diagram-03-caption {
+        font-size: 0.82rem;
+        line-height: 1.5;
+    }
+}
