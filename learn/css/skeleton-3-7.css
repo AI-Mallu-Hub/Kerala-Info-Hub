@@ -1,0 +1,1112 @@
+/* =========================================================
+   LESSON 3.7
+   BONE FORMATION & GROWTH
+   ========================================================= */
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.s37-intro {
+    margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   GENERAL LESSON 3.7 SECTIONS
+   ========================================================= */
+
+.s37-section {
+    margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   DIAGRAM SYSTEM
+   ========================================================= */
+
+.s37-diagram {
+    width: 100%;
+    margin: 28px 0 10px;
+    text-align: center;
+}
+
+
+.s37-diagram-image-wrap {
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #e1e8f0;
+    border-radius: 20px;
+    background: #ffffff;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+
+.s37-diagram-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+
+.s37-diagram figcaption {
+    margin-top: 14px;
+    padding: 0 12px;
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-style: italic;
+
+    color: #7b8795;
+}
+
+
+/* =========================================================
+   DIAGRAM-SPECIFIC SIZING
+   ========================================================= */
+
+.s37-diagram-01 .s37-diagram-image {
+    max-height: 500px;
+    object-fit: contain;
+}
+
+
+.s37-diagram-02 .s37-diagram-image {
+    max-height: 600px;
+    object-fit: contain;
+}
+
+
+.s37-diagram-03 .s37-diagram-image {
+    max-height: 700px;
+    object-fit: contain;
+}
+
+
+.s37-diagram-04 .s37-diagram-image {
+    max-height: 600px;
+    object-fit: contain;
+}
+
+
+.s37-diagram-05 .s37-diagram-image {
+    max-height: 520px;
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   INFORMATION CARDS
+   ========================================================= */
+
+.s37-info-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+
+    margin-top: 24px;
+}
+
+
+.s37-info-card {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+
+    padding: 20px;
+
+    border: 1px solid #dce5ef;
+    border-radius: 18px;
+
+    background: #f7f9fc;
+
+    box-sizing: border-box;
+}
+
+
+.s37-info-card strong {
+    color: #246aa3;
+
+    font-size: 1.08rem;
+}
+
+
+.s37-info-card span {
+    color: #718096;
+
+    font-size: 0.98rem;
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   NOTE BOX
+   ========================================================= */
+
+.s37-note {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    margin-top: 24px;
+
+    padding: 18px 20px;
+
+    border-radius: 18px;
+
+    background: #f3f7fc;
+
+    color: #687789;
+
+    line-height: 1.6;
+
+    box-sizing: border-box;
+}
+
+
+.s37-note-icon {
+    flex: 0 0 auto;
+
+    font-size: 1.35rem;
+}
+
+
+/* =========================================================
+   ENDOCHONDRAL STAGE LIST
+   ========================================================= */
+
+.s37-stage-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+
+    margin-top: 26px;
+}
+
+
+.s37-stage {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 16px;
+
+    padding: 18px 20px;
+
+    border: 1px solid #dce5ef;
+    border-radius: 18px;
+
+    background: #f8faff;
+
+    box-sizing: border-box;
+}
+
+
+.s37-stage-number {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 38px;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 12px;
+
+    background: #e7f0ff;
+
+    color: #2466b2;
+
+    font-weight: 700;
+}
+
+
+.s37-stage > div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.s37-stage strong {
+    color: #26384d;
+
+    font-size: 1.05rem;
+}
+
+
+.s37-stage span:not(.s37-stage-number) {
+    color: #718096;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   GROWTH FLOW
+   ========================================================= */
+
+.s37-growth-flow {
+    display: flex;
+
+    align-items: stretch;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 28px;
+
+    flex-wrap: wrap;
+}
+
+
+.s37-growth-flow > div {
+    flex: 1 1 180px;
+
+    min-width: 150px;
+
+    padding: 18px 14px;
+
+    border: 1px solid #dce5ef;
+    border-radius: 18px;
+
+    background: #f7f9fc;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+.s37-growth-flow strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #246aa3;
+
+    font-size: 1rem;
+}
+
+
+.s37-growth-flow span:not(.s37-flow-arrow) {
+    display: block;
+
+    color: #718096;
+
+    font-size: 0.9rem;
+
+    line-height: 1.45;
+}
+
+
+.s37-flow-arrow {
+    align-self: center;
+
+    color: #3979b7;
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   MODELING VS REMODELING TABLE
+   ========================================================= */
+
+.s37-table-wrap {
+    width: 100%;
+
+    margin-top: 24px;
+
+    overflow-x: auto;
+
+    border: 1px solid #dce5ef;
+
+    border-radius: 18px;
+
+    background: #ffffff;
+}
+
+
+.s37-comparison-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 620px;
+}
+
+
+.s37-comparison-table th,
+.s37-comparison-table td {
+    padding: 16px 15px;
+
+    border-bottom: 1px solid #e5ebf2;
+
+    text-align: left;
+
+    vertical-align: top;
+
+    line-height: 1.5;
+}
+
+
+.s37-comparison-table thead th {
+    background: #f2f6fb;
+
+    color: #246aa3;
+
+    font-weight: 700;
+}
+
+
+.s37-comparison-table tbody th {
+    color: #334155;
+
+    font-weight: 700;
+
+    background: #fafbfd;
+}
+
+
+.s37-comparison-table td {
+    color: #687789;
+}
+
+
+.s37-comparison-table tr:last-child th,
+.s37-comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   REMODELING FLOW
+   ========================================================= */
+
+.s37-remodeling-flow {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 28px;
+
+    flex-wrap: wrap;
+}
+
+
+.s37-remodeling-step {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    min-width: 125px;
+
+    min-height: 120px;
+
+    padding: 16px;
+
+    border: 1px solid #dce5ef;
+
+    border-radius: 20px;
+
+    background: #f7f9fc;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+.s37-remodeling-icon {
+    font-size: 1.7rem;
+}
+
+
+.s37-remodeling-step strong {
+    color: #2f4154;
+
+    font-size: 0.98rem;
+}
+
+
+.s37-remodeling-step small {
+    color: #7b8795;
+
+    font-size: 0.85rem;
+}
+
+
+.s37-remodeling-arrow {
+    color: #3979b7;
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   QUICK REVIEW
+   ========================================================= */
+
+.s37-review-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+
+    margin-top: 22px;
+}
+
+
+.s37-review-item {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    padding: 18px;
+
+    border: 1px solid #dce5ef;
+
+    border-radius: 17px;
+
+    background: #f8faff;
+
+    box-sizing: border-box;
+}
+
+
+.s37-review-item strong {
+    color: #246aa3;
+
+    font-size: 1rem;
+}
+
+
+.s37-review-item span {
+    color: #718096;
+
+    font-size: 0.93rem;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   REMEMBER BOX
+   ========================================================= */
+
+.s37-remember-box {
+    margin-top: 22px;
+
+    padding: 19px 20px;
+
+    border-radius: 18px;
+
+    background: #eef5ff;
+
+    color: #5f7083;
+
+    line-height: 1.6;
+}
+
+
+.s37-remember-box strong {
+    color: #246aa3;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .s37-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .s37-review-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .s37-stage {
+        padding: 16px;
+    }
+
+
+    .s37-stage-number {
+        flex-basis: 36px;
+
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .s37-growth-flow {
+        flex-direction: column;
+    }
+
+
+    .s37-growth-flow > div {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    .s37-flow-arrow {
+        transform: rotate(0deg);
+    }
+
+
+    .s37-remodeling-flow {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+
+    .s37-remodeling-step {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    .s37-remodeling-arrow {
+        transform: rotate(90deg);
+    }
+
+
+    .s37-diagram-image-wrap {
+        padding: 8px;
+
+        border-radius: 17px;
+    }
+
+
+    .s37-diagram figcaption {
+        font-size: 0.9rem;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE SCREENS
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .s37-info-card,
+    .s37-stage,
+    .s37-note {
+        padding: 16px;
+    }
+
+
+    .s37-remember-box {
+        padding: 17px;
+    }
+
+
+    .s37-diagram {
+        margin-top: 22px;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 01
+   Two Pathways of Bone Formation
+   ========================================================= */
+
+.diagram-01-section {
+    width: 100%;
+    margin: 28px 0 34px;
+}
+
+.diagram-01-section .diagram-card {
+    width: 100%;
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 2px solid #e1e8ef;
+    border-radius: 28px;
+
+    padding: 18px 18px 20px;
+
+    box-shadow: 0 8px 22px rgba(45, 72, 100, 0.07);
+
+    overflow: hidden;
+}
+
+/* Diagram image */
+
+.diagram-01-section .lesson-diagram {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+
+    border-radius: 18px;
+}
+
+/* Caption */
+
+.diagram-01-section .diagram-caption {
+    margin: 16px 8px 0;
+
+    text-align: center;
+
+    font-size: 15px;
+    line-height: 1.65;
+
+    font-style: italic;
+
+    color: #7a8795;
+}
+
+/* ---------------------------------------------------------
+   Mobile
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .diagram-01-section {
+        margin: 24px 0 30px;
+    }
+
+    .diagram-01-section .diagram-card {
+        border-radius: 24px;
+        padding: 12px 12px 17px;
+    }
+
+    .diagram-01-section .lesson-diagram {
+        border-radius: 15px;
+    }
+
+    .diagram-01-section .diagram-caption {
+        margin: 13px 5px 0;
+
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 02
+   Intramembranous Ossification
+   ========================================================= */
+
+.diagram-02-section {
+    width: 100%;
+    margin: 28px 0 34px;
+}
+
+.diagram-02-section .diagram-card {
+    width: 100%;
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 2px solid #e1e8ef;
+    border-radius: 28px;
+
+    padding: 14px 14px 20px;
+
+    box-shadow: 0 8px 22px rgba(45, 72, 100, 0.07);
+
+    overflow: hidden;
+}
+
+/* Diagram */
+
+.diagram-02-section .lesson-diagram {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+
+    border-radius: 18px;
+}
+
+/* Caption */
+
+.diagram-02-section .diagram-caption {
+    margin: 16px 8px 0;
+
+    text-align: center;
+
+    font-size: 15px;
+    line-height: 1.65;
+
+    font-style: italic;
+
+    color: #7a8795;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .diagram-02-section {
+        margin: 24px 0 30px;
+    }
+
+    .diagram-02-section .diagram-card {
+        border-radius: 24px;
+        padding: 10px 10px 17px;
+    }
+
+    .diagram-02-section .lesson-diagram {
+        border-radius: 15px;
+    }
+
+    .diagram-02-section .diagram-caption {
+        margin: 13px 5px 0;
+
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 03
+   Endochondral Ossification: Cartilage Model → Bone
+   ========================================================= */
+
+.diagram-03-section {
+    margin-top: 0;
+}
+
+.diagram-03-card {
+    width: 100%;
+    margin: 32px auto 0;
+    padding: 18px 18px 24px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 3px solid #e2e8f0;
+    border-radius: 28px;
+
+    overflow: hidden;
+}
+
+/* PNG container */
+.diagram-03-card .diagram-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+/* Actual PNG */
+.diagram-03-card .diagram-03-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+    border-radius: 16px;
+
+    object-fit: contain;
+}
+
+/* Caption */
+.diagram-03-card figcaption {
+    max-width: 92%;
+    margin: 22px auto 0;
+
+    text-align: center;
+
+    color: #7b8794;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .diagram-03-card {
+        margin-top: 26px;
+        padding: 12px 10px 20px;
+        border-radius: 24px;
+    }
+
+    .diagram-03-card .diagram-image-wrap {
+        border-radius: 14px;
+    }
+
+    .diagram-03-card .diagram-03-image {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .diagram-03-card figcaption {
+        max-width: 94%;
+        margin-top: 18px;
+
+        font-size: 0.98rem;
+        line-height: 1.55;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .diagram-03-card {
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 22px;
+    }
+
+    .diagram-03-card figcaption {
+        font-size: 0.92rem;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 04
+   How a Long Bone Grows in Length
+   ========================================================= */
+
+.diagram-04-section {
+    margin-top: 0;
+}
+
+.diagram-04-card {
+    width: 100%;
+    margin: 32px auto 0;
+    padding: 18px 18px 24px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 3px solid #e2e8f0;
+    border-radius: 28px;
+
+    overflow: hidden;
+}
+
+/* PNG wrapper */
+.diagram-04-card .diagram-image-wrap {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+/* Diagram 04 PNG */
+.diagram-04-card .diagram-04-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+
+    border-radius: 16px;
+
+    object-fit: contain;
+}
+
+/* Caption */
+.diagram-04-card figcaption {
+    max-width: 92%;
+    margin: 22px auto 0;
+
+    text-align: center;
+
+    color: #7b8794;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .diagram-04-card {
+        margin-top: 26px;
+        padding: 12px 10px 20px;
+        border-radius: 24px;
+    }
+
+    .diagram-04-card .diagram-image-wrap {
+        border-radius: 14px;
+    }
+
+    .diagram-04-card .diagram-04-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+
+        border-radius: 12px;
+    }
+
+    .diagram-04-card figcaption {
+        max-width: 94%;
+        margin-top: 18px;
+
+        font-size: 0.98rem;
+        line-height: 1.55;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .diagram-04-card {
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 22px;
+    }
+
+    .diagram-04-card figcaption {
+        font-size: 0.92rem;
+    }
+}
+
+/* =========================================================
+   LESSON 3.7 — DIAGRAM 05
+   APPOSITIONAL GROWTH: BONE GETS THICKER
+   ========================================================= */
+
+.s37-diagram-05 {
+    width: 100%;
+    margin: 26px 0 24px;
+    box-sizing: border-box;
+}
+
+.s37-diagram-05-card {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 2px solid #e3eaf3;
+    border-radius: 20px;
+
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(31, 64, 104, 0.07);
+}
+
+.s37-diagram-05-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.s37-diagram-05-caption {
+    margin: 14px 8px 4px;
+
+    text-align: center;
+
+    color: #68788b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .s37-diagram-05 {
+        margin: 22px 0 20px;
+    }
+
+    .s37-diagram-05-card {
+        padding: 8px;
+        border-radius: 18px;
+    }
+
+    .s37-diagram-05-image {
+        border-radius: 10px;
+    }
+
+    .s37-diagram-05-caption {
+        margin: 12px 6px 3px;
+
+        font-size: 0.88rem;
+        line-height: 1.55;
+    }
+}

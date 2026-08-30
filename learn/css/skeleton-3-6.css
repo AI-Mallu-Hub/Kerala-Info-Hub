@@ -1,0 +1,1085 @@
+/* =========================================================
+   LESSON 3.6
+   BONE TISSUE & BONE CELLS
+   Lesson-specific styles
+   ========================================================= */
+
+
+/* =========================================================
+   LESSON PAGE
+   ========================================================= */
+
+.s36-intro,
+.s36-section,
+.quiz-card {
+    margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+   ========================================================= */
+
+.s36-section .section-heading,
+.s36-intro .section-heading,
+.quiz-card .section-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.s36-section .section-heading h2,
+.s36-intro .section-heading h2,
+.quiz-card .section-heading h2 {
+    flex: 1;
+}
+
+
+/* =========================================================
+   DIAGRAM CONTAINER
+   ========================================================= */
+
+.s36-diagram {
+    width: 100%;
+    margin: 28px 0 0;
+    padding: 18px;
+    box-sizing: border-box;
+
+    border: 2px solid #e1e7ef;
+    border-radius: 22px;
+
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.s36-diagram img {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+.s36-diagram figcaption {
+    margin-top: 16px;
+    padding: 0 10px 4px;
+
+    text-align: center;
+
+    font-size: 15px;
+    line-height: 1.65;
+
+    font-style: italic;
+    color: #718095;
+}
+
+
+/* =========================================================
+   COMPACT BONE KEY POINTS
+   ========================================================= */
+
+.s36-key-points {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+
+    margin-top: 22px;
+}
+
+.s36-point {
+    padding: 17px 18px;
+
+    border: 1px solid #dce5ef;
+    border-radius: 17px;
+
+    background: #f7faff;
+}
+
+.s36-point strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 16px;
+    line-height: 1.4;
+
+    color: #2767a9;
+}
+
+.s36-point span {
+    display: block;
+
+    font-size: 14px;
+    line-height: 1.55;
+
+    color: #69798c;
+}
+
+
+/* =========================================================
+   BONE CELL CARDS
+   ========================================================= */
+
+.cell-list {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.cell-card {
+    padding: 20px;
+
+    border: 1px solid #dce5ef;
+    border-radius: 19px;
+
+    background: #f8faff;
+}
+
+.cell-card h3 {
+    margin: 0 0 8px;
+
+    font-size: 19px;
+    line-height: 1.35;
+
+    color: #2767a9;
+}
+
+.cell-card p {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    color: #68788b;
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+   ========================================================= */
+
+.table-wrapper {
+    width: 100%;
+    margin-top: 24px;
+
+    overflow-x: auto;
+
+    border: 1px solid #dce4ee;
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.s36-table {
+    width: 100%;
+
+    min-width: 560px;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    color: #455568;
+}
+
+.s36-table th {
+    padding: 15px 16px;
+
+    text-align: left;
+
+    font-weight: 800;
+
+    color: #2767a9;
+    background: #edf4fd;
+
+    border-bottom: 1px solid #d9e2ed;
+}
+
+.s36-table td {
+    padding: 15px 16px;
+
+    vertical-align: top;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e3e8ee;
+}
+
+.s36-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.s36-table td:first-child {
+    font-weight: 700;
+    color: #334456;
+}
+
+
+/* =========================================================
+   REMEMBER BOX
+   ========================================================= */
+
+.s36-remember {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    margin: 0 0 30px;
+
+    padding: 22px 22px;
+
+    box-sizing: border-box;
+
+    border-left: 6px solid #73add8;
+    border-radius: 20px;
+
+    background: #eef7ff;
+
+    color: #4c6075;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.s36-remember strong {
+    color: #2767a9;
+}
+
+.remember-icon {
+    flex: 0 0 auto;
+
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   QUIZ
+   ========================================================= */
+
+.quiz-card {
+    margin-top: 30px;
+}
+
+.quiz-info {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 10px 18px;
+
+    margin: 20px 0 22px;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    color: #4f6072;
+}
+
+.quiz-link {
+    display: inline-flex;
+    align-items: center;
+
+    margin-top: 4px;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    color: #2767a9;
+}
+
+
+/* =========================================================
+   FLOATING SCROLL BUTTONS
+   ========================================================= */
+
+.scroll-button {
+    position: fixed;
+
+    right: 18px;
+
+    z-index: 1000;
+
+    width: 58px;
+    height: 58px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #8bb5e8;
+    color: #ffffff;
+
+    font-size: 27px;
+    line-height: 1;
+
+    box-shadow:
+        0 8px 22px rgba(42, 76, 112, 0.18);
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: scale(0.85);
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease,
+        transform 0.2s ease;
+}
+
+.scroll-button.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.scroll-button:hover {
+    transform: scale(1.05);
+}
+
+.scroll-down {
+    top: 120px;
+}
+
+.scroll-up {
+    bottom: 18px;
+}
+
+
+/* =========================================================
+   PROFESSIONAL COMPACT FOOTER
+   ========================================================= */
+
+.lesson-footer {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin-top: 46px;
+
+    padding: 36px 24px 26px;
+
+    text-align: center;
+
+    background: #eef3fb;
+
+    border-top: 1px solid #d8e0ec;
+
+    color: #617186;
+}
+
+
+/* Lesson identity */
+
+.footer-lesson {
+    margin: 0 auto 23px;
+}
+
+.footer-meta {
+    margin: 0 0 8px;
+
+    font-size: 13px;
+    line-height: 1.4;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+    color: #718095;
+}
+
+.footer-title {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 0;
+
+    font-size: 24px;
+    line-height: 1.35;
+
+    font-weight: 800;
+
+    color: #18212d;
+}
+
+.footer-title-icon {
+    flex: 0 0 auto;
+
+    font-size: 22px;
+    line-height: 1;
+}
+
+
+/* Footer links */
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 13px;
+
+    margin: 0 auto;
+}
+
+.footer-links a {
+    font-size: 15px;
+    line-height: 1.4;
+
+    font-weight: 700;
+
+    color: #2767a9;
+
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-links span {
+    font-size: 14px;
+
+    color: #a5b0bd;
+}
+
+
+/* Footer bottom */
+
+.footer-bottom {
+    margin-top: 23px;
+
+    padding-top: 19px;
+
+    border-top: 1px solid #d2dbe7;
+
+    font-size: 12.5px;
+    line-height: 1.7;
+
+    color: #68788b;
+}
+
+.footer-bottom div:first-child {
+    font-weight: 600;
+}
+
+.footer-bottom div:last-child {
+    margin-top: 2px;
+
+    color: #8290a0;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .s36-key-points {
+        grid-template-columns: 1fr;
+    }
+
+    .cell-list {
+        grid-template-columns: 1fr;
+    }
+
+    .quiz-info {
+        grid-template-columns: 1fr;
+    }
+
+    .s36-diagram {
+        padding: 12px;
+
+        border-radius: 18px;
+    }
+
+    .s36-diagram figcaption {
+        padding: 0 6px 3px;
+
+        font-size: 14px;
+    }
+
+    .s36-remember {
+        padding: 19px 18px;
+
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .s36-intro,
+    .s36-section,
+    .quiz-card {
+        margin-bottom: 22px;
+    }
+
+    .s36-point {
+        padding: 16px;
+    }
+
+    .cell-card {
+        padding: 17px;
+    }
+
+    .s36-table {
+        min-width: 520px;
+
+        font-size: 14px;
+    }
+
+    .s36-table th,
+    .s36-table td {
+        padding: 13px 14px;
+    }
+
+    .scroll-button {
+        right: 13px;
+
+        width: 56px;
+        height: 56px;
+    }
+
+    .scroll-down {
+        top: 120px;
+    }
+
+    .scroll-up {
+        bottom: 15px;
+    }
+
+    .lesson-footer {
+        margin-top: 38px;
+
+        padding: 32px 18px 24px;
+    }
+
+    .footer-meta {
+        font-size: 12px;
+    }
+
+    .footer-title {
+        font-size: 21px;
+
+        gap: 7px;
+    }
+
+    .footer-title-icon {
+        font-size: 20px;
+    }
+
+    .footer-links {
+        gap: 11px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    .footer-bottom {
+        margin-top: 21px;
+
+        padding-top: 17px;
+
+        font-size: 12px;
+    }
+}
+
+/* =========================================================
+   LESSON 3.6
+   DIAGRAM 01
+   Compact Bone vs Spongy Bone
+   ========================================================= */
+
+.s36-comparison-diagram {
+    width: 100%;
+    margin: 28px auto 0;
+    padding: 14px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Main comparison image */
+
+.s36-comparison-diagram img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Caption */
+
+.s36-comparison-diagram figcaption {
+    margin-top: 18px;
+    padding: 0 10px 4px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .s36-comparison-diagram {
+        padding: 8px;
+        margin-top: 22px;
+    }
+
+    .s36-comparison-diagram img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .s36-comparison-diagram figcaption {
+        padding: 0 8px 4px;
+        margin-top: 16px;
+        line-height: 1.55;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 02
+   STRUCTURE OF AN OSTEON
+   ========================================================= */
+
+.s36-osteon-section {
+    overflow: hidden;
+}
+
+
+/* Diagram container */
+
+.s36-osteon-diagram {
+    margin-top: 24px;
+    padding: 14px;
+    background: #ffffff;
+    border: 2px solid #dfe7ef;
+    border-radius: 22px;
+}
+
+
+/* Osteon image */
+
+.s36-osteon-diagram img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 14px;
+}
+
+
+/* Caption */
+
+.s36-osteon-diagram figcaption {
+    margin-top: 14px;
+    padding: 4px 8px 6px;
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+
+    color: #718096;
+    font-style: italic;
+}
+
+
+/* =========================================================
+   OSTEON KEY FEATURES
+   ========================================================= */
+
+.s36-osteon-points {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+
+    margin-top: 22px;
+}
+
+
+/* Individual feature card */
+
+.s36-osteon-point {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    padding: 18px 18px;
+
+    background: #f7f9fc;
+    border: 1px solid #dfe7ef;
+    border-radius: 16px;
+}
+
+
+/* Feature name */
+
+.s36-osteon-point strong {
+    display: block;
+
+    font-size: 1.08rem;
+    line-height: 1.35;
+
+    color: #28669c;
+}
+
+
+/* Feature explanation */
+
+.s36-osteon-point span {
+    display: block;
+
+    font-size: 0.98rem;
+    line-height: 1.55;
+
+    color: #718096;
+}
+
+
+/* =========================================================
+   TABLET / LARGER SCREENS
+   ========================================================= */
+
+@media (min-width: 700px) {
+
+    .s36-osteon-points {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE SCREENS
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .s36-osteon-diagram {
+        padding: 10px;
+        border-radius: 18px;
+    }
+
+    .s36-osteon-diagram figcaption {
+        font-size: 0.9rem;
+        line-height: 1.55;
+    }
+
+    .s36-osteon-point {
+        padding: 16px;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 03
+   Spongy Bone and Trabeculae
+   ========================================================= */
+
+.diagram-card-03 {
+    width: 100%;
+    margin: 32px 0 40px;
+    padding: 18px 18px 22px;
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 26px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Image area */
+.diagram-card-03 .diagram-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Actual PNG */
+.diagram-card-03 .diagram-image-wrap img {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 16px;
+    object-fit: contain;
+}
+
+/* Caption */
+.diagram-card-03 figcaption {
+    margin: 18px 6px 0;
+    padding-top: 16px;
+    border-top: 1px solid #e5eaf0;
+    text-align: center;
+    color: #64748b;
+    font-size: 0.98rem;
+    line-height: 1.65;
+}
+
+/* Caption title */
+.diagram-card-03 figcaption strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #334155;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Caption description */
+.diagram-card-03 figcaption span {
+    display: block;
+    font-style: italic;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .diagram-card-03 {
+        margin: 28px 0 36px;
+        padding: 12px 12px 18px;
+        border-radius: 22px;
+    }
+
+    .diagram-card-03 .diagram-image-wrap img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    .diagram-card-03 figcaption {
+        margin: 14px 4px 0;
+        padding-top: 13px;
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .diagram-card-03 figcaption strong {
+        font-size: 0.94rem;
+        margin-bottom: 5px;
+    }
+}
+
+/* =====================================================
+   DIAGRAM 04
+   Major Bone Cells
+   ===================================================== */
+
+.diagram-card-04 {
+    width: 100%;
+    margin: 32px 0 40px;
+    padding: 18px 18px 22px;
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 26px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Diagram image container */
+.diagram-card-04 .diagram-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Diagram PNG */
+.diagram-card-04 .diagram-image-wrap img {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 16px;
+    object-fit: contain;
+}
+
+/* Caption */
+.diagram-card-04 figcaption {
+    margin: 18px 6px 0;
+    padding-top: 16px;
+    border-top: 1px solid #e5eaf0;
+    text-align: center;
+    color: #64748b;
+    font-size: 0.98rem;
+    line-height: 1.65;
+}
+
+/* Caption heading */
+.diagram-card-04 figcaption strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #334155;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Caption description */
+.diagram-card-04 figcaption span {
+    display: block;
+    font-style: italic;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    .diagram-card-04 {
+        margin: 28px 0 36px;
+        padding: 12px 12px 18px;
+        border-radius: 22px;
+    }
+
+    .diagram-card-04 .diagram-image-wrap img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    .diagram-card-04 figcaption {
+        margin: 14px 4px 0;
+        padding-top: 13px;
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .diagram-card-04 figcaption strong {
+        font-size: 0.94rem;
+        margin-bottom: 5px;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 05 — BONE REMODELING
+   ========================================================= */
+
+.s36-remodeling-diagram {
+    padding: 22px 18px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Small diagram identifier */
+
+.s36-remodeling-diagram .diagram-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    margin-bottom: 16px;
+
+    font-size: 15px;
+    font-weight: 700;
+    color: #2f6fa3;
+
+    letter-spacing: 0.2px;
+}
+
+.s36-remodeling-diagram .diagram-label-icon {
+    font-size: 18px;
+    line-height: 1;
+}
+
+/* Diagram image */
+
+.s36-remodeling-diagram img {
+    display: block;
+
+    width: 100%;
+    max-width: 620px;
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+/* Caption */
+
+.s36-remodeling-diagram figcaption {
+    margin: 16px auto 0;
+
+    max-width: 520px;
+
+    font-size: 15px;
+    line-height: 1.65;
+
+    font-style: italic;
+    color: #7a8795;
+}
+
+/* Mobile refinement */
+
+@media (max-width: 600px) {
+
+    .s36-remodeling-diagram {
+        padding: 18px 14px 18px;
+    }
+
+    .s36-remodeling-diagram .diagram-label {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .s36-remodeling-diagram figcaption {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-top: 13px;
+    }
+}
+
