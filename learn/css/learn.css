@@ -45,3 +45,86 @@ body{margin:0;
         text-decoration:none;
         padding:14px 24px;
         border-radius:12px}
+
+/* =========================================================
+   GLOBAL THEME SUPPORT
+   ========================================================= */
+
+.hero{
+    position:relative;
+}
+
+.theme-btn{
+    position:absolute;
+    top:18px;
+    right:18px;
+
+    width:46px;
+    height:46px;
+
+    border:none;
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(255,255,255,.18);
+    color:#fff;
+
+    font-size:22px;
+    line-height:1;
+
+    cursor:pointer;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+    transition:
+        transform .2s ease,
+        background .2s ease;
+}
+
+.theme-btn:active{
+    transform:scale(.94);
+}
+
+
+/* ---------- DARK MODE ---------- */
+
+html[data-theme="dark"] body{
+    background:#0f172a;
+    color:#e5e7eb;
+}
+
+html[data-theme="dark"] .hero{
+    background:#0b3b78;
+}
+
+html[data-theme="dark"] .search input{
+    background:#1e293b;
+    color:#e5e7eb;
+    border-color:#475569;
+}
+
+html[data-theme="dark"] .search input::placeholder{
+    color:#94a3b8;
+}
+
+html[data-theme="dark"] .card{
+    background:#1e293b;
+    color:#e5e7eb;
+    box-shadow:0 6px 18px rgba(0,0,0,.28);
+}
+
+html[data-theme="dark"] .card h2,
+html[data-theme="dark"] .card p{
+    color:#e5e7eb;
+}
+
+html[data-theme="dark"] .card.disabled{
+    color:#cbd5e1;
+}
+
+html[data-theme="dark"] .back a{
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
+}

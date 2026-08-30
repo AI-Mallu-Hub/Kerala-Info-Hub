@@ -14247,3 +14247,184 @@ color:#2563eb;
 
 }
 
+/* =========================================================
+   KIH GLOBAL DARK THEME
+   Works with /theme.js
+   ========================================================= */
+
+html[data-theme="dark"] body{
+    background:#0f172a;
+    color:#e5e7eb;
+}
+
+
+/* ---------- LESSON HEADER ---------- */
+
+html[data-theme="dark"] .lesson-header{
+    background:#0b3b78;
+}
+
+
+/* ---------- LESSON TEXT ---------- */
+
+html[data-theme="dark"] .lesson-container{
+    color:#e5e7eb;
+}
+
+html[data-theme="dark"] .lesson-container h1,
+html[data-theme="dark"] .lesson-container h2,
+html[data-theme="dark"] .lesson-container h3,
+html[data-theme="dark"] .lesson-container h4,
+html[data-theme="dark"] .lesson-container strong{
+    color:#f8fafc;
+}
+
+html[data-theme="dark"] .lesson-container p,
+html[data-theme="dark"] .lesson-container li{
+    color:#dbe4f0;
+}
+
+
+/* ---------- LESSON CARDS ---------- */
+
+html[data-theme="dark"] .lesson-card,
+html[data-theme="dark"] .toc-card,
+html[data-theme="dark"] .exam-tip,
+html[data-theme="dark"] .clinical-box,
+html[data-theme="dark"] .memory-box,
+html[data-theme="dark"] .summary-box,
+html[data-theme="dark"] .quiz-box{
+    background:#1e293b;
+    color:#e5e7eb;
+    box-shadow:0 6px 18px rgba(0,0,0,.30);
+}
+
+
+/* ---------- LINKS ---------- */
+
+html[data-theme="dark"] .lesson-container a{
+    color:#93c5fd;
+}
+
+
+/* ---------- TABLES ---------- */
+
+html[data-theme="dark"] .lesson-table{
+    background:#1e293b;
+    color:#e5e7eb;
+}
+
+html[data-theme="dark"] .lesson-table td{
+    color:#e5e7eb;
+    border-color:#334155;
+}
+
+html[data-theme="dark"] .lesson-table tr:nth-child(even){
+    background:#172033;
+}
+
+html[data-theme="dark"] .lesson-table tr:hover{
+    background:#24344d;
+}
+
+
+/* ---------- COLLAPSIBLE HEADINGS ---------- */
+
+html[data-theme="dark"] .collapse-title{
+    color:#f8fafc;
+}
+
+html[data-theme="dark"] .collapse-icon{
+    color:#cbd5e1;
+}
+
+
+/* ---------- THEME BUTTON ---------- */
+
+.lesson-header .theme-btn{
+    position:absolute;
+
+    top:16px;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:34px;
+    height:34px;
+
+    border:none;
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(255,255,255,.20);
+    color:#fff;
+
+    font-size:15px;
+    line-height:1;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.16);
+
+    z-index:20;
+
+    transition:
+        transform .2s ease,
+        background .25s ease,
+        box-shadow .25s ease;
+}
+
+
+/* ---------- DARK MODE ---------- */
+
+html[data-theme="dark"] .lesson-header .theme-btn{
+    background:rgba(255,255,255,.10);
+
+    box-shadow:
+        0 3px 12px rgba(0,0,0,.30);
+}
+
+
+/* ---------- LIGHT MODE ---------- */
+
+html[data-theme="light"] .lesson-header .theme-btn{
+    background:rgba(255,255,255,.20);
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.16);
+}
+
+
+/* ---------- ACTIVE ---------- */
+
+.lesson-header .theme-btn:active{
+    transform:translateX(-50%) scale(.92);
+}
+
+
+/* ---------- COMMON WHITE SURFACES ---------- */
+
+html[data-theme="dark"] .lesson-table,
+html[data-theme="dark"] .lesson-diagram,
+html[data-theme="dark"] .glance-item{
+    background:#1e293b;
+}
+
+
+/* ---------- IMAGES / DIAGRAM WRAPPERS ---------- */
+
+html[data-theme="dark"] .diagram-image-wrap{
+    background:#172033;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+html[data-theme="dark"] .lesson-footer{
+    background:#0b3b78;
+    color:#e5e7eb;
+}
+

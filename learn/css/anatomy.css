@@ -60,71 +60,86 @@ font-size:.9rem;
 line-height:1.4;
 }
 
-/* ==========================================
-   PREMIUM LESSON TABLE
-========================================== */
+/* =========================================================
+   GLOBAL THEME SUPPORT
+   ========================================================= */
 
-.lesson-table{
-width:100%;
-margin:20px 0;
-border-collapse:collapse;
-overflow:hidden;
-border-radius:14px;
-background:#fff;
-box-shadow:0 4px 12px rgba(0,0,0,.06);
-font-size:.95rem;
+.hero{
+    position:relative;
 }
 
-.lesson-table th{
+.theme-btn{
+    position:absolute;
+    top:18px;
+    right:18px;
 
-background:#2563eb;
-color:#fff;
-padding:14px;
-text-align:left;
-font-weight:700;
+    width:46px;
+    height:46px;
 
+    border:none;
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(255,255,255,.18);
+    color:#fff;
+
+    font-size:22px;
+    line-height:1;
+
+    cursor:pointer;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+    transition:
+        transform .2s ease,
+        background .2s ease;
 }
 
-.lesson-table td{
-
-padding:14px;
-border-bottom:1px solid #e5e7eb;
-vertical-align:top;
-
+.theme-btn:active{
+    transform:scale(.94);
 }
 
-.lesson-table tr:last-child td{
 
-border-bottom:none;
+/* ---------- DARK MODE ---------- */
 
+html[data-theme="dark"] body{
+    background:#0f172a;
+    color:#e5e7eb;
 }
 
-.lesson-table tr:nth-child(even){
-
-background:#f8fafc;
-
+html[data-theme="dark"] .hero{
+    background:#0b3b78;
 }
 
-.lesson-table tr:hover{
-
-background:#eef6ff;
-transition:.2s;
-
+html[data-theme="dark"] .about{
+    color:#e5e7eb;
 }
 
-@media (max-width:768px){
-
-.lesson-table{
-
-font-size:.88rem;
-
+html[data-theme="dark"] .card{
+    background:#1e293b;
+    color:#e5e7eb;
+    box-shadow:0 6px 18px rgba(0,0,0,.28);
 }
 
-.lesson-table th,
-.lesson-table td{
-
-padding:10px;
-
+html[data-theme="dark"] .card h3,
+html[data-theme="dark"] .card p{
+    color:#e5e7eb;
 }
 
+html[data-theme="dark"] .lesson-sublist{
+    background:#172033;
+    border-left-color:#3b82f6;
 }
+
+html[data-theme="dark"] .lesson-sublist p,
+html[data-theme="dark"] .lesson-sublist li{
+    color:#dbe4f0;
+}
+
+html[data-theme="dark"] .back a{
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
+}
+
