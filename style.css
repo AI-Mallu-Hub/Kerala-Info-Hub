@@ -274,54 +274,380 @@ transform:translateY(0);
 }
 
 }
-/* =====================================================
-   Search Section
-===================================================== */
 
-.search{
+ /* =========================================================
+   LEARNING SEARCH
+   ========================================================= */
 
-    max-width:900px;
+.learning-search {
+    width: 100%;
+    box-sizing: border-box;
 
-    margin:50px auto;
+    padding: 52px 20px 46px;
 
-    padding:0 20px;
-
+    background: #f5f8fc;
 }
 
-.search input{
 
-    width:100%;
+/* ---------------------------------------------------------
+   Search content wrapper
+   --------------------------------------------------------- */
 
-    padding:18px 22px;
+.learning-search .search-inner {
+    width: 100%;
+    max-width: 720px;
 
-    border:2px solid var(--border);
-
-    border-radius:50px;
-
-    font-size:17px;
-
-    outline:none;
-
-    background:var(--white);
-
-    transition:.3s;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.05);
-
+    margin: 0 auto;
 }
 
-.search input:focus{
 
-    border-color:var(--primary);
+/* ---------------------------------------------------------
+   Heading
+   --------------------------------------------------------- */
 
-    box-shadow:0 0 0 4px rgba(13,110,253,.15);
+.learning-search .search-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    gap: 12px;
+
+    margin-bottom: 22px;
+
+    text-align: left;
 }
 
-.search input::placeholder{
 
-    color:var(--text-light);
+.learning-search .search-heading-icon {
+    flex-shrink: 0;
 
+    font-size: 27px;
+
+    line-height: 1;
+}
+
+
+.learning-search .search-heading h2 {
+    margin: 0;
+
+    color: #243447;
+
+    font-size: 26px;
+    line-height: 1.25;
+
+    font-weight: 700;
+}
+
+
+.learning-search .search-heading p {
+    margin: 5px 0 0;
+
+    color: #7a8795;
+
+    font-size: 15px;
+    line-height: 1.45;
+}
+
+
+/* ---------------------------------------------------------
+   Search box
+   --------------------------------------------------------- */
+
+.learning-search .search-box {
+    position: relative;
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   Search icon
+   --------------------------------------------------------- */
+
+.learning-search .search-icon {
+    position: absolute;
+
+    left: 22px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 21px;
+
+    pointer-events: none;
+
+    opacity: 0.72;
+}
+
+
+/* ---------------------------------------------------------
+   Search input
+   --------------------------------------------------------- */
+
+.learning-search #search {
+    display: block;
+
+    width: 100%;
+    height: 62px;
+
+    box-sizing: border-box;
+
+    padding: 0 52px 0 58px;
+
+    border: 2px solid #dce5ef;
+    border-radius: 31px;
+
+    background: #ffffff;
+
+    color: #263645;
+
+    font-family: inherit;
+
+    font-size: 17px;
+    line-height: 1.4;
+
+    outline: none;
+
+    box-shadow:
+        0 6px 18px rgba(44, 74, 105, 0.08);
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* ---------------------------------------------------------
+   Placeholder
+   --------------------------------------------------------- */
+
+.learning-search #search::placeholder {
+    color: #7a8795;
+
+    opacity: 1;
+}
+
+
+/* ---------------------------------------------------------
+   Focus
+   --------------------------------------------------------- */
+
+.learning-search #search:focus {
+    border-color: #3b82f6;
+
+    box-shadow:
+        0 8px 24px rgba(44, 74, 105, 0.13);
+
+    transform: translateY(-1px);
+}
+
+
+/* ---------------------------------------------------------
+   Keyboard hint
+   --------------------------------------------------------- */
+
+.learning-search .search-hint {
+    position: absolute;
+
+    right: 20px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #eef3f8;
+
+    color: #7a8795;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   Quick search suggestions
+   --------------------------------------------------------- */
+
+.learning-search .search-suggestions {
+    display: flex;
+
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-top: 16px;
+}
+
+
+.learning-search .search-suggestions span {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8f0;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    line-height: 1.3;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .learning-search {
+        padding: 42px 20px 38px;
+    }
+
+
+    .learning-search .search-heading {
+        gap: 10px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .learning-search .search-heading-icon {
+        font-size: 24px;
+    }
+
+
+    .learning-search .search-heading h2 {
+        font-size: 22px;
+    }
+
+
+    .learning-search .search-heading p {
+        font-size: 14px;
+
+        margin-top: 4px;
+    }
+
+
+    .learning-search #search {
+        height: 58px;
+
+        padding-left: 53px;
+        padding-right: 48px;
+
+        font-size: 16px;
+
+        border-radius: 29px;
+    }
+
+
+    .learning-search .search-icon {
+        left: 19px;
+
+        font-size: 19px;
+    }
+
+
+    .learning-search .search-hint {
+        right: 16px;
+
+        width: 25px;
+        height: 25px;
+
+        font-size: 13px;
+    }
+
+
+    .learning-search .search-suggestions {
+        margin-top: 14px;
+
+        gap: 7px;
+    }
+
+
+    .learning-search .search-suggestions span {
+        padding: 6px 10px;
+
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .learning-search {
+        padding: 36px 16px 32px;
+    }
+
+
+    .learning-search .search-heading {
+        margin-bottom: 16px;
+    }
+
+
+    .learning-search .search-heading-icon {
+        font-size: 22px;
+    }
+
+
+    .learning-search .search-heading h2 {
+        font-size: 20px;
+    }
+
+
+    .learning-search .search-heading p {
+        font-size: 13px;
+    }
+
+
+    .learning-search #search {
+        height: 56px;
+
+        padding-left: 50px;
+
+        font-size: 15.5px;
+
+        border-radius: 28px;
+    }
+
+
+    .learning-search .search-icon {
+        left: 17px;
+
+        font-size: 18px;
+    }
+
+
+    .learning-search .search-suggestions span {
+        font-size: 11.5px;
+
+        padding: 5px 9px;
+    }
 }
 
 /* =====================================================
@@ -410,6 +736,234 @@ transform:translateY(0);
     text-decoration:none;
 
     color:inherit;
+
+}
+
+/* =========================================================
+   PRACTICE & EXAM PREPARATION
+   ========================================================= */
+
+.practice-section {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 10px 0 70px;
+}
+
+
+/* ---------------------------------------------------------
+   Section Heading
+   --------------------------------------------------------- */
+
+.practice-heading {
+    text-align: center;
+
+    margin-bottom: 28px;
+}
+
+
+.practice-heading h2 {
+    margin: 0;
+
+    color: #243447;
+
+    font-size: 30px;
+    line-height: 1.3;
+
+    font-weight: 700;
+}
+
+
+.practice-heading p {
+    margin: 8px auto 0;
+
+    max-width: 680px;
+
+    color: var(--text-light);
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* ---------------------------------------------------------
+   Practice Grid
+   --------------------------------------------------------- */
+
+.practice-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 24px;
+}
+
+
+/* ---------------------------------------------------------
+   Practice Card Link
+   --------------------------------------------------------- */
+
+.practice-card-link {
+    display: block;
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+/* ---------------------------------------------------------
+   Practice Card
+   --------------------------------------------------------- */
+
+.practice-card {
+    height: 100%;
+
+    padding: 26px;
+}
+
+
+.practice-card h3 {
+    margin-bottom: 14px;
+
+    color: var(--primary);
+
+    font-size: 22px;
+    line-height: 1.35;
+}
+
+
+.practice-card p {
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* ---------------------------------------------------------
+   Hover
+   --------------------------------------------------------- */
+
+.practice-card-link:hover .practice-card {
+    transform: translateY(-6px);
+
+    border-color: rgba(13, 110, 253, .2);
+
+    box-shadow:
+        0 16px 32px rgba(0, 0, 0, .11);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .practice-section {
+        width: 92%;
+
+        padding-top: 4px;
+        padding-bottom: 55px;
+    }
+
+
+    .practice-heading {
+        margin-bottom: 22px;
+    }
+
+
+    .practice-heading h2 {
+        font-size: 25px;
+    }
+
+
+    .practice-heading p {
+        font-size: 14px;
+
+        line-height: 1.55;
+    }
+
+
+    .practice-grid {
+        gap: 20px;
+    }
+
+
+    .practice-card {
+        padding: 22px;
+    }
+
+
+    .practice-card h3 {
+        font-size: 20px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .practice-card p {
+        font-size: 15px;
+
+        line-height: 1.65;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .practice-section {
+        width: 92%;
+
+        padding-top: 0;
+        padding-bottom: 45px;
+    }
+
+
+    .practice-heading {
+        margin-bottom: 20px;
+    }
+
+
+    .practice-heading h2 {
+        font-size: 22px;
+    }
+
+
+    .practice-heading p {
+        font-size: 13px;
+    }
+
+
+    .practice-grid {
+        gap: 18px;
+    }
+
+
+    .practice-card {
+        padding: 20px;
+    }
+
+
+    .practice-card h3 {
+        font-size: 19px;
+    }
+
+
+    .practice-card p {
+        font-size: 14px;
+    }
 
 }
 
@@ -654,121 +1208,981 @@ footer{
 
 }
 
-.feedback-card{
+/* =========================================================
+   FEEDBACK + SUPPORT
+   ========================================================= */
 
-    background:white;
+.feedback-card,
+.support-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 26px 24px;
+    margin: 24px 0;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
 
-    border-radius:20px;
+.feedback-support-grid {
+    gap: 40px;
+}
 
-    padding:25px;
 
-    margin:30px;
+/* ---------------------------------------------------------
+   Feedback
+   --------------------------------------------------------- */
 
-    text-align:center;
+.feedback-card h3,
+.support-card h3 {
+    margin: 0 0 14px;
+    color: #1976d2;
+    font-size: 1.45rem;
+    line-height: 1.3;
+}
 
-    box-shadow:0 10px 30px rgba(0,0,0,.12);
+.feedback-card p {
+    margin: 0 auto 20px;
+    max-width: 430px;
+    color: #666;
+    line-height: 1.65;
+    font-size: 16px;
+}
+
+
+/* Feedback button */
+
+.feedback-btn {
+    display: inline-block;
+
+    background: #1976d2;
+    color: #ffffff;
+
+    padding: 13px 28px;
+    border-radius: 12px;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        opacity .2s ease;
+}
+
+.feedback-btn:hover {
+    opacity: .92;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(25, 118, 210, .25);
+}
+
+
+/* ---------------------------------------------------------
+   Support
+   --------------------------------------------------------- */
+
+.support-card h3 {
+    margin-bottom: 16px;
+}
+
+.support-card p {
+    max-width: 470px;
+    margin: 0 auto 16px;
+
+    color: #555;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.support-note {
+    font-size: 15px !important;
+    color: #777 !important;
+}
+
+
+/* Support button */
+
+.support-btn {
+    display: inline-block;
+
+    margin-top: 6px;
+
+    background: #2e7d32;
+    color: #ffffff;
+
+    padding: 13px 28px;
+    border-radius: 12px;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        opacity .2s ease;
+}
+
+.support-btn:hover {
+    opacity: .92;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(46, 125, 50, .25);
+}
+
+
+/* ---------------------------------------------------------
+   Mobile
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .feedback-card,
+    .support-card {
+        margin: 22px 16px;
+        padding: 24px 20px;
+    }
+
+    .feedback-card h3,
+    .support-card h3 {
+        font-size: 1.35rem;
+    }
+
+    .feedback-card p,
+    .support-card p {
+        font-size: 15.5px;
+        line-height: 1.65;
+    }
+
+    .feedback-btn,
+    .support-btn {
+        padding: 13px 24px;
+        font-size: 15.5px;
+    }
+}
+
+/* =====================================================
+   HOMEPAGE HERO - LEARNING PLATFORM
+   ===================================================== */
+
+.hero-tagline {
+  margin: 8px 0 20px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* =====================================================
+   HOMEPAGE HERO - COMPACT / TIGHTER LAYOUT
+   ===================================================== */
+
+.hero {
+  padding: 42px 24px 68px !important;
+}
+
+/* Main heading */
+.hero h1 {
+  margin-top: 0 !important;
+  margin-bottom: 14px !important;
+}
+
+/* Learn • Practice • Master */
+.hero .hero-tagline {
+  margin-top: 0 !important;
+  margin-bottom: 26px !important;
+}
+
+/* Main description */
+.hero > p:not(.hero-tagline):not(.hero-highlight) {
+  margin-top: 0 !important;
+  margin-bottom: 26px !important;
+  line-height: 1.65 !important;
+}
+
+/* Highlight line */
+.hero .hero-highlight {
+  margin-top: 0 !important;
+  margin-bottom: 30px !important;
+  line-height: 1.55 !important;
+}
+
+/* Explore button */
+.hero .btn {
+  margin-top: 0 !important;
+}
+
+/* =========================================================
+   MEDICAL LEARNING - PRIMARY CARD
+   ========================================================= */
+
+.medical-learning-link {
+    text-decoration: none;
+    color: inherit;
+
+    display: block;
+}
+
+
+/* ---------------------------------------------------------
+   Main card
+   --------------------------------------------------------- */
+
+.medical-learning-card {
+    position: relative;
+
+    padding: 30px;
+
+    border: 1px solid #dce8f5;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff 0%,
+            #f8fbff 100%
+        );
+
+    box-shadow:
+        0 8px 24px rgba(44, 74, 105, 0.09);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+/* ---------------------------------------------------------
+   Header
+   --------------------------------------------------------- */
+
+.medical-learning-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 17px;
+}
+
+
+.medical-learning-header h3 {
+    margin: 0;
+
+    color: var(--primary);
+
+    font-size: 24px;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+}
+
+
+/* ---------------------------------------------------------
+   NEW badge
+   --------------------------------------------------------- */
+
+.medical-new-badge {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 4px 10px;
+
+    border-radius: 20px;
+
+    background: #16a34a;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* ---------------------------------------------------------
+   Lead text
+   --------------------------------------------------------- */
+
+.medical-learning-lead {
+    margin: 0 0 18px;
+
+    color: var(--text-light);
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    font-weight: 500;
+}
+
+
+/* ---------------------------------------------------------
+   Subject pills
+   --------------------------------------------------------- */
+
+.medical-learning-subjects {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 15px;
+}
+
+
+.medical-learning-subjects span {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 7px 11px;
+
+    border-radius: 18px;
+
+    background: #edf5ff;
+
+    border: 1px solid #dbeafe;
+
+    color: #2867a8;
+
+    font-size: 13px;
+
+    line-height: 1.2;
+
+    font-weight: 600;
+}
+
+
+/* ---------------------------------------------------------
+   Learning features
+   --------------------------------------------------------- */
+
+.medical-learning-features {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px 16px;
+
+    padding-top: 3px;
+
+    color: #6f7f90;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+.medical-learning-features span {
+    white-space: nowrap;
+}
+
+
+/* ---------------------------------------------------------
+   CTA
+   --------------------------------------------------------- */
+
+.medical-learning-cta {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 22px;
+
+    color: var(--primary);
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+.medical-learning-cta span {
+    font-size: 19px;
+
+    transition:
+        transform 0.2s ease;
+}
+
+
+/* ---------------------------------------------------------
+   Hover
+   --------------------------------------------------------- */
+
+.medical-learning-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(13, 110, 253, 0.25);
+
+    box-shadow:
+        0 16px 32px rgba(44, 74, 105, 0.13);
+}
+
+
+.medical-learning-card:hover
+.medical-learning-cta span {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .medical-learning-card {
+        padding: 24px;
+    }
+
+
+    .medical-learning-header {
+        gap: 9px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .medical-learning-header h3 {
+        font-size: 22px;
+    }
+
+
+    .medical-new-badge {
+        padding: 4px 9px;
+
+        font-size: 10px;
+    }
+
+
+    .medical-learning-lead {
+        font-size: 16px;
+
+        line-height: 1.55;
+
+        margin-bottom: 16px;
+    }
+
+
+    .medical-learning-subjects {
+        gap: 7px;
+
+        margin-bottom: 14px;
+    }
+
+
+    .medical-learning-subjects span {
+        padding: 6px 10px;
+
+        font-size: 12px;
+    }
+
+
+    .medical-learning-features {
+        gap: 7px 13px;
+
+        font-size: 13px;
+    }
+
+
+    .medical-learning-cta {
+        margin-top: 20px;
+
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .medical-learning-card {
+        padding: 22px;
+    }
+
+
+    .medical-learning-header h3 {
+        font-size: 21px;
+    }
+
+
+    .medical-learning-lead {
+        font-size: 15px;
+    }
+
+
+    .medical-learning-subjects span {
+        font-size: 11.5px;
+
+        padding: 6px 9px;
+    }
+
+
+    .medical-learning-features {
+        font-size: 12.5px;
+    }
+
+
+    .medical-learning-cta {
+        margin-top: 18px;
+
+        font-size: 13.5px;
+    }
+}
+
+/* =========================================================
+   HOMEPAGE FOOTER - PROFESSIONAL
+   ========================================================= */
+
+.site-footer {
+    width: 100%;
+    margin-top: 70px;
+    background: #1565c0;
+    color: #ffffff;
+}
+
+.footer-inner {
+    width: min(1100px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 42px 0 24px;
+}
+
+
+/* ---------------------------------------------------------
+   Brand
+   --------------------------------------------------------- */
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-align: left;
+}
+
+.footer-logo {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.footer-brand h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.footer-brand p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+
+/* ---------------------------------------------------------
+   Navigation
+   --------------------------------------------------------- */
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    margin-top: 28px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.92;
+    transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+
+/* ---------------------------------------------------------
+   Divider
+   --------------------------------------------------------- */
+
+.footer-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.22);
+    margin: 28px 0 20px;
+}
+
+
+/* ---------------------------------------------------------
+   Bottom
+   --------------------------------------------------------- */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+.footer-bottom p:last-child {
+    text-align: right;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .site-footer {
+        margin-top: 55px;
+    }
+
+    .footer-inner {
+        width: calc(100% - 40px);
+        padding: 34px 0 22px;
+    }
+
+    .footer-brand {
+        gap: 10px;
+    }
+
+    .footer-logo {
+        font-size: 28px;
+    }
+
+    .footer-brand h3 {
+        font-size: 20px;
+    }
+
+    .footer-brand p {
+        font-size: 13px;
+    }
+
+    .footer-links {
+        gap: 12px 18px;
+        margin-top: 24px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    .footer-divider {
+        margin: 24px 0 18px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 6px;
+    }
+
+    .footer-bottom p:last-child {
+        text-align: center;
+    }
 
 }
 
-.feedback-card h3{
+/* =========================================================
+   FOOTER - COMPACT MOBILE POLISH
+   ========================================================= */
 
-    color:#1976d2;
-
+.site-footer {
+    margin-top: 30px;
 }
 
-.feedback-card p{
-
-    color:#666;
-
-    margin:15px 0;
-
+.footer-inner {
+    padding: 30px 0 18px;
 }
 
-.feedback-btn{
 
-    display:inline-block;
+/* Brand */
 
-    background:#1976d2;
-
-    color:white;
-
-    padding:15px 35px;
-
-    border-radius:12px;
-
-    text-decoration:none;
-
-    font-weight:bold;
-
-}
-.support-card{
-
-    background:#ffffff;
-
-    margin:30px;
-
-    padding:25px;
-
-    border-radius:20px;
-
-    text-align:center;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.12);
-
+.footer-brand {
+    gap: 8px;
 }
 
-.support-card h3{
-
-    color:#1976d2;
-
-    margin-bottom:15px;
-
+.footer-logo {
+    font-size: 27px;
 }
 
-.support-card p{
-
-    color:#555;
-
-    line-height:1.7;
-
-    margin-bottom:15px;
-
+.footer-brand h3 {
+    font-size: 20px;
 }
 
-.support-note{
-
-    font-size:15px;
-
-    color:#777;
-
+.footer-brand p {
+    margin-top: 3px;
+    font-size: 13px;
 }
 
-.support-btn{
 
-    display:inline-block;
+/* Navigation */
 
-    margin-top:10px;
-
-    background:#2e7d32;
-
-    color:#fff;
-
-    text-decoration:none;
-
-    padding:15px 35px;
-
-    border-radius:12px;
-
-    font-size:17px;
-
-    font-weight:bold;
-
-    transition:.3s;
-
+.footer-links {
+    gap: 9px 18px;
+    margin-top: 20px;
 }
 
-.support-btn:hover{
+.footer-links a {
+    font-size: 14px;
+}
 
-    opacity:.9;
 
-   }
+/* Divider */
+
+.footer-divider {
+    margin: 20px 0 14px;
+}
+
+
+/* Bottom */
+
+.footer-bottom {
+    gap: 4px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+}
+
+#medical-learning {
+  scroll-margin-top: 90px;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark {
+
+    --background: #111827;
+    --white: #1f2937;
+
+    --text: #f3f4f6;
+    --text-light: #b8c1cc;
+
+    --border: #374151;
+
+    --primary: #4dabf7;
+    --primary-dark: #339af0;
+
+    --shadow:
+        0 10px 30px rgba(0, 0, 0, .30);
+
+    background: var(--background);
+    color: var(--text);
+}
+
+
+/* ---------------------------------------------------------
+   Navigation
+   --------------------------------------------------------- */
+
+body.dark .nav {
+    background: #1f2937;
+    box-shadow:
+        0 2px 15px rgba(0, 0, 0, .30);
+}
+
+
+/* ---------------------------------------------------------
+   Search area
+   --------------------------------------------------------- */
+
+body.dark .search-section {
+    background: #111827;
+}
+
+
+body.dark #search {
+    background: #1f2937;
+    color: #f3f4f6;
+    border-color: #374151;
+}
+
+
+body.dark #search::placeholder {
+    color: #9ca3af;
+}
+
+
+/* ---------------------------------------------------------
+   Generic cards
+   --------------------------------------------------------- */
+
+body.dark .card {
+    background: #1f2937;
+    border-color: #374151;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .28);
+}
+
+
+body.dark .card p {
+    color: var(--text-light);
+}
+
+
+/* ---------------------------------------------------------
+   Medical Learning
+   --------------------------------------------------------- */
+
+body.dark .medical-learning-card {
+    background:
+        linear-gradient(
+            145deg,
+            #1f2937 0%,
+            #182536 100%
+        );
+
+    border-color: #34465b;
+}
+
+
+body.dark .medical-learning-lead {
+    color: #c7d0da;
+}
+
+
+body.dark .medical-learning-subjects span,
+body.dark .medical-learning-features span {
+    background: #26364a;
+    color: #dce6ef;
+    border-color: #3a4c61;
+}
+
+
+/* ---------------------------------------------------------
+   Practice & Exam Preparation
+   --------------------------------------------------------- */
+
+body.dark .practice-heading h2 {
+    color: #f3f4f6;
+}
+
+
+body.dark .practice-heading p {
+    color: #b8c1cc;
+}
+
+
+body.dark .practice-card h3 {
+    color: #4dabf7;
+}
+
+
+body.dark .practice-card p {
+    color: #b8c1cc;
+}
+
+
+body.dark .practice-card-link:hover .practice-card {
+    border-color: #4dabf7;
+
+    box-shadow:
+        0 16px 32px rgba(0, 0, 0, .35);
+}
+
+
+/* ---------------------------------------------------------
+   Feedback
+   --------------------------------------------------------- */
+
+body.dark .feedback-card {
+    background: #1f2937;
+    border-color: #374151;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .30);
+}
+
+
+body.dark .feedback-card p {
+    color: #b8c1cc;
+}
+
+
+/* ---------------------------------------------------------
+   Support
+   --------------------------------------------------------- */
+
+body.dark .support-card {
+    background: #1f2937;
+    border-color: #374151;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .30);
+}
+
+
+body.dark .support-card p {
+    color: #c2cad4;
+}
+
+
+body.dark .support-note {
+    color: #9ca8b5 !important;
+}
+
+
+/* ---------------------------------------------------------
+   Theme button
+   --------------------------------------------------------- */
+
+body.dark #themeBtn {
+    background: #f3f4f6;
+    color: #1f2937;
+}
+
+
+body.dark #themeBtn:hover {
+    background: #ffffff;
+}
+
+
+/* ---------------------------------------------------------
+   Smooth theme transition
+   --------------------------------------------------------- */
+
+body,
+.nav,
+.card,
+.medical-learning-card,
+.feedback-card,
+.support-card,
+#search,
+#themeBtn {
+    transition:
+        background-color .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
