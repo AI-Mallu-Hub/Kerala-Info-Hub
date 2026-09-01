@@ -1,0 +1,831 @@
+/* =========================================================
+   LESSON 3.8 — JOINTS
+   Page-specific styles
+   ========================================================= */
+
+
+.s38-intro,
+.s38-section {
+    position: relative;
+}
+
+.s38-section {
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   DIAGRAM CARDS
+   ========================================================= */
+
+/* =========================================================
+   DIAGRAM 01 — BASIC JOINT CONCEPT
+   ========================================================= */
+
+.s38-diagram-card {
+    margin: 24px 0 8px;
+    padding: 14px;
+    border-radius: 18px;
+    background: var(--card-bg, #fff);
+    border: 1px solid var(--border-color, #dce7f3);
+    text-align: center;
+}
+
+.s38-diagram-card .lesson-diagram {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+/* Dedicated sizing for Diagram 01 */
+.s38-diagram-01 {
+    padding: 12px;
+}
+
+.s38-diagram-01 .lesson-diagram {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Caption */
+.s38-diagram-01 figcaption {
+    margin-top: 12px;
+    padding: 0 6px;
+    font-size: .92rem;
+    line-height: 1.5;
+    color: var(--muted-text, #667085);
+}
+
+
+/* =========================================================
+   DARK MODE — DIAGRAM 01
+   ========================================================= */
+
+html[data-theme="dark"] .s38-diagram-01 {
+    background: var(--card-bg, #1d2633);
+    border-color: var(--border-color, #344154);
+}
+
+html[data-theme="dark"] .s38-diagram-01 figcaption {
+    color: var(--muted-text, #aeb8c7);
+}
+
+
+/* =========================================================
+   MOBILE — DIAGRAM 01
+   ========================================================= */
+
+@media (max-width: 680px) {
+
+    .s38-diagram-01 {
+        margin-top: 18px;
+        padding: 8px;
+        border-radius: 15px;
+    }
+
+    .s38-diagram-01 .lesson-diagram {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .s38-diagram-01 figcaption {
+        margin-top: 10px;
+        padding: 0 4px;
+        font-size: .86rem;
+        line-height: 1.45;
+    }
+
+}
+
+.s38-diagram-card figcaption {
+    margin-top: 12px;
+    font-size: .92rem;
+    line-height: 1.5;
+    color: var(--muted-text, #667085);
+}
+
+.s38-hero-diagram {
+    padding: 16px;
+}
+
+
+/* =========================================================
+   INFORMATION CARDS
+   ========================================================= */
+
+.s38-info-grid,
+.s38-two-column {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.s38-info-card,
+.s38-feature-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 18px;
+    border-radius: 16px;
+    background: var(--soft-bg, #f5f8fc);
+    border: 1px solid var(--border-color, #dce7f3);
+}
+
+.s38-card-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.s38-info-card strong {
+    font-size: 1.05rem;
+}
+
+.s38-info-card span,
+.s38-feature-card p {
+    line-height: 1.55;
+}
+
+.s38-feature-card h3 {
+    margin: 0 0 8px;
+}
+
+.s38-feature-card p {
+    margin: 0;
+}
+
+.s38-feature-card > span {
+    display: block;
+    margin-top: 4px;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   NOTES
+   ========================================================= */
+
+.s38-note,
+.s38-remember-box {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 15px 17px;
+    border-radius: 15px;
+    background: var(--soft-bg, #f5f8fc);
+    border: 1px solid var(--border-color, #dce7f3);
+    line-height: 1.55;
+}
+
+.s38-note-icon {
+    flex: 0 0 auto;
+    font-size: 1.25rem;
+}
+
+
+/* =========================================================
+   TYPE / COMPONENT / MOVEMENT CARDS
+   ========================================================= */
+
+.s38-type-grid,
+.s38-component-grid,
+.s38-movement-grid,
+.s38-special-grid,
+.s38-functional-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 22px;
+}
+
+.s38-type-card,
+.s38-component-card,
+.s38-movement-card,
+.s38-special-card,
+.s38-functional-card {
+    padding: 16px;
+    border-radius: 15px;
+    background: var(--soft-bg, #f5f8fc);
+    border: 1px solid var(--border-color, #dce7f3);
+}
+
+.s38-type-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.08rem;
+}
+
+.s38-type-card p {
+    margin: 0;
+    line-height: 1.55;
+}
+
+.s38-example {
+    display: block;
+    margin-top: 13px;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.s38-component-card,
+.s38-functional-card {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.s38-component-card span,
+.s38-functional-card span,
+.s38-movement-card span,
+.s38-special-card span {
+    line-height: 1.5;
+    font-size: .93rem;
+}
+
+.s38-movement-card strong,
+.s38-special-card strong {
+    display: block;
+    margin-bottom: 7px;
+}
+
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+.s38-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 22px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.s38-comparison-table {
+    width: 100%;
+    min-width: 620px;
+    border-collapse: collapse;
+    border: 1px solid var(--border-color, #dce7f3);
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--card-bg, #fff);
+}
+
+.s38-comparison-table caption {
+    caption-side: top;
+    padding: 0 0 10px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.s38-comparison-table th,
+.s38-comparison-table td {
+    padding: 13px 14px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border-color, #dce7f3);
+    line-height: 1.45;
+}
+
+.s38-comparison-table thead th {
+    font-weight: 700;
+}
+
+.s38-comparison-table tbody tr:last-child th,
+.s38-comparison-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.s38-synovial-table {
+    min-width: 680px;
+}
+
+
+/* =========================================================
+   QUICK REVIEW
+   ========================================================= */
+
+.s38-review-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 6px;
+}
+
+.s38-review-item {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 16px;
+    border-radius: 15px;
+    background: var(--soft-bg, #f5f8fc);
+    border: 1px solid var(--border-color, #dce7f3);
+}
+
+.s38-review-item span {
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+html[data-theme="dark"] .s38-diagram-card,
+html[data-theme="dark"] .s38-info-card,
+html[data-theme="dark"] .s38-type-card,
+html[data-theme="dark"] .s38-feature-card,
+html[data-theme="dark"] .s38-component-card,
+html[data-theme="dark"] .s38-movement-card,
+html[data-theme="dark"] .s38-special-card,
+html[data-theme="dark"] .s38-functional-card,
+html[data-theme="dark"] .s38-review-item,
+html[data-theme="dark"] .s38-note,
+html[data-theme="dark"] .s38-remember-box,
+html[data-theme="dark"] .s38-comparison-table {
+    background: var(--card-bg, #1d2633);
+    border-color: var(--border-color, #344154);
+}
+
+html[data-theme="dark"] .s38-diagram-card figcaption {
+    color: var(--muted-text, #aeb8c7);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .s38-type-grid,
+    .s38-component-grid,
+    .s38-movement-grid,
+    .s38-special-grid,
+    .s38-functional-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 680px) {
+
+    .s38-info-grid,
+    .s38-two-column,
+    .s38-type-grid,
+    .s38-component-grid,
+    .s38-movement-grid,
+    .s38-special-grid,
+    .s38-functional-grid,
+    .s38-review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .s38-diagram-card {
+        margin-top: 18px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .s38-diagram-card figcaption {
+        font-size: .86rem;
+    }
+
+    .s38-comparison-table {
+        min-width: 600px;
+    }
+
+    .s38-synovial-table {
+        min-width: 650px;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 02 — JOINT CLASSIFICATION TREE
+   ========================================================= */
+
+.s38-diagram-02 {
+    padding: 16px;
+    background: var(--card-bg, #fff);
+    border: 1px solid var(--border-color, #dce7f3);
+    border-radius: 18px;
+    text-align: center;
+    margin: 24px 0 8px;
+}
+
+.s38-diagram-02 .lesson-diagram {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.s38-diagram-02 figcaption {
+    margin-top: 12px;
+    font-size: .92rem;
+    line-height: 1.5;
+    color: var(--muted-text, #667085);
+}
+
+
+/* =========================================================
+   DARK MODE — DIAGRAM 02
+   ========================================================= */
+
+html[data-theme="dark"] .s38-diagram-02 {
+    background: var(--card-bg, #1d2633);
+    border-color: var(--border-color, #344154);
+}
+
+html[data-theme="dark"] .s38-diagram-02 figcaption {
+    color: var(--muted-text, #aeb8c7);
+}
+
+
+/* =========================================================
+   MOBILE — DIAGRAM 02
+   ========================================================= */
+
+@media (max-width: 680px) {
+
+    .s38-diagram-02 {
+        padding: 10px;
+        margin-top: 18px;
+        border-radius: 15px;
+    }
+
+    .s38-diagram-02 .lesson-diagram {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .s38-diagram-02 figcaption {
+        margin-top: 10px;
+        padding: 0 4px;
+        font-size: .86rem;
+        line-height: 1.45;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 03 — FIBROUS JOINT TYPES
+   ========================================================= */
+
+.s38-diagram-03 {
+    padding: 16px;
+    margin: 24px 0 8px;
+    background: var(--card-bg, #fff);
+    border: 1px solid var(--border-color, #dce7f3);
+    border-radius: 18px;
+    text-align: center;
+}
+
+.s38-diagram-03 .lesson-diagram {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.s38-diagram-03 figcaption {
+    margin-top: 12px;
+    padding: 0 6px;
+    font-size: .92rem;
+    line-height: 1.5;
+    color: var(--muted-text, #667085);
+}
+
+
+/* =========================================================
+   DARK MODE — DIAGRAM 03
+   ========================================================= */
+
+html[data-theme="dark"] .s38-diagram-03 {
+    background: var(--card-bg, #1d2633);
+    border-color: var(--border-color, #344154);
+}
+
+html[data-theme="dark"] .s38-diagram-03 figcaption {
+    color: var(--muted-text, #aeb8c7);
+}
+
+
+/* =========================================================
+   MOBILE — DIAGRAM 03
+   ========================================================= */
+
+@media (max-width: 680px) {
+
+    .s38-diagram-03 {
+        padding: 10px;
+        margin-top: 18px;
+        border-radius: 15px;
+    }
+
+    .s38-diagram-03 .lesson-diagram {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .s38-diagram-03 figcaption {
+        margin-top: 10px;
+        padding: 0 4px;
+        font-size: .86rem;
+        line-height: 1.45;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 04 — STRUCTURE OF A SYNOVIAL JOINT
+   ========================================================= */
+
+.s38-diagram-04 {
+    padding: 16px;
+    margin: 24px 0 8px;
+    background: var(--card-bg, #fff);
+    border: 1px solid var(--border-color, #dce7f3);
+    border-radius: 18px;
+    text-align: center;
+}
+
+.s38-diagram-04 .lesson-diagram {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.s38-diagram-04 figcaption {
+    margin-top: 12px;
+    padding: 0 6px;
+    font-size: .92rem;
+    line-height: 1.5;
+    color: var(--muted-text, #667085);
+}
+
+
+/* =========================================================
+   DARK MODE — DIAGRAM 04
+   ========================================================= */
+
+html[data-theme="dark"] .s38-diagram-04 {
+    background: var(--card-bg, #1d2633);
+    border-color: var(--border-color, #344154);
+}
+
+html[data-theme="dark"] .s38-diagram-04 figcaption {
+    color: var(--muted-text, #aeb8c7);
+}
+
+
+/* =========================================================
+   MOBILE — DIAGRAM 04
+   ========================================================= */
+
+@media (max-width: 680px) {
+
+    .s38-diagram-04 {
+        padding: 8px;
+        margin-top: 18px;
+        border-radius: 15px;
+    }
+
+    .s38-diagram-04 .lesson-diagram {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .s38-diagram-04 figcaption {
+        margin-top: 10px;
+        padding: 0 4px;
+        font-size: .86rem;
+        line-height: 1.45;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 05 — SIX SYNOVIAL JOINT TYPES
+   ========================================================= */
+
+.s38-diagram-05 {
+    padding: 16px;
+    margin: 24px 0 8px;
+    background: var(--card-bg, #fff);
+    border: 1px solid var(--border-color, #dce7f3);
+    border-radius: 18px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.s38-diagram-05 .lesson-diagram {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.s38-diagram-05 figcaption {
+    margin-top: 12px;
+    padding: 0 6px;
+    font-size: .92rem;
+    line-height: 1.5;
+    color: var(--muted-text, #667085);
+}
+
+
+/* =========================================================
+   DARK MODE — DIAGRAM 05
+   ========================================================= */
+
+html[data-theme="dark"] .s38-diagram-05 {
+    background: var(--card-bg, #1d2633);
+    border-color: var(--border-color, #344154);
+}
+
+html[data-theme="dark"] .s38-diagram-05 figcaption {
+    color: var(--muted-text, #aeb8c7);
+}
+
+
+/* =========================================================
+   MOBILE — DIAGRAM 05
+   ========================================================= */
+
+@media (max-width: 680px) {
+
+    .s38-diagram-05 {
+        padding: 8px;
+        margin-top: 18px;
+        border-radius: 15px;
+    }
+
+    .s38-diagram-05 .lesson-diagram {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .s38-diagram-05 figcaption {
+        margin-top: 10px;
+        padding: 0 4px;
+        font-size: .86rem;
+        line-height: 1.45;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 06A - BASIC JOINT MOVEMENTS
+   ========================================================= */
+
+.s38-diagram-06a {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 28px 0 30px;
+    padding: 18px 18px 16px;
+    background: #ffffff;
+    border: 2px solid #e1e7ee;
+    border-radius: 26px;
+    overflow: hidden;
+}
+
+/* Diagram image */
+.s38-diagram-06a .lesson-diagram {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 14px;
+}
+
+/* Caption */
+.s38-diagram-06a figcaption {
+    margin: 16px 8px 2px;
+    text-align: center;
+    color: #707b89;
+    font-size: 1.15rem;
+    line-height: 1.55;
+    font-weight: 400;
+}
+
+/* ---------------------------------------------------------
+   Mobile
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .s38-diagram-06a {
+        margin: 24px 0 28px;
+        padding: 12px 10px 14px;
+        border-radius: 24px;
+    }
+
+    .s38-diagram-06a .lesson-diagram {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .s38-diagram-06a figcaption {
+        margin: 13px 6px 1px;
+        font-size: 1.05rem;
+        line-height: 1.5;
+    }
+}
+
+/* ---------------------------------------------------------
+   Dark mode
+   --------------------------------------------------------- */
+
+@media (prefers-color-scheme: dark) {
+
+    .s38-diagram-06a {
+        background: #111827;
+        border-color: #273244;
+    }
+
+    .s38-diagram-06a figcaption {
+        color: #aab4c3;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 06B — SPECIAL JOINT MOVEMENTS
+   ========================================================= */
+
+.s38-diagram-06b {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    padding: 14px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.s38-diagram-06b .lesson-diagram {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+/* Keep the tall 06B infographic comfortably readable
+   on smaller screens without cropping the PNG. */
+
+@media (max-width: 680px) {
+
+    .s38-diagram-06b {
+        margin-top: 18px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .s38-diagram-06b .lesson-diagram {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .s38-diagram-06b figcaption {
+        margin-top: 10px;
+        font-size: .86rem;
+        line-height: 1.5;
+    }
+}
+
