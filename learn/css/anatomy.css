@@ -143,3 +143,199 @@ html[data-theme="dark"] .back a{
     box-shadow:0 4px 12px rgba(0,0,0,.25);
 }
 
+/* =========================================================
+   COMPACT SUB-LESSON LIST
+   Single-line items with ellipsis
+   ========================================================= */
+
+.lesson-sublist {
+    margin: 12px 0;
+    padding: 10px 14px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border-left: 4px solid #2563eb;
+
+    /* Keep the list compact */
+    overflow: hidden;
+}
+
+.lesson-sublist p {
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-size: .95rem;
+}
+
+.lesson-sublist ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.lesson-sublist li {
+    margin: 4px 0;
+    font-size: .9rem;
+    line-height: 1.4;
+
+    /* One line only */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Dark mode */
+html[data-theme="dark"] .lesson-sublist {
+    background: #172033;
+    border-left-color: #3b82f6;
+}
+
+html[data-theme="dark"] .lesson-sublist p,
+html[data-theme="dark"] .lesson-sublist li {
+    color: #dbe4f0;
+}
+
+/* =========================================================
+   ANATOMY PAGE — MATCH CONTENT WIDTH WITH HEADER
+   ========================================================= */
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Header and all main page sections use the same width */
+.hero,
+.about,
+.grid,
+.back {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Prevent section padding from making the content
+   wider than the header */
+.about,
+.grid,
+.back {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* Keep cards completely inside the page width */
+.grid {
+    width: 100%;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .hero,
+    .about,
+    .grid,
+    .back {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about,
+    .grid,
+    .back {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* =========================================================
+   FINAL RESPONSIVE WIDTH FIX
+   Keep the entire Anatomy page within the same viewport
+   width as the header.
+   ========================================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Header must always match viewport width */
+.hero {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Main content sections */
+.about,
+.grid,
+.back {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Prevent CSS Grid from expanding because of long text */
+.grid {
+    min-width: 0;
+    overflow: hidden;
+}
+
+/* Cards must be allowed to shrink */
+.card {
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Keep sub-lesson text inside the card */
+.lesson-sublist {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.lesson-sublist ul,
+.lesson-sublist li {
+    max-width: 100%;
+    min-width: 0;
+}
+
+/* Preserve the compact single-line appearance,
+   but never allow it to enlarge the page */
+.lesson-sublist li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Extra protection against long words/URLs */
+.about p,
+.card p,
+.card h3,
+.lesson-sublist {
+    overflow-wrap: anywhere;
+}
+
