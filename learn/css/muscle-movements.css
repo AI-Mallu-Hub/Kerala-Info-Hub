@@ -1,0 +1,1186 @@
+/* =========================================================
+   LESSON 4.3
+   HOW MUSCLES PRODUCE MOVEMENT
+   ========================================================= */
+
+
+/* =========================================================
+   LESSON INTRO
+   ========================================================= */
+
+.muscle-movement-intro {
+    margin: 0 0 24px;
+
+    font-size: 1.05rem;
+    line-height: 1.75;
+
+    color: #3f4752;
+}
+
+
+/* =========================================================
+   KEY POINT BOX
+   ========================================================= */
+
+.key-point-box {
+    margin: 24px 0;
+
+    padding: 18px 20px;
+
+    border-left: 4px solid #2563eb;
+    border-radius: 12px;
+
+    background: #eef5ff;
+}
+
+.key-point-box strong {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 1rem;
+}
+
+.key-point-box p {
+    margin: 0;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   INFO BOX
+   ========================================================= */
+
+.info-box {
+    margin: 24px 0;
+
+    padding: 18px 20px;
+
+    border-radius: 14px;
+
+    background: #f3f6fa;
+
+    border: 1px solid #dce2e9;
+}
+
+.info-box strong {
+    display: block;
+
+    margin-bottom: 8px;
+}
+
+.info-box p {
+    margin: 0;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   KEY LISTS
+   ========================================================= */
+
+.key-list,
+.key-concept-list {
+    padding-left: 24px;
+
+    line-height: 1.75;
+}
+
+.key-list li,
+.key-concept-list li {
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   DIAGRAM CARD
+   ========================================================= */
+
+.movement-diagram-card {
+    width: 100%;
+
+    margin: 30px 0 34px;
+
+    padding: 0;
+
+    text-align: center;
+}
+
+
+.movement-diagram-image-wrap {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+}
+
+
+.movement-diagram-image {
+    display: block;
+
+    width: 100%;
+    max-width: 1000px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 16px;
+}
+
+
+.movement-diagram-card figcaption {
+    margin-top: 14px;
+
+    padding: 0 8px;
+
+    text-align: center;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: #687384;
+}
+
+
+/* =========================================================
+   HIERARCHY FLOW
+   ========================================================= */
+
+.hierarchy-flow {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 26px 0;
+}
+
+
+.hierarchy-flow-item {
+    width: min(100%, 360px);
+
+    padding: 13px 18px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    border: 1px solid #d9e0e8;
+
+    border-radius: 12px;
+
+    background: #f8fafc;
+}
+
+
+.hierarchy-arrow {
+    font-size: 1.2rem;
+
+    line-height: 1;
+
+    color: #64748b;
+}
+
+
+/* =========================================================
+   CONCEPT FLOW
+   ========================================================= */
+
+.concept-flow {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 26px 0;
+}
+
+
+.concept-flow > span:not(.flow-arrow) {
+    width: min(100%, 390px);
+
+    padding: 12px 16px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    background: #f8fafc;
+
+    border: 1px solid #dce2e9;
+
+    font-weight: 600;
+}
+
+
+.flow-arrow {
+    color: #64748b;
+
+    font-size: 1.2rem;
+}
+
+
+/* =========================================================
+   COMPARISON GRID
+   ========================================================= */
+
+.comparison-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin: 26px 0;
+}
+
+
+.comparison-item {
+    padding: 20px;
+
+    text-align: center;
+
+    border: 1px solid #dce2e9;
+
+    border-radius: 16px;
+
+    background: #f8fafc;
+
+    box-sizing: border-box;
+}
+
+
+.comparison-item h3 {
+    margin-top: 0;
+}
+
+
+.comparison-item p {
+    margin: 8px 0;
+
+    line-height: 1.55;
+}
+
+
+.comparison-arrow {
+    display: block;
+
+    margin: 10px 0;
+
+    font-size: 1.3rem;
+
+    color: #64748b;
+}
+
+
+/* =========================================================
+   CONTRACTION CARDS
+   ========================================================= */
+
+.contraction-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin: 28px 0;
+}
+
+
+.contraction-card {
+    padding: 20px;
+
+    border: 1px solid #dce2e9;
+
+    border-radius: 16px;
+
+    background: #f8fafc;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+
+.contraction-card h3 {
+    margin-top: 0;
+
+    margin-bottom: 12px;
+}
+
+
+.contraction-card p {
+    margin-bottom: 16px;
+
+    line-height: 1.6;
+}
+
+
+.contraction-card strong {
+    display: block;
+
+    font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.movement-table-wrap {
+    width: 100%;
+
+    overflow-x: auto;
+
+    margin: 24px 0;
+}
+
+
+.movement-table {
+    width: 100%;
+
+    min-width: 560px;
+
+    border-collapse: collapse;
+
+    background: #ffffff;
+
+    border: 1px solid #dce2e9;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+
+.movement-table th,
+.movement-table td {
+    padding: 14px 16px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #e2e7ed;
+
+    line-height: 1.55;
+}
+
+
+.movement-table th {
+    background: #f1f5f9;
+
+    font-weight: 700;
+}
+
+
+.movement-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+.movement-table tbody tr:nth-child(even) {
+    background: #fafbfc;
+}
+
+
+/* =========================================================
+   KEY TERMS
+   ========================================================= */
+
+.term-list {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+
+    margin-top: 22px;
+}
+
+
+.term-item {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    padding: 16px 18px;
+
+    border: 1px solid #dce2e9;
+
+    border-radius: 14px;
+
+    background: #f8fafc;
+
+    box-sizing: border-box;
+}
+
+
+.term-item strong {
+    font-size: 1rem;
+}
+
+
+.term-item span {
+    color: #5f6874;
+
+    line-height: 1.55;
+
+    font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   MEMORY BOX
+   ========================================================= */
+
+.memory-box {
+    margin: 24px 0 0;
+
+    padding: 18px 20px;
+
+    border-radius: 14px;
+
+    background: #f8fafc;
+
+    border: 1px solid #dce2e9;
+
+    text-align: center;
+}
+
+
+.memory-box strong {
+    display: block;
+
+    margin-bottom: 7px;
+}
+
+
+.memory-box p {
+    margin: 0;
+
+    font-weight: 600;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   DARK THEME
+   Works with theme.js / shared lesson theme
+   ========================================================= */
+
+html[data-theme="dark"] .muscle-movement-intro {
+    color: #dbe4f0;
+}
+
+
+html[data-theme="dark"] .key-point-box {
+    background: #172b49;
+
+    border-left-color: #60a5fa;
+}
+
+
+html[data-theme="dark"] .info-box {
+    background: #1e293b;
+
+    border-color: #334155;
+}
+
+
+html[data-theme="dark"] .hierarchy-flow-item,
+html[data-theme="dark"] .concept-flow > span:not(.flow-arrow),
+html[data-theme="dark"] .comparison-item,
+html[data-theme="dark"] .contraction-card,
+html[data-theme="dark"] .term-item,
+html[data-theme="dark"] .memory-box {
+    background: #1e293b;
+
+    border-color: #334155;
+
+    color: #e5e7eb;
+}
+
+
+html[data-theme="dark"] .hierarchy-arrow,
+html[data-theme="dark"] .flow-arrow,
+html[data-theme="dark"] .comparison-arrow {
+    color: #94a3b8;
+}
+
+
+html[data-theme="dark"] .movement-diagram-card figcaption {
+    color: #aeb8c5;
+}
+
+
+html[data-theme="dark"] .movement-table {
+    background: #1e293b;
+
+    border-color: #334155;
+
+    color: #e5e7eb;
+}
+
+
+html[data-theme="dark"] .movement-table th {
+    background: #172033;
+}
+
+
+html[data-theme="dark"] .movement-table td,
+html[data-theme="dark"] .movement-table th {
+    border-color: #334155;
+}
+
+
+html[data-theme="dark"] .movement-table tbody tr:nth-child(even) {
+    background: #172033;
+}
+
+
+html[data-theme="dark"] .term-item span {
+    color: #cbd5e1;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .muscle-movement-intro {
+        font-size: 1rem;
+
+        line-height: 1.7;
+    }
+
+
+    .comparison-grid {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+
+    .contraction-cards {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+
+    .term-list {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .movement-diagram-card {
+        margin-top: 24px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .movement-diagram-image-wrap {
+        border-radius: 14px;
+    }
+
+
+    .movement-diagram-image {
+        width: 100%;
+
+        border-radius: 12px;
+    }
+
+
+    .movement-diagram-card figcaption {
+        font-size: 0.9rem;
+
+        margin-top: 12px;
+    }
+
+
+    .key-point-box,
+    .info-box {
+        padding: 16px 17px;
+    }
+
+
+    .hierarchy-flow-item {
+        width: 100%;
+    }
+
+
+    .concept-flow > span:not(.flow-arrow) {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .movement-table {
+        min-width: 500px;
+    }
+
+
+    .movement-table th,
+    .movement-table td {
+        padding: 12px 13px;
+
+        font-size: 0.9rem;
+    }
+
+
+    .term-item {
+        padding: 14px 15px;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 01 — BASIC MUSCLE CONTRACTION TO MOVEMENT
+   ========================================================= */
+
+.muscle-movement-diagram {
+    width: 100%;
+    margin: 32px 0;
+    padding: 0;
+    overflow: hidden;
+
+    background: #ffffff;
+    border: 1px solid #dfe3e8;
+    border-radius: 28px;
+
+    box-sizing: border-box;
+}
+
+
+/* PNG */
+
+.muscle-movement-diagram-img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: contain;
+}
+
+
+/* Caption */
+
+.muscle-movement-diagram figcaption {
+    margin: 0;
+    padding: 18px 20px 22px;
+
+    text-align: center;
+
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+
+    color: #68717d;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .muscle-movement-diagram {
+        margin: 28px 0;
+        border-radius: 24px;
+    }
+
+    .muscle-movement-diagram figcaption {
+        padding: 16px 18px 20px;
+
+        font-size: 0.95rem;
+        line-height: 1.45;
+    }
+}
+
+/* =========================================================
+   PNG-02 — SLIDING FILAMENT CONCEPT
+   ========================================================= */
+
+.mm-sliding-filament-card {
+    width: 100%;
+    margin: 32px 0 36px;
+    padding: 0;
+    background: #ffffff;
+    border: 1px solid #dfe3e8;
+    border-radius: 28px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE WRAPPER
+   --------------------------------------------------------- */
+
+.mm-sliding-filament-card .mm-diagram-image-wrap {
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    box-sizing: border-box;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ---------------------------------------------------------
+   DIAGRAM IMAGE
+   --------------------------------------------------------- */
+
+.mm-sliding-filament-card .mm-diagram-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 18px;
+    object-fit: contain;
+}
+
+
+/* ---------------------------------------------------------
+   CAPTION
+   --------------------------------------------------------- */
+
+.mm-sliding-filament-card .mm-diagram-caption {
+    margin: 0;
+    padding: 14px 20px 20px;
+    text-align: center;
+
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 500;
+
+    color: #687282;
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .mm-sliding-filament-card {
+        margin-top: 28px;
+        margin-bottom: 32px;
+        border-radius: 24px;
+    }
+
+    .mm-sliding-filament-card .mm-diagram-image-wrap {
+        padding: 10px;
+    }
+
+    .mm-sliding-filament-card .mm-diagram-image {
+        border-radius: 16px;
+    }
+
+    .mm-sliding-filament-card .mm-diagram-caption {
+        padding: 12px 16px 18px;
+        font-size: 16px;
+        line-height: 1.45;
+    }
+}
+
+/* =========================================================
+   PNG-03: FROM SARCOMERE TO WHOLE MUSCLE
+   Functional force organization diagram
+   ========================================================= */
+
+.mm-diagram-03 {
+    width: 100%;
+    margin: 1.5rem 0 2rem;
+    padding: 0;
+}
+
+.mm-diagram-03-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #dfe3e8;
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.mm-diagram-03-image {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    object-fit: contain;
+}
+
+.mm-diagram-03-caption {
+    margin: 0.8rem 0 0;
+    padding: 0 0.5rem;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .mm-diagram-03 {
+        margin: 1.25rem 0 1.75rem;
+    }
+
+    .mm-diagram-03-card {
+        border-radius: 16px;
+    }
+
+    .mm-diagram-03-image {
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+
+    .mm-diagram-03-caption {
+        font-size: 0.9rem;
+        line-height: 1.45;
+        margin-top: 0.7rem;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 04
+   MUSCLE → TENDON → BONE
+   ========================================================= */
+
+.mm-diagram-04 {
+    width: 100%;
+    margin: 1.5rem 0 2rem;
+    padding: 0;
+}
+
+.mm-diagram-04-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    border: 1px solid #dfe3e8;
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.mm-diagram-04-image {
+    display: block;
+
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+.mm-diagram-04-caption {
+    margin: 0.8rem 0 0;
+    padding: 0 0.5rem;
+
+    text-align: center;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .mm-diagram-04 {
+        margin: 1.25rem 0 1.75rem;
+    }
+
+    .mm-diagram-04-card {
+        border-radius: 16px;
+    }
+
+    .mm-diagram-04-image {
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+
+    .mm-diagram-04-caption {
+        margin-top: 0.7rem;
+        font-size: 0.9rem;
+        line-height: 1.45;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 05
+   ANTAGONISTIC MUSCLE ACTION
+   ========================================================= */
+
+.mm-diagram-05 {
+    width: 100%;
+    margin: 1.5rem 0 2rem;
+    padding: 0;
+}
+
+.mm-diagram-05-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border: 1px solid #dfe3e8;
+    border-radius: 18px;
+
+    background: #ffffff;
+}
+
+.mm-diagram-05-image {
+    display: block;
+
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+.mm-diagram-05-caption {
+    margin: 0.8rem 0 0;
+    padding: 0 0.5rem;
+
+    text-align: center;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .mm-diagram-05 {
+        margin: 1.25rem 0 1.75rem;
+    }
+
+    .mm-diagram-05-card {
+        border-radius: 16px;
+    }
+
+    .mm-diagram-05-image {
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+
+    .mm-diagram-05-caption {
+        margin-top: 0.7rem;
+        padding: 0 0.25rem;
+
+        font-size: 0.9rem;
+        line-height: 1.45;
+    }
+}
+
+/* =========================================================
+   PNG-06 — Three Types of Muscle Contraction
+   ========================================================= */
+
+.mm-contraction-types-card {
+    width: 100%;
+    margin: 32px 0 0;
+    padding: 0;
+    background: #ffffff;
+    border: 1px solid #dfe3e8;
+    border-radius: 24px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.mm-contraction-types-card .mm-diagram-image-wrap {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    display: block;
+    line-height: 0;
+}
+
+.mm-contraction-types-card .mm-diagram-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+}
+
+.mm-contraction-types-card .mm-diagram-caption {
+    margin: 0;
+    padding: 18px 20px 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #6b7280;
+    background: #ffffff;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+
+    .mm-contraction-types-card {
+        margin-top: 28px;
+        border-radius: 20px;
+    }
+
+    .mm-contraction-types-card .mm-diagram-caption {
+        padding: 16px 14px 18px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
+
+/* =========================================================
+   PNG-07 — Complete Movement Pathway
+   ========================================================= */
+
+.mm-complete-pathway-card {
+    width: 100%;
+    margin: 32px 0 0;
+    padding: 0;
+    background: #ffffff;
+    border: 1px solid #dfe3e8;
+    border-radius: 24px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.mm-complete-pathway-card .mm-diagram-image-wrap {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    display: block;
+    line-height: 0;
+}
+
+.mm-complete-pathway-card .mm-diagram-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+}
+
+.mm-complete-pathway-card .mm-diagram-caption {
+    margin: 0;
+    padding: 18px 20px 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #6b7280;
+    background: #ffffff;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+
+    .mm-complete-pathway-card {
+        margin-top: 28px;
+        border-radius: 20px;
+    }
+
+    .mm-complete-pathway-card .mm-diagram-caption {
+        padding: 16px 14px 18px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
+

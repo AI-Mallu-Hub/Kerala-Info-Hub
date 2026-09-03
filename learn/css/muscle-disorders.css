@@ -1,0 +1,1314 @@
+/* =========================================================
+   LESSON 4.5
+   MUSCLE DISORDERS & KEY REVIEW
+   ========================================================= */
+
+
+/* =========================================================
+   INTRO / GENERAL
+   ========================================================= */
+
+.muscle-disorders-lesson {
+    position: relative;
+}
+
+.muscle-disorders-lesson p {
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   INFO LIST
+   ========================================================= */
+
+.muscle-disorders-lesson .info-list {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+
+    margin: 24px 0 30px;
+}
+
+.muscle-disorders-lesson .info-list > div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+
+    padding: 17px 18px;
+
+    border: 1px solid var(--border-color, #e1e5ea);
+    border-radius: 14px;
+
+    background: var(--card-bg, #ffffff);
+
+    box-sizing: border-box;
+}
+
+.muscle-disorders-lesson .info-list strong {
+    font-size: 0.98rem;
+}
+
+.muscle-disorders-lesson .info-list span {
+    font-size: 0.91rem;
+
+    line-height: 1.55;
+
+    color: var(--muted-text, #687282);
+}
+
+
+/* =========================================================
+   DIAGRAM HOLDER
+   ========================================================= */
+
+.md-diagram {
+    width: 100%;
+
+    margin: 30px 0 34px;
+
+    padding: 0;
+}
+
+.md-diagram-card {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    border: 1px solid #dfe3e8;
+    border-radius: 22px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.md-diagram-image {
+    display: block;
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+.md-diagram figcaption {
+    margin: 12px 8px 0;
+
+    padding: 0 6px;
+
+    text-align: center;
+
+    font-size: 0.94rem;
+
+    line-height: 1.5;
+
+    color: var(--muted-text, #687282);
+}
+
+
+/* =========================================================
+   DIAGRAM SIZING
+   ========================================================= */
+
+.md-diagram-01 .md-diagram-image,
+.md-diagram-03 .md-diagram-image,
+.md-diagram-04 .md-diagram-image,
+.md-diagram-06 .md-diagram-image {
+    max-width: 1000px;
+}
+
+.md-diagram-02 .md-diagram-image,
+.md-diagram-05 .md-diagram-image {
+    max-width: 1100px;
+}
+
+
+/* =========================================================
+   STRAIN / CRAMP COMPARISON
+   ========================================================= */
+
+.comparison-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+
+    margin: 24px 0 28px;
+}
+
+.comparison-item {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    padding: 18px;
+
+    border: 1px solid var(--border-color, #dfe3e8);
+    border-radius: 16px;
+
+    background: var(--surface-bg, #f8fafc);
+}
+
+.comparison-item strong {
+    font-size: 1rem;
+}
+
+.comparison-item span {
+    font-size: 0.91rem;
+
+    line-height: 1.5;
+
+    color: var(--muted-text, #687282);
+}
+
+
+/* =========================================================
+   LESSON 4.1–4.5 REVIEW
+   ========================================================= */
+
+.lesson-review-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+
+    margin-top: 24px;
+}
+
+.lesson-review-item {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    padding: 20px 18px 18px;
+
+    border: 1px solid var(--border-color, #dfe3e8);
+    border-radius: 16px;
+
+    background: var(--card-bg, #ffffff);
+
+    box-sizing: border-box;
+}
+
+.lesson-review-item.current-lesson {
+    border-width: 2px;
+}
+
+.review-number {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+
+    padding: 4px 9px;
+
+    border-radius: 999px;
+
+    font-size: 0.78rem;
+
+    font-weight: 700;
+
+    background: var(--accent-soft, #eef2ff);
+}
+
+.lesson-review-item strong {
+    font-size: 1rem;
+
+    line-height: 1.4;
+}
+
+.lesson-review-item p {
+    margin: 0;
+
+    font-size: 0.9rem;
+
+    line-height: 1.5;
+
+    color: var(--muted-text, #687282);
+}
+
+.review-answer {
+    margin-top: 2px;
+
+    font-size: 0.86rem;
+
+    line-height: 1.5;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   FINAL MAP CALLOUT
+   ========================================================= */
+
+.final-map-callout {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin: 26px auto 30px;
+
+    padding: 18px 20px;
+
+    border: 1px solid var(--border-color, #dfe3e8);
+    border-radius: 18px;
+
+    background: var(--surface-bg, #f8fafc);
+
+    text-align: center;
+}
+
+.final-map-callout span:not(.map-arrow) {
+    padding: 7px 13px;
+
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+
+    font-weight: 700;
+}
+
+.map-arrow {
+    font-size: 1.1rem;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   QUICK REVIEW
+   ========================================================= */
+
+.review-question-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 22px;
+}
+
+.review-question-list > div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    padding: 15px 17px;
+
+    border: 1px solid var(--border-color, #e1e5ea);
+    border-radius: 14px;
+
+    background: var(--card-bg, #ffffff);
+}
+
+.review-question-list strong {
+    font-size: 0.95rem;
+
+    line-height: 1.5;
+}
+
+.review-question-list span {
+    font-size: 0.9rem;
+
+    line-height: 1.55;
+
+    color: var(--muted-text, #687282);
+}
+
+
+/* =========================================================
+   REMEMBER BOX
+   ========================================================= */
+
+.remember-box {
+    margin-top: 26px;
+
+    padding: 18px 20px;
+
+    border-radius: 16px;
+
+    background: var(--surface-bg, #f8fafc);
+}
+
+.remember-box strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 0.98rem;
+}
+
+.remember-box p {
+    margin: 0;
+
+    font-size: 0.94rem;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   FINAL TAKEAWAY
+   ========================================================= */
+
+.final-takeaway-card > p {
+    line-height: 1.7;
+}
+
+.three-question-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 16px;
+
+    margin: 24px 0 28px;
+}
+
+.three-question-grid > div {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 22px 16px;
+
+    border: 1px solid var(--border-color, #dfe3e8);
+    border-radius: 18px;
+
+    text-align: center;
+
+    background: var(--card-bg, #ffffff);
+}
+
+.three-question-grid span {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    font-weight: 700;
+}
+
+.three-question-grid strong {
+    font-size: 0.98rem;
+}
+
+.three-question-grid p {
+    margin: 0;
+
+    font-size: 0.88rem;
+
+    line-height: 1.5;
+
+    color: var(--muted-text, #687282);
+}
+
+
+/* =========================================================
+   FINAL KEY POINT
+   ========================================================= */
+
+.final-key-point {
+    margin-top: 28px;
+
+    padding: 20px;
+
+    border: 1px solid var(--border-color, #dfe3e8);
+    border-radius: 18px;
+
+    text-align: center;
+
+    font-size: 1.02rem;
+
+    line-height: 1.6;
+
+    font-weight: 700;
+
+    background: var(--surface-bg, #f8fafc);
+}
+
+
+/* =========================================================
+   PRACTICE QUIZ
+   ========================================================= */
+
+.practice-quiz-card {
+    text-align: center;
+}
+
+.practice-quiz-card p {
+    margin-bottom: 20px;
+}
+
+.practice-quiz-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+
+    padding: 10px 20px;
+
+    border: 1px solid var(--border-color, #dfe3e8);
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+[data-theme="dark"] .muscle-disorders-lesson .info-list > div,
+[data-theme="dark"] .comparison-item,
+[data-theme="dark"] .lesson-review-item,
+[data-theme="dark"] .review-question-list > div,
+[data-theme="dark"] .three-question-grid > div {
+    background: var(--card-bg, #151922);
+
+    border-color: var(--border-color, #303642);
+}
+
+[data-theme="dark"] .remember-box,
+[data-theme="dark"] .final-map-callout,
+[data-theme="dark"] .final-key-point {
+    background: var(--surface-bg, #1b202b);
+}
+
+[data-theme="dark"] .md-diagram-card {
+    background: #ffffff;
+
+    border-color: #303642;
+}
+
+[data-theme="dark"] .md-diagram figcaption {
+    color: var(--muted-text, #9ca3af);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .muscle-disorders-lesson .info-list {
+        grid-template-columns: 1fr;
+    }
+
+    .lesson-review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .three-question-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .muscle-disorders-lesson p {
+        line-height: 1.7;
+    }
+
+
+    .md-diagram {
+        margin: 24px 0 30px;
+    }
+
+    .md-diagram-card {
+        border-radius: 18px;
+    }
+
+    .md-diagram-image {
+        width: 100%;
+
+        max-width: none;
+
+        height: auto;
+    }
+
+    .md-diagram figcaption {
+        margin-top: 10px;
+
+        font-size: 0.9rem;
+    }
+
+
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .final-map-callout {
+        padding: 16px 14px;
+
+        gap: 8px;
+    }
+
+    .final-map-callout span:not(.map-arrow) {
+        font-size: 0.84rem;
+    }
+
+
+    .lesson-review-item {
+        padding: 17px 16px;
+    }
+
+
+    .review-question-list > div {
+        padding: 14px 15px;
+    }
+
+
+    .three-question-grid {
+        gap: 12px;
+    }
+
+    .three-question-grid > div {
+        padding: 19px 15px;
+    }
+
+
+    .final-key-point {
+        padding: 17px;
+
+        font-size: 0.95rem;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 01
+   MUSCLE PROBLEMS: BASIC OVERVIEW
+   ========================================================= */
+
+.md-diagram-01 {
+    width: 100%;
+    margin: 2rem 0 1.5rem;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+/* Image card */
+
+.md-diagram-01-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+    background: #ffffff;
+}
+
+
+/* Diagram image */
+
+.md-diagram-01-image {
+    display: block;
+
+    width: 100%;
+    max-width: 1000px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 16px;
+}
+
+
+/* Figure caption */
+
+.md-diagram-01-caption {
+    margin-top: 0.8rem;
+
+    text-align: center;
+
+    font-size: 1rem;
+    line-height: 1.5;
+
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .md-diagram-01 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .md-diagram-01-card {
+        width: 100%;
+        border-radius: 14px;
+    }
+
+    .md-diagram-01-image {
+        width: 100%;
+        max-width: none;
+        border-radius: 14px;
+    }
+
+    .md-diagram-01-caption {
+        margin-top: 0.7rem;
+        padding: 0 0.5rem;
+
+        font-size: 0.95rem;
+        line-height: 1.45;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 02
+   MUSCLE STRAIN VS MUSCLE CRAMP
+   ========================================================= */
+
+.md-diagram-02 {
+    width: 100%;
+    margin: 1.5rem 0 1.8rem;
+    overflow: hidden;
+}
+
+/* Image card */
+
+.md-diagram-02 .md-diagram-card {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+/* Image wrapper */
+
+.md-diagram-02 .md-diagram-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Diagram PNG */
+
+.md-diagram-02 .md-diagram-image {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Figure caption */
+
+.md-diagram-02 figcaption {
+    margin-top: 0.85rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.45;
+    color: #737b86;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .md-diagram-02 {
+        width: 100%;
+        margin: 1.25rem 0 1.6rem;
+    }
+
+    .md-diagram-02 .md-diagram-card {
+        width: 100%;
+        border-radius: 14px;
+    }
+
+    .md-diagram-02 .md-diagram-image-wrap {
+        width: 100%;
+    }
+
+    .md-diagram-02 .md-diagram-image {
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+
+    .md-diagram-02 figcaption {
+        margin-top: 0.75rem;
+        padding: 0 0.5rem;
+        font-size: 0.95rem;
+        line-height: 1.45;
+    }
+
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .md-diagram-02 figcaption,
+.dark-mode .md-diagram-02 figcaption {
+    color: #aeb6c2;
+}
+
+/* =========================================================
+   DIAGRAM 03
+   PROGRESSIVE MUSCLE WEAKNESS
+   ========================================================= */
+
+.md-diagram-03 {
+    width: 100%;
+    margin: 1.6rem 0 1.4rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   Diagram Card
+   --------------------------------------------------------- */
+
+.md-diagram-03-card {
+    width: 100%;
+    margin: 0;
+    padding: 0.75rem;
+    box-sizing: border-box;
+
+    background: var(
+        --lesson-surface-2,
+        rgba(128, 128, 128, 0.06)
+    );
+
+    border: 1px solid var(
+        --lesson-border,
+        rgba(128, 128, 128, 0.20)
+    );
+
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   Diagram Image
+   --------------------------------------------------------- */
+
+.md-diagram-03-image {
+    display: block;
+
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+
+    margin: 0 auto;
+    padding: 0;
+
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   Caption
+   --------------------------------------------------------- */
+
+.md-diagram-03-caption {
+    margin: 0.8rem 0 0;
+
+    text-align: center;
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    color: var(
+        --muted-text,
+        #667085
+    );
+
+    opacity: 0.82;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+html[data-theme="dark"] .md-diagram-03-card {
+    background: var(
+        --lesson-surface-2,
+        rgba(255, 255, 255, 0.05)
+    );
+
+    border-color: var(
+        --lesson-border,
+        rgba(255, 255, 255, 0.16)
+    );
+}
+
+html[data-theme="dark"] .md-diagram-03-caption {
+    color: var(
+        --muted-text,
+        #aeb8c7
+    );
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .md-diagram-03 {
+        margin: 1.35rem 0 1.2rem;
+    }
+
+    .md-diagram-03-card {
+        padding: 0.5rem;
+        border-radius: 14px;
+    }
+
+    .md-diagram-03-image {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .md-diagram-03-caption {
+        margin-top: 0.7rem;
+        padding: 0 0.25rem;
+
+        font-size: 0.86rem;
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .md-diagram-03-card {
+        padding: 0.4rem;
+        border-radius: 12px;
+    }
+
+    .md-diagram-03-image {
+        border-radius: 9px;
+    }
+
+    .md-diagram-03-caption {
+        font-size: 0.82rem;
+    }
+}
+
+/* =========================================================
+   LESSON 4.5 — DIAGRAM 04
+   NERVE → MUSCLE COMMUNICATION
+   ========================================================= */
+
+.md-diagram-04 {
+    width: 100%;
+    margin: 24px 0 8px;
+    text-align: center;
+}
+
+.md-diagram-04-card {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    background: var(--card-bg, #ffffff);
+    border: 2px solid var(--border-color, #e2e8f0);
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.md-diagram-04-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.md-diagram-04-image {
+    display: block;
+    width: 100%;
+    max-width: 1536px;
+    height: auto;
+
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+
+/* Caption */
+
+.md-diagram-04-caption {
+    margin-top: 12px;
+
+    color: var(--muted-text, #667085);
+    font-size: 0.92rem;
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+html[data-theme="dark"] .md-diagram-04-card {
+    background: var(--card-bg, #1d2633);
+    border-color: var(--border-color, #344154);
+}
+
+html[data-theme="dark"] .md-diagram-04-caption {
+    color: var(--muted-text, #aeb8c7);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .md-diagram-04 {
+        margin: 20px 0 8px;
+    }
+
+    .md-diagram-04-card {
+        padding: 6px;
+        border-radius: 16px;
+    }
+
+    .md-diagram-04-image-wrap {
+        border-radius: 10px;
+    }
+
+    .md-diagram-04-image {
+        width: 100%;
+        max-width: none;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .md-diagram-04-caption {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        line-height: 1.45;
+    }
+}
+
+/* =========================================================
+   LESSON 4.5 — DIAGRAM 05
+   COMPLETE MUSCLE-TO-MOVEMENT CHAIN
+   ========================================================= */
+
+.md-diagram-05 {
+    width: 100%;
+    margin: 28px 0 34px;
+    padding: 0;
+}
+
+.md-diagram-05-card {
+    width: 100%;
+    box-sizing: border-box;
+
+    background: var(--card-bg, #ffffff);
+    border: 1px solid var(--border-color, #dfe3e8);
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.md-diagram-05-image-wrap {
+    width: 100%;
+    display: block;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+.md-diagram-05-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: contain;
+}
+
+.md-diagram-05-caption {
+    margin: 14px 8px 0;
+    padding: 0;
+
+    text-align: center;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: var(--muted-text, #6b7280);
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .md-diagram-05 {
+        margin: 24px 0 30px;
+    }
+
+    .md-diagram-05-card {
+        border-radius: 18px;
+    }
+
+    .md-diagram-05-image-wrap {
+        width: 100%;
+    }
+
+    .md-diagram-05-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .md-diagram-05-caption {
+        margin-top: 12px;
+
+        padding: 0 6px;
+
+        font-size: 15px;
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+[data-theme="dark"] .md-diagram-05-card {
+    background: var(--card-bg, #151922);
+    border-color: var(--border-color, #303642);
+}
+
+/*
+   The generated infographic has a white/light background,
+   so keep the image area white even in dark mode.
+*/
+
+[data-theme="dark"] .md-diagram-05-image-wrap {
+    background: #ffffff;
+}
+
+[data-theme="dark"] .md-diagram-05-caption {
+    color: var(--muted-text, #9ca3af);
+}
+
+/* =========================================================
+   DIAGRAM 06 — MUSCULAR SYSTEM: COMPLETE REVIEW MAP
+   ========================================================= */
+
+.mdr-diagram-06 {
+    width: 100%;
+    margin: 24px 0 12px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   DIAGRAM CARD
+   --------------------------------------------------------- */
+
+.mdr-diagram-06-card {
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--card-bg, #ffffff);
+    border: 1px solid var(--border-color, #dce3ea);
+    border-radius: 18px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE WRAPPER
+   --------------------------------------------------------- */
+
+.mdr-diagram-06-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   DIAGRAM IMAGE
+   --------------------------------------------------------- */
+
+.mdr-diagram-06-image {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+
+/* ---------------------------------------------------------
+   CAPTION
+   --------------------------------------------------------- */
+
+.mdr-diagram-06-caption {
+    margin: 0.8rem auto 0;
+    max-width: 900px;
+
+    color: var(--muted-text, #667085);
+
+    font-size: 0.92rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+html[data-theme="dark"] .mdr-diagram-06-card {
+    background: var(--card-bg, #1d2633);
+    border-color: var(--border-color, #344154);
+}
+
+html[data-theme="dark"] .mdr-diagram-06-caption {
+    color: var(--muted-text, #aeb8c7);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .mdr-diagram-06 {
+        margin: 20px 0 10px;
+    }
+
+    .mdr-diagram-06-card {
+        padding: 0.5rem;
+        border-radius: 16px;
+    }
+
+    .mdr-diagram-06-image-wrap {
+        border-radius: 10px;
+    }
+
+    .mdr-diagram-06-image {
+        width: 100%;
+        max-width: none;
+    }
+
+    .mdr-diagram-06-caption {
+        margin-top: 0.7rem;
+        padding: 0 0.4rem;
+
+        font-size: 0.9rem;
+        line-height: 1.45;
+    }
+
+}

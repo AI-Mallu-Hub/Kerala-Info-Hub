@@ -1,0 +1,985 @@
+/* =========================================================
+   MUSCULAR SYSTEM — LESSON 4
+   Page-specific styles
+
+   Shared header/footer/theme/lesson behavior remains in:
+   ../../css/lesson.css
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE FOUNDATION
+   ========================================================= */
+
+.muscular-lesson {
+    position: relative;
+}
+
+.muscular-lesson strong {
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.muscular-introduction {
+    overflow: hidden;
+}
+
+.muscular-highlight,
+.muscular-memory-box,
+.muscular-bridge-note {
+    border-radius: 14px;
+    padding: 1rem 1.1rem;
+    margin-top: 1.25rem;
+    line-height: 1.65;
+}
+
+.muscular-highlight {
+    background: var(--lesson-note-bg, rgba(128, 128, 128, 0.10));
+    border-left: 4px solid var(--lesson-accent, #7c3aed);
+}
+
+.muscular-memory-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    background: var(--lesson-note-bg, rgba(128, 128, 128, 0.10));
+}
+
+.muscular-bridge-note {
+    background: var(--lesson-note-bg, rgba(128, 128, 128, 0.08));
+}
+
+
+/* =========================================================
+   DIAGRAM CARDS
+   ========================================================= */
+
+.muscular-diagram-card {
+    margin: 1.5rem 0 0;
+    padding: 1rem;
+    border-radius: 16px;
+    background: var(--lesson-surface-2, rgba(128, 128, 128, 0.06));
+    border: 1px solid var(--lesson-border, rgba(128, 128, 128, 0.20));
+}
+
+.muscular-diagram-title {
+    margin-bottom: 0.85rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.muscular-diagram-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.muscular-diagram-image {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+}
+
+.muscular-diagram-caption {
+    margin: 0.8rem 0 0;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 0.78;
+}
+
+
+/* =========================================================
+   GENERAL LIST CARD
+   ========================================================= */
+
+.muscular-list-card {
+    margin-top: 1.35rem;
+    padding: 1rem 1.15rem;
+    border-radius: 14px;
+    background: var(--lesson-surface-2, rgba(128, 128, 128, 0.06));
+    border: 1px solid var(--lesson-border, rgba(128, 128, 128, 0.18));
+}
+
+.muscular-list-card h3 {
+    margin-top: 0;
+}
+
+.muscular-list-card ul {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   FUNCTIONS
+   ========================================================= */
+
+.muscular-function-list {
+    display: grid;
+    gap: 0.85rem;
+    margin-top: 1.25rem;
+}
+
+.muscular-function-item {
+    display: grid;
+    grid-template-columns: 3rem minmax(0, 1fr);
+    gap: 0.9rem;
+    align-items: start;
+    padding: 1rem;
+    border-radius: 14px;
+    background: var(--lesson-surface-2, rgba(128, 128, 128, 0.06));
+    border: 1px solid var(--lesson-border, rgba(128, 128, 128, 0.16));
+}
+
+.muscular-function-icon {
+    width: 3rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: var(--lesson-icon-bg, rgba(128, 128, 128, 0.12));
+    font-size: 1.35rem;
+}
+
+.muscular-function-item h3 {
+    margin: 0 0 0.25rem;
+}
+
+.muscular-function-item p {
+    margin: 0;
+}
+
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+.muscular-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 1.35rem;
+    border-radius: 14px;
+    border: 1px solid var(--lesson-border, rgba(128, 128, 128, 0.20));
+}
+
+.muscular-table {
+    width: 100%;
+    min-width: 520px;
+    border-collapse: collapse;
+}
+
+.muscular-table th,
+.muscular-table td {
+    padding: 0.8rem 0.85rem;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--lesson-border, rgba(128, 128, 128, 0.15));
+    line-height: 1.55;
+}
+
+.muscular-table th {
+    font-weight: 700;
+    background: var(--lesson-surface-2, rgba(128, 128, 128, 0.08));
+}
+
+.muscular-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.muscular-comparison-table {
+    min-width: 650px;
+}
+
+
+/* =========================================================
+   LOCATIONS
+   ========================================================= */
+
+.muscular-location-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.muscular-location-card {
+    padding: 1.05rem;
+    border-radius: 15px;
+    background: var(--lesson-surface-2, rgba(128, 128, 128, 0.06));
+    border: 1px solid var(--lesson-border, rgba(128, 128, 128, 0.16));
+}
+
+.muscular-location-icon {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.55rem;
+}
+
+.muscular-location-card h3 {
+    margin: 0 0 0.35rem;
+}
+
+.muscular-location-card p {
+    margin: 0;
+}
+
+
+/* =========================================================
+   MUSCLE TYPES
+   ========================================================= */
+
+.muscle-type-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.muscle-type-card {
+    padding: 1.05rem;
+    border-radius: 15px;
+    background: var(--lesson-surface-2, rgba(128, 128, 128, 0.06));
+    border: 1px solid var(--lesson-border, rgba(128, 128, 128, 0.16));
+}
+
+.muscle-type-card h3 {
+    margin-top: 0;
+}
+
+.muscle-type-card ul {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   SKELETAL MUSCLE HIERARCHY
+   ========================================================= */
+
+.muscular-hierarchy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.4rem;
+}
+
+.muscular-hierarchy-step {
+    width: min(100%, 480px);
+    padding: 0.9rem 1rem;
+    text-align: center;
+    border-radius: 13px;
+    background: var(--lesson-surface-2, rgba(128, 128, 128, 0.06));
+    border: 1px solid var(--lesson-border, rgba(128, 128, 128, 0.18));
+}
+
+.muscular-hierarchy-step strong,
+.muscular-hierarchy-step span {
+    display: block;
+}
+
+.muscular-hierarchy-step strong {
+    margin-bottom: 0.2rem;
+}
+
+.muscular-hierarchy-step span {
+    font-size: 0.9rem;
+    opacity: 0.78;
+}
+
+.muscular-hierarchy-arrow {
+    padding: 0.35rem 0;
+    font-size: 1.2rem;
+    opacity: 0.65;
+}
+
+
+/* =========================================================
+   MOVEMENT PROCESS
+   ========================================================= */
+
+.muscular-process {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr);
+    gap: 0.55rem;
+    align-items: center;
+    margin-top: 1.35rem;
+}
+
+.muscular-process-step {
+    min-width: 0;
+    padding: 0.9rem 0.7rem;
+    text-align: center;
+    border-radius: 14px;
+    background: var(--lesson-surface-2, rgba(128, 128, 128, 0.06));
+    border: 1px solid var(--lesson-border, rgba(128, 128, 128, 0.16));
+}
+
+.muscular-process-step span {
+    width: 1.8rem;
+    height: 1.8rem;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 0.45rem;
+    border-radius: 50%;
+    background: var(--lesson-icon-bg, rgba(128, 128, 128, 0.12));
+    font-weight: 700;
+}
+
+.muscular-process-step strong,
+.muscular-process-step small {
+    display: block;
+}
+
+.muscular-process-step small {
+    margin-top: 0.25rem;
+    line-height: 1.4;
+    opacity: 0.75;
+}
+
+.muscular-process-arrow {
+    font-size: 1.2rem;
+    opacity: 0.65;
+}
+
+
+/* =========================================================
+   BODY-SYSTEM CONNECTIONS
+   ========================================================= */
+
+.muscular-system-links {
+    display: grid;
+    gap: 0.85rem;
+    margin-top: 1.25rem;
+}
+
+.muscular-system-link {
+    display: grid;
+    grid-template-columns: 3rem minmax(0, 1fr);
+    gap: 0.9rem;
+    align-items: start;
+    padding: 1rem;
+    border-radius: 14px;
+    background: var(--lesson-surface-2, rgba(128, 128, 128, 0.06));
+    border: 1px solid var(--lesson-border, rgba(128, 128, 128, 0.16));
+}
+
+.muscular-system-link-icon {
+    width: 3rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: var(--lesson-icon-bg, rgba(128, 128, 128, 0.12));
+    font-size: 1.35rem;
+}
+
+.muscular-system-link h3 {
+    margin: 0 0 0.25rem;
+}
+
+.muscular-system-link p {
+    margin: 0;
+}
+
+
+/* =========================================================
+   MAJOR MUSCLE GROUPS
+   ========================================================= */
+
+.major-muscle-group-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-top: 1.2rem;
+}
+
+.major-muscle-group-list span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.55rem 0.75rem;
+    border-radius: 999px;
+    background: var(--lesson-surface-2, rgba(128, 128, 128, 0.08));
+    border: 1px solid var(--lesson-border, rgba(128, 128, 128, 0.16));
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   QUICK FACTS
+   ========================================================= */
+
+.muscular-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.9rem;
+    margin-top: 1.25rem;
+}
+
+.muscular-fact-card {
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 15px;
+    background: var(--lesson-surface-2, rgba(128, 128, 128, 0.06));
+    border: 1px solid var(--lesson-border, rgba(128, 128, 128, 0.16));
+}
+
+.muscular-fact-card strong {
+    display: block;
+    margin-bottom: 0.45rem;
+    font-size: 1.35rem;
+}
+
+.muscular-fact-card span {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   SUB-LESSON NAVIGATION
+   ========================================================= */
+
+.muscular-toc-list {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.muscular-toc-item {
+    display: grid;
+    grid-template-columns: 3.2rem minmax(0, 1fr) auto;
+    gap: 0.85rem;
+    align-items: center;
+    padding: 0.95rem;
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    background: var(--lesson-surface-2, rgba(128, 128, 128, 0.06));
+    border: 1px solid var(--lesson-border, rgba(128, 128, 128, 0.16));
+    transition:
+        transform 0.18s ease,
+        border-color 0.18s ease,
+        background 0.18s ease;
+}
+
+.muscular-toc-item:hover {
+    transform: translateY(-2px);
+    border-color: var(--lesson-accent, currentColor);
+}
+
+.muscular-toc-number {
+    width: 3.2rem;
+    height: 3.2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: var(--lesson-icon-bg, rgba(128, 128, 128, 0.12));
+    font-weight: 800;
+}
+
+.muscular-toc-content {
+    min-width: 0;
+}
+
+.muscular-toc-content strong,
+.muscular-toc-content small {
+    display: block;
+}
+
+.muscular-toc-content small {
+    margin-top: 0.2rem;
+    line-height: 1.45;
+    opacity: 0.75;
+}
+
+.muscular-toc-arrow {
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+
+/* =========================================================
+   DARK THEME SAFETY
+
+   Actual theme switching is handled by theme.js.
+   These values provide safe fallbacks for page-specific UI.
+   ========================================================= */
+
+:root {
+
+    --lesson-surface-2:
+        rgba(128, 128, 128, 0.06);
+
+    --lesson-border:
+        rgba(128, 128, 128, 0.18);
+
+    --lesson-note-bg:
+        rgba(128, 128, 128, 0.09);
+
+    --lesson-icon-bg:
+        rgba(128, 128, 128, 0.12);
+
+}
+
+[data-theme="dark"] {
+
+    --lesson-surface-2:
+        rgba(255, 255, 255, 0.055);
+
+    --lesson-border:
+        rgba(255, 255, 255, 0.14);
+
+    --lesson-note-bg:
+        rgba(255, 255, 255, 0.07);
+
+    --lesson-icon-bg:
+        rgba(255, 255, 255, 0.09);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .muscular-location-grid,
+    .muscle-type-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .muscular-facts-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .muscular-process {
+        grid-template-columns: 1fr;
+        gap: 0.45rem;
+    }
+
+    .muscular-process-arrow {
+        transform: rotate(90deg);
+        justify-self: center;
+    }
+
+}
+
+
+@media (max-width: 640px) {
+
+    .muscular-function-item,
+    .muscular-system-link {
+        grid-template-columns:
+            2.6rem minmax(0, 1fr);
+    }
+
+    .muscular-function-icon,
+    .muscular-system-link-icon {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+
+    .muscular-facts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .muscular-toc-item {
+        grid-template-columns:
+            2.7rem minmax(0, 1fr) auto;
+
+        gap: 0.65rem;
+    }
+
+    .muscular-toc-number {
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+
+    .muscular-diagram-card {
+        padding: 0.75rem;
+    }
+
+    .muscular-table th,
+    .muscular-table td {
+        padding: 0.7rem;
+    }
+
+}
+
+/* =========================================================
+   FIGURE 4.1
+   HUMAN MUSCULAR SYSTEM OVERVIEW
+   ANTERIOR + POSTERIOR
+   ========================================================= */
+
+.muscular-system-overview {
+    overflow: hidden;
+}
+
+
+/* Image container specifically for the
+   combined anterior + posterior diagram */
+
+.muscular-overview-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+
+/* Single PNG containing both views */
+
+.muscular-overview-image {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Figure caption */
+
+.muscular-system-overview .muscular-diagram-caption {
+    margin-top: 0.8rem;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .muscular-overview-image-wrap {
+        width: 100%;
+    }
+
+    .muscular-overview-image {
+        width: 100%;
+        max-width: none;
+    }
+
+}
+
+/* =========================================================
+   FIGURE 4.2
+   FUNCTIONS OF MUSCLES
+   ========================================================= */
+
+.muscular-functions-diagram {
+    overflow: hidden;
+}
+
+
+/* Image container */
+
+.muscular-functions-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+
+/* Functions infographic PNG */
+
+.muscular-functions-image {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Figure caption */
+
+.muscular-functions-diagram .muscular-diagram-caption {
+    margin-top: 0.8rem;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .muscular-functions-image-wrap {
+        width: 100%;
+    }
+
+    .muscular-functions-image {
+        width: 100%;
+        max-width: none;
+    }
+
+}
+
+/* =========================================================
+   FIGURE 4.3
+   MAJOR LOCATIONS OF MUSCLE TISSUE
+   ========================================================= */
+
+.muscle-locations-diagram {
+    overflow: hidden;
+}
+
+.muscle-locations-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.muscle-locations-image {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+}
+
+.muscle-locations-diagram .muscular-diagram-caption {
+    margin-top: 0.8rem;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .muscle-locations-image-wrap {
+        width: 100%;
+    }
+
+    .muscle-locations-image {
+        width: 100%;
+        max-width: none;
+    }
+
+}
+
+/* =========================================================
+   FIGURE 4.4
+   THREE TYPES OF MUSCLE TISSUE
+   ========================================================= */
+
+.muscle-types-diagram {
+    overflow: hidden;
+}
+
+.muscle-types-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.muscle-types-image {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+}
+
+.muscle-types-diagram .muscular-diagram-caption {
+    margin-top: 0.8rem;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .muscle-types-image-wrap {
+        width: 100%;
+    }
+
+    .muscle-types-image {
+        width: 100%;
+        max-width: none;
+    }
+
+}
+
+/* =========================================================
+   FIGURE 4.5
+   ORGANIZATION OF SKELETAL MUSCLE
+   ========================================================= */
+
+.skeletal-muscle-organization-diagram {
+    overflow: hidden;
+}
+
+.skeletal-muscle-organization-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.skeletal-muscle-organization-image {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+}
+
+.skeletal-muscle-organization-diagram .muscular-diagram-caption {
+    margin-top: 0.8rem;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .skeletal-muscle-organization-image-wrap {
+        width: 100%;
+    }
+
+    .skeletal-muscle-organization-image {
+        width: 100%;
+        max-width: none;
+    }
+
+}
+
+/* =========================================================
+   FIGURE 4.6
+   BASIC MUSCLE CONTRACTION
+   ========================================================= */
+
+.muscle-contraction-diagram {
+    overflow: hidden;
+}
+
+.muscle-contraction-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.muscle-contraction-image {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+}
+
+.muscle-contraction-diagram .muscular-diagram-caption {
+    margin-top: 0.8rem;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .muscle-contraction-image-wrap {
+        width: 100%;
+    }
+
+    .muscle-contraction-image {
+        width: 100%;
+        max-width: none;
+    }
+
+}
+
+/* =========================================================
+   FIGURE 4.7
+   MAJOR SKELETAL MUSCLE GROUPS
+   ========================================================= */
+
+.major-muscle-groups-diagram {
+    overflow: hidden;
+}
+
+.major-muscle-groups-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.major-muscle-groups-image {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+}
+
+.major-muscle-groups-diagram .muscular-diagram-caption {
+    margin-top: 0.8rem;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .major-muscle-groups-image-wrap {
+        width: 100%;
+    }
+
+    .major-muscle-groups-image {
+        width: 100%;
+        max-width: none;
+    }
+
+}
+

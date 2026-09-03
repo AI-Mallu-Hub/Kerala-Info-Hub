@@ -1,0 +1,1580 @@
+/* =========================================================
+   LESSON 4.2
+   SKELETAL MUSCLE ANATOMY
+   ========================================================= */
+
+
+/* =========================================================
+   LESSON INTRO
+   ========================================================= */
+
+.skeletal-muscle-lesson {
+    position: relative;
+}
+
+
+.skeletal-muscle-intro {
+    margin-bottom: 28px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   TABLE OF CONTENTS
+   ========================================================= */
+
+.skeletal-muscle-lesson .lesson-toc {
+    margin: 0;
+
+    padding-left: 24px;
+}
+
+
+.skeletal-muscle-lesson .lesson-toc li {
+    margin-bottom: 10px;
+
+    line-height: 1.6;
+}
+
+
+.skeletal-muscle-lesson .lesson-toc a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   DIAGRAM CARD
+   ========================================================= */
+
+.skeletal-diagram {
+    width: 100%;
+
+    margin: 28px 0 32px;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background: var(--card-bg, #ffffff);
+
+    border: 1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+.skeletal-diagram-image {
+    display: block;
+
+    width: 100%;
+
+    max-width: 1600px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    border-radius: 12px;
+}
+
+
+.skeletal-diagram figcaption {
+    margin-top: 14px;
+
+    font-size: 0.95rem;
+
+    line-height: 1.5;
+
+    color: var(--muted-text, #667085);
+}
+
+
+/* =========================================================
+   STRUCTURAL HIERARCHY
+   ========================================================= */
+
+.muscle-hierarchy {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+
+    max-width: 430px;
+
+    margin: 28px auto 10px;
+}
+
+
+.hierarchy-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    width: 100%;
+
+    padding: 13px 17px;
+
+    box-sizing: border-box;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border: 1px solid
+        var(--border-color, #e1e4e8);
+
+    border-radius: 14px;
+}
+
+
+.hierarchy-item span {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex: 0 0 32px;
+
+    width: 32px;
+
+    height: 32px;
+
+    border-radius: 50%;
+
+    font-weight: 800;
+
+    background: var(--accent-soft, #eceff3);
+}
+
+
+.hierarchy-item strong {
+    line-height: 1.4;
+}
+
+
+.hierarchy-arrow {
+    font-size: 1.2rem;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   KEY STRUCTURE LIST
+   ========================================================= */
+
+.key-structure-list {
+    display: grid;
+
+    gap: 12px;
+
+    margin-top: 18px;
+
+    padding-left: 22px;
+}
+
+
+.key-structure-list li {
+    padding-left: 4px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CONNECTIVE TISSUE COVERINGS
+   ========================================================= */
+
+.covering-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 16px;
+
+    margin: 26px 0;
+}
+
+
+.covering-card {
+    padding: 18px;
+
+    text-align: center;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border: 1px solid
+        var(--border-color, #e1e4e8);
+
+    border-radius: 16px;
+}
+
+
+.covering-card h3 {
+    margin-top: 0;
+
+    margin-bottom: 8px;
+}
+
+
+.covering-card p {
+    margin-bottom: 0;
+
+    line-height: 1.55;
+
+    color: var(--muted-text, #667085);
+}
+
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+.anatomy-table-wrap {
+    width: 100%;
+
+    margin-top: 22px;
+
+    overflow-x: auto;
+
+    border: 1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 16px;
+}
+
+
+.anatomy-table {
+    width: 100%;
+
+    min-width: 620px;
+
+    border-collapse: collapse;
+
+    background: var(--card-bg, #ffffff);
+}
+
+
+.anatomy-table th,
+.anatomy-table td {
+    padding: 14px;
+
+    text-align: left;
+
+    vertical-align: top;
+
+    line-height: 1.55;
+
+    border-bottom: 1px solid
+        var(--border-color, #e1e4e8);
+}
+
+
+.anatomy-table th {
+    font-weight: 800;
+
+    background: var(--soft-bg, #f5f6f8);
+}
+
+
+.anatomy-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   CONCEPT CARDS
+   ========================================================= */
+
+.concept-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-top: 24px;
+}
+
+
+.concept-card {
+    padding: 20px;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border: 1px solid
+        var(--border-color, #e1e4e8);
+
+    border-radius: 16px;
+}
+
+
+.concept-card h3 {
+    margin-top: 0;
+
+    margin-bottom: 9px;
+}
+
+
+.concept-card p {
+    margin-bottom: 0;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   FLOW CHAIN
+   ========================================================= */
+
+.flow-chain {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin: 26px 0;
+}
+
+
+.flow-chain > span:not(.flow-arrow) {
+    padding: 12px 16px;
+
+    font-weight: 700;
+
+    text-align: center;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border: 1px solid
+        var(--border-color, #e1e4e8);
+
+    border-radius: 12px;
+}
+
+
+.flow-arrow {
+    font-size: 1.2rem;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   KEY POINT
+   ========================================================= */
+
+.key-point-box {
+    margin-top: 24px;
+
+    padding: 18px 20px;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border-left: 4px solid
+        var(--accent-color, #6b7280);
+
+    border-radius: 12px;
+}
+
+
+.key-point-box strong {
+    display: block;
+
+    margin-bottom: 8px;
+}
+
+
+.key-point-box p {
+    margin: 0;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   FINAL HIERARCHY
+   ========================================================= */
+
+.final-hierarchy {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    margin-top: 28px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border: 1px solid
+        var(--border-color, #e1e4e8);
+
+    border-radius: 16px;
+}
+
+
+.final-hierarchy span {
+    font-weight: 700;
+}
+
+
+.final-hierarchy span:nth-child(even) {
+    font-size: 1.15rem;
+}
+
+
+/* =========================================================
+   KEY TERMS
+   ========================================================= */
+
+.term-list {
+    display: grid;
+
+    gap: 12px;
+
+    margin-top: 22px;
+}
+
+
+.term-item {
+    display: grid;
+
+    grid-template-columns:
+        minmax(145px, 0.75fr)
+        minmax(0, 1.6fr);
+
+    gap: 15px;
+
+    padding: 15px 17px;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border: 1px solid
+        var(--border-color, #e1e4e8);
+
+    border-radius: 13px;
+}
+
+
+.term-item strong {
+    font-weight: 800;
+}
+
+
+.term-item span {
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   QUICK REVISION
+   ========================================================= */
+
+.revision-list {
+    display: grid;
+
+    gap: 12px;
+
+    margin-top: 22px;
+}
+
+
+.revision-list p {
+    margin: 0;
+
+    padding: 13px 15px;
+
+    line-height: 1.6;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border-radius: 11px;
+}
+
+
+.memory-chain {
+    margin-top: 24px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border: 1px solid
+        var(--border-color, #e1e4e8);
+
+    border-radius: 16px;
+}
+
+
+.memory-chain p {
+    margin: 10px 0 0;
+
+    font-weight: 800;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   QUIZ
+   ========================================================= */
+
+.quiz-preview {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 12px 20px;
+
+    margin: 24px 0;
+}
+
+
+.quiz-preview span {
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+html[data-theme="dark"] .skeletal-diagram,
+html[data-theme="dark"] .hierarchy-item,
+html[data-theme="dark"] .covering-card,
+html[data-theme="dark"] .concept-card,
+html[data-theme="dark"] .flow-chain > span:not(.flow-arrow),
+html[data-theme="dark"] .key-point-box,
+html[data-theme="dark"] .final-hierarchy,
+html[data-theme="dark"] .term-item,
+html[data-theme="dark"] .revision-list p,
+html[data-theme="dark"] .memory-chain {
+    background: var(--card-bg, #1d2633);
+
+    border-color:
+        var(--border-color, #344154);
+}
+
+
+html[data-theme="dark"] .anatomy-table {
+    background: var(--card-bg, #1d2633);
+}
+
+
+html[data-theme="dark"] .anatomy-table th {
+    background: var(--soft-bg, #252d39);
+}
+
+
+html[data-theme="dark"] .covering-card p,
+html[data-theme="dark"] .skeletal-diagram figcaption {
+    color: var(--muted-text, #aeb8c7);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .covering-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .concept-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .term-item {
+        grid-template-columns: 1fr;
+
+        gap: 5px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .skeletal-muscle-intro {
+        line-height: 1.75;
+    }
+
+
+    .skeletal-diagram {
+        margin: 24px 0 28px;
+
+        padding: 9px;
+
+        border-radius: 17px;
+    }
+
+
+    .skeletal-diagram-image {
+        border-radius: 9px;
+    }
+
+
+    .skeletal-diagram figcaption {
+        margin-top: 11px;
+
+        font-size: 0.88rem;
+    }
+
+
+    .muscle-hierarchy {
+        max-width: 100%;
+    }
+
+
+    .hierarchy-item {
+        padding: 12px 14px;
+    }
+
+
+    .covering-card {
+        padding: 17px;
+    }
+
+
+    .concept-card {
+        padding: 17px;
+    }
+
+
+    .flow-chain {
+        flex-direction: column;
+
+        gap: 7px;
+    }
+
+
+    .flow-chain > span:not(.flow-arrow) {
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+
+    .flow-arrow {
+        transform: rotate(90deg);
+    }
+
+
+    .final-hierarchy {
+        flex-direction: column;
+
+        gap: 7px;
+    }
+
+
+    .final-hierarchy span:nth-child(even) {
+        transform: rotate(90deg);
+    }
+
+
+    .term-item {
+        padding: 14px;
+    }
+
+
+    .key-point-box {
+        padding: 16px;
+    }
+
+
+    .memory-chain {
+        padding: 17px;
+    }
+
+
+    .quiz-preview {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.skeletal-muscle-lesson a:focus-visible,
+.skeletal-muscle-lesson button:focus-visible {
+    outline: 3px solid
+        rgba(80, 130, 220, 0.45);
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .skeletal-muscle-lesson * {
+        scroll-behavior: auto;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 01 — SKELETAL MUSCLE STRUCTURAL ORGANIZATION
+   ========================================================= */
+
+.skeletal-muscle-organization-diagram {
+    width: 100%;
+    margin: 28px 0 32px;
+    padding: 18px 18px 20px;
+
+    background: var(--card-bg, #f8f9fb);
+
+    border: 1px solid
+        var(--card-border, #e1e3e6);
+
+    border-radius: 22px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE WRAPPER
+   --------------------------------------------------------- */
+
+.skeletal-muscle-diagram-image-wrap {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   DIAGRAM IMAGE
+   --------------------------------------------------------- */
+
+.skeletal-muscle-diagram-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   CAPTION
+   --------------------------------------------------------- */
+
+.skeletal-muscle-organization-diagram figcaption {
+    margin-top: 16px;
+
+    padding: 0 8px;
+
+    text-align: center;
+
+    font-size: 1rem;
+    line-height: 1.55;
+
+    color: var(
+        --muted-text,
+        #666b73
+    );
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+[data-theme="dark"]
+.skeletal-muscle-organization-diagram {
+
+    background: var(
+        --card-bg,
+        #1e2024
+    );
+
+    border-color: var(
+        --card-border,
+        #34373d
+    );
+}
+
+
+[data-theme="dark"]
+.skeletal-muscle-organization-diagram figcaption {
+
+    color: var(
+        --muted-text,
+        #aeb4bd
+    );
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .skeletal-muscle-organization-diagram {
+
+        margin: 24px 0 28px;
+
+        padding: 12px 10px 16px;
+
+        border-radius: 18px;
+    }
+
+    .skeletal-muscle-diagram-image-wrap {
+
+        border-radius: 10px;
+    }
+
+    .skeletal-muscle-diagram-image {
+
+        width: 100%;
+
+        border-radius: 10px;
+    }
+
+    .skeletal-muscle-organization-diagram figcaption {
+
+        margin-top: 13px;
+
+        padding: 0 5px;
+
+        font-size: 0.92rem;
+
+        line-height: 1.5;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 02 — GROSS ANATOMY OF A SKELETAL MUSCLE
+   ========================================================= */
+
+.gross-muscle-anatomy-diagram {
+    width: 100%;
+    margin: 28px 0 32px;
+    padding: 18px 18px 20px;
+
+    background: var(--card-bg, #f8f9fb);
+
+    border: 1px solid
+        var(--card-border, #e1e3e6);
+
+    border-radius: 22px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE WRAPPER
+   --------------------------------------------------------- */
+
+.gross-muscle-anatomy-image-wrap {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   VERTICAL PNG
+   --------------------------------------------------------- */
+
+.gross-muscle-anatomy-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   CAPTION
+   --------------------------------------------------------- */
+
+.gross-muscle-anatomy-diagram figcaption {
+    margin-top: 16px;
+    padding: 0 8px;
+
+    text-align: center;
+
+    font-size: 1rem;
+    line-height: 1.55;
+
+    color: var(
+        --muted-text,
+        #666b73
+    );
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+[data-theme="dark"]
+.gross-muscle-anatomy-diagram {
+
+    background: var(
+        --card-bg,
+        #1e2024
+    );
+
+    border-color: var(
+        --card-border,
+        #34373d
+    );
+}
+
+
+[data-theme="dark"]
+.gross-muscle-anatomy-diagram figcaption {
+
+    color: var(
+        --muted-text,
+        #aeb4bd
+    );
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .gross-muscle-anatomy-diagram {
+
+        margin: 24px 0 28px;
+
+        padding: 10px 8px 16px;
+
+        border-radius: 18px;
+    }
+
+    .gross-muscle-anatomy-image-wrap {
+
+        border-radius: 10px;
+    }
+
+    .gross-muscle-anatomy-image {
+
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+
+        border-radius: 8px;
+    }
+
+    .gross-muscle-anatomy-diagram figcaption {
+
+        margin-top: 13px;
+        padding: 0 5px;
+
+        font-size: 0.92rem;
+        line-height: 1.5;
+    }
+}
+
+/* =====================================================
+   FIGURE 4.3
+   CONNECTIVE TISSUE COVERINGS OF SKELETAL MUSCLE
+   ===================================================== */
+
+.s42-diagram-03 {
+    overflow: hidden;
+}
+
+.s42-diagram-03-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.s42-diagram-03-image {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    object-fit: contain;
+}
+
+.s42-diagram-03 .muscular-diagram-caption {
+    margin-top: 0.8rem;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 640px) {
+
+    .s42-diagram-03-image-wrap {
+        width: 100%;
+    }
+
+    .s42-diagram-03-image {
+        width: 100%;
+        max-width: none;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 04
+   FASCICLE AND MUSCLE FIBER
+   ========================================================= */
+
+.sm-diagram-04 {
+    width: 100%;
+    margin: 32px 0 40px;
+    padding: 0;
+    text-align: center;
+}
+
+.sm-diagram-04-card {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+
+    background: var(--card-bg, #f8f9fb);
+
+    border: 1px solid var(--border-color, #dfe3e8);
+    border-radius: 24px;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.sm-diagram-04-image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    border-radius: 16px;
+
+    object-fit: contain;
+}
+
+.sm-diagram-04-caption {
+    margin: 16px auto 0;
+
+    max-width: 680px;
+
+    padding: 0 12px;
+
+    color: var(--muted-text, #68707a);
+
+    font-size: 1rem;
+    line-height: 1.55;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+[data-theme="dark"] .sm-diagram-04-card {
+    background: var(--card-bg, #1b1d21);
+
+    border-color: var(--border-color, #343840);
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.20);
+}
+
+[data-theme="dark"] .sm-diagram-04-caption {
+    color: var(--muted-text, #aeb5bf);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .sm-diagram-04 {
+        margin: 26px 0 34px;
+    }
+
+    .sm-diagram-04-card {
+        padding: 8px;
+
+        border-radius: 20px;
+    }
+
+    .sm-diagram-04-image {
+        border-radius: 14px;
+    }
+
+    .sm-diagram-04-caption {
+        margin-top: 14px;
+
+        font-size: 0.95rem;
+        line-height: 1.5;
+
+        padding: 0 8px;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 05
+   INTERNAL STRUCTURE OF A SKELETAL MUSCLE FIBER
+   ========================================================= */
+
+.sm-diagram-05 {
+    width: 100%;
+    margin: 32px 0 40px;
+    padding: 0;
+    text-align: center;
+}
+
+.sm-diagram-05-card {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+
+    background: var(--card-bg, #f8f9fb);
+
+    border: 1px solid var(--border-color, #dfe3e8);
+    border-radius: 24px;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.sm-diagram-05-image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    border-radius: 16px;
+
+    object-fit: contain;
+}
+
+.sm-diagram-05-caption {
+    margin: 16px auto 0;
+
+    max-width: 680px;
+
+    padding: 0 12px;
+
+    color: var(--muted-text, #68707a);
+
+    font-size: 1rem;
+    line-height: 1.55;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+[data-theme="dark"] .sm-diagram-05-card {
+    background: var(--card-bg, #1b1d21);
+
+    border-color: var(--border-color, #343840);
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.20);
+}
+
+[data-theme="dark"] .sm-diagram-05-caption {
+    color: var(--muted-text, #aeb5bf);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .sm-diagram-05 {
+        margin: 26px 0 34px;
+    }
+
+    .sm-diagram-05-card {
+        padding: 6px;
+        border-radius: 20px;
+    }
+
+    .sm-diagram-05-image {
+        border-radius: 14px;
+    }
+
+    .sm-diagram-05-caption {
+        margin-top: 14px;
+
+        padding: 0 8px;
+
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 06
+   MYOFIBRIL AND SARCOMERE ORGANIZATION
+   ========================================================= */
+
+.sm-diagram-06 {
+    width: 100%;
+    margin: 1.5rem 0 1.75rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.sm-diagram-06-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+.sm-diagram-06-image {
+    display: block;
+
+    width: 100%;
+    max-width: 1000px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    margin: 0 auto;
+}
+
+
+.sm-diagram-06-caption {
+    margin: 0.85rem 0 0;
+
+    padding: 0 0.5rem;
+
+    text-align: center;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .sm-diagram-06 {
+        margin-top: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+
+    .sm-diagram-06-card {
+        width: 100%;
+
+        border-radius: 16px;
+    }
+
+
+    .sm-diagram-06-image {
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+
+
+    .sm-diagram-06-caption {
+        font-size: 0.9rem;
+        line-height: 1.45;
+    }
+
+}
+
+/* =========================================================
+   DIAGRAM 07
+   BASIC SARCOMERE STRUCTURE
+   ========================================================= */
+
+.sm-diagram-07 {
+    width: 100%;
+    margin: 1.5rem 0 1.75rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.sm-diagram-07-card {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+.sm-diagram-07-image {
+    display: block;
+
+    width: 100%;
+    max-width: 1200px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    margin: 0 auto;
+}
+
+
+.sm-diagram-07-caption {
+    margin: 0.85rem 0 0;
+    padding: 0 0.5rem;
+
+    text-align: center;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .sm-diagram-07 {
+        margin-top: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+
+    .sm-diagram-07-card {
+        width: 100%;
+        border-radius: 16px;
+    }
+
+
+    .sm-diagram-07-image {
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+
+
+    .sm-diagram-07-caption {
+        font-size: 0.9rem;
+        line-height: 1.45;
+    }
+
+}
+
+/* =========================================================
+   PNG-08 — Skeletal Muscle Organization Summary
+   ========================================================= */
+
+.skeletal-muscle-summary-diagram {
+    width: 100%;
+    margin: 32px 0;
+    padding: 18px;
+    box-sizing: border-box;
+
+    background: #f8f9fb;
+    border: 1px solid #dfe3e8;
+    border-radius: 24px;
+
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/* Diagram image */
+
+.skeletal-muscle-summary-diagram .diagram-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+
+/* Caption */
+
+.skeletal-muscle-summary-diagram figcaption {
+    margin-top: 18px;
+    padding: 0 8px;
+
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 500;
+
+    color: #687384;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .skeletal-muscle-summary-diagram {
+        margin: 28px 0;
+        padding: 12px;
+
+        border-radius: 20px;
+    }
+
+    .skeletal-muscle-summary-diagram .diagram-image {
+        width: 100%;
+    }
+
+    .skeletal-muscle-summary-diagram figcaption {
+        margin-top: 14px;
+
+        font-size: 16px;
+        line-height: 1.45;
+    }
+}
+

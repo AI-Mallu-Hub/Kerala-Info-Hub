@@ -1,0 +1,1401 @@
+/* =========================================================
+   LESSON 4.4
+   MAJOR SKELETAL MUSCLES & THEIR FUNCTIONS
+   ========================================================= */
+
+
+/* =========================================================
+   LESSON INTRO
+   ========================================================= */
+
+.major-muscles-intro {
+    margin: 0 0 28px;
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   LESSON TOC
+   ========================================================= */
+
+.major-muscles-lesson .lesson-toc {
+    margin-bottom: 32px;
+}
+
+
+/* =========================================================
+   MUSCLE FEATURE CARDS
+   ========================================================= */
+
+.muscle-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin: 24px 0 30px;
+}
+
+.muscle-feature-card {
+    padding: 20px;
+    border: 1px solid #e1e5ea;
+    border-radius: 18px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.muscle-feature-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.08rem;
+    line-height: 1.35;
+}
+
+.muscle-feature-card p {
+    margin: 8px 0 0;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   DIAGRAMS
+   ========================================================= */
+
+.major-muscle-diagram {
+    width: 100%;
+    margin: 30px 0 34px;
+    padding: 0;
+}
+
+.major-muscle-diagram-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border: 1px solid #dfe3e8;
+    border-radius: 22px;
+
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.major-muscle-diagram-image {
+    display: block;
+
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+.major-muscle-diagram figcaption {
+    margin: 12px 0 0;
+    padding: 0 8px;
+
+    text-align: center;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: #687282;
+}
+
+
+/* =========================================================
+   KEY POINT
+   ========================================================= */
+
+.major-muscles-lesson .key-point {
+    margin: 28px 0 0;
+    padding: 18px 20px;
+
+    border-radius: 16px;
+
+    background: #f7f9fb;
+    border: 1px solid #e1e6eb;
+}
+
+.major-muscles-lesson .key-point strong {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.major-muscles-lesson .key-point p {
+    margin: 0;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   MUSCLE → LOCATION → FUNCTION TABLE
+   ========================================================= */
+
+.muscle-function-table-wrap {
+    width: 100%;
+    margin-top: 26px;
+    overflow-x: auto;
+
+    border: 1px solid #dfe3e8;
+    border-radius: 18px;
+
+    background: #ffffff;
+}
+
+.muscle-function-table {
+    width: 100%;
+    min-width: 680px;
+
+    border-collapse: collapse;
+}
+
+.muscle-function-table th,
+.muscle-function-table td {
+    padding: 14px 16px;
+
+    text-align: left;
+    vertical-align: top;
+
+    border-bottom: 1px solid #e7eaee;
+
+    line-height: 1.5;
+}
+
+.muscle-function-table th {
+    font-weight: 700;
+}
+
+.muscle-function-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   JOINT ACTION CARDS
+   ========================================================= */
+
+.joint-action-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.joint-action-card {
+    padding: 22px;
+
+    border: 1px solid #dfe3e8;
+    border-radius: 18px;
+
+    background: #ffffff;
+}
+
+.joint-action-card h3 {
+    margin: 0 0 14px;
+}
+
+.joint-action-card p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   FUNCTIONAL REGION SUMMARY
+   ========================================================= */
+
+.muscle-region-summary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.muscle-region-summary > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    padding: 16px 18px;
+
+    border: 1px solid #e1e5ea;
+    border-radius: 16px;
+
+    background: #ffffff;
+}
+
+.muscle-region-summary strong {
+    font-size: 1rem;
+}
+
+.muscle-region-summary span {
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   QUICK REVISION
+   ========================================================= */
+
+.revision-list {
+    display: grid;
+    gap: 12px;
+}
+
+.revision-list > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    padding: 15px 18px;
+
+    border: 1px solid #e1e5ea;
+    border-radius: 15px;
+
+    background: #ffffff;
+}
+
+.revision-list span {
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   REMEMBER BOX
+   ========================================================= */
+
+.remember-box {
+    margin-top: 28px;
+    padding: 20px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e0e5ea;
+    background: #f7f9fb;
+}
+
+.remember-box strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.remember-box p {
+    margin: 0;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   KEY TERMS TABLE
+   ========================================================= */
+
+.key-terms-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+
+    border: 1px solid #dfe3e8;
+    border-radius: 18px;
+
+    background: #ffffff;
+}
+
+.key-terms-table {
+    width: 100%;
+    min-width: 600px;
+
+    border-collapse: collapse;
+}
+
+.key-terms-table th,
+.key-terms-table td {
+    padding: 14px 16px;
+
+    text-align: left;
+    vertical-align: top;
+
+    border-bottom: 1px solid #e7eaee;
+
+    line-height: 1.5;
+}
+
+.key-terms-table th {
+    font-weight: 700;
+}
+
+.key-terms-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   FINAL TAKEAWAY
+   ========================================================= */
+
+.final-takeaway-card {
+    text-align: left;
+}
+
+.three-question-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+
+    margin: 28px 0;
+}
+
+.three-question-grid > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    padding: 22px 16px;
+
+    text-align: center;
+
+    border: 1px solid #e1e5ea;
+    border-radius: 18px;
+
+    background: #ffffff;
+}
+
+.three-question-grid span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+    font-weight: 700;
+
+    background: #f0f3f6;
+}
+
+.three-question-grid strong {
+    line-height: 1.45;
+}
+
+.final-key-point {
+    margin-top: 26px;
+    padding: 22px;
+
+    text-align: center;
+
+    border-radius: 18px;
+    border: 1px solid #dfe4e9;
+
+    background: #f7f9fb;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   PRACTICE QUIZ
+   ========================================================= */
+
+.practice-quiz-card {
+    text-align: center;
+}
+
+.practice-quiz-card p {
+    margin-bottom: 20px;
+}
+
+.practice-quiz-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 20px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    border: 1px solid #dfe3e8;
+    background: #ffffff;
+}
+
+.practice-quiz-btn[aria-disabled="true"] {
+    opacity: 0.55;
+    cursor: default;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .muscle-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .joint-action-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .three-question-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .muscle-region-summary {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 640px) {
+
+    .major-muscles-intro {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .major-muscle-diagram {
+        margin: 24px 0 28px;
+    }
+
+    .major-muscle-diagram-card {
+        border-radius: 18px;
+    }
+
+    .major-muscle-diagram-image {
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+
+    .major-muscle-diagram figcaption {
+        margin-top: 9px;
+        font-size: 0.9rem;
+    }
+
+    .muscle-feature-card {
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    .muscle-function-table-wrap,
+    .key-terms-table-wrap {
+        border-radius: 15px;
+    }
+
+    .muscle-function-table th,
+    .muscle-function-table td,
+    .key-terms-table th,
+    .key-terms-table td {
+        padding: 12px 13px;
+    }
+
+    .joint-action-card {
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    .muscle-region-summary > div {
+        padding: 15px 16px;
+    }
+
+    .revision-list > div {
+        padding: 14px 16px;
+    }
+
+    .three-question-grid > div {
+        padding: 19px 15px;
+    }
+
+    .final-key-point {
+        padding: 19px 17px;
+    }
+
+}
+
+/* =========================================================
+   LESSON 4.4
+   DIAGRAM 01 — MAJOR SKELETAL MUSCLES OVERVIEW
+   ========================================================= */
+
+.msm-diagram-01 {
+    width: 100%;
+    margin: 28px 0 34px;
+    padding: 0;
+}
+
+.msm-diagram-01-card {
+    width: 100%;
+    box-sizing: border-box;
+
+    background: var(--card-bg, #ffffff);
+    border: 1px solid var(--border-color, #dfe3e8);
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.msm-diagram-01-image-wrap {
+    width: 100%;
+    display: block;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+.msm-diagram-01-image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: contain;
+}
+
+.msm-diagram-01-caption {
+    margin: 14px 8px 0;
+
+    text-align: center;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: var(--muted-text, #6b7280);
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .msm-diagram-01 {
+        margin: 24px 0 30px;
+    }
+
+    .msm-diagram-01-card {
+        border-radius: 18px;
+    }
+
+    .msm-diagram-01-image-wrap {
+        width: 100%;
+    }
+
+    .msm-diagram-01-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .msm-diagram-01-caption {
+        margin-top: 12px;
+
+        font-size: 15px;
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+[data-theme="dark"] .msm-diagram-01-card {
+    background: var(--card-bg, #151922);
+    border-color: var(--border-color, #303642);
+}
+
+[data-theme="dark"] .msm-diagram-01-image-wrap {
+    background: #ffffff;
+}
+
+[data-theme="dark"] .msm-diagram-01-caption {
+    color: var(--muted-text, #9ca3af);
+}
+
+/* =========================================================
+   DIAGRAM 02 — SHOULDER & CHEST MUSCLES
+   ========================================================= */
+
+.muscle-diagram-02 {
+    width: 100%;
+    margin: 28px 0 30px;
+}
+
+/* Image container */
+.muscle-diagram-02 .muscular-diagram-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Diagram image */
+.muscle-diagram-02 .muscular-diagram-image {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+/* Caption */
+.muscle-diagram-02 .muscular-diagram-caption {
+    margin: 14px 10px 0;
+    text-align: center;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .muscle-diagram-02 {
+        margin-top: 24px;
+        margin-bottom: 28px;
+    }
+
+    .muscle-diagram-02 .muscular-diagram-image-wrap {
+        width: 100%;
+    }
+
+    .muscle-diagram-02 .muscular-diagram-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .muscle-diagram-02 .muscular-diagram-caption {
+        padding: 0 8px;
+        line-height: 1.55;
+    }
+}
+
+/* =========================================================
+   LESSON 4.4
+   DIAGRAM 03 — BICEPS & TRICEPS: OPPOSING ACTIONS
+   ========================================================= */
+
+.major-muscle-diagram.diagram-03 {
+    width: 100%;
+    margin: 30px 0 34px;
+    padding: 0;
+}
+
+.major-muscle-diagram.diagram-03
+.major-muscle-diagram-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border: 1px solid #dfe3e8;
+    border-radius: 22px;
+
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.major-muscle-diagram.diagram-03
+.major-muscle-diagram-image-wrap {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.major-muscle-diagram.diagram-03
+.major-muscle-diagram-image {
+    display: block;
+
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+
+    margin: 0 auto;
+    padding: 0;
+
+    object-fit: contain;
+}
+
+.major-muscle-diagram.diagram-03
+figcaption {
+    margin: 12px 0 0;
+    padding: 0 8px;
+
+    text-align: center;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: #687282;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .major-muscle-diagram.diagram-03 {
+        margin: 24px 0 28px;
+    }
+
+    .major-muscle-diagram.diagram-03
+    .major-muscle-diagram-card {
+        border-radius: 18px;
+    }
+
+    .major-muscle-diagram.diagram-03
+    .major-muscle-diagram-image {
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+
+    .major-muscle-diagram.diagram-03
+    figcaption {
+        margin-top: 9px;
+        font-size: 0.9rem;
+    }
+
+}
+
+/* =========================================================
+   LESSON 4.4
+   DIAGRAM 04 — MAJOR TRUNK MUSCLES
+   ========================================================= */
+
+.mtm-diagram-04 {
+    width: 100%;
+    margin: 28px 0 34px;
+    padding: 0;
+}
+
+.mtm-diagram-04-card {
+    width: 100%;
+    box-sizing: border-box;
+
+    background: var(--card-bg, #ffffff);
+    border: 1px solid var(--border-color, #dfe3e8);
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.mtm-diagram-04-image-wrap {
+    width: 100%;
+    display: block;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+.mtm-diagram-04-image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: contain;
+}
+
+.mtm-diagram-04-caption {
+    margin: 14px 8px 0;
+
+    text-align: center;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: var(--muted-text, #6b7280);
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .mtm-diagram-04 {
+        margin: 24px 0 30px;
+    }
+
+    .mtm-diagram-04-card {
+        border-radius: 18px;
+    }
+
+    .mtm-diagram-04-image-wrap {
+        width: 100%;
+    }
+
+    .mtm-diagram-04-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .mtm-diagram-04-caption {
+        margin-top: 12px;
+
+        font-size: 15px;
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+[data-theme="dark"] .mtm-diagram-04-card {
+    background: var(--card-bg, #151922);
+    border-color: var(--border-color, #303642);
+}
+
+/*
+   The PNG itself has a white educational background,
+   so keep the image area white in dark mode.
+*/
+
+[data-theme="dark"] .mtm-diagram-04-image-wrap {
+    background: #ffffff;
+}
+
+[data-theme="dark"] .mtm-diagram-04-caption {
+    color: var(--muted-text, #9ca3af);
+}
+
+/* =========================================================
+   LESSON 4.4
+   DIAGRAM 05 — HIP & THIGH MUSCLES
+   ========================================================= */
+
+.mtm-diagram-05 {
+    width: 100%;
+    margin: 28px 0 34px;
+    padding: 0;
+}
+
+.mtm-diagram-05-card {
+    width: 100%;
+    box-sizing: border-box;
+
+    background: var(--card-bg, #ffffff);
+    border: 1px solid var(--border-color, #dfe3e8);
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.mtm-diagram-05-image-wrap {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+.mtm-diagram-05-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: contain;
+}
+
+.mtm-diagram-05-caption {
+    margin: 14px 8px 0;
+
+    text-align: center;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: var(--muted-text, #6b7280);
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .mtm-diagram-05 {
+        margin: 24px 0 30px;
+    }
+
+    .mtm-diagram-05-card {
+        border-radius: 18px;
+    }
+
+    .mtm-diagram-05-image-wrap {
+        width: 100%;
+    }
+
+    .mtm-diagram-05-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .mtm-diagram-05-caption {
+        margin-top: 12px;
+
+        font-size: 15px;
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+[data-theme="dark"] .mtm-diagram-05-card {
+    background: var(--card-bg, #151922);
+    border-color: var(--border-color, #303642);
+}
+
+/*
+   Keep the educational PNG background white.
+*/
+
+[data-theme="dark"] .mtm-diagram-05-image-wrap {
+    background: #ffffff;
+}
+
+[data-theme="dark"] .mtm-diagram-05-caption {
+    color: var(--muted-text, #9ca3af);
+}
+
+/* =========================================================
+   LESSON 4.4
+   DIAGRAM 06 — LOWER-LEG MUSCLES & ANKLE MOVEMENT
+   ========================================================= */
+
+.lower-leg-diagram-06 {
+    width: 100%;
+    margin: 30px 0 34px;
+    padding: 0;
+}
+
+.lower-leg-diagram-06 .major-muscle-diagram-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #ffffff;
+    border: 1px solid #dfe3e8;
+    border-radius: 22px;
+
+    box-sizing: border-box;
+}
+
+.lower-leg-diagram-06 .major-muscle-diagram-image {
+    display: block;
+
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+
+    margin: 0 auto;
+    padding: 0;
+
+    object-fit: contain;
+}
+
+.lower-leg-diagram-06 figcaption {
+    margin: 12px 0 0;
+    padding: 0 8px;
+
+    text-align: center;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: #687282;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .lower-leg-diagram-06 {
+        margin: 24px 0 28px;
+    }
+
+    .lower-leg-diagram-06 .major-muscle-diagram-card {
+        border-radius: 18px;
+    }
+
+    .lower-leg-diagram-06 .major-muscle-diagram-image {
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+
+    .lower-leg-diagram-06 figcaption {
+        margin-top: 9px;
+        padding: 0 8px;
+
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================================================
+   DARK THEME
+   Keep the infographic itself on white background
+   ========================================================= */
+
+[data-theme="dark"] .lower-leg-diagram-06 .major-muscle-diagram-card {
+    background: #ffffff;
+    border-color: var(--border-color, #303642);
+}
+
+[data-theme="dark"] .lower-leg-diagram-06 figcaption {
+    color: var(--muted-text, #9ca3af);
+}
+
+/* =========================================================
+   LESSON 4.4
+   PNG-07 — MUSCLE → LOCATION → FUNCTION MAP
+   ========================================================= */
+
+.muscle-function-map-07 {
+    width: 100%;
+    margin: 30px 0 34px;
+    padding: 0;
+}
+
+.muscle-function-map-07 .major-muscle-diagram-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #ffffff;
+    border: 1px solid #dfe3e8;
+    border-radius: 22px;
+
+    box-sizing: border-box;
+}
+
+.muscle-function-map-07 .major-muscle-diagram-image {
+    display: block;
+
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+
+    margin: 0 auto;
+    padding: 0;
+
+    object-fit: contain;
+}
+
+.muscle-function-map-07 figcaption {
+    margin: 12px 0 0;
+    padding: 0 8px;
+
+    text-align: center;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: #687282;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .muscle-function-map-07 {
+        margin: 24px 0 28px;
+    }
+
+    .muscle-function-map-07 .major-muscle-diagram-card {
+        border-radius: 18px;
+    }
+
+    .muscle-function-map-07 .major-muscle-diagram-image {
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+
+    .muscle-function-map-07 figcaption {
+        margin-top: 9px;
+        padding: 0 8px;
+
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================================================
+   DARK THEME
+   Keep the educational infographic white
+   ========================================================= */
+
+[data-theme="dark"] .muscle-function-map-07
+.major-muscle-diagram-card {
+    background: #ffffff;
+    border-color: #303642;
+}
+
+[data-theme="dark"] .muscle-function-map-07 figcaption {
+    color: #9ca3af;
+}
+
+/* =========================================================
+   PNG-08 — MUSCLES WORKING AROUND JOINTS
+   ========================================================= */
+
+.png-08-joint-movement {
+    width: 100%;
+    margin: 30px 0 34px;
+    padding: 0;
+}
+
+
+/* IMAGE HOLDER */
+
+.png-08-joint-movement
+.major-muscle-diagram-card {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border: 1px solid #dfe3e8;
+    border-radius: 22px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* DIAGRAM IMAGE */
+
+.png-08-joint-movement
+.major-muscle-diagram-image {
+    display: block;
+
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+
+/* CAPTION */
+
+.png-08-joint-movement
+figcaption {
+    margin: 12px 0 0;
+    padding: 0 8px;
+
+    text-align: center;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: #687282;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .png-08-joint-movement {
+        margin: 28px 0 32px;
+    }
+
+    .png-08-joint-movement
+    .major-muscle-diagram-card {
+        border-radius: 18px;
+    }
+
+    .png-08-joint-movement
+    .major-muscle-diagram-image {
+        width: 100%;
+        max-width: none;
+    }
+
+    .png-08-joint-movement
+    figcaption {
+        font-size: 0.92rem;
+        line-height: 1.45;
+    }
+
+}
+
+/* =========================================================
+   LESSON 4.4
+   DIAGRAM 09 — COMPLETE FUNCTIONAL SUMMARY
+   ========================================================= */
+
+.diagram-09 {
+    width: 100%;
+    margin: 30px 0 34px;
+    padding: 0;
+}
+
+.diagram-09 .major-muscle-diagram-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border: 1px solid #dfe3e8;
+    border-radius: 22px;
+
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.diagram-09-image {
+    display: block;
+
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+
+    margin: 0 auto;
+    padding: 0;
+
+    object-fit: contain;
+}
+
+.diagram-09 figcaption {
+    margin: 12px 0 0;
+    padding: 0 8px;
+
+    text-align: center;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: #687282;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .diagram-09 {
+        margin: 24px 0 28px;
+    }
+
+    .diagram-09 .major-muscle-diagram-card {
+        border-radius: 18px;
+    }
+
+    .diagram-09-image {
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+
+    .diagram-09 figcaption {
+        margin-top: 10px;
+        padding: 0 6px;
+
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================================================
+   DARK THEME
+   Keep the anatomy PNG on white background
+   ========================================================= */
+
+[data-theme="dark"] .diagram-09 .major-muscle-diagram-card {
+    background: #ffffff;
+    border-color: #303642;
+}
+
+[data-theme="dark"] .diagram-09 figcaption {
+    color: var(--muted-text, #9ca3af);
+}
+
