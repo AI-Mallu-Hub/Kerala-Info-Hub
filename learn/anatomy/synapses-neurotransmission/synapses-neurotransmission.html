@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Synapses &amp; Neurotransmission | Anatomy Learning Hub
+    </title>
+
+    <meta
+        name="description"
+        content="Learn how neurons communicate across synapses, including chemical synaptic transmission, neurotransmitter release, receptor binding, synaptic integration, termination, and plasticity."
+    >
+
+
+    <!-- =========================================================
+         GLOBAL THEME
+         ========================================================= -->
+
+    <script src="../../../theme.js"></script>
+
+
+    <!-- =========================================================
+         SHARED LESSON STYLES
+         ========================================================= -->
+
+    <link
+        rel="stylesheet"
+        href="../../css/lesson.css"
+    >
+
+
+    <!-- =========================================================
+         LESSON 5.3 SPECIFIC STYLES
+         ========================================================= -->
+
+    <link
+        rel="stylesheet"
+        href="../../css/synapses-neurotransmission.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+
+<header class="lesson-header">
+
+
+    <!-- BACK TO PREVIOUS LESSON -->
+
+    <a
+        href="../nerve-impulse/nerve-impulse.html"
+        class="back-btn"
+    >
+        👈🏼 Lesson 5.2
+    </a>
+
+
+    <!-- NEXT LESSON -->
+
+    <a
+        href="../central-nervous-system/central-nervous-system.html"
+        class="next-lesson-btn"
+    >
+        Lesson 5.4 👉🏼
+    </a>
+
+
+    <!-- THEME BUTTON -->
+
+    <button
+        type="button"
+        id="themeBtn"
+        class="theme-btn"
+        data-theme-toggle
+        aria-label="Switch to dark mode"
+        title="Switch to dark mode"
+    >
+        🌙
+    </button>
+
+
+    <!-- =====================================================
+         LESSON HERO
+         ===================================================== -->
+
+    <div class="lesson-hero">
+
+        <h1>
+            🧠 Synapses &amp; Neurotransmission
+        </h1>
+
+        <p class="lesson-subtitle">
+            Anatomy • Lesson 5.3
+        </p>
+
+
+        <div class="lesson-meta">
+
+            <span class="badge beginner">
+                🟢 Beginner
+            </span>
+
+            <span>
+                ⏱️ 25–30 min
+            </span>
+
+            <span>
+                📖 Lesson 26 / 120
+            </span>
+
+        </div>
+
+
+        <div class="progress-wrapper">
+
+            <div
+                class="progress-bar"
+                role="progressbar"
+                aria-label="Lesson progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="9"
+            >
+
+                <div
+                    class="progress-fill"
+                    style="width:9%;"
+                ></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     MAIN CONTENT
+     ========================================================= -->
+
+<main class="lesson-container synapses-lesson">
+
+
+    <!-- =====================================================
+         PAGE DOWN BUTTON
+         ===================================================== -->
+
+    <button
+        type="button"
+        class="page-scroll-btn page-down-btn"
+        aria-label="Go to bottom of lesson"
+        onclick="
+            document
+                .getElementById('lesson-bottom')
+                .scrollIntoView({
+                    behavior: 'smooth'
+                });
+        "
+    >
+        ↓
+    </button>
+
+
+
+    <!-- =====================================================
+         LESSON INTRO
+         ===================================================== -->
+
+    <p class="synapses-intro">
+
+        An action potential can travel along an axon, but communication
+        with another cell requires the signal to cross a specialized
+        junction called a <strong>synapse</strong>.
+
+        At a chemical synapse, neurons communicate by releasing
+        <strong>neurotransmitters</strong> that bind to receptors on
+        the next cell.
+
+    </p>
+
+
+
+    <!-- =====================================================
+         SECTION 1
+         TABLE OF CONTENTS
+         ===================================================== -->
+
+    <section
+        class="lesson-card"
+        id="table-of-contents"
+    >
+
+        <h2>
+            📑 Table of Contents
+        </h2>
+
+
+        <ol>
+
+            <li>
+                <a href="#learning-objectives">
+                    🎯 Learning Objectives
+                </a>
+            </li>
+
+            <li>
+                <a href="#introduction">
+                    📖 Introduction
+                </a>
+            </li>
+
+            <li>
+                <a href="#what-is-a-synapse">
+                    🔗 What Is a Synapse?
+                </a>
+            </li>
+
+            <li>
+                <a href="#chemical-synapse-structure">
+                    🧩 Structure of a Chemical Synapse
+                </a>
+            </li>
+
+            <li>
+                <a href="#action-potential-arrival">
+                    ⚡ Arrival of the Action Potential
+                </a>
+            </li>
+
+            <li>
+                <a href="#neurotransmitter-release">
+                    🧪 Neurotransmitter Release
+                </a>
+            </li>
+
+            <li>
+                <a href="#receptor-binding">
+                    🎯 Receptor Binding &amp; Postsynaptic Response
+                </a>
+            </li>
+
+            <li>
+                <a href="#excitatory-inhibitory">
+                    ⚖️ Excitatory &amp; Inhibitory Signals
+                </a>
+            </li>
+
+            <li>
+                <a href="#synaptic-summation">
+                    ➕ Synaptic Summation &amp; Integration
+                </a>
+            </li>
+
+            <li>
+                <a href="#termination">
+                    🛑 Termination of Neurotransmitter Action
+                </a>
+            </li>
+
+            <li>
+                <a href="#one-neuron-to-next">
+                    ➡️ From One Neuron to the Next
+                </a>
+            </li>
+
+            <li>
+                <a href="#synaptic-plasticity">
+                    🧠 Synaptic Plasticity
+                </a>
+            </li>
+
+            <li>
+                <a href="#synapses-at-a-glance">
+                    📋 Synapses at a Glance
+                </a>
+            </li>
+
+            <li>
+                <a href="#quick-revision">
+                    📌 Quick Revision
+                </a>
+            </li>
+
+            <li>
+                <a href="#practice-quiz">
+                    ❓ Practice Quiz
+                </a>
+            </li>
+
+        </ol>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 2
+         LEARNING OBJECTIVES
+         ===================================================== -->
+
+    <section
+        class="lesson-card"
+        id="learning-objectives"
+    >
+
+        <h2>
+            🎯 Learning Objectives
+        </h2>
+
+        <p>
+            After completing this lesson, you should be able to:
+        </p>
+
+        <ul>
+
+            <li>
+                Define a synapse and synaptic transmission.
+            </li>
+
+            <li>
+                Identify the major parts of a chemical synapse.
+            </li>
+
+            <li>
+                Explain what happens when an action potential reaches
+                the axon terminal.
+            </li>
+
+            <li>
+                Explain the role of calcium ions in neurotransmitter
+                release.
+            </li>
+
+            <li>
+                Describe synaptic vesicle fusion and exocytosis.
+            </li>
+
+            <li>
+                Explain how neurotransmitters bind to postsynaptic
+                receptors.
+            </li>
+
+            <li>
+                Distinguish between excitatory and inhibitory
+                postsynaptic effects.
+            </li>
+
+            <li>
+                Explain spatial and temporal summation.
+            </li>
+
+            <li>
+                Describe the main mechanisms that terminate
+                neurotransmitter action.
+            </li>
+
+            <li>
+                Explain the basic idea of synaptic plasticity.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 3
+         INTRODUCTION
+         ===================================================== -->
+
+    <section
+        class="lesson-card"
+        id="introduction"
+    >
+
+        <h2>
+            📖 Introduction
+        </h2>
+
+        <p>
+            In the previous lesson, we followed an action potential
+            as it propagated along the axon.
+        </p>
+
+        <p>
+            But the action potential does not simply continue directly
+            into the next neuron. At the axon terminal, the electrical
+            signal is converted into a form of chemical communication.
+        </p>
+
+        <p>
+            This communication takes place at a
+            <strong>synapse</strong>.
+        </p>
+
+
+        <!-- =====================================================
+     DIAGRAM 01
+     CONCEPT FLOW: FROM ACTION POTENTIAL TO SYNAPTIC
+     COMMUNICATION
+     ===================================================== -->
+
+<figure
+    class="synapses-diagram png-01"
+>
+
+    <div class="synapses-diagram-image-wrap">
+
+        <img
+            src="images/diagram-01-basic-synaptic-communication.png"
+            alt="From action potential to synaptic communication, showing an action potential traveling along the axon to the axon terminal, neurotransmitter release across the synapse, and communication with the next cell"
+            class="synapses-diagram-img"
+            loading="lazy"
+        >
+
+    </div>
+
+    <figcaption>
+        Figure 5.3.1 — From Action Potential to Synaptic Communication
+    </figcaption>
+
+</figure>
+
+
+        <div class="synapse-key-point">
+
+            <span class="synapse-key-icon">
+                💡
+            </span>
+
+            <div>
+
+                <strong>
+                    Core Idea
+                </strong>
+
+                <p>
+                    An action potential reaches the axon terminal,
+                    triggers neurotransmitter release, and allows
+                    the next cell to respond.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 4
+         WHAT IS A SYNAPSE?
+         ===================================================== -->
+
+    <section
+        class="lesson-card"
+        id="what-is-a-synapse"
+    >
+
+        <h2>
+            🔗 What Is a Synapse?
+        </h2>
+
+        <p>
+            A <strong>synapse</strong> is a specialized junction where
+            one neuron communicates with another neuron or with another
+            type of cell.
+        </p>
+
+        <p>
+            In a typical chemical synapse, the neuron sending the
+            signal is called the <strong>presynaptic cell</strong>.
+            The cell receiving the signal is called the
+            <strong>postsynaptic cell</strong>.
+        </p>
+
+        <p>
+            The small space between the presynaptic and postsynaptic
+            membranes is called the <strong>synaptic cleft</strong>.
+        </p>
+
+
+        <div class="synapse-comparison">
+
+            <div class="synapse-type-card">
+
+                <span class="synapse-type-icon">
+                    🧪
+                </span>
+
+                <h3>
+                    Chemical Synapse
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Uses neurotransmitters.
+                    </li>
+
+                    <li>
+                        Signal crosses a synaptic cleft.
+                    </li>
+
+                    <li>
+                        Receptors detect the neurotransmitter.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="synapse-type-card">
+
+                <span class="synapse-type-icon">
+                    ⚡
+                </span>
+
+                <h3>
+                    Electrical Synapse
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Uses direct electrical communication between
+                        closely connected cells.
+                    </li>
+
+                    <li>
+                        Does not rely on neurotransmitter release
+                        across a typical synaptic cleft.
+                    </li>
+
+                    <li>
+                        Provides very rapid cell-to-cell communication.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="summary-box">
+
+            <h2>
+                📌 Remember
+            </h2>
+
+            <p>
+                <strong>
+                    Presynaptic = sends the signal
+                </strong>
+            </p>
+
+            <p>
+                <strong>
+                    Postsynaptic = receives the signal
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 5
+         STRUCTURE OF A CHEMICAL SYNAPSE
+         ===================================================== -->
+
+    <section
+        class="lesson-card"
+        id="chemical-synapse-structure"
+    >
+
+        <h2>
+            🧩 Structure of a Chemical Synapse
+        </h2>
+
+        <p>
+            A chemical synapse contains specialized structures that
+            allow an electrical signal to trigger chemical communication
+            with the next cell.
+        </p>
+
+        <p>
+            The presynaptic axon terminal contains synaptic vesicles
+            filled with neurotransmitters. Voltage-gated calcium
+            channels are present in the terminal membrane.
+        </p>
+
+        <p>
+            Across the synaptic cleft, the postsynaptic membrane
+            contains receptors that detect the released
+            neurotransmitter.
+        </p>
+
+
+        <!-- =====================================================
+     DIAGRAM 02
+     CHEMICAL SYNAPSE: BASIC STRUCTURE
+     ===================================================== -->
+
+<figure
+    class="synapses-diagram png-02"
+>
+
+    <div class="synapses-diagram-image-wrap">
+
+        <img
+            src="images/diagram-02-chemical-synapse-basic-structure.png"
+            alt="Chemical synapse anatomy showing the presynaptic axon terminal, synaptic vesicles, voltage-gated calcium channels, calcium ions, neurotransmitters, synaptic cleft, postsynaptic membrane, and postsynaptic receptors"
+            class="synapses-diagram-img"
+            loading="lazy"
+        >
+
+    </div>
+
+    <figcaption>
+        Figure 5.3.2 — Chemical Synapse: Basic Structure
+    </figcaption>
+
+</figure>
+
+
+        <div class="synapse-label-list">
+
+            <h3>
+                🔎 Main Structures
+            </h3>
+
+            <ul>
+
+                <li>
+                    <strong>Presynaptic axon terminal</strong>:
+                    releases neurotransmitter.
+                </li>
+
+                <li>
+                    <strong>Synaptic vesicles</strong>:
+                    store neurotransmitter.
+                </li>
+
+                <li>
+                    <strong>Voltage-gated Ca²⁺ channels</strong>:
+                    allow calcium entry when activated.
+                </li>
+
+                <li>
+                    <strong>Synaptic cleft</strong>:
+                    narrow space between the cells.
+                </li>
+
+                <li>
+                    <strong>Postsynaptic receptors</strong>:
+                    detect neurotransmitter.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 6
+         ARRIVAL OF ACTION POTENTIAL
+         ===================================================== -->
+
+    <section
+        class="lesson-card"
+        id="action-potential-arrival"
+    >
+
+        <h2>
+            ⚡ Arrival of the Action Potential
+        </h2>
+
+        <p>
+            The action potential travels along the axon and eventually
+            reaches the presynaptic axon terminal.
+        </p>
+
+        <p>
+            Depolarization of the terminal membrane opens
+            <strong>voltage-gated calcium channels</strong>.
+            Calcium ions then move into the axon terminal.
+        </p>
+
+        <p>
+            The entry of Ca²⁺ is the key trigger that initiates
+            neurotransmitter release.
+        </p>
+
+
+        <!-- =====================================================
+     DIAGRAM 03
+     ACTION POTENTIAL ARRIVES AT THE AXON TERMINAL
+     ===================================================== -->
+
+<figure
+    class="synapses-diagram png-03"
+>
+
+    <div class="synapses-diagram-image-wrap">
+
+        <img
+            src="images/diagram-03-action-potential-arrival-axon-terminal.png"
+            alt="Action potential traveling along an axon and arriving at the axon terminal, causing terminal depolarization, opening voltage-gated calcium channels, and allowing calcium ions to enter"
+            class="synapses-diagram-img"
+            loading="lazy"
+        >
+
+    </div>
+
+    <figcaption>
+        Figure 5.3.3 — Action Potential Arrives at the Axon Terminal
+    </figcaption>
+
+</figure>
+
+
+        <div class="synapse-key-point">
+
+            <span class="synapse-key-icon">
+                ⚡
+            </span>
+
+            <div>
+
+                <strong>
+                    Key Trigger
+                </strong>
+
+                <p>
+                    Action potential arrives → terminal depolarizes →
+                    voltage-gated Ca²⁺ channels open → Ca²⁺ enters.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 7
+         NEUROTRANSMITTER RELEASE
+         ===================================================== -->
+
+    <section
+        class="lesson-card"
+        id="neurotransmitter-release"
+    >
+
+        <h2>
+            🧪 Neurotransmitter Release
+        </h2>
+
+        <p>
+            Calcium entry into the presynaptic terminal triggers
+            synaptic vesicles to move toward and interact with the
+            presynaptic membrane.
+        </p>
+
+        <p>
+            A vesicle can fuse with the presynaptic membrane and release
+            its neurotransmitter into the synaptic cleft. This process
+            is called <strong>exocytosis</strong>.
+        </p>
+
+
+        <!-- =====================================================
+     DIAGRAM 04
+     NEUROTRANSMITTER RELEASE:
+     VESICLE FUSION & EXOCYTOSIS
+     ===================================================== -->
+
+<figure
+    class="synapses-diagram png-04"
+>
+
+    <div class="synapses-diagram-image-wrap">
+
+        <img
+            src="images/diagram-04-neurotransmitter-release-vesicle-fusion.png"
+            alt="Neurotransmitter release showing calcium entry, synaptic vesicle docking, membrane fusion, exocytosis, and neurotransmitter release into the synaptic cleft"
+            class="synapses-diagram-img"
+            loading="lazy"
+        >
+
+    </div>
+
+    <figcaption>
+        Figure 5.3.4 — Neurotransmitter Release: Vesicle Fusion &amp; Exocytosis
+    </figcaption>
+
+</figure>
+
+
+        <div class="release-sequence">
+
+            <div class="release-step">
+                <span>1</span>
+                <strong>Ca²⁺ Entry</strong>
+                <small>
+                    Calcium enters the terminal.
+                </small>
+            </div>
+
+            <div class="release-arrow">
+                →
+            </div>
+
+            <div class="release-step">
+                <span>2</span>
+                <strong>Vesicle Docking</strong>
+                <small>
+                    Vesicle approaches the membrane.
+                </small>
+            </div>
+
+            <div class="release-arrow">
+                →
+            </div>
+
+            <div class="release-step">
+                <span>3</span>
+                <strong>Membrane Fusion</strong>
+                <small>
+                    Vesicle fuses with the membrane.
+                </small>
+            </div>
+
+            <div class="release-arrow">
+                →
+            </div>
+
+            <div class="release-step">
+                <span>4</span>
+                <strong>Exocytosis</strong>
+                <small>
+                    Neurotransmitter enters the cleft.
+                </small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 8
+         RECEPTOR BINDING
+         ===================================================== -->
+
+    <section
+        class="lesson-card"
+        id="receptor-binding"
+    >
+
+        <h2>
+            🎯 Receptor Binding &amp; Postsynaptic Response
+        </h2>
+
+        <p>
+            After release, neurotransmitter molecules diffuse across
+            the synaptic cleft and reach the postsynaptic membrane.
+        </p>
+
+        <p>
+            The neurotransmitter binds to specific
+            <strong>receptors</strong> on the postsynaptic cell.
+        </p>
+
+        <p>
+            Receptor activation changes the activity of the
+            postsynaptic cell. The exact effect depends on the receptor
+            and the type of postsynaptic response it produces.
+        </p>
+
+
+        <!-- =====================================================
+     DIAGRAM 05
+     NEUROTRANSMITTER BINDING &
+     POSTSYNAPTIC RESPONSE
+     ===================================================== -->
+
+<figure
+    class="synapses-diagram png-05"
+>
+
+    <div class="synapses-diagram-image-wrap">
+
+        <img
+            src="images/diagram-05-neurotransmitter-binding-postsynaptic-response.png"
+            alt="Neurotransmitter crossing the synaptic cleft, binding to a specific postsynaptic receptor, and producing a postsynaptic response that depends on receptor type"
+            class="synapses-diagram-img"
+            loading="lazy"
+        >
+
+    </div>
+
+    <figcaption>
+        Figure 5.3.5 — Neurotransmitter Binding &amp; Postsynaptic Response
+    </figcaption>
+
+</figure>
+
+
+        <div class="receptor-principle">
+
+            <span class="receptor-icon">
+                🎯
+            </span>
+
+            <div>
+
+                <strong>
+                    Receptor Type Matters
+                </strong>
+
+                <p>
+                    A neurotransmitter's effect depends on the receptor
+                    it activates. The same chemical messenger can therefore
+                    produce different effects in different receptor
+                    contexts.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 9
+         EXCITATORY & INHIBITORY SIGNALS
+         ===================================================== -->
+
+    <section
+        class="lesson-card"
+        id="excitatory-inhibitory"
+    >
+
+        <h2>
+            ⚖️ Excitatory &amp; Inhibitory Signals
+        </h2>
+
+        <p>
+            Postsynaptic signals can influence how likely the receiving
+            neuron is to generate an action potential.
+        </p>
+
+        <p>
+            An <strong>excitatory postsynaptic potential (EPSP)</strong>
+            generally moves the membrane potential toward the level
+            required for an action potential.
+        </p>
+
+        <p>
+            An <strong>inhibitory postsynaptic potential (IPSP)</strong>
+            generally moves the membrane potential away from that level
+            or otherwise reduces the likelihood of an action potential.
+        </p>
+
+
+        <!-- =====================================================
+     DIAGRAM 06
+     EXCITATORY VS INHIBITORY POSTSYNAPTIC EFFECTS
+     ===================================================== -->
+
+<figure
+    class="synapses-diagram png-06"
+>
+
+    <div class="synapses-diagram-image-wrap">
+
+        <img
+            src="images/diagram-06-excitatory-vs-inhibitory-effects.png"
+            alt="Comparison of excitatory and inhibitory postsynaptic effects showing EPSP moving membrane potential toward threshold and making an action potential more likely, while IPSP moves membrane potential away from threshold and makes an action potential less likely"
+            class="synapses-diagram-img"
+            loading="lazy"
+        >
+
+    </div>
+
+    <figcaption>
+        Figure 5.3.6 — Excitatory vs Inhibitory Postsynaptic Effects
+    </figcaption>
+
+</figure>
+
+
+        <div class="epsp-ipsp-grid">
+
+            <div class="epsp-ipsp-card excitatory">
+
+                <span class="epsp-ipsp-icon">
+                    ⬆️
+                </span>
+
+                <h3>
+                    EPSP
+                </h3>
+
+                <p>
+                    Makes the postsynaptic neuron more likely to reach
+                    threshold and generate an action potential.
+                </p>
+
+            </div>
+
+
+            <div class="epsp-ipsp-card inhibitory">
+
+                <span class="epsp-ipsp-icon">
+                    ⬇️
+                </span>
+
+                <h3>
+                    IPSP
+                </h3>
+
+                <p>
+                    Makes the postsynaptic neuron less likely to reach
+                    threshold and generate an action potential.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 10
+         SYNAPTIC SUMMATION & INTEGRATION
+         ===================================================== -->
+
+    <section
+        class="lesson-card"
+        id="synaptic-summation"
+    >
+
+        <h2>
+            ➕ Synaptic Summation &amp; Integration
+        </h2>
+
+        <p>
+            A neuron may receive signals from many synapses at the same
+            time. These signals can be combined, or
+            <strong>summed</strong>, at the receiving neuron.
+        </p>
+
+        <p>
+            <strong>Temporal summation</strong> occurs when repeated
+            signals from the same synapse arrive close together in time.
+        </p>
+
+        <p>
+            <strong>Spatial summation</strong> occurs when signals from
+            different synapses influence the neuron at approximately
+            the same time.
+        </p>
+
+        <p>
+            The postsynaptic neuron integrates excitatory and inhibitory
+            inputs. The combined effect influences whether threshold
+            is reached.
+        </p>
+
+
+        <!-- =====================================================
+     DIAGRAM 07
+     SYNAPTIC SUMMATION & INTEGRATION
+     ===================================================== -->
+
+<figure
+    class="synapses-diagram png-07"
+>
+
+    <div class="synapses-diagram-image-wrap">
+
+        <img
+            src="images/diagram-07-synaptic-summation-integration.png"
+            alt="Synaptic summation and integration showing temporal summation, spatial summation, and integration of excitatory and inhibitory inputs leading to a threshold decision"
+            class="synapses-diagram-img"
+            loading="lazy"
+        >
+
+    </div>
+
+    <figcaption>
+        Figure 5.3.7 — Synaptic Summation &amp; Integration
+    </figcaption>
+
+</figure>
+
+
+        <div class="summation-grid">
+
+            <div class="summation-card">
+
+                <span>
+                    ⏱️
+                </span>
+
+                <h3>
+                    Temporal Summation
+                </h3>
+
+                <p>
+                    Repeated inputs arrive close together in time and
+                    their effects can add together.
+                </p>
+
+            </div>
+
+
+            <div class="summation-card">
+
+                <span>
+                    📍
+                </span>
+
+                <h3>
+                    Spatial Summation
+                </h3>
+
+                <p>
+                    Inputs from different synapses contribute to the
+                    combined postsynaptic effect.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="summary-box">
+
+            <h2>
+                🧠 Integration
+            </h2>
+
+            <p>
+                <strong>
+                    Excitatory + inhibitory inputs → integration →
+                    threshold decision
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 11
+         TERMINATION
+         ===================================================== -->
+
+    <section
+        class="lesson-card"
+        id="termination"
+    >
+
+        <h2>
+            🛑 Termination of Neurotransmitter Action
+        </h2>
+
+        <p>
+            Neurotransmitter action must be limited in time so that
+            synaptic communication does not continue indefinitely.
+        </p>
+
+        <p>
+            Neurotransmitters can be removed or inactivated through
+            several mechanisms.
+        </p>
+
+
+        <!-- =====================================================
+     DIAGRAM 08
+     TERMINATION OF NEUROTRANSMITTER ACTION
+     ===================================================== -->
+
+<figure
+    class="synapses-diagram png-08"
+>
+
+    <div class="synapses-diagram-image-wrap">
+
+        <img
+            src="images/diagram-08-neurotransmitter-signal-termination.png"
+            alt="Three mechanisms that terminate neurotransmitter action: reuptake, enzymatic breakdown, and diffusion"
+            class="synapses-diagram-img"
+            loading="lazy"
+        >
+
+    </div>
+
+    <figcaption>
+        Figure 5.3.8 — Termination of Neurotransmitter Action
+    </figcaption>
+
+</figure>
+
+
+        <div class="termination-grid">
+
+            <div class="termination-card">
+
+                <span>
+                    🔄
+                </span>
+
+                <h3>
+                    Reuptake
+                </h3>
+
+                <p>
+                    Neurotransmitter is transported back into the
+                    presynaptic neuron or nearby cells.
+                </p>
+
+            </div>
+
+
+            <div class="termination-card">
+
+                <span>
+                    🧪
+                </span>
+
+                <h3>
+                    Enzymatic Breakdown
+                </h3>
+
+                <p>
+                    Enzymes chemically break down the neurotransmitter.
+                </p>
+
+            </div>
+
+
+            <div class="termination-card">
+
+                <span>
+                    ↔️
+                </span>
+
+                <h3>
+                    Diffusion
+                </h3>
+
+                <p>
+                    Neurotransmitter molecules move away from the
+                    synaptic cleft.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 12
+         FROM ONE NEURON TO THE NEXT
+         ===================================================== -->
+
+    <section
+        class="lesson-card"
+        id="one-neuron-to-next"
+    >
+
+        <h2>
+            ➡️ From One Neuron to the Next
+        </h2>
+
+        <p>
+            Chemical synaptic transmission is a sequence of linked
+            events. The action potential arriving at the axon terminal
+            initiates a chain of events that ultimately changes the
+            activity of the postsynaptic cell.
+        </p>
+
+        <p>
+            The complete sequence can be summarized as:
+        </p>
+
+
+        <!-- =====================================================
+     DIAGRAM 09
+     FINAL HERO DIAGRAM
+     COMPLETE CHEMICAL SYNAPTIC TRANSMISSION
+     ===================================================== -->
+
+<figure
+    class="synapses-diagram png-09"
+>
+
+    <div class="synapses-diagram-image-wrap">
+
+        <img
+            src="images/diagram-09-complete-chemical-synaptic-transmission.png"
+            alt="Complete chemical synaptic transmission showing the sequence from action potential and axon terminal depolarization through calcium entry, synaptic vesicle fusion, neurotransmitter release, synaptic cleft, receptor binding, postsynaptic response, signal termination, and synaptic integration"
+            class="synapses-diagram-img"
+            loading="lazy"
+        >
+
+    </div>
+
+    <figcaption>
+        Figure 5.3.9 — Complete Chemical Synaptic Transmission
+    </figcaption>
+
+</figure>
+
+
+        <div class="complete-synapse-sequence">
+
+            <div class="sequence-step">
+                <span>1</span>
+                <strong>Action Potential</strong>
+            </div>
+
+            <div class="sequence-arrow">
+                ↓
+            </div>
+
+            <div class="sequence-step">
+                <span>2</span>
+                <strong>Axon Terminal</strong>
+            </div>
+
+            <div class="sequence-arrow">
+                ↓
+            </div>
+
+            <div class="sequence-step">
+                <span>3</span>
+                <strong>Ca²⁺ Entry</strong>
+            </div>
+
+            <div class="sequence-arrow">
+                ↓
+            </div>
+
+            <div class="sequence-step">
+                <span>4</span>
+                <strong>Vesicle Fusion</strong>
+            </div>
+
+            <div class="sequence-arrow">
+                ↓
+            </div>
+
+            <div class="sequence-step">
+                <span>5</span>
+                <strong>Neurotransmitter Release</strong>
+            </div>
+
+            <div class="sequence-arrow">
+                ↓
+            </div>
+
+            <div class="sequence-step">
+                <span>6</span>
+                <strong>Receptor Binding</strong>
+            </div>
+
+            <div class="sequence-arrow">
+                ↓
+            </div>
+
+            <div class="sequence-step">
+                <span>7</span>
+                <strong>Postsynaptic Response</strong>
+            </div>
+
+            <div class="sequence-arrow">
+                ↓
+            </div>
+
+            <div class="sequence-step">
+                <span>8</span>
+                <strong>Signal Termination</strong>
+            </div>
+
+        </div>
+
+
+        <div class="synapse-key-point">
+
+            <span class="synapse-key-icon">
+                🧠
+            </span>
+
+            <div>
+
+                <strong>
+                    Big Picture
+                </strong>
+
+                <p>
+                    Electrical signaling along the axon is converted
+                    into chemical signaling at the synapse, then
+                    converted back into a postsynaptic electrical or
+                    cellular response.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 13
+         SYNAPTIC PLASTICITY
+         ===================================================== -->
+
+    <section
+        class="lesson-card"
+        id="synaptic-plasticity"
+    >
+
+        <h2>
+            🧠 Synaptic Plasticity
+        </h2>
+
+        <p>
+            Synaptic connections are not completely fixed. Their
+            strength and effectiveness can change in response to
+            patterns of activity.
+        </p>
+
+        <p>
+            This ability of synapses to change is called
+            <strong>synaptic plasticity</strong>.
+        </p>
+
+        <p>
+            Synaptic plasticity can involve changes in how effectively
+            a presynaptic neuron releases neurotransmitter, how strongly
+            the postsynaptic cell responds, or how synaptic connections
+            are organized.
+        </p>
+
+        <div class="plasticity-grid">
+
+            <div class="plasticity-card strengthening">
+
+                <span>
+                    📈
+                </span>
+
+                <h3>
+                    Synaptic Strengthening
+                </h3>
+
+                <p>
+                    Synaptic communication can become more effective
+                    following appropriate patterns of activity.
+                </p>
+
+            </div>
+
+
+            <div class="plasticity-card weakening">
+
+                <span>
+                    📉
+                </span>
+
+                <h3>
+                    Synaptic Weakening
+                </h3>
+
+                <p>
+                    Synaptic communication can also become less
+                    effective under different patterns of activity.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="summary-box">
+
+            <h2>
+                🧠 Why It Matters
+            </h2>
+
+            <p>
+                Synaptic plasticity is an important basis for changes
+                in neural circuits associated with learning and memory.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 14
+         SYNAPSES AT A GLANCE
+         ===================================================== -->
+
+    <section
+        class="lesson-card"
+        id="synapses-at-a-glance"
+    >
+
+        <h2>
+            📋 Synapses at a Glance
+        </h2>
+
+        <div class="synapse-reference-table-wrap">
+
+            <table class="synapse-reference-table">
+
+                <thead>
+
+                    <tr>
+                        <th>
+                            Concept
+                        </th>
+
+                        <th>
+                            Key Idea
+                        </th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>
+                            Synapse
+                        </td>
+
+                        <td>
+                            Specialized junction for cell-to-cell
+                            communication.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Presynaptic cell
+                        </td>
+
+                        <td>
+                            Sends the synaptic signal.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Postsynaptic cell
+                        </td>
+
+                        <td>
+                            Receives the synaptic signal.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Synaptic cleft
+                        </td>
+
+                        <td>
+                            Narrow space between synaptic membranes.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Ca²⁺
+                        </td>
+
+                        <td>
+                            Entry into the presynaptic terminal triggers
+                            neurotransmitter release.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Neurotransmitter
+                        </td>
+
+                        <td>
+                            Chemical messenger released by the
+                            presynaptic cell.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Receptor
+                        </td>
+
+                        <td>
+                            Detects neurotransmitter and produces a
+                            postsynaptic response.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            EPSP
+                        </td>
+
+                        <td>
+                            Generally makes an action potential more likely.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            IPSP
+                        </td>
+
+                        <td>
+                            Generally makes an action potential less likely.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Summation
+                        </td>
+
+                        <td>
+                            Combination of synaptic inputs.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Termination
+                        </td>
+
+                        <td>
+                            Limits neurotransmitter action through
+                            mechanisms such as reuptake, breakdown,
+                            and diffusion.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Plasticity
+                        </td>
+
+                        <td>
+                            Ability of synaptic strength or function
+                            to change.
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 15
+         QUICK REVISION
+         ===================================================== -->
+
+    <section
+        class="lesson-card"
+        id="quick-revision"
+    >
+
+        <h2>
+            📌 Quick Revision
+        </h2>
+
+
+        <div class="glance-grid synapse-revision-grid">
+
+
+            <div class="glance-item">
+
+                <span class="glance-icon">
+                    🔗
+                </span>
+
+                <h4>
+                    Synapse
+                </h4>
+
+                <p>
+                    Specialized junction for communication between cells.
+                </p>
+
+            </div>
+
+
+            <div class="glance-item">
+
+                <span class="glance-icon">
+                    ⚡
+                </span>
+
+                <h4>
+                    AP Arrival
+                </h4>
+
+                <p>
+                    Action potential reaches the axon terminal.
+                </p>
+
+            </div>
+
+
+            <div class="glance-item">
+
+                <span class="glance-icon">
+                    Ca²⁺
+                </span>
+
+                <h4>
+                    Calcium Entry
+                </h4>
+
+                <p>
+                    Ca²⁺ enters and triggers neurotransmitter release.
+                </p>
+
+            </div>
+
+
+            <div class="glance-item">
+
+                <span class="glance-icon">
+                    🧪
+                </span>
+
+                <h4>
+                    Neurotransmitter
+                </h4>
+
+                <p>
+                    Released from synaptic vesicles into the cleft.
+                </p>
+
+            </div>
+
+
+            <div class="glance-item">
+
+                <span class="glance-icon">
+                    🎯
+                </span>
+
+                <h4>
+                    Receptor
+                </h4>
+
+                <p>
+                    Detects neurotransmitter on the postsynaptic cell.
+                </p>
+
+            </div>
+
+
+            <div class="glance-item">
+
+                <span class="glance-icon">
+                    ⚖️
+                </span>
+
+                <h4>
+                    EPSP / IPSP
+                </h4>
+
+                <p>
+                    Postsynaptic signals can increase or decrease the
+                    likelihood of reaching threshold.
+                </p>
+
+            </div>
+
+
+            <div class="glance-item">
+
+                <span class="glance-icon">
+                    ➕
+                </span>
+
+                <h4>
+                    Summation
+                </h4>
+
+                <p>
+                    Synaptic inputs are integrated by the neuron.
+                </p>
+
+            </div>
+
+
+            <div class="glance-item">
+
+                <span class="glance-icon">
+                    🛑
+                </span>
+
+                <h4>
+                    Termination
+                </h4>
+
+                <p>
+                    Neurotransmitter action is limited by removal or
+                    inactivation.
+                </p>
+
+            </div>
+
+
+            <div class="glance-item">
+
+                <span class="glance-icon">
+                    🧠
+                </span>
+
+                <h4>
+                    Plasticity
+                </h4>
+
+                <p>
+                    Synaptic strength and function can change.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="synapse-recap-box">
+
+            <h3>
+                🧠 Complete Recap
+            </h3>
+
+            <p>
+
+                <strong>
+                    Action Potential → Axon Terminal → Ca²⁺ Entry →
+                    Vesicle Fusion → Neurotransmitter Release →
+                    Receptor Binding → Postsynaptic Response →
+                    Signal Termination
+                </strong>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 16
+         PRACTICE QUIZ
+         ===================================================== -->
+
+    <section
+        class="lesson-card quiz-box"
+        id="practice-quiz"
+    >
+
+        <h2>
+            ❓ Practice Quiz
+        </h2>
+
+        <p>
+            Ready to test your understanding of synapses and
+            neurotransmission?
+        </p>
+
+        <p>
+            Review synaptic structure, calcium entry, neurotransmitter
+            release, receptor binding, EPSPs and IPSPs, summation,
+            termination, and synaptic plasticity before taking the quiz.
+        </p>
+
+
+        <div class="quiz-preview">
+
+            📊
+            <span>
+                10 Questions
+            </span>
+
+            🎯
+            <span>
+                Instant Score
+            </span>
+
+            📖
+            <span>
+                Detailed Explanations
+            </span>
+
+            🏆
+            <span>
+                Certificate Progress
+            </span>
+
+        </div>
+
+
+        <a
+            class="btn lesson-quiz-btn"
+            href="../../quiz/quiz.html?lesson=synapses-neurotransmission"
+        >
+            📝 Take Quiz
+        </a>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE UP BUTTON
+         ===================================================== -->
+
+    <button
+        type="button"
+        class="page-scroll-btn page-up-btn"
+        aria-label="Go to top of lesson"
+        onclick="
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        "
+    >
+        ↑
+    </button>
+
+
+
+    <!-- =====================================================
+         END MARKER
+         ===================================================== -->
+
+    <div id="lesson-bottom"></div>
+
+</main>
+
+            <!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer class="lesson-footer">
+
+
+    <div class="footer-lesson">
+
+        <div class="footer-meta">
+            Anatomy • Lesson 5.3
+        </div>
+
+
+        <div class="footer-title">
+
+            <span class="footer-title-icon">
+                💪
+            </span>
+
+            <span>
+                Synapses &amp; Neurotransmission
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <nav
+        class="footer-links"
+        aria-label="Footer navigation"
+    >
+
+        <a href="/about.html">
+            About Us
+        </a>
+
+        <span>
+            •
+        </span>
+
+        <a href="/contact.html">
+            Contact Us
+        </a>
+
+    </nav>
+
+
+    <div class="footer-bottom">
+
+        <div>
+            © 2026 Kerala Info Hub · AmC
+        </div>
+
+        <div>
+            For educational purposes.
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
