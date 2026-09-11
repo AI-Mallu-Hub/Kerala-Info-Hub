@@ -339,3 +339,17 @@ body {
     overflow-wrap: anywhere;
 }
 
+.lesson-sublist {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.lesson-sublist li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+

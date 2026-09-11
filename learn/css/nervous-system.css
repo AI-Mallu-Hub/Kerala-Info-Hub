@@ -1,0 +1,2710 @@
+/* =========================================================
+   LESSON 5 — NERVOUS SYSTEM
+   Overview & Organization
+   ========================================================= */
+
+
+/* =========================================================
+   LESSON CONTAINER
+   ========================================================= */
+
+.nervous-system-lesson {
+    position: relative;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.nervous-system-intro {
+    margin-bottom: 28px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   PROCESS GRID
+   ========================================================= */
+
+.process-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-top: 24px;
+}
+
+
+.process-card {
+    padding: 22px;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border: 1px solid var(--border-color, #e1e4e8);
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+
+.process-number {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    margin: 0 auto 12px;
+
+    border-radius: 50%;
+
+    font-weight: 800;
+
+    background: var(--accent-soft, #eee);
+}
+
+
+.process-card h3 {
+    margin: 8px 0 10px;
+
+    font-size: 1.1rem;
+}
+
+
+.process-card p {
+    margin: 0;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   FUNCTIONS
+   ========================================================= */
+
+.function-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-top: 24px;
+}
+
+
+.function-card {
+    padding: 20px;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border: 1px solid var(--border-color, #e1e4e8);
+    border-radius: 16px;
+}
+
+
+.function-icon {
+    margin-bottom: 10px;
+
+    font-size: 2rem;
+}
+
+
+.function-card h3 {
+    margin: 8px 0 10px;
+}
+
+
+.function-card p {
+    margin: 0;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   ORGANIZATION HIGHLIGHT
+   ========================================================= */
+
+.organization-highlight {
+    margin-top: 24px;
+    padding: 20px;
+
+    text-align: center;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border: 1px solid var(--border-color, #e1e4e8);
+    border-radius: 16px;
+}
+
+
+.organization-highlight strong {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 1.05rem;
+}
+
+
+.organization-highlight p {
+    margin: 0;
+
+    font-size: 1.1rem;
+    font-weight: 800;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   COMPONENT GRID
+   ========================================================= */
+
+.component-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-top: 24px;
+}
+
+
+.component-card {
+    padding: 22px;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border: 1px solid var(--border-color, #e1e4e8);
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+
+.component-icon {
+    margin-bottom: 10px;
+
+    font-size: 2.2rem;
+}
+
+
+.component-card h3 {
+    margin: 8px 0 10px;
+}
+
+
+.component-card p {
+    margin: 0;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   PNS POINTS
+   ========================================================= */
+
+.pns-points {
+    display: grid;
+
+    gap: 14px;
+
+    margin-top: 24px;
+}
+
+
+.pns-point {
+    display: grid;
+
+    grid-template-columns:
+        48px minmax(0, 1fr);
+
+    gap: 14px;
+
+    align-items: start;
+
+    padding: 17px 18px;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border: 1px solid var(--border-color, #e1e4e8);
+    border-radius: 16px;
+}
+
+
+.point-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    font-size: 1.25rem;
+
+    background: var(--accent-soft, #eee);
+}
+
+
+.pns-point strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 1.02rem;
+}
+
+
+.pns-point p {
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   SENSORY / MOTOR
+   ========================================================= */
+
+.direction-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-top: 24px;
+}
+
+
+.direction-card {
+    padding: 24px;
+
+    border: 1px solid var(--border-color, #e1e4e8);
+    border-radius: 18px;
+
+    text-align: center;
+
+    background: var(--soft-bg, #f7f8fa);
+}
+
+
+.direction-icon {
+    margin-bottom: 10px;
+
+    font-size: 2.2rem;
+}
+
+
+.direction-card h3 {
+    margin: 8px 0 10px;
+}
+
+
+.direction-card p {
+    line-height: 1.65;
+}
+
+
+.direction-card strong {
+    display: block;
+
+    margin-top: 14px;
+
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   SOMATIC / AUTONOMIC
+   ========================================================= */
+
+.comparison-card-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-top: 24px;
+}
+
+
+.comparison-card {
+    padding: 24px;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border: 1px solid var(--border-color, #e1e4e8);
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+
+.comparison-card-icon {
+    margin-bottom: 10px;
+
+    font-size: 2.2rem;
+}
+
+
+.comparison-card h3 {
+    margin: 8px 0 12px;
+}
+
+
+.comparison-card p {
+    line-height: 1.65;
+}
+
+
+.comparison-label {
+    margin-top: 16px;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+
+    color: var(--muted-text, #667085);
+}
+
+
+.comparison-card strong {
+    display: block;
+
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   AUTONOMIC SYSTEM
+   ========================================================= */
+
+.autonomic-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-top: 24px;
+}
+
+
+.autonomic-card {
+    padding: 24px;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border: 1px solid var(--border-color, #e1e4e8);
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+
+.autonomic-icon {
+    margin-bottom: 10px;
+
+    font-size: 2.2rem;
+}
+
+
+.autonomic-card h3 {
+    margin: 8px 0 12px;
+}
+
+
+.autonomic-card p {
+    margin: 0;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   STIMULUS → RESPONSE PATHWAY
+   ========================================================= */
+
+.pathway-steps {
+    display: flex;
+
+    align-items: stretch;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin: 28px 0;
+
+    overflow-x: auto;
+
+    padding-bottom: 8px;
+}
+
+
+.pathway-step {
+    flex: 0 0 145px;
+
+    padding: 15px 12px;
+
+    text-align: center;
+
+    background: var(--soft-bg, #f7f8fa);
+
+    border: 1px solid var(--border-color, #e1e4e8);
+    border-radius: 14px;
+}
+
+
+.pathway-step span {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    margin: 0 auto 9px;
+
+    border-radius: 50%;
+
+    font-weight: 800;
+
+    background: var(--accent-soft, #eee);
+}
+
+
+.pathway-step strong {
+    display: block;
+
+    font-size: 0.95rem;
+
+    line-height: 1.35;
+}
+
+
+.pathway-step small {
+    display: block;
+
+    margin-top: 6px;
+
+    line-height: 1.45;
+
+    color: var(--muted-text, #667085);
+}
+
+
+.pathway-arrow {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   COMPARISON TABLE
+   ========================================================= */
+
+.nervous-comparison-wrap {
+    width: 100%;
+
+    overflow-x: auto;
+
+    margin-top: 24px;
+
+    border-radius: 16px;
+
+    border: 1px solid var(--border-color, #e1e4e8);
+}
+
+
+.nervous-comparison-table {
+    width: 100%;
+
+    min-width: 720px;
+
+    border-collapse: collapse;
+
+    background: var(--card-bg, #ffffff);
+}
+
+
+.nervous-comparison-table th,
+.nervous-comparison-table td {
+    padding: 15px 14px;
+
+    text-align: left;
+    vertical-align: top;
+
+    border-bottom: 1px solid
+        var(--border-color, #e1e4e8);
+}
+
+
+.nervous-comparison-table th {
+    font-weight: 800;
+
+    background: var(--soft-bg, #f5f6f8);
+}
+
+
+.nervous-comparison-table th:first-child,
+.nervous-comparison-table td:first-child {
+    min-width: 130px;
+}
+
+
+.nervous-comparison-table th:nth-child(2),
+.nervous-comparison-table td:nth-child(2) {
+    min-width: 190px;
+}
+
+
+.nervous-comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   SUMMARY BOX REFINEMENT
+   ========================================================= */
+
+.nervous-system-lesson .summary-box {
+    margin-top: 24px;
+}
+
+
+/* =========================================================
+   QUIZ
+   ========================================================= */
+
+.nervous-system-lesson .quiz-preview {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 12px 20px;
+
+    margin: 24px 0;
+}
+
+
+.nervous-system-lesson .quiz-preview span {
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+html[data-theme="dark"] .nervous-diagram,
+html[data-theme="dark"] .process-card,
+html[data-theme="dark"] .function-card,
+html[data-theme="dark"] .organization-highlight,
+html[data-theme="dark"] .component-card,
+html[data-theme="dark"] .pns-point,
+html[data-theme="dark"] .direction-card,
+html[data-theme="dark"] .comparison-card,
+html[data-theme="dark"] .autonomic-card,
+html[data-theme="dark"] .pathway-step {
+    background: var(--card-bg, #1c1c1e);
+
+    border-color:
+        var(--border-color, #3a3a3c);
+}
+
+
+html[data-theme="dark"] .nervous-comparison-table {
+    background: var(--card-bg, #1c1c1e);
+}
+
+
+html[data-theme="dark"] .nervous-comparison-table th {
+    background: var(--soft-bg, #252527);
+}
+
+
+html[data-theme="dark"] .nervous-diagram figcaption,
+html[data-theme="dark"] .pathway-step small,
+html[data-theme="dark"] .comparison-label {
+    color: var(--muted-text, #a1a1a6);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .function-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .component-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .nervous-diagram {
+        padding: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .nervous-system-intro {
+        line-height: 1.75;
+    }
+
+
+    .nervous-diagram {
+        margin: 24px 0 28px;
+
+        padding: 12px;
+
+        border-radius: 18px;
+    }
+
+
+    .nervous-diagram-img {
+        border-radius: 10px;
+    }
+
+
+    .nervous-diagram figcaption {
+        margin-top: 12px;
+
+        font-size: 0.88rem;
+    }
+
+
+    .function-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .direction-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .comparison-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .autonomic-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .process-card,
+    .function-card,
+    .component-card,
+    .direction-card,
+    .comparison-card,
+    .autonomic-card {
+        padding: 18px;
+    }
+
+
+    .pns-point {
+        grid-template-columns:
+            40px minmax(0, 1fr);
+
+        padding: 15px;
+    }
+
+
+    .point-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .pathway-steps {
+        justify-content: flex-start;
+
+        gap: 6px;
+    }
+
+
+    .pathway-step {
+        flex-basis: 130px;
+    }
+
+
+    .pathway-arrow {
+        font-size: 1.15rem;
+    }
+
+
+    .nervous-comparison-wrap {
+        margin-left: 0;
+        margin-right: 0;
+
+        border-radius: 14px;
+    }
+
+
+    .nervous-comparison-table th,
+    .nervous-comparison-table td {
+        padding: 13px 11px;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.nervous-system-lesson a:focus-visible,
+.nervous-system-lesson button:focus-visible {
+    outline: 3px solid
+        rgba(80, 130, 220, 0.45);
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .nervous-system-lesson * {
+        scroll-behavior: auto;
+    }
+
+}
+
+/* =========================================================
+   NERVOUS SYSTEM DIAGRAMS
+   ========================================================= */
+
+.nervous-diagram {
+    width: 100%;
+
+    margin: 28px 0 32px;
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    background: var(--card-bg, #ffffff);
+
+    border: 1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE WRAPPER
+   --------------------------------------------------------- */
+
+.nervous-diagram-image-wrap {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   ACTUAL DIAGRAM IMAGE
+   --------------------------------------------------------- */
+
+.nervous-diagram-img {
+    display: block;
+
+    width: 100%;
+    max-width: 1600px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   FIGURE CAPTION
+   --------------------------------------------------------- */
+
+.nervous-diagram figcaption {
+    margin-top: 14px;
+    padding: 0 8px;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: var(--muted-text, #667085);
+}
+
+
+/* =========================================================
+   PNG-01 — BASIC NERVOUS SYSTEM FUNCTION
+   ========================================================= */
+
+.nervous-function-diagram {
+    margin-top: 30px;
+    margin-bottom: 34px;
+}
+
+
+/*
+   Keep the infographic visually dominant without allowing
+   an unnecessarily huge image on large screens.
+*/
+
+.nervous-function-diagram
+.nervous-diagram-image-wrap {
+    max-width: 1536px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+html[data-theme="dark"] .nervous-diagram {
+    background: var(--card-bg, #1c1c1e);
+
+    border-color:
+        var(--border-color, #3a3a3c);
+}
+
+
+html[data-theme="dark"]
+.nervous-diagram figcaption {
+    color: var(--muted-text, #a1a1a6);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .nervous-diagram {
+        padding: 12px;
+
+        border-radius: 18px;
+    }
+
+
+    .nervous-diagram-image-wrap {
+        border-radius: 12px;
+    }
+
+
+    .nervous-diagram-img {
+        border-radius: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .nervous-diagram {
+        margin-top: 24px;
+        margin-bottom: 28px;
+
+        padding: 10px;
+
+        border-radius: 17px;
+    }
+
+
+    .nervous-diagram-image-wrap {
+        width: 100%;
+
+        border-radius: 11px;
+    }
+
+
+    .nervous-diagram-img {
+        width: 100%;
+        height: auto;
+
+        border-radius: 9px;
+    }
+
+
+    .nervous-diagram figcaption {
+        margin-top: 12px;
+
+        padding: 0 6px;
+
+        font-size: 0.88rem;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE SCREENS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .nervous-diagram {
+        padding: 8px;
+
+        border-radius: 15px;
+    }
+
+
+    .nervous-diagram figcaption {
+        font-size: 0.84rem;
+    }
+
+}
+
+/* =========================================================
+   PNG-02 — COMPLETE NERVOUS SYSTEM ORGANIZATION
+   HERO DIAGRAM
+   ========================================================= */
+
+.nervous-organization-hero {
+    width: 100%;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    background: var(--card-bg, #ffffff);
+
+    border: 1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   HERO IMAGE WRAPPER
+   --------------------------------------------------------- */
+
+.nervous-organization-hero
+.nervous-diagram-image-wrap {
+
+    width: 100%;
+    max-width: 1536px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   HERO IMAGE
+   --------------------------------------------------------- */
+
+.nervous-organization-hero
+.nervous-diagram-img {
+
+    display: block;
+
+    width: 100%;
+    max-width: 1536px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   CAPTION
+   --------------------------------------------------------- */
+
+.nervous-organization-hero
+.nervous-diagram figcaption {
+
+    margin-top: 14px;
+
+    padding: 0 8px;
+
+    font-size: 0.95rem;
+
+    line-height: 1.5;
+
+    text-align: center;
+
+    color: var(--muted-text, #667085);
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+html[data-theme="dark"]
+.nervous-organization-hero {
+
+    background: var(--card-bg, #1c1c1e);
+
+    border-color:
+        var(--border-color, #3a3a3c);
+}
+
+
+html[data-theme="dark"]
+.nervous-organization-hero
+.nervous-diagram figcaption {
+
+    color: var(--muted-text, #a1a1a6);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .nervous-organization-hero {
+
+        margin-top: 26px;
+        margin-bottom: 28px;
+
+        padding: 12px;
+
+        border-radius: 18px;
+    }
+
+
+    .nervous-organization-hero
+    .nervous-diagram-image-wrap {
+
+        border-radius: 12px;
+    }
+
+
+    .nervous-organization-hero
+    .nervous-diagram-img {
+
+        border-radius: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .nervous-organization-hero {
+
+        margin-top: 24px;
+        margin-bottom: 28px;
+
+        padding: 9px;
+
+        border-radius: 17px;
+    }
+
+
+    .nervous-organization-hero
+    .nervous-diagram-image-wrap {
+
+        width: 100%;
+
+        border-radius: 11px;
+    }
+
+
+    .nervous-organization-hero
+    .nervous-diagram-img {
+
+        width: 100%;
+        height: auto;
+
+        border-radius: 9px;
+    }
+
+
+    .nervous-organization-hero
+    .nervous-diagram figcaption {
+
+        margin-top: 11px;
+
+        padding: 0 5px;
+
+        font-size: 0.88rem;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .nervous-organization-hero {
+
+        padding: 7px;
+
+        border-radius: 15px;
+    }
+
+
+    .nervous-organization-hero
+    .nervous-diagram figcaption {
+
+        font-size: 0.84rem;
+    }
+
+}
+
+/* =========================================================
+   PNG-03 — CNS OVERVIEW
+   ========================================================= */
+
+.cns-overview-diagram {
+    width: 100%;
+
+    margin-top: 30px;
+    margin-bottom: 32px;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    background: var(--card-bg, #ffffff);
+
+    border: 1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE WRAPPER
+   --------------------------------------------------------- */
+
+.cns-overview-diagram
+.nervous-diagram-image-wrap {
+
+    width: 100%;
+
+    max-width: 1536px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   CNS OVERVIEW IMAGE
+   --------------------------------------------------------- */
+
+.cns-overview-diagram
+.nervous-diagram-img {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 1536px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   FIGURE CAPTION
+   --------------------------------------------------------- */
+
+.cns-overview-diagram figcaption {
+
+    margin-top: 14px;
+
+    padding: 0 8px;
+
+    font-size: 0.95rem;
+
+    line-height: 1.5;
+
+    text-align: center;
+
+    color: var(--muted-text, #667085);
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+html[data-theme="dark"]
+.cns-overview-diagram {
+
+    background: var(--card-bg, #1c1c1e);
+
+    border-color:
+        var(--border-color, #3a3a3c);
+}
+
+
+html[data-theme="dark"]
+.cns-overview-diagram figcaption {
+
+    color: var(--muted-text, #a1a1a6);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .cns-overview-diagram {
+
+        margin-top: 26px;
+        margin-bottom: 28px;
+
+        padding: 12px;
+
+        border-radius: 18px;
+    }
+
+
+    .cns-overview-diagram
+    .nervous-diagram-image-wrap {
+
+        border-radius: 12px;
+    }
+
+
+    .cns-overview-diagram
+    .nervous-diagram-img {
+
+        border-radius: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .cns-overview-diagram {
+
+        margin-top: 24px;
+        margin-bottom: 28px;
+
+        padding: 9px;
+
+        border-radius: 17px;
+    }
+
+
+    .cns-overview-diagram
+    .nervous-diagram-image-wrap {
+
+        width: 100%;
+
+        border-radius: 11px;
+    }
+
+
+    .cns-overview-diagram
+    .nervous-diagram-img {
+
+        width: 100%;
+
+        height: auto;
+
+        border-radius: 9px;
+    }
+
+
+    .cns-overview-diagram figcaption {
+
+        margin-top: 11px;
+
+        padding: 0 5px;
+
+        font-size: 0.88rem;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .cns-overview-diagram {
+
+        padding: 7px;
+
+        border-radius: 15px;
+    }
+
+
+    .cns-overview-diagram figcaption {
+
+        font-size: 0.84rem;
+    }
+
+}
+
+/* =========================================================
+   PNG-04 — CNS ↔ PNS CONNECTION
+   ========================================================= */
+
+.cns-pns-connection-diagram {
+    width: 100%;
+
+    margin-top: 30px;
+    margin-bottom: 32px;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    background: var(--card-bg, #ffffff);
+
+    border: 1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE WRAPPER
+   --------------------------------------------------------- */
+
+.cns-pns-connection-diagram
+.nervous-diagram-image-wrap {
+
+    width: 100%;
+
+    max-width: 1536px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   DIAGRAM IMAGE
+   --------------------------------------------------------- */
+
+.cns-pns-connection-diagram
+.nervous-diagram-img {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 1536px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   FIGURE CAPTION
+   --------------------------------------------------------- */
+
+.cns-pns-connection-diagram figcaption {
+
+    margin-top: 14px;
+
+    padding: 0 8px;
+
+    font-size: 0.95rem;
+
+    line-height: 1.5;
+
+    text-align: center;
+
+    color: var(--muted-text, #667085);
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+html[data-theme="dark"]
+.cns-pns-connection-diagram {
+
+    background: var(--card-bg, #1c1c1e);
+
+    border-color:
+        var(--border-color, #3a3a3c);
+}
+
+
+html[data-theme="dark"]
+.cns-pns-connection-diagram figcaption {
+
+    color: var(--muted-text, #a1a1a6);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .cns-pns-connection-diagram {
+
+        margin-top: 26px;
+        margin-bottom: 28px;
+
+        padding: 12px;
+
+        border-radius: 18px;
+    }
+
+
+    .cns-pns-connection-diagram
+    .nervous-diagram-image-wrap {
+
+        border-radius: 12px;
+    }
+
+
+    .cns-pns-connection-diagram
+    .nervous-diagram-img {
+
+        border-radius: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .cns-pns-connection-diagram {
+
+        margin-top: 24px;
+        margin-bottom: 28px;
+
+        padding: 9px;
+
+        border-radius: 17px;
+    }
+
+
+    .cns-pns-connection-diagram
+    .nervous-diagram-image-wrap {
+
+        width: 100%;
+
+        border-radius: 11px;
+    }
+
+
+    .cns-pns-connection-diagram
+    .nervous-diagram-img {
+
+        width: 100%;
+
+        height: auto;
+
+        border-radius: 9px;
+    }
+
+
+    .cns-pns-connection-diagram figcaption {
+
+        margin-top: 11px;
+
+        padding: 0 5px;
+
+        font-size: 0.88rem;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .cns-pns-connection-diagram {
+
+        padding: 7px;
+
+        border-radius: 15px;
+    }
+
+
+    .cns-pns-connection-diagram figcaption {
+
+        font-size: 0.84rem;
+    }
+
+}
+
+/* =========================================================
+   PNG-05 — SENSORY VS MOTOR PATHWAY
+   ========================================================= */
+
+.sensory-motor-pathway-diagram {
+    width: 100%;
+
+    margin-top: 30px;
+    margin-bottom: 32px;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    background: var(--card-bg, #ffffff);
+
+    border: 1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE WRAPPER
+   --------------------------------------------------------- */
+
+.sensory-motor-pathway-diagram
+.nervous-diagram-image-wrap {
+
+    width: 100%;
+
+    max-width: 1536px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   DIAGRAM IMAGE
+   --------------------------------------------------------- */
+
+.sensory-motor-pathway-diagram
+.nervous-diagram-img {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 1536px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   FIGURE CAPTION
+   --------------------------------------------------------- */
+
+.sensory-motor-pathway-diagram figcaption {
+
+    margin-top: 14px;
+
+    padding: 0 8px;
+
+    font-size: 0.95rem;
+
+    line-height: 1.5;
+
+    text-align: center;
+
+    color: var(--muted-text, #667085);
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+html[data-theme="dark"]
+.sensory-motor-pathway-diagram {
+
+    background: var(--card-bg, #1c1c1e);
+
+    border-color:
+        var(--border-color, #3a3a3c);
+}
+
+
+html[data-theme="dark"]
+.sensory-motor-pathway-diagram figcaption {
+
+    color: var(--muted-text, #a1a1a6);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .sensory-motor-pathway-diagram {
+
+        margin-top: 26px;
+        margin-bottom: 28px;
+
+        padding: 12px;
+
+        border-radius: 18px;
+    }
+
+
+    .sensory-motor-pathway-diagram
+    .nervous-diagram-image-wrap {
+
+        border-radius: 12px;
+    }
+
+
+    .sensory-motor-pathway-diagram
+    .nervous-diagram-img {
+
+        border-radius: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .sensory-motor-pathway-diagram {
+
+        margin-top: 24px;
+        margin-bottom: 28px;
+
+        padding: 9px;
+
+        border-radius: 17px;
+    }
+
+
+    .sensory-motor-pathway-diagram
+    .nervous-diagram-image-wrap {
+
+        width: 100%;
+
+        border-radius: 11px;
+    }
+
+
+    .sensory-motor-pathway-diagram
+    .nervous-diagram-img {
+
+        width: 100%;
+
+        height: auto;
+
+        border-radius: 9px;
+    }
+
+
+    .sensory-motor-pathway-diagram figcaption {
+
+        margin-top: 11px;
+
+        padding: 0 5px;
+
+        font-size: 0.88rem;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .sensory-motor-pathway-diagram {
+
+        padding: 7px;
+
+        border-radius: 15px;
+    }
+
+
+    .sensory-motor-pathway-diagram figcaption {
+
+        font-size: 0.84rem;
+    }
+
+}
+
+/* =========================================================
+   PNG-06 — AUTONOMIC BALANCE
+   ========================================================= */
+
+.autonomic-balance-diagram {
+    width: 100%;
+
+    margin-top: 30px;
+    margin-bottom: 32px;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    background: var(--card-bg, #ffffff);
+
+    border: 1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE WRAPPER
+   --------------------------------------------------------- */
+
+.autonomic-balance-diagram
+.nervous-diagram-image-wrap {
+
+    width: 100%;
+
+    max-width: 1536px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   DIAGRAM IMAGE
+   --------------------------------------------------------- */
+
+.autonomic-balance-diagram
+.nervous-diagram-img {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 1536px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   FIGURE CAPTION
+   --------------------------------------------------------- */
+
+.autonomic-balance-diagram figcaption {
+
+    margin-top: 14px;
+
+    padding: 0 8px;
+
+    font-size: 0.95rem;
+
+    line-height: 1.5;
+
+    text-align: center;
+
+    color: var(--muted-text, #667085);
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+html[data-theme="dark"]
+.autonomic-balance-diagram {
+
+    background: var(--card-bg, #1c1c1e);
+
+    border-color:
+        var(--border-color, #3a3a3c);
+}
+
+
+html[data-theme="dark"]
+.autonomic-balance-diagram figcaption {
+
+    color: var(--muted-text, #a1a1a6);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .autonomic-balance-diagram {
+
+        margin-top: 26px;
+        margin-bottom: 28px;
+
+        padding: 12px;
+
+        border-radius: 18px;
+    }
+
+
+    .autonomic-balance-diagram
+    .nervous-diagram-image-wrap {
+
+        border-radius: 12px;
+    }
+
+
+    .autonomic-balance-diagram
+    .nervous-diagram-img {
+
+        border-radius: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .autonomic-balance-diagram {
+
+        margin-top: 24px;
+        margin-bottom: 28px;
+
+        padding: 9px;
+
+        border-radius: 17px;
+    }
+
+
+    .autonomic-balance-diagram
+    .nervous-diagram-image-wrap {
+
+        width: 100%;
+
+        border-radius: 11px;
+    }
+
+
+    .autonomic-balance-diagram
+    .nervous-diagram-img {
+
+        width: 100%;
+
+        height: auto;
+
+        border-radius: 9px;
+    }
+
+
+    .autonomic-balance-diagram figcaption {
+
+        margin-top: 11px;
+
+        padding: 0 5px;
+
+        font-size: 0.88rem;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .autonomic-balance-diagram {
+
+        padding: 7px;
+
+        border-radius: 15px;
+    }
+
+
+    .autonomic-balance-diagram figcaption {
+
+        font-size: 0.84rem;
+    }
+
+}
+
+/* =========================================================
+   PNG-07 — COMPLETE NERVOUS SYSTEM PATHWAY
+   ========================================================= */
+
+.complete-nervous-pathway-diagram {
+    width: 100%;
+
+    margin-top: 30px;
+    margin-bottom: 32px;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    background: var(--card-bg, #ffffff);
+
+    border: 1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE WRAPPER
+   --------------------------------------------------------- */
+
+.complete-nervous-pathway-diagram
+.nervous-diagram-image-wrap {
+
+    width: 100%;
+
+    max-width: 1536px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   DIAGRAM IMAGE
+   --------------------------------------------------------- */
+
+.complete-nervous-pathway-diagram
+.nervous-diagram-img {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 1536px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   FIGURE CAPTION
+   --------------------------------------------------------- */
+
+.complete-nervous-pathway-diagram figcaption {
+
+    margin-top: 14px;
+
+    padding: 0 8px;
+
+    font-size: 0.95rem;
+
+    line-height: 1.5;
+
+    text-align: center;
+
+    color: var(--muted-text, #667085);
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+html[data-theme="dark"]
+.complete-nervous-pathway-diagram {
+
+    background: var(--card-bg, #1c1c1e);
+
+    border-color:
+        var(--border-color, #3a3a3c);
+}
+
+
+html[data-theme="dark"]
+.complete-nervous-pathway-diagram figcaption {
+
+    color: var(--muted-text, #a1a1a6);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .complete-nervous-pathway-diagram {
+
+        margin-top: 26px;
+        margin-bottom: 28px;
+
+        padding: 12px;
+
+        border-radius: 18px;
+    }
+
+
+    .complete-nervous-pathway-diagram
+    .nervous-diagram-image-wrap {
+
+        border-radius: 12px;
+    }
+
+
+    .complete-nervous-pathway-diagram
+    .nervous-diagram-img {
+
+        border-radius: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .complete-nervous-pathway-diagram {
+
+        margin-top: 24px;
+        margin-bottom: 28px;
+
+        padding: 9px;
+
+        border-radius: 17px;
+    }
+
+
+    .complete-nervous-pathway-diagram
+    .nervous-diagram-image-wrap {
+
+        width: 100%;
+
+        border-radius: 11px;
+    }
+
+
+    .complete-nervous-pathway-diagram
+    .nervous-diagram-img {
+
+        width: 100%;
+
+        height: auto;
+
+        border-radius: 9px;
+    }
+
+
+    .complete-nervous-pathway-diagram figcaption {
+
+        margin-top: 11px;
+
+        padding: 0 5px;
+
+        font-size: 0.88rem;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .complete-nervous-pathway-diagram {
+
+        padding: 7px;
+
+        border-radius: 15px;
+    }
+
+
+    .complete-nervous-pathway-diagram figcaption {
+
+        font-size: 0.84rem;
+    }
+
+}
+
+/* =========================================================
+   EXPLORE NERVOUS SYSTEM
+   ========================================================= */
+
+.nervous-toc-card {
+    margin-top: 32px;
+}
+
+
+/* ---------------------------------------------------------
+   TOC LIST
+   --------------------------------------------------------- */
+
+.nervous-toc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    margin-top: 26px;
+}
+
+
+/* ---------------------------------------------------------
+   TOC ITEM
+   --------------------------------------------------------- */
+
+.nervous-toc-item {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    min-height: 118px;
+
+    padding: 18px 20px;
+
+    box-sizing: border-box;
+
+    text-decoration: none;
+
+    background: var(--card-bg, #f7f8fa);
+
+    border: 1px solid
+        var(--border-color, #dfe3e8);
+
+    border-radius: 20px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+/* ---------------------------------------------------------
+   NUMBER
+   --------------------------------------------------------- */
+
+.nervous-toc-number {
+    flex: 0 0 84px;
+
+    width: 84px;
+    height: 84px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 20px;
+
+    background: #e9eaec;
+
+    border-radius: 22px;
+
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    color: var(--text-color, #202124);
+}
+
+
+/* ---------------------------------------------------------
+   CONTENT
+   --------------------------------------------------------- */
+
+.nervous-toc-content {
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+.nervous-toc-content strong {
+    display: block;
+
+    font-size: 1.15rem;
+    line-height: 1.4;
+
+    color: var(--text-color, #202124);
+}
+
+
+.nervous-toc-content small {
+    display: block;
+
+    font-size: 0.95rem;
+    line-height: 1.55;
+
+    color: var(--muted-text, #667085);
+}
+
+
+/* ---------------------------------------------------------
+   ARROW
+   --------------------------------------------------------- */
+
+.nervous-toc-arrow {
+    flex: 0 0 auto;
+
+    margin-left: 16px;
+
+    font-size: 1.35rem;
+
+    color: var(--muted-text, #667085);
+}
+
+
+/* ---------------------------------------------------------
+   HOVER
+   --------------------------------------------------------- */
+
+.nervous-toc-item:hover {
+
+    transform: translateY(-2px);
+
+    border-color:
+        var(--border-color, #cfd5dc);
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+.nervous-toc-item:active {
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+html[data-theme="dark"] .nervous-toc-item {
+
+    background: var(--card-bg, #1c1c1e);
+
+    border-color:
+        var(--border-color, #3a3a3c);
+}
+
+
+html[data-theme="dark"] .nervous-toc-number {
+
+    background: #2c2c2e;
+
+    color: #f2f2f7;
+}
+
+
+html[data-theme="dark"] .nervous-toc-content strong {
+
+    color: #f2f2f7;
+}
+
+
+html[data-theme="dark"] .nervous-toc-content small,
+html[data-theme="dark"] .nervous-toc-arrow {
+
+    color: #a1a1a6;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .nervous-toc-list {
+        gap: 16px;
+    }
+
+
+    .nervous-toc-item {
+
+        min-height: 110px;
+
+        padding: 16px 18px;
+
+        border-radius: 18px;
+    }
+
+
+    .nervous-toc-number {
+
+        flex-basis: 76px;
+
+        width: 76px;
+        height: 76px;
+
+        margin-right: 17px;
+
+        border-radius: 20px;
+    }
+
+
+    .nervous-toc-content strong {
+        font-size: 1.08rem;
+    }
+
+
+    .nervous-toc-content small {
+        font-size: 0.92rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .nervous-toc-card {
+        margin-top: 28px;
+    }
+
+
+    .nervous-toc-list {
+
+        gap: 14px;
+
+        margin-top: 22px;
+    }
+
+
+    .nervous-toc-item {
+
+        min-height: 0;
+
+        padding: 15px 14px;
+
+        border-radius: 17px;
+    }
+
+
+    .nervous-toc-number {
+
+        flex: 0 0 68px;
+
+        width: 68px;
+        height: 68px;
+
+        margin-right: 14px;
+
+        border-radius: 18px;
+
+        font-size: 1.05rem;
+    }
+
+
+    .nervous-toc-content {
+        gap: 4px;
+    }
+
+
+    .nervous-toc-content strong {
+
+        font-size: 1rem;
+
+        line-height: 1.4;
+    }
+
+
+    .nervous-toc-content small {
+
+        font-size: 0.86rem;
+
+        line-height: 1.45;
+    }
+
+
+    .nervous-toc-arrow {
+
+        margin-left: 8px;
+
+        font-size: 1.15rem;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .nervous-toc-item {
+        padding: 13px 11px;
+    }
+
+
+    .nervous-toc-number {
+
+        flex-basis: 60px;
+
+        width: 60px;
+        height: 60px;
+
+        margin-right: 11px;
+
+        border-radius: 16px;
+
+        font-size: 0.98rem;
+    }
+
+
+    .nervous-toc-content strong {
+        font-size: 0.94rem;
+    }
+
+
+    .nervous-toc-content small {
+        font-size: 0.81rem;
+    }
+
+
+    .nervous-toc-arrow {
+        display: none;
+    }
+
+}
+

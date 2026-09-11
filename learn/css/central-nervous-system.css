@@ -1,0 +1,3671 @@
+/* =========================================================
+   CENTRAL NERVOUS SYSTEM LESSON
+   Lesson 5.4
+   Brain & Spinal Cord
+
+   IMPORTANT:
+   lesson.css remains the master stylesheet.
+   This file controls only Lesson 5.4 specific content.
+   ========================================================= */
+
+
+/* =========================================================
+   01. LESSON ROOT
+   ========================================================= */
+
+.central-nervous-system-lesson {
+
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+
+/* =========================================================
+   02. INTRODUCTION
+   ========================================================= */
+
+.cns-intro {
+
+    margin: 0 0 22px;
+
+    padding: 18px 20px;
+
+    border-left: 4px solid #2563eb;
+
+    border-radius: 12px;
+
+    background: #f8fafc;
+
+    color: #334155;
+
+    font-size: 1.05rem;
+
+    line-height: 1.75;
+
+    box-sizing: border-box;
+
+}
+
+
+[data-theme="dark"]
+.cns-intro {
+
+    background: #172033;
+
+    color: #dbe4f0;
+
+    border-left-color: #60a5fa;
+
+}
+
+
+/* =========================================================
+   03. TABLE OF CONTENTS
+   ========================================================= */
+
+.cns-toc {
+
+    margin: 0;
+
+    padding-left: 28px;
+
+}
+
+
+.cns-toc li {
+
+    margin: 8px 0;
+
+    line-height: 1.5;
+
+}
+
+
+.cns-toc a {
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+}
+
+
+.cns-toc a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+[data-theme="dark"]
+.cns-toc a {
+
+    color: #60a5fa;
+
+}
+
+
+/* =========================================================
+   04. LEARNING OBJECTIVES
+   ========================================================= */
+
+.objective-list {
+
+    margin: 14px 0 0;
+
+    padding-left: 24px;
+
+}
+
+
+.objective-list li {
+
+    margin-bottom: 10px;
+
+    line-height: 1.65;
+
+}
+
+
+/* =========================================================
+   05. CNS FLOW
+   ========================================================= */
+
+.cns-flow-card {
+
+    width: 100%;
+
+    margin: 24px 0;
+
+    padding: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    box-sizing: border-box;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(128, 128, 128, 0.22);
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+}
+
+
+.cns-flow-step {
+
+    min-width: 150px;
+
+    padding: 16px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 5px;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(128, 128, 128, 0.18);
+
+    box-sizing: border-box;
+
+}
+
+
+.cns-flow-step > span {
+
+    font-size: 28px;
+
+}
+
+
+.cns-flow-step strong {
+
+    font-size: 0.95rem;
+
+}
+
+
+.cns-flow-step small {
+
+    color: #64748b;
+
+    line-height: 1.4;
+
+}
+
+
+.cns-flow-step.highlight {
+
+    background: #eff6ff;
+
+    border-color: rgba(37, 99, 235, 0.35);
+
+}
+
+
+.cns-flow-arrow {
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    color: #2563eb;
+
+}
+
+
+[data-theme="dark"]
+.cns-flow-card {
+
+    background: #111827;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.cns-flow-step {
+
+    background: #1e293b;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.cns-flow-step.highlight {
+
+    background: #172554;
+
+    border-color: rgba(96, 165, 250, 0.35);
+
+}
+
+
+[data-theme="dark"]
+.cns-flow-step small {
+
+    color: #94a3b8;
+
+}
+
+
+[data-theme="dark"]
+.cns-flow-arrow {
+
+    color: #60a5fa;
+
+}
+
+
+/* =========================================================
+   06. CNS COMPONENTS
+   ========================================================= */
+
+.cns-component-grid {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+
+    margin: 20px 0;
+
+}
+
+
+.cns-component-card {
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(128, 128, 128, 0.22);
+
+    box-sizing: border-box;
+
+}
+
+
+.cns-component-icon {
+
+    font-size: 34px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.cns-component-card h3 {
+
+    margin: 0 0 8px;
+
+}
+
+
+.cns-component-card p {
+
+    margin: 0;
+
+    line-height: 1.65;
+
+}
+
+
+.cns-definition-box {
+
+    margin: 22px 0;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 16px;
+
+    background: #eff6ff;
+
+    border: 1px solid rgba(37, 99, 235, 0.25);
+
+}
+
+
+.cns-definition-box strong {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 1.2rem;
+
+    color: #1d4ed8;
+
+}
+
+
+.cns-definition-box p {
+
+    margin: 0;
+
+}
+
+
+.cns-contrast {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+
+    margin-top: 20px;
+
+}
+
+
+.cns-contrast > div {
+
+    padding: 16px;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(128, 128, 128, 0.22);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.contrast-label {
+
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 4px 9px;
+
+    border-radius: 999px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+}
+
+
+.cns-contrast small {
+
+    color: #64748b;
+
+}
+
+
+[data-theme="dark"]
+.cns-component-card,
+[data-theme="dark"]
+.cns-contrast > div {
+
+    background: #1e293b;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.cns-definition-box {
+
+    background: #172554;
+
+    border-color: rgba(96, 165, 250, 0.30);
+
+}
+
+
+[data-theme="dark"]
+.cns-definition-box strong {
+
+    color: #93c5fd;
+
+}
+
+
+[data-theme="dark"]
+.cns-contrast small {
+
+    color: #94a3b8;
+
+}
+
+
+/* =========================================================
+   07. PROTECTION
+   ========================================================= */
+
+.protection-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 14px;
+
+    margin: 20px 0 24px;
+
+}
+
+
+.protection-card {
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+    box-sizing: border-box;
+
+}
+
+
+.protection-icon {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 30px;
+
+}
+
+
+.protection-card h3 {
+
+    margin: 0 0 8px;
+
+}
+
+
+.protection-card p {
+
+    margin: 0;
+
+    font-size: 0.92rem;
+
+    line-height: 1.55;
+
+}
+
+
+.subheading {
+
+    margin-top: 28px;
+
+    margin-bottom: 14px;
+
+}
+
+
+.meninges-list {
+
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 10px;
+
+    counter-reset: meninges;
+
+}
+
+
+.meninges-list li {
+
+    counter-increment: meninges;
+
+    padding: 14px 16px 14px 48px;
+
+    position: relative;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+}
+
+
+.meninges-list li::before {
+
+    content: counter(meninges);
+
+    position: absolute;
+
+    left: 14px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 25px;
+
+    height: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 0.78rem;
+
+    font-weight: 800;
+
+}
+
+
+.meninges-list li span {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color: #64748b;
+
+    font-size: 0.88rem;
+
+}
+
+
+.remember-box {
+
+    margin-top: 22px;
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    background: #f0fdf4;
+
+    border: 1px solid rgba(34, 197, 94, 0.25);
+
+}
+
+
+.remember-box h3 {
+
+    margin: 0 0 8px;
+
+}
+
+
+.remember-box p {
+
+    margin: 6px 0;
+
+}
+
+
+[data-theme="dark"]
+.protection-card,
+[data-theme="dark"]
+.meninges-list li {
+
+    background: #1e293b;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.meninges-list li span {
+
+    color: #94a3b8;
+
+}
+
+
+[data-theme="dark"]
+.remember-box {
+
+    background: #10261a;
+
+    border-color: rgba(74, 222, 128, 0.25);
+
+}
+
+
+/* =========================================================
+   08. BRAIN HIERARCHY
+   ========================================================= */
+
+.brain-hierarchy {
+
+    margin: 24px 0;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+}
+
+
+.brain-root {
+
+    width: fit-content;
+
+    margin: 0 auto 20px;
+
+    padding: 12px 24px;
+
+    border-radius: 999px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-weight: 800;
+
+}
+
+
+.brain-branch-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 12px;
+
+}
+
+
+.brain-branch {
+
+    padding: 15px;
+
+    text-align: center;
+
+    border-radius: 13px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+}
+
+
+.brain-branch strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+}
+
+
+.brain-branch span {
+
+    display: block;
+
+    color: #64748b;
+
+    font-size: 0.85rem;
+
+    line-height: 1.4;
+
+}
+
+
+[data-theme="dark"]
+.brain-hierarchy {
+
+    background: #111827;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.brain-branch {
+
+    background: #1e293b;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.brain-branch span {
+
+    color: #94a3b8;
+
+}
+
+
+/* =========================================================
+   09. CEREBRUM
+   ========================================================= */
+
+.cerebrum-structure-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+
+    margin: 20px 0;
+
+}
+
+
+.structure-card {
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+}
+
+
+.structure-card > span {
+
+    font-size: 28px;
+
+}
+
+
+.structure-card h3 {
+
+    margin: 7px 0;
+
+}
+
+
+.structure-card p {
+
+    margin: 0;
+
+    line-height: 1.6;
+
+}
+
+
+.lobe-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 14px;
+
+}
+
+
+.lobe-card {
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+    box-sizing: border-box;
+
+}
+
+
+.lobe-icon {
+
+    font-size: 27px;
+
+}
+
+
+.lobe-card h3 {
+
+    margin: 8px 0;
+
+    font-size: 1rem;
+
+}
+
+
+.lobe-card p {
+
+    margin: 0;
+
+    font-size: 0.9rem;
+
+    line-height: 1.55;
+
+}
+
+
+.cortex-note,
+.important-note,
+.pituitary-note,
+.key-difference {
+
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    background: #f8fafc;
+
+    border-left: 4px solid #2563eb;
+
+}
+
+
+.cortex-note p,
+.important-note p,
+.pituitary-note p,
+.key-difference p {
+
+    margin: 7px 0 0;
+
+    line-height: 1.6;
+
+}
+
+
+.important-note {
+
+    border-left-color: #f59e0b;
+
+    background: #fffbeb;
+
+}
+
+
+[data-theme="dark"]
+.structure-card,
+[data-theme="dark"]
+.lobe-card,
+[data-theme="dark"]
+.cortex-note {
+
+    background: #1e293b;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.important-note {
+
+    background: #2b2110;
+
+}
+
+
+[data-theme="dark"]
+.pituitary-note {
+
+    background: #172033;
+
+}
+
+
+[data-theme="dark"]
+.key-difference {
+
+    background: #172033;
+
+}
+
+
+/* =========================================================
+   10. DIENCEPHALON
+   ========================================================= */
+
+.diencephalon-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+
+    margin: 22px 0;
+
+}
+
+
+.diencephalon-card {
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+}
+
+
+.diencephalon-icon {
+
+    font-size: 32px;
+
+}
+
+
+.diencephalon-card h3 {
+
+    margin: 8px 0;
+
+}
+
+
+.diencephalon-card p {
+
+    margin: 0;
+
+    line-height: 1.65;
+
+}
+
+
+.pituitary-note {
+
+    border-left-color: #8b5cf6;
+
+}
+
+
+[data-theme="dark"]
+.diencephalon-card {
+
+    background: #1e293b;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+/* =========================================================
+   11. BRAINSTEM & CEREBELLUM
+   ========================================================= */
+
+.brainstem-cerebellum-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+
+}
+
+
+.brainstem-card,
+.cerebellum-card {
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+}
+
+
+.region-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.region-heading span {
+
+    font-size: 30px;
+
+}
+
+
+.region-heading h3 {
+
+    margin: 0;
+
+}
+
+
+.brainstem-card > p,
+.cerebellum-card > p {
+
+    line-height: 1.65;
+
+}
+
+
+.brainstem-parts {
+
+    display: grid;
+
+    gap: 9px;
+
+    margin-top: 16px;
+
+}
+
+
+.brainstem-parts > div {
+
+    padding: 12px 14px;
+
+    border-radius: 11px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(128, 128, 128, 0.18);
+
+}
+
+
+.brainstem-parts strong {
+
+    display: block;
+
+}
+
+
+.brainstem-parts small {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color: #64748b;
+
+}
+
+
+.cerebellum-card ul {
+
+    margin: 15px 0 0;
+
+    padding-left: 22px;
+
+}
+
+
+.cerebellum-card li {
+
+    margin-bottom: 7px;
+
+}
+
+
+[data-theme="dark"]
+.brainstem-card,
+[data-theme="dark"]
+.cerebellum-card {
+
+    background: #1e293b;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.brainstem-parts > div {
+
+    background: #111827;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.brainstem-parts small {
+
+    color: #94a3b8;
+
+}
+
+
+/* =========================================================
+   12. SPINAL CORD
+   ========================================================= */
+
+.spinal-flow {
+
+    margin: 22px 0;
+
+    padding: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+    border-radius: 16px;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+}
+
+
+.spinal-flow > div {
+
+    min-width: 125px;
+
+    padding: 13px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(128, 128, 128, 0.18);
+
+}
+
+
+.spinal-flow strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 0.88rem;
+
+}
+
+
+.spinal-flow > span {
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    color: #2563eb;
+
+}
+
+
+.spinal-flow .spinal-highlight {
+
+    background: #eff6ff;
+
+    border-color: rgba(37, 99, 235, 0.35);
+
+}
+
+
+.spinal-organization-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 14px;
+
+}
+
+
+.spinal-organization-card {
+
+    padding: 18px;
+
+    text-align: center;
+
+    border-radius: 14px;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+}
+
+
+.spinal-organization-card > span {
+
+    display: block;
+
+    font-size: 27px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.spinal-organization-card strong {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+}
+
+
+.spinal-organization-card p {
+
+    margin: 0;
+
+    font-size: 0.9rem;
+
+    line-height: 1.55;
+
+}
+
+
+.orientation-box {
+
+    margin-top: 18px;
+
+    padding: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 22px;
+
+    text-align: center;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+}
+
+
+.orientation-box > div:not(.orientation-arrow) {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.orientation-box span {
+
+    color: #64748b;
+
+    font-size: 0.85rem;
+
+}
+
+
+.orientation-arrow {
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    color: #2563eb;
+
+}
+
+
+[data-theme="dark"]
+.spinal-flow,
+[data-theme="dark"]
+.spinal-organization-card,
+[data-theme="dark"]
+.orientation-box {
+
+    background: #1e293b;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.spinal-flow > div {
+
+    background: #111827;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.spinal-flow .spinal-highlight {
+
+    background: #172554;
+
+}
+
+
+[data-theme="dark"]
+.orientation-box span {
+
+    color: #94a3b8;
+
+}
+
+
+/* =========================================================
+   13. GRAY & WHITE MATTER
+   ========================================================= */
+
+.matter-comparison {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+
+    margin: 22px 0;
+
+}
+
+
+.matter-card {
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+}
+
+
+.gray-matter {
+
+    background: #f1f5f9;
+
+}
+
+
+.white-matter {
+
+    background: #ffffff;
+
+}
+
+
+.matter-icon {
+
+    font-size: 30px;
+
+}
+
+
+.matter-card h3 {
+
+    margin: 8px 0;
+
+}
+
+
+.matter-card p {
+
+    line-height: 1.6;
+
+}
+
+
+.matter-card strong {
+
+    display: block;
+
+    margin-top: 14px;
+
+}
+
+
+.matter-card > span {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: #64748b;
+
+}
+
+
+.matter-location-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+
+}
+
+
+.matter-location-grid > div {
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+}
+
+
+.matter-location-grid h3 {
+
+    margin-top: 0;
+
+}
+
+
+.matter-location-grid p {
+
+    line-height: 1.6;
+
+}
+
+
+.matter-location-grid small {
+
+    color: #64748b;
+
+}
+
+
+.key-difference {
+
+    border-left-color: #10b981;
+
+    background: #f0fdf4;
+
+}
+
+
+[data-theme="dark"]
+.gray-matter,
+[data-theme="dark"]
+.white-matter,
+[data-theme="dark"]
+.matter-location-grid > div {
+
+    background: #1e293b;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.matter-card > span,
+[data-theme="dark"]
+.matter-location-grid small {
+
+    color: #94a3b8;
+
+}
+
+
+[data-theme="dark"]
+.key-difference {
+
+    background: #10261a;
+
+}
+
+
+/* =========================================================
+   14. CNS PATHWAYS
+   ========================================================= */
+
+.pathway-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+
+    margin: 22px 0;
+
+}
+
+
+.pathway-card {
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 16px;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+}
+
+
+.pathway-card.ascending {
+
+    background: #eff6ff;
+
+}
+
+
+.pathway-card.descending {
+
+    background: #f0fdf4;
+
+}
+
+
+.pathway-icon {
+
+    font-size: 32px;
+
+}
+
+
+.pathway-card h3 {
+
+    margin: 8px 0 14px;
+
+}
+
+
+.pathway-flow {
+
+    padding: 14px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 4px;
+
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.70);
+
+    font-weight: 700;
+
+}
+
+
+.pathway-flow span {
+
+    font-size: 21px;
+
+    color: #2563eb;
+
+}
+
+
+.pathway-card p {
+
+    margin-bottom: 0;
+
+    line-height: 1.6;
+
+}
+
+
+.pathway-memory-box {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-top: 20px;
+
+}
+
+
+.pathway-memory-box > div {
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+}
+
+
+.pathway-memory-box strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+}
+
+
+.pathway-memory-box span {
+
+    display: block;
+
+    color: #64748b;
+
+    font-size: 0.9rem;
+
+}
+
+
+[data-theme="dark"]
+.pathway-card.ascending {
+
+    background: #172554;
+
+}
+
+
+[data-theme="dark"]
+.pathway-card.descending {
+
+    background: #10261a;
+
+}
+
+
+[data-theme="dark"]
+.pathway-flow {
+
+    background: rgba(15, 23, 42, 0.65);
+
+}
+
+
+[data-theme="dark"]
+.pathway-memory-box > div {
+
+    background: #1e293b;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.pathway-memory-box span {
+
+    color: #94a3b8;
+
+}
+
+
+/* =========================================================
+   15. REFLEX ARC
+   ========================================================= */
+
+.reflex-flow {
+
+    margin: 22px 0;
+
+    padding: 18px;
+
+    display: flex;
+
+    align-items: stretch;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    overflow-x: auto;
+
+    border-radius: 16px;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+}
+
+
+.reflex-step {
+
+    min-width: 145px;
+
+    padding: 14px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 5px;
+
+    border-radius: 13px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(128, 128, 128, 0.18);
+
+}
+
+
+.reflex-step > span {
+
+    width: 27px;
+
+    height: 27px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 0.78rem;
+
+    font-weight: 800;
+
+}
+
+
+.reflex-step strong {
+
+    font-size: 0.88rem;
+
+}
+
+
+.reflex-step small {
+
+    color: #64748b;
+
+    line-height: 1.4;
+
+}
+
+
+.reflex-step.highlight {
+
+    background: #eff6ff;
+
+    border-color: rgba(37, 99, 235, 0.35);
+
+}
+
+
+.reflex-arrow {
+
+    align-self: center;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    color: #2563eb;
+
+}
+
+
+.reflex-brain-note {
+
+    margin-top: 20px;
+
+    padding: 18px;
+
+    display: flex;
+
+    gap: 14px;
+
+    align-items: flex-start;
+
+    border-radius: 14px;
+
+    background: #f8fafc;
+
+    border-left: 4px solid #8b5cf6;
+
+}
+
+
+.reflex-brain-icon {
+
+    font-size: 28px;
+
+}
+
+
+.reflex-brain-note p {
+
+    margin: 6px 0 0;
+
+    line-height: 1.6;
+
+}
+
+
+.reflex-key-point {
+
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    background: #fff7ed;
+
+    border-left: 4px solid #f97316;
+
+}
+
+
+.reflex-key-point p {
+
+    margin: 7px 0 0;
+
+    line-height: 1.6;
+
+}
+
+
+[data-theme="dark"]
+.reflex-flow {
+
+    background: #111827;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.reflex-step {
+
+    background: #1e293b;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.reflex-step.highlight {
+
+    background: #172554;
+
+}
+
+
+[data-theme="dark"]
+.reflex-step small {
+
+    color: #94a3b8;
+
+}
+
+
+[data-theme="dark"]
+.reflex-brain-note {
+
+    background: #172033;
+
+}
+
+
+[data-theme="dark"]
+.reflex-key-point {
+
+    background: #2b1b0c;
+
+}
+
+
+/* =========================================================
+   16. DIAGRAM CARDS
+   ========================================================= */
+
+.central-nervous-system-lesson
+.cns-diagram {
+
+    width: 100%;
+
+    margin: 28px auto;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    background: var(--card-bg, #ffffff);
+
+    border: 1px solid rgba(128, 128, 128, 0.24);
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.06);
+
+}
+
+
+.diagram-placeholder {
+
+    width: 100%;
+
+    min-height: 260px;
+
+    padding: 30px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+    border: 2px dashed #94a3b8;
+
+    border-radius: 12px;
+
+    background: #f8fafc;
+
+}
+
+
+.diagram-placeholder-number {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 5px 11px;
+
+    margin-bottom: 10px;
+
+    border-radius: 999px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+}
+
+
+.diagram-placeholder h3 {
+
+    margin: 4px 0 8px;
+
+    font-size: 1.05rem;
+
+}
+
+
+.diagram-placeholder p {
+
+    margin: 0 0 7px;
+
+    color: #64748b;
+
+}
+
+
+.diagram-placeholder small {
+
+    max-width: 100%;
+
+    overflow-wrap: anywhere;
+
+    color: #64748b;
+
+    font-family: monospace;
+
+    font-size: 0.76rem;
+
+    line-height: 1.45;
+
+}
+
+
+.central-nervous-system-lesson
+.cns-diagram figcaption {
+
+    margin-top: 12px;
+
+    padding: 0 6px;
+
+    text-align: center;
+
+    color: var(
+        --secondary-text-color,
+        #64748b
+    );
+
+    font-size: 0.92rem;
+
+    line-height: 1.5;
+
+}
+
+
+[data-theme="dark"]
+.central-nervous-system-lesson
+.cns-diagram {
+
+    background: #1e293b;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.20);
+
+}
+
+
+[data-theme="dark"]
+.diagram-placeholder {
+
+    background: #111827;
+
+    border-color: #475569;
+
+}
+
+
+[data-theme="dark"]
+.diagram-placeholder p,
+[data-theme="dark"]
+.diagram-placeholder small {
+
+    color: #94a3b8;
+
+}
+
+
+/* =========================================================
+   17. CNS AT A GLANCE
+   ========================================================= */
+
+.cns-map {
+
+    margin: 20px 0;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+}
+
+
+.cns-map-root {
+
+    margin-bottom: 18px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    border-radius: 13px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-weight: 800;
+
+    letter-spacing: 0.02em;
+
+}
+
+
+.cns-map-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+
+}
+
+
+.cns-map-column {
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(128, 128, 128, 0.18);
+
+}
+
+
+.cns-map-column h3 {
+
+    margin-top: 0;
+
+}
+
+
+.cns-map-column ul {
+
+    margin: 0;
+
+    padding-left: 21px;
+
+}
+
+
+.cns-map-column li {
+
+    margin-bottom: 6px;
+
+    line-height: 1.45;
+
+}
+
+
+.final-cns-message {
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 16px;
+
+    background: #eff6ff;
+
+    border: 1px solid rgba(37, 99, 235, 0.25);
+
+}
+
+
+.final-cns-message strong {
+
+    display: block;
+
+    color: #1d4ed8;
+
+    font-size: 1.15rem;
+
+}
+
+
+.final-cns-message p {
+
+    margin: 8px 0 0;
+
+    line-height: 1.6;
+
+}
+
+
+[data-theme="dark"]
+.cns-map {
+
+    background: #111827;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.cns-map-column {
+
+    background: #1e293b;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.final-cns-message {
+
+    background: #172554;
+
+    border-color: rgba(96, 165, 250, 0.30);
+
+}
+
+
+[data-theme="dark"]
+.final-cns-message strong {
+
+    color: #93c5fd;
+
+}
+
+
+/* =========================================================
+   18. QUICK REVISION
+   ========================================================= */
+
+.revision-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+}
+
+
+.revision-item {
+
+    display: grid;
+
+    grid-template-columns: 38px minmax(0, 1fr);
+
+    gap: 10px;
+
+    align-items: start;
+
+    padding: 15px;
+
+    border-radius: 13px;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(128, 128, 128, 0.18);
+
+}
+
+
+.revision-item > span {
+
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 0.73rem;
+
+    font-weight: 800;
+
+}
+
+
+.revision-item p {
+
+    margin: 0;
+
+    line-height: 1.55;
+
+}
+
+
+[data-theme="dark"]
+.revision-item {
+
+    background: #1e293b;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+/* =========================================================
+   19. QUIZ
+   ========================================================= */
+
+.quiz-question {
+
+    margin-bottom: 18px;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+}
+
+
+.quiz-question h3 {
+
+    margin-top: 0;
+
+    margin-bottom: 12px;
+
+    line-height: 1.5;
+
+}
+
+
+.quiz-question ol {
+
+    margin: 0;
+
+    padding-left: 25px;
+
+}
+
+
+.quiz-question li {
+
+    margin-bottom: 7px;
+
+    line-height: 1.5;
+
+}
+
+
+.quiz-question details {
+
+    margin-top: 14px;
+
+}
+
+
+.quiz-question summary {
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    padding: 8px 13px;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+    user-select: none;
+
+}
+
+
+.quiz-question details p {
+
+    margin: 12px 0 0;
+
+    padding: 12px;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    line-height: 1.5;
+
+}
+
+
+[data-theme="dark"]
+.quiz-question {
+
+    background: #1e293b;
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+[data-theme="dark"]
+.quiz-question details p {
+
+    background: #111827;
+
+}
+
+
+/* =========================================================
+   20. PAGE SCROLL BUTTONS
+   Same visual language as existing lesson pages.
+   ========================================================= */
+
+.central-nervous-system-lesson
+.page-scroll-btn {
+
+    position: fixed;
+
+    right: 18px;
+
+    width: 44px;
+
+    height: 44px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    z-index: 9999;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+    color: #ffffff;
+
+    background: #1f5fbf;
+
+    box-shadow:
+        0 5px 16px rgba(20, 50, 90, 0.22);
+
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        opacity 180ms ease;
+
+}
+
+
+.central-nervous-system-lesson
+.page-scroll-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 20px rgba(20, 50, 90, 0.28);
+
+}
+
+
+.central-nervous-system-lesson
+.page-scroll-btn:active {
+
+    transform: scale(0.92);
+
+}
+
+
+/* =========================================================
+   21. WIDTH PROTECTION
+   ========================================================= */
+
+.central-nervous-system-lesson,
+.central-nervous-system-lesson *,
+.central-nervous-system-lesson
+.cns-diagram,
+.central-nervous-system-lesson
+.cns-flow-card,
+.central-nervous-system-lesson
+.reflex-flow {
+
+    max-width: 100%;
+
+    box-sizing: border-box;
+
+}
+
+
+.central-nervous-system-lesson
+.cns-diagram img {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================================
+   22. TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .protection-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+
+    .brain-branch-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+
+    .lobe-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* =========================================================
+   23. MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .cns-component-grid,
+    .cns-contrast,
+    .cerebrum-structure-grid,
+    .diencephalon-grid,
+    .brainstem-cerebellum-grid,
+    .matter-comparison,
+    .matter-location-grid,
+    .pathway-grid,
+    .pathway-memory-box,
+    .cns-map-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .cns-flow-card {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .cns-flow-step {
+
+        width: 100%;
+
+    }
+
+
+    .cns-flow-arrow {
+
+        transform: rotate(90deg);
+
+        text-align: center;
+
+    }
+
+
+    .protection-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+
+    .brain-branch-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .lobe-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+
+    .spinal-flow {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .spinal-flow > div {
+
+        width: 100%;
+
+    }
+
+
+    .spinal-flow > span {
+
+        transform: rotate(90deg);
+
+        text-align: center;
+
+    }
+
+
+    .spinal-organization-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .orientation-box {
+
+        gap: 12px;
+
+    }
+
+
+    .revision-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .reflex-flow {
+
+        justify-content: flex-start;
+
+    }
+
+
+    .reflex-step {
+
+        min-width: 140px;
+
+    }
+
+
+    .central-nervous-system-lesson
+    .page-scroll-btn {
+
+        right: 12px;
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 21px;
+
+    }
+
+}
+
+
+/* =========================================================
+   24. SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .protection-grid,
+    .lobe-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .cns-intro {
+
+        padding: 15px 16px;
+
+        font-size: 0.98rem;
+
+    }
+
+
+    .central-nervous-system-lesson
+    .cns-diagram {
+
+        padding: 10px;
+
+        border-radius: 13px;
+
+    }
+
+
+    .diagram-placeholder {
+
+        min-height: 220px;
+
+        padding: 24px 14px;
+
+    }
+
+
+    .diagram-placeholder h3 {
+
+        font-size: 0.98rem;
+
+    }
+
+
+    .diagram-placeholder small {
+
+        font-size: 0.70rem;
+
+    }
+
+
+    .reflex-brain-note {
+
+        flex-direction: column;
+
+    }
+
+
+    .orientation-box {
+
+        flex-direction: column;
+
+    }
+
+
+    .orientation-arrow {
+
+        transform: rotate(90deg);
+
+    }
+
+}
+
+
+/* =========================================================
+   25. REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .central-nervous-system-lesson
+    .page-scroll-btn {
+
+        transition: none;
+
+    }
+
+}
+
+/* =========================================================
+   CNS DIAGRAMS
+   PNG-01: The Central Nervous System
+   ========================================================= */
+
+.central-nervous-system-lesson .cns-diagram {
+    width: 100%;
+    max-width: 1150px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.central-nervous-system-lesson .cns-diagram img {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.central-nervous-system-lesson .cns-diagram figcaption {
+    margin-top: 0.85rem;
+    text-align: center;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: var(--text-secondary, #666);
+}
+
+
+/* =========================================================
+   PNG-01 RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .central-nervous-system-lesson .cns-diagram {
+        margin: 1.5rem auto;
+        padding: 0.5rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram figcaption {
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .central-nervous-system-lesson .cns-diagram {
+        padding: 0.25rem;
+        margin: 1.25rem auto;
+    }
+
+    .central-nervous-system-lesson .cns-diagram img {
+        border-radius: 8px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram figcaption {
+        font-size: 0.8rem;
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+   PNG-01 DARK MODE
+   ========================================================= */
+
+[data-theme="dark"] .central-nervous-system-lesson .cns-diagram figcaption {
+    color: var(--text-secondary, #b8b8b8);
+}
+
+/* =========================================================
+   CNS DIAGRAMS
+   PNG-02: Protection of the Central Nervous System
+   ========================================================= */
+
+.central-nervous-system-lesson .cns-diagram.png-02 {
+    width: 100%;
+    max-width: 1150px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.central-nervous-system-lesson .cns-diagram.png-02 img {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.central-nervous-system-lesson .cns-diagram.png-02 figcaption {
+    margin-top: 0.85rem;
+    text-align: center;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: var(--text-secondary, #666);
+}
+
+
+/* =========================================================
+   PNG-02 RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .central-nervous-system-lesson .cns-diagram.png-02 {
+        margin: 1.5rem auto;
+        padding: 0.5rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-02 img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-02 figcaption {
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .central-nervous-system-lesson .cns-diagram.png-02 {
+        margin: 1.25rem auto;
+        padding: 0.25rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-02 img {
+        border-radius: 8px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-02 figcaption {
+        font-size: 0.8rem;
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+   PNG-02 DARK MODE
+   ========================================================= */
+
+[data-theme="dark"] .central-nervous-system-lesson .cns-diagram.png-02 figcaption {
+    color: var(--text-secondary, #b8b8b8);
+}
+
+/* =========================================================
+   PNG-03: MAJOR DIVISIONS OF THE BRAIN
+   ========================================================= */
+
+.central-nervous-system-lesson .cns-diagram.png-03 {
+    width: 100%;
+    max-width: 1150px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.central-nervous-system-lesson .cns-diagram.png-03 img {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.central-nervous-system-lesson .cns-diagram.png-03 figcaption {
+    margin-top: 0.85rem;
+    text-align: center;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: var(--text-secondary, #666);
+}
+
+
+/* =========================================================
+   PNG-03 RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .central-nervous-system-lesson .cns-diagram.png-03 {
+        margin: 1.5rem auto;
+        padding: 0.5rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-03 img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-03 figcaption {
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .central-nervous-system-lesson .cns-diagram.png-03 {
+        margin: 1.25rem auto;
+        padding: 0.25rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-03 img {
+        border-radius: 8px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-03 figcaption {
+        font-size: 0.8rem;
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+   PNG-03 DARK MODE
+   ========================================================= */
+
+[data-theme="dark"] .central-nervous-system-lesson .cns-diagram.png-03 figcaption {
+    color: var(--text-secondary, #b8b8b8);
+}
+
+/* =========================================================
+   PNG-04: CEREBRAL LOBES & THEIR MAJOR FUNCTIONS
+   ========================================================= */
+
+.central-nervous-system-lesson .cns-diagram.png-04 {
+    width: 100%;
+    max-width: 1150px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.central-nervous-system-lesson .cns-diagram.png-04 img {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.central-nervous-system-lesson .cns-diagram.png-04 figcaption {
+    margin-top: 0.85rem;
+    text-align: center;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: var(--text-secondary, #666);
+}
+
+
+/* =========================================================
+   PNG-04 RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .central-nervous-system-lesson .cns-diagram.png-04 {
+        margin: 1.5rem auto;
+        padding: 0.5rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-04 img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-04 figcaption {
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .central-nervous-system-lesson .cns-diagram.png-04 {
+        margin: 1.25rem auto;
+        padding: 0.25rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-04 img {
+        border-radius: 8px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-04 figcaption {
+        font-size: 0.8rem;
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+   PNG-04 DARK MODE
+   ========================================================= */
+
+[data-theme="dark"] .central-nervous-system-lesson .cns-diagram.png-04 figcaption {
+    color: var(--text-secondary, #b8b8b8);
+}
+
+/* =========================================================
+   PNG-05: BRAINSTEM & CEREBELLUM
+   STRUCTURE AND MAJOR ROLES
+   ========================================================= */
+
+.central-nervous-system-lesson .cns-diagram.png-05 {
+    width: 100%;
+    max-width: 1150px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.central-nervous-system-lesson .cns-diagram.png-05 img {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.central-nervous-system-lesson .cns-diagram.png-05 figcaption {
+    margin-top: 0.85rem;
+    text-align: center;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: var(--text-secondary, #666);
+}
+
+
+/* =========================================================
+   PNG-05 RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .central-nervous-system-lesson .cns-diagram.png-05 {
+        margin: 1.5rem auto;
+        padding: 0.5rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-05 img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-05 figcaption {
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .central-nervous-system-lesson .cns-diagram.png-05 {
+        margin: 1.25rem auto;
+        padding: 0.25rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-05 img {
+        border-radius: 8px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-05 figcaption {
+        font-size: 0.8rem;
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+   PNG-05 DARK MODE
+   ========================================================= */
+
+[data-theme="dark"] .central-nervous-system-lesson .cns-diagram.png-05 figcaption {
+    color: var(--text-secondary, #b8b8b8);
+}
+
+/* =========================================================
+   PNG-06: SPINAL CORD
+   GROSS ANATOMY & CROSS-SECTION
+   ========================================================= */
+
+.central-nervous-system-lesson .cns-diagram.png-06 {
+    width: 100%;
+    max-width: 1150px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.central-nervous-system-lesson .cns-diagram.png-06 img {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.central-nervous-system-lesson .cns-diagram.png-06 figcaption {
+    margin-top: 0.85rem;
+    text-align: center;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: var(--text-secondary, #666);
+}
+
+
+/* =========================================================
+   PNG-06 RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .central-nervous-system-lesson .cns-diagram.png-06 {
+        margin: 1.5rem auto;
+        padding: 0.5rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-06 img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-06 figcaption {
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .central-nervous-system-lesson .cns-diagram.png-06 {
+        margin: 1.25rem auto;
+        padding: 0.25rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-06 img {
+        border-radius: 8px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-06 figcaption {
+        font-size: 0.8rem;
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+   PNG-06 DARK MODE
+   ========================================================= */
+
+[data-theme="dark"] .central-nervous-system-lesson .cns-diagram.png-06 figcaption {
+    color: var(--text-secondary, #b8b8b8);
+}
+
+/* =========================================================
+   PNG-07: GRAY MATTER VS WHITE MATTER
+   BRAIN & SPINAL CORD
+   ========================================================= */
+
+.central-nervous-system-lesson .cns-diagram.png-07 {
+    width: 100%;
+    max-width: 1150px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.central-nervous-system-lesson .cns-diagram.png-07 img {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.central-nervous-system-lesson .cns-diagram.png-07 figcaption {
+    margin-top: 0.85rem;
+    text-align: center;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: var(--text-secondary, #666);
+}
+
+
+/* =========================================================
+   PNG-07 RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .central-nervous-system-lesson .cns-diagram.png-07 {
+        margin: 1.5rem auto;
+        padding: 0.5rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-07 img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-07 figcaption {
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .central-nervous-system-lesson .cns-diagram.png-07 {
+        margin: 1.25rem auto;
+        padding: 0.25rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-07 img {
+        border-radius: 8px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-07 figcaption {
+        font-size: 0.8rem;
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+   PNG-07 DARK MODE
+   ========================================================= */
+
+[data-theme="dark"] .central-nervous-system-lesson .cns-diagram.png-07 figcaption {
+    color: var(--text-secondary, #b8b8b8);
+}
+
+/* =========================================================
+   PNG-08: ASCENDING & DESCENDING PATHWAYS
+   ========================================================= */
+
+.central-nervous-system-lesson .cns-diagram.png-08 {
+    width: 100%;
+    max-width: 1150px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.central-nervous-system-lesson .cns-diagram.png-08 img {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.central-nervous-system-lesson .cns-diagram.png-08 figcaption {
+    margin-top: 0.85rem;
+    text-align: center;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: var(--text-secondary, #666);
+}
+
+
+/* =========================================================
+   PNG-08 RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .central-nervous-system-lesson .cns-diagram.png-08 {
+        margin: 1.5rem auto;
+        padding: 0.5rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-08 img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-08 figcaption {
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .central-nervous-system-lesson .cns-diagram.png-08 {
+        margin: 1.25rem auto;
+        padding: 0.25rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-08 img {
+        border-radius: 8px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-08 figcaption {
+        font-size: 0.8rem;
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+   PNG-08 DARK MODE
+   ========================================================= */
+
+[data-theme="dark"] .central-nervous-system-lesson .cns-diagram.png-08 figcaption {
+    color: var(--text-secondary, #b8b8b8);
+}
+
+/* =========================================================
+   PNG-09: SPINAL REFLEX ARC
+   FROM STIMULUS TO RESPONSE
+   ========================================================= */
+
+.central-nervous-system-lesson .cns-diagram.png-09 {
+    width: 100%;
+    max-width: 1150px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.central-nervous-system-lesson .cns-diagram.png-09 img {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.central-nervous-system-lesson .cns-diagram.png-09 figcaption {
+    margin-top: 0.85rem;
+    text-align: center;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: var(--text-secondary, #666);
+}
+
+
+/* =========================================================
+   PNG-09 RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .central-nervous-system-lesson .cns-diagram.png-09 {
+        margin: 1.5rem auto;
+        padding: 0.5rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-09 img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-09 figcaption {
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .central-nervous-system-lesson .cns-diagram.png-09 {
+        margin: 1.25rem auto;
+        padding: 0.25rem;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-09 img {
+        border-radius: 8px;
+    }
+
+    .central-nervous-system-lesson .cns-diagram.png-09 figcaption {
+        font-size: 0.8rem;
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+   PNG-09 DARK MODE
+   ========================================================= */
+
+[data-theme="dark"] .central-nervous-system-lesson .cns-diagram.png-09 figcaption {
+    color: var(--text-secondary, #b8b8b8);
+}
+

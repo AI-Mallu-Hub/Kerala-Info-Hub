@@ -1,0 +1,2548 @@
+/* =========================================================
+   LESSON 5.1
+   NEURONS & NEUROGLIA
+   ========================================================= */
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.neurons-neuroglia-intro {
+
+    max-width: 900px;
+
+    margin: 0 auto 30px auto;
+
+    font-size: 1.08rem;
+
+    line-height: 1.85;
+
+    text-align: center;
+
+}
+
+
+
+/* =========================================================
+   GENERAL CONCEPT GRID
+   ========================================================= */
+
+.concept-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-top: 28px;
+
+}
+
+
+.concept-card {
+
+    padding: 24px;
+
+    background:
+        var(--card-bg, #f7f8fa);
+
+    border:
+        1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 18px;
+
+    text-align: center;
+
+}
+
+
+.concept-icon {
+
+    width: 58px;
+    height: 58px;
+
+    margin: 0 auto 14px auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        var(--soft-bg, #eef1f5);
+
+    font-size: 28px;
+
+}
+
+
+.concept-card h3 {
+
+    margin:
+        8px 0 10px;
+
+}
+
+
+.concept-card p {
+
+    margin: 0;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================================
+   STRUCTURE LIST
+   ========================================================= */
+
+.structure-list {
+
+    display: grid;
+
+    gap: 16px;
+
+    margin-top: 26px;
+
+}
+
+
+.structure-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 16px;
+
+    padding: 20px;
+
+    background:
+        var(--card-bg, #f7f8fa);
+
+    border:
+        1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 16px;
+
+}
+
+
+.structure-number {
+
+    flex:
+        0 0 42px;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        var(--soft-bg, #eceff3);
+
+    font-weight: 800;
+
+}
+
+
+.structure-item h3 {
+
+    margin:
+        0 0 6px;
+
+}
+
+
+.structure-item p {
+
+    margin: 0;
+
+    line-height: 1.65;
+
+}
+
+
+
+/* =========================================================
+   DIAGRAM CARDS
+   ========================================================= */
+
+.neural-diagram {
+
+    width: 100%;
+
+    margin:
+        30px 0 32px;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    background:
+        var(--card-bg, #ffffff);
+
+    border:
+        1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+
+.neural-diagram-image-wrap {
+
+    width: 100%;
+
+    max-width: 1536px;
+
+    margin:
+        0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+}
+
+
+.neural-diagram-img {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 1536px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+
+}
+
+
+.neural-diagram figcaption {
+
+    margin-top: 14px;
+
+    padding:
+        0 8px;
+
+    font-size: 0.95rem;
+
+    line-height: 1.5;
+
+    text-align: center;
+
+    color:
+        var(--muted-text, #667085);
+
+}
+
+
+
+/* =========================================================
+   INFORMATION FLOW
+   ========================================================= */
+
+.flow-sequence {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin:
+        30px auto;
+
+    max-width: 900px;
+
+}
+
+
+.flow-step {
+
+    min-width: 125px;
+
+    padding:
+        16px 12px;
+
+    text-align: center;
+
+    background:
+        var(--card-bg, #f7f8fa);
+
+    border:
+        1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 16px;
+
+}
+
+
+.flow-step span {
+
+    width: 34px;
+    height: 34px;
+
+    margin:
+        0 auto 8px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        var(--soft-bg, #eceff3);
+
+    font-weight: 800;
+
+}
+
+
+.flow-step strong {
+
+    display: block;
+
+    font-size: 0.95rem;
+
+}
+
+
+.flow-step small {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color:
+        var(--muted-text, #667085);
+
+}
+
+
+.flow-arrow {
+
+    font-size: 26px;
+
+    font-weight: 700;
+
+}
+
+
+
+/* =========================================================
+   FUNCTIONAL NEURON TYPES
+   ========================================================= */
+
+.neuron-type-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-top: 28px;
+
+}
+
+
+.neuron-type-card {
+
+    padding: 24px 20px;
+
+    border:
+        1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    background:
+        var(--card-bg, #f7f8fa);
+
+}
+
+
+.neuron-type-icon {
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.neuron-type-card h3 {
+
+    margin:
+        8px 0 10px;
+
+}
+
+
+.neuron-type-card p {
+
+    line-height: 1.65;
+
+}
+
+
+.neuron-type-card strong {
+
+    display: block;
+
+    margin-top: 16px;
+
+    font-size: 1rem;
+
+}
+
+
+
+/* =========================================================
+   NEUROGLIA ROLE GRID
+   ========================================================= */
+
+.glia-role-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-top: 28px;
+
+}
+
+
+.glia-role-card {
+
+    padding: 22px;
+
+    background:
+        var(--card-bg, #f7f8fa);
+
+    border:
+        1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 18px;
+
+}
+
+
+.glia-role-card > span {
+
+    display: block;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.glia-role-card h3 {
+
+    margin:
+        0 0 8px;
+
+}
+
+
+.glia-role-card p {
+
+    margin: 0;
+
+    line-height: 1.65;
+
+}
+
+
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+.glia-table-wrap,
+.comparison-table-wrap {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    margin-top: 26px;
+
+}
+
+
+.glia-table,
+.comparison-table {
+
+    width: 100%;
+
+    min-width: 600px;
+
+    border-collapse: collapse;
+
+    background:
+        var(--card-bg, #ffffff);
+
+}
+
+
+.glia-table th,
+.glia-table td,
+.comparison-table th,
+.comparison-table td {
+
+    padding:
+        15px 14px;
+
+    border:
+        1px solid
+        var(--border-color, #dce3ea);
+
+    text-align: left;
+
+    vertical-align: top;
+
+    line-height: 1.55;
+
+}
+
+
+.glia-table th,
+.comparison-table th {
+
+    font-weight: 800;
+
+    background:
+        var(--soft-bg, #eef1f5);
+
+}
+
+
+.glia-table td:first-child,
+.comparison-table td:first-child {
+
+    font-weight: 700;
+
+}
+
+
+
+/* =========================================================
+   CNS / PNS MYELIN
+   ========================================================= */
+
+.cns-pns-myelin {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr auto 1fr;
+
+    align-items: center;
+
+    gap: 16px;
+
+    margin:
+        28px auto;
+
+    max-width: 650px;
+
+}
+
+
+.myelin-side {
+
+    padding: 20px;
+
+    text-align: center;
+
+    background:
+        var(--card-bg, #f7f8fa);
+
+    border:
+        1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 18px;
+
+}
+
+
+.myelin-side span {
+
+    display: block;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.myelin-side strong {
+
+    display: block;
+
+    font-size: 1.05rem;
+
+}
+
+
+.myelin-side p {
+
+    margin:
+        7px 0 0;
+
+}
+
+
+.myelin-arrow {
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+}
+
+
+
+/* =========================================================
+   MYELIN COMPARISON
+   ========================================================= */
+
+.myelin-comparison {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-top: 28px;
+
+}
+
+
+.myelin-card {
+
+    padding: 24px;
+
+    text-align: center;
+
+    background:
+        var(--card-bg, #f7f8fa);
+
+    border:
+        1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 18px;
+
+}
+
+
+.myelin-icon {
+
+    font-size: 32px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.myelin-card h3 {
+
+    margin:
+        8px 0;
+
+}
+
+
+.myelin-card p {
+
+    margin:
+        8px 0;
+
+}
+
+
+.myelin-card span {
+
+    display: block;
+
+    color:
+        var(--muted-text, #667085);
+
+    line-height: 1.55;
+
+}
+
+
+
+/* =========================================================
+   DUAL MEMORY BOX
+   ========================================================= */
+
+.dual-memory-box {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 16px;
+
+    max-width: 650px;
+
+    margin:
+        28px auto 0;
+
+}
+
+
+.dual-memory-box > div {
+
+    padding: 20px;
+
+    text-align: center;
+
+    background:
+        var(--card-bg, #f7f8fa);
+
+    border:
+        1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 16px;
+
+}
+
+
+.dual-memory-box span,
+.dual-memory-box strong,
+.dual-memory-box small {
+
+    display: block;
+
+}
+
+
+.dual-memory-box span {
+
+    font-size: 28px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.dual-memory-box strong {
+
+    font-size: 1.05rem;
+
+}
+
+
+.dual-memory-box small {
+
+    margin-top: 5px;
+
+    color:
+        var(--muted-text, #667085);
+
+}
+
+
+
+/* =========================================================
+   INTEGRATION FLOW
+   ========================================================= */
+
+.integration-flow {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 16px;
+
+    flex-wrap: wrap;
+
+    margin:
+        28px auto 0;
+
+}
+
+
+.integration-flow > div {
+
+    min-width: 145px;
+
+    padding: 18px;
+
+    text-align: center;
+
+    background:
+        var(--card-bg, #f7f8fa);
+
+    border:
+        1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 16px;
+
+}
+
+
+.integration-flow strong,
+.integration-flow small {
+
+    display: block;
+
+}
+
+
+.integration-flow small {
+
+    margin-top: 5px;
+
+    color:
+        var(--muted-text, #667085);
+
+}
+
+
+
+/* =========================================================
+   TAKEAWAYS
+   ========================================================= */
+
+.takeaway-list {
+
+    display: grid;
+
+    gap: 14px;
+
+    margin-top: 24px;
+
+}
+
+
+.takeaway-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    padding: 16px 18px;
+
+    background:
+        var(--card-bg, #f7f8fa);
+
+    border:
+        1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 15px;
+
+}
+
+
+.takeaway-item > span {
+
+    flex:
+        0 0 34px;
+
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        var(--soft-bg, #eceff3);
+
+    font-weight: 800;
+
+}
+
+
+.takeaway-item p {
+
+    margin: 4px 0 0;
+
+    line-height: 1.65;
+
+}
+
+
+
+/* =========================================================
+   FINAL MEMORY BOX
+   ========================================================= */
+
+.final-memory-box {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    margin:
+        28px auto 0;
+
+    padding: 20px;
+
+    max-width: 700px;
+
+    text-align: center;
+
+    background:
+        var(--soft-bg, #eef1f5);
+
+    border:
+        1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 18px;
+
+}
+
+
+.final-memory-box span {
+
+    font-size: 24px;
+
+}
+
+
+.final-memory-box strong {
+
+    font-size: 1rem;
+
+}
+
+
+
+/* =========================================================
+   QUIZ
+   ========================================================= */
+
+.neurons-neuroglia-quiz {
+
+    margin-top: 22px;
+
+}
+
+
+.quiz-placeholder {
+
+    padding: 26px;
+
+    text-align: center;
+
+    background:
+        var(--card-bg, #f7f8fa);
+
+    border:
+        1px dashed
+        var(--border-color, #cbd5df);
+
+    border-radius: 16px;
+
+}
+
+
+.quiz-placeholder h3 {
+
+    margin:
+        0 0 10px;
+
+}
+
+
+.quiz-placeholder p {
+
+    margin: 0;
+
+    color:
+        var(--muted-text, #667085);
+
+}
+
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+html[data-theme="dark"]
+.neural-diagram {
+
+    background:
+        var(--card-bg, #1c1c1e);
+
+    border-color:
+        var(--border-color, #3a3a3c);
+
+}
+
+
+html[data-theme="dark"]
+.neural-diagram figcaption {
+
+    color:
+        var(--muted-text, #a1a1a6);
+
+}
+
+
+html[data-theme="dark"]
+.concept-card,
+html[data-theme="dark"]
+.structure-item,
+html[data-theme="dark"]
+.flow-step,
+html[data-theme="dark"]
+.neuron-type-card,
+html[data-theme="dark"]
+.glia-role-card,
+html[data-theme="dark"]
+.myelin-card,
+html[data-theme="dark"]
+.myelin-side,
+html[data-theme="dark"]
+.dual-memory-box > div,
+html[data-theme="dark"]
+.integration-flow > div,
+html[data-theme="dark"]
+.takeaway-item,
+html[data-theme="dark"]
+.quiz-placeholder {
+
+    background:
+        var(--card-bg, #1c1c1e);
+
+    border-color:
+        var(--border-color, #3a3a3c);
+
+}
+
+
+html[data-theme="dark"]
+.concept-icon,
+html[data-theme="dark"]
+.structure-number,
+html[data-theme="dark"]
+.flow-step span,
+html[data-theme="dark"]
+.takeaway-item > span,
+html[data-theme="dark"]
+.final-memory-box {
+
+    background:
+        var(--soft-bg, #2a2a2c);
+
+}
+
+
+html[data-theme="dark"]
+.glia-table,
+html[data-theme="dark"]
+.comparison-table {
+
+    background:
+        var(--card-bg, #1c1c1e);
+
+}
+
+
+html[data-theme="dark"]
+.glia-table th,
+html[data-theme="dark"]
+.comparison-table th {
+
+    background:
+        var(--soft-bg, #2a2a2c);
+
+}
+
+
+html[data-theme="dark"]
+.glia-table th,
+html[data-theme="dark"]
+.glia-table td,
+html[data-theme="dark"]
+.comparison-table th,
+html[data-theme="dark"]
+.comparison-table td {
+
+    border-color:
+        var(--border-color, #3a3a3c);
+
+}
+
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .concept-grid,
+    .glia-role-grid,
+    .myelin-comparison {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+
+    .neuron-type-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .flow-sequence {
+
+        gap: 8px;
+
+    }
+
+
+    .flow-step {
+
+        min-width: 105px;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .neurons-neuroglia-intro {
+
+        font-size: 1rem;
+
+        line-height: 1.75;
+
+    }
+
+
+    .concept-grid,
+    .glia-role-grid,
+    .myelin-comparison,
+    .dual-memory-box {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .flow-sequence {
+
+        flex-direction: column;
+
+        gap: 6px;
+
+    }
+
+
+    .flow-arrow {
+
+        transform:
+            rotate(0deg);
+
+    }
+
+
+    .flow-step {
+
+        width: 100%;
+
+        max-width: 260px;
+
+        box-sizing: border-box;
+
+    }
+
+
+    .cns-pns-myelin {
+
+        grid-template-columns:
+            1fr;
+
+        max-width: 300px;
+
+    }
+
+
+    .myelin-arrow {
+
+        transform:
+            rotate(90deg);
+
+    }
+
+
+    .integration-flow {
+
+        flex-direction: column;
+
+    }
+
+
+    .integration-flow > div {
+
+        width: 100%;
+
+        max-width: 280px;
+
+        box-sizing: border-box;
+
+    }
+
+
+    .neural-diagram {
+
+        margin-top: 24px;
+
+        margin-bottom: 28px;
+
+        padding: 9px;
+
+        border-radius: 17px;
+
+    }
+
+
+    .neural-diagram-image-wrap {
+
+        border-radius: 11px;
+
+    }
+
+
+    .neural-diagram-img {
+
+        border-radius: 9px;
+
+    }
+
+
+    .neural-diagram figcaption {
+
+        margin-top: 11px;
+
+        padding:
+            0 5px;
+
+        font-size: 0.88rem;
+
+        line-height: 1.5;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .neural-diagram {
+
+        padding: 7px;
+
+        border-radius: 15px;
+
+    }
+
+
+    .neural-diagram figcaption {
+
+        font-size: 0.84rem;
+
+    }
+
+
+    .structure-item {
+
+        gap: 11px;
+
+        padding: 16px;
+
+    }
+
+
+    .structure-number {
+
+        flex-basis: 36px;
+
+        width: 36px;
+        height: 36px;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .page-scroll-btn {
+
+        transition: none;
+
+    }
+
+}
+
+/* =========================================================
+   PNG-01 — NEURONS & NEUROGLIA OVERVIEW
+   ========================================================= */
+
+.neurons-neuroglia-overview-diagram {
+
+    width: 100%;
+
+    margin-top: 30px;
+    margin-bottom: 34px;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    background: var(--card-bg, #ffffff);
+
+    border: 1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE WRAPPER
+   --------------------------------------------------------- */
+
+.neurons-neuroglia-overview-diagram
+.nervous-diagram-image-wrap {
+
+    width: 100%;
+
+    max-width: 1536px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   DIAGRAM IMAGE
+   --------------------------------------------------------- */
+
+.neurons-neuroglia-overview-diagram
+.nervous-diagram-img {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 1536px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   FIGURE CAPTION
+   --------------------------------------------------------- */
+
+.neurons-neuroglia-overview-diagram
+figcaption {
+
+    margin-top: 14px;
+
+    padding: 0 8px;
+
+    font-size: 0.95rem;
+
+    line-height: 1.5;
+
+    color: var(--muted-text, #667085);
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+html[data-theme="dark"]
+.neurons-neuroglia-overview-diagram {
+
+    background: var(--card-bg, #1c1c1e);
+
+    border-color:
+        var(--border-color, #3a3a3c);
+}
+
+
+html[data-theme="dark"]
+.neurons-neuroglia-overview-diagram
+figcaption {
+
+    color: var(--muted-text, #a1a1a6);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .neurons-neuroglia-overview-diagram {
+
+        padding: 12px;
+
+        border-radius: 18px;
+    }
+
+
+    .neurons-neuroglia-overview-diagram
+    .nervous-diagram-image-wrap {
+
+        border-radius: 12px;
+    }
+
+
+    .neurons-neuroglia-overview-diagram
+    .nervous-diagram-img {
+
+        border-radius: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .neurons-neuroglia-overview-diagram {
+
+        margin-top: 24px;
+        margin-bottom: 28px;
+
+        padding: 10px;
+
+        border-radius: 17px;
+    }
+
+
+    .neurons-neuroglia-overview-diagram
+    .nervous-diagram-image-wrap {
+
+        width: 100%;
+
+        border-radius: 11px;
+    }
+
+
+    .neurons-neuroglia-overview-diagram
+    .nervous-diagram-img {
+
+        width: 100%;
+
+        height: auto;
+
+        border-radius: 9px;
+    }
+
+
+    .neurons-neuroglia-overview-diagram
+    figcaption {
+
+        margin-top: 12px;
+
+        padding: 0 6px;
+
+        font-size: 0.88rem;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .neurons-neuroglia-overview-diagram {
+
+        padding: 8px;
+
+        border-radius: 15px;
+    }
+
+
+    .neurons-neuroglia-overview-diagram
+    figcaption {
+
+        font-size: 0.84rem;
+    }
+
+}
+
+/* =========================================================
+   PNG-02 — BASIC NEURON ANATOMY
+   ========================================================= */
+
+.png-02 {
+    margin-top: 30px;
+    margin-bottom: 34px;
+}
+
+
+/* ---------------------------------------------------------
+   DIAGRAM CARD
+   --------------------------------------------------------- */
+
+.png-02.nervous-diagram {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    padding: 14px;
+
+    background: var(--card-bg, #ffffff);
+
+    border: 1px solid
+        var(--border-color, #dce3ea);
+
+    border-radius: 20px;
+
+    text-align: center;
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE WRAPPER
+   --------------------------------------------------------- */
+
+.png-02 .nervous-diagram-image-wrap {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   ACTUAL PNG
+   --------------------------------------------------------- */
+
+.png-02 .nervous-diagram-img {
+    display: block;
+
+    width: 100%;
+    max-width: 1600px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   FIGURE CAPTION
+   --------------------------------------------------------- */
+
+.png-02 figcaption {
+    margin-top: 14px;
+    padding: 0 8px;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: var(--muted-text, #667085);
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+html[data-theme="dark"] .png-02.nervous-diagram {
+    background: var(--card-bg, #1c1c1e);
+
+    border-color:
+        var(--border-color, #3a3a3c);
+}
+
+
+html[data-theme="dark"] .png-02 figcaption {
+    color: var(--muted-text, #a1a1a6);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .png-02.nervous-diagram {
+        padding: 12px;
+        border-radius: 18px;
+    }
+
+    .png-02 .nervous-diagram-image-wrap {
+        border-radius: 12px;
+    }
+
+    .png-02 .nervous-diagram-img {
+        border-radius: 10px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .png-02 {
+        margin-top: 24px;
+        margin-bottom: 28px;
+    }
+
+    .png-02.nervous-diagram {
+        padding: 10px;
+        border-radius: 17px;
+    }
+
+    .png-02 .nervous-diagram-image-wrap {
+        width: 100%;
+        border-radius: 11px;
+    }
+
+    .png-02 .nervous-diagram-img {
+        width: 100%;
+        height: auto;
+        border-radius: 9px;
+    }
+
+    .png-02 figcaption {
+        margin-top: 12px;
+        padding: 0 6px;
+
+        font-size: 0.88rem;
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE SCREENS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .png-02.nervous-diagram {
+        padding: 8px;
+    }
+
+    .png-02 figcaption {
+        font-size: 0.84rem;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 03 — NEURON SIGNAL DIRECTION
+   Figure 5.1.3
+   ========================================================= */
+
+.neuron-signal-direction-figure {
+    width: 100%;
+    margin: 34px 0 36px;
+    padding: 0;
+    background: #ffffff;
+    border: 1.5px solid #dfe3e8;
+    border-radius: 24px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Diagram image area */
+
+.neuron-signal-direction-figure .diagram-image-wrap {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.neuron-signal-direction-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+}
+
+/* Caption */
+
+.neuron-signal-direction-figure figcaption {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 22px 22px;
+    margin: 0;
+
+    background: #ffffff;
+
+    color: #687281;
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 500;
+
+    text-align: center;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .neuron-signal-direction-figure {
+        margin: 28px 0 32px;
+        border-radius: 22px;
+    }
+
+    .neuron-signal-direction-figure .diagram-image-wrap {
+        width: 100%;
+    }
+
+    .neuron-signal-direction-figure img {
+        width: 100%;
+        height: auto;
+    }
+
+    .neuron-signal-direction-figure figcaption {
+        padding: 18px 18px 20px;
+        font-size: 17px;
+        line-height: 1.5;
+    }
+}
+
+/* =========================================================
+   VERY SMALL SCREENS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .neuron-signal-direction-figure {
+        border-radius: 19px;
+    }
+
+    .neuron-signal-direction-figure figcaption {
+        padding: 16px 14px 18px;
+        font-size: 16px;
+    }
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .neuron-signal-direction-figure,
+body.dark-mode .neuron-signal-direction-figure .diagram-image-wrap,
+body.dark-mode .neuron-signal-direction-figure figcaption {
+    background: #15181c;
+}
+
+body.dark-mode .neuron-signal-direction-figure {
+    border-color: #30353c;
+}
+
+body.dark-mode .neuron-signal-direction-figure figcaption {
+    color: #aeb6c2;
+}
+
+/* =========================================================
+   DIAGRAM 04 — THREE FUNCTIONAL NEURON TYPES
+   Figure 5.1.4
+   ========================================================= */
+
+.neuron-types-figure {
+    width: 100%;
+    margin: 34px 0 36px;
+    padding: 0;
+
+    background: #ffffff;
+
+    border: 1.5px solid #dfe3e8;
+    border-radius: 24px;
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------
+   Diagram Image
+   --------------------------------------------------------- */
+
+.neuron-types-figure .diagram-image-wrap {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    background: #ffffff;
+
+    line-height: 0;
+    overflow: hidden;
+}
+
+.neuron-types-figure img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: contain;
+}
+
+/* ---------------------------------------------------------
+   Figure Caption
+   --------------------------------------------------------- */
+
+.neuron-types-figure figcaption {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 20px 22px 22px;
+
+    background: #ffffff;
+
+    color: #687281;
+
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 500;
+
+    text-align: center;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .neuron-types-figure {
+        margin: 28px 0 32px;
+        border-radius: 22px;
+    }
+
+    .neuron-types-figure .diagram-image-wrap {
+        width: 100%;
+    }
+
+    .neuron-types-figure img {
+        width: 100%;
+        height: auto;
+    }
+
+    .neuron-types-figure figcaption {
+        padding: 18px 18px 20px;
+
+        font-size: 17px;
+        line-height: 1.5;
+    }
+}
+
+/* =========================================================
+   VERY SMALL MOBILE SCREENS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .neuron-types-figure {
+        border-radius: 19px;
+    }
+
+    .neuron-types-figure figcaption {
+        padding: 16px 14px 18px;
+
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .neuron-types-figure,
+body.dark-mode .neuron-types-figure .diagram-image-wrap,
+body.dark-mode .neuron-types-figure figcaption {
+    background: #15181c;
+}
+
+body.dark-mode .neuron-types-figure {
+    border-color: #30353c;
+}
+
+body.dark-mode .neuron-types-figure figcaption {
+    color: #aeb6c2;
+}
+
+/* =========================================================
+   DIAGRAM 05
+   PNG-05 — NEUROGLIA OVERVIEW
+   ========================================================= */
+
+.neuroglia-overview-diagram {
+    width: 100%;
+    margin: 1.5rem 0 2rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.neuroglia-overview-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    border-radius: 16px;
+    background: var(
+        --lesson-surface-2,
+        rgba(128, 128, 128, 0.04)
+    );
+
+    padding: 0.75rem;
+}
+
+.neuroglia-overview-image {
+    display: block;
+
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+}
+
+.neuroglia-overview-diagram figcaption {
+    margin-top: 0.85rem;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .neuroglia-overview-image-wrap {
+        padding: 0.5rem;
+        border-radius: 14px;
+    }
+
+    .neuroglia-overview-image {
+        width: 100%;
+        max-width: none;
+        border-radius: 8px;
+    }
+
+    .neuroglia-overview-diagram figcaption {
+        margin-top: 0.7rem;
+    }
+}
+
+/* =========================================================
+   DIAGRAM 06
+   PNG-06 — MAJOR NEUROGLIA
+   ========================================================= */
+
+.major-neuroglia-diagram {
+
+    width: 100%;
+    max-width: 760px;
+
+    margin: 28px auto 0;
+    padding: 14px 12px 16px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #dce3ea;
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   IMAGE WRAPPER
+   ========================================================= */
+
+.major-neuroglia-image-wrap {
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+}
+
+
+/* =========================================================
+   PNG IMAGE
+   ========================================================= */
+
+.major-neuroglia-image {
+
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    border-radius: 10px;
+
+    object-fit: contain;
+
+}
+
+
+/* =========================================================
+   FIGURE CAPTION
+   ========================================================= */
+
+.major-neuroglia-diagram figcaption {
+
+    margin-top: 12px;
+
+    padding: 0 6px;
+
+    text-align: center;
+
+    color: #687789;
+
+    font-size: clamp(14px, 3.8vw, 17px);
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .major-neuroglia-diagram {
+
+    background: #15191e;
+    border-color: #303841;
+
+}
+
+body.dark-mode .major-neuroglia-diagram figcaption {
+
+    color: #aeb8c4;
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .major-neuroglia-diagram {
+
+        margin-top: 24px;
+
+        padding: 10px 8px 13px;
+
+        border-radius: 16px;
+
+    }
+
+    .major-neuroglia-image-wrap {
+
+        border-radius: 10px;
+
+    }
+
+    .major-neuroglia-image {
+
+        width: 100%;
+
+        border-radius: 8px;
+
+    }
+
+    .major-neuroglia-diagram figcaption {
+
+        margin-top: 10px;
+
+        padding: 0 4px;
+
+        font-size: 14px;
+
+        line-height: 1.45;
+
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .major-neuroglia-diagram {
+
+        padding-left: 7px;
+        padding-right: 7px;
+
+    }
+
+    .major-neuroglia-diagram figcaption {
+
+        font-size: 13px;
+
+    }
+
+}
+
+/* =========================================================
+   PNG-07 — MYELIN AROUND AN AXON
+   Figure 5.1.7
+   ========================================================= */
+
+.myelin-axon-figure {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 34px 0 36px;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1.5px solid #dfe3e8;
+    border-radius: 24px;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   DIAGRAM IMAGE WRAPPER
+   --------------------------------------------------------- */
+
+.myelin-axon-figure .diagram-image-wrap {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+    line-height: 0;
+}
+
+
+/* ---------------------------------------------------------
+   DIAGRAM IMAGE
+   --------------------------------------------------------- */
+
+.myelin-axon-figure img {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: contain;
+}
+
+
+/* ---------------------------------------------------------
+   FIGURE CAPTION
+   --------------------------------------------------------- */
+
+.myelin-axon-figure figcaption {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 20px 22px 22px;
+
+    background: #ffffff;
+
+    color: #687281;
+
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 500;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .myelin-axon-figure {
+        margin: 28px 0 32px;
+
+        border-radius: 22px;
+    }
+
+
+    .myelin-axon-figure .diagram-image-wrap {
+        width: 100%;
+    }
+
+
+    .myelin-axon-figure img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .myelin-axon-figure figcaption {
+        padding: 18px 18px 20px;
+
+        font-size: 17px;
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .myelin-axon-figure {
+        border-radius: 19px;
+    }
+
+
+    .myelin-axon-figure figcaption {
+        padding: 16px 14px 18px;
+
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .myelin-axon-figure,
+body.dark-mode .myelin-axon-figure .diagram-image-wrap,
+body.dark-mode .myelin-axon-figure figcaption {
+
+    background: #15181c;
+}
+
+
+body.dark-mode .myelin-axon-figure {
+    border-color: #30353c;
+}
+
+
+body.dark-mode .myelin-axon-figure figcaption {
+    color: #aeb6c2;
+}
+
+/* =========================================================
+   PNG-08 — NEURON + NEUROGLIA INTEGRATED VIEW
+   Figure 5.1.8
+   ========================================================= */
+
+.neuron-neuroglia-integrated-diagram {
+
+    width: 100%;
+    max-width: 100%;
+
+    margin: 34px 0 36px;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1.5px solid #dfe3e8;
+    border-radius: 24px;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE WRAPPER
+   --------------------------------------------------------- */
+
+.neuron-neuroglia-integrated-diagram
+.nervous-diagram-image-wrap {
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+    line-height: 0;
+}
+
+
+/* ---------------------------------------------------------
+   DIAGRAM IMAGE
+   --------------------------------------------------------- */
+
+.neuron-neuroglia-integrated-diagram
+.nervous-diagram-img {
+
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .neuron-neuroglia-integrated-diagram {
+
+        margin: 28px 0 32px;
+
+        border-radius: 22px;
+    }
+
+
+    .neuron-neuroglia-integrated-diagram
+    .nervous-diagram-img {
+
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .neuron-neuroglia-integrated-diagram {
+
+        border-radius: 19px;
+    }
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode
+.neuron-neuroglia-integrated-diagram {
+
+    background: #15181c;
+
+    border-color: #30353c;
+}
+
+
+body.dark-mode
+.neuron-neuroglia-integrated-diagram
+.nervous-diagram-image-wrap {
+
+    background: #15181c;
+}
+
